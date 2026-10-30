@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>20. Papers guide: lab and cited papers · Hiroshima prep</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1f2328;--muted:#5f6670;--line:#e3e0d8;--card:#f3f1ea;--link:#0b57d0;--code:#efede6;--accent:#2f5d8a;--fill:#fff2a8}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--link);text-underline-offset:2px}
+.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line)}
+.brand{font-weight:600;color:var(--fg);text-decoration:none}
+.menu-btn{font:inherit;font-size:15px;padding:6px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);cursor:pointer}
+.layout{display:block}
+.sidenav{display:none;font-size:15px;line-height:1.45;padding:12px 18px 40px}
+body.nav-open .sidenav{display:block;border-bottom:1px solid var(--line);background:var(--card)}
+.sidenav ul{list-style:none;margin:0;padding:0}
+.sidenav li{margin:2px 0}
+.sidenav a{display:block;padding:4px 6px;border-radius:6px;color:var(--fg);text-decoration:none}
+.sidenav a:hover{background:var(--line)}
+.sidenav a[aria-current=page]{background:var(--accent);color:#fff}
+.sidenav .part{margin:14px 0 4px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.sidenav .n{display:inline-block;min-width:1.8em;color:var(--muted)}
+.sidenav a[aria-current=page] .n{color:#fff}
+[data-ch].done>a::after,.toc-list li.done .t::after{content:" \2713";color:#2e7d32;font-weight:700}
+.page{max-width:760px;margin:0 auto;padding:20px 20px 60px}
+.chead{margin:8px 0 22px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.chead .part{margin:0;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.chead .chno{margin:6px 0 0;font-size:15px;color:var(--accent);font-weight:600}
+.chead h1{margin:4px 0 12px}
+.when{margin:0;padding:10px 14px;background:var(--card);border-left:4px solid var(--accent);border-radius:6px;font-size:16px}
+h1{font-size:1.75em;line-height:1.25}
+h2{font-size:1.35em;line-height:1.3;margin-top:2em;padding-top:.4em;border-top:1px solid var(--line)}
+h3{font-size:1.12em;line-height:1.35;margin-top:1.6em}
+h4{font-size:1em;margin-top:1.4em}
+p,li{overflow-wrap:break-word}
+li{margin:.25em 0}
+code{font:0.86em/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--code);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+pre{background:var(--code);padding:12px 14px;border-radius:8px;overflow-x:auto;font-size:14px;line-height:1.5}
+pre code{background:none;padding:0;overflow-wrap:normal;font-size:1em}
+blockquote{margin:1em 0;padding:6px 16px;border-left:4px solid #b9c7da;background:var(--card);border-radius:4px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1em 0}
+table{border-collapse:collapse;font-size:15px;line-height:1.45;min-width:100%}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}
+th{background:var(--card)}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+mark.fill{background:var(--fill);color:#1f2328;padding:0 3px;border-radius:3px}
+li.task{list-style:none}
+li.task .cb{display:inline-block;width:.85em;height:.85em;border:2px solid var(--muted);border-radius:3px;margin:0 .45em 0 -1.3em;vertical-align:-.05em}
+li.task .cb.on{background:var(--accent);border-color:var(--accent)}
+details.box{margin:0 0 20px;padding:8px 14px;background:var(--card);border-radius:8px}
+details.box summary{cursor:pointer;font-weight:600}
+details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
+.slides figure{margin:0 0 14px}
+.slides img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+.slides figcaption{font-size:14px;color:var(--muted);margin-top:4px}
+.donebox{margin:36px 0 16px;padding:14px 16px;background:var(--card);border-radius:10px;font-size:17px}
+.donebox label{cursor:pointer;display:flex;align-items:center;gap:10px}
+.donebox input,.toc-list input{width:22px;height:22px;accent-color:#2e7d32;flex:none}
+.pager{display:flex;gap:12px;justify-content:space-between;margin-top:8px}
+.pager a{flex:1 1 0;display:block;padding:12px 14px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--fg);background:var(--bg)}
+.pager a:hover{border-color:var(--accent)}
+.pager .lbl{display:block;font-size:13px;color:var(--muted)}
+.pager .next{text-align:right}
+.pager .ghost{visibility:hidden}
+.progress{margin:16px 0;padding:14px 16px;background:var(--card);border-radius:10px}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden;margin:8px 0}
+.bar span{display:block;height:100%;width:0;background:#2e7d32}
+.parts-progress{list-style:none;padding:0;margin:6px 0 0;font-size:15px}
+.start{display:inline-block;margin:6px 0 4px;padding:10px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.toc-list{list-style:none;padding:0}
+.toc-list li{display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line)}
+.toc-list .t{font-weight:600}
+.toc-list .w{display:block;font-size:15px;color:var(--muted)}
+.muted{color:var(--muted);font-size:15px}
+@media (max-width:640px){body{font-size:17px}.page{padding:14px 16px 50px}h1{font-size:1.5em}.pager{flex-direction:column}.pager .next{text-align:left}}
+@media (min-width:1100px){
+ .menu-btn{display:none}
+ .layout{display:grid;grid-template-columns:290px 1fr}
+ .sidenav{display:block;position:sticky;top:49px;height:calc(100vh - 49px);overflow-y:auto;border-right:1px solid var(--line);background:var(--bg)}
+ body.nav-open .sidenav{border-bottom:0;background:var(--bg)}
+ .page{padding-top:28px}
+}
+@media (prefers-color-scheme:dark){
+ :root{--bg:#17181b;--fg:#e4e4e2;--muted:#a3a7ad;--line:#33353a;--card:#212328;--link:#8ab4f8;--code:#262830;--accent:#6c9bd2;--fill:#f3dc6b}
+ .slides img{background:#fff}
+ blockquote{border-left-color:#4a5a70}
+}
+</style>
+
+</head>
+<body>
+<header class="topbar"><button class="menu-btn" type="button" aria-controls="sidenav" aria-expanded="false">Contents</button><a class="brand" href="index.html">Hiroshima prep</a></header>
+<div class="layout">
+<nav id="sidenav" class="sidenav" aria-label="Book contents"><ul>
+<li><a href="index.html">Home: how to use this book</a></li>
+<li><a href="contents.html">Contents</a></li>
+<li class="part">Part 1: Before Monday&#x27;s meeting (30 Oct to 2 Nov)</li>
+<li data-ch="h01"><a href="ch01.html"><span class="n">1.</span>Start here</a></li>
+<li data-ch="h02"><a href="ch02.html"><span class="n">2.</span>Presentation guide and slides</a></li>
+<li data-ch="h03"><a href="ch03.html"><span class="n">3.</span>Full script: hello to goodbye</a></li>
+<li data-ch="h04"><a href="ch04.html"><span class="n">4.</span>Mock interview (tap to hear the questions)</a></li>
+<li data-ch="h05"><a href="ch05.html"><span class="n">5.</span>The 30-minute game plan</a></li>
+<li data-ch="h06"><a href="ch06.html"><span class="n">6.</span>Prof. Zheng in depth</a></li>
+<li data-ch="h07"><a href="ch07.html"><span class="n">7.</span>The lab, Prof. Dohi and Prof. Okamura</a></li>
+<li data-ch="h08"><a href="ch08.html"><span class="n">8.</span>Your proposal, explained simply</a></li>
+<li data-ch="h09"><a href="ch09.html"><span class="n">9.</span>Question bank with model answers</a></li>
+<li data-ch="h10"><a href="ch10.html"><span class="n">10.</span>Weak points and honest answers</a></li>
+<li data-ch="h11"><a href="ch11.html"><span class="n">11.</span>Questions to ask Prof. Zheng</a></li>
+<li data-ch="h12"><a href="ch12.html"><span class="n">12.</span>Day-of checklist</a></li>
+<li data-ch="h13"><a href="ch13.html"><span class="n">13.</span>How to address them, and etiquette</a></li>
+<li data-ch="h14"><a href="ch14.html"><span class="n">14.</span>Email templates (thank-you and after)</a></li>
+<li class="part">Part 2: The application (2 to 13 Nov)</li>
+<li data-ch="h15"><a href="ch15.html"><span class="n">15.</span>Application process and dates</a></li>
+<li data-ch="h16"><a href="ch16.html"><span class="n">16.</span>Documents checklist</a></li>
+<li data-ch="h17"><a href="ch17.html"><span class="n">17.</span>Hiroshima vs NAIST: decide early</a></li>
+<li class="part">Part 3: The oral exam (24 Nov to 2 Dec)</li>
+<li data-ch="h18"><a href="ch18.html"><span class="n">18.</span>Reliability and probability primer</a></li>
+<li data-ch="h19"><a href="ch19.html"><span class="n">19.</span>Oral exam prep</a></li>
+<li data-ch="h20"><a href="ch20.html" aria-current="page"><span class="n">20.</span>Papers guide: lab and cited papers</a></li>
+<li class="part">Reference</li>
+<li data-ch="h21"><a href="ch21.html"><span class="n">21.</span>Glossary</a></li>
+</ul></nav>
+<main class="page">
+<article>
+<header class="chead">
+<p class="part">Part 3: The oral exam (24 Nov to 2 Dec)</p>
+<p class="chno">Chapter 20 of 21</p>
+<h1>Papers guide: the lab&#x27;s papers and the papers your proposal cites</h1>
+<p class="when"><strong>When and how long:</strong> Sunday: P1, P2, R1, R2, R4. The rest before the oral exam.</p>
+</header>
+
+<blockquote>
+<p>Source: the lab research done for your proposal (26 Oct 2026), checked again on 28 Oct. Facts marked as not read in full must not be quoted.</p>
+</blockquote>
+<p>Open-access PDFs downloaded for you are in <code>04_Papers/pdfs/</code>.</p>
+<h2 id="2-key-papers-read-for-the-proposal">2. Key papers (read for the proposal)</h2>
+<h3 id="p1-zheng-okamura-dohi-can-generative-ai-enhance-the-effectiveness-of-n-version-programming-abstract-only">P1. Zheng, Okamura, Dohi: Can Generative AI Enhance the Effectiveness of N-Version Programming? [ABSTRACT ONLY]</h3>
+<ul>
+<li><strong>Venue:</strong> SFPVV 2025 (2nd Int. Symposium on Software Fault Prevention, Verification, and Validation, Shanghai, 8 to 9 Nov 2025), LNCS 16356, pp. 1-16, Springer, 2026. DOI 10.1007/978-981-95-6032-5_1. DBLP key conf/sfpvv/ZhengOD25.</li>
+<li><strong>Access:</strong> closed. Springer served a JavaScript challenge to curl; Unpaywall and Semantic Scholar list no open copy; no preprint on arXiv; nothing in the HU repository. I read the abstract (via WebFetch of the Springer page) and the 19-item reference list (Crossref).</li>
+<li><strong>What the abstract says (quotes):</strong> it evaluates LLM-generated code on "correctness and diversity"; it compares "high-performing (e.g., GPT-4o) and lower-performing LLMs"; the two diversity strategies are "temperature tuning and conversation history reuse"; generative AI can improve NVP "when using high-quality models, enabling more reliable outcomes through majority voting", but "the benefits are limited with lower-accuracy models"; diversity measures "do not always translate into improved reliability". It also says NVP "has seen limited adoption in practice due to its high development cost".</li>
+<li><strong>Second source:</strong> Nogueira et al. 2026 (R2 below, read in full) describe it as: "Zheng et al. [29] measured performance improvement from an N-version ensemble using AST-based similarity between solutions." Its reference list includes "Comparing Python programs using abstract syntax trees" (Salazar Paredes 2020), L2CEval, Galapagos, LLaMA and a Claude governance paper. <strong>(my note)</strong> So it probably used Python, an AST-based diversity measure and several model families, but I cannot confirm any of that, and the proposal does not claim it.</li>
+<li><strong>Limitations / future work:</strong> unknown (not readable).</li>
+<li><strong>How the proposal builds on it (v2):</strong> RQ1 treats the 10 runs of each setting as versions and asks whether a shared context file makes them fail together, and which change between runs (file version, agent, model, temperature) lowers that most. The self-built harness varies temperature on an open-weight model, one of the settings [1] varied. Text in the proposal is limited to the abstract's claims.</li>
+<li><strong>Action for Sudhanshu:</strong> get the PDF before the interview (ask Prof. Zheng politely in a later email, or through a library). Do not quote numbers from it until then.</li>
+</ul>
+<h3 id="p2-guo-okamura-dohi-optimal-test-case-generation-for-boundary-value-analysis-read-in-full">P2. Guo, Okamura, Dohi: Optimal test case generation for boundary value analysis (read in full)</h3>
+<ul>
+<li><strong>Venue:</strong> Software Quality Journal 32(2), pp. 543-566, 2024 (published online 13 Feb 2024). Open access, CC BY 4.0. DOI 10.1007/s11219-023-09659-9. Funded in part by JST.</li>
+<li><strong>Idea:</strong> define <strong>boundary coverage distance (BCD)</strong>: how far a test set is from covering every boundary value. Boundaries come from equivalence partitions defined by output categories, and a set G of minimal input operations (for example plus or minus one); the distance between inputs is the minimum number of operations (Eq. 6). BCD is the max over partitions of the max over boundary points of the min distance to a test input (Eq. 7, 8). Because all boundary values are hard to list, they give a lower bound (boundary points) and an upper bound (boundary components such as line segments).</li>
+<li><strong>Algorithms:</strong> three MCMC-like optimisers that move random test inputs toward boundaries. A1 accepts a candidate if BCD drops; A2 accepts if it lowers the distance for some boundary points without raising others; A3 accepts with a probability. Combined with three BCD calculations (lower, upper, mean) this gives seven methods; they also tried mean instead of max inside BCD.</li>
+<li><strong>Experiment:</strong> five C programs: triType (41 LOC), nextDate (90), findMiddle (36), English (26, their exam-pass example), miniSAT solver.cc (1,069). Mutation testing with five fault types (off-by-one OBOB, ROR, AOR, SVR, LOR), 21 to 35 mutants per program; a mutant is killed if some input gives a different execution path (branch states from Gcov). Test set sizes n = 30 to 50; 10,000 iterations; uniform proposal. Baselines: random testing (RT), adaptive random testing (ART), KLEE concolic testing.</li>
+<li><strong>Results (Table 5, kill rate):</strong> A1 with mean-BCD: triType 0.95, nextDate 1.0, findMiddle 0.97, English 0.8, miniSAT 0.94, against RT 0.66, 0.54, 0.61, 0.36, 0.65 and ART 0.61, 0.51, 0.63, 0.44, 0.64. KLEE: 0.7, 0.9, 0.88, 0.6, and 0 on miniSAT (KLEE made one test case). Mean-based BCD accepted more candidates than max-based. Generation took 154 to 1,194 s for A1 mean-BCD, against about 0.002 s for RT.</li>
+<li><strong>Stated limitations:</strong> boundary points were found "by manual analysis of the source code"; for "large programs or complex numerical computation programs, the identification of the boundary becomes difficult"; non-numerical inputs "such as an array ... or a string" need "further consideration"; higher time cost.</li>
+<li><strong>Stated future work:</strong> integrate analysis tools or "deep learning techniques to predict boundary points"; handle non-numeric inputs. (The lab's 2025 Array paper on machine-learning-driven BVA is the follow-up; I could not download it.)</li>
+<li><strong>How the proposal builds on it (v2):</strong> BCD is a separate stress test in RQ2, not a failure probability (only 30 to 50 inputs per program). Boundary points come from branch conditions in the merged code that compare a parameter with a constant. These are path-based boundaries, which Remark 2 says differ from the paper's output-based ones; the pilot reports what share of functions has them. Kill rate is reported both as in the paper (different execution path; coverage.py branch data instead of Gcov) and by outputs. For strings and lists (the paper's stated limit) he will try one-element edits as minimal operations, as the paper defined custom operations for miniSAT. Python, not C.</li>
+</ul>
+<h3 id="p3-qiu-dohi-wu-zheng-okamura-a-semi-parametric-self-exciting-software-reliability-model-with-time-varying-base-intensity-and-shallow-neural-kernel-read-in-full">P3. Qiu, Dohi, Wu, Zheng, Okamura: A Semi-Parametric Self-Exciting Software Reliability Model with Time-Varying Base Intensity and Shallow Neural Kernel (read in full)</h3>
+<ul>
+<li><strong>Venue:</strong> International Journal of Mathematical, Engineering and Management Sciences 11(5), pp. 1907-1928, 2026 (received 5 Jun, accepted 30 Aug 2026). Open access. DOI 10.33889/IJMEMS.2026.11.5.076. First author is a doctoral student; supported by JST SPRING.</li>
+<li><strong>Idea:</strong> NHPP SRMs assume independent increments, so one detected fault does not raise the chance of the next. Real fault detections cluster ("the detection of one fault may lead testers to inspect related modules, trigger additional test cases, or reveal dependent faults"). A Hawkes process adds an excitation kernel to a base intensity. They combine an exponential, decreasing base intensity with a shallow neural network (ReLU) kernel that is piecewise exponential, so likelihoods stay tractable. Mean value function from a Volterra equation solved numerically. Fitting: maximum likelihood, particle swarm then L-BFGS-B, AIC for parametric models.</li>
+<li><strong>Data:</strong> 8 time-domain fault datasets: DS1 SYS4 (197 faults), DS2 SYS1 (136), DS3 SRC3 (104), DS4 SRC1 (397) from Musa and Lyu, and <strong>DS5 to DS8 built from fault-related issue histories of four GitHub projects</strong> (labelled ChatGPT, MobX, XGBoost, uni-app; 278, 278, 183, 290 faults). Predictions from 20%, 50% and 80% of the time horizon; measure PMSE.</li>
+<li><strong>Results:</strong> the neural-kernel model "is not always the best" but beats most of the 10 parametric Hawkes kernels pairwise; at the 50% point it beats the best NHPP model on 7 of 8 datasets (for example DS2 PMSE 0.363 against 3.889 for gamma NHPP; DS4 15.220 against 45.212). At 20% it is mixed (DS1 5.350 against 0.413 for exponential NHPP) and at 80% parametric kernels and NHPP models often win.</li>
+<li><strong>Stated limitations:</strong> weaker late-stage prediction, which they attribute to overfitting local fluctuations and few late events to learn the kernel tail.</li>
+<li><strong>Stated future work:</strong> other base intensities (Weibull, Pareto), non-parametric base intensities (splines), fully non-parametric Hawkes SRMs.</li>
+<li><strong>How the proposal builds on it (v2):</strong> the field study is now "if time permits". It would build fix data for agent code from GitHub commit messages, as DS5 to DS8 were built from GitHub issues. Because agent code keeps arriving, it uses m(t) = sum_j omega_j G(t - tau_j) with omega_j = L_j exp(beta'z_j) instead of a finite-fault NHPP; a Hawkes term as in this paper is an optional extension. Counts per repository will be far below the 104 to 397 faults per dataset here, so repositories are pooled.</li>
+</ul>
+<h3 id="p4-pysrat-okamura-see-section-12-readme-read-in-full-used-for-nhpp-fitting-and-the-pr-nhpp-regression-in-the-field-study">P4. pysrat (Okamura), see section 1.2. README read in full. Used for NHPP fitting and the PR-NHPP regression in the field study.</h3>
+<h3 id="p5-yano-dohi-okamura-performance-comparison-of-software-reliability-estimation-algorithms-read-the-method-and-conclusion-skimmed-the-tables">P5. Yano, Dohi, Okamura: Performance Comparison of Software Reliability Estimation Algorithms (read the method and conclusion; skimmed the tables)</h3>
+<ul>
+<li><strong>Venue:</strong> IEEE Computer 57(4), pp. 26-36, 2024. Open copy in the HU repository (<a href="https://hiroshima.repo.nii.ac.jp/record/2006696">https://hiroshima.repo.nii.ac.jp/record/2006696</a>). Note the first author is printed as Taimu Yano in the PDF and Hiromu Yano in Crossref.</li>
+<li><strong>What it does:</strong> compares Newton, Nelder-Mead, EM, ECM, LL-ECM and a proposed Monte Carlo EM for maximum likelihood in NHPP SRMs on time data (DS1 to DS3, for example DS1 with 136 bugs over 88,682 time units) and group data (DS4 to DS6).</li>
+<li><strong>Conclusion (quote):</strong> "the EM and ECM algorithms are still attractive for ensuring global convergence", while "the Monte Carlo EM algorithms may have potential applicability to deal with more complex software reliability models". Weakness: EM and ECM must be derived for each model.</li>
+<li><strong>Use:</strong> background for the oral exam (why pysrat uses EM). Not cited in the proposal.</li>
+</ul>
+<h3 id="p6-qiu-li-dohi-okamura-infinite-failure-srms-based-on-non-homogeneous-markov-processes-preprint-skimmed">P6. Qiu, Li, Dohi, Okamura: Infinite-failure SRMs based on non-homogeneous Markov processes (preprint skimmed)</h3>
+<ul>
+<li>Research Square preprint rs-3507541 (Nov 2023); published in Software Quality Journal 34(4), 53, 2026. 22 NHMP-based SRMs (generalized binomial and generalized Polya processes) with 11 baseline intensities, on 8 time-domain and 8 group datasets; better goodness of fit in many cases, better prediction in a limited number. Not cited.</li>
+</ul>
+<hr />
+<h2 id="3-related-work-the-proposal-also-builds-on-read-in-full">3. Related work the proposal also builds on (read in full)</h2>
+<h3 id="r1-ron-baudry-monperrus-n-version-programming-with-coding-agents-arxiv260620158-18-jun-2026-kth-and-montreal">R1. Ron, Baudry, Monperrus: N-Version Programming with Coding Agents (arXiv:2606.20158, 18 Jun 2026; KTH and Montreal)</h3>
+<ul>
+<li>Repeats the 1986 Knight and Leveson experiment with coding agents: the original Launch Interceptor Program specification, 15 examples and a <code>realcompare</code> function. 5 harnesses (Cursor, Claude Code, Codex, Gemini, OpenCode), 23 models, 3 languages (Python, Rust, Pascal): 69 configurations, 48 pass the 200-case acceptance test (70%; Claude Code 13 of 15, Codex 11 of 15).</li>
+<li>Oracle: a Python reference validated by 82 unit tests; failure = any of 241 output bits differs. Campaign of 1,000,000 random inputs.</li>
+<li>Results: 27 of 48 versions have zero failures; the worst fails 10,469 inputs. Coincident failures K = 429 against 115.36 expected under independence (z = 29.20). Per language, K is 17.5 to 155.1 times the expectation. Failures concentrate in LICs 9 and 14 (many agents compute the circumcircle instead of the minimum enclosing circle); LICs 3 and 10 expose a specification ambiguity. Majority-vote triples (all 17,296): mean failures 387.44 to 130.99; 11,844 triples (68.48%) with zero failures against 27 single versions (56.25%).</li>
+<li>Limits they state: one specification; one version per configuration, so no within-configuration sampling variability ("Rerunning the generation stage at either a different temperature or at a different date would likely change the exact failure counts").</li>
+<li><strong>Use:</strong> the Knight and Leveson z statistic, reference-oracle differential testing, voting triples. My study differs: real repository tasks, a context file as a shared input, and 3 runs per setting, which gives the within-configuration variability they did not measure.</li>
+</ul>
+<h3 id="r2-nogueira-pattabiraman-vieira-campos-a-systematic-methodology-for-evaluating-failure-independence-in-llm-generated-code-arxiv260702808-2-jul-2026-coimbra-unc-charlotte-ubc">R2. Nogueira, Pattabiraman, Vieira, Campos: A Systematic Methodology for Evaluating Failure Independence in LLM-Generated Code (arXiv:2607.02808, 2 Jul 2026; Coimbra, UNC Charlotte, UBC)</h3>
+<ul>
+<li>224 contest problems (PROBE, from CodeNet), 12 models, 5 languages, 3 prompting strategies (baseline, chain of thought, "out of the box"), temperature 0.6, 5 samples per setting. Tests: 10 normal plus about 20.6 edge cases per problem; 96.7% line, 94.8% branch coverage, 86.1% mutation score.</li>
+<li>Measures: CodeBLEU (structure); a pairwise score Z comparing observed shared failures with the hypergeometric expectation (behaviour); majority-vote reliability and "redundancy effectiveness" (share of the gain under independence that voting realises).</li>
+<li>Results: mean Z 2.04, 65.9% of pairs significantly correlated; on edge cases 3.39 and 71.78%. Reliability 0.88 alone, 0.90 with N = 3, 0.91 with N = 5; effectiveness 0.43 and 0.44, and only 0.27 and 0.24 when all versions come from one model. Prompting had little effect (0.41 against 0.44). No combination beat the strongest single model.</li>
+<li>Limits they state: contest problems, not real code; no frontier models; test exchangeability assumption.</li>
+<li><strong>Use:</strong> the pairwise score as a baseline for RQ1 (the beta-binomial model is the main analysis); their finding that same-model triples gain least (0.27) motivates varying agent and model between runs.</li>
+</ul>
+<h3 id="r3-earlier-context-file-papers-verified-for-the-naist-proposal-see-usersmafexdownloadsnaist-interview-prep04_papersguide_3_cited_and_related_papersmd">R3. Earlier context-file papers (verified for the NAIST proposal; see <code>/Users/mafex/Downloads/NAIST-Interview-Prep/04_Papers/GUIDE_3_cited_and_related_papers.md</code>)</h3>
+<ul>
+<li>AIDev [7]: 932,791 agent PRs from 5 agents (MSR 2026 version).</li>
+<li>Gloaguen et al. [8]: developer files +2.4% success, not significant (p = 0.21), cost up to 19% higher (p.6). Per-task cost (Table 2): Claude Code with Sonnet-4.5 1.15 to 1.51 USD, Codex with GPT-5.2 0.32 to 0.57, Codex with GPT-5.1 mini 0.18 to 0.22, Qwen3-30B-Coder 0.12 to 0.15 (estimated from OpenRouter prices). Trace analysis (sec. 4.3): tools named in the file are used (uv 1.6 times per task when named, under 0.01 when not; repo tools 2.5 vs under 0.05); abstract: instructions "are well followed". They set temperature 0 for Sonnet-4.5 in Claude Code and for GPT-5.2 and GPT-5.1 mini in Codex (sec. 4.1), so never say the CLIs cannot be given a temperature; say only that neither CLI documents it. The 138-task benchmark (CTXBench in v3, AGENTbench in the code) is public: Hugging Face <code>eth-sri/agentbench</code> (138 rows, 12 repos, Docker images, test commands, merged 2022-08 to 2026-01), harness at github.com/eth-sri/agentbench.</li>
+<li>Zhang et al. "Guardrails Beat Guidance" [9]: leave-one-out of 18 generic rules on 35 tasks. Using a 5-point threshold, the 3 helpful ("shaping") rules were all prohibitions; three positive rules also lowered the pass rate when removed, by 2.9 points each. Only "do not refactor unrelated code" was individually significant (20 points, McNemar p = 0.016), and the authors call the polarity pattern suggestive (sec. 6.4, Table 4). Screening: 3 baseline runs per task, keep tasks solved 1 or 2 of 3; pilot found 47% always and 27% never solved. About 5 USD per task and condition with Claude Opus 4.6. Superposition test on 5 rule pairs.</li>
+<li>Xia and Miller [10]: 182 repositories; "4.0% of agentic lines changed by a bug-fixing commit by 180 days compared with 2.7%" of human lines; corrective maintenance sHR 1.46; line-level Cox and Fine-Gray competing-risks models. Rechecked on 26 Oct.</li>
+<li>AIDev [7]: dataset cutoff 1 August 2025 (p.1), so post-cutoff tasks cannot come from AIDev's PRs.</li>
+</ul>
+<h3 id="r4-eckhardt-and-lee-1985-11-read-in-full-as-the-nasa-report-version">R4. Eckhardt and Lee 1985 [11] (read in full as the NASA report version)</h3>
+<ul>
+<li>Cited as: D. E. Eckhardt, L. D. Lee, "A Theoretical Basis for the Analysis of Multiversion Software Subject to Coincident Errors", IEEE TSE SE-11(12), pp. 1511-1517, Dec 1985, DOI 10.1109/TSE.1985.231895 (Crossref). The full text read is NASA TM-86369, Jan 1985, "A Theoretical Basis for the Analysis of Redundant Software Subject to Coincident Errors" (<a href="https://ntrs.nasa.gov/api/citations/19850015006/downloads/19850015006.pdf">https://ntrs.nasa.gov/api/citations/19850015006/downloads/19850015006.pdf</a>), the report version of the same work. He should read the TSE version too before the interview.</li>
+<li>What it says: theta(x), the intensity of coincident errors, is the share of a population of independently developed versions that fail on input x. For two versions drawn at random, P(both fail) = integral of theta(x)^2 dQ = p^2 + sigma^2 (eqs. 11 to 15). Theorem 2: versions fail independently if and only if theta(x) is constant (variance zero). Section 5: N-version can be worse than one version when theta(x) &gt; 0.5 on some inputs, and system failure probability need not fall monotonically with N.</li>
+<li>Use: the beta-binomial model for RQ1 puts a Beta distribution on theta(X). Littlewood and Miller (TSE 1989) extend this with forced diversity, which fits the "which change between runs" question, but no full text was found, so it is not cited.</li>
+</ul>
+<hr />
+<h2 id="4-lab-papers-i-could-not-read-in-full-do-not-quote-them">4. Lab papers I could not read in full (do not quote them)</h2>
+<table>
+<thead>
+<tr>
+<th>Paper</th>
+<th>Why not</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Guo, Okamura, Dohi: Improving test suite generation quality through machine learning-driven boundary value analysis, Array 27, 100496, 2025 (open access)</td>
+<td>ScienceDirect returned a Cloudflare block to curl and 403 to WebFetch. Guo's 2024 dissertation summary says the ML approach trains an MLP to tell whether a boundary lies between two inputs and then uses MCMC; it beat manual BVA on 4 of 7 programs and concolic testing on 3 of 7. That is the dissertation, not the Array paper.</td>
+</tr>
+<tr>
+<td>Wu, Dohi, Zheng, Okamura: A Fine-grained parametric bootstrap approach for NHPP-based software reliability modeling, JSS 236, 112789, 2026 (open access)</td>
+<td>Same ScienceDirect block. Removed from the proposal for that reason; the older 1-page plan cited it from its title only.</td>
+</tr>
+<tr>
+<td>Qiu et al.: A Note on Software Reliability Modeling Based on Hawkes Processes with Gamma Type Base Intensity; Wu et al.: A Probabilistic Least Squares Estimation ..., both WSSE 2025</td>
+<td>ACM returned a Cloudflare page.</td>
+</tr>
+<tr>
+<td>Wu et al.: Empirical Research for Likelihood-Free Parameter Estimation ..., IOCMA 2026 (MDPI)</td>
+<td>403 from MDPI.</td>
+</tr>
+<tr>
+<td>Yu, ..., Zheng, Wu, Sato: LLM multi-agent dynamic task graph, Electronics 2026 (MDPI)</td>
+<td>403 from MDPI.</td>
+</tr>
+<tr>
+<td>Bai et al.: Long-term software reliability prediction via nonparametric kernel regression, IST 2026</td>
+<td>Not open access.</td>
+</tr>
+<tr>
+<td>Kaibe, Okamura, Dohi: Towards Predicting Source Code Changes Based on NLP Models, ISSREW 2023</td>
+<td>Not open access (CuBERT to predict code changes; from the title and NOTES).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-how-the-proposal-uses-each-source">5. How the proposal uses each source</h2>
+<table>
+<thead>
+<tr>
+<th>Ref</th>
+<th>Source</th>
+<th>What it gives the proposal</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[1]</td>
+<td>Zheng, Okamura, Dohi 2026</td>
+<td>The frame for RQ1: LLM versions, voting, diversity through temperature and history reuse</td>
+<td>Background, RQ1, harness design, why this lab</td>
+</tr>
+<tr>
+<td>[2]</td>
+<td>Guo, Okamura, Dohi 2024</td>
+<td>BCD boundary inputs, mutant kill rate to judge input sets; its stated limits (manual boundaries, non-numeric inputs)</td>
+<td>RQ2 measures</td>
+</tr>
+<tr>
+<td>[3]</td>
+<td>Qiu et al. 2026</td>
+<td>GitHub-derived fault data; Hawkes models for clustered fixes</td>
+<td>Field data</td>
+</tr>
+<tr>
+<td>[4]</td>
+<td>pysrat</td>
+<td>NHPP fitting and the PR-NHPP regression across repositories</td>
+<td>Field data</td>
+</tr>
+<tr>
+<td>[5]</td>
+<td>Ron et al. 2026</td>
+<td>Knight and Leveson statistic (baseline), acceptance rule, reference-oracle differential testing, realcompare-style tolerance, voting numbers, specification as source of shared failures</td>
+<td>Background, RQ1, RQ2</td>
+</tr>
+<tr>
+<td>[6]</td>
+<td>Nogueira et al. 2026</td>
+<td>Pairwise shared-failure score (baseline), same-model correlation</td>
+<td>Background, RQ1</td>
+</tr>
+<tr>
+<td>[7] to [10]</td>
+<td>AIDev, Gloaguen, Guardrails, Xia and Miller</td>
+<td>Field-study repositories, the public 138-task benchmark and cost estimate, task screening and cost warning, why reliability after merge matters</td>
+<td>Background, plan</td>
+</tr>
+<tr>
+<td>[11]</td>
+<td>Eckhardt and Lee 1985</td>
+<td>Coincident-failure model behind the beta-binomial analysis</td>
+<td>Background, RQ1</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</article>
+<div class="donebox"><label><input type="checkbox" class="done-cb" data-ch="h20"> Mark chapter 20 as done</label></div>
+<nav class="pager" aria-label="Previous and next"><a class="prev" href="ch19.html"><span class="lbl">← Previous</span>19. Oral exam prep</a><a class="next" href="ch21.html"><span class="lbl">Next →</span>21. Glossary</a></nav>
+</main>
+</div>
+<script>
+(function(){
+ var KEY='hiroshimabook-done-v1';
+ function load(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
+ function save(d){try{localStorage.setItem(KEY,JSON.stringify(d))}catch(e){}}
+ function refresh(){
+  var d=load();
+  document.querySelectorAll('[data-ch]').forEach(function(el){el.classList.toggle('done',!!d[el.getAttribute('data-ch')])});
+  document.querySelectorAll('input.done-cb').forEach(function(cb){cb.checked=!!d[cb.getAttribute('data-ch')]});
+  var p=document.getElementById('progress');
+  if(p&&window.BOOK){
+   var total=BOOK.chapters.length,done=BOOK.chapters.filter(function(c){return d[c.id]}).length;
+   p.querySelector('.count').textContent=done+' of '+total+' chapters done';
+   p.querySelector('.bar span').style.width=(100*done/total)+'%';
+   var ul=p.querySelector('.parts-progress');ul.innerHTML='';
+   BOOK.parts.forEach(function(pt){
+    var cs=BOOK.chapters.filter(function(c){return c.part===pt.n});
+    var dn=cs.filter(function(c){return d[c.id]}).length;
+    var nextc=cs.filter(function(c){return !d[c.id]})[0];
+    var li=document.createElement('li');
+    li.textContent=pt.name+': '+dn+' of '+cs.length;
+    if(nextc){li.appendChild(document.createTextNode(' · next: '));var a=document.createElement('a');a.href=nextc.file;a.textContent=nextc.title;li.appendChild(a)}
+    else{li.appendChild(document.createTextNode(' ✓'))}
+    ul.appendChild(li);
+   });
+  }
+ }
+ document.querySelectorAll('input.done-cb').forEach(function(cb){
+  cb.addEventListener('change',function(){var d=load(),id=cb.getAttribute('data-ch');if(cb.checked){d[id]=1}else{delete d[id]}save(d);refresh()});
+ });
+ var btn=document.querySelector('.menu-btn');
+ if(btn){btn.addEventListener('click',function(){var o=document.body.classList.toggle('nav-open');btn.setAttribute('aria-expanded',o?'true':'false')})}
+ refresh();
+})();
+</script>
+</body>
+</html>

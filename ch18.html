@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>18. Reliability and probability primer · Hiroshima prep</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1f2328;--muted:#5f6670;--line:#e3e0d8;--card:#f3f1ea;--link:#0b57d0;--code:#efede6;--accent:#2f5d8a;--fill:#fff2a8}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--link);text-underline-offset:2px}
+.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line)}
+.brand{font-weight:600;color:var(--fg);text-decoration:none}
+.menu-btn{font:inherit;font-size:15px;padding:6px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);cursor:pointer}
+.layout{display:block}
+.sidenav{display:none;font-size:15px;line-height:1.45;padding:12px 18px 40px}
+body.nav-open .sidenav{display:block;border-bottom:1px solid var(--line);background:var(--card)}
+.sidenav ul{list-style:none;margin:0;padding:0}
+.sidenav li{margin:2px 0}
+.sidenav a{display:block;padding:4px 6px;border-radius:6px;color:var(--fg);text-decoration:none}
+.sidenav a:hover{background:var(--line)}
+.sidenav a[aria-current=page]{background:var(--accent);color:#fff}
+.sidenav .part{margin:14px 0 4px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.sidenav .n{display:inline-block;min-width:1.8em;color:var(--muted)}
+.sidenav a[aria-current=page] .n{color:#fff}
+[data-ch].done>a::after,.toc-list li.done .t::after{content:" \2713";color:#2e7d32;font-weight:700}
+.page{max-width:760px;margin:0 auto;padding:20px 20px 60px}
+.chead{margin:8px 0 22px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.chead .part{margin:0;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.chead .chno{margin:6px 0 0;font-size:15px;color:var(--accent);font-weight:600}
+.chead h1{margin:4px 0 12px}
+.when{margin:0;padding:10px 14px;background:var(--card);border-left:4px solid var(--accent);border-radius:6px;font-size:16px}
+h1{font-size:1.75em;line-height:1.25}
+h2{font-size:1.35em;line-height:1.3;margin-top:2em;padding-top:.4em;border-top:1px solid var(--line)}
+h3{font-size:1.12em;line-height:1.35;margin-top:1.6em}
+h4{font-size:1em;margin-top:1.4em}
+p,li{overflow-wrap:break-word}
+li{margin:.25em 0}
+code{font:0.86em/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--code);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+pre{background:var(--code);padding:12px 14px;border-radius:8px;overflow-x:auto;font-size:14px;line-height:1.5}
+pre code{background:none;padding:0;overflow-wrap:normal;font-size:1em}
+blockquote{margin:1em 0;padding:6px 16px;border-left:4px solid #b9c7da;background:var(--card);border-radius:4px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1em 0}
+table{border-collapse:collapse;font-size:15px;line-height:1.45;min-width:100%}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}
+th{background:var(--card)}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+mark.fill{background:var(--fill);color:#1f2328;padding:0 3px;border-radius:3px}
+li.task{list-style:none}
+li.task .cb{display:inline-block;width:.85em;height:.85em;border:2px solid var(--muted);border-radius:3px;margin:0 .45em 0 -1.3em;vertical-align:-.05em}
+li.task .cb.on{background:var(--accent);border-color:var(--accent)}
+details.box{margin:0 0 20px;padding:8px 14px;background:var(--card);border-radius:8px}
+details.box summary{cursor:pointer;font-weight:600}
+details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
+.slides figure{margin:0 0 14px}
+.slides img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+.slides figcaption{font-size:14px;color:var(--muted);margin-top:4px}
+.donebox{margin:36px 0 16px;padding:14px 16px;background:var(--card);border-radius:10px;font-size:17px}
+.donebox label{cursor:pointer;display:flex;align-items:center;gap:10px}
+.donebox input,.toc-list input{width:22px;height:22px;accent-color:#2e7d32;flex:none}
+.pager{display:flex;gap:12px;justify-content:space-between;margin-top:8px}
+.pager a{flex:1 1 0;display:block;padding:12px 14px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--fg);background:var(--bg)}
+.pager a:hover{border-color:var(--accent)}
+.pager .lbl{display:block;font-size:13px;color:var(--muted)}
+.pager .next{text-align:right}
+.pager .ghost{visibility:hidden}
+.progress{margin:16px 0;padding:14px 16px;background:var(--card);border-radius:10px}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden;margin:8px 0}
+.bar span{display:block;height:100%;width:0;background:#2e7d32}
+.parts-progress{list-style:none;padding:0;margin:6px 0 0;font-size:15px}
+.start{display:inline-block;margin:6px 0 4px;padding:10px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.toc-list{list-style:none;padding:0}
+.toc-list li{display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line)}
+.toc-list .t{font-weight:600}
+.toc-list .w{display:block;font-size:15px;color:var(--muted)}
+.muted{color:var(--muted);font-size:15px}
+@media (max-width:640px){body{font-size:17px}.page{padding:14px 16px 50px}h1{font-size:1.5em}.pager{flex-direction:column}.pager .next{text-align:left}}
+@media (min-width:1100px){
+ .menu-btn{display:none}
+ .layout{display:grid;grid-template-columns:290px 1fr}
+ .sidenav{display:block;position:sticky;top:49px;height:calc(100vh - 49px);overflow-y:auto;border-right:1px solid var(--line);background:var(--bg)}
+ body.nav-open .sidenav{border-bottom:0;background:var(--bg)}
+ .page{padding-top:28px}
+}
+@media (prefers-color-scheme:dark){
+ :root{--bg:#17181b;--fg:#e4e4e2;--muted:#a3a7ad;--line:#33353a;--card:#212328;--link:#8ab4f8;--code:#262830;--accent:#6c9bd2;--fill:#f3dc6b}
+ .slides img{background:#fff}
+ blockquote{border-left-color:#4a5a70}
+}
+</style>
+
+</head>
+<body>
+<header class="topbar"><button class="menu-btn" type="button" aria-controls="sidenav" aria-expanded="false">Contents</button><a class="brand" href="index.html">Hiroshima prep</a></header>
+<div class="layout">
+<nav id="sidenav" class="sidenav" aria-label="Book contents"><ul>
+<li><a href="index.html">Home: how to use this book</a></li>
+<li><a href="contents.html">Contents</a></li>
+<li class="part">Part 1: Before Monday&#x27;s meeting (30 Oct to 2 Nov)</li>
+<li data-ch="h01"><a href="ch01.html"><span class="n">1.</span>Start here</a></li>
+<li data-ch="h02"><a href="ch02.html"><span class="n">2.</span>Presentation guide and slides</a></li>
+<li data-ch="h03"><a href="ch03.html"><span class="n">3.</span>Full script: hello to goodbye</a></li>
+<li data-ch="h04"><a href="ch04.html"><span class="n">4.</span>Mock interview (tap to hear the questions)</a></li>
+<li data-ch="h05"><a href="ch05.html"><span class="n">5.</span>The 30-minute game plan</a></li>
+<li data-ch="h06"><a href="ch06.html"><span class="n">6.</span>Prof. Zheng in depth</a></li>
+<li data-ch="h07"><a href="ch07.html"><span class="n">7.</span>The lab, Prof. Dohi and Prof. Okamura</a></li>
+<li data-ch="h08"><a href="ch08.html"><span class="n">8.</span>Your proposal, explained simply</a></li>
+<li data-ch="h09"><a href="ch09.html"><span class="n">9.</span>Question bank with model answers</a></li>
+<li data-ch="h10"><a href="ch10.html"><span class="n">10.</span>Weak points and honest answers</a></li>
+<li data-ch="h11"><a href="ch11.html"><span class="n">11.</span>Questions to ask Prof. Zheng</a></li>
+<li data-ch="h12"><a href="ch12.html"><span class="n">12.</span>Day-of checklist</a></li>
+<li data-ch="h13"><a href="ch13.html"><span class="n">13.</span>How to address them, and etiquette</a></li>
+<li data-ch="h14"><a href="ch14.html"><span class="n">14.</span>Email templates (thank-you and after)</a></li>
+<li class="part">Part 2: The application (2 to 13 Nov)</li>
+<li data-ch="h15"><a href="ch15.html"><span class="n">15.</span>Application process and dates</a></li>
+<li data-ch="h16"><a href="ch16.html"><span class="n">16.</span>Documents checklist</a></li>
+<li data-ch="h17"><a href="ch17.html"><span class="n">17.</span>Hiroshima vs NAIST: decide early</a></li>
+<li class="part">Part 3: The oral exam (24 Nov to 2 Dec)</li>
+<li data-ch="h18"><a href="ch18.html" aria-current="page"><span class="n">18.</span>Reliability and probability primer</a></li>
+<li data-ch="h19"><a href="ch19.html"><span class="n">19.</span>Oral exam prep</a></li>
+<li data-ch="h20"><a href="ch20.html"><span class="n">20.</span>Papers guide: lab and cited papers</a></li>
+<li class="part">Reference</li>
+<li data-ch="h21"><a href="ch21.html"><span class="n">21.</span>Glossary</a></li>
+</ul></nav>
+<main class="page">
+<article>
+<header class="chead">
+<p class="part">Part 3: The oral exam (24 Nov to 2 Dec)</p>
+<p class="chno">Chapter 18 of 21</p>
+<h1>Reliability and probability primer</h1>
+<p class="when"><strong>When and how long:</strong> Before Monday: sections 2 to 4. Before the oral exam: all of it.</p>
+</header>
+
+<p>The Dependable Systems Lab measures software quality with probability models. This page covers the ideas in your proposal and the basics the oral exam may touch. Each part has a small worked example. Practise saying each idea in one or two sentences.</p>
+<hr />
+<h2 id="1-probability-basics">1. Probability basics</h2>
+<ul>
+<li><strong>Probability</strong> of an event: a number from 0 to 1.</li>
+<li><strong>Independent events:</strong> P(A and B) = P(A) × P(B). Example: two fair coins both land heads with 0.5 × 0.5 = 0.25.</li>
+<li><strong>Expected value</strong> E[X]: the long-run average. A die: (1+2+3+4+5+6)/6 = 3.5.</li>
+<li><strong>Variance</strong> Var(X) = E[X²] − (E[X])²: how spread out X is.</li>
+<li><strong>Binomial:</strong> the number of successes in k independent tries, each with chance p. P(exactly j) = C(k, j) p^j (1 − p)^(k − j).</li>
+</ul>
+<p><strong>Check yourself:</strong> 3 independent runs, each fails with p = 0.1. Chance all 3 fail? 0.1³ = 0.001.</p>
+<h2 id="2-why-independent-failures-is-usually-wrong-eckhardt-and-lee">2. Why "independent failures" is usually wrong (Eckhardt and Lee)</h2>
+<p>Let θ(x) be the chance that a randomly built version fails on input x. Inputs differ: some are easy (θ near 0), some are hard (θ high).</p>
+<ul>
+<li>One version fails with p = E[θ(X)].</li>
+<li>Two versions <strong>both</strong> fail with E[θ(X)²] = p² + Var θ(X).</li>
+</ul>
+<p>So unless every input is equally hard (Var θ = 0), two versions fail together <strong>more</strong> often than p², the independent value. That's the Eckhardt and Lee result (1985).</p>
+<p><strong>Worked example:</strong> half the inputs have θ = 0, half have θ = 0.2. Then p = 0.1. Independent guess for "both fail": 0.1² = 0.01. Real value: E[θ²] = 0.5 × 0 + 0.5 × 0.04 = 0.02. Twice as many joint failures.</p>
+<h2 id="3-majority-voting-2-out-of-3">3. Majority voting (2 out of 3)</h2>
+<p>Three versions vote. The vote is wrong if at least 2 of 3 fail.</p>
+<ul>
+<li>On one input with chance θ: P(vote fails) = 3θ²(1 − θ) + θ³ = <strong>3θ² − 2θ³</strong>.</li>
+<li>Over all inputs: E[3θ² − 2θ³].</li>
+<li>If failures were independent with p = 0.1: 3(0.01) − 2(0.001) = 0.028. Much better than one version (0.1).</li>
+<li>With the example above (θ = 0 or 0.2): 0.5 × (3 × 0.04 − 2 × 0.008) = 0.5 × 0.104 = 0.052. Voting still helps, but less than independence promises.</li>
+</ul>
+<p><strong>Say it simply:</strong> voting helps most when versions make different mistakes. When they make the same mistakes, voting helps less.</p>
+<h2 id="4-the-beta-binomial-model-your-rq1">4. The beta-binomial model (your RQ1)</h2>
+<ul>
+<li>θ varies from input to input between 0 and 1. A <strong>Beta(a, b)</strong> distribution is a flexible model for that. Mean = a / (a + b).</li>
+<li>On one input, the number of failing runs out of k is then <strong>beta-binomial</strong>.</li>
+<li><strong>Intraclass correlation</strong> ρ = 1 / (a + b + 1). ρ = 0 means runs fail independently. Bigger ρ means they fail together more.</li>
+<li><strong>Overdispersion:</strong> the counts are more spread out than a plain binomial would give. That's the sign of shared failures.</li>
+<li><strong>Fitting:</strong> maximum likelihood (pick a and b that make the observed counts most likely). Uncertainty: <strong>bootstrap</strong> over runs (resample runs many times, refit, look at the spread).</li>
+</ul>
+<p><strong>Worked example:</strong> a = 1, b = 9. Mean failure chance = 0.1. ρ = 1/11 ≈ 0.09, so there is some shared failure.</p>
+<h2 id="5-nhpp-software-reliability-growth-models">5. NHPP software reliability growth models</h2>
+<p>When testers find and fix faults over time, the number of failures found by time t is modelled as a <strong>non-homogeneous Poisson process</strong> (NHPP) with mean value function m(t).</p>
+<ul>
+<li><strong>Goel-Okumoto:</strong> m(t) = ω(1 − e^(−bt)). ω = total expected faults, b = detection rate.</li>
+<li>Failure intensity λ(t) = m'(t) = ωb e^(−bt): it falls as faults are fixed.</li>
+<li><strong>Remaining faults</strong> at time t: ω − m(t).</li>
+</ul>
+<p><strong>Worked example:</strong> ω = 100, b = 0.1 per week. After 10 weeks: m(10) = 100(1 − e^(−1)) ≈ 63.2 faults found, about 37 left.</p>
+<p>The lab's tool <strong>pysrat</strong> (Prof. Okamura) fits these models to data. Your proposal's optional field-data part uses an infinite-server queue idea: each merged change adds faults that show up after a delay, m(t) = Σ ω_j G(t − τ_j).</p>
+<h2 id="6-availability-and-markov-chains-prof-zhengs-other-work">6. Availability and Markov chains (Prof. Zheng's other work)</h2>
+<ul>
+<li><strong>Availability</strong> = the fraction of time a system works. With mean time to failure MTTF and mean time to repair MTTR: A = MTTF / (MTTF + MTTR).</li>
+<li><strong>Markov chain:</strong> a system jumps between states (up, degraded, down) with fixed rates; the long-run share of time in each state gives availability.</li>
+<li><strong>Software rejuvenation:</strong> restart a system before it ages into failure (memory leaks, etc.). The question is when to restart to get the best availability. <strong>Checkpointing</strong> saves state so a failure loses less work.</li>
+</ul>
+<p><strong>Worked example:</strong> MTTF = 1,000 hours, MTTR = 10 hours. A = 1000 / 1010 ≈ 0.990.</p>
+<h2 id="7-confidence-intervals-and-the-bootstrap">7. Confidence intervals and the bootstrap</h2>
+<ul>
+<li>A <strong>95% confidence interval</strong> is a range built so that, over many repeats, 95% of such ranges contain the true value.</li>
+<li><strong>Bootstrap:</strong> resample your data with replacement many times, compute the statistic each time, and take the middle 95% of those values.</li>
+</ul>
+<h2 id="8-agreement-between-checkers-and-labels-cohens-kappa">8. Agreement between checkers and labels (Cohen's kappa)</h2>
+<p>κ = (observed agreement − chance agreement) / (1 − chance agreement). κ = 1 is perfect agreement, 0 is chance level. Your plan keeps a checker only if it agrees with your hand labels on at least 90% of 20 or more examples, and reports κ.</p>
+<hr />
+<h2 id="15-practice-questions-with-answers">15 practice questions (with answers)</h2>
+<ol>
+<li>Two independent versions each fail with 0.2. Both fail? <strong>0.04.</strong></li>
+<li>Same, but half the inputs have θ = 0 and half θ = 0.4. Both fail? <strong>E[θ²] = 0.5 × 0.16 = 0.08</strong>, double the independent value.</li>
+<li>Vote failure on an input with θ = 0.1? <strong>3(0.01) − 2(0.001) = 0.028.</strong></li>
+<li>Beta(2, 18): mean and ρ? <strong>Mean 0.1, ρ = 1/21 ≈ 0.048.</strong></li>
+<li>What does ρ = 0 mean? <strong>Runs fail independently.</strong></li>
+<li>Goel-Okumoto with ω = 50, b = 0.2: faults found by t = 5? <strong>50(1 − e^(−1)) ≈ 31.6.</strong></li>
+<li>Failure intensity at t = 0 for the same model? <strong>ωb = 10.</strong></li>
+<li>MTTF 500 h, MTTR 5 h: availability? <strong>500/505 ≈ 0.990.</strong></li>
+<li>Why can't boundary value inputs estimate a failure probability? <strong>Too few and not random: 30 to 50 chosen inputs don't represent the input distribution.</strong></li>
+<li>What is overdispersion? <strong>More spread in counts than a binomial allows; a sign of correlated failures.</strong></li>
+<li>Why bootstrap over runs, not over inputs? <strong>The same runs meet every input, so runs are the independent units.</strong></li>
+<li>Expected value of a fair die? <strong>3.5.</strong></li>
+<li>Binomial: 10 tries, p = 0.5, exactly 5 successes? <strong>C(10,5)/1024 = 252/1024 ≈ 0.246.</strong></li>
+<li>What does an NHPP model? <strong>Failure counts over time with a changing rate.</strong></li>
+<li>Cohen's kappa of 0? <strong>Agreement no better than chance.</strong></li>
+</ol>
+</article>
+<div class="donebox"><label><input type="checkbox" class="done-cb" data-ch="h18"> Mark chapter 18 as done</label></div>
+<nav class="pager" aria-label="Previous and next"><a class="prev" href="ch17.html"><span class="lbl">← Previous</span>17. Hiroshima vs NAIST: decide early</a><a class="next" href="ch19.html"><span class="lbl">Next →</span>19. Oral exam prep</a></nav>
+</main>
+</div>
+<script>
+(function(){
+ var KEY='hiroshimabook-done-v1';
+ function load(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
+ function save(d){try{localStorage.setItem(KEY,JSON.stringify(d))}catch(e){}}
+ function refresh(){
+  var d=load();
+  document.querySelectorAll('[data-ch]').forEach(function(el){el.classList.toggle('done',!!d[el.getAttribute('data-ch')])});
+  document.querySelectorAll('input.done-cb').forEach(function(cb){cb.checked=!!d[cb.getAttribute('data-ch')]});
+  var p=document.getElementById('progress');
+  if(p&&window.BOOK){
+   var total=BOOK.chapters.length,done=BOOK.chapters.filter(function(c){return d[c.id]}).length;
+   p.querySelector('.count').textContent=done+' of '+total+' chapters done';
+   p.querySelector('.bar span').style.width=(100*done/total)+'%';
+   var ul=p.querySelector('.parts-progress');ul.innerHTML='';
+   BOOK.parts.forEach(function(pt){
+    var cs=BOOK.chapters.filter(function(c){return c.part===pt.n});
+    var dn=cs.filter(function(c){return d[c.id]}).length;
+    var nextc=cs.filter(function(c){return !d[c.id]})[0];
+    var li=document.createElement('li');
+    li.textContent=pt.name+': '+dn+' of '+cs.length;
+    if(nextc){li.appendChild(document.createTextNode(' · next: '));var a=document.createElement('a');a.href=nextc.file;a.textContent=nextc.title;li.appendChild(a)}
+    else{li.appendChild(document.createTextNode(' ✓'))}
+    ul.appendChild(li);
+   });
+  }
+ }
+ document.querySelectorAll('input.done-cb').forEach(function(cb){
+  cb.addEventListener('change',function(){var d=load(),id=cb.getAttribute('data-ch');if(cb.checked){d[id]=1}else{delete d[id]}save(d);refresh()});
+ });
+ var btn=document.querySelector('.menu-btn');
+ if(btn){btn.addEventListener('click',function(){var o=document.body.classList.toggle('nav-open');btn.setAttribute('aria-expanded',o?'true':'false')})}
+ refresh();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>10. Weak points and honest answers · Hiroshima prep</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1f2328;--muted:#5f6670;--line:#e3e0d8;--card:#f3f1ea;--link:#0b57d0;--code:#efede6;--accent:#2f5d8a;--fill:#fff2a8}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--link);text-underline-offset:2px}
+.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line)}
+.brand{font-weight:600;color:var(--fg);text-decoration:none}
+.menu-btn{font:inherit;font-size:15px;padding:6px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);cursor:pointer}
+.layout{display:block}
+.sidenav{display:none;font-size:15px;line-height:1.45;padding:12px 18px 40px}
+body.nav-open .sidenav{display:block;border-bottom:1px solid var(--line);background:var(--card)}
+.sidenav ul{list-style:none;margin:0;padding:0}
+.sidenav li{margin:2px 0}
+.sidenav a{display:block;padding:4px 6px;border-radius:6px;color:var(--fg);text-decoration:none}
+.sidenav a:hover{background:var(--line)}
+.sidenav a[aria-current=page]{background:var(--accent);color:#fff}
+.sidenav .part{margin:14px 0 4px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.sidenav .n{display:inline-block;min-width:1.8em;color:var(--muted)}
+.sidenav a[aria-current=page] .n{color:#fff}
+[data-ch].done>a::after,.toc-list li.done .t::after{content:" \2713";color:#2e7d32;font-weight:700}
+.page{max-width:760px;margin:0 auto;padding:20px 20px 60px}
+.chead{margin:8px 0 22px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.chead .part{margin:0;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.chead .chno{margin:6px 0 0;font-size:15px;color:var(--accent);font-weight:600}
+.chead h1{margin:4px 0 12px}
+.when{margin:0;padding:10px 14px;background:var(--card);border-left:4px solid var(--accent);border-radius:6px;font-size:16px}
+h1{font-size:1.75em;line-height:1.25}
+h2{font-size:1.35em;line-height:1.3;margin-top:2em;padding-top:.4em;border-top:1px solid var(--line)}
+h3{font-size:1.12em;line-height:1.35;margin-top:1.6em}
+h4{font-size:1em;margin-top:1.4em}
+p,li{overflow-wrap:break-word}
+li{margin:.25em 0}
+code{font:0.86em/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--code);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+pre{background:var(--code);padding:12px 14px;border-radius:8px;overflow-x:auto;font-size:14px;line-height:1.5}
+pre code{background:none;padding:0;overflow-wrap:normal;font-size:1em}
+blockquote{margin:1em 0;padding:6px 16px;border-left:4px solid #b9c7da;background:var(--card);border-radius:4px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1em 0}
+table{border-collapse:collapse;font-size:15px;line-height:1.45;min-width:100%}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}
+th{background:var(--card)}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+mark.fill{background:var(--fill);color:#1f2328;padding:0 3px;border-radius:3px}
+li.task{list-style:none}
+li.task .cb{display:inline-block;width:.85em;height:.85em;border:2px solid var(--muted);border-radius:3px;margin:0 .45em 0 -1.3em;vertical-align:-.05em}
+li.task .cb.on{background:var(--accent);border-color:var(--accent)}
+details.box{margin:0 0 20px;padding:8px 14px;background:var(--card);border-radius:8px}
+details.box summary{cursor:pointer;font-weight:600}
+details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
+.slides figure{margin:0 0 14px}
+.slides img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+.slides figcaption{font-size:14px;color:var(--muted);margin-top:4px}
+.donebox{margin:36px 0 16px;padding:14px 16px;background:var(--card);border-radius:10px;font-size:17px}
+.donebox label{cursor:pointer;display:flex;align-items:center;gap:10px}
+.donebox input,.toc-list input{width:22px;height:22px;accent-color:#2e7d32;flex:none}
+.pager{display:flex;gap:12px;justify-content:space-between;margin-top:8px}
+.pager a{flex:1 1 0;display:block;padding:12px 14px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--fg);background:var(--bg)}
+.pager a:hover{border-color:var(--accent)}
+.pager .lbl{display:block;font-size:13px;color:var(--muted)}
+.pager .next{text-align:right}
+.pager .ghost{visibility:hidden}
+.progress{margin:16px 0;padding:14px 16px;background:var(--card);border-radius:10px}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden;margin:8px 0}
+.bar span{display:block;height:100%;width:0;background:#2e7d32}
+.parts-progress{list-style:none;padding:0;margin:6px 0 0;font-size:15px}
+.start{display:inline-block;margin:6px 0 4px;padding:10px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.toc-list{list-style:none;padding:0}
+.toc-list li{display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line)}
+.toc-list .t{font-weight:600}
+.toc-list .w{display:block;font-size:15px;color:var(--muted)}
+.muted{color:var(--muted);font-size:15px}
+@media (max-width:640px){body{font-size:17px}.page{padding:14px 16px 50px}h1{font-size:1.5em}.pager{flex-direction:column}.pager .next{text-align:left}}
+@media (min-width:1100px){
+ .menu-btn{display:none}
+ .layout{display:grid;grid-template-columns:290px 1fr}
+ .sidenav{display:block;position:sticky;top:49px;height:calc(100vh - 49px);overflow-y:auto;border-right:1px solid var(--line);background:var(--bg)}
+ body.nav-open .sidenav{border-bottom:0;background:var(--bg)}
+ .page{padding-top:28px}
+}
+@media (prefers-color-scheme:dark){
+ :root{--bg:#17181b;--fg:#e4e4e2;--muted:#a3a7ad;--line:#33353a;--card:#212328;--link:#8ab4f8;--code:#262830;--accent:#6c9bd2;--fill:#f3dc6b}
+ .slides img{background:#fff}
+ blockquote{border-left-color:#4a5a70}
+}
+</style>
+
+</head>
+<body>
+<header class="topbar"><button class="menu-btn" type="button" aria-controls="sidenav" aria-expanded="false">Contents</button><a class="brand" href="index.html">Hiroshima prep</a></header>
+<div class="layout">
+<nav id="sidenav" class="sidenav" aria-label="Book contents"><ul>
+<li><a href="index.html">Home: how to use this book</a></li>
+<li><a href="contents.html">Contents</a></li>
+<li class="part">Part 1: Before Monday&#x27;s meeting (30 Oct to 2 Nov)</li>
+<li data-ch="h01"><a href="ch01.html"><span class="n">1.</span>Start here</a></li>
+<li data-ch="h02"><a href="ch02.html"><span class="n">2.</span>Presentation guide and slides</a></li>
+<li data-ch="h03"><a href="ch03.html"><span class="n">3.</span>Full script: hello to goodbye</a></li>
+<li data-ch="h04"><a href="ch04.html"><span class="n">4.</span>Mock interview (tap to hear the questions)</a></li>
+<li data-ch="h05"><a href="ch05.html"><span class="n">5.</span>The 30-minute game plan</a></li>
+<li data-ch="h06"><a href="ch06.html"><span class="n">6.</span>Prof. Zheng in depth</a></li>
+<li data-ch="h07"><a href="ch07.html"><span class="n">7.</span>The lab, Prof. Dohi and Prof. Okamura</a></li>
+<li data-ch="h08"><a href="ch08.html"><span class="n">8.</span>Your proposal, explained simply</a></li>
+<li data-ch="h09"><a href="ch09.html"><span class="n">9.</span>Question bank with model answers</a></li>
+<li data-ch="h10"><a href="ch10.html" aria-current="page"><span class="n">10.</span>Weak points and honest answers</a></li>
+<li data-ch="h11"><a href="ch11.html"><span class="n">11.</span>Questions to ask Prof. Zheng</a></li>
+<li data-ch="h12"><a href="ch12.html"><span class="n">12.</span>Day-of checklist</a></li>
+<li data-ch="h13"><a href="ch13.html"><span class="n">13.</span>How to address them, and etiquette</a></li>
+<li data-ch="h14"><a href="ch14.html"><span class="n">14.</span>Email templates (thank-you and after)</a></li>
+<li class="part">Part 2: The application (2 to 13 Nov)</li>
+<li data-ch="h15"><a href="ch15.html"><span class="n">15.</span>Application process and dates</a></li>
+<li data-ch="h16"><a href="ch16.html"><span class="n">16.</span>Documents checklist</a></li>
+<li data-ch="h17"><a href="ch17.html"><span class="n">17.</span>Hiroshima vs NAIST: decide early</a></li>
+<li class="part">Part 3: The oral exam (24 Nov to 2 Dec)</li>
+<li data-ch="h18"><a href="ch18.html"><span class="n">18.</span>Reliability and probability primer</a></li>
+<li data-ch="h19"><a href="ch19.html"><span class="n">19.</span>Oral exam prep</a></li>
+<li data-ch="h20"><a href="ch20.html"><span class="n">20.</span>Papers guide: lab and cited papers</a></li>
+<li class="part">Reference</li>
+<li data-ch="h21"><a href="ch21.html"><span class="n">21.</span>Glossary</a></li>
+</ul></nav>
+<main class="page">
+<article>
+<header class="chead">
+<p class="part">Part 1: Before Monday&#x27;s meeting (30 Oct to 2 Nov)</p>
+<p class="chno">Chapter 10 of 21</p>
+<h1>Weak points and honest answers</h1>
+<p class="when"><strong>When and how long:</strong> Sunday, 30 minutes.</p>
+</header>
+
+<p>These are the places where Prof. Zheng (or the oral exam panel) could push. For each one: the weak point, then one or two honest sentences to say. Short and true beats long and clever.</p>
+<h2 id="about-you">About you</h2>
+<p><strong>1. Your statistics background is thin.</strong>
+"My only statistics course so far is BCS301 in my third semester: distributions, Markov chains, hypothesis tests and ANOVA. That's why probability, statistics and reliability courses come first in my plan."</p>
+<p><strong>2. You have no research publications.</strong>
+"I was second of four authors on a 2023 review paper in a college special issue of IJIRAE. It was a review, not my own experiment. I haven't published research of my own yet."</p>
+<p><strong>3. You have only read the abstract of his N-version paper.</strong>
+"I've only read the abstract, because the full text is behind the Springer paywall. Could I ask you for a copy?"</p>
+<p><strong>4. You haven't used Julia or R, and haven't run pysrat.</strong>
+"Not yet. I use Python every day, and I'm happy to learn whatever the lab uses." (Change this if you install pysrat and run its example before Monday.)</p>
+<p><strong>5. Your Japanese is beginner level.</strong>
+"I'm a beginner, below N5. I want to reach N5 before I arrive and keep studying in Japan. Could I work in English in the lab at first?"</p>
+<p><strong>6. You work full time.</strong>
+"I'll leave Layerpath before I enrol and study full time."</p>
+<p><strong>7. You are also applying to NAIST.</strong>
+"Yes, I'm also applying to NAIST for October 2027. Their official application is in February. If I'm admitted here, I'll tell you my decision quickly and honestly."</p>
+<p><strong>8. Funding.</strong>
+"I'm self-funded. I've planned for the enrolment fee and two years of tuition, about 1.35 million yen, plus living costs."</p>
+<h2 id="about-the-research">About the research</h2>
+<p><strong>9. You have never run the experiment.</strong>
+"Right. The pilot in the first half of Year 1 will check the cost, the number of runs, and whether the checkers and input generators work."</p>
+<p><strong>10. 10 runs per setting might be too few to estimate ρ.</strong>
+"The pilot will show whether 10 runs give a useful interval for ρ. If not, I'd change the number then."</p>
+<p><strong>11. Many inputs may never fail, so the data is mostly zeros.</strong>
+"Then a zero-inflated beta-binomial may fit better. The pilot will show which one fits."</p>
+<p><strong>12. "Same failure" is hard to define for code.</strong>
+"I compare each version with the merged code under a fixed rule: a float tolerance, the same exception class, and order ignored for unordered collections. I check 20 disagreements per task by hand."</p>
+<p><strong>13. The merged code may itself be wrong.</strong>
+"That's the honest limit. If the merged code has the same bug, this kind of testing can't see it. I drop inputs where I find the merged code is wrong."</p>
+<p><strong>14. Results may not generalise beyond these tasks, agents and models.</strong>
+"Yes. It's 10 tasks in Python, two commercial agents and one open-weight model at fixed versions. I'll report it as that, and release everything so others can repeat it."</p>
+<p><strong>15. Claude Code and Codex don't let you set the temperature.</strong>
+"As far as I know, neither CLI documents a temperature setting. So I treat each setting as a distribution of runs, and I vary temperature only in my own harness."</p>
+<p><strong>16. Removing a rule might change nothing.</strong>
+"A checker confirms each manipulation changed what the agent did. If replacing a rule changes nothing in reliability, that's a result too."</p>
+<p><strong>17. Cost: 420 to 590 US dollars.</strong>
+"That's at the per-task costs in Gloaguen et al., and newer models may cost more. I'd ask whether it fits a lab budget, and if not, move more runs to the open-weight model." Never imply the lab must pay.</p>
+<p><strong>18. Boundary value testing can't estimate failure probability.</strong>
+"Right, so I use your lab's boundary method only as an extra stress test, not for the estimates."</p>
+<p><strong>19. Public pull requests may be in the models' training data.</strong>
+"Where possible I add pull requests merged after the models' training cutoff, and I report older tasks separately."</p>
+<p><strong>20. Flaky tests.</strong>
+"I only keep tasks whose tests fail before the change and pass after it, and I would re-run the tests to drop flaky ones."</p>
+<h2 id="things-never-to-say">Things never to say</h2>
+<ul>
+<li>"Most of my code is written by agents."</li>
+<li>"No one has ever done this." Say "as far as I know".</li>
+<li>"I have read your paper" (only the abstract so far).</li>
+<li>Anything about Burnt.</li>
+<li>That BrandMemory was a study. It was one A/B comparison.</li>
+</ul>
+</article>
+<div class="donebox"><label><input type="checkbox" class="done-cb" data-ch="h10"> Mark chapter 10 as done</label></div>
+<nav class="pager" aria-label="Previous and next"><a class="prev" href="ch09.html"><span class="lbl">← Previous</span>9. Question bank with model answers</a><a class="next" href="ch11.html"><span class="lbl">Next →</span>11. Questions to ask Prof. Zheng</a></nav>
+</main>
+</div>
+<script>
+(function(){
+ var KEY='hiroshimabook-done-v1';
+ function load(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
+ function save(d){try{localStorage.setItem(KEY,JSON.stringify(d))}catch(e){}}
+ function refresh(){
+  var d=load();
+  document.querySelectorAll('[data-ch]').forEach(function(el){el.classList.toggle('done',!!d[el.getAttribute('data-ch')])});
+  document.querySelectorAll('input.done-cb').forEach(function(cb){cb.checked=!!d[cb.getAttribute('data-ch')]});
+  var p=document.getElementById('progress');
+  if(p&&window.BOOK){
+   var total=BOOK.chapters.length,done=BOOK.chapters.filter(function(c){return d[c.id]}).length;
+   p.querySelector('.count').textContent=done+' of '+total+' chapters done';
+   p.querySelector('.bar span').style.width=(100*done/total)+'%';
+   var ul=p.querySelector('.parts-progress');ul.innerHTML='';
+   BOOK.parts.forEach(function(pt){
+    var cs=BOOK.chapters.filter(function(c){return c.part===pt.n});
+    var dn=cs.filter(function(c){return d[c.id]}).length;
+    var nextc=cs.filter(function(c){return !d[c.id]})[0];
+    var li=document.createElement('li');
+    li.textContent=pt.name+': '+dn+' of '+cs.length;
+    if(nextc){li.appendChild(document.createTextNode(' · next: '));var a=document.createElement('a');a.href=nextc.file;a.textContent=nextc.title;li.appendChild(a)}
+    else{li.appendChild(document.createTextNode(' ✓'))}
+    ul.appendChild(li);
+   });
+  }
+ }
+ document.querySelectorAll('input.done-cb').forEach(function(cb){
+  cb.addEventListener('change',function(){var d=load(),id=cb.getAttribute('data-ch');if(cb.checked){d[id]=1}else{delete d[id]}save(d);refresh()});
+ });
+ var btn=document.querySelector('.menu-btn');
+ if(btn){btn.addEventListener('click',function(){var o=document.body.classList.toggle('nav-open');btn.setAttribute('aria-expanded',o?'true':'false')})}
+ refresh();
+})();
+</script>
+</body>
+</html>

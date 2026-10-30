@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>14. Email templates (thank-you and after) · Hiroshima prep</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1f2328;--muted:#5f6670;--line:#e3e0d8;--card:#f3f1ea;--link:#0b57d0;--code:#efede6;--accent:#2f5d8a;--fill:#fff2a8}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--link);text-underline-offset:2px}
+.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line)}
+.brand{font-weight:600;color:var(--fg);text-decoration:none}
+.menu-btn{font:inherit;font-size:15px;padding:6px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);cursor:pointer}
+.layout{display:block}
+.sidenav{display:none;font-size:15px;line-height:1.45;padding:12px 18px 40px}
+body.nav-open .sidenav{display:block;border-bottom:1px solid var(--line);background:var(--card)}
+.sidenav ul{list-style:none;margin:0;padding:0}
+.sidenav li{margin:2px 0}
+.sidenav a{display:block;padding:4px 6px;border-radius:6px;color:var(--fg);text-decoration:none}
+.sidenav a:hover{background:var(--line)}
+.sidenav a[aria-current=page]{background:var(--accent);color:#fff}
+.sidenav .part{margin:14px 0 4px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.sidenav .n{display:inline-block;min-width:1.8em;color:var(--muted)}
+.sidenav a[aria-current=page] .n{color:#fff}
+[data-ch].done>a::after,.toc-list li.done .t::after{content:" \2713";color:#2e7d32;font-weight:700}
+.page{max-width:760px;margin:0 auto;padding:20px 20px 60px}
+.chead{margin:8px 0 22px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.chead .part{margin:0;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.chead .chno{margin:6px 0 0;font-size:15px;color:var(--accent);font-weight:600}
+.chead h1{margin:4px 0 12px}
+.when{margin:0;padding:10px 14px;background:var(--card);border-left:4px solid var(--accent);border-radius:6px;font-size:16px}
+h1{font-size:1.75em;line-height:1.25}
+h2{font-size:1.35em;line-height:1.3;margin-top:2em;padding-top:.4em;border-top:1px solid var(--line)}
+h3{font-size:1.12em;line-height:1.35;margin-top:1.6em}
+h4{font-size:1em;margin-top:1.4em}
+p,li{overflow-wrap:break-word}
+li{margin:.25em 0}
+code{font:0.86em/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--code);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+pre{background:var(--code);padding:12px 14px;border-radius:8px;overflow-x:auto;font-size:14px;line-height:1.5}
+pre code{background:none;padding:0;overflow-wrap:normal;font-size:1em}
+blockquote{margin:1em 0;padding:6px 16px;border-left:4px solid #b9c7da;background:var(--card);border-radius:4px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1em 0}
+table{border-collapse:collapse;font-size:15px;line-height:1.45;min-width:100%}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}
+th{background:var(--card)}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+mark.fill{background:var(--fill);color:#1f2328;padding:0 3px;border-radius:3px}
+li.task{list-style:none}
+li.task .cb{display:inline-block;width:.85em;height:.85em;border:2px solid var(--muted);border-radius:3px;margin:0 .45em 0 -1.3em;vertical-align:-.05em}
+li.task .cb.on{background:var(--accent);border-color:var(--accent)}
+details.box{margin:0 0 20px;padding:8px 14px;background:var(--card);border-radius:8px}
+details.box summary{cursor:pointer;font-weight:600}
+details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
+.slides figure{margin:0 0 14px}
+.slides img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+.slides figcaption{font-size:14px;color:var(--muted);margin-top:4px}
+.donebox{margin:36px 0 16px;padding:14px 16px;background:var(--card);border-radius:10px;font-size:17px}
+.donebox label{cursor:pointer;display:flex;align-items:center;gap:10px}
+.donebox input,.toc-list input{width:22px;height:22px;accent-color:#2e7d32;flex:none}
+.pager{display:flex;gap:12px;justify-content:space-between;margin-top:8px}
+.pager a{flex:1 1 0;display:block;padding:12px 14px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--fg);background:var(--bg)}
+.pager a:hover{border-color:var(--accent)}
+.pager .lbl{display:block;font-size:13px;color:var(--muted)}
+.pager .next{text-align:right}
+.pager .ghost{visibility:hidden}
+.progress{margin:16px 0;padding:14px 16px;background:var(--card);border-radius:10px}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden;margin:8px 0}
+.bar span{display:block;height:100%;width:0;background:#2e7d32}
+.parts-progress{list-style:none;padding:0;margin:6px 0 0;font-size:15px}
+.start{display:inline-block;margin:6px 0 4px;padding:10px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.toc-list{list-style:none;padding:0}
+.toc-list li{display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line)}
+.toc-list .t{font-weight:600}
+.toc-list .w{display:block;font-size:15px;color:var(--muted)}
+.muted{color:var(--muted);font-size:15px}
+@media (max-width:640px){body{font-size:17px}.page{padding:14px 16px 50px}h1{font-size:1.5em}.pager{flex-direction:column}.pager .next{text-align:left}}
+@media (min-width:1100px){
+ .menu-btn{display:none}
+ .layout{display:grid;grid-template-columns:290px 1fr}
+ .sidenav{display:block;position:sticky;top:49px;height:calc(100vh - 49px);overflow-y:auto;border-right:1px solid var(--line);background:var(--bg)}
+ body.nav-open .sidenav{border-bottom:0;background:var(--bg)}
+ .page{padding-top:28px}
+}
+@media (prefers-color-scheme:dark){
+ :root{--bg:#17181b;--fg:#e4e4e2;--muted:#a3a7ad;--line:#33353a;--card:#212328;--link:#8ab4f8;--code:#262830;--accent:#6c9bd2;--fill:#f3dc6b}
+ .slides img{background:#fff}
+ blockquote{border-left-color:#4a5a70}
+}
+</style>
+
+</head>
+<body>
+<header class="topbar"><button class="menu-btn" type="button" aria-controls="sidenav" aria-expanded="false">Contents</button><a class="brand" href="index.html">Hiroshima prep</a></header>
+<div class="layout">
+<nav id="sidenav" class="sidenav" aria-label="Book contents"><ul>
+<li><a href="index.html">Home: how to use this book</a></li>
+<li><a href="contents.html">Contents</a></li>
+<li class="part">Part 1: Before Monday&#x27;s meeting (30 Oct to 2 Nov)</li>
+<li data-ch="h01"><a href="ch01.html"><span class="n">1.</span>Start here</a></li>
+<li data-ch="h02"><a href="ch02.html"><span class="n">2.</span>Presentation guide and slides</a></li>
+<li data-ch="h03"><a href="ch03.html"><span class="n">3.</span>Full script: hello to goodbye</a></li>
+<li data-ch="h04"><a href="ch04.html"><span class="n">4.</span>Mock interview (tap to hear the questions)</a></li>
+<li data-ch="h05"><a href="ch05.html"><span class="n">5.</span>The 30-minute game plan</a></li>
+<li data-ch="h06"><a href="ch06.html"><span class="n">6.</span>Prof. Zheng in depth</a></li>
+<li data-ch="h07"><a href="ch07.html"><span class="n">7.</span>The lab, Prof. Dohi and Prof. Okamura</a></li>
+<li data-ch="h08"><a href="ch08.html"><span class="n">8.</span>Your proposal, explained simply</a></li>
+<li data-ch="h09"><a href="ch09.html"><span class="n">9.</span>Question bank with model answers</a></li>
+<li data-ch="h10"><a href="ch10.html"><span class="n">10.</span>Weak points and honest answers</a></li>
+<li data-ch="h11"><a href="ch11.html"><span class="n">11.</span>Questions to ask Prof. Zheng</a></li>
+<li data-ch="h12"><a href="ch12.html"><span class="n">12.</span>Day-of checklist</a></li>
+<li data-ch="h13"><a href="ch13.html"><span class="n">13.</span>How to address them, and etiquette</a></li>
+<li data-ch="h14"><a href="ch14.html" aria-current="page"><span class="n">14.</span>Email templates (thank-you and after)</a></li>
+<li class="part">Part 2: The application (2 to 13 Nov)</li>
+<li data-ch="h15"><a href="ch15.html"><span class="n">15.</span>Application process and dates</a></li>
+<li data-ch="h16"><a href="ch16.html"><span class="n">16.</span>Documents checklist</a></li>
+<li data-ch="h17"><a href="ch17.html"><span class="n">17.</span>Hiroshima vs NAIST: decide early</a></li>
+<li class="part">Part 3: The oral exam (24 Nov to 2 Dec)</li>
+<li data-ch="h18"><a href="ch18.html"><span class="n">18.</span>Reliability and probability primer</a></li>
+<li data-ch="h19"><a href="ch19.html"><span class="n">19.</span>Oral exam prep</a></li>
+<li data-ch="h20"><a href="ch20.html"><span class="n">20.</span>Papers guide: lab and cited papers</a></li>
+<li class="part">Reference</li>
+<li data-ch="h21"><a href="ch21.html"><span class="n">21.</span>Glossary</a></li>
+</ul></nav>
+<main class="page">
+<article>
+<header class="chead">
+<p class="part">Part 1: Before Monday&#x27;s meeting (30 Oct to 2 Nov)</p>
+<p class="chno">Chapter 14 of 21</p>
+<h1>Email templates</h1>
+<p class="when"><strong>When and how long:</strong> Monday, right after the call.</p>
+</header>
+
+<p><strong>What this file is:</strong> short, ready-to-send emails for the next ten days. Each one is under 120 words. Fill the <code>[FILL]</code> parts, delete the lines you don't use, read it out loud once, then send.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Email</th>
+<th>To</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Confirm the meeting time</td>
+<td>Prof. Zheng</td>
+<td>Only if you have not confirmed his 30 Oct email yet. Today.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Thank you after the call</td>
+<td>Prof. Zheng</td>
+<td>Mon 2 Nov, by 16:30 IST</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Sending the Consent Form</td>
+<td>Prof. Zheng</td>
+<td>Mon 2 Nov, with or right after email 2</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Sending the research plan for review</td>
+<td>Prof. Zheng</td>
+<td>The day you agreed, ideally Tue 3 or Wed 4 Nov</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Asking the Support Office for instructions</td>
+<td>Support Office</td>
+<td>Only if their instructions have not arrived, or don't answer your questions</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Sending scans for their check</td>
+<td>Support Office</td>
+<td>As soon as their instructions ask for it, by Thu 5 Nov</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Documents posted</td>
+<td>Support Office</td>
+<td>Fri 6 Nov, after the courier</td>
+</tr>
+<tr>
+<td>8</td>
+<td>A polite nudge on the Consent Form</td>
+<td>Prof. Zheng</td>
+<td>Only if no news by Wed 4 Nov evening IST</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Rejoining the call</td>
+<td>Prof. Zheng</td>
+<td>Only if your connection drops</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="0-rules-for-every-email">0. Rules for every email</h2>
+<ul>
+<li><strong>From:</strong> sudhanshuk1140@gmail.com.</li>
+<li><strong>Prof. Zheng:</strong> always reply in his thread, with <strong>Reply All</strong>, so Prof. Dohi and Prof. Okamura stay in copy as he set it. Do not add anyone new. If he writes to you alone, reply to him alone.</li>
+<li><strong>Support Office:</strong> reply in their 29 Oct thread. Address: kou-gaku-daigakuin@office.hiroshima-u.ac.jp. Copy Prof. Zheng only if he said yes on the call.</li>
+<li><strong>Keep the subject line.</strong> It starts with "Re:".</li>
+<li><strong>Greeting:</strong> "Dear Prof. Zheng," and "Dear Support Office,". Never first names.</li>
+<li><strong>Sign-off:</strong> "Kind regards," then your full name and your email. No phone number, no address.</li>
+<li><strong>Times:</strong> JST first, IST in brackets when it helps. JST = IST + 3 hours 30 minutes.</li>
+<li><strong>Office hours in Japan:</strong> 8:30 to 17:00 JST on weekdays = 05:00 to 13:30 IST. <strong>Tue 3 Nov is Culture Day, a holiday in Japan.</strong> Expect no reply from the office that day.</li>
+<li><strong>Attachments:</strong> name them clearly, with your name in the file name. Check they open before you send.</li>
+<li><strong>No square brackets left</strong> in the text when you press Send.</li>
+</ul>
+<hr />
+<h2 id="1-confirm-the-meeting-time">1. Confirm the meeting time</h2>
+<p>Only if you have not yet replied to his 30 Oct email.</p>
+<pre><code>Dear Prof. Zheng,
+
+Thank you very much. Monday 2 November, 17:00 to 17:30 JST,
+on Microsoft Teams, works well for me. I will join with the link
+in your email.
+
+I look forward to speaking with you.
+
+Kind regards,
+Sudhanshu Pandit
+sudhanshuk1140@gmail.com
+</code></pre>
+<hr />
+<h2 id="2-thank-you-after-the-call">2. Thank you after the call</h2>
+<p>Send the same day. One real point from the call is enough. Don't summarise the whole talk.</p>
+<pre><code>Dear Prof. Zheng,
+
+Thank you very much for your time today, and for agreeing to
+supervise my research. Your advice on [FILL: one real thing he
+said, for example &quot;what to revise for the oral exam&quot;] was very
+helpful.
+
+As we agreed, I will [FILL: what you promised, for example &quot;send
+you the updated research plan by Wednesday 4 November&quot;], so that
+I can post my documents on 6 November.
+
+Thank you again. I look forward to learning in your laboratory.
+
+Kind regards,
+Sudhanshu Pandit
+sudhanshuk1140@gmail.com
+</code></pre>
+<p>If Prof. Dohi or Prof. Okamura joined, add one line after the first paragraph:</p>
+<pre><code>Thank you also, Prof. Dohi and Prof. Okamura, for joining the call.
+</code></pre>
+<p>(Keep only the names of those who joined.)</p>
+<hr />
+<h2 id="3-sending-the-consent-form">3. Sending the Consent Form</h2>
+<p><strong>Attach:</strong> <code>5_Consent_Form_Sudhanshu_Pandit.docx</code> (from <code>05_Application/forms/</code>). If he asked for a PDF, export it from Word first and check it.</p>
+<pre><code>Dear Prof. Zheng,
+
+As we discussed, I have attached the Consent Form for my
+application to the Informatics and Data Science Program (Special
+Selection for International Students living outside Japan, April
+2027). I have filled in only my name. The date, the program, your
+name and the details of consent are left for you.
+
+[FILL, keep one line, as agreed:
+Thank you for kindly handing the signed form to the Support Office.
+OR
+When it is signed, could you please send me a scan? I will print it
+and put it in my envelope.]
+
+My documents must arrive by 13 November, so I plan to post them on
+6 November.
+
+Kind regards,
+Sudhanshu Pandit
+sudhanshuk1140@gmail.com
+</code></pre>
+<p><strong>One email or two?</strong> If you send emails 2 and 3 on the same afternoon, you can merge them: put the first paragraph of email 2 at the top of email 3. Keep it under about 150 words.</p>
+<hr />
+<h2 id="4-sending-the-research-plan-for-review">4. Sending the research plan for review</h2>
+<p><strong>Attach:</strong> <code>1_Research_Plan_Sudhanshu_Pandit.docx</code> and a PDF of it. Make the changes he asked for first.</p>
+<pre><code>Dear Prof. Zheng,
+
+As you suggested, I have attached my research plan on the
+university form. I made these changes: [FILL: one line, for
+example &quot;a shorter field data part, and conversation history
+reuse added as a setting&quot;].
+
+If possible, could you let me know by Thursday 5 November whether
+anything else should change? I will then print it and post all my
+documents on 6 November.
+
+Thank you very much for your help.
+
+Kind regards,
+Sudhanshu Pandit
+sudhanshuk1140@gmail.com
+</code></pre>
+<hr />
+<h2 id="5-asking-the-support-office-for-instructions">5. Asking the Support Office for instructions</h2>
+<p>On 29 Oct the Support Office said they would email you detailed instructions and check your documents by email before you post them. <strong>Send this only if those instructions have not arrived, or they don't answer these points.</strong></p>
+<p>Best time: Monday 2 Nov between 08:00 and 13:00 IST (11:30 to 16:30 JST), so they can read it before they close. Their next working day after that is Wed 4 Nov.</p>
+<pre><code>Dear Support Office,
+
+Thank you for your reply of 29 October. I am applying to the
+Informatics and Data Science Program (Master's, Special Selection
+for International Students living outside Japan, April 2027). My
+prospective supervisor is Assoc. Prof. Junjun Zheng.
+
+I plan to courier my documents from India on 6 November. May I ask
+three things?
+1. Should Prof. Zheng's signed Consent Form go in my envelope, or
+   may he give it to your office directly?
+2. Which scans should I email for your check, and by when?
+3. Should I write my UCARO registration number anywhere?
+
+Thank you very much.
+
+Kind regards,
+Sudhanshu Pandit
+sudhanshuk1140@gmail.com
+</code></pre>
+<p>If you send it after the call and Prof. Zheng already answered question 1, delete question 1 and renumber.</p>
+<hr />
+<h2 id="6-sending-scans-for-their-check">6. Sending scans for their check</h2>
+<p><strong>Attach:</strong> exactly the scans their instructions ask for. One PDF per document, named like <code>1_Transcript_Sudhanshu_Pandit.pdf</code>. Check every page is straight and readable.</p>
+<pre><code>Dear Support Office,
+
+As you instructed, I have attached scans of my application
+documents for your check:
+[FILL: the list, for example
+1. Academic transcript
+2. Provisional degree certificate
+3. Research plan]
+
+[FILL, keep one line:
+The Consent Form is attached as a scan.
+OR
+Prof. Zheng will give the Consent Form to your office.]
+
+I plan to send the originals by courier on 6 November. Please let
+me know if anything should be corrected.
+
+Kind regards,
+Sudhanshu Pandit
+sudhanshuk1140@gmail.com
+UCARO registration number: [FILL: 6 digits]
+</code></pre>
+<hr />
+<h2 id="7-documents-posted">7. Documents posted</h2>
+<pre><code>Dear Support Office,
+
+I sent my application documents today by [FILL: courier company],
+tracking number [FILL]. The expected delivery date is [FILL].
+
+The envelope contains: [FILL: short list of documents].
+
+Thank you very much for your help.
+
+Kind regards,
+Sudhanshu Pandit
+sudhanshuk1140@gmail.com
+UCARO registration number: [FILL: 6 digits]
+</code></pre>
+<hr />
+<h2 id="8-a-polite-nudge-on-the-consent-form">8. A polite nudge on the Consent Form</h2>
+<p>Only if you agreed he would send it or a scan, and nothing has come by <strong>Wed 4 Nov evening IST</strong>. Reply in his thread. Send it once.</p>
+<pre><code>Dear Prof. Zheng,
+
+I am sorry to trouble you. I am writing only about the Consent
+Form, because I plan to post my documents on Friday 6 November.
+Could you let me know whether it is signed, and how it will reach
+the Support Office?
+
+Thank you very much for your time.
+
+Kind regards,
+Sudhanshu Pandit
+sudhanshuk1140@gmail.com
+</code></pre>
+<hr />
+<h2 id="9-rejoining-the-call">9. Rejoining the call</h2>
+<p>Keep this as a Gmail draft on your phone during the call. Reply in his thread.</p>
+<pre><code>Dear Prof. Zheng,
+
+I am sorry, my connection dropped. I am rejoining now.
+
+Sudhanshu Pandit
+</code></pre>
+<hr />
+<h2 id="before-you-press-send">Before you press Send</h2>
+<ul>
+<li>[ ] Right thread, Reply All for Prof. Zheng, same subject.</li>
+<li>[ ] "Dear Prof. Zheng," spelled right.</li>
+<li>[ ] Every date has the right weekday: Mon 2 Nov, Tue 3 Nov, Wed 4 Nov, Thu 5 Nov, Fri 6 Nov, Fri 13 Nov.</li>
+<li>[ ] The attachment is there and opens.</li>
+<li>[ ] No square brackets left.</li>
+<li>[ ] No phone number, no address, no meeting link.</li>
+<li>[ ] Read it out loud once.</li>
+</ul>
+</article>
+<div class="donebox"><label><input type="checkbox" class="done-cb" data-ch="h14"> Mark chapter 14 as done</label></div>
+<nav class="pager" aria-label="Previous and next"><a class="prev" href="ch13.html"><span class="lbl">← Previous</span>13. How to address them, and etiquette</a><a class="next" href="ch15.html"><span class="lbl">Next →</span>15. Application process and dates</a></nav>
+</main>
+</div>
+<script>
+(function(){
+ var KEY='hiroshimabook-done-v1';
+ function load(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
+ function save(d){try{localStorage.setItem(KEY,JSON.stringify(d))}catch(e){}}
+ function refresh(){
+  var d=load();
+  document.querySelectorAll('[data-ch]').forEach(function(el){el.classList.toggle('done',!!d[el.getAttribute('data-ch')])});
+  document.querySelectorAll('input.done-cb').forEach(function(cb){cb.checked=!!d[cb.getAttribute('data-ch')]});
+  var p=document.getElementById('progress');
+  if(p&&window.BOOK){
+   var total=BOOK.chapters.length,done=BOOK.chapters.filter(function(c){return d[c.id]}).length;
+   p.querySelector('.count').textContent=done+' of '+total+' chapters done';
+   p.querySelector('.bar span').style.width=(100*done/total)+'%';
+   var ul=p.querySelector('.parts-progress');ul.innerHTML='';
+   BOOK.parts.forEach(function(pt){
+    var cs=BOOK.chapters.filter(function(c){return c.part===pt.n});
+    var dn=cs.filter(function(c){return d[c.id]}).length;
+    var nextc=cs.filter(function(c){return !d[c.id]})[0];
+    var li=document.createElement('li');
+    li.textContent=pt.name+': '+dn+' of '+cs.length;
+    if(nextc){li.appendChild(document.createTextNode(' · next: '));var a=document.createElement('a');a.href=nextc.file;a.textContent=nextc.title;li.appendChild(a)}
+    else{li.appendChild(document.createTextNode(' ✓'))}
+    ul.appendChild(li);
+   });
+  }
+ }
+ document.querySelectorAll('input.done-cb').forEach(function(cb){
+  cb.addEventListener('change',function(){var d=load(),id=cb.getAttribute('data-ch');if(cb.checked){d[id]=1}else{delete d[id]}save(d);refresh()});
+ });
+ var btn=document.querySelector('.menu-btn');
+ if(btn){btn.addEventListener('click',function(){var o=document.body.classList.toggle('nav-open');btn.setAttribute('aria-expanded',o?'true':'false')})}
+ refresh();
+})();
+</script>
+</body>
+</html>

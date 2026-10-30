@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>3. Full script: hello to goodbye · Hiroshima prep</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1f2328;--muted:#5f6670;--line:#e3e0d8;--card:#f3f1ea;--link:#0b57d0;--code:#efede6;--accent:#2f5d8a;--fill:#fff2a8}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--link);text-underline-offset:2px}
+.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line)}
+.brand{font-weight:600;color:var(--fg);text-decoration:none}
+.menu-btn{font:inherit;font-size:15px;padding:6px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);cursor:pointer}
+.layout{display:block}
+.sidenav{display:none;font-size:15px;line-height:1.45;padding:12px 18px 40px}
+body.nav-open .sidenav{display:block;border-bottom:1px solid var(--line);background:var(--card)}
+.sidenav ul{list-style:none;margin:0;padding:0}
+.sidenav li{margin:2px 0}
+.sidenav a{display:block;padding:4px 6px;border-radius:6px;color:var(--fg);text-decoration:none}
+.sidenav a:hover{background:var(--line)}
+.sidenav a[aria-current=page]{background:var(--accent);color:#fff}
+.sidenav .part{margin:14px 0 4px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.sidenav .n{display:inline-block;min-width:1.8em;color:var(--muted)}
+.sidenav a[aria-current=page] .n{color:#fff}
+[data-ch].done>a::after,.toc-list li.done .t::after{content:" \2713";color:#2e7d32;font-weight:700}
+.page{max-width:760px;margin:0 auto;padding:20px 20px 60px}
+.chead{margin:8px 0 22px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.chead .part{margin:0;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.chead .chno{margin:6px 0 0;font-size:15px;color:var(--accent);font-weight:600}
+.chead h1{margin:4px 0 12px}
+.when{margin:0;padding:10px 14px;background:var(--card);border-left:4px solid var(--accent);border-radius:6px;font-size:16px}
+h1{font-size:1.75em;line-height:1.25}
+h2{font-size:1.35em;line-height:1.3;margin-top:2em;padding-top:.4em;border-top:1px solid var(--line)}
+h3{font-size:1.12em;line-height:1.35;margin-top:1.6em}
+h4{font-size:1em;margin-top:1.4em}
+p,li{overflow-wrap:break-word}
+li{margin:.25em 0}
+code{font:0.86em/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--code);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+pre{background:var(--code);padding:12px 14px;border-radius:8px;overflow-x:auto;font-size:14px;line-height:1.5}
+pre code{background:none;padding:0;overflow-wrap:normal;font-size:1em}
+blockquote{margin:1em 0;padding:6px 16px;border-left:4px solid #b9c7da;background:var(--card);border-radius:4px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1em 0}
+table{border-collapse:collapse;font-size:15px;line-height:1.45;min-width:100%}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}
+th{background:var(--card)}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+mark.fill{background:var(--fill);color:#1f2328;padding:0 3px;border-radius:3px}
+li.task{list-style:none}
+li.task .cb{display:inline-block;width:.85em;height:.85em;border:2px solid var(--muted);border-radius:3px;margin:0 .45em 0 -1.3em;vertical-align:-.05em}
+li.task .cb.on{background:var(--accent);border-color:var(--accent)}
+details.box{margin:0 0 20px;padding:8px 14px;background:var(--card);border-radius:8px}
+details.box summary{cursor:pointer;font-weight:600}
+details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
+.slides figure{margin:0 0 14px}
+.slides img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+.slides figcaption{font-size:14px;color:var(--muted);margin-top:4px}
+.donebox{margin:36px 0 16px;padding:14px 16px;background:var(--card);border-radius:10px;font-size:17px}
+.donebox label{cursor:pointer;display:flex;align-items:center;gap:10px}
+.donebox input,.toc-list input{width:22px;height:22px;accent-color:#2e7d32;flex:none}
+.pager{display:flex;gap:12px;justify-content:space-between;margin-top:8px}
+.pager a{flex:1 1 0;display:block;padding:12px 14px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--fg);background:var(--bg)}
+.pager a:hover{border-color:var(--accent)}
+.pager .lbl{display:block;font-size:13px;color:var(--muted)}
+.pager .next{text-align:right}
+.pager .ghost{visibility:hidden}
+.progress{margin:16px 0;padding:14px 16px;background:var(--card);border-radius:10px}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden;margin:8px 0}
+.bar span{display:block;height:100%;width:0;background:#2e7d32}
+.parts-progress{list-style:none;padding:0;margin:6px 0 0;font-size:15px}
+.start{display:inline-block;margin:6px 0 4px;padding:10px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.toc-list{list-style:none;padding:0}
+.toc-list li{display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line)}
+.toc-list .t{font-weight:600}
+.toc-list .w{display:block;font-size:15px;color:var(--muted)}
+.muted{color:var(--muted);font-size:15px}
+@media (max-width:640px){body{font-size:17px}.page{padding:14px 16px 50px}h1{font-size:1.5em}.pager{flex-direction:column}.pager .next{text-align:left}}
+@media (min-width:1100px){
+ .menu-btn{display:none}
+ .layout{display:grid;grid-template-columns:290px 1fr}
+ .sidenav{display:block;position:sticky;top:49px;height:calc(100vh - 49px);overflow-y:auto;border-right:1px solid var(--line);background:var(--bg)}
+ body.nav-open .sidenav{border-bottom:0;background:var(--bg)}
+ .page{padding-top:28px}
+}
+@media (prefers-color-scheme:dark){
+ :root{--bg:#17181b;--fg:#e4e4e2;--muted:#a3a7ad;--line:#33353a;--card:#212328;--link:#8ab4f8;--code:#262830;--accent:#6c9bd2;--fill:#f3dc6b}
+ .slides img{background:#fff}
+ blockquote{border-left-color:#4a5a70}
+}
+</style>
+
+</head>
+<body>
+<header class="topbar"><button class="menu-btn" type="button" aria-controls="sidenav" aria-expanded="false">Contents</button><a class="brand" href="index.html">Hiroshima prep</a></header>
+<div class="layout">
+<nav id="sidenav" class="sidenav" aria-label="Book contents"><ul>
+<li><a href="index.html">Home: how to use this book</a></li>
+<li><a href="contents.html">Contents</a></li>
+<li class="part">Part 1: Before Monday&#x27;s meeting (30 Oct to 2 Nov)</li>
+<li data-ch="h01"><a href="ch01.html"><span class="n">1.</span>Start here</a></li>
+<li data-ch="h02"><a href="ch02.html"><span class="n">2.</span>Presentation guide and slides</a></li>
+<li data-ch="h03"><a href="ch03.html" aria-current="page"><span class="n">3.</span>Full script: hello to goodbye</a></li>
+<li data-ch="h04"><a href="ch04.html"><span class="n">4.</span>Mock interview (tap to hear the questions)</a></li>
+<li data-ch="h05"><a href="ch05.html"><span class="n">5.</span>The 30-minute game plan</a></li>
+<li data-ch="h06"><a href="ch06.html"><span class="n">6.</span>Prof. Zheng in depth</a></li>
+<li data-ch="h07"><a href="ch07.html"><span class="n">7.</span>The lab, Prof. Dohi and Prof. Okamura</a></li>
+<li data-ch="h08"><a href="ch08.html"><span class="n">8.</span>Your proposal, explained simply</a></li>
+<li data-ch="h09"><a href="ch09.html"><span class="n">9.</span>Question bank with model answers</a></li>
+<li data-ch="h10"><a href="ch10.html"><span class="n">10.</span>Weak points and honest answers</a></li>
+<li data-ch="h11"><a href="ch11.html"><span class="n">11.</span>Questions to ask Prof. Zheng</a></li>
+<li data-ch="h12"><a href="ch12.html"><span class="n">12.</span>Day-of checklist</a></li>
+<li data-ch="h13"><a href="ch13.html"><span class="n">13.</span>How to address them, and etiquette</a></li>
+<li data-ch="h14"><a href="ch14.html"><span class="n">14.</span>Email templates (thank-you and after)</a></li>
+<li class="part">Part 2: The application (2 to 13 Nov)</li>
+<li data-ch="h15"><a href="ch15.html"><span class="n">15.</span>Application process and dates</a></li>
+<li data-ch="h16"><a href="ch16.html"><span class="n">16.</span>Documents checklist</a></li>
+<li data-ch="h17"><a href="ch17.html"><span class="n">17.</span>Hiroshima vs NAIST: decide early</a></li>
+<li class="part">Part 3: The oral exam (24 Nov to 2 Dec)</li>
+<li data-ch="h18"><a href="ch18.html"><span class="n">18.</span>Reliability and probability primer</a></li>
+<li data-ch="h19"><a href="ch19.html"><span class="n">19.</span>Oral exam prep</a></li>
+<li data-ch="h20"><a href="ch20.html"><span class="n">20.</span>Papers guide: lab and cited papers</a></li>
+<li class="part">Reference</li>
+<li data-ch="h21"><a href="ch21.html"><span class="n">21.</span>Glossary</a></li>
+</ul></nav>
+<main class="page">
+<article>
+<header class="chead">
+<p class="part">Part 1: Before Monday&#x27;s meeting (30 Oct to 2 Nov)</p>
+<p class="chno">Chapter 3 of 21</p>
+<h1>Full script: from &quot;hello&quot; to the end of the call</h1>
+<p class="when"><strong>When and how long:</strong> Friday and Sunday: out loud twice with the slides. Monday morning once more.</p>
+</header>
+
+<p>Monday 2 November 2026, 17:00 to 17:30 Japan time = 13:30 to 14:00 India time, Microsoft Teams, with Assoc. Prof. Junjun Zheng. Prof. Dohi and Prof. Okamura are in copy and may join.
+Words in [brackets] are actions. Do not say them.</p>
+<p>This is a 30-minute chat about your research plan and the application, not a formal talk. Prof. Zheng did not ask for slides. Have them ready and offer them once. Read this script out loud twice, then say it your way. If you lose your place, the <strong>Cue</strong> line under each slide is enough.</p>
+<hr />
+<h2 id="part-a-joining-before-the-slides">Part A. Joining, before the slides</h2>
+<p>[Join at 13:25 IST from the link in Prof. Zheng's email of 30 Oct. Camera on, mic on. Your name shows as "Sudhanshu Pandit". The slides PDF is already open in Preview.]</p>
+<p><strong>When he appears:</strong></p>
+<blockquote>
+<p>Good afternoon, Prof. Zheng. Thank you very much for your time, and for agreeing to supervise me.</p>
+</blockquote>
+<p><strong>If Prof. Okamura or Prof. Dohi is there too:</strong></p>
+<blockquote>
+<p>Good afternoon, Prof. Okamura. (or) Good afternoon, Prof. Dohi. Thank you for joining.</p>
+</blockquote>
+<p><strong>If he asks "Can you hear me?" or "How are you?":</strong></p>
+<blockquote>
+<p>Yes, I can hear you clearly. I'm doing well, thank you. I'm in Bangalore, so it's afternoon here too.</p>
+</blockquote>
+<p><strong>When he asks you to talk about your research, or asks where to start:</strong></p>
+<blockquote>
+<p>I prepared six short slides on my plan, about five minutes. Would it help if I share my screen? Or I can just talk you through it.</p>
+</blockquote>
+<p>[If he says yes: in Teams click Share, then pick the Preview window, then press Cmd + Shift + F in Preview. If he says no, skip to Part C and use the Cue lines as your talking points.]</p>
+<blockquote>
+<p>Can you see my slides?</p>
+</blockquote>
+<p>[Wait for "yes".]</p>
+<hr />
+<h2 id="part-b-the-slides-about-5-minutes">Part B. The slides (about 5 minutes)</h2>
+<h3 id="slide-1-title-about-20-seconds">Slide 1. Title (about 20 seconds)</h3>
+<p><strong>Cue:</strong> same rules file, many runs, do they fail together, voting</p>
+<blockquote>
+<p>My question is on this slide. When you run a coding agent several times on the same task, every run reads the same rules file, the AGENTS.md or CLAUDE.md in the repository. So do those runs fail on the same inputs? And if they do, how much does voting still help?</p>
+</blockquote>
+<p>[Next slide]</p>
+<h3 id="slide-2-about-me-about-40-seconds">Slide 2. About me (about 40 seconds)</h3>
+<p><strong>Cue:</strong> VTU 2026, Layerpath, BrandMemory, Yuki 2.0, full time from April</p>
+<blockquote>
+<p>I finished my B.E. in Computer Science at Sri Sairam College of Engineering, under VTU, this May. Since last November I've been an AI engineer at Layerpath, a small startup. I was on the founding team, and I build its AI features.</p>
+<p>I use Claude Code and Codex every day. I review and test their changes, and I keep the rules files they read. At work I once found that some rules we gave a model had no effect, because a length limit cut them first. Since then I check whether a model really follows an instruction.</p>
+<p>I also built Yuki 2.0, a desktop agent for Windows, in plain Python. It's public on my GitHub. If I'm admitted, I'll leave my job before April and study full time.</p>
+</blockquote>
+<p>[Next slide]</p>
+<h3 id="slide-3-background-about-60-seconds">Slide 3. Background (about 60 seconds)</h3>
+<p><strong>Cue:</strong> Eckhardt and Lee, your paper, 429 vs 115, 0.43, shared file</p>
+<blockquote>
+<p>Voting only helps if the versions rarely fail on the same inputs. Eckhardt and Lee showed that two versions from the same process fail independently only if every input is equally hard.</p>
+<p>Your paper with Prof. Okamura and Prof. Dohi asked whether generative AI can make N-version programming work better. Voting made strong models more reliable but helped little with weak ones, and more diversity didn't always mean more reliability.</p>
+<p>Two studies this year found that LLM-written versions fail together more than independence predicts. In one, two or more of 48 programs failed together on 429 of a million inputs, against about 115 expected. Voting over three still cut the failures a lot. In the other, voting got only 0.43 of the gain that independence would give, and 0.27 when all three came from one model.</p>
+<p>My point is this. Both studies used no rules file. But in a real repository, every run reads the same file. If a rule says "use this helper" and the helper breaks on an edge case, every run gets the same bug.</p>
+</blockquote>
+<p>[Next slide]</p>
+<h3 id="slide-4-two-research-questions-about-40-seconds">Slide 4. Two research questions (about 40 seconds)</h3>
+<p><strong>Cue:</strong> RQ1 fail together, which change lowers it; RQ2 one rule, beyond the tests</p>
+<blockquote>
+<p>So I have two questions.</p>
+<p>RQ1: when several runs solve one real task with the same rules file, how much more often do they fail on the same inputs than independence predicts? And which change between runs lowers that most: the file version, the agent, the model, or the temperature? I measure it with the correlation of a beta-binomial model, where zero means independence.</p>
+<p>RQ2: if I replace one real rule with neutral text, does the code get more or less reliable, beyond the task's own tests?</p>
+</blockquote>
+<p>[Next slide]</p>
+<h3 id="slide-5-design-about-70-seconds">Slide 5. Design (about 70 seconds)</h3>
+<p><strong>Cue:</strong> real PRs, 5 rules x 2 tasks, 10 runs, 820 runs, 10,000 inputs, beta-binomial</p>
+<blockquote>
+<p>A task is a merged pull request whose tests fail before the change and pass after it. I start from the 138 public Python tasks in Gloaguen and colleagues, plus newer pull requests. I pick about five rules a script can check, with two tasks each.</p>
+<p>Each setting runs ten times: Claude Code, Codex with two models, and my own small harness with an open-weight model at two temperatures. That's 820 runs, about 420 to 590 dollars.</p>
+<p>A run only counts as a version if it passes the pull request's tests. Then I test it on at least 10,000 generated inputs per function, against the merged code, and I check 20 disagreements per task by hand. Your lab's boundary value method comes in as an extra stress test.</p>
+<p>For RQ1, if θ of x is the chance a run fails on input x, two runs both fail with probability p squared plus the variance of θ. I fit a beta-binomial model by maximum likelihood, with a bootstrap over runs. From it I get how often a two-out-of-three vote fails.</p>
+</blockquote>
+<p>[Next slide]</p>
+<h3 id="slide-6-plan-and-why-this-lab-about-40-seconds">Slide 6. Plan and why this lab (about 40 seconds)</h3>
+<p><strong>Cue:</strong> courses first, pilot, main runs, model, paper; your lab's probabilistic evaluation</p>
+<blockquote>
+<p>In the first half of Year 1, I take probability, statistics and reliability courses and build the harness and a pilot. Then the main runs and RQ2. In Year 2, the shared-failure model, a first paper, and the thesis.</p>
+<p>At the end I hope to have a fitted model that tells a team how many runs to vote over for a given cost, an answer on whether one real rule changes reliability, and open data.</p>
+<p>Why this lab: your lab pairs each technique with probabilistic evaluation, to show how much quality really improved. That's what my question needs. I can bring the agent side and the repository mining. Fitting and testing reliability models is what I want to learn here.</p>
+<p>Thank you. I'd be glad to hear your advice.</p>
+</blockquote>
+<p>[Stop sharing.]</p>
+<hr />
+<h2 id="part-c-after-the-slides">Part C. After the slides</h2>
+<p><strong>Right after the last slide:</strong></p>
+<blockquote>
+<p>I'll stop sharing so we can talk.</p>
+</blockquote>
+<p><strong>Useful lines during his questions:</strong></p>
+<ul>
+<li>Didn't catch it: "Sorry, could you say that again, please?"</li>
+<li>Need a moment: "Good question. Let me think for a second."</li>
+<li>Don't know: "I don't know that yet. I'd start by reading ..., and I'd be glad if you could point me to the right material."</li>
+<li>Checking you understood: "Do you mean ...?"</li>
+</ul>
+<p><strong>About the paper (only if he mentions it):</strong></p>
+<blockquote>
+<p>I've only read the abstract so far, because the full text is behind the paywall. Could I ask you for a copy?</p>
+</blockquote>
+<p><strong>When he asks "Do you have any questions?"</strong> Ask two or three from <a href="ch11.html"><code>02_Meeting_Strategy/02_questions_to_ask_him.md</code></a>. The most important ones:</p>
+<blockquote>
+<p>Thank you. For the Consent Form, should I send you the form with my part filled in, and should the signed copy go to the Support Office directly, or to me?</p>
+<p>Would you be willing to look at my research plan form before I submit it? The documents need to reach the Support Office by 13 November.</p>
+<p>Is there anything you would recommend I read or learn before April, for example on reliability models or the tools your lab uses?</p>
+</blockquote>
+<p><strong>Closing:</strong></p>
+<blockquote>
+<p>Thank you very much for your time today, Prof. Zheng. I'll send the forms as we discussed. I look forward to working with you.</p>
+</blockquote>
+<p>[Wait for him to end the call, or say "Goodbye" and leave after he does. Send the thank-you email from <a href="ch14.html"><code>02_Meeting_Strategy/04_email_templates.md</code></a> the same day.]</p>
+</article>
+<div class="donebox"><label><input type="checkbox" class="done-cb" data-ch="h03"> Mark chapter 3 as done</label></div>
+<nav class="pager" aria-label="Previous and next"><a class="prev" href="ch02.html"><span class="lbl">← Previous</span>2. Presentation guide and slides</a><a class="next" href="ch04.html"><span class="lbl">Next →</span>4. Mock interview (tap to hear the questions)</a></nav>
+</main>
+</div>
+<script>
+(function(){
+ var KEY='hiroshimabook-done-v1';
+ function load(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
+ function save(d){try{localStorage.setItem(KEY,JSON.stringify(d))}catch(e){}}
+ function refresh(){
+  var d=load();
+  document.querySelectorAll('[data-ch]').forEach(function(el){el.classList.toggle('done',!!d[el.getAttribute('data-ch')])});
+  document.querySelectorAll('input.done-cb').forEach(function(cb){cb.checked=!!d[cb.getAttribute('data-ch')]});
+  var p=document.getElementById('progress');
+  if(p&&window.BOOK){
+   var total=BOOK.chapters.length,done=BOOK.chapters.filter(function(c){return d[c.id]}).length;
+   p.querySelector('.count').textContent=done+' of '+total+' chapters done';
+   p.querySelector('.bar span').style.width=(100*done/total)+'%';
+   var ul=p.querySelector('.parts-progress');ul.innerHTML='';
+   BOOK.parts.forEach(function(pt){
+    var cs=BOOK.chapters.filter(function(c){return c.part===pt.n});
+    var dn=cs.filter(function(c){return d[c.id]}).length;
+    var nextc=cs.filter(function(c){return !d[c.id]})[0];
+    var li=document.createElement('li');
+    li.textContent=pt.name+': '+dn+' of '+cs.length;
+    if(nextc){li.appendChild(document.createTextNode(' · next: '));var a=document.createElement('a');a.href=nextc.file;a.textContent=nextc.title;li.appendChild(a)}
+    else{li.appendChild(document.createTextNode(' ✓'))}
+    ul.appendChild(li);
+   });
+  }
+ }
+ document.querySelectorAll('input.done-cb').forEach(function(cb){
+  cb.addEventListener('change',function(){var d=load(),id=cb.getAttribute('data-ch');if(cb.checked){d[id]=1}else{delete d[id]}save(d);refresh()});
+ });
+ var btn=document.querySelector('.menu-btn');
+ if(btn){btn.addEventListener('click',function(){var o=document.body.classList.toggle('nav-open');btn.setAttribute('aria-expanded',o?'true':'false')})}
+ refresh();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>4. Mock interview (tap to hear the questions) · Hiroshima prep</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1f2328;--muted:#5f6670;--line:#e3e0d8;--card:#f3f1ea;--link:#0b57d0;--code:#efede6;--accent:#2f5d8a;--fill:#fff2a8}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--link);text-underline-offset:2px}
+.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line)}
+.brand{font-weight:600;color:var(--fg);text-decoration:none}
+.menu-btn{font:inherit;font-size:15px;padding:6px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);cursor:pointer}
+.layout{display:block}
+.sidenav{display:none;font-size:15px;line-height:1.45;padding:12px 18px 40px}
+body.nav-open .sidenav{display:block;border-bottom:1px solid var(--line);background:var(--card)}
+.sidenav ul{list-style:none;margin:0;padding:0}
+.sidenav li{margin:2px 0}
+.sidenav a{display:block;padding:4px 6px;border-radius:6px;color:var(--fg);text-decoration:none}
+.sidenav a:hover{background:var(--line)}
+.sidenav a[aria-current=page]{background:var(--accent);color:#fff}
+.sidenav .part{margin:14px 0 4px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.sidenav .n{display:inline-block;min-width:1.8em;color:var(--muted)}
+.sidenav a[aria-current=page] .n{color:#fff}
+[data-ch].done>a::after,.toc-list li.done .t::after{content:" \2713";color:#2e7d32;font-weight:700}
+.page{max-width:760px;margin:0 auto;padding:20px 20px 60px}
+.chead{margin:8px 0 22px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.chead .part{margin:0;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.chead .chno{margin:6px 0 0;font-size:15px;color:var(--accent);font-weight:600}
+.chead h1{margin:4px 0 12px}
+.when{margin:0;padding:10px 14px;background:var(--card);border-left:4px solid var(--accent);border-radius:6px;font-size:16px}
+h1{font-size:1.75em;line-height:1.25}
+h2{font-size:1.35em;line-height:1.3;margin-top:2em;padding-top:.4em;border-top:1px solid var(--line)}
+h3{font-size:1.12em;line-height:1.35;margin-top:1.6em}
+h4{font-size:1em;margin-top:1.4em}
+p,li{overflow-wrap:break-word}
+li{margin:.25em 0}
+code{font:0.86em/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--code);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+pre{background:var(--code);padding:12px 14px;border-radius:8px;overflow-x:auto;font-size:14px;line-height:1.5}
+pre code{background:none;padding:0;overflow-wrap:normal;font-size:1em}
+blockquote{margin:1em 0;padding:6px 16px;border-left:4px solid #b9c7da;background:var(--card);border-radius:4px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1em 0}
+table{border-collapse:collapse;font-size:15px;line-height:1.45;min-width:100%}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}
+th{background:var(--card)}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+mark.fill{background:var(--fill);color:#1f2328;padding:0 3px;border-radius:3px}
+li.task{list-style:none}
+li.task .cb{display:inline-block;width:.85em;height:.85em;border:2px solid var(--muted);border-radius:3px;margin:0 .45em 0 -1.3em;vertical-align:-.05em}
+li.task .cb.on{background:var(--accent);border-color:var(--accent)}
+details.box{margin:0 0 20px;padding:8px 14px;background:var(--card);border-radius:8px}
+details.box summary{cursor:pointer;font-weight:600}
+details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
+.slides figure{margin:0 0 14px}
+.slides img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+.slides figcaption{font-size:14px;color:var(--muted);margin-top:4px}
+.donebox{margin:36px 0 16px;padding:14px 16px;background:var(--card);border-radius:10px;font-size:17px}
+.donebox label{cursor:pointer;display:flex;align-items:center;gap:10px}
+.donebox input,.toc-list input{width:22px;height:22px;accent-color:#2e7d32;flex:none}
+.pager{display:flex;gap:12px;justify-content:space-between;margin-top:8px}
+.pager a{flex:1 1 0;display:block;padding:12px 14px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--fg);background:var(--bg)}
+.pager a:hover{border-color:var(--accent)}
+.pager .lbl{display:block;font-size:13px;color:var(--muted)}
+.pager .next{text-align:right}
+.pager .ghost{visibility:hidden}
+.progress{margin:16px 0;padding:14px 16px;background:var(--card);border-radius:10px}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden;margin:8px 0}
+.bar span{display:block;height:100%;width:0;background:#2e7d32}
+.parts-progress{list-style:none;padding:0;margin:6px 0 0;font-size:15px}
+.start{display:inline-block;margin:6px 0 4px;padding:10px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.toc-list{list-style:none;padding:0}
+.toc-list li{display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line)}
+.toc-list .t{font-weight:600}
+.toc-list .w{display:block;font-size:15px;color:var(--muted)}
+.muted{color:var(--muted);font-size:15px}
+@media (max-width:640px){body{font-size:17px}.page{padding:14px 16px 50px}h1{font-size:1.5em}.pager{flex-direction:column}.pager .next{text-align:left}}
+@media (min-width:1100px){
+ .menu-btn{display:none}
+ .layout{display:grid;grid-template-columns:290px 1fr}
+ .sidenav{display:block;position:sticky;top:49px;height:calc(100vh - 49px);overflow-y:auto;border-right:1px solid var(--line);background:var(--bg)}
+ body.nav-open .sidenav{border-bottom:0;background:var(--bg)}
+ .page{padding-top:28px}
+}
+@media (prefers-color-scheme:dark){
+ :root{--bg:#17181b;--fg:#e4e4e2;--muted:#a3a7ad;--line:#33353a;--card:#212328;--link:#8ab4f8;--code:#262830;--accent:#6c9bd2;--fill:#f3dc6b}
+ .slides img{background:#fff}
+ blockquote{border-left-color:#4a5a70}
+}
+</style>
+<style>
+.say{border:1px solid rgba(127,127,127,.5);background:rgba(127,127,127,.12);color:inherit;border-radius:999px;padding:1px 9px;margin-right:8px;cursor:pointer;font-size:15px;line-height:1.6;vertical-align:middle}
+.say:hover{background:rgba(127,127,127,.25)}
+.sayhl{background:rgba(255,200,0,.18);border-radius:6px;box-shadow:0 0 0 6px rgba(255,200,0,.18)}
+.saybar{border:1px solid rgba(127,127,127,.4);background:rgba(127,127,127,.08);color:inherit;border-radius:10px;padding:12px 14px;margin:14px 0 22px}
+.saybar .saytitle{margin:0 0 10px}
+.sayrow{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:6px 0}
+.sbtn{border:1px solid rgba(127,127,127,.55);background:rgba(127,127,127,.1);color:inherit;border-radius:8px;padding:7px 12px;font-size:15px;cursor:pointer}
+.sbtn:hover{background:rgba(127,127,127,.25)}
+.ssel{font-size:14px;padding:3px}
+.saynote{color:#d33;margin:8px 0 0}
+.sayfab{position:fixed;right:16px;bottom:16px;z-index:50;border:1px solid rgba(255,255,255,.3);background:#262626;color:#fff;border-radius:999px;padding:12px 18px;font-size:16px;box-shadow:0 2px 8px rgba(0,0,0,.35);cursor:pointer}
+</style>
+</head>
+<body>
+<header class="topbar"><button class="menu-btn" type="button" aria-controls="sidenav" aria-expanded="false">Contents</button><a class="brand" href="index.html">Hiroshima prep</a></header>
+<div class="layout">
+<nav id="sidenav" class="sidenav" aria-label="Book contents"><ul>
+<li><a href="index.html">Home: how to use this book</a></li>
+<li><a href="contents.html">Contents</a></li>
+<li class="part">Part 1: Before Monday&#x27;s meeting (30 Oct to 2 Nov)</li>
+<li data-ch="h01"><a href="ch01.html"><span class="n">1.</span>Start here</a></li>
+<li data-ch="h02"><a href="ch02.html"><span class="n">2.</span>Presentation guide and slides</a></li>
+<li data-ch="h03"><a href="ch03.html"><span class="n">3.</span>Full script: hello to goodbye</a></li>
+<li data-ch="h04"><a href="ch04.html" aria-current="page"><span class="n">4.</span>Mock interview (tap to hear the questions)</a></li>
+<li data-ch="h05"><a href="ch05.html"><span class="n">5.</span>The 30-minute game plan</a></li>
+<li data-ch="h06"><a href="ch06.html"><span class="n">6.</span>Prof. Zheng in depth</a></li>
+<li data-ch="h07"><a href="ch07.html"><span class="n">7.</span>The lab, Prof. Dohi and Prof. Okamura</a></li>
+<li data-ch="h08"><a href="ch08.html"><span class="n">8.</span>Your proposal, explained simply</a></li>
+<li data-ch="h09"><a href="ch09.html"><span class="n">9.</span>Question bank with model answers</a></li>
+<li data-ch="h10"><a href="ch10.html"><span class="n">10.</span>Weak points and honest answers</a></li>
+<li data-ch="h11"><a href="ch11.html"><span class="n">11.</span>Questions to ask Prof. Zheng</a></li>
+<li data-ch="h12"><a href="ch12.html"><span class="n">12.</span>Day-of checklist</a></li>
+<li data-ch="h13"><a href="ch13.html"><span class="n">13.</span>How to address them, and etiquette</a></li>
+<li data-ch="h14"><a href="ch14.html"><span class="n">14.</span>Email templates (thank-you and after)</a></li>
+<li class="part">Part 2: The application (2 to 13 Nov)</li>
+<li data-ch="h15"><a href="ch15.html"><span class="n">15.</span>Application process and dates</a></li>
+<li data-ch="h16"><a href="ch16.html"><span class="n">16.</span>Documents checklist</a></li>
+<li data-ch="h17"><a href="ch17.html"><span class="n">17.</span>Hiroshima vs NAIST: decide early</a></li>
+<li class="part">Part 3: The oral exam (24 Nov to 2 Dec)</li>
+<li data-ch="h18"><a href="ch18.html"><span class="n">18.</span>Reliability and probability primer</a></li>
+<li data-ch="h19"><a href="ch19.html"><span class="n">19.</span>Oral exam prep</a></li>
+<li data-ch="h20"><a href="ch20.html"><span class="n">20.</span>Papers guide: lab and cited papers</a></li>
+<li class="part">Reference</li>
+<li data-ch="h21"><a href="ch21.html"><span class="n">21.</span>Glossary</a></li>
+</ul></nav>
+<main class="page">
+<article>
+<header class="chead">
+<p class="part">Part 1: Before Monday&#x27;s meeting (30 Oct to 2 Nov)</p>
+<p class="chno">Chapter 4 of 21</p>
+<h1>Mock interview: the questions for your friend to ask</h1>
+<p class="when"><strong>When and how long:</strong> Sunday, 30 minutes with a friend, or alone with the play buttons.</p>
+</header>
+
+<p><strong>For the friend:</strong> you play Assoc. Prof. Junjun Zheng from Hiroshima University. He works on software reliability and dependable systems: probability models of how and when software fails, and whether voting over several versions of a program makes it more reliable. He has already agreed to supervise Sudhanshu, so this call is friendly. He wants to understand the research plan and talk about the application. Sometimes play Prof. Hiroyuki Okamura too (same lab, testing and reliability tools). You do not need to understand the answers. Just ask, listen, and push when an answer is vague.</p>
+<hr />
+<h2 id="how-to-run-it-30-minutes">How to run it (30 minutes)</h2>
+<ol>
+<li><strong>Use a video call</strong> (Teams if you can, Google Meet otherwise), so he practises sharing his screen.</li>
+<li><strong>Follow the order below.</strong> Part 1, then let him present if he offers slides, then Part 2. Use Part 3 only if there is time.</li>
+<li><strong>Push when an answer is vague:</strong> "Why?", "Can you give an example?", "How would you check that?", "What if that is not true?"</li>
+<li><strong>Watch the time.</strong> If one answer goes past about a minute, say "Thank you, let's move on."</li>
+<li><strong>Write down</strong> every question where he hesitated, bluffed, or talked too long. Give him the list at the end, with the checklist in Part 4.</li>
+</ol>
+<p>Each question shows who would ask it, and <strong>"Listen for"</strong>: the points a good answer includes. Do not read the "Listen for" part out loud.</p>
+<hr />
+<h2 id="part-1-opening-2-minutes">Part 1. Opening (2 minutes)</h2>
+<p>Say:</p>
+<blockquote>
+<p>Hello Sudhanshu, I'm Junjun Zheng. Thank you for joining. Can you hear me well?</p>
+</blockquote>
+<p>Then:</p>
+<blockquote>
+<p>I read your proposal. Could you briefly explain your research plan?</p>
+</blockquote>
+<p>If he offers slides, say yes. Let him present (about 5 minutes). <strong>Do not interrupt.</strong> Note when he starts and stops.</p>
+<hr />
+<h2 id="part-2-core-questions-about-18-minutes-ask-all-of-them">Part 2. Core questions (about 18 minutes, ask all of them)</h2>
+<h3 id="about-the-research">About the research</h3>
+<p><strong>1. (Prof. Zheng) In two or three sentences, what is your research about?</strong>
+Listen for: repeated agent runs on one real task treated as N versions; RQ1 how much more often they fail on the same inputs than independence predicts, and which change between runs lowers it; RQ2 whether replacing one real rule changes reliability beyond the tests; a model that tells a team how many runs to vote over.</p>
+<p><strong>2. (Prof. Zheng) Why do you think the runs might fail together?</strong>
+Listen for: every run reads the same AGENTS.md or CLAUDE.md, so the file is shared specification; one bad rule can give every run the same bug; Eckhardt and Lee: independence only if every input is equally hard.</p>
+<p><strong>3. (Prof. Zheng) Have you read our N-version programming paper? How is your study different?</strong>
+Listen for: honest, only the abstract (paywalled), and asks for a copy; real repository tasks with coding agents, and the shared context file as a cause of common failures.</p>
+<p><strong>4. (Prof. Zheng) If two runs both fail with probability p squared, what is wrong with that?</strong>
+Listen for: that is only true under independence; with θ(x) the failure chance on input x, both fail with p² + Var θ(X); any spread in difficulty makes joint failures more likely.</p>
+<p><strong>5. (Prof. Zheng) Why a beta-binomial model? How will you fit it?</strong>
+Listen for: θ is between 0 and 1 and varies by input, so a Beta model; failing runs out of k are beta-binomial; ρ = 0 means independence; maximum likelihood; bootstrap over runs; maybe zero-inflated if most inputs never fail.</p>
+<p><strong>6. (Prof. Zheng) How would a 2-out-of-3 vote work for code patches, and when does it fail?</strong>
+Listen for: pick the patch whose outputs agree with most runs; on an input with failure chance θ the vote fails with 3θ² minus 2θ³; average over inputs and compare with the independent case.</p>
+<p><strong>7. (Prof. Zheng) How will you find failures that the tests miss?</strong>
+Listen for: a run counts as a version only if it passes the PR's tests; 10,000+ generated inputs per entry point against the merged code; a fixed equality rule (float tolerance, exception class, unordered collections); 20 disagreements checked by hand; limit: if the merged code is wrong too, he cannot see it.</p>
+<p><strong>8. (Prof. Okamura) Our lab works on boundary value testing. How would you use it?</strong>
+Listen for: as an extra stress test only, because 30 to 50 boundary inputs cannot estimate a failure probability.</p>
+<p><strong>9. (Prof. Zheng) Why 10 runs per setting? Is that enough?</strong>
+Listen for: a balance of cost and seeing how many runs fail per input; the pilot will show whether the interval for ρ is useful; would change it then.</p>
+<p><strong>10. (Prof. Zheng) What if every run passes every input?</strong>
+Listen for: then the failure chance is near zero and ρ cannot be estimated for that task; he reports it as a result; passing the PR tests does not mean passing every generated input.</p>
+<h3 id="about-his-background">About his background</h3>
+<p><strong>11. (Prof. Zheng) What do you know about probability, statistics and reliability models like NHPP?</strong>
+Listen for: honest: one statistics course (BCS301: distributions, Markov chains, tests, ANOVA); can explain the models in his plan and the Goel-Okumoto mean value function; has not fit an NHPP to real data yet; courses come first in his plan.</p>
+<p><strong>12. (Prof. Zheng) What programming languages do you use?</strong>
+Listen for: Python every day (Yuki 2.0, plain Python with the Anthropic SDK), TypeScript at work; willing to learn Julia or R if the lab uses them.</p>
+<p><strong>13. (Prof. Zheng) Why do you want to do research, not stay in industry?</strong>
+Listen for: at work, tests only cover the cases someone thought of; he wants real numbers for how often agent code fails and how much voting helps; that needs probability models he cannot build yet.</p>
+<h3 id="practical-questions">Practical questions</h3>
+<p><strong>14. (Prof. Zheng) You would start in April. What will you do about your job?</strong>
+Listen for: he will leave Layerpath before he enrols and study full time; hands over his work properly.</p>
+<p><strong>15. (Prof. Zheng) How will you pay for your studies?</strong>
+Listen for: self-funded; knows the numbers (282,000 yen enrolment, 535,800 yen a year); would apply for a tuition exemption if possible but is not relying on it. Must NOT ask the lab for money.</p>
+<p><strong>16. (Prof. Zheng) How is your Japanese?</strong>
+Listen for: honest: beginner, below N5; studying; asks whether he can work in English at first.</p>
+<p><strong>17. (Prof. Zheng) Are you applying to other universities?</strong>
+Listen for: honest: yes, NAIST for October 2027 (application in February), and a few other contacts; promises to tell Prof. Zheng his decision quickly. Must NOT hide NAIST.</p>
+<p><strong>18. (Prof. Zheng) Do you know what documents you need, and the deadline?</strong>
+Listen for: online on UCARO from 2 Nov; documents must arrive by 13 Nov; consent form, research plan form, two recommendation letters (CEO and college), transcript and graduation certificate, IELTS e-TRF printout; courier by 6 Nov.</p>
+<p><strong>19. (Prof. Zheng) The oral exam is at the end of November. Are you preparing?</strong>
+Listen for: knows it is online, 24 Nov to 2 Dec, about specialised knowledge and problem solving; studying probability, reliability and CS basics.</p>
+<h3 id="closing">Closing</h3>
+<p><strong>20. (Prof. Zheng) Do you have any questions for me?</strong>
+Listen for: one or two good questions: how to handle the Consent Form, whether Prof. Zheng will look at the research plan form before 13 Nov, what to read or learn before April.</p>
+<p>Then say:</p>
+<blockquote>
+<p>Thank you, Sudhanshu. Please send me the forms. I look forward to working with you.</p>
+</blockquote>
+<hr />
+<h2 id="part-3-extra-and-harder-questions-if-there-is-time-or-for-a-second-round">Part 3. Extra and harder questions (if there is time, or for a second round)</h2>
+<p>Pick any 5 to 10. These are the tough ones.</p>
+<ol start="21">
+<li>(Prof. Zheng) Why not reuse the conversation history to get diversity, like in our paper?</li>
+<li>(Prof. Zheng) Can you set the temperature in Claude Code or Codex?</li>
+<li>(Prof. Zheng) How do you know removing the rule changed what the agent did?</li>
+<li>(Prof. Zheng) How unsure will your estimates be?</li>
+<li>(Prof. Zheng) What is an intraclass correlation, in simple words?</li>
+<li>(Prof. Zheng) What is a non-homogeneous Poisson process?</li>
+<li>(Prof. Okamura) Have you used pysrat? What would you use it for?</li>
+<li>(Prof. Zheng) What if the merged code itself is wrong on some inputs?</li>
+<li>(Prof. Zheng) Why only Python repositories?</li>
+<li>(Prof. Zheng) Your study costs 420 to 590 dollars. Who pays?</li>
+<li>(Prof. Zheng) What would you publish first, and where?</li>
+<li>(Prof. Zheng) If ρ is close to zero, is your study a failure?</li>
+<li>(Prof. Zheng) Explain the infinite-server queue idea in your field-data part.</li>
+<li>(Prof. Zheng) What did you learn from BrandMemory? Was it a real experiment?</li>
+<li>(Prof. Zheng) What does your desktop agent Yuki 2.0 do, and what did you build yourself?</li>
+</ol>
+<hr />
+<h2 id="part-4-feedback-checklist-fill-this-in-at-the-end">Part 4. Feedback checklist (fill this in at the end)</h2>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Yes / No</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Greeted him by name ("Prof. Zheng")</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Offered the slides once, did not force them</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Slides stayed under about 5 minutes</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Spoke to the camera, not reading the slides</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Stopped sharing the screen after the slides</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Answers started short (one sentence first)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Said "only the abstract" about the N-version paper</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Honest about statistics background and Japanese</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mentioned NAIST honestly if asked</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Never asked the lab for money</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Asked about the Consent Form and the research plan form</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Questions he struggled with:</strong>
+1.
+2.
+3.</p>
+<p>Model answers are in <a href="ch09.html"><code>03_Research_Plan_Defense/05_question_bank_with_model_answers.md</code></a>.</p>
+</article>
+<div class="donebox"><label><input type="checkbox" class="done-cb" data-ch="h04"> Mark chapter 4 as done</label></div>
+<nav class="pager" aria-label="Previous and next"><a class="prev" href="ch03.html"><span class="lbl">← Previous</span>3. Full script: hello to goodbye</a><a class="next" href="ch05.html"><span class="lbl">Next →</span>5. The 30-minute game plan</a></nav><script>(function () {
+  var art = document.querySelector("main.page article");
+  if (!art) return;
+  var hasTTS = "speechSynthesis" in window;
+  var items = [], cur = -1, voices = [];
+
+  function clean(t) { return t.replace(/^\s*\d+\.\s*/, "").replace(/^\(Prof\.\s*(Zheng|Okamura)\)\s*/, "").trim(); }
+  function roleOf(t) { var m = t.match(/\(Prof\.\s*(Zheng|Okamura)\)/); return m ? m[1] : "Zheng"; }
+
+  // collect questions and spoken lines in page order
+  art.querySelectorAll("p, li, blockquote").forEach(function (el) {
+    var t = el.textContent.trim();
+    if (el.tagName === "P" && el.firstElementChild && el.firstElementChild.tagName === "STRONG" &&
+        el.firstChild === el.firstElementChild && /^\d+\.\s*\(Prof\./.test(el.firstElementChild.textContent)) {
+      var q = el.firstElementChild.textContent;
+      add(el, clean(q), roleOf(q));
+    } else if (el.tagName === "LI" && /^\(Prof\.\s*(Zheng|Okamura)\)/.test(t)) {
+      add(el, clean(t), roleOf(t));
+    } else if (el.tagName === "BLOCKQUOTE") {
+      add(el, t, "Zheng");
+    }
+  });
+
+  function add(el, text, role) {
+    var idx = items.length;
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "say"; b.textContent = "\u{1F50A}";
+    b.title = "Play"; b.setAttribute("aria-label", "Play this question");
+    b.addEventListener("click", function (e) { e.preventDefault(); play(idx); });
+    el.insertBefore(b, el.firstChild);
+    items.push({ el: el, text: text, role: role });
+  }
+
+  // control bar
+  var bar = document.createElement("div");
+  bar.className = "saybar";
+  bar.innerHTML =
+    '<p class="saytitle"><strong>Hear the questions.</strong> Tap \u{1F50A} next to any question, or use <em>Next question</em> to go through them in order. Answer out loud after each one.</p>' +
+    '<div class="sayrow">' +
+    '<button type="button" class="sbtn" data-a="next">▶ Next question</button>' +
+    '<button type="button" class="sbtn" data-a="repeat">↻ Repeat</button>' +
+    '<button type="button" class="sbtn" data-a="random">\u{1F3B2} Random</button>' +
+    '<button type="button" class="sbtn" data-a="stop">■ Stop</button>' +
+    '</div><div class="sayrow">' +
+    '<label>Speed <select class="ssel" data-s="rate"><option value="0.8">0.8x</option><option value="0.9">0.9x</option><option value="0.95" selected>0.95x</option><option value="1">1x</option><option value="1.1">1.1x</option></select></label>' +
+    '<label>Voice <select class="ssel" data-s="voice"><option value="">Best available</option></select></label>' +
+    '<label><input type="checkbox" class="stwo" checked> Two voices (Prof. Zheng / Prof. Okamura)</label>' +
+    '</div>' +
+    (hasTTS ? "" : '<p class="saynote">This browser cannot speak text. Try Chrome or Safari.</p>');
+  var head = art.querySelector("header.chead");
+  (head && head.nextSibling) ? art.insertBefore(bar, head.nextSibling) : art.insertBefore(bar, art.firstChild);
+
+  var fab = document.createElement("button");
+  fab.type = "button"; fab.className = "sayfab"; fab.textContent = "▶ Next";
+  fab.addEventListener("click", function () { next(); });
+  document.body.appendChild(fab);
+
+  var rateSel = bar.querySelector('[data-s="rate"]'), voiceSel = bar.querySelector('[data-s="voice"]'), two = bar.querySelector(".stwo");
+
+  var NOVELTY = /^(Albert|Bad News|Bahh|Bells|Boing|Bubbles|Cellos|Deranged|Good News|Hysterical|Jester|Junior|Organ|Pipe Organ|Superstar|Trinoids|Whisper|Wobble|Zarvox|Fred|Ralph|Kathy|Princess|Rocko|Grandma|Grandpa|Eddy|Flo|Reed|Sandy|Shelley)\b/i;
+  var GOOD = /^(Samantha|Daniel|Karen|Moira|Tessa|Ava|Allison|Susan|Tom|Serena|Kate|Oliver|Alex|Evan|Nathan|Zoe|Joelle|Noelle|Martha|Arthur|Catherine|Gordon|Rishi|Veena|Aaron|Nicky)\b/i;
+  function score(v) {
+    var n = v.name, sc = 0;
+    if (NOVELTY.test(n)) return -1000;
+    if (/Google (US|UK) English/i.test(n)) sc += 100;
+    if (/(Natural|Neural|Online)/i.test(n)) sc += 90;
+    if (/(Enhanced|Premium)/i.test(n)) sc += 80;
+    if (GOOD.test(n)) sc += 70;
+    if (/en[-_](US|GB)/i.test(v.lang)) sc += 5;
+    if (/en[-_](IN|AU|IE|ZA|NZ)/i.test(v.lang)) sc += 3;
+    return sc;
+  }
+  function loadVoices() {
+    if (!hasTTS) return;
+    voices = speechSynthesis.getVoices()
+      .filter(function (v) { return /^en(-|_|$)/i.test(v.lang) && score(v) >= 0; })
+      .sort(function (a, b) { return score(b) - score(a); });
+    var keep = voiceSel.value;
+    voiceSel.innerHTML = '<option value="">Best available</option>' + voices.map(function (v, i) {
+      return '<option value="' + i + '">' + v.name + " (" + v.lang + ")</option>";
+    }).join("");
+    voiceSel.value = keep;
+  }
+  if (hasTTS) { loadVoices(); speechSynthesis.onvoiceschanged = loadVoices; }
+
+  function pickVoice(role) {
+    if (voiceSel.value !== "") return voices[+voiceSel.value] || null;
+    if (!voices.length) return null;
+    if (two.checked && role === "Okamura") {
+      var base = voices[0].name.split(" ")[0];
+      for (var i = 1; i < voices.length; i++) {
+        if (voices[i].name.split(" ")[0] !== base && score(voices[i]) >= 70) return voices[i];
+      }
+    }
+    return voices[0];
+  }
+
+  function play(idx) {
+    if (idx < 0 || idx >= items.length) return;
+    cur = idx;
+    items.forEach(function (it) { it.el.classList.remove("sayhl"); });
+    var it = items[idx];
+    it.el.classList.add("sayhl");
+    it.el.scrollIntoView({ behavior: "smooth", block: "center" });
+    if (!hasTTS) return;
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(it.text);
+    var v = pickVoice(it.role);
+    if (v) { u.voice = v; u.lang = v.lang; } else { u.lang = "en-US"; }
+    u.rate = parseFloat(rateSel.value) || 0.95;
+    u.pitch = 1;
+    window.__sayUtt = u; // keep a reference: Chrome otherwise stops speech midway
+    setTimeout(function () { speechSynthesis.speak(u); }, 80);
+  }
+  function next() { play(cur + 1 < items.length ? cur + 1 : 0); }
+
+  bar.addEventListener("click", function (e) {
+    var a = e.target.getAttribute && e.target.getAttribute("data-a");
+    if (!a) return;
+    if (a === "next") next();
+    else if (a === "repeat") play(cur < 0 ? 0 : cur);
+    else if (a === "random") play(Math.floor(Math.random() * items.length));
+    else if (a === "stop" && hasTTS) speechSynthesis.cancel();
+  });
+})();
+</script>
+</main>
+</div>
+<script>
+(function(){
+ var KEY='hiroshimabook-done-v1';
+ function load(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
+ function save(d){try{localStorage.setItem(KEY,JSON.stringify(d))}catch(e){}}
+ function refresh(){
+  var d=load();
+  document.querySelectorAll('[data-ch]').forEach(function(el){el.classList.toggle('done',!!d[el.getAttribute('data-ch')])});
+  document.querySelectorAll('input.done-cb').forEach(function(cb){cb.checked=!!d[cb.getAttribute('data-ch')]});
+  var p=document.getElementById('progress');
+  if(p&&window.BOOK){
+   var total=BOOK.chapters.length,done=BOOK.chapters.filter(function(c){return d[c.id]}).length;
+   p.querySelector('.count').textContent=done+' of '+total+' chapters done';
+   p.querySelector('.bar span').style.width=(100*done/total)+'%';
+   var ul=p.querySelector('.parts-progress');ul.innerHTML='';
+   BOOK.parts.forEach(function(pt){
+    var cs=BOOK.chapters.filter(function(c){return c.part===pt.n});
+    var dn=cs.filter(function(c){return d[c.id]}).length;
+    var nextc=cs.filter(function(c){return !d[c.id]})[0];
+    var li=document.createElement('li');
+    li.textContent=pt.name+': '+dn+' of '+cs.length;
+    if(nextc){li.appendChild(document.createTextNode(' · next: '));var a=document.createElement('a');a.href=nextc.file;a.textContent=nextc.title;li.appendChild(a)}
+    else{li.appendChild(document.createTextNode(' ✓'))}
+    ul.appendChild(li);
+   });
+  }
+ }
+ document.querySelectorAll('input.done-cb').forEach(function(cb){
+  cb.addEventListener('change',function(){var d=load(),id=cb.getAttribute('data-ch');if(cb.checked){d[id]=1}else{delete d[id]}save(d);refresh()});
+ });
+ var btn=document.querySelector('.menu-btn');
+ if(btn){btn.addEventListener('click',function(){var o=document.body.classList.toggle('nav-open');btn.setAttribute('aria-expanded',o?'true':'false')})}
+ refresh();
+})();
+</script>
+</body>
+</html>
