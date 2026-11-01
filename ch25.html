@@ -1,0 +1,1046 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>25. Questions from their papers: reliability models (83) · Hiroshima prep</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1f2328;--muted:#5f6670;--line:#e3e0d8;--card:#f3f1ea;--link:#0b57d0;--code:#efede6;--accent:#2f5d8a;--fill:#fff2a8}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--link);text-underline-offset:2px}
+.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line)}
+.brand{font-weight:600;color:var(--fg);text-decoration:none}
+.menu-btn{font:inherit;font-size:15px;padding:6px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);cursor:pointer}
+.layout{display:block}
+.sidenav{display:none;font-size:15px;line-height:1.45;padding:12px 18px 40px}
+body.nav-open .sidenav{display:block;border-bottom:1px solid var(--line);background:var(--card)}
+.sidenav ul{list-style:none;margin:0;padding:0}
+.sidenav li{margin:2px 0}
+.sidenav a{display:block;padding:4px 6px;border-radius:6px;color:var(--fg);text-decoration:none}
+.sidenav a:hover{background:var(--line)}
+.sidenav a[aria-current=page]{background:var(--accent);color:#fff}
+.sidenav .part{margin:14px 0 4px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.sidenav .n{display:inline-block;min-width:1.8em;color:var(--muted)}
+.sidenav a[aria-current=page] .n{color:#fff}
+[data-ch].done>a::after,.toc-list li.done .t::after{content:" \2713";color:#2e7d32;font-weight:700}
+.page{max-width:760px;margin:0 auto;padding:20px 20px 60px}
+.chead{margin:8px 0 22px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.chead .part{margin:0;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.chead .chno{margin:6px 0 0;font-size:15px;color:var(--accent);font-weight:600}
+.chead h1{margin:4px 0 12px}
+.when{margin:0;padding:10px 14px;background:var(--card);border-left:4px solid var(--accent);border-radius:6px;font-size:16px}
+h1{font-size:1.75em;line-height:1.25}
+h2{font-size:1.35em;line-height:1.3;margin-top:2em;padding-top:.4em;border-top:1px solid var(--line)}
+h3{font-size:1.12em;line-height:1.35;margin-top:1.6em}
+h4{font-size:1em;margin-top:1.4em}
+p,li{overflow-wrap:break-word}
+li{margin:.25em 0}
+code{font:0.86em/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--code);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+pre{background:var(--code);padding:12px 14px;border-radius:8px;overflow-x:auto;font-size:14px;line-height:1.5}
+pre code{background:none;padding:0;overflow-wrap:normal;font-size:1em}
+blockquote{margin:1em 0;padding:6px 16px;border-left:4px solid #b9c7da;background:var(--card);border-radius:4px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1em 0}
+table{border-collapse:collapse;font-size:15px;line-height:1.45;min-width:100%}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}
+th{background:var(--card)}
+hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+mark.fill{background:var(--fill);color:#1f2328;padding:0 3px;border-radius:3px}
+li.task{list-style:none}
+li.task .cb{display:inline-block;width:.85em;height:.85em;border:2px solid var(--muted);border-radius:3px;margin:0 .45em 0 -1.3em;vertical-align:-.05em}
+li.task .cb.on{background:var(--accent);border-color:var(--accent)}
+details.box{margin:0 0 20px;padding:8px 14px;background:var(--card);border-radius:8px}
+details.box summary{cursor:pointer;font-weight:600}
+details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
+.slides figure{margin:0 0 14px}
+.slides img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+.slides figcaption{font-size:14px;color:var(--muted);margin-top:4px}
+.donebox{margin:36px 0 16px;padding:14px 16px;background:var(--card);border-radius:10px;font-size:17px}
+.donebox label{cursor:pointer;display:flex;align-items:center;gap:10px}
+.donebox input,.toc-list input{width:22px;height:22px;accent-color:#2e7d32;flex:none}
+.pager{display:flex;gap:12px;justify-content:space-between;margin-top:8px}
+.pager a{flex:1 1 0;display:block;padding:12px 14px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--fg);background:var(--bg)}
+.pager a:hover{border-color:var(--accent)}
+.pager .lbl{display:block;font-size:13px;color:var(--muted)}
+.pager .next{text-align:right}
+.pager .ghost{visibility:hidden}
+.progress{margin:16px 0;padding:14px 16px;background:var(--card);border-radius:10px}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden;margin:8px 0}
+.bar span{display:block;height:100%;width:0;background:#2e7d32}
+.parts-progress{list-style:none;padding:0;margin:6px 0 0;font-size:15px}
+.start{display:inline-block;margin:6px 0 4px;padding:10px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.toc-list{list-style:none;padding:0}
+.toc-list li{display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line)}
+.toc-list .t{font-weight:600}
+.toc-list .w{display:block;font-size:15px;color:var(--muted)}
+.muted{color:var(--muted);font-size:15px}
+@media (max-width:640px){body{font-size:17px}.page{padding:14px 16px 50px}h1{font-size:1.5em}.pager{flex-direction:column}.pager .next{text-align:left}}
+@media (min-width:1100px){
+ .menu-btn{display:none}
+ .layout{display:grid;grid-template-columns:290px 1fr}
+ .sidenav{display:block;position:sticky;top:49px;height:calc(100vh - 49px);overflow-y:auto;border-right:1px solid var(--line);background:var(--bg)}
+ body.nav-open .sidenav{border-bottom:0;background:var(--bg)}
+ .page{padding-top:28px}
+}
+@media (prefers-color-scheme:dark){
+ :root{--bg:#17181b;--fg:#e4e4e2;--muted:#a3a7ad;--line:#33353a;--card:#212328;--link:#8ab4f8;--code:#262830;--accent:#6c9bd2;--fill:#f3dc6b}
+ .slides img{background:#fff}
+ blockquote{border-left-color:#4a5a70}
+}
+</style>
+
+</head>
+<body>
+<header class="topbar"><button class="menu-btn" type="button" aria-controls="sidenav" aria-expanded="false">Contents</button><a class="brand" href="index.html">Hiroshima prep</a></header>
+<div class="layout">
+<nav id="sidenav" class="sidenav" aria-label="Book contents"><ul>
+<li><a href="index.html">Home: how to use this book</a></li>
+<li><a href="contents.html">Contents</a></li>
+<li class="part">Part 1: Before Monday&#x27;s meeting (30 Oct to 2 Nov)</li>
+<li data-ch="h01"><a href="ch01.html"><span class="n">1.</span>Start here</a></li>
+<li data-ch="h02"><a href="ch02.html"><span class="n">2.</span>Presentation guide and slides</a></li>
+<li data-ch="h03"><a href="ch03.html"><span class="n">3.</span>Full script: hello to goodbye</a></li>
+<li data-ch="h04"><a href="ch04.html"><span class="n">4.</span>Mock interview (tap to hear the questions)</a></li>
+<li data-ch="h05"><a href="ch05.html"><span class="n">5.</span>The 30-minute game plan</a></li>
+<li data-ch="h06"><a href="ch06.html"><span class="n">6.</span>Prof. Zheng in depth</a></li>
+<li data-ch="h07"><a href="ch07.html"><span class="n">7.</span>The lab, Prof. Dohi and Prof. Okamura</a></li>
+<li data-ch="h08"><a href="ch08.html"><span class="n">8.</span>Your proposal, explained simply</a></li>
+<li data-ch="h09"><a href="ch09.html"><span class="n">9.</span>Question bank with model answers</a></li>
+<li data-ch="h10"><a href="ch10.html"><span class="n">10.</span>Weak points and honest answers</a></li>
+<li data-ch="h11"><a href="ch11.html"><span class="n">11.</span>Questions on your proposal (55)</a></li>
+<li data-ch="h12"><a href="ch12.html"><span class="n">12.</span>Why Japan, why Hiroshima, why this lab (33)</a></li>
+<li data-ch="h13"><a href="ch13.html"><span class="n">13.</span>Questions on funding (28)</a></li>
+<li data-ch="h14"><a href="ch14.html"><span class="n">14.</span>Questions from their papers: N-version, AI, testing (44)</a></li>
+<li data-ch="h15"><a href="ch15.html"><span class="n">15.</span>Questions to ask Prof. Zheng</a></li>
+<li data-ch="h16"><a href="ch16.html"><span class="n">16.</span>Day-of checklist</a></li>
+<li data-ch="h17"><a href="ch17.html"><span class="n">17.</span>How to address them, and etiquette</a></li>
+<li data-ch="h18"><a href="ch18.html"><span class="n">18.</span>Email templates (thank-you and after)</a></li>
+<li class="part">Part 2: The application (2 to 13 Nov)</li>
+<li data-ch="h19"><a href="ch19.html"><span class="n">19.</span>Application process and dates</a></li>
+<li data-ch="h20"><a href="ch20.html"><span class="n">20.</span>Documents checklist</a></li>
+<li data-ch="h21"><a href="ch21.html"><span class="n">21.</span>Hiroshima vs NAIST: decide early</a></li>
+<li class="part">Part 3: The oral exam (24 Nov to 2 Dec)</li>
+<li data-ch="h22"><a href="ch22.html"><span class="n">22.</span>Reliability and probability primer</a></li>
+<li data-ch="h23"><a href="ch23.html"><span class="n">23.</span>Oral exam prep</a></li>
+<li data-ch="h24"><a href="ch24.html"><span class="n">24.</span>Papers guide: lab and cited papers</a></li>
+<li data-ch="h25"><a href="ch25.html" aria-current="page"><span class="n">25.</span>Questions from their papers: reliability models (83)</a></li>
+<li data-ch="h26"><a href="ch26.html"><span class="n">26.</span>Other likely questions (32)</a></li>
+<li class="part">Reference</li>
+<li data-ch="h27"><a href="ch27.html"><span class="n">27.</span>Glossary</a></li>
+<li data-ch="h28"><a href="ch28.html"><span class="n">28.</span>Every paper by Prof. Zheng (index)</a></li>
+</ul></nav>
+<main class="page">
+<article>
+<header class="chead">
+<p class="part">Part 3: The oral exam (24 Nov to 2 Dec)</p>
+<p class="chno">Chapter 25 of 28</p>
+<h1>Questions from the lab&#x27;s papers: software reliability models and statistics</h1>
+<p class="when"><strong>When and how long:</strong> From 3 Nov: sections 1 and 2 first, then a section a day.</p>
+</header>
+
+<p>These are questions Prof. Zheng, Prof. Okamura or Prof. Dohi could ask about the lab's own papers on software reliability models and statistics, each with a short, honest model answer in your voice. It covers 36 papers by the three professors, Asst. Prof. Jingchi Wu, students such as Nanxiang Qiu and Jiacheng Bai, and other co-authors such as Siqiao Li. The most useful for your plan come first. You have not read these papers yet. Each honest line assumes you have read that paper's abstract, so read it first. Any answer that needs more reading is marked [CONFIRM: only if you read it]. Paper facts come only from the texts and abstracts in <code>/Users/mafex/code/personal/masters-research/2027-refresh/hiroshima-application/qbank-2026-11-01/paper_text/</code>. Prof. Zheng's availability, rejuvenation and Markov regenerative process papers are not in this file.</p>
+<h2 id="how-to-use-it">How to use it</h2>
+<ul>
+<li>Before Monday (2 Nov, 17:00 JST): read the abstracts of papers 1 to 9 in the table below. That is about 26 minutes. Learn the "Basics" section and the boxes for those nine papers.</li>
+<li>Before the oral exam (24 Nov to 2 Dec): the rest. The official guideline says the oral exam evaluates "academic abilities regarding knowledge in the specialized field, application capability, and problem-solving abilities" (official guideline, section 2 "Examination Subjects": "Application Guidelines (M International Students [Living outside Japan]_April 2027 Admission)", listed on <a href="https://www.hiroshima-u.ac.jp/en/adse/admission/m_admission">https://www.hiroshima-u.ac.jp/en/adse/admission/m_admission</a>, PDF <a href="https://www.hiroshima-u.ac.jp/system/files/302259/M%E5%A4%96%E5%9B%BD%E4%BA%BA%EF%BC%88%E5%9B%BD%E5%A4%96%EF%BC%89%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%85%EF%BC%88%E8%8B%B1%E8%AA%9E%E7%89%88%EF%BC%89202704.pdf">https://www.hiroshima-u.ac.jp/system/files/302259/M%E5%A4%96%E5%9B%BD%E4%BA%BA%EF%BC%88%E5%9B%BD%E5%A4%96%EF%BC%89%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%85%EF%BC%88%E8%8B%B1%E8%AA%9E%E7%89%88%EF%BC%89202704.pdf</a>, fetched 1 Nov 2026; the same file as the local copy <code>/Users/mafex/Downloads/Hiroshima-University/10_Official_Guideline_and_Blank_Forms/Hiroshima_Application_Guideline_April_2027.pdf</code>). So expect "explain this model" questions, not only questions about your plan.</li>
+<li>Say the first sentence of an answer, then stop. Use "If he pushes" only when he asks more.</li>
+<li>If you have not read a paper, start with the honest line. "I've read the abstract" is a good answer. "I have read your paper" is not, unless it is true.</li>
+<li>Open-access PDFs are in <code>/Users/mafex/Downloads/Hiroshima-University/04_Papers/pdfs/</code>. Papers marked "abstract only" or "title only" could not be downloaded.</li>
+</ul>
+<h2 id="reading-order">Reading order</h2>
+<p>"Minutes" is the time to read the abstract slowly. 0 means no abstract was found, so there is nothing to read yet.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Paper</th>
+<th>Why it matters for you</th>
+<th>Minutes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Qiu et al., Hawkes model with a neural kernel (IJMEMS 2026)</td>
+<td>Your reference [3]: GitHub fault data and clustered faults</td>
+<td>3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Okamura, pysrat (2026)</td>
+<td>Your reference [4]: the tool for your delay distribution G</td>
+<td>10 (README)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Wu et al., fine-grained parametric bootstrap (JSS 2026)</td>
+<td>Your RQ1 intervals come from a bootstrap</td>
+<td>3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Wu et al., thinning-based parametric bootstrap (DASC 2025)</td>
+<td>Same tool; how to check a bootstrap by simulation</td>
+<td>2</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Dohi, Zheng, Okamura, data-driven reliability (Quality Engineering 2020)</td>
+<td>Kernel estimation plus a non-parametric bootstrap, like yours</td>
+<td>1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Okamura et al., epistemic uncertainty for reliability metrics (ISSAT 2022)</td>
+<td>How unsure the final number is</td>
+<td>0</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Li, Dohi, Okamura, proportional intensity SRMs (Electronics 2022)</td>
+<td>The exp(β′z) covariate form in your field model</td>
+<td>2</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Li, Dohi, Okamura, infinite-failure NHPP models (Software 2023)</td>
+<td>Why a finite-fault model does not fit code that keeps arriving</td>
+<td>3</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Dohi, Okamura, Poisson binomial distribution (ORSJ 2022, Japanese)</td>
+<td>Counting failing runs; a vote is a k-out-of-n system</td>
+<td>2 (in translation)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Metrics-based SRMs with elastic net (APARM 2024)</td>
+<td>Covariates and penalties, like pysrat's PR-NHPP</td>
+<td>1</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Wu et al., alternative AdaBoosting (RIMS 2026)</td>
+<td>GitHub monthly failure counts; thinning with a correction</td>
+<td>5 (no abstract; read section 1)</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Wu et al., alternative boosting (PRDC 2024)</td>
+<td>Best fit is not always best prediction</td>
+<td>2</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Wu, Dohi, Okamura, bagging (PRDC 2024)</td>
+<td>Bootstrap used for prediction, not intervals</td>
+<td>2</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Qiu et al., Hawkes with Pareto base (QRS 2025)</td>
+<td>Same family as [3]</td>
+<td>2</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Qiu et al., Hawkes with gamma base (WSSE 2025)</td>
+<td>Same family as [3]; simulation for the mean value function</td>
+<td>2</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Qiu, Dohi, Okamura, useful class of Hawkes processes (RIMS 2025)</td>
+<td>Why a constant base rate failed</td>
+<td>5 (no abstract; read section 1)</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Qiu, Dohi, Okamura, Hawkes chapter (CRC 2024)</td>
+<td>The first step of the Hawkes work</td>
+<td>1</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Hagihara, Dohi, Okamura, Bayesian residual bugs (DSN-W 2024)</td>
+<td>Predicting how many bugs remain</td>
+<td>2</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Fujimura, Dohi, Okamura, maximum likelihood prediction (DASC 2024)</td>
+<td>Predicting future bug counts</td>
+<td>3</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Wu et al., likelihood-free MPS estimation (IOCMA 2026)</td>
+<td>Another way to estimate; GitHub data</td>
+<td>2</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Zheng et al., MPS estimation (APARM 2026)</td>
+<td>Same topic as 20</td>
+<td>0</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Wu et al., probabilistic least squares (WSSE 2025)</td>
+<td>Why plain least squares is wrong for an NHPP</td>
+<td>2</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Yano, Dohi, Okamura, estimation algorithms (IEEE Computer 2024)</td>
+<td>Why pysrat uses EM</td>
+<td>1</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Qiu et al., infinite-failure NHMP models (SQJ 2026)</td>
+<td>Mean equals variance in an NHPP; Markov models change the spread</td>
+<td>2</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Li, Dohi, Okamura, NHMP modelling (IEEE TR 2023)</td>
+<td>Release decision, a cost trade-off like your best N</td>
+<td>2</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Bai et al., kernel regression and bandwidths (IOCMA 2026)</td>
+<td>GitHub bug-report data; honest "neither wins" result</td>
+<td>2</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Bai et al., multi-kernel local linear regression (DASC 2025)</td>
+<td>Prediction at the edge of the data</td>
+<td>2</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Bai et al., kernel vs parametric regression (WSSE 2024)</td>
+<td>The first kernel paper of this line</td>
+<td>2</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Bai et al., long-term prediction by kernel regression (IST 2026)</td>
+<td>Title only</td>
+<td>0</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Zheng et al., fine-grained kernel approaches (APARM 2026)</td>
+<td>Title only</td>
+<td>0</td>
+</tr>
+<tr>
+<td>31</td>
+<td>Okamura, Dohi, SRATS (ISSRE 2013)</td>
+<td>The Excel tool before pysrat</td>
+<td>2</td>
+</tr>
+<tr>
+<td>32</td>
+<td>Xiao, Okamura, Dohi, survey of assessment tools (2024)</td>
+<td>Title only</td>
+<td>0</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Zheng et al., reliability with source code embeddings (Duke workshop 2025)</td>
+<td>Title only; code as features</td>
+<td>0</td>
+</tr>
+<tr>
+<td>34</td>
+<td>Li, Zheng, Okamura, Dohi, encoder-decoder RNN (IJMEMS 2022)</td>
+<td>Neural prediction of fault counts</td>
+<td>2</td>
+</tr>
+<tr>
+<td>35</td>
+<td>Li, Zheng, deep learning for reliability and security (ORSJ 2023, Japanese)</td>
+<td>Same line, in Japanese</td>
+<td>2 (in translation)</td>
+</tr>
+<tr>
+<td>36</td>
+<td>Dohi et al., continuous-state SRMs (book chapter 2018)</td>
+<td>Counts treated as continuous</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="basics-used-by-almost-every-paper">Basics used by almost every paper</h2>
+<p><strong>Basics to know (NHPP software reliability models)</strong></p>
+<ul>
+<li>N(t) is the number of faults found by time t. In an NHPP, N(t) is Poisson with mean m(t), the mean value function, and λ(t) = m′(t) is the rate. Counts in separate time intervals are independent, and the mean equals the variance.</li>
+<li>Finite-failure models write m(t) = ωF(t): ω is the expected total number of faults and F is the fault-detection time distribution. Goel-Okumoto: m(t) = ω(1 − e^(−bt)). Changing F (gamma, Pareto, log-normal and so on) gives the other models.</li>
+<li>For fault times t_1, ..., t_n seen up to T: log L = Σ log λ(t_i) − m(T). Maximum likelihood picks the parameters that make this largest.</li>
+<li>AIC = 2k − 2 log L, where k is the number of parameters. Lower is better.</li>
+<li>Reliability after testing to t: R(x | t) = exp(−[m(t + x) − m(t)]), the chance of no failure in the next x time units.</li>
+<li>Goodness of fit vs prediction: most of these papers fit on the first 20%, 50% or 80% of the data (early, middle, late testing) and predict the rest. PMSE is a squared-error measure of the predicted cumulative counts on the held-out part (in Qiu et al. it is a square-root form divided by the number of held-out points; check the exact formula in each paper). PMAE uses absolute errors.</li>
+</ul>
+<p><strong>Q1. Which of our software reliability papers have you read?</strong></p>
+<blockquote>
+<p>Honestly, mostly the abstracts [CONFIRM: only say this once you have read the abstracts]. I read more of Qiu et al.'s Hawkes paper, because I cite it, mainly the data and results parts [CONFIRM: only if you read them]. I'd be glad to read whichever paper you think matters most for my plan.</p>
+</blockquote>
+<p>Why he asks: to see whether you claim more than you know. Never say "I have read your paper".</p>
+<p><strong>Q2. Most of our reliability work models faults over testing time. Your RQ1 has no time in it. How does it fit?</strong></p>
+<blockquote>
+<p>RQ1 is about the chance of failing on one input, like Eckhardt and Lee, so it is an input-based model, not a time-based one. Time comes in only in the field-data part, where fixes to agent code arrive over calendar time. That part uses NHPP ideas from your papers and pysrat.</p>
+</blockquote>
+<p><strong>Q3. Which of our papers would you use first, and for what?</strong></p>
+<blockquote>
+<p>pysrat and Qiu et al. [3] for the field-data part, because I would build fault data from GitHub the way they did. Dr. Wu's bootstrap papers for intervals, because my RQ1 also needs a bootstrap. And from the abstracts, the papers on predicting remaining bugs fit my question of how many fixes remain.</p>
+</blockquote>
+<h2 id="1-the-two-lab-works-your-proposal-cites">1. The two lab works your proposal cites</h2>
+<h3 id="semi-parametric-self-exciting-srm-with-a-neural-kernel-qiu-dohi-wu-zheng-okamura-ijmems-2026">Semi-parametric self-exciting SRM with a neural kernel (Qiu, Dohi, Wu, Zheng, Okamura, IJMEMS 2026)</h3>
+<p>Status: your reference [3]. Open access. PDF: <code>04_Papers/pdfs/REF3_Qiu_et_al_2026_IJMEMS_Hawkes_SRM.pdf</code>.</p>
+<p>What it does, in plain words: NHPP models assume one detected fault does not change the chance of finding the next, but in real testing one fault can lead testers to related faults, so detections come in clusters. The paper models this with a Hawkes process: a base rate that falls exponentially over time, plus an excitation kernel learned by a shallow neural network. On eight datasets (four classic ones and four built from GitHub issue histories, 104 to 397 faults each), it had the best PMSE on 5 of 8 datasets at the 20% and 50% points against ten parametric Hawkes models, beat the NHPP models on 7 of 8 at the 50% point, but was best on only 2 at the 80% point.</p>
+<p>Link to your proposal: your field-data part would build fix data from GitHub commit messages, as this paper built DS5 to DS8 from GitHub issues, and because your counts will be far below its 104 to 397 faults, you plan to pool repositories.</p>
+<p>Honest line: "I've read the abstract, and the data and results parts because I cite it. I haven't worked through how the mean value function is derived." [CONFIRM: only say this once you have read the abstract; keep "and the data and results parts" only if you read them.]</p>
+<p><strong>Basics to know (Hawkes process)</strong></p>
+<ul>
+<li>Rate: λ(t | history) = μ(t) + Σ over past faults φ(t − t_i). μ(t) is the background rate. φ is the extra rate each fault adds, and it fades with time.</li>
+<li>In this paper μ(t) = v b e^(−bt), which falls as testing goes on, and a parametric kernel is φ(τ) = α f(τ), where α is the strength of self-excitation.</li>
+<li>If you drop the history term, you get an NHPP back.</li>
+<li>Cluster view (from the paper): background faults start clusters, and each fault can trigger more.</li>
+<li>General fact, not from the paper: when f is a density, α is the average number of faults each fault triggers directly. α must be below 1, whatever the base rate, or a cluster's expected size is infinite.</li>
+<li>The expected rate solves E[λ(t)] = μ(t) + ∫₀ᵗ φ(t − s) E[λ(s)] ds, a Volterra equation. The paper derives such an equation for the expected count and solves it numerically.</li>
+</ul>
+<p><strong>Q4. Why do you cite our Hawkes paper in a plan about coding agents?</strong></p>
+<blockquote>
+<p>Because of the data. In the field-data part I would build fix data for agent code from GitHub commit messages, the way your paper built four datasets from GitHub issue histories. Your paper also gives a reason fixes can cluster, that one fault leads people to related faults, and I think that could happen with agent code too, but I haven't tested it.</p>
+</blockquote>
+<p>If he pushes ("So will you use a Hawkes model?"): "Not as the main model. My plan uses a sum over merged changes, m(t) = Σ ω_j G(t − τ_j). A self-exciting term could be an extension if the fix times clearly cluster, and I'd ask your advice on that."</p>
+<p><strong>Q5. What is the difference between an NHPP and a Hawkes process?</strong></p>
+<blockquote>
+<p>In an NHPP the rate depends only on time, so a fault found now does not change the rate later. In a Hawkes process each past fault adds a bump to the rate that dies away: λ(t) = μ(t) + Σ φ(t − t_i). If you remove the history term, you are back to an NHPP.</p>
+</blockquote>
+<p><strong>Q6. Your fix data will be much smaller than our datasets. What would you do?</strong></p>
+<blockquote>
+<p>Your datasets had 104 to 397 faults each, and I expect far fewer fixes per repository, so I would pool repositories and share parameters across them. I would start with simple parametric models. Your paper says the flexible kernel may overfit at the 80% point, when late data are sparse [CONFIRM: only if you read it], so with small counts I'd be careful with flexible models.</p>
+</blockquote>
+<p><strong>Q7. How would you check whether fixes to agent code cluster at all?</strong></p>
+<blockquote>
+<p>First by looking: your paper plots a simple pseudo-intensity, one over the gap between successive faults, and the real data looked spiky and clustered. I'd make the same plot for fix times. Then I'd fit an NHPP and a Hawkes model and compare them by AIC and by prediction on the later part of the data. [CONFIRM: only if you read section 2 of the paper]</p>
+</blockquote>
+<h3 id="pysrat-python-package-for-software-reliability-okamura-github-and-pypi-2026">pysrat, Python package for software reliability (Okamura, GitHub and PyPI 2026)</h3>
+<p>Status: your reference [4]. A software package, not a paper. README text: <code>paper_text/LAB_Okamura_2026_pysrat_Python_Package.abstract.txt</code>.</p>
+<p>What it does, in plain words: pysrat fits NHPP software reliability models in Python with a scikit-learn style interface (<code>fit</code>, <code>params_</code>, <code>llf_</code>, <code>aic_</code>), and its EM steps are written in C++. It has 12 models (11 classic ones such as exponential, gamma and log-normal, plus CF1, a canonical phase-type model), accepts grouped counts or exact fault times, and has metrics-based models where software metrics are covariates, with AIC stepwise selection. It also has a Poisson regression framework (<code>fit_pr_nhpp</code>) that fits one NHPP per module and explains the differences between modules with their static metrics.</p>
+<p>Link to your proposal: your field model takes the delay distribution G from pysrat's families, and your ω_j = L_j exp(β′z_j) is a log-linear model with log L_j as an offset, the same offset idea pysrat uses.</p>
+<p>Honest line: "I've read the README; I haven't run it yet." [CONFIRM: only say you read the README if you did, and change "haven't run it" if you install it and run the quick start before Monday.]</p>
+<p><strong>Basics to know (phase-type distribution)</strong></p>
+<ul>
+<li>A phase-type distribution is the time until a small continuous-time Markov chain reaches its end (absorbing) state. Each phase is an exponential wait.</li>
+<li>Chaining and mixing exponential phases can approximate almost any positive distribution, which is why the lab uses them so much.</li>
+<li>CF1 (canonical form 1): the phases are in a line, the rates increase along the line, and the chain may start in any phase. The README example uses <code>CanonicalPhaseTypeNHPP(3)</code>.</li>
+</ul>
+<p><strong>Q8. Have you used pysrat?</strong></p>
+<blockquote>
+<p>I've read the README, but I haven't run it yet. [CONFIRM: only say you read the README if you did; say "I installed it and fitted the exponential model on the example data" only if you did.] I'd start with the example notebooks and then fit a few models to one GitHub dataset.</p>
+</blockquote>
+<p>Why he asks: Prof. Okamura wrote it. An honest "not yet" is fine. A vague "yes" is not.</p>
+<p><strong>Q9. Which pysrat model would you use for your delay distribution G, and how would you choose?</strong></p>
+<blockquote>
+<p>I'd fit several families, such as exponential, gamma and log-normal, and compare them by AIC. But your group's papers on bagging and boosting say the model with the lowest AIC is not always the best predictor, so I would also check prediction on the later part of the data.</p>
+</blockquote>
+<p><strong>Q10. Your m(t) = Σ ω_j G(t − τ_j) is not one of pysrat's models. How would you fit it?</strong></p>
+<blockquote>
+<p>Right. pysrat fits one curve m(t) = ωF(t), and my model adds one shifted curve per merged change. I would write the log-likelihood myself, Σ log λ(t_i) − m(T) with λ(t) = Σ ω_j g(t − τ_j), where g is the density of G, and use pysrat's families for G. I don't know yet how much of its EM code I can reuse, so I would ask you.</p>
+</blockquote>
+<p><strong>Q11. pysrat has a PR-NHPP model for modules. Why not use that?</strong></p>
+<blockquote>
+<p>An earlier version of my plan did. It fits one NHPP per module, and each module has a fixed number of faults, but agent code keeps arriving, so I moved to a sum over changes. The README also warns that with q metrics and m modules the model is not identified when 1 + q ≥ m, which I'd keep in mind if I treated repositories as modules.</p>
+</blockquote>
+<h2 id="2-bootstrap-and-uncertainty-your-rq1-uses-a-bootstrap">2. Bootstrap and uncertainty (your RQ1 uses a bootstrap)</h2>
+<h3 id="fine-grained-parametric-bootstrap-for-nhpp-models-wu-dohi-zheng-okamura-jss-2026">Fine-grained parametric bootstrap for NHPP models (Wu, Dohi, Zheng, Okamura, JSS 2026)</h3>
+<p>Status: abstract only. ScienceDirect blocked the download.</p>
+<p>What it does, in plain words: release decisions need reliability measures from fault-count data, but point estimates of NHPP parameters have high variance, and exact confidence regions are hard to derive. The paper proposes a parametric bootstrap for NHPP models that uses a thinning-like resampling algorithm, instead of simpler resampling that creates bootstrap data with ties. In Monte Carlo simulation and on real data, its estimates of the parameters and reliability measures were more accurate and steadier than those of other bootstrap algorithms.</p>
+<p>Link to your proposal: your RQ1 takes its intervals for ρ and the vote failure chance from a bootstrap that resamples runs, so this is the lab's main work on the same tool.</p>
+<p>Honest line: "I've read the abstract; I couldn't get the full text, so I don't know the exact algorithm." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Basics to know (bootstrap)</strong></p>
+<ul>
+<li>Non-parametric bootstrap: resample the data with replacement, recompute the estimate, repeat many times (say 1,000), and use the spread.</li>
+<li>Parametric bootstrap: fit the model, simulate new data sets from the fitted model, refit on each.</li>
+<li>Percentile interval: the middle 95% of the bootstrap estimates.</li>
+<li>In your RQ1: resample the unit that is independent. The same runs meet every input, so you resample runs, not inputs.</li>
+</ul>
+<p><strong>Q12. Why bootstrap?</strong></p>
+<blockquote>
+<p>Because a point estimate alone can be far off, and an exact interval is often hard to derive, which is what your abstract says too. The bootstrap gives the spread by redoing the estimate on many resampled data sets. In my plan the same 10 runs meet every input, so I resample runs, refit the beta-binomial, and take the middle 95%.</p>
+</blockquote>
+<p><strong>Q13. Your bootstrap is non-parametric and ours is parametric. Why the difference?</strong></p>
+<blockquote>
+<p>In RQ1 I don't want to trust a model for how runs differ, so I resample the runs I actually have. A parametric bootstrap simulates new data from the fitted model, which makes sense for an NHPP, where the model is the point of the analysis. For the field-data part, with small fault counts, I'd like to learn your parametric method.</p>
+</blockquote>
+<p>If he pushes ("Is resampling 10 runs enough?"): "Ten is small for a bootstrap, so the intervals may come out too narrow. The pilot will show it, and I could check by simulating runs from a known beta-binomial and seeing how often my intervals contain the true value."</p>
+<p><strong>Q14. What is the "ties problem" in our abstract?</strong></p>
+<blockquote>
+<p>The abstract says simple resampling makes bootstrap data with ties. My guess is that if you resample fault times with replacement, the same time appears twice, and an NHPP cannot have two faults at exactly the same moment. A thinning-like method avoids that, because it only deletes points. [CONFIRM: only if you read the paper; otherwise say it is a guess]</p>
+</blockquote>
+<h3 id="thinning-based-parametric-bootstrap-wu-dohi-zheng-okamura-dasc-2025">Thinning-based parametric bootstrap (Wu, Dohi, Zheng, Okamura, DASC 2025)</h3>
+<p>Status: abstract only (paywalled).</p>
+<p>What it does, in plain words: point estimates of software reliability measures usually have large variance, and interval estimates are hard to get analytically. The paper proposes a thinning-based parametric bootstrap for NHPP models and refines the existing bootstrap algorithms. It compares three resampling-based bootstrap methods in Monte Carlo simulation and on real data, and finds its own method more accurate and steadier than the two existing ones.</p>
+<p>Link to your proposal: like the JSS paper it is about intervals by bootstrap, and its simulation check is how you could test your own RQ1 intervals.</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Basics to know (thinning)</strong></p>
+<ul>
+<li>To simulate an NHPP with rate λ(t) ≤ λ<em>: draw a Poisson process with constant rate λ</em>, then keep each point at time t with probability λ(t)/λ*. The kept points form an NHPP with rate λ(t).</li>
+<li>The reverse use: delete each observed fault independently with probability q. What remains is an NHPP with rate (1 − q)λ(t). Wu et al.'s RIMS 2026 paper (paper 11 below) uses q = 1/n and then corrects by n/(n − 1).</li>
+</ul>
+<p><strong>Q15. What is thinning?</strong></p>
+<blockquote>
+<p>It is a way to get one point process from another by deleting points. If you keep each point at time t with probability λ(t)/λ<em>, where λ</em> is a higher constant rate, the kept points form an NHPP with rate λ(t). Your group's RIMS paper credits the idea to Lewis and Shedler. [CONFIRM: only if you read section 3.2]</p>
+</blockquote>
+<p><strong>Q16. How would you check that one bootstrap method is better than another?</strong></p>
+<blockquote>
+<p>By Monte Carlo simulation, as your paper did: generate data from a model whose parameters I know, run each method and see how close the estimates are. I would also check how often the 95% intervals contain the true value. I could do the same for my RQ1, by simulating runs from a known beta-binomial and checking my bootstrap over runs.</p>
+</blockquote>
+<h3 id="data-driven-reliability-without-assuming-the-fault-count-distribution-dohi-zheng-okamura-quality-engineering-2020">Data-driven reliability without assuming the fault-count distribution (Dohi, Zheng, Okamura, Quality Engineering 2020)</h3>
+<p>Status: abstract only (paywalled).</p>
+<p>What it does, in plain words: the paper evaluates software reliability without specifying the fault count distribution, while still treating the fault counts in testing as an NHPP. It gives a non-parametric method based on kernel estimation, with several kernel functions and ways to estimate the bandwidth, and adds a non-parametric bootstrap. The goal is useful probabilistic information on reliability prediction when you don't know the right fault count distribution.</p>
+<p>Link to your proposal: like your RQ1 intervals, it uses a non-parametric bootstrap.</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Basics to know (kernel estimation of a rate)</strong></p>
+<ul>
+<li>λ̂(t) = Σ_i (1/h) K((t − t_i)/h). K is a bump that integrates to 1 (Gaussian, Epanechnikov and others). h is the bandwidth.</li>
+<li>Small h gives a spiky curve, large h a flat one. h is chosen from the data, for example by cross-validation.</li>
+<li>No formula for m(t) is assumed. The price is that the estimate says little beyond the range of the data.</li>
+</ul>
+<p><strong>Q17. What is kernel estimation of a fault-detection rate?</strong></p>
+<blockquote>
+<p>You put a small bump, the kernel, at each fault time and add the bumps up, so the rate is high where faults are close together. The bandwidth sets how wide each bump is: too narrow gives a spiky curve, too wide hides real changes. Your paper tried several kernels and several ways to pick the bandwidth.</p>
+</blockquote>
+<p><strong>Q18. Why go non-parametric?</strong></p>
+<blockquote>
+<p>Because the right formula is unknown, and a wrong one gives wrong predictions. As I understand it, the cost is that a kernel estimate only knows the data it has seen, so predicting far ahead is harder. I face the same trade-off in RQ1, between assuming a Beta model and something more flexible.</p>
+</blockquote>
+<h3 id="epistemic-uncertainty-propagation-for-software-reliability-metrics-okamura-zhang-zheng-dohi-issat-rqd-2022">Epistemic uncertainty propagation for software reliability metrics (Okamura, Zhang, Zheng, Dohi, ISSAT RQD 2022)</h3>
+<p>Status: title only. No abstract or copy was found.</p>
+<p>What it does, in plain words: no abstract was found. From the title, it is about how uncertainty in estimated model parameters (epistemic uncertainty) carries through to software reliability metrics.</p>
+<p>Honest line: "I only know the title."</p>
+<p><strong>Q19. What is epistemic uncertainty?</strong></p>
+<blockquote>
+<p>It is uncertainty from not knowing the model's parameters exactly, because we estimated them from limited data. It is different from the randomness of failures themselves, which is called aleatory uncertainty. More data can reduce epistemic uncertainty, but not aleatory.</p>
+</blockquote>
+<p><strong>Q20. How does your plan handle uncertainty in its estimates?</strong></p>
+<blockquote>
+<p>The bootstrap over runs gives intervals for ρ and for the vote failure chance. The best number of runs N depends on those, so I would show how N changes across the interval, not only at the point estimate. I know your group has several papers on propagating this kind of uncertainty, and I'd like to learn those methods.</p>
+</blockquote>
+<h2 id="3-covariates-open-ended-fault-counts-and-counting-failures">3. Covariates, open-ended fault counts and counting failures</h2>
+<h3 id="proportional-intensity-srms-with-covariates-li-dohi-okamura-electronics-2022">Proportional intensity SRMs with covariates (Li, Dohi, Okamura, Electronics 2022)</h3>
+<p>Status: open access. PDF: <code>04_Papers/pdfs/LAB_Li_2022_Proportional_Intensity_SRMs_Covariates.pdf</code>.</p>
+<p>What it does, in plain words: the paper extends NHPP models with software metrics measured during testing: the rate is a baseline NHPP rate times exp(xβ), where x are the metrics. It generalises an earlier model by Rinsaka et al. (2006) to eleven baseline fault-detection time distributions and fits them by maximum likelihood on four real datasets with three time-dependent covariates (test execution time, failure identification work, and computer time for failure identification). The models fit and predicted better than plain NHPP models in many cases, and failure identification work was the most important metric (from the conclusion, not the abstract: say it only if you read it).</p>
+<p>Link to your proposal: your ω_j = L_j exp(β′z_j) uses the same exp(β′z) covariate form, but per merged change instead of per testing period.</p>
+<p>Honest line: "I've read the abstract." [CONFIRM: only say this once you have read the abstract; add "and the model section" only if you read it.]</p>
+<p><strong>Basics to know (proportional intensity)</strong></p>
+<ul>
+<li>λ(t, x) = λ0(t) exp(xβ). If all β are 0, it is the plain NHPP with rate λ0.</li>
+<li>One more unit of covariate k multiplies the rate by exp(β_k).</li>
+<li>This is the same form as the Cox proportional hazards model.</li>
+</ul>
+<p><strong>Q21. Where does the exp(β′z) in your field model come from?</strong></p>
+<blockquote>
+<p>It is the Cox-style covariate form, the same one your group used in proportional intensity models: a baseline rate times exp(xβ). In my model each merged change j brings L_j exp(β′z_j) expected faults, so one unit of a covariate multiplies the expected faults by exp(β). My covariates describe the change, for example which agent wrote it, instead of the testing effort.</p>
+</blockquote>
+<p><strong>Q22. Suppose β for "written by agent A" is 0.4. What does that mean?</strong></p>
+<blockquote>
+<p>exp(0.4) is about 1.49, so a change from agent A brings about 49% more expected faults per added line than the baseline, with the other covariates fixed. That is only an example number, not a result.</p>
+</blockquote>
+<p><strong>Q23. Why the exponential form and not a linear one?</strong></p>
+<blockquote>
+<p>The exponential keeps the expected count positive for any β, and the effects multiply, which is easy to read. Your paper says this form is widely accepted because it makes the analysis easy and flexible. [CONFIRM: only if you read that part]</p>
+</blockquote>
+<h3 id="are-infinite-failure-nhpp-models-useful-li-dohi-okamura-software-mdpi-2023">Are infinite-failure NHPP models useful? (Li, Dohi, Okamura, Software (MDPI) 2023)</h3>
+<p>Status: open access. PDF: <code>04_Papers/pdfs/LAB_Li_2023_Infinite_Failure_NHPP_SRMs_Useful.pdf</code>.</p>
+<p>What it does, in plain words: finite-failure (type-I) NHPP models assume a fixed number of faults, so the expected count levels off, while infinite-failure (type-II) models, such as Musa-Okumoto, let it grow without limit, for example because debugging can be imperfect. The paper builds 11 type-II models from the same 11 fault-detection time distributions as the type-I models, fits both by maximum likelihood to data from 16 real projects, and compares fit and prediction. Type-II models could predict better, especially early in testing, but the advantage faded as testing went on, and their predictions were more conservative.</p>
+<p>Link to your proposal: your field-data part rejects a finite-fault NHPP because agent code keeps arriving, and your reference [12] uses an infinite-server queue to unify finite and infinite fault models.</p>
+<p>Honest line: "I've read the abstract." [CONFIRM: only say this once you have read the abstract; add "and the conclusion" only if you read it.]</p>
+<p><strong>Basics to know (type-I and type-II)</strong></p>
+<ul>
+<li>Type-I (finite): m(t) = ωF(t), which levels off at ω, the expected total number of faults.</li>
+<li>Type-II (infinite): M(t) = −ln(1 − F(t)), the cumulative hazard of F, which grows without limit. With a Pareto F it gives the logarithmic Poisson model of Musa and Okumoto (as the paper notes).</li>
+<li>In type-I, the time to the next failure has a "defective" distribution: there is a positive chance it never comes.</li>
+</ul>
+<p><strong>Q24. Why not just use an infinite-failure NHPP for agent code, instead of your sum over changes?</strong></p>
+<blockquote>
+<p>An infinite-failure model suits code that keeps arriving, because m(t) can grow without limit, and your paper found it can predict better early on. But it doesn't say which change brought each fault, so I couldn't put covariates like the agent into it. I'd fit both to the same data and compare.</p>
+</blockquote>
+<p><strong>Q25. What is the mean value function of a type-II model in this paper?</strong></p>
+<blockquote>
+<p>In general, a type-II model's mean value function grows without limit, while a type-I one, ωF(t), levels off at ω. In this paper it is M(t) = −ln(1 − F(t)), the cumulative hazard of F. It comes from assuming each failure is minimally repaired, so the software is only as good as just before the failure. [CONFIRM: say the last two sentences only if you read section 2.2.2]</p>
+</blockquote>
+<p><strong>Q26. Why do some engineers feel uneasy about finite-failure models?</strong></p>
+<blockquote>
+<p>The paper points out that in a finite-failure model the time to the next failure has a defective distribution: there is a positive chance it never comes, because all the faults may be gone. So measures like the mean time between failures are infinite and not useful. Type-II models do not have that problem. [CONFIRM: only if you read section 2.2]</p>
+</blockquote>
+<p>Why he asks: this is a Prof. Dohi style question about model assumptions, not about your plan.</p>
+<h3 id="poisson-binomial-distribution-and-reliability-problems-dohi-okamura-operations-research-orsj-2022-in-japanese">Poisson binomial distribution and reliability problems (Dohi, Okamura, Operations Research (ORSJ) 2022, in Japanese)</h3>
+<p>Status: in Japanese. PDF: <code>04_Papers/pdfs/LAB_Dohi_2022_Poisson_Binomial_Distribution_Reliability.pdf</code>.</p>
+<p>What it does, in plain words: if independent trials each have their own probability p_i, the number of successes follows the Poisson binomial distribution, with mean Σ p_i and variance Σ p_i(1 − p_i). The article reviews approximate and exact ways to compute it, then applies it to reliability problems: k-out-of-n systems with non-identical components, a group replacement policy, and software bug prediction. In the bug example, a machine-learning model gives each untested module a probability of holding a bug, and the Poisson binomial gives the distribution of how many buggy modules remain (shown on NASA's PC4 data with 2,017 modules).</p>
+<p>Link to your proposal: a majority vote over N runs fails when at least (N + 1)/2 runs fail, which is a k-out-of-n system, and if runs from different settings failed independently with different chances, the number of failing runs on an input would be Poisson binomial.</p>
+<p>Honest line: "It is in Japanese, so I've read the abstract in translation." [CONFIRM: only say this once you have read the abstract; add "and the bug prediction section" only if you did.]</p>
+<p><strong>Basics to know (Poisson binomial)</strong></p>
+<ul>
+<li>X_i is 1 with probability p_i and 0 otherwise, independently. S = Σ X_i.</li>
+<li>E[S] = Σ p_i and Var[S] = Σ p_i(1 − p_i). If every p_i = p, it is the binomial.</li>
+<li>Exact probabilities by a simple recursion: add one trial at a time, P(S = k after trial i) = P(k after i − 1)(1 − p_i) + P(k − 1 after i − 1) p_i.</li>
+<li>A k-out-of-n:F system fails when at least k of n components fail, so P(system fails) = P(S ≥ k).</li>
+</ul>
+<p><strong>Q27. What is a Poisson binomial distribution, and how is it different from your beta-binomial?</strong></p>
+<blockquote>
+<p>Both count failures among k trials. In the Poisson binomial each trial has its own fixed probability p_i, and the trials are independent. In my beta-binomial all runs share the same θ on an input, and θ changes from input to input, which is what makes runs fail together.</p>
+</blockquote>
+<p><strong>Q28. Three runs from three different agents fail independently with probabilities p1, p2 and p3. What is the chance a 2-out-of-3 vote fails?</strong></p>
+<blockquote>
+<p>At least two must fail: p1p2(1 − p3) + p1p3(1 − p2) + p2p3(1 − p1) + p1p2p3, which simplifies to p1p2 + p1p3 + p2p3 − 2p1p2p3. With equal p it becomes 3p² − 2p³, the independent case in my plan. With a θ per input, I'd put θ1(x), θ2(x) and θ3(x) in place of the p's and average over inputs, which brings in the covariances.</p>
+</blockquote>
+<p><strong>Q29. Could this help with "how many fixes remain" in your field data?</strong></p>
+<blockquote>
+<p>In your bug example each module gets a probability of holding a bug, and adding those up as Bernoulli variables gives the distribution of remaining buggy modules, not just a ranking. In my field data I could give each agent-written change a probability of still holding an undetected fault and get the same kind of distribution. That is an idea, not part of my plan yet. [CONFIRM: only if you read the bug section]</p>
+</blockquote>
+<h3 id="metrics-based-srms-estimated-with-elastic-net-li-okamura-zheng-dohi-per-openalex-check-aparm-2024">Metrics-based SRMs estimated with elastic net (Li, Okamura, Zheng, Dohi per OpenAlex [CHECK], APARM 2024)</h3>
+<p>Status: abstract only (paywalled CRC chapter). In answers, say "the elastic net paper", not "your paper", because the author order is not certain.</p>
+<p>What it does, in plain words: the paper presents a framework for software reliability growth models that uses software metrics. It combines Poisson regression-based fault prediction with NHPP models, handles fault-detection time series and metrics of many modules together, and estimates the parameters with an EM algorithm. The abstract does not say how the elastic net enters; only the title does.</p>
+<p>Link to your proposal: pysrat's <code>fit_pr_nhpp</code>, which an earlier version of your plan used, also fits module-wise NHPP models with a Poisson regression outer loop and offers <code>reg="elasticnet"</code> [CHECK: whether pysrat implements this paper].</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Basics to know (elastic net)</strong></p>
+<ul>
+<li>Penalised regression: minimise the loss + λ[α Σ|β_k| + (1 − α)/2 Σ β_k²].</li>
+<li>The L1 part (lasso) can set some coefficients to exactly zero. The L2 part (ridge) shrinks them and copes with correlated metrics.</li>
+<li>pysrat's README: <code>reg="elasticnet"</code>, with <code>alpha</code> for the mix and <code>lambd</code> for the strength.</li>
+</ul>
+<p><strong>Q30. Why add a penalty like the elastic net?</strong></p>
+<blockquote>
+<p>With few modules and many metrics, plain regression can't separate the effects, and pysrat's README says the model is not identified when 1 + q ≥ m. A penalty shrinks the coefficients so the fit is stable, and the L1 part can drop unhelpful metrics. In my field data, with about 20 repositories and several covariates, I might need the same.</p>
+</blockquote>
+<p><strong>Q31. How is this model different from your field model?</strong></p>
+<blockquote>
+<p>Here each module has its own fault-detection curve, and its metrics explain how many faults it has. In my model each merged change is like a small module that arrives at its own time τ_j, so the curves are shifted in time. The regression part, exp(β′z), is the same idea.</p>
+</blockquote>
+<h2 id="4-choosing-and-combining-models">4. Choosing and combining models</h2>
+<h3 id="alternative-adaboosting-approaches-for-nhpp-models-wu-dohi-zheng-okamura-rims-kokyuroku-2026-non-refereed">Alternative AdaBoosting approaches for NHPP models (Wu, Dohi, Zheng, Okamura, RIMS Kokyuroku 2026, non-refereed)</h3>
+<p>Status: text on disk (the text extraction is messy at the start). PDF: <code>04_Papers/pdfs/LAB_Wu_2026_Alternative_AdaBoosting_NHPP_SRM.pdf</code>.</p>
+<p>What it does, in plain words: the paper refines AdaBoost-based weighted combinations of NHPP models. Instead of resampling without replacement as in earlier work, it builds each resampled data set by thinning, deleting each fault with a small probability, and then corrects the bias of the fitted curve. On four GitHub projects (zig, ccxt, styled-components and netty, with monthly counts of failure issues, 254 to 3,903 faults), trained on the first 20%, 50% or 80% of the data, it shows the lowest-AIC model is not always the best predictor. The authors conclude their methods predict better than the plug-in predictor in most cases, and they suggest their Model A2.</p>
+<p>Link to your proposal: it counts GitHub failure issues per month, which is close to the fix data you would build from commit messages.</p>
+<p>Honest line: "There is no abstract, so I've read the introduction." [CONFIRM: only if you did; add "and the thinning section" only if you read section 3.2.]</p>
+<p><strong>Q32. In our RIMS paper we delete each fault with probability 1/n. Why multiply by 1 + 1/(n − 1) afterwards?</strong></p>
+<blockquote>
+<p>If you delete each point with probability 1/n, the kept points are an NHPP with rate (1 − 1/n)λ(t), so a model fitted to them underestimates the curve. Multiplying by 1 + 1/(n − 1), which is n/(n − 1), undoes that, because (1 − 1/n) times n/(n − 1) is exactly 1. [CONFIRM: only if you read section 3.2]</p>
+</blockquote>
+<p><strong>Q33. Our data were monthly counts of GitHub failure issues. Would your fix data look similar?</strong></p>
+<blockquote>
+<p>Similar, but smaller. I'd build fix data from commit messages, so I could keep exact times or group them by month. Your projects had 254 to 3,903 faults, and I expect far fewer per repository, so I would pool repositories.</p>
+</blockquote>
+<h3 id="alternative-boosting-based-reliability-prediction-wu-zheng-dohi-okamura-prdc-2024">Alternative boosting-based reliability prediction (Wu, Zheng, Dohi, Okamura, PRDC 2024)</h3>
+<p>Status: abstract only (paywalled). The RIMS paper above is the readable version of this line of work.</p>
+<p>What it does, in plain words: there are many SRMs but none predicts best everywhere, because the model that fits past data best is not always the best predictor of future fault counts. The paper looks at a predictor built as a linearly weighted combination of NHPP models and reviews an AdaBoost method by Li et al. (2012) for setting the weights. It then proposes a refined AdaBoost that keeps the steps of the original algorithm.</p>
+<p>Link to your proposal: if you choose the delay distribution G in your field model by AIC alone, this paper's warning applies, since the best fit may not predict best.</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Q34. Why is the best-fitting model not always the best predictor?</strong></p>
+<blockquote>
+<p>A model can fit the past well by bending to its noise, which is overfitting, and then predict the future badly. AIC punishes extra parameters, but it still judges fit to the past. That's why your papers test models on the later part of the data.</p>
+</blockquote>
+<p><strong>Q35. Your majority vote and our weighted combination both combine several things. What is the difference?</strong></p>
+<blockquote>
+<p>Your combination averages the predictions of several reliability models, with weights learned from data. My vote combines code versions, and the question is whether they fail on the same inputs; if they do, no weighting can fix it. In both cases, combining helps only when the parts make different mistakes.</p>
+</blockquote>
+<h3 id="refined-reliability-prediction-by-bagging-wu-dohi-okamura-prdc-2024">Refined reliability prediction by bagging (Wu, Dohi, Okamura, PRDC 2024)</h3>
+<p>Status: abstract only (paywalled).</p>
+<p>What it does, in plain words: picking the model with the lowest AIC is common, but that model is not always the best predictor of future fault counts. The paper proposes prediction methods with bagging-based ranking and model averaging. On real project data, they predicted better than the single lowest-AIC model in the early and middle testing phases.</p>
+<p>Link to your proposal: bagging is built on the bootstrap, the same tool as your RQ1 intervals, used here to make predictions steadier instead of to get intervals.</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Q36. What is bagging?</strong></p>
+<blockquote>
+<p>Bootstrap aggregating: draw many bootstrap samples, fit the model on each, and average the results. It lowers the variance of an unstable estimator. Here, from the abstract, it is also used to rank the candidate models and average them instead of picking one.</p>
+</blockquote>
+<p><strong>Q37. Why would averaging help early in testing more than late?</strong></p>
+<blockquote>
+<p>Early on there are few faults, so the choice of a single model is shaky and a wrong choice costs a lot, and averaging spreads that risk. Later, with more data, the best single model is clearer. That is my reading, and it matches what the abstract reports for the early and middle phases.</p>
+</blockquote>
+<h2 id="5-more-self-exciting-hawkes-models">5. More self-exciting (Hawkes) models</h2>
+<p>From the abstracts and the RIMS 2025 introduction: a 2024 chapter found Hawkes models fit better than NHPP models only in some cases. The RIMS note found a constant base rate predicted worse than NHPP models. Then the base rate was made to change over time (exponential, Pareto and gamma shapes), and the 2026 IJMEMS paper [3] learned the kernel with a neural network.</p>
+<h3 id="hawkes-srms-with-a-pareto-base-intensity-qiu-dohi-zheng-okamura-qrs-2025">Hawkes SRMs with a Pareto base intensity (Qiu, Dohi, Zheng, Okamura, QRS 2025)</h3>
+<p>Status: abstract only (paywalled).</p>
+<p>What it does, in plain words: many SRMs can be unified as self-exciting point processes, but it was unclear whether general self-exciting models beat NHPP and non-homogeneous Markov process (NHMP) models. The paper proposes Hawkes models with a Pareto-type base intensity that changes over time, unlike classic Hawkes models with a constant base, and tries ten kernel functions. On eight project datasets, the self-exciting models generally fit and predicted better.</p>
+<p>Link to your proposal: it is the same family as your reference [3].</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Q38. Why not use a classic Hawkes process with a constant base rate?</strong></p>
+<blockquote>
+<p>In testing, the background chance of finding faults falls as faults are removed, so a constant base rate would overstate the late-stage rate. Your IJMEMS paper says a constant background rate is not enough for that reason [CONFIRM: only if you read section 3]. From its abstract, the QRS paper also uses a base rate that changes over time, a Pareto shape.</p>
+</blockquote>
+<p><strong>Q39. Ten kernels is a lot. How would you pick one?</strong></p>
+<blockquote>
+<p>I'd compare them by AIC and by prediction on the later part of the data, since the best fit is not always the best predictor. The IJMEMS paper went one step further and learned the kernel shape with a small neural network, so you don't have to pick.</p>
+</blockquote>
+<h3 id="hawkes-srms-with-a-gamma-type-base-intensity-qiu-dohi-zheng-okamura-wsse-2025">Hawkes SRMs with a gamma-type base intensity (Qiu, Dohi, Zheng, Okamura, WSSE 2025)</h3>
+<p>Status: abstract only (ACM blocked the download).</p>
+<p>What it does, in plain words: NHPP models assume detected faults are independent, so they miss dependence over time. This note proposes Hawkes models with a gamma-type base intensity that changes over time, combining a decaying baseline with several common self-exciting kernels. Because the mean value function has no closed form, it uses Monte Carlo simulation, and on eight real fault datasets the Hawkes models beat the NHPP models in fit and prediction.</p>
+<p>Link to your proposal: it is the same family as your reference [3], with a gamma-type base instead of an exponential one.</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Q40. The mean value function has no closed form. How would you get it?</strong></p>
+<blockquote>
+<p>By simulation: generate many fault histories from the fitted model, for example by thinning, count the faults by each time, and average. The abstract says they used Monte Carlo simulation. In the IJMEMS paper they instead derived a Volterra equation and solved it numerically.</p>
+</blockquote>
+<p><strong>Q41. Why a gamma-shaped base rate instead of an exponential one?</strong></p>
+<blockquote>
+<p>From the abstract, the base rate carries the natural reliability growth over time, and it is a decaying baseline. A gamma shape has one more parameter than an exponential, so it can bend in more ways, but I don't know why you chose it. Could you tell me? [CONFIRM: say more only if you read the paper]</p>
+</blockquote>
+<h3 id="a-useful-class-of-hawkes-processes-for-software-reliability-qiu-dohi-okamura-rims-kokyuroku-2025">A useful class of Hawkes processes for software reliability (Qiu, Dohi, Okamura, RIMS Kokyuroku 2025)</h3>
+<p>Status: text on disk, no abstract (the text extraction is messy). PDF: <code>04_Papers/pdfs/LAB_Qiu_2025_Hawkes_Processes_Software_Reliability_RIMS.pdf</code>.</p>
+<p>What it does, in plain words: the article introduces Hawkes-based SRMs built with four kernel functions. First experiments on eight fault-detection time datasets showed that simple Hawkes models, with a constant baseline, predicted worse than NHPP models. Letting the baseline contain a time-dependent part with a probability density function improved prediction accuracy markedly.</p>
+<p>Link to your proposal: it is an earlier step in the work behind your reference [3].</p>
+<p>Honest line: "There is no abstract, so I've read the introduction." [CONFIRM: only if you did.]</p>
+<p><strong>Q42. Our first simple Hawkes models predicted worse than NHPP models. What do you take from that?</strong></p>
+<blockquote>
+<p>That a more general model is not better by itself; it needs the right structure, here a base rate that falls over time. In my own work I'd always compare a new model with the standard one on held-out data, and report it when the standard one wins.</p>
+</blockquote>
+<p><strong>Q43. Why is the mean value function of a Hawkes model hard to get?</strong></p>
+<blockquote>
+<p>The mean value function is the expected number of faults by time t. In a Hawkes process the rate depends on the random history, so you have to average over histories. The introduction says you tried a mathematical method to get it, and later papers used a Volterra equation or simulation. [CONFIRM: only if you read the introduction]</p>
+</blockquote>
+<h3 id="evaluation-of-hawkes-based-srms-qiu-dohi-okamura-crc-press-chapter-2024">Evaluation of Hawkes-based SRMs (Qiu, Dohi, Okamura, CRC Press chapter 2024)</h3>
+<p>Status: abstract only (paywalled chapter).</p>
+<p>What it does, in plain words: Hawkes processes are used in seismology, finance and criminology, and this chapter tries them for software reliability as a first evaluation, with eight sets of fault-detection time data and different excitation functions. Compared with NHPP models, the Hawkes models fit better in only a fraction of cases.</p>
+<p>Link to your proposal: it is the first step in the work behind your reference [3].</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Q44. Can you tell me how our Hawkes work developed?</strong></p>
+<blockquote>
+<p>From the abstracts: this 2024 chapter found Hawkes models fit better than NHPP models only in some cases. Then the base rate was made to change over time, with exponential, Pareto and gamma shapes, and the IJMEMS paper in 2026 learned the kernel with a neural network and did well in early and middle-stage prediction. So the base rate and then the kernel were made more flexible step by step. [CONFIRM: only say this once you have read the abstracts; say "it beat the NHPP models on 7 of 8 datasets at the 50% point" only if you read the IJMEMS results section]</p>
+</blockquote>
+<p><strong>Q45. Why use a model from earthquakes for software?</strong></p>
+<blockquote>
+<p>In earthquakes, one shock makes aftershocks more likely for a while. Your papers argue faults can work the same way: finding one fault can lead to related ones, so detections come in clusters. The Hawkes process models exactly that bump-and-fade pattern.</p>
+</blockquote>
+<h2 id="6-predicting-the-remaining-bugs">6. Predicting the remaining bugs</h2>
+<h3 id="bayesian-estimation-of-the-residual-number-of-bugs-hagihara-dohi-okamura-dsn-w-2024">Bayesian estimation of the residual number of bugs (Hagihara, Dohi, Okamura, DSN-W 2024)</h3>
+<p>Status: abstract only (paywalled).</p>
+<p>What it does, in plain words: the paper studies the posterior distribution of the number of bugs still left, when the chance of detecting a bug differs from one testing day to the next. It compares a Poisson prior, which matches the usual NHPP model, with a negative binomial prior, which matches a non-homogeneous mixed Poisson process model. On real bug-count data, the simpler Poisson prior predicted the remaining bugs more accurately.</p>
+<p>Link to your proposal: your field-data part aims to predict how many fixes remain, which is this paper's quantity.</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Basics to know (overdispersion and the negative binomial)</strong></p>
+<ul>
+<li>In a Poisson count, the mean equals the variance.</li>
+<li>A negative binomial is a Poisson whose mean is itself gamma-distributed. Its variance is mean + mean²/r, larger than the mean. That extra spread is overdispersion.</li>
+<li>Same idea as your beta-binomial against the binomial: a random rate, or a random θ, adds spread.</li>
+</ul>
+<p><strong>Q46. Why would anyone use a negative binomial prior?</strong></p>
+<blockquote>
+<p>It is a Poisson whose mean is itself random, so it allows more spread than a Poisson, where the mean equals the variance. If you are unsure about the total number of bugs, that extra spread looks natural. It's the same reason I use a beta-binomial instead of a binomial.</p>
+</blockquote>
+<p><strong>Q47. In our paper the simpler Poisson prior won. What does that tell you for your plan?</strong></p>
+<blockquote>
+<p>That a more flexible model is not automatically better. In my plan I might try a zero-inflated beta-binomial if most inputs never fail, but I'd only keep it if it clearly fits better on the pilot data.</p>
+</blockquote>
+<h3 id="maximum-likelihood-prediction-of-future-bug-counts-fujimura-dohi-okamura-dasc-2024">Maximum likelihood prediction of future bug counts (Fujimura, Dohi, Okamura, DASC 2024)</h3>
+<p>Status: abstract only (paywalled).</p>
+<p>What it does, in plain words: the paper compares three ways to predict the number of bugs found in the future when bug detection is an NHPP. The usual plug-in method assumes the distribution fitted to past data also holds in the future, and it often predicts poorly. The paper proposes maximum likelihood predictors and a model selection scheme different from the usual information criteria, and compares them with the plug-in predictor on one real dataset.</p>
+<p>Link to your proposal: your field model is meant to predict how many fixes remain, which is a prediction of future counts.</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Q48. What is a plug-in predictor?</strong></p>
+<blockquote>
+<p>You estimate the parameters, put them into m(t), and read off the predicted count, as if the estimates were the true values. It ignores the uncertainty in the estimates, and your abstract adds that the past and future distributions may not be the same.</p>
+</blockquote>
+<p><strong>Q49. How would you predict "how many fixes remain" in your field data?</strong></p>
+<blockquote>
+<p>The simple way is plug-in: for my model the expected remaining fixes at time T are Σ ω_j (1 − G(T − τ_j)). I'd add a bootstrap interval around it. Your maximum likelihood predictor is another option, and I'd like to learn how it works.</p>
+</blockquote>
+<h2 id="7-other-ways-to-estimate-the-parameters">7. Other ways to estimate the parameters</h2>
+<h3 id="likelihood-free-mps-estimation-for-nhpp-models-wu-dohi-zheng-okamura-iocma-2026">Likelihood-free MPS estimation for NHPP models (Wu, Dohi, Zheng, Okamura, IOCMA 2026)</h3>
+<p>Status: PDF in <code>04_Papers/pdfs/LAB_Wu_2026_Likelihood_Free_Estimation_NHPP_SRMs.pdf</code> (got it on 1 Nov). The notes below come from the abstract.</p>
+<p>What it does, in plain words: the paper develops a maximum product of spacings (MPS) method for finite NHPP models. It is "likelihood-free" in a narrow sense: it fits the distribution parameters from a spacing objective without evaluating the NHPP likelihood, then recovers the scale parameter in closed form. On GitHub fault-count data it was competitive, and in early testing it gave the smallest PMAE in five of eight cases.</p>
+<p>Link to your proposal: it was tested on GitHub fault data, the kind of data your field study would use.</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Basics to know (maximum product of spacings)</strong></p>
+<ul>
+<li>Sort the data x_(1) &lt; ... &lt; x_(n). The spacings are D_i = F(x_(i); θ) − F(x_(i−1); θ), with F = 0 before the first point and 1 after the last.</li>
+<li>Choose θ to maximise Σ log D_i, the log of the product of spacings.</li>
+<li>The idea: under the true θ, the values F(x) spread out like uniform points, so the spacings are even.</li>
+</ul>
+<p><strong>Q50. What is maximum product of spacings?</strong></p>
+<blockquote>
+<p>Sort the observations and put them through the fitted distribution function. The gaps between consecutive values are the spacings, and MPS picks the parameters that make the product of the spacings as large as possible, so the transformed points are spread as evenly as possible. It can still work where the likelihood behaves badly.</p>
+</blockquote>
+<p><strong>Q51. Why might MPS help early in testing?</strong></p>
+<blockquote>
+<p>Early on there are few faults, and maximum likelihood can be unstable with so little data. The abstract reports that in early testing MPS gave the smallest error in five of eight cases. That instability is only my guess at the reason; I can't say more without reading the paper. [CONFIRM: only if you read it]</p>
+</blockquote>
+<h3 id="mps-estimation-for-nhpp-models-zheng-et-al-check-full-author-list-not-found-aparm-2026">MPS estimation for NHPP models (Zheng et al. [CHECK: full author list not found], APARM 2026)</h3>
+<p>Status: title only. No abstract or copy was found.</p>
+<p>What it does, in plain words: no abstract was found. From the title, it applies maximum product of spacings estimation to NHPP software reliability models, the same topic as Dr. Wu's IOCMA 2026 paper.</p>
+<p>Honest line: "I only know the title."</p>
+<p><strong>Q52. Did you see our APARM paper on MPS?</strong></p>
+<blockquote>
+<p>I only found the title. I read the abstract of Dr. Wu's IOCMA paper on MPS for NHPP models, which seems to be on the same topic. Could you tell me how the two differ? [CONFIRM: only say this once you have read the IOCMA abstract]</p>
+</blockquote>
+<p><strong>Q53. When would you prefer MPS to maximum likelihood in your own plan?</strong></p>
+<blockquote>
+<p>For the beta-binomial in RQ1 I plan maximum likelihood, because I have failure counts on many inputs. MPS works on continuous data like fault times, so it would fit the field-data part better, if the fix counts are small. I would compare both there.</p>
+</blockquote>
+<h3 id="probabilistic-least-squares-for-nhpp-models-wu-dohi-zheng-okamura-wsse-2025">Probabilistic least squares for NHPP models (Wu, Dohi, Zheng, Okamura, WSSE 2025)</h3>
+<p>Status: abstract only (paywalled).</p>
+<p>What it does, in plain words: least squares is often used to fit SRMs, but it ignores the probability law of the fault-count process. The paper proposes a probabilistic least squares method for NHPP models that takes the Poisson nature into account, by minimising the error between the conditional fault-detection time distribution and its empirical distribution. On real datasets it predicted better than existing least squares methods, especially late in testing.</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Basics to know (conditional distribution of fault times)</strong></p>
+<ul>
+<li>General NHPP fact: given N(T) = n, the n fault times are distributed like n sorted independent draws with distribution function m(t)/m(T).</li>
+<li>For m(t) = ωF(t), that is F(t)/F(T), so ω cancels out.</li>
+</ul>
+<p><strong>Q54. What is wrong with plain least squares for an NHPP?</strong></p>
+<blockquote>
+<p>It fits the curve to the cumulative counts as if the errors were independent with equal variance. But in an NHPP the variance of N(t) equals m(t), so it grows over time, and the cumulative counts are strongly correlated. Your abstract says least squares is irrelevant to the probability law, and this method brings that law back in.</p>
+</blockquote>
+<p><strong>Q55. What is the "conditional fault-detection time distribution"?</strong></p>
+<blockquote>
+<p>As I understand it, if n faults were found by time T in an NHPP with m(t) = ωF(t), their times behave like n sorted independent draws from F(t)/F(T). So you can compare that curve with the empirical distribution of the observed times, and ω drops out. [CONFIRM: only if you read the paper; otherwise say it is your understanding]</p>
+</blockquote>
+<h3 id="performance-comparison-of-reliability-estimation-algorithms-yano-dohi-okamura-ieee-computer-2024">Performance comparison of reliability estimation algorithms (Yano, Dohi, Okamura, IEEE Computer 2024)</h3>
+<p>Status: the proposal research read its method and conclusion (GUIDE_1 P5, <a href="ch24.html"><code>/Users/mafex/Downloads/Hiroshima-University/04_Papers/GUIDE_1_lab_and_cited_papers.md</code></a>). The Hiroshima University repository copy is offline now.</p>
+<p>What it does, in plain words: automated reliability assessment tools need optimisation algorithms to estimate the parameters of SRMs. The article proposes the Monte Carlo EM algorithm as another option and compares estimation algorithms in extensive numerical experiments.</p>
+<p>Link to your proposal: pysrat, which you plan to use, estimates its models with EM.</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Basics to know (EM algorithm)</strong></p>
+<ul>
+<li>E step: with the current parameters, compute the expected value of the hidden data, for example where inside an interval each grouped fault happened, or how many faults are still undetected.</li>
+<li>M step: maximise the likelihood with those expected values filled in. Repeat until it stops changing.</li>
+<li>The likelihood never goes down from one round to the next. It can be slow, and each model needs its own E and M steps.</li>
+</ul>
+<p><strong>Q56. Why do tools like pysrat use EM?</strong></p>
+<blockquote>
+<p>Grouped data and the faults not yet found make the likelihood awkward to maximise directly. EM treats the missing parts as hidden, fills them in by their expected values, maximises, and repeats. The likelihood never goes down between rounds, so it converges steadily, though it can be slow.</p>
+</blockquote>
+<p><strong>Q57. What is Monte Carlo EM?</strong></p>
+<blockquote>
+<p>It is EM where the expectation step is too hard to compute exactly, so you estimate it by simulation. It costs more time, but as I understand it, it can handle models where the exact E step is not available. The paper's conclusion says EM and ECM are still attractive for global convergence, and Monte Carlo EM may help with more complex models. [CONFIRM: say the last sentence, or anything more, only if you read the article]</p>
+</blockquote>
+<h2 id="8-beyond-the-poisson-process-markov-models-where-the-spread-is-not-fixed">8. Beyond the Poisson process: Markov models where the spread is not fixed</h2>
+<h3 id="infinite-failure-srms-based-on-non-homogeneous-markov-processes-qiu-li-dohi-okamura-software-quality-journal-2026">Infinite-failure SRMs based on non-homogeneous Markov processes (Qiu, Li, Dohi, Okamura, Software Quality Journal 2026)</h3>
+<p>Status: the 2023 preprint is on disk. PDF: <code>04_Papers/pdfs/LAB_Qiu_2026_Infinite_Failure_SRMs_NHMP.pdf</code>.</p>
+<p>What it does, in plain words: the paper models software faults with non-homogeneous Markov processes (NHMPs), where the fault-detection rate can depend on both time and the number of faults found so far. It builds 22 new NHMP-based models (11 generalized binomial, 11 generalized Polya), each from one of 11 baseline intensity functions, as extensions of infinite-failure NHPP models, and tests them on 8 time-domain and 8 grouped datasets against NHPP models. They fit better in many cases but predicted better in only a limited number of cases.</p>
+<p>Link to your proposal: an NHPP count has variance equal to its mean. In this paper the generalized binomial models have less spread and the generalized Polya models (negative binomial) have more. The Polya side is the same move as your beta-binomial over a binomial.</p>
+<p>Honest line: "I've read the abstract." [CONFIRM: only say this once you have read the abstract; add "and the introduction" only if you read it.]</p>
+<p><strong>Q58. In an NHPP the mean equals the variance. Why does this paper see that as a problem?</strong></p>
+<blockquote>
+<p>Because then the variance keeps growing with the mean. The paper says our uncertainty about the number of faults should instead shrink as testing goes on, so that property is questionable. A Markov model whose rate also depends on the faults found can break that link. [CONFIRM: only if you read the introduction]</p>
+</blockquote>
+<p><strong>Q59. What is a generalized Polya process?</strong></p>
+<blockquote>
+<p>It is a pure birth process where, with n faults found, the rate at time t is (β + αn)κ(t), so each fault found adds ακ(t) to the rate. The count then has a negative binomial distribution. It is a bit like self-excitation, but unlike a Hawkes kernel, that extra part does not depend on how long ago the fault was found. [CONFIRM: only if you read section 3 of the paper]</p>
+</blockquote>
+<h3 id="non-homogeneous-markov-process-modelling-for-reliability-assessment-li-dohi-okamura-ieee-transactions-on-reliability-2023">Non-homogeneous Markov process modelling for reliability assessment (Li, Dohi, Okamura, IEEE Transactions on Reliability 2023)</h3>
+<p>Status: abstract only (paywalled).</p>
+<p>What it does, in plain words: NHMPs generalise both homogeneous Markov processes and NHPPs. The paper compares two NHMP-based models in one framework: the generalized binomial process, a Markov inverse death process, and the generalized Polya process, a Markov birth process, both with rates that depend on state and time. On closed-source and open-source project data, it compares fit, prediction and reliability assessment, and studies how these models change the software release decision.</p>
+<p>Link to your proposal: the release question, when to stop testing, is the same kind of cost trade-off as your best number of runs N.</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Q60. What is the difference between a generalized binomial process and a generalized Polya process?</strong></p>
+<blockquote>
+<p>From the abstract, the binomial one is an inverse death process: you can think of a pool of faults that are found one by one. The Polya one is a birth process. In both, the rate depends on time and on how many faults have been found. [CONFIRM: add "in the Polya one each fault found raises the rate", or say more, only if you read the model section]</p>
+</blockquote>
+<p><strong>Q61. What is the software release problem?</strong></p>
+<blockquote>
+<p>Deciding when to stop testing and release: testing longer costs money, but releasing early leaves more faults to fail in the field. You pick the time that minimises the expected total cost. My best number of runs N has the same shape: each run costs money, and each shared failure costs more.</p>
+</blockquote>
+<h2 id="9-kernel-non-parametric-prediction">9. Kernel (non-parametric) prediction</h2>
+<h3 id="kernel-regression-with-several-bandwidth-selection-methods-bai-dohi-zheng-okamura-iocma-2026">Kernel regression with several bandwidth selection methods (Bai, Dohi, Zheng, Okamura, IOCMA 2026)</h3>
+<p>Status: PDF in <code>04_Papers/pdfs/LAB_Bai_2026_Kernel_Regression_Bandwidth_Selection_SRP.pdf</code> (got it on 1 Nov). The notes below come from the abstract.</p>
+<p>What it does, in plain words: parametric growth models predict well only if their mean value function suits the data. This note estimates the fault-detection rate with kernel intensity estimation (several kernels, with the bandwidth picked by least-squares or log-likelihood cross-validation) and predicts future faults step by step with one fixed and five adaptive bandwidth strategies. On three classic and three GitHub bug-report datasets, it beat the lowest-AIC choice among 11 NHPP models in 8 of 18 dataset and phase comparisons, and neither approach won everywhere.</p>
+<p>Link to your proposal: it uses GitHub bug-report event times, the same kind of data as your field study.</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Q62. What is cross-validation for choosing a bandwidth?</strong></p>
+<blockquote>
+<p>You leave out part of the data, fit with a given bandwidth, check how well it explains the left-out part, and repeat. The bandwidth with the smallest error, or the highest held-out log-likelihood, wins. It picks the smoothness from the data instead of by eye.</p>
+</blockquote>
+<p><strong>Q63. Our method won only 8 of 18 comparisons. Is that a good result?</strong></p>
+<blockquote>
+<p>I think it's an honest one. It says neither the kernel method nor the AIC-chosen NHPP is always better, which is useful for someone choosing a method. If my RQ2 finds that removing a rule changes nothing, I'd report that in the same way.</p>
+</blockquote>
+<h3 id="multi-kernel-local-linear-regression-for-reliability-prediction-bai-dohi-zheng-okamura-dasc-2025">Multi-kernel local linear regression for reliability prediction (Bai, Dohi, Zheng, Okamura, DASC 2025)</h3>
+<p>Status: abstract only (paywalled).</p>
+<p>What it does, in plain words: NHPP models rest on strong assumptions, while kernel regression is more flexible, and the local linear estimator works better near the boundaries of the data. Because one kernel does not suit every dataset, the paper combines several kernels with optimised weights in a local linear estimator, choosing the bandwidth and the weights together by least-squares cross-validation. On real project data it beat single-kernel methods and common NHPP models early in testing.</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Basics to know (Nadaraya-Watson and local linear)</strong></p>
+<ul>
+<li>Nadaraya-Watson: the value at a point is a weighted average of nearby observed values, with weights from the kernel.</li>
+<li>Local linear: fit a weighted straight line around the point instead of a flat average.</li>
+<li>At the edge of the data, a flat average only sees points on one side and is biased. The local linear fit removes most of that bias.</li>
+</ul>
+<p><strong>Q64. Why does behaviour near the boundary matter for prediction?</strong></p>
+<blockquote>
+<p>Prediction happens at the end of the data, which is a boundary. A plain kernel average there only sees points on one side, so it is biased. The local linear estimator fits a small straight line instead of a flat average, which removes most of that bias.</p>
+</blockquote>
+<p><strong>Q65. Several kernels with weights means more parameters. How do you avoid overfitting?</strong></p>
+<blockquote>
+<p>Choosing the weights and the bandwidth by cross-validation, on points left out of the fit, keeps it in check. With very little data it can still overfit, so I'd want to see the results by testing phase, as the abstract reports for the early phase.</p>
+</blockquote>
+<h3 id="kernel-based-non-parametric-vs-parametric-regression-bai-dohi-zheng-okamura-wsse-2024">Kernel-based non-parametric vs parametric regression (Bai, Dohi, Zheng, Okamura, WSSE 2024)</h3>
+<p>Status: abstract only (paywalled).</p>
+<p>What it does, in plain words: the paper predicts software reliability with kernel-based non-parametric regression, without assuming a fault count distribution or the stochastic process behind fault counts. It uses two estimators (Nadaraya-Watson and local linear) with four kernels (Gaussian, triangular, biweight and Epanechnikov), and least-squares cross-validation for the bandwidth. On six real datasets it compares them with parametric models for the cumulative number of faults, and shows non-parametric models can predict accurately.</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Q66. What is the Nadaraya-Watson estimator?</strong></p>
+<blockquote>
+<p>It predicts the value at a point as a weighted average of the observed values, with weights from a kernel that gives nearby points more weight. The bandwidth sets what "nearby" means. The local linear estimator does the same but fits a weighted straight line.</p>
+</blockquote>
+<p><strong>Q67. Does the choice of kernel matter much?</strong></p>
+<blockquote>
+<p>As far as I know, the bandwidth usually matters much more than the kernel shape, which is why the bandwidth is picked carefully by cross-validation. [CONFIRM: say how much the four kernels differed in this paper only if you read it]</p>
+</blockquote>
+<h3 id="long-term-reliability-prediction-by-non-parametric-kernel-regression-bai-dohi-wu-zheng-okamura-information-and-software-technology-2026">Long-term reliability prediction by non-parametric kernel regression (Bai, Dohi, Wu, Zheng, Okamura, Information and Software Technology 2026)</h3>
+<p>Status: title only. Not open access, and no abstract was found.</p>
+<p>What it does, in plain words: no abstract was found. From the title, it uses non-parametric kernel regression for long-term software reliability prediction.</p>
+<p>Honest line: "I only know the title."</p>
+<p><strong>Q68. Why is long-term prediction hard for kernel methods?</strong></p>
+<blockquote>
+<p>As I understand it, a kernel estimate only uses data near the point you predict, and far in the future there is no data nearby. So you need a rule for carrying the trend forward, like the step-by-step prediction and adaptive bandwidths in the IOCMA note. I only know the title of this paper, so I can't say how it solves that.</p>
+</blockquote>
+<p><strong>Q69. Have you read our IST paper?</strong></p>
+<blockquote>
+<p>No, I only found the title, and it isn't open access. I've read the abstracts of the related WSSE, DASC and IOCMA papers on kernel prediction. [CONFIRM: only say this once you have read the abstracts]</p>
+</blockquote>
+<h3 id="fine-grained-kernel-based-reliability-estimation-zheng-et-al-check-full-author-list-not-found-aparm-2026">Fine-grained kernel-based reliability estimation (Zheng et al. [CHECK: full author list not found], APARM 2026)</h3>
+<p>Status: title only. No abstract or copy was found.</p>
+<p>What it does, in plain words: no abstract was found. From the title, it is about kernel-based approaches to software reliability estimation, described as "fine-grained".</p>
+<p>Honest line: "I only know the title."</p>
+<p><strong>Q70. What would "fine-grained" mean here?</strong></p>
+<blockquote>
+<p>I don't know, since I only have the title. In Dr. Wu's JSS bootstrap paper, "fine-grained" goes with a thinning-like resampling of fault data, so it might mean working at the level of single fault times, but that is only my guess. Could you tell me?</p>
+</blockquote>
+<p><strong>Q71. Kernel methods or parametric NHPP models: which would you use for your field data?</strong></p>
+<blockquote>
+<p>Parametric first, because my counts per repository will be small, and my model needs a delay distribution G with a clear meaning. A kernel estimate could be a check on whether the fitted curve misses something.</p>
+</blockquote>
+<h2 id="10-tools">10. Tools</h2>
+<h3 id="srats-reliability-assessment-tool-on-a-spreadsheet-okamura-dohi-issre-2013">SRATS, reliability assessment tool on a spreadsheet (Okamura, Dohi, ISSRE 2013)</h3>
+<p>Status: abstract only (paywalled).</p>
+<p>What it does, in plain words: SRATS is an Excel add-in for software reliability assessment that handles 11 types of software reliability growth models and gives maximum likelihood estimates from data on a spreadsheet. The interface is written in VBA and the estimation in a C library, using EM-based algorithms that give the estimates for any pattern of data.</p>
+<p>Link to your proposal: pysrat, your reference [4], has the same 11 model families that Wu et al.'s RIMS 2026 paper lists as the SRATS models, plus CF1.</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Q72. How is pysrat related to SRATS?</strong></p>
+<blockquote>
+<p>Both fit NHPP growth models by maximum likelihood with EM. The 11 models listed as SRATS models in Dr. Wu's RIMS paper are the same families pysrat has, and pysrat adds CF1, metrics-based models and a Python interface. [CONFIRM: say "pysrat is the successor of SRATS" only if Prof. Okamura says so.]</p>
+</blockquote>
+<p><strong>Q73. Why does a tool paper matter in research?</strong></p>
+<blockquote>
+<p>A method only helps if engineers can run it, and a tool also makes results easy to repeat. My plan releases all tasks, code and data for the same reason.</p>
+</blockquote>
+<h3 id="survey-of-software-reliability-assessment-tools-xiao-okamura-dohi-elsevier-book-chapter-2024">Survey of software reliability assessment tools (Xiao, Okamura, Dohi, Elsevier book chapter 2024)</h3>
+<p>Status: title only. No abstract was found.</p>
+<p>What it does, in plain words: no abstract was found. From the title, it is a book chapter that surveys software reliability assessment tools.</p>
+<p>Honest line: "I only know the title."</p>
+<p><strong>Q74. Which reliability tools do you know?</strong></p>
+<blockquote>
+<p>Your lab's pysrat in Python, and from the lab's tools page, Rsrat in R and the older SRATS Excel add-ins. I would use pysrat, because the rest of my pipeline is in Python.</p>
+</blockquote>
+<p><strong>Q75. What would you want from a tool for your study?</strong></p>
+<blockquote>
+<p>It should fit many models with the same interface, give the log-likelihood and AIC, and let me add my own model, because my sum over changes is not a standard NHPP. The pysrat README says user-defined link functions work for the metrics models, and I'd ask whether a custom mean value function is possible too.</p>
+</blockquote>
+<h2 id="11-neural-networks-code-embeddings-and-other-models">11. Neural networks, code embeddings and other models</h2>
+<h3 id="modelling-software-reliability-with-source-code-embeddings-zheng-et-al-check-full-author-list-not-found-duke-workshop-2025">Modelling software reliability with source code embeddings (Zheng et al. [CHECK: full author list not found], Duke workshop 2025)</h3>
+<p>Status: title only. No abstract or copy was found.</p>
+<p>What it does, in plain words: no abstract was found. From the title, it models software reliability using source code embeddings, which are vector representations of code.</p>
+<p>Honest line: "I only know the title."</p>
+<p><strong>Q76. We have a talk on modelling reliability with source code embeddings. Any thoughts?</strong></p>
+<blockquote>
+<p>I only know the title, so I'd like to hear what you did. One idea it gives me: in my field model each merged change has covariates z_j, and an embedding of the change's code could be one of them. With only about 20 repositories I would have to shrink it to a few numbers first.</p>
+</blockquote>
+<p><strong>Q77. What is a code embedding?</strong></p>
+<blockquote>
+<p>A vector of numbers that a model produces for a piece of code, so that similar code gets nearby vectors. It turns code into features that a statistical model can use.</p>
+</blockquote>
+<h3 id="reliability-prediction-with-encoder-decoder-recurrent-neural-networks-li-zheng-okamura-dohi-ijmems-2022">Reliability prediction with encoder-decoder recurrent neural networks (Li, Zheng, Okamura, Dohi, IJMEMS 2022)</h3>
+<p>Status: open access. PDF: <code>04_Papers/pdfs/LAB_Li_2022_Software_Reliability_Prediction_Encoder_Decoder_RNN.pdf</code>.</p>
+<p>What it does, in plain words: growth models rest on unrealistic assumptions, so the paper predicts the number of failures with an attention-based encoder-decoder recurrent neural network (EDRNN, built from LSTMs) that takes fault detection times as input and estimates cumulative faults. On one benchmark dataset from a real-time control application of about 870,000 lines (first 100 points for training, last 6 for testing), it beat 11 traditional growth models and other neural models. The authors name the main shortcoming themselves: it was checked on only one dataset.</p>
+<p>Honest line: "I've read the abstract." [CONFIRM: only say this once you have read the abstract; add "and the conclusion" only if you read it.]</p>
+<p><strong>Q78. Could a neural network replace growth models?</strong></p>
+<blockquote>
+<p>It can predict well, as this paper shows on one dataset [CONFIRM: say "on one dataset" only if you read the conclusion], but it gives no parameters with a meaning, like the expected total number of faults. For my field data, with small counts, I'd start with growth models and use a neural model only as a comparison.</p>
+</blockquote>
+<p><strong>Q79. With one dataset and six test points, what would you be careful about?</strong></p>
+<blockquote>
+<p>Six points is very little to judge a model, and a network can easily overfit 100 training points. I would test on several datasets and several cut points, which is what the paper itself names as future work. [CONFIRM: say the last part only if you read the conclusion]</p>
+</blockquote>
+<h3 id="deep-learning-for-software-reliability-and-cyber-security-li-zheng-operations-research-orsj-2023-in-japanese">Deep learning for software reliability and cyber security (Li, Zheng, Operations Research (ORSJ) 2023, in Japanese)</h3>
+<p>Status: in Japanese. PDF: <code>04_Papers/pdfs/LAB_Li_2023_Deep_Learning_Software_Reliability_Cyber_Security_JA.pdf</code>.</p>
+<p>What it does, in plain words: the article introduces deep learning for software reliability and cyber security. It focuses on an attention-based encoder-decoder RNN for predicting reliability from cumulative fault counts, and a Transformer-based model for classifying malware from API call sequences. It notes the problems of small, hard-to-collect and biased training data (from the conclusion, not the abstract: say it only if you read it).</p>
+<p>Honest line: "It is in Japanese, so I've read the abstract in translation." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Q80. You work with LLMs. What do you think about deep learning for reliability prediction?</strong></p>
+<blockquote>
+<p>The main limit is data: fault datasets are small. [CONFIRM: add "and your article says the same" only if you read its conclusion] LLMs learn from huge amounts of text, but a reliability dataset may have only a few hundred faults. So I'd use deep models where data is large, like code, and probability models where it is small, like fault counts.</p>
+</blockquote>
+<p><strong>Q81. What does the attention mechanism add in your encoder-decoder model?</strong></p>
+<blockquote>
+<p>Without it, the encoder squeezes the whole input into one fixed vector, and every part counts the same. Attention lets the decoder give more weight to the parts of the input that matter for each output. The EDRNN paper adds it between the encoder and the decoder for that reason. [CONFIRM: only if you read the conclusion; the abstract only says attention improves accuracy]</p>
+</blockquote>
+<h3 id="continuous-state-software-reliability-modelling-dohi-jin-zheng-okamura-bentham-book-chapter-2018">Continuous-state software reliability modelling (Dohi, Jin, Zheng, Okamura, Bentham book chapter 2018)</h3>
+<p>Status: abstract only (paywalled chapter).</p>
+<p>What it does, in plain words: for very large software, the fault-counting process in testing can be treated approximately as a continuous-state process. The chapter summarises SRMs based on time-nonhomogeneous Gaussian and gamma processes and compares them with geometric Brownian motion and NHPP models. On real project data, the gamma-process models often fit and predicted better.</p>
+<p>Honest line: "I've read the abstract only." [CONFIRM: only say this once you have read the abstract]</p>
+<p><strong>Q82. Why treat a fault count as a continuous quantity?</strong></p>
+<blockquote>
+<p>When the code base is very large and the counts are big, a count in the thousands behaves almost like a continuous number, and continuous processes can be easier to handle. It is the same idea as using a normal approximation for a large binomial.</p>
+</blockquote>
+<p><strong>Q83. Why a gamma process rather than a Gaussian one?</strong></p>
+<blockquote>
+<p>A gamma process only goes up, because its increments are positive, which suits a cumulative count. A Gaussian process can go down, which a fault count never does. [CONFIRM: say more only if you read the chapter]</p>
+</blockquote>
+<h2 id="things-never-to-say-about-these-papers">Things never to say about these papers</h2>
+<ul>
+<li>"I have read your paper", for any of them, unless you really read it. Say "I've read the abstract" once you have.</li>
+<li>Any number from a paper you know only from its abstract, beyond what the abstract says.</li>
+<li>"pysrat is the successor of SRATS" or "I've used pysrat", unless it is true.</li>
+<li>That the lab works on coding agents or context files. As far as we found, it does not; that part is what you bring. But Prof. Zheng and Dr. Wu did co-author an LLM multi-agent paper (Yu et al., Electronics 2026), so don't say the lab has no LLM agent work.</li>
+<li>"No one has studied this for agent code." Say "as far as I know".</li>
+<li>That the field-data part is your main study. It is "if time permits"; RQ1 is the core.</li>
+</ul>
+</article>
+<div class="donebox"><label><input type="checkbox" class="done-cb" data-ch="h25"> Mark chapter 25 as done</label></div>
+<nav class="pager" aria-label="Previous and next"><a class="prev" href="ch24.html"><span class="lbl">← Previous</span>24. Papers guide: lab and cited papers</a><a class="next" href="ch26.html"><span class="lbl">Next →</span>26. Other likely questions (32)</a></nav>
+</main>
+</div>
+<script>
+(function(){
+ var KEY='hiroshimabook-done-v1';
+ function load(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
+ function save(d){try{localStorage.setItem(KEY,JSON.stringify(d))}catch(e){}}
+ function refresh(){
+  var d=load();
+  document.querySelectorAll('[data-ch]').forEach(function(el){el.classList.toggle('done',!!d[el.getAttribute('data-ch')])});
+  document.querySelectorAll('input.done-cb').forEach(function(cb){cb.checked=!!d[cb.getAttribute('data-ch')]});
+  var p=document.getElementById('progress');
+  if(p&&window.BOOK){
+   var total=BOOK.chapters.length,done=BOOK.chapters.filter(function(c){return d[c.id]}).length;
+   p.querySelector('.count').textContent=done+' of '+total+' chapters done';
+   p.querySelector('.bar span').style.width=(100*done/total)+'%';
+   var ul=p.querySelector('.parts-progress');ul.innerHTML='';
+   BOOK.parts.forEach(function(pt){
+    var cs=BOOK.chapters.filter(function(c){return c.part===pt.n});
+    var dn=cs.filter(function(c){return d[c.id]}).length;
+    var nextc=cs.filter(function(c){return !d[c.id]})[0];
+    var li=document.createElement('li');
+    li.textContent=pt.name+': '+dn+' of '+cs.length;
+    if(nextc){li.appendChild(document.createTextNode(' · next: '));var a=document.createElement('a');a.href=nextc.file;a.textContent=nextc.title;li.appendChild(a)}
+    else{li.appendChild(document.createTextNode(' ✓'))}
+    ul.appendChild(li);
+   });
+  }
+ }
+ document.querySelectorAll('input.done-cb').forEach(function(cb){
+  cb.addEventListener('change',function(){var d=load(),id=cb.getAttribute('data-ch');if(cb.checked){d[id]=1}else{delete d[id]}save(d);refresh()});
+ });
+ var btn=document.querySelector('.menu-btn');
+ if(btn){btn.addEventListener('click',function(){var o=document.body.classList.toggle('nav-open');btn.setAttribute('aria-expanded',o?'true':'false')})}
+ refresh();
+})();
+</script>
+</body>
+</html>
