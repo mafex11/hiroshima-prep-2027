@@ -173,7 +173,7 @@ Words in [brackets] are actions. Do not say them.</p>
 <p><strong>Cue:</strong> my name, AGENTS.md, every run reads it, same mistakes, voting</p>
 <blockquote>
 <p>My name is Sudhanshu Pandit. Coding agents like Claude Code and Codex read a rules file in the repository, like this AGENTS.md. And every run of the agent reads the same file.</p>
-<p>So my question is simple. If I run the agent three times on the same task, do the runs make the same mistakes? Because if they do, voting over the runs won't help much.</p>
+<p>So my question is simple. If I run the agent three times on the same task, do the runs make the same mistakes? Because the more mistakes they share, the less voting over the runs can help.</p>
 <p>First, a bit about me.</p>
 </blockquote>
 <p>[Next slide]</p>
@@ -181,9 +181,9 @@ Words in [brackets] are actions. Do not say them.</p>
 <p><strong>Cue:</strong> degree, Layerpath, BrandMemory, Magic Editor, Yuki, rules got cut, full time from April</p>
 <blockquote>
 <p>I finished my B.E. in Computer Science at Sri Sairam College of Engineering, under VTU, this May.</p>
-<p>Since last November I've been an AI engineer at Layerpath. It's a small startup that makes interactive product demos. I was on the founding team, and I build its AI features.</p>
+<p>Since last November I've been an AI engineer at Layerpath. It's a small startup that makes interactive product demos. I'm on the founding team, and I build its AI features.</p>
 <p>On the right are three things I built. BrandMemory gives a company's writing rules to a model. Magic Editor is an AI assistant that edits product demos, and the user approves every edit. And Yuki 2.0 is my side project, a desktop agent for Windows. It's public on GitHub.</p>
-<p>I use Claude Code and Codex every day, and I keep their rules files up to date. BrandMemory taught me that a rule you write down doesn't always reach the model. Some of ours were cut by a length limit before the model ever saw them. So now I always check.</p>
+<p>I use Claude Code and Codex every day, and I keep their rules files up to date. BrandMemory taught me that a rule you write down doesn't always reach the model. Some of ours were cut by a length limit before the model ever saw them. So now I check whether a model really follows a rule.</p>
 <p>If I'm admitted, I'll leave my job and study full time from April.</p>
 </blockquote>
 <p>[Next slide]</p>
@@ -191,9 +191,9 @@ Words in [brackets] are actions. Do not say them.</p>
 <p><strong>Cue:</strong> voting needs different mistakes, Eckhardt and Lee, your paper, 429 vs 115, 0.43, no rules file, one helper</p>
 <blockquote>
 <p>Now the background.</p>
-<p>Voting only works if the versions don't make the same mistakes. In 1985, Eckhardt and Lee showed that two versions from the same process fail independently only if every input is equally hard. In real software some inputs are harder, so versions tend to fail together.</p>
-<p>Your paper with Prof. Okamura and Prof. Dohi asked whether generative AI can write those versions. Voting made strong models like GPT-4o more reliable, but helped little with weak ones. And more diversity didn't always mean more reliability.</p>
-<p>Two studies this year looked at code written by LLMs. In one, the programs failed together on 429 of a million inputs, where independence predicts about 115. In the other, voting over three versions got only 0.43 of the gain that independence would give.</p>
+<p>Voting only helps if the versions rarely make the same mistakes. In 1985, Eckhardt and Lee showed that two versions from the same process fail independently only if every input is equally hard. But in real software some inputs are harder than others, so versions fail together more often than independence predicts.</p>
+<p>Your paper with Prof. Okamura and Prof. Dohi asked whether versions written by generative AI make N-version programming work better. Voting made strong models like GPT-4o more reliable, but helped little with weak ones. And more diversity didn't always mean more reliability.</p>
+<p>Two studies this year looked at code written by LLMs. In one, two or more of 48 programs failed together on 429 of a million inputs, where independence predicts about 115. In the other, voting over three versions got only 0.43 of the gain that independence would give.</p>
 <p>But neither study used a rules file. In a real repository, every run reads the same one. So say the file tells every run to use one helper, and that helper gets an edge case wrong. Then every run gets the same bug.</p>
 </blockquote>
 <p>[Next slide]</p>
@@ -212,9 +212,9 @@ Words in [brackets] are actions. Do not say them.</p>
 <p>Here's how one test works.</p>
 <p>I take a merged pull request from a real project. Its tests fail before the change and pass after it. I start from 138 public Python tasks from Gloaguen and colleagues, plus newer pull requests. I pick about five rules a script can check, with two tasks each.</p>
 <p>Then I run each setting ten times: Claude Code, Codex with two models, and my own small harness with an open-weight model at two temperatures. A run only counts if it passes the pull request's tests.</p>
-<p>Then I look past the tests. I give each function at least 10,000 random inputs and compare every answer with the merged code. I check 20 disagreements per task by hand. Your lab's boundary value method comes in here as an extra stress test.</p>
+<p>Then I look past the tests. I give each function the tests call at least 10,000 random inputs and compare every answer with the merged code. I check 20 disagreements per task by hand. Your lab's boundary value method comes in here as an extra stress test.</p>
 <p>Last, I count how often the runs fail on the same inputs, and fit the model. That also tells me how often a two-out-of-three vote would fail.</p>
-<p>In total that's 820 runs, about 420 to 590 dollars. A small pilot comes first, to check the real numbers.</p>
+<p>In total that's 820 runs, including 120 to screen the tasks first. At the costs in Gloaguen's paper, that's about 420 to 590 dollars. A small pilot comes first, to check the real numbers.</p>
 </blockquote>
 <p>[Next slide]</p>
 <h3 id="slide-6-plan-and-why-this-lab-about-65-seconds">Slide 6. Plan, and why this lab (about 65 seconds)</h3>
