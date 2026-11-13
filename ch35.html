@@ -170,10 +170,10 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <p class="when"><strong>When and how long:</strong> Any time, 10 minutes.</p>
 </header>
 
-<p><strong>What we know:</strong> the meeting is online, on Teams or Zoom. The professors want to see what you know in your field, how you apply it, and how you solve problems. Prof. Zheng will send the details. The full list of facts is in <a href="ch02.html"><code>01_Meeting_Format_and_Previous_Questions/01_meeting_format_what_we_know.md</code></a>.</p>
+<p><strong>What we know:</strong> the meeting is online, on Teams or Zoom. Prof. Zheng will send the details. The full list of facts is in <a href="ch02.html"><code>01_Meeting_Format_and_Previous_Questions/01_meeting_format_what_we_know.md</code></a>.</p>
 <p>Paper labels below (P2, P3, P5, R1) are the ones in <a href="ch44.html"><code>07_Lab_Papers/GUIDE_1_lab_and_cited_papers.md</code></a>: P2 = Guo, Okamura and Dohi (boundary values, your [2]); P3 = Qiu et al. (Hawkes model, your [3]); P5 = Yano, Dohi and Okamura (estimation algorithms, not in your plan); R1 = Ron, Baudry and Monperrus (your [5]).</p>
 <h2 id="6-likely-topics-for-this-lab-in-the-meeting-revise-before-24-nov">6. Likely topics for this lab in the meeting (revise before 24 Nov)</h2>
-<p>The professors will look at what you know in your field (see <a href="ch02.html"><code>01_Meeting_Format_and_Previous_Questions/01_meeting_format_what_we_know.md</code></a>). With this lab, expect probability and statistics.</p>
+<p>Prof. Zheng said the questions depend on which professors join (see <a href="ch02.html"><code>01_Meeting_Format_and_Previous_Questions/01_meeting_format_what_we_know.md</code></a>). With this lab, expect probability and statistics.</p>
 <ol>
 <li><strong>NHPP basics.</strong> N(t) counts faults found by time t; mean value function Λ(t) = ω F(t), where ω is the expected total number of faults and F a fault-detection time distribution. Goel-Okumoto: Λ(t) = ω(1 − e^(−bt)). Software reliability over (t, t + x]: R(x | t) = exp(−[Λ(t + x) − Λ(t)]). Expected remaining faults at t: ω − Λ(t).</li>
 <li><strong>Maximum likelihood for time data.</strong> log L = Σ log λ(t_i) − Λ(T) for event times t_1..t_n up to T. Why EM: treat the unobserved total fault count as missing data; global convergence (P5).</li>
