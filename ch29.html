@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>29. Linear algebra and calculus problems (from NAIST) · Hiroshima oral exam</title>
+<title>29. Probability · Hiroshima meeting prep</title>
 <style>
 :root{--bg:#fbfaf7;--fg:#1f2328;--muted:#5f6670;--line:#e3e0d8;--card:#f3f1ea;--link:#0b57d0;--code:#efede6;--accent:#2f5d8a;--fill:#fff2a8}
 *{box-sizing:border-box}
@@ -93,1934 +93,348 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 
 </head>
 <body>
-<header class="topbar"><button class="menu-btn" type="button" aria-controls="sidenav" aria-expanded="false">Contents</button><a class="brand" href="index.html">Hiroshima oral exam</a></header>
+<header class="topbar"><button class="menu-btn" type="button" aria-controls="sidenav" aria-expanded="false">Contents</button><a class="brand" href="index.html">Hiroshima meeting prep</a></header>
 <div class="layout">
 <nav id="sidenav" class="sidenav" aria-label="Book contents"><ul>
 <li><a href="index.html">Home: how to use this book</a></li>
 <li><a href="contents.html">Contents</a></li>
-<li class="part">Part 1: The exam and past questions</li>
+<li class="part">Part 1: The meeting and previous years&#x27; questions</li>
 <li data-ch="h01"><a href="ch01.html"><span class="n">1.</span>Start here</a></li>
-<li data-ch="h02"><a href="ch02.html"><span class="n">2.</span>The exam: what we know</a></li>
-<li data-ch="h03"><a href="ch03.html"><span class="n">3.</span>Real past questions and reports</a></li>
-<li data-ch="h04"><a href="ch04.html"><span class="n">4.</span>Past written papers, translated and solved</a></li>
+<li data-ch="h02"><a href="ch02.html"><span class="n">2.</span>The meeting: what we know</a></li>
+<li data-ch="h03"><a href="ch03.html"><span class="n">3.</span>Questions other applicants were asked</a></li>
+<li data-ch="h04"><a href="ch04.html"><span class="n">4.</span>Previous years&#x27; questions: topics that repeat</a></li>
+<li data-ch="h05"><a href="ch05.html"><span class="n">5.</span>Previous questions: January 2026</a></li>
+<li data-ch="h06"><a href="ch06.html"><span class="n">6.</span>Previous questions: August 2025</a></li>
+<li data-ch="h07"><a href="ch07.html"><span class="n">7.</span>Previous questions: January 2025</a></li>
+<li data-ch="h08"><a href="ch08.html"><span class="n">8.</span>Previous questions: August 2024</a></li>
+<li data-ch="h09"><a href="ch09.html"><span class="n">9.</span>Previous questions: January 2024</a></li>
+<li data-ch="h10"><a href="ch10.html"><span class="n">10.</span>Previous questions: August 2023</a></li>
+<li data-ch="h11"><a href="ch11.html"><span class="n">11.</span>Previous questions: older sample set</a></li>
 <li class="part">Part 2: Your 15-minute talk</li>
-<li data-ch="h05"><a href="ch05.html"><span class="n">5.</span>Presentation guide and slides</a></li>
-<li data-ch="h06"><a href="ch06.html"><span class="n">6.</span>Full script (15, 10 and 5 minutes)</a></li>
+<li data-ch="h12"><a href="ch12.html"><span class="n">12.</span>Presentation guide and slides</a></li>
+<li data-ch="h13"><a href="ch13.html"><span class="n">13.</span>Full script (15, 10 and 5 minutes)</a></li>
 <li class="part">Part 3: Your plan and your work</li>
-<li data-ch="h07"><a href="ch07.html"><span class="n">7.</span>Your plan, explained simply</a></li>
-<li data-ch="h08"><a href="ch08.html"><span class="n">8.</span>Every number in your plan</a></li>
-<li data-ch="h09"><a href="ch09.html"><span class="n">9.</span>Weak points and honest answers</a></li>
-<li data-ch="h10"><a href="ch10.html"><span class="n">10.</span>Questions on your plan (55)</a></li>
-<li data-ch="h11"><a href="ch11.html"><span class="n">11.</span>Hard committee questions (47)</a></li>
-<li data-ch="h12"><a href="ch12.html"><span class="n">12.</span>Questions on your work (91)</a></li>
-<li data-ch="h13"><a href="ch13.html"><span class="n">13.</span>Why Japan, why Hiroshima, why this lab</a></li>
-<li data-ch="h14"><a href="ch14.html"><span class="n">14.</span>Questions on funding</a></li>
-<li data-ch="h15"><a href="ch15.html"><span class="n">15.</span>Other likely questions</a></li>
-<li data-ch="h16"><a href="ch16.html"><span class="n">16.</span>Question bank from the 2 Nov meeting</a></li>
-<li class="part">Part 4: Mock interviews</li>
-<li data-ch="h17"><a href="ch17.html"><span class="n">17.</span>Three mock exams (tap to hear the questions)</a></li>
+<li data-ch="h14"><a href="ch14.html"><span class="n">14.</span>Your research plan (as submitted)</a></li>
+<li data-ch="h15"><a href="ch15.html"><span class="n">15.</span>Your plan, explained simply</a></li>
+<li data-ch="h16"><a href="ch16.html"><span class="n">16.</span>Every number in your plan</a></li>
+<li data-ch="h17"><a href="ch17.html"><span class="n">17.</span>Weak points and honest answers</a></li>
+<li data-ch="h18"><a href="ch18.html"><span class="n">18.</span>Questions on your plan (55)</a></li>
+<li data-ch="h19"><a href="ch19.html"><span class="n">19.</span>Hard questions from other professors (47)</a></li>
+<li data-ch="h20"><a href="ch20.html"><span class="n">20.</span>Questions on your work (91)</a></li>
+<li data-ch="h21"><a href="ch21.html"><span class="n">21.</span>Why Japan, why Hiroshima, why this lab</a></li>
+<li data-ch="h22"><a href="ch22.html"><span class="n">22.</span>Questions on funding</a></li>
+<li data-ch="h23"><a href="ch23.html"><span class="n">23.</span>Other likely questions</a></li>
+<li data-ch="h24"><a href="ch24.html"><span class="n">24.</span>Question bank from the 2 Nov meeting</a></li>
+<li class="part">Part 4: Practice meetings</li>
+<li data-ch="h25"><a href="ch25.html"><span class="n">25.</span>Three practice meetings (tap to hear the questions)</a></li>
 <li class="part">Part 5: Maths</li>
-<li data-ch="h18"><a href="ch18.html"><span class="n">18.</span>Maths: what to study, day by day</a></li>
-<li data-ch="h19"><a href="ch19.html"><span class="n">19.</span>The maths inside your plan</a></li>
-<li data-ch="h20"><a href="ch20.html"><span class="n">20.</span>Stochastic processes and reliability</a></li>
-<li data-ch="h21"><a href="ch21.html"><span class="n">21.</span>Probability</a></li>
-<li data-ch="h22"><a href="ch22.html"><span class="n">22.</span>Statistics</a></li>
-<li data-ch="h23"><a href="ch23.html"><span class="n">23.</span>Linear algebra and calculus</a></li>
-<li data-ch="h24"><a href="ch24.html"><span class="n">24.</span>CS basics</a></li>
-<li data-ch="h25"><a href="ch25.html"><span class="n">25.</span>How to answer maths out loud</a></li>
-<li data-ch="h26"><a href="ch26.html"><span class="n">26.</span>Reliability and probability primer</a></li>
-<li data-ch="h27"><a href="ch27.html"><span class="n">27.</span>Lab topics: short notes</a></li>
-<li data-ch="h28"><a href="ch28.html"><span class="n">28.</span>Linear algebra and calculus checklist (from NAIST)</a></li>
-<li data-ch="h29"><a href="ch29.html" aria-current="page"><span class="n">29.</span>Linear algebra and calculus problems (from NAIST)</a></li>
-<li data-ch="h30"><a href="ch30.html"><span class="n">30.</span>Statistics primer (from NAIST)</a></li>
-<li class="part">Part 6: The lab, their papers, the committee</li>
-<li data-ch="h31"><a href="ch31.html"><span class="n">31.</span>Prof. Zheng in depth</a></li>
-<li data-ch="h32"><a href="ch32.html"><span class="n">32.</span>The lab, Prof. Dohi and Prof. Okamura</a></li>
-<li data-ch="h33"><a href="ch33.html"><span class="n">33.</span>Who may be on your committee</a></li>
-<li data-ch="h34"><a href="ch34.html"><span class="n">34.</span>How Japanese committees run oral exams</a></li>
-<li data-ch="h35"><a href="ch35.html"><span class="n">35.</span>Papers guide: lab and cited papers</a></li>
-<li data-ch="h36"><a href="ch36.html"><span class="n">36.</span>New lab papers since October</a></li>
-<li data-ch="h37"><a href="ch37.html"><span class="n">37.</span>Questions on their papers: N-version, AI, testing (44)</a></li>
-<li data-ch="h38"><a href="ch38.html"><span class="n">38.</span>Questions on their papers: reliability models (83)</a></li>
-<li class="part">Part 7: Exam day</li>
-<li data-ch="h39"><a href="ch39.html"><span class="n">39.</span>Exam-day checklist</a></li>
-<li data-ch="h40"><a href="ch40.html"><span class="n">40.</span>How to address them, and etiquette</a></li>
-<li data-ch="h41"><a href="ch41.html"><span class="n">41.</span>Email templates</a></li>
+<li data-ch="h26"><a href="ch26.html"><span class="n">26.</span>Maths: what to study, day by day</a></li>
+<li data-ch="h27"><a href="ch27.html"><span class="n">27.</span>The maths inside your plan</a></li>
+<li data-ch="h28"><a href="ch28.html"><span class="n">28.</span>Stochastic processes and reliability</a></li>
+<li data-ch="h29"><a href="ch29.html" aria-current="page"><span class="n">29.</span>Probability</a></li>
+<li data-ch="h30"><a href="ch30.html"><span class="n">30.</span>Statistics</a></li>
+<li data-ch="h31"><a href="ch31.html"><span class="n">31.</span>Linear algebra and calculus</a></li>
+<li data-ch="h32"><a href="ch32.html"><span class="n">32.</span>CS basics</a></li>
+<li data-ch="h33"><a href="ch33.html"><span class="n">33.</span>How to answer maths out loud</a></li>
+<li data-ch="h34"><a href="ch34.html"><span class="n">34.</span>Reliability and probability primer</a></li>
+<li data-ch="h35"><a href="ch35.html"><span class="n">35.</span>Lab topics: short notes</a></li>
+<li data-ch="h36"><a href="ch36.html"><span class="n">36.</span>Linear algebra and calculus checklist (from NAIST)</a></li>
+<li data-ch="h37"><a href="ch37.html"><span class="n">37.</span>Linear algebra and calculus problems (from NAIST)</a></li>
+<li data-ch="h38"><a href="ch38.html"><span class="n">38.</span>Statistics primer (from NAIST)</a></li>
+<li data-ch="h39"><a href="ch39.html"><span class="n">39.</span>Working maths out loud (from NAIST)</a></li>
+<li class="part">Part 6: The lab, their papers, the professors</li>
+<li data-ch="h40"><a href="ch40.html"><span class="n">40.</span>Prof. Zheng in depth</a></li>
+<li data-ch="h41"><a href="ch41.html"><span class="n">41.</span>The lab, Prof. Dohi and Prof. Okamura</a></li>
+<li data-ch="h42"><a href="ch42.html"><span class="n">42.</span>Professors you may meet</a></li>
+<li data-ch="h43"><a href="ch43.html"><span class="n">43.</span>How Japanese professors run these meetings</a></li>
+<li data-ch="h44"><a href="ch44.html"><span class="n">44.</span>Papers guide: lab and cited papers</a></li>
+<li data-ch="h45"><a href="ch45.html"><span class="n">45.</span>New lab papers since October</a></li>
+<li data-ch="h46"><a href="ch46.html"><span class="n">46.</span>Questions on their papers: N-version, AI, testing (44)</a></li>
+<li data-ch="h47"><a href="ch47.html"><span class="n">47.</span>Questions on their papers: reliability models (83)</a></li>
+<li class="part">Part 7: Meeting day</li>
+<li data-ch="h48"><a href="ch48.html"><span class="n">48.</span>Meeting-day checklist</a></li>
+<li data-ch="h49"><a href="ch49.html"><span class="n">49.</span>How to address them, and etiquette</a></li>
+<li data-ch="h50"><a href="ch50.html"><span class="n">50.</span>Email templates</a></li>
 <li class="part">Reference</li>
-<li data-ch="h42"><a href="ch42.html"><span class="n">42.</span>Glossary</a></li>
-<li data-ch="h43"><a href="ch43.html"><span class="n">43.</span>Every lab paper (index)</a></li>
-<li data-ch="h44"><a href="ch44.html"><span class="n">44.</span>Slide text and sources</a></li>
-<li data-ch="h45"><a href="ch45.html"><span class="n">45.</span>How the 2 Nov meeting went</a></li>
+<li data-ch="h51"><a href="ch51.html"><span class="n">51.</span>Glossary</a></li>
+<li data-ch="h52"><a href="ch52.html"><span class="n">52.</span>Every lab paper (index)</a></li>
+<li data-ch="h53"><a href="ch53.html"><span class="n">53.</span>Slide text and sources</a></li>
+<li data-ch="h54"><a href="ch54.html"><span class="n">54.</span>How the 2 Nov meeting went</a></li>
 </ul></nav>
 <main class="page">
 <article>
 <header class="chead">
 <p class="part">Part 5: Maths</p>
-<p class="chno">Chapter 29 of 45</p>
-<h1>50 oral exam style practice problems, with worked solutions</h1>
-<p class="when"><strong>When and how long:</strong> Day 10, if time.</p>
+<p class="chno">Chapter 29 of 54</p>
+<h1>Probability</h1>
+<p class="when"><strong>When and how long:</strong> Days 4 to 6.</p>
 </header>
 
-<blockquote>
-<p><strong>Copied from your NAIST prep (21 Oct 2026), unchanged below this box.</strong> 50 solved problems (LA1 to LA25, C1 to C25), already checked with SymPy. Hiroshima will not give you a set written problem like NAIST does. Use these when <a href="ch23.html"><code>../01_linear_algebra_and_calculus.md</code></a> points to them. Ignore the NAIST source labels and the Webex details.</p>
-</blockquote>
-<p>Prepared 21 Oct 2026 for the NAIST official entrance exam (online, Spring 3rd examination, 10 Mar 2027 per the 2027 Guide).
-Scope: Strang, <em>Introduction to Linear Algebra</em>, 4th ed., Ch. 1 to 7 (problems LA1 to LA25) and Lang, <em>A First Course in Calculus</em>, 5th ed., Ch. 1 to 15 (problems C1 to C25), plus the official example on differential equations (C25).</p>
-<h2 id="how-to-use-this-file">How to use this file</h2>
-<ol>
-<li>Cover the solution. Read the problem out loud.</li>
-<li>Start a 5 minute timer. Solve it on your A4 sketchbook with a thick pen, <strong>talking the whole time</strong> (see <code>03_how_to_do_oral_math.md</code>).</li>
-<li>Hold the page up to your phone or laptop camera at the end, as you will in the exam.</li>
-<li>Only then read the solution. Then read the "Say it out loud" box out loud once, and compare it with what you said.</li>
-<li>Write every mistake in your error log (format in <code>04_study_plan_math.md</code>).</li>
-</ol>
-<p>What the boxes mean:</p>
+<p>Probability is the language of the whole lab, and of your plan. Prof. Zheng expects most questions to be on your plan, and said on 2 Nov that the rest depends on which professors join. If one of them asks a "basic" question, it is likely to come from this file: a definition, a distribution, or a small calculation like the chance that the first of three parts to fail is part 3.</p>
+<p>Part 1 is the list of statements to say out loud. Part 2 has 30 short problems to solve out loud, with full solutions. <a href="ch34.html"><code>01_reliability_and_probability_primer.md</code></a> section 1 has the very short version.</p>
+<p><strong>How the answers were checked.</strong> Every numeric answer was recomputed on 12 Nov 2026 with Python (numpy, scipy), and again on 13 Nov 2026. P14, P15, P23, P24 and P29 were also checked by simulation (200,000 to 500,000 draws each). Nothing in this file is marked [CHECK].</p>
+<hr />
+<h1 id="part-1-statements-to-say-out-loud">Part 1. Statements to say out loud</h1>
+<h2 id="11-events-and-rules">1.1 Events and rules</h2>
 <ul>
-<li><strong>Solution</strong>: the full written steps, as you would write them on the sketchbook.</li>
-<li><strong>Check</strong>: the quick check you should also do in the exam (plug back in, trace and determinant, a number test).</li>
-<li><strong>Say it out loud</strong>: a model of what to say while you write. Short sentences, first person. You do not need to memorise it word for word.</li>
-<li><strong>Follow-ups</strong>: questions examiners often add after the main answer, with short answers.</li>
+<li><strong>Axioms (Kolmogorov).</strong> P(A) &gt;= 0. P(whole sample space) = 1. For disjoint events, P(A1 or A2 or ...) = P(A1) + P(A2) + ...</li>
+<li><strong>Consequences.</strong> P(not A) = 1 - P(A). P(A or B) = P(A) + P(B) - P(A and B) (inclusion-exclusion).</li>
+<li><strong>Conditional probability.</strong> P(A | B) = P(A and B) / P(B), for P(B) &gt; 0.</li>
+<li><strong>Multiplication rule.</strong> P(A and B) = P(A | B) P(B).</li>
+<li><strong>Law of total probability.</strong> If B1, ..., Bn split the space, P(A) = sum_i P(A | Bi) P(Bi).</li>
+<li><strong>Bayes.</strong> P(B | A) = P(A | B) P(B) / P(A). Say: "posterior is likelihood times prior, divided by the evidence."</li>
+<li><strong>Independence.</strong> P(A and B) = P(A) P(B), equivalently P(A | B) = P(A). Disjoint events with positive probability are never independent.</li>
+<li><strong>Mutual independence</strong> of three events needs all pairs <strong>and</strong> P(A and B and C) = P(A) P(B) P(C). Pairwise is not enough (P5).</li>
+<li><strong>Conditional independence is not independence.</strong> Two runs can be independent given the input and still dependent overall. This is the whole point of Eckhardt and Lee.</li>
 </ul>
-<p>Source labels:</p>
-<ul>
-<li><strong>Official example</strong>: from NAIST's own example sheet (<code>resources/00_NAIST_official/NAIST_math_example_questions_EN.pdf</code>, made in 2013).</li>
-<li><strong>Reported (same question)</strong> or <strong>Reported (same topic)</strong>: from past applicants' blogs and files listed in <code>00_syllabus_and_free_resources.md</code> section 3 and <code>../02_Interview_Strategy/00_intel_report.md</code> section 3.9. These are anecdotal and from memory.</li>
-<li><strong>Textbook style</strong>: my own problem at the level of the set textbooks.</li>
-</ul>
-<p>How the answers were checked: every final answer in this file was recomputed independently on 21 Oct 2026 with the SymPy computer algebra library (matrix products, eigenvectors, limits, integrals, series, the differential equation), and each solution also has a hand check by substitution. If you ever find a mismatch, trust the hand check you can redo yourself, and tell me.</p>
-<p>Notation (plain text, so it reads the same on any screen):</p>
-<ul>
-<li>log means the natural logarithm (Lang uses log for ln). Say "log" or "natural log".</li>
-<li>A^T is the transpose, A^-1 the inverse, I the identity matrix. Vectors like (1, 2, 3) are column vectors.</li>
-<li>Matrices are written row by row inside code blocks.</li>
-</ul>
-<h2 id="index">Index</h2>
+<h2 id="12-distributions-ascii-table">1.2 Distributions (ASCII table)</h2>
 <table>
 <thead>
 <tr>
-<th>#</th>
-<th>Topic</th>
-<th>Book section</th>
-<th>Source</th>
+<th>Distribution</th>
+<th>pmf or pdf</th>
+<th>Mean</th>
+<th>Variance</th>
+<th>Where you meet it</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>LA1</td>
-<td>Lengths, angles, a perpendicular vector</td>
-<td>Strang 1.2</td>
-<td>Textbook style</td>
+<td>Bernoulli(p)</td>
+<td>p^x (1-p)^(1-x), x = 0, 1</td>
+<td>p</td>
+<td>p(1-p)</td>
+<td>one run fails or not</td>
 </tr>
 <tr>
-<td>LA2</td>
-<td>Linear combinations and independence</td>
-<td>Strang 1.1, 3.5</td>
-<td>Reported (same topic, 2017)</td>
+<td>Binomial(n, p)</td>
+<td>C(n,k) p^k (1-p)^(n-k)</td>
+<td>np</td>
+<td>np(1-p)</td>
+<td>failing runs out of n, if independent</td>
 </tr>
 <tr>
-<td>LA3</td>
-<td>Elimination, A = LU, determinant</td>
-<td>Strang 2.2, 2.3, 2.6</td>
-<td>Textbook style</td>
+<td>Geometric(p)</td>
+<td>(1-p)^(k-1) p, k = 1, 2, ...</td>
+<td>1/p</td>
+<td>(1-p)/p^2</td>
+<td>attempts until first success</td>
 </tr>
 <tr>
-<td>LA4</td>
-<td>Inverse by Gauss-Jordan</td>
-<td>Strang 2.5</td>
-<td>Textbook style (inverses appear in old lists)</td>
+<td>Poisson(lambda)</td>
+<td>e^(-lambda) lambda^k / k!</td>
+<td>lambda</td>
+<td>lambda</td>
+<td>failure counts, NHPP</td>
 </tr>
 <tr>
-<td>LA5</td>
-<td>A matrix equation gives the inverse</td>
-<td>Strang 2.5, Ch. 6</td>
-<td>Reported (same style, 2016 and older)</td>
+<td>Uniform(a, b)</td>
+<td>1/(b-a)</td>
+<td>(a+b)/2</td>
+<td>(b-a)^2/12</td>
+<td>random input, conditional event times</td>
 </tr>
 <tr>
-<td>LA6</td>
-<td>Which sets are subspaces</td>
-<td>Strang 3.1</td>
-<td>Textbook style</td>
+<td>Exponential(lambda)</td>
+<td>lambda e^(-lambda x), x &gt;= 0</td>
+<td>1/lambda</td>
+<td>1/lambda^2</td>
+<td>time to failure, memoryless</td>
 </tr>
 <tr>
-<td>LA7</td>
-<td>Nullspace, special solutions, R</td>
-<td>Strang 3.2, 3.3</td>
-<td>Textbook style</td>
+<td>Gamma(n, lambda)</td>
+<td>lambda^n x^(n-1) e^(-lambda x) / Gamma(n)</td>
+<td>n/lambda</td>
+<td>n/lambda^2</td>
+<td>time to n-th event</td>
 </tr>
 <tr>
-<td>LA8</td>
-<td>Rank with a parameter</td>
-<td>Strang 3.3</td>
-<td>Reported (same question, 2017)</td>
+<td>Normal(mu, sigma^2)</td>
+<td>exp(-(x-mu)^2 / (2 sigma^2)) / (sigma sqrt(2 pi))</td>
+<td>mu</td>
+<td>sigma^2</td>
+<td>CLT, tests</td>
 </tr>
 <tr>
-<td>LA9</td>
-<td>Complete solution of Ax = b</td>
-<td>Strang 3.4</td>
-<td>Textbook style</td>
-</tr>
-<tr>
-<td>LA10</td>
-<td>The four fundamental subspaces</td>
-<td>Strang 3.5, 3.6</td>
-<td>Textbook style</td>
-</tr>
-<tr>
-<td>LA11</td>
-<td>Orthogonal subspaces</td>
-<td>Strang 4.1</td>
-<td>Reported (part (a) same question, 2021)</td>
-</tr>
-<tr>
-<td>LA12</td>
-<td>Projection onto a line</td>
-<td>Strang 4.2</td>
-<td>Reported (same topic, 2025)</td>
-</tr>
-<tr>
-<td>LA13</td>
-<td>Projection onto a plane, least squares</td>
-<td>Strang 4.2, 4.3</td>
-<td>Reported (same topic, 2025)</td>
-</tr>
-<tr>
-<td>LA14</td>
-<td>Gram-Schmidt and A = QR</td>
-<td>Strang 4.4</td>
-<td>Reported (same topic, 2021 and 2023)</td>
-</tr>
-<tr>
-<td>LA15</td>
-<td>A reflection matrix</td>
-<td>Strang 4.4, 7.1</td>
-<td>Reported (same topic, 2023)</td>
-</tr>
-<tr>
-<td>LA16</td>
-<td>Determinant rules</td>
-<td>Strang 5.1</td>
-<td>Reported (same question, 2022 English exam)</td>
-</tr>
-<tr>
-<td>LA17</td>
-<td>Computing determinants, area, volume</td>
-<td>Strang 5.2, 5.3</td>
-<td>Reported (same topic, 2010)</td>
-</tr>
-<tr>
-<td>LA18</td>
-<td>Cramer's rule, inverse from cofactors</td>
-<td>Strang 5.3</td>
-<td>Textbook style</td>
-</tr>
-<tr>
-<td>LA19</td>
-<td>Eigenvalues, eigenvectors, A^k</td>
-<td>Strang 6.1, 6.2</td>
-<td>Reported (same topic, many years)</td>
-</tr>
-<tr>
-<td>LA20</td>
-<td>Markov matrix and steady state</td>
-<td>Strang 6.1, 6.2</td>
-<td>Reported (same topic, old lists)</td>
-</tr>
-<tr>
-<td>LA21</td>
-<td>A + N with N nilpotent</td>
-<td>Strang 2.4, 6.6</td>
-<td>Official example</td>
-</tr>
-<tr>
-<td>LA22</td>
-<td>Diagonalize a symmetric matrix</td>
-<td>Strang 6.4</td>
-<td>Reported (same matrix, 2023)</td>
-</tr>
-<tr>
-<td>LA23</td>
-<td>Positive definite matrices</td>
-<td>Strang 6.5</td>
-<td>Reported (same topic, 2021 and 2024)</td>
-</tr>
-<tr>
-<td>LA24</td>
-<td>SVD basics</td>
-<td>Strang 6.7</td>
-<td>Textbook style</td>
-</tr>
-<tr>
-<td>LA25</td>
-<td>Linear transformations</td>
-<td>Strang 7.1, 7.2</td>
-<td>Official example + reported (2022)</td>
-</tr>
-<tr>
-<td>C1</td>
-<td>Inequalities and conic sections</td>
-<td>Lang I, II</td>
-<td>Reported (hyperbola sketch, 2025)</td>
-</tr>
-<tr>
-<td>C2</td>
-<td>Limits</td>
-<td>Lang III §3, XIII §8</td>
-<td>Part (c) reported (same question, 2012)</td>
-</tr>
-<tr>
-<td>C3</td>
-<td>Derivative from the definition, continuity</td>
-<td>Lang III §2, IX §2, Appendix</td>
-<td>Textbook style</td>
-</tr>
-<tr>
-<td>C4</td>
-<td>Official trig limit, triple angle</td>
-<td>Lang IV §3, §5</td>
-<td>Official example + reported (2021)</td>
-</tr>
-<tr>
-<td>C5</td>
-<td>f(x) = sin x / x</td>
-<td>Lang III, IV</td>
-<td>Reported (same question, 2022 English exam)</td>
-</tr>
-<tr>
-<td>C6</td>
-<td>Tangent line to y = tan x</td>
-<td>Lang III, IV</td>
-<td>Reported (same question, 2021)</td>
-</tr>
-<tr>
-<td>C7</td>
-<td>Implicit differentiation</td>
-<td>Lang III §7, §8</td>
-<td>Reported (same question, 2017)</td>
-</tr>
-<tr>
-<td>C8</td>
-<td>Related rates</td>
-<td>Lang III §9</td>
-<td>Textbook style</td>
-</tr>
-<tr>
-<td>C9</td>
-<td>Max and min, mean value theorem</td>
-<td>Lang V</td>
-<td>Textbook style</td>
-</tr>
-<tr>
-<td>C10</td>
-<td>Curve sketching</td>
-<td>Lang VI</td>
-<td>Reported (part (a) same curve, 2011)</td>
-</tr>
-<tr>
-<td>C11</td>
-<td>Optimization: the biggest box</td>
-<td>Lang VI §5</td>
-<td>Reported (same topic, 2024)</td>
-</tr>
-<tr>
-<td>C12</td>
-<td>Inverse functions, arcsin, arctan</td>
-<td>Lang VII</td>
-<td>Textbook style</td>
-</tr>
-<tr>
-<td>C13</td>
-<td>Exponentials and logarithms</td>
-<td>Lang VIII</td>
-<td>Textbook style</td>
-</tr>
-<tr>
-<td>C14</td>
-<td>Fundamental theorem, Riemann sums</td>
-<td>Lang IX, X</td>
-<td>Textbook style</td>
-</tr>
-<tr>
-<td>C15</td>
-<td>Substitution</td>
-<td>Lang XI §1</td>
-<td>Reported (both same question, 2022 and 2023)</td>
-</tr>
-<tr>
-<td>C16</td>
-<td>Integration by parts</td>
-<td>Lang XI §2</td>
-<td>Reported (same type, old lists)</td>
-</tr>
-<tr>
-<td>C17</td>
-<td>Partial fractions</td>
-<td>Lang XI §4</td>
-<td>Reported (same integrand, 2023)</td>
-</tr>
-<tr>
-<td>C18</td>
-<td>Trig integrals, a symmetry trick</td>
-<td>Lang XI §3</td>
-<td>Reported (same question, 2016)</td>
-</tr>
-<tr>
-<td>C19</td>
-<td>Area, volume, length</td>
-<td>Lang XII</td>
-<td>Reported (same topic, 2009 and 2010)</td>
-</tr>
-<tr>
-<td>C20</td>
-<td>Improper integrals</td>
-<td>Lang X §4</td>
-<td>Reported (same topic, 2017, 2004)</td>
-</tr>
-<tr>
-<td>C21</td>
-<td>Taylor's formula</td>
-<td>Lang XIII</td>
-<td>Reported (same topic, 2011)</td>
-</tr>
-<tr>
-<td>C22</td>
-<td>Series convergence tests</td>
-<td>Lang XIV §1 to §5</td>
-<td>Reported (same questions, 2016 and 2012)</td>
-</tr>
-<tr>
-<td>C23</td>
-<td>Power series</td>
-<td>Lang XIV §6, §7</td>
-<td>Textbook style</td>
-</tr>
-<tr>
-<td>C24</td>
-<td>Vectors, lines, planes</td>
-<td>Lang XV</td>
-<td>Textbook style, part (d) reported (same topic, 2012)</td>
-</tr>
-<tr>
-<td>C25</td>
-<td>A second-order differential equation</td>
-<td>Extra (not a Lang chapter title)</td>
-<td>Official example</td>
+<td>Beta(a, b)</td>
+<td>theta^(a-1) (1-theta)^(b-1) / B(a,b), 0 &lt; theta &lt; 1</td>
+<td>a/(a+b)</td>
+<td>ab / ((a+b)^2 (a+b+1))</td>
+<td>theta(x) in your plan</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h1 id="part-a-linear-algebra-strang-4th-ed-ch-1-to-7">Part A. Linear algebra (Strang 4th ed., Ch. 1 to 7)</h1>
-<hr />
-<h3 id="la1-lengths-angles-and-a-perpendicular-vector">LA1. Lengths, angles and a perpendicular vector</h3>
-<p><em>Strang 1.2. Textbook style. Target: 4 min.</em></p>
-<p><strong>Problem.</strong> Let u = (1, 1, 0) and v = (0, 1, 1).
-(a) Find the lengths of u and v and the angle between them.
-(b) Find a nonzero vector w that is perpendicular to both u and v.
-(c) Find the number c that makes u - c v perpendicular to v.</p>
-<p><strong>Solution.</strong>
-(a) Dot product: u·v = 1·0 + 1·1 + 0·1 = 1.
-Lengths: ||u|| = √(1 + 1 + 0) = √2, and ||v|| = √2.
-cos θ = u·v / (||u|| ||v||) = 1 / (√2 · √2) = 1/2, so θ = π/3 (60 degrees).</p>
-<p>(b) I need u·w = 0 and v·w = 0:
-w1 + w2 = 0 and w2 + w3 = 0.
-Two equations, three unknowns, so a whole line of answers. Take w2 = -1. Then w1 = 1 and w3 = 1.
-w = (1, -1, 1). (The cross product u × v gives the same vector: (1·1 - 0·1, 0·0 - 1·1, 1·1 - 1·0) = (1, -1, 1).)</p>
-<p>(c) (u - c v)·v = u·v - c (v·v) = 1 - 2c = 0, so c = 1/2.</p>
-<p><strong>Check.</strong> u·w = 1 - 1 + 0 = 0 and v·w = 0 - 1 + 1 = 0. For (c): u - v/2 = (1, 1/2, -1/2), and its dot product with v is 0 + 1/2 - 1/2 = 0.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"For the angle I use the dot product formula: cos theta equals u dot v over the product of the lengths. u dot v is 1. Both lengths are root 2. So cos theta is one half, and the angle is pi over 3, 60 degrees.
-For part (b) I need a vector with zero dot product with both. That gives two linear equations in three unknowns, so there are many answers on a line. I choose w2 equal to minus 1, and I get w = (1, -1, 1). I check both dot products: both are zero.
-Part (c) is really a projection. c is u dot v over v dot v, which is 1 over 2."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
+<p>Gamma here uses shape n and rate lambda. Geometric here counts the trial of the first success (some books count failures before it; then the mean is (1-p)/p).</p>
+<p><strong>MGFs</strong> M(t) = E[e^(tX)]: Bernoulli 1 - p + p e^t. Binomial (1 - p + p e^t)^n. Poisson exp(lambda (e^t - 1)). Exponential lambda/(lambda - t) for t &lt; lambda. Gamma (lambda/(lambda - t))^n. Normal exp(mu t + sigma^2 t^2 / 2).</p>
+<p><strong>Links between them.</strong> A sum of n independent Bernoulli(p) is Binomial(n, p). Binomial(n, p) with n large and p small is close to Poisson(np). A sum of n independent Exponential(lambda) is Gamma(n, lambda). Poisson process gaps are exponential. A Beta mixture of binomials is the beta-binomial (your plan).</p>
+<h2 id="13-expectation-variance-covariance">1.3 Expectation, variance, covariance</h2>
 <ul>
-<li><em>State the Schwarz inequality.</em> |u·v| ≤ ||u|| ||v||. Here 1 ≤ 2. Equality only when one vector is a multiple of the other.</li>
-<li><em>Triangle inequality?</em> ||u + v|| ≤ ||u|| + ||v||. Here ||(1, 2, 1)|| = √6 ≈ 2.45 ≤ 2√2 ≈ 2.83.</li>
-<li><em>Why is the cosine formula true?</em> From the law of cosines, ||v - w||^2 = ||v||^2 + ||w||^2 - 2||v|| ||w|| cos θ, and the left side expands to ||v||^2 + ||w||^2 - 2 v·w.</li>
+<li>E[aX + b] = a E[X] + b. <strong>E[X + Y] = E[X] + E[Y] always, even when X and Y are dependent.</strong></li>
+<li>Var X = E[X^2] - (E X)^2. Var(aX + b) = a^2 Var X.</li>
+<li>Cov(X, Y) = E[XY] - E[X] E[Y]. Var(X + Y) = Var X + Var Y + 2 Cov(X, Y).</li>
+<li>Corr(X, Y) = Cov(X, Y) / (sd(X) sd(Y)), always between -1 and 1.</li>
+<li>Independent implies Cov = 0. <strong>Cov = 0 does not imply independent</strong> (P22).</li>
+<li><strong>Law of total expectation:</strong> E[X] = E[ E[X | Y] ].</li>
+<li><strong>Law of total variance:</strong> Var X = E[ Var(X | Y) ] + Var( E[X | Y] ). Say: "the average of the variance inside groups, plus the variance of the group means." This gives the beta-binomial variance in your plan.</li>
+<li><strong>MGF use:</strong> M^(n)(0) = E[X^n], and the MGF of a sum of independent variables is the product of their MGFs.</li>
+</ul>
+<h2 id="14-inequalities-and-limit-theorems">1.4 Inequalities and limit theorems</h2>
+<ul>
+<li><strong>Markov:</strong> for X &gt;= 0 and a &gt; 0, P(X &gt;= a) &lt;= E[X] / a.</li>
+<li><strong>Chebyshev:</strong> P(|X - mu| &gt;= k sigma) &lt;= 1/k^2.</li>
+<li><strong>Law of large numbers:</strong> the sample mean of i.i.d. variables with mean mu tends to mu as n grows. Say: "averages settle down to the true mean."</li>
+<li><strong>Central limit theorem:</strong> for i.i.d. variables with mean mu and variance sigma^2, (X-bar - mu) / (sigma / sqrt(n)) is approximately N(0, 1) for large n, whatever the original distribution. Say: "sums and averages of many independent pieces look normal."</li>
+</ul>
+<h2 id="15-exponential-order-statistics-used-all-the-time-in-reliability">1.5 Exponential order statistics (used all the time in reliability)</h2>
+<ul>
+<li><strong>Memoryless:</strong> P(T &gt; s + t | T &gt; s) = P(T &gt; t). The exponential is the only continuous distribution with this property.</li>
+<li><strong>Minimum:</strong> if T_i ~ Exponential(lambda_i) are independent, min T_i ~ Exponential(sum lambda_i), and P(T_j is the smallest) = lambda_j / sum lambda_i.</li>
+<li><strong>Gaps:</strong> for n i.i.d. Exponential(lambda), the gaps between consecutive failures are independent exponentials with rates n lambda, (n-1) lambda, ..., lambda. So E[k-th failure time] = (1/lambda) sum_{i=0}^{k-1} 1/(n - i), and E[max] = (1/lambda)(1 + 1/2 + ... + 1/n).</li>
 </ul>
 <hr />
-<h3 id="la2-linear-combinations-and-independence">LA2. Linear combinations and independence</h3>
-<p><em>Strang 1.1, 3.5. Reported (same topic, 2017: "decide if x, y, z are independent"). Target: 5 min.</em></p>
-<p><strong>Problem.</strong> v1 = (1, 1, 1), v2 = (1, 2, 3), v3 = (1, 3, 5).
-(a) Are v1, v2, v3 linearly independent?
-(b) Describe all combinations c1 v1 + c2 v2 + c3 v3. Is b = (2, 3, 4) one of them? Is (1, 0, 0)?</p>
-<p><strong>Solution.</strong>
-(a) Put the vectors in the columns of A and eliminate:</p>
-<pre><code>[ 1 1 1 ]      [ 1 1 1 ]      [ 1 1 1 ]
-[ 1 2 3 ]  -&gt;  [ 0 1 2 ]  -&gt;  [ 0 1 2 ]
-[ 1 3 5 ]      [ 0 2 4 ]      [ 0 0 0 ]
-</code></pre>
-<p>(row 2 minus row 1, row 3 minus row 1, then row 3 minus 2 times row 2.)
-Only 2 pivots, so the rank is 2 and the vectors are <strong>dependent</strong>.
-An explicit relation: v1 + v3 = (2, 4, 6) = 2 v2, so v1 - 2 v2 + v3 = 0.</p>
-<p>(b) All combinations form the column space, a <strong>plane through the origin</strong> spanned by v1 and v2.
-Normal vector: v1 × v2 = (1·3 - 1·2, 1·1 - 1·3, 1·2 - 1·1) = (1, -2, 1).
-The plane is x - 2y + z = 0.</p>
-<ul>
-<li>b = (2, 3, 4): 2 - 6 + 4 = 0, so yes. In fact v1 + v2 = (2, 3, 4).</li>
-<li>(1, 0, 0): 1 - 0 + 0 = 1 ≠ 0, so no.</li>
-</ul>
-<p><strong>Check.</strong> The normal is perpendicular to v3 too: 1 - 6 + 5 = 0. The determinant of A is 0, which agrees with rank 2.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"To test independence I put the three vectors into the columns of a matrix and do elimination. After two steps the third row becomes zero. So there are only two pivots, the rank is 2, and the vectors are dependent. I can even see the relation: v1 plus v3 equals 2 v2.
-So all combinations fill a plane, not the whole space. To find the plane, I take the cross product of v1 and v2. That gives the normal (1, -2, 1), so the plane is x minus 2y plus z equals 0. Then I just test each vector in this equation. (2, 3, 4) is in the plane, and it equals v1 plus v2. (1, 0, 0) is not."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Dimension of the span?</em> 2.</li>
-<li><em>What if v3 were (1, 3, 6)?</em> The determinant becomes 1, which is not 0, so the three vectors are independent and span all of R^3.</li>
-<li><em>Definition of independent?</em> The only combination giving the zero vector is the one with all coefficients 0. Equivalently, Ax = 0 has only x = 0.</li>
-</ul>
-<hr />
-<h3 id="la3-elimination-a-lu-and-the-determinant">LA3. Elimination, A = LU and the determinant</h3>
-<p><em>Strang 2.2, 2.3, 2.6. Textbook style. Target: 6 min.</em></p>
-<p><strong>Problem.</strong> Solve</p>
-<pre><code> 2x + 4y - 2z =  2
- 4x + 9y - 3z =  8
--2x - 3y + 7z = 10
-</code></pre>
-<p>(a) by elimination, and name the pivots. (b) Write A = LU. (c) Find det A.</p>
-<p><strong>Solution.</strong>
-(a) Step 1 (column 1, pivot 2):</p>
-<ul>
-<li>multiplier ℓ21 = 4/2 = 2: row 2 - 2 row 1 gives (0, 1, 1 | 4)</li>
-<li>multiplier ℓ31 = -2/2 = -1: row 3 - (-1) row 1 = row 3 + row 1 gives (0, 1, 5 | 12)</li>
-</ul>
-<p>Step 2 (column 2, pivot 1):</p>
-<ul>
-<li>multiplier ℓ32 = 1/1 = 1: row 3 - row 2 gives (0, 0, 4 | 8)</li>
-</ul>
-<p>Now the system is upper triangular, Ux = c:</p>
-<pre><code>2x + 4y - 2z = 2
-      y +  z = 4
-          4z = 8
-</code></pre>
-<p>Back substitution: z = 2, then y = 4 - 2 = 2, then 2x = 2 - 8 + 4 = -2, so x = -1.
-<strong>Solution (x, y, z) = (-1, 2, 2). Pivots 2, 1, 4.</strong></p>
-<p>(b) L has 1s on the diagonal and the multipliers below it. U is the upper triangular matrix from elimination.</p>
-<pre><code>    [  1  0  0 ]        [ 2  4 -2 ]
-L = [  2  1  0 ]    U = [ 0  1  1 ]
-    [ -1  1  1 ]        [ 0  0  4 ]
-</code></pre>
-<p>(c) det A = det L · det U = 1 · (2 · 1 · 4) = <strong>8</strong> (product of the pivots, no row exchanges).</p>
-<p><strong>Check.</strong> Plug in: -2 + 8 - 4 = 2, -4 + 18 - 6 = 8, 2 - 6 + 14 = 10. All correct. Row 3 of LU: -1·(2, 4, -2) + 1·(0, 1, 1) + 1·(0, 0, 4) = (-2, -3, 7), which is row 3 of A.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"I will use elimination. The first pivot is 2. To clear the 4 below it, the multiplier is 2, so I subtract 2 times row 1 from row 2. For row 3 the multiplier is minus 1, so I add row 1. Now column 2: the pivot is 1, and I subtract row 2 from row 3. The last pivot is 4.
-Back substitution from the bottom: z is 2, then y is 2, then x is minus 1. I check in the first equation: minus 2 plus 8 minus 4 is 2. Good.
-For LU, L just stores the multipliers I used: 2, minus 1, and 1, with ones on the diagonal. U is the triangular matrix I ended with. The determinant is the product of the pivots, 2 times 1 times 4, which is 8, because I did no row exchanges."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>If the 7 were a number c, when does elimination fail?</em> Row 3 becomes (0, 1, c - 2) after step 1 and (0, 0, c - 3) after step 2. The third pivot is c - 3. For c = 3 there is no third pivot: A is singular and det A = 2·1·(c - 3) = 0.</li>
-<li><em>Temporary vs permanent failure?</em> A zero in a pivot position with a nonzero entry below: exchange rows (temporary). No nonzero entry below: the matrix is singular (permanent), and the system has no solution or infinitely many.</li>
-<li><em>How do you use L and U to solve?</em> Solve Lc = b forward, then Ux = c backward. Here Lc = b gives c = (2, 4, 8), the right side above.</li>
-</ul>
-<hr />
-<h3 id="la4-inverse-by-gauss-jordan">LA4. Inverse by Gauss-Jordan</h3>
-<p><em>Strang 2.5. Textbook style. Target: 6 min.</em></p>
-<p><strong>Problem.</strong></p>
-<pre><code>    [  2 -1  0 ]
-K = [ -1  2 -1 ]
-    [  0 -1  2 ]
-</code></pre>
-<p>(a) Find K^-1 by Gauss-Jordan elimination. (b) Is K^-1 symmetric? Why would you expect that?</p>
-<p><strong>Solution.</strong>
-(a) Start with [K | I] and go forward, then backward.</p>
-<pre><code>[  2 -1  0 | 1 0 0 ]
-[ -1  2 -1 | 0 1 0 ]
-[  0 -1  2 | 0 0 1 ]
-</code></pre>
-<p>Row 2 + (1/2) row 1: (0, 3/2, -1 | 1/2, 1, 0).
-Row 3 + (2/3) new row 2: (0, 0, 4/3 | 1/3, 2/3, 1).
-Pivots 2, 3/2, 4/3 (so det K = 2 · 3/2 · 4/3 = 4, invertible).</p>
-<p>Backward. Divide row 3 by 4/3: (0, 0, 1 | 1/4, 1/2, 3/4).
-Row 2 + row 3: (0, 3/2, 0 | 3/4, 3/2, 3/4). Divide by 3/2: (0, 1, 0 | 1/2, 1, 1/2).
-Row 1 + row 2: (2, 0, 0 | 3/2, 1, 1/2). Divide by 2: (1, 0, 0 | 3/4, 1/2, 1/4).</p>
-<pre><code>               [ 3 2 1 ]
-K^-1 = (1/4) · [ 2 4 2 ]
-               [ 1 2 3 ]
-</code></pre>
-<p>(b) Yes, it is symmetric. Reason: K = K^T, and (K^-1)^T = (K^T)^-1 = K^-1.</p>
-<p><strong>Check.</strong> Row 1 of K times the columns of K^-1: (2·3 - 1·2 + 0)/4 = 1, (2·2 - 1·4 + 0)/4 = 0, (2·1 - 1·2 + 0)/4 = 0. Row 2: (-3 + 4 - 1)/4 = 0, (-2 + 8 - 2)/4 = 1, (-1 + 4 - 3)/4 = 0. Row 3: (0 - 2 + 2)/4 = 0, (0 - 4 + 4)/4 = 0, (0 - 2 + 6)/4 = 1. So K K^-1 = I.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"I write K next to the identity and do elimination on the whole wide matrix. Going down, I add half of row 1 to row 2, then two thirds of the new row 2 to row 3. The pivots are 2, 3 over 2 and 4 over 3, all nonzero, so K is invertible, and its determinant is their product, 4.
-Then I go up to clear above the pivots, and I divide each row by its pivot. The right half is now K inverse: one quarter times 3 2 1, 2 4 2, 1 2 3.
-I check one row of K times K inverse. It gives 1, 0, 0. And the inverse is symmetric, as expected, because the inverse of a symmetric matrix is symmetric."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>(AB)^-1?</em> B^-1 A^-1, reverse order.</li>
-<li><em>2 by 2 formula?</em> [a b; c d]^-1 = (1/(ad - bc)) [d -b; -c a].</li>
-<li><em>When does an inverse fail to exist?</em> When det = 0, or fewer than n pivots, or Ax = 0 has a nonzero solution. These are all the same condition.</li>
-</ul>
-<hr />
-<h3 id="la5-a-matrix-equation-gives-the-inverse">LA5. A matrix equation gives the inverse</h3>
-<p><em>Strang 2.5 and Ch. 6. Reported (same style: old lists had "if A^2 + 3A + 7E = O, find ad - bc" and A^-1 = αA + βE). Target: 5 min.</em></p>
-<p><strong>Problem.</strong> A square matrix A satisfies A^2 - 5A + 6I = 0.
-(a) Show that A is invertible and write A^-1 using A and I.
-(b) If A is 2 by 2 and not a multiple of I, find the trace and the determinant of A.</p>
-<p><strong>Solution.</strong>
-(a) A^2 - 5A = -6I, so A(5I - A) = 6I, so A · (5I - A)/6 = I. The same works on the other side, (5I - A)A = 6I, because powers of A commute.
-<strong>A^-1 = (5I - A)/6.</strong>
-Another way: if Ax = λx with x ≠ 0, then (A^2 - 5A + 6I)x = (λ^2 - 5λ + 6)x = 0, so λ = 2 or 3. Zero is not an eigenvalue, so A is invertible.</p>
-<p>(b) For every 2 by 2 matrix (Cayley-Hamilton), A^2 - (tr A) A + (det A) I = 0. Call t = tr A, d = det A. Subtract this from the given equation:
-(t - 5) A = (d - 6) I.
-If t ≠ 5, then A = ((d - 6)/(t - 5)) I, a multiple of I. That is not allowed. So t = 5, and then (d - 6) I = 0, so d = 6.
-<strong>trace A = 5, det A = 6</strong> (eigenvalues 2 and 3).</p>
-<p><strong>Check.</strong> Example A = [2 1; 0 3]. A^2 = [4 5; 0 9]. A^2 - 5A + 6I = [4 - 10 + 6, 5 - 5; 0, 9 - 15 + 6] = 0. Trace 5, det 6. (5I - A)/6 = [3 -1; 0 2]/6, and A times this is [6 - 0, -2 + 2; 0, 6]/6 = I.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"I move 6I to the other side and factor out A. A times (5I minus A) equals 6I. So A times one sixth of (5I minus A) is the identity, and that is the inverse.
-I can also see it with eigenvalues: any eigenvalue must satisfy lambda squared minus 5 lambda plus 6 equals 0, so lambda is 2 or 3. Zero is not possible, so A is invertible.
-For part (b), every 2 by 2 matrix satisfies A squared minus trace times A plus determinant times I equals 0. I subtract the two equations. If the traces were different, A would be a multiple of I, which we excluded. So the trace is 5, and then the determinant is 6."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Why exclude multiples of I?</em> A = 2I satisfies the equation, but its trace is 4 and its determinant is 4.</li>
-<li><em>What is the Cayley-Hamilton theorem?</em> Every square matrix satisfies its own characteristic equation. For 2 by 2 you can check it by multiplying out.</li>
-</ul>
-<hr />
-<h3 id="la6-which-sets-are-subspaces">LA6. Which sets are subspaces?</h3>
-<p><em>Strang 3.1. Textbook style. Target: 4 min.</em></p>
-<p><strong>Problem.</strong> Which of these subsets of R^3 are subspaces? Give a reason for each.
-(a) all x with x1 + x2 + x3 = 0
-(b) all x with x1 + x2 + x3 = 1
-(c) all x with x1 x2 = 0
-(d) all x with x1 ≥ 0
-(e) all multiples of (1, 2, 3)</p>
-<p><strong>Solution.</strong> A subspace must be closed under addition and under multiplication by any scalar. In particular it must contain 0.</p>
-<ul>
-<li>(a) <strong>Yes.</strong> It is the nullspace of the 1 by 3 matrix [1 1 1]. Sums and multiples keep the sum equal to 0. It is a plane through 0, dimension 2.</li>
-<li>(b) <strong>No.</strong> The zero vector is not in it (0 + 0 + 0 ≠ 1).</li>
-<li>(c) <strong>No.</strong> (1, 0, 0) and (0, 1, 0) are in it, but their sum (1, 1, 0) has x1 x2 = 1.</li>
-<li>(d) <strong>No.</strong> (1, 0, 0) is in it, but (-1)·(1, 0, 0) is not.</li>
-<li>(e) <strong>Yes.</strong> A line through the origin, dimension 1.</li>
-</ul>
-<p><strong>Check.</strong> Every "yes" contains 0 and is a nullspace or a span. Every "no" has a concrete counterexample.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"A subspace must be closed under addition and scalar multiplication, so it must contain the zero vector.
-Set (a) is the nullspace of the row matrix 1 1 1, so it is a subspace, a plane.
-Set (b) does not contain zero, so no.
-For (c) I give a counterexample: (1, 0, 0) and (0, 1, 0) are both in it, but their sum is not.
-For (d), multiplying by minus 1 takes me out of the set.
-Set (e) is a line through the origin, so yes."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Are the 2 by 2 symmetric matrices a subspace of the space M of all 2 by 2 matrices?</em> Yes. Sums and multiples of symmetric matrices are symmetric. Basis [1 0; 0 0], [0 1; 1 0], [0 0; 0 1], so dimension 3.</li>
-<li><em>Is the union of two lines through 0 a subspace?</em> No. Add one vector from each line and you leave both lines.</li>
-</ul>
-<hr />
-<h3 id="la7-nullspace-special-solutions-and-r">LA7. Nullspace, special solutions and R</h3>
-<p><em>Strang 3.2, 3.3. Textbook style. Target: 5 min.</em></p>
-<p><strong>Problem.</strong></p>
-<pre><code>A = [ 1 2 2  4 ]
-    [ 3 8 6 16 ]
-</code></pre>
-<p>(a) Reduce A to its reduced row echelon form R. (b) Find the special solutions, the nullspace and the rank.</p>
-<p><strong>Solution.</strong>
-(a) Row 2 - 3 row 1: (0, 2, 0, 4). So U = [1 2 2 4; 0 2 0 4].
-Divide row 2 by 2: (0, 1, 0, 2). Row 1 - 2 row 2: (1, 0, 2, 0).</p>
-<pre><code>R = [ 1 0 2 0 ]
-    [ 0 1 0 2 ]
-</code></pre>
-<p>(b) Pivot columns 1 and 2. Free columns 3 and 4. <strong>Rank r = 2.</strong> There are n - r = 4 - 2 = 2 special solutions.
-Rx = 0 means x1 + 2x3 = 0 and x2 + 2x4 = 0.</p>
-<ul>
-<li>x3 = 1, x4 = 0: s1 = (-2, 0, 1, 0)</li>
-<li>x3 = 0, x4 = 1: s2 = (0, -2, 0, 1)</li>
-</ul>
-<p><strong>N(A) = all combinations c s1 + d s2</strong>, a 2-dimensional subspace of R^4.</p>
-<p><strong>Check.</strong> A s1 = (1·(-2) + 2·1, 3·(-2) + 6·1) = (0, 0). A s2 = (2·(-2) + 4·1, 8·(-2) + 16·1) = (0, 0).</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"I do elimination. Row 2 minus 3 times row 1 gives 0, 2, 0, 4. Then I divide by the pivot and clear above it. R has pivots in columns 1 and 2, so the rank is 2. Columns 3 and 4 are free.
-For each free variable I get one special solution. I set x3 equal to 1 and x4 equal to 0, and solve for the pivot variables: s1 is (-2, 0, 1, 0). Then x3 equal to 0 and x4 equal to 1: s2 is (0, -2, 0, 1).
-The nullspace is all combinations of s1 and s2. Its dimension is 4 minus 2, which is 2. I check: A times s1 is zero."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Why are the special solutions independent?</em> Each has a 1 in its own free position and a 0 in the other free position.</li>
-<li><em>Shortcut?</em> R = [I F] gives the nullspace matrix N = [-F; I]. Here F = [2 0; 0 2], so N = [-2 0; 0 -2; 1 0; 0 1].</li>
-<li><em>Does elimination change the nullspace?</em> No. Row operations keep the same solutions of Ax = 0.</li>
-</ul>
-<hr />
-<h3 id="la8-rank-with-a-parameter">LA8. Rank with a parameter</h3>
-<p><em>Strang 3.3 (and 5.1). Reported (same question, 2017). Target: 5 min.</em></p>
-<p><strong>Problem.</strong> Find the rank of A for every value of a.</p>
-<pre><code>A = [ 1 1 a ]
-    [ 1 a 1 ]
-    [ a 1 1 ]
-</code></pre>
-<p><strong>Solution.</strong> Elimination.
-Row 2 - row 1: (0, a - 1, 1 - a).
-Row 3 - a row 1: (0, 1 - a, 1 - a^2).
-Row 3 + new row 2: (0, 0, (1 - a) + (1 - a^2)) = (0, 0, (1 - a)(2 + a)).</p>
-<pre><code>[ 1    1        a        ]
-[ 0  a - 1    1 - a      ]
-[ 0    0   (1 - a)(2 + a)]
-</code></pre>
-<ul>
-<li><strong>a ≠ 1 and a ≠ -2:</strong> three pivots, <strong>rank 3</strong>.</li>
-<li><strong>a = 1:</strong> rows 2 and 3 are all zero (indeed every row of A is (1, 1, 1)), <strong>rank 1</strong>.</li>
-<li><strong>a = -2:</strong> second pivot a - 1 = -3 ≠ 0, third pivot 0, <strong>rank 2</strong>.</li>
-</ul>
-<p><strong>Check with the determinant.</strong> Expand along row 1:
-det A = 1·(a - 1) - 1·(1 - a) + a·(1 - a^2) = 2(a - 1) - a(a - 1)(a + 1) = -(a - 1)^2 (a + 2).
-It is zero exactly at a = 1 and a = -2. This matches. For a = -2, the rows add up to zero, so rank ≤ 2, and rows 1 and 2 are not parallel, so rank = 2.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"I will do elimination and watch which pivots can become zero. After the first step, row 2 is (0, a minus 1, 1 minus a), and row 3 is (0, 1 minus a, 1 minus a squared). Adding them, the last pivot is (1 minus a) times (2 plus a).
-So there are two special values. If a is 1, every row is (1, 1, 1), so the rank is 1. If a is minus 2, the second pivot is minus 3, which is fine, but the third pivot is zero, so the rank is 2. For every other a, the rank is 3.
-I can confirm with the determinant: it is minus (a minus 1) squared times (a plus 2), which is zero exactly at those two values."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>For a = -2, give a vector in the nullspace.</em> (1, 1, 1), since each row of A adds to 1 + 1 - 2 = 0.</li>
-<li><em>Rank of A^T?</em> The same as the rank of A.</li>
-</ul>
-<hr />
-<h3 id="la9-complete-solution-of-ax-b">LA9. Complete solution of Ax = b</h3>
-<p><em>Strang 3.4. Textbook style. Target: 6 min.</em></p>
-<p><strong>Problem.</strong></p>
-<pre><code>A = [ 1 3 0 2 ]
-    [ 0 0 1 4 ]
-    [ 1 3 1 6 ]
-</code></pre>
-<p>(a) For which b = (b1, b2, b3) is Ax = b solvable? (b) For b = (1, 6, 7), find the complete solution.</p>
-<p><strong>Solution.</strong>
-(a) Augmented matrix [A | b]. Row 3 - row 1 - row 2: (0, 0, 0, 0 | b3 - b1 - b2).
-So Ax = b is solvable <strong>exactly when b3 = b1 + b2</strong>.</p>
-<p>(b) 7 = 1 + 6, so it is solvable. R is already reduced:</p>
-<pre><code>[ 1 3 0 2 | 1 ]
-[ 0 0 1 4 | 6 ]
-[ 0 0 0 0 | 0 ]
-</code></pre>
-<p>Pivot columns 1 and 3. Free variables x2 and x4.</p>
-<ul>
-<li>Particular solution (free variables = 0): x1 = 1, x3 = 6, so <strong>x_p = (1, 0, 6, 0)</strong>.</li>
-<li>Special solutions: x2 = 1, x4 = 0 gives s1 = (-3, 1, 0, 0). x2 = 0, x4 = 1 gives s2 = (-2, 0, -4, 1).</li>
-</ul>
-<p><strong>Complete solution: x = (1, 0, 6, 0) + c1 (-3, 1, 0, 0) + c2 (-2, 0, -4, 1).</strong></p>
-<p><strong>Check.</strong> A x_p = (1, 6, 1 + 6) = (1, 6, 7). A s2 = (-2 + 2, -4 + 4, -2 - 4 + 6) = (0, 0, 0).</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"First the solvability condition. Row 3 equals row 1 plus row 2, so after elimination the last row is zero on the left. The right side must also be zero: b3 minus b1 minus b2 equals 0.
-Here 7 equals 1 plus 6, so a solution exists. The complete solution is one particular solution plus anything in the nullspace. For the particular solution I set the free variables to zero: x1 is 1 and x3 is 6. For the nullspace I use the special solutions, one per free variable.
-So x equals x_p plus c1 s1 plus c2 s2. I check x_p: it gives (1, 6, 7)."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Rank and the number of solutions?</em> r = 2 &lt; m = 3 and r &lt; n = 4, so there are either no solutions or infinitely many.</li>
-<li><em>Connect the condition to a subspace.</em> b must be perpendicular to y = (-1, -1, 1), which spans the left nullspace N(A^T).</li>
-</ul>
-<hr />
-<h3 id="la10-the-four-fundamental-subspaces">LA10. The four fundamental subspaces</h3>
-<p><em>Strang 3.5, 3.6. Textbook style. Target: 6 min.</em></p>
-<p><strong>Problem.</strong> Find a basis and the dimension of each of the four fundamental subspaces of</p>
-<pre><code>A = [ 1 2 1 ]
-    [ 2 4 3 ]
-    [ 3 6 4 ]
-</code></pre>
-<p><strong>Solution.</strong> Elimination: row 2 - 2 row 1 = (0, 0, 1). Row 3 - 3 row 1 = (0, 0, 1). Then row 3 - row 2 = 0.
-U = [1 2 1; 0 0 1; 0 0 0], and R = [1 2 0; 0 0 1; 0 0 0]. <strong>Rank r = 2.</strong> Here m = n = 3.</p>
-<table>
-<thead>
-<tr>
-<th>Subspace</th>
-<th>Lives in</th>
-<th>Dimension</th>
-<th>Basis</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Column space C(A)</td>
-<td>R^3</td>
-<td>r = 2</td>
-<td>pivot columns <strong>of A</strong>: (1, 2, 3), (1, 3, 4)</td>
-</tr>
-<tr>
-<td>Row space C(A^T)</td>
-<td>R^3</td>
-<td>r = 2</td>
-<td>nonzero rows of R: (1, 2, 0), (0, 0, 1)</td>
-</tr>
-<tr>
-<td>Nullspace N(A)</td>
-<td>R^3</td>
-<td>n - r = 1</td>
-<td>(-2, 1, 0)</td>
-</tr>
-<tr>
-<td>Left nullspace N(A^T)</td>
-<td>R^3</td>
-<td>m - r = 1</td>
-<td>(-1, -1, 1)</td>
-</tr>
-</tbody>
-</table>
-<p>Nullspace: free variable x2 = 1 gives x1 = -2, x3 = 0.
-Left nullspace: the zero row came from row 3 - row 2 - row 1 (in terms of the original rows), so y = (-1, -1, 1) satisfies y^T A = 0.</p>
-<p><strong>Check.</strong> y^T A: -(1, 2, 1) - (2, 4, 3) + (3, 6, 4) = (0, 0, 0). Row space ⊥ nullspace: (1, 2, 0)·(-2, 1, 0) = 0 and (0, 0, 1)·(-2, 1, 0) = 0. Column space ⊥ left nullspace: (1, 2, 3)·(-1, -1, 1) = 0 and (1, 3, 4)·(-1, -1, 1) = 0. Dimensions: 2 + 1 = 3 = n and 2 + 1 = 3 = m.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"I reduce A first. Two pivots, in columns 1 and 3, so the rank is 2.
-The column space has dimension 2. For a basis I take the pivot columns of the original A, not of R, because elimination changes the column space. The row space also has dimension 2, and the nonzero rows of R are a basis.
-The nullspace has dimension n minus r, so 1. The free variable is x2, which gives (-2, 1, 0). The left nullspace has dimension m minus r, also 1. Row 3 minus row 2 minus row 1 is zero, so y is (-1, -1, 1).
-I check orthogonality: the nullspace vector is perpendicular to the rows, and y is perpendicular to the columns."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Why does elimination keep the row space but not the column space?</em> Rows of R are combinations of rows of A, and the steps can be reversed. Columns change: here column 1 of R is (1, 0, 0), which is not in C(A).</li>
-<li><em>State the fundamental theorem.</em> dim C(A) = dim C(A^T) = r. N(A) is the orthogonal complement of the row space in R^n, and N(A^T) is the orthogonal complement of the column space in R^m.</li>
-</ul>
-<hr />
-<h3 id="la11-orthogonal-subspaces">LA11. Orthogonal subspaces</h3>
-<p><em>Strang 4.1. Part (a) reported (same question, 2021; the writer did not recognise the word "nullspace" at first). Target: 5 min.</em></p>
-<p><strong>Problem.</strong>
-(a) One row of a matrix A is v = (1, 0, -1). Prove that v is not in the nullspace of A.
-(b) S is the subspace of R^4 spanned by (1, 2, 2, 3) and (1, 3, 3, 2). Find a basis of the orthogonal complement S⊥.</p>
-<p><strong>Solution.</strong>
-(a) Suppose Av = 0. Each entry of Av is (a row of A)·v. The entry that comes from the row v itself is v·v = 1 + 0 + 1 = 2 ≠ 0. So Av ≠ 0, a contradiction. Hence v is not in N(A).
-(General reason: the row space and the nullspace are orthogonal, so the only vector in both is 0, and v ≠ 0.)</p>
-<p>(b) x is in S⊥ exactly when x is perpendicular to both spanning vectors. So S⊥ is the nullspace of</p>
-<pre><code>B = [ 1 2 2 3 ]
-    [ 1 3 3 2 ]
-</code></pre>
-<p>Row 2 - row 1: (0, 1, 1, -1). Row 1 - 2 row 2: (1, 0, 0, 5). R = [1 0 0 5; 0 1 1 -1].
-Free x3, x4.</p>
-<ul>
-<li>x3 = 1, x4 = 0: x1 = 0, x2 = -1, giving (0, -1, 1, 0)</li>
-<li>x3 = 0, x4 = 1: x1 = -5, x2 = 1, giving (-5, 1, 0, 1)</li>
-</ul>
-<p><strong>Basis of S⊥: (0, -1, 1, 0) and (-5, 1, 0, 1). Dimension 4 - 2 = 2.</strong></p>
-<p><strong>Check.</strong> (1, 2, 2, 3)·(0, -1, 1, 0) = 0, (1, 3, 3, 2)·(0, -1, 1, 0) = 0, (1, 2, 2, 3)·(-5, 1, 0, 1) = -5 + 2 + 3 = 0, (1, 3, 3, 2)·(-5, 1, 0, 1) = -5 + 3 + 2 = 0.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"The nullspace is all x with Ax equal to zero, so x is perpendicular to every row. If v were in the nullspace, it would be perpendicular to itself, because v is one of the rows. But v dot v is 2, not 0. So v cannot be in the nullspace. In general, the row space and the nullspace meet only at the zero vector.
-For part (b), a vector in S perp must be perpendicular to both vectors. So I put them as the rows of a matrix and find its nullspace. I reduce, there are two free variables, and I get two special solutions. The dimensions add up: 2 plus 2 equals 4."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Another word for nullspace?</em> Kernel.</li>
-<li><em>Why do the dimensions add to n?</em> dim(row space) + dim(nullspace) = r + (n - r) = n.</li>
-</ul>
-<hr />
-<h3 id="la12-projection-onto-a-line">LA12. Projection onto a line</h3>
-<p><em>Strang 4.2. Reported (same topic, 2025: "a simple projection problem"). Target: 4 min.</em></p>
-<p><strong>Problem.</strong> Project b = (1, 1, 1) onto the line through a = (1, 2, 2). Find the projection p, the error e and the projection matrix P.</p>
-<p><strong>Solution.</strong>
-x̂ = (a·b)/(a·a) = (1 + 2 + 2)/(1 + 4 + 4) = 5/9.
-<strong>p = x̂ a = (5/9)(1, 2, 2) = (5/9, 10/9, 10/9).</strong>
-<strong>e = b - p = (4/9, -1/9, -1/9).</strong></p>
-<pre><code>P = a a^T / (a^T a) = (1/9) [ 1 2 2 ]
-                            [ 2 4 4 ]
-                            [ 2 4 4 ]
-</code></pre>
-<p><strong>Check.</strong> e·a = 4/9 - 2/9 - 2/9 = 0, so the error is perpendicular to the line. Pb = (1/9)(5, 10, 10) = p.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"The projection of b onto a line is a multiple of a. I choose the multiple so that the error is perpendicular to a. That gives x hat equal to a dot b over a dot a, which is 5 over 9. So p is 5 ninths times (1, 2, 2).
-The error b minus p is (4, -1, -1) over 9. I check that it is perpendicular to a: 4 minus 2 minus 2 is zero.
-The projection matrix is a a transpose over a transpose a. It is one ninth of this rank one matrix."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Properties of P?</em> P^2 = P (projecting twice changes nothing), P^T = P, rank 1, trace 1.</li>
-<li><em>Eigenvalues of P?</em> 1 (eigenvector a) and 0, 0 (vectors perpendicular to a).</li>
-<li><em>Does P depend on the length of a?</em> No. Doubling a changes a a^T by 4 and a^T a by 4.</li>
-</ul>
-<hr />
-<h3 id="la13-projection-onto-a-plane-and-least-squares">LA13. Projection onto a plane, and least squares</h3>
-<p><em>Strang 4.2, 4.3. Reported (same topic, 2025: "a projection matrix applied to vectors"). Target: 6 min.</em></p>
-<p><strong>Problem.</strong></p>
-<pre><code>A = [ 1 0 ]      b = (6, 0, 0)
-    [ 1 1 ]
-    [ 1 2 ]
-</code></pre>
-<p>(a) Find the projection p of b onto the column space of A, and the projection matrix P.
-(b) Explain this as fitting the best straight line C + Dt to the points (t, b) = (0, 6), (1, 0), (2, 0).</p>
-<p><strong>Solution.</strong>
-(a) Normal equations A^T A x̂ = A^T b.
-A^T A = [3 3; 3 5], A^T b = (6, 0).
-3C + 3D = 6 and 3C + 5D = 0. Subtract: 2D = -6, so D = -3, and then C = 5. <strong>x̂ = (5, -3).</strong>
-<strong>p = A x̂ = (5, 2, -1).</strong> Error <strong>e = b - p = (1, -2, 1)</strong>.
-(A^T A)^-1 = (1/6)[5 -3; -3 3], and</p>
-<pre><code>P = A (A^T A)^-1 A^T = (1/6) [  5 2 -1 ]
-                             [  2 2  2 ]
-                             [ -1 2  5 ]
-</code></pre>
-<p>(b) We want C + D t = b at three points: C = 6, C + D = 0, C + 2D = 0. Three equations, two unknowns, no exact solution. Least squares chooses C, D to minimise the sum of squared errors ||b - Ax||^2. The answer is the projection: <strong>best line b = 5 - 3t</strong>, errors (1, -2, 1), total squared error 6.</p>
-<p><strong>Check.</strong> A^T e = (1 - 2 + 1, 0 - 2 + 2) = (0, 0), so e is perpendicular to both columns. Pb = (1/6)(30, 12, -6) = (5, 2, -1) = p.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"The projection p is A times x hat, where the error b minus A x hat must be perpendicular to every column of A. That gives the normal equations: A transpose A x hat equals A transpose b. A transpose A is 3 3 3 5, and A transpose b is (6, 0). Solving, D is minus 3 and C is 5.
-So p is (5, 2, -1), and the error is (1, -2, 1). I check that A transpose times the error is zero.
-For part (b): the columns of A are 'all ones' and 't'. Ax equal to b asks the line to go through all three points, which is impossible. Least squares gives the closest line, 5 minus 3t."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Why does A^T A have an inverse here?</em> The columns of A are independent.</li>
-<li><em>Why do the errors add to zero?</em> The column of ones is in A, and e is perpendicular to it.</li>
-<li><em>Calculus view?</em> Minimise E = (C - 6)^2 + (C + D)^2 + (C + 2D)^2. Setting ∂E/∂C = 0 and ∂E/∂D = 0 gives the same normal equations.</li>
-</ul>
-<hr />
-<h3 id="la14-gram-schmidt-and-a-qr">LA14. Gram-Schmidt and A = QR</h3>
-<p><em>Strang 4.4. Reported (same topic: Gram-Schmidt 2023, orthogonal basis 2021). Target: 6 min.</em></p>
-<p><strong>Problem.</strong> Apply Gram-Schmidt to a = (1, 1, 0), b = (1, 0, 1), c = (0, 1, 1). Then write A = QR, where A has columns a, b, c.</p>
-<p><strong>Solution.</strong> Keep fractions simple by normalising at the end.</p>
-<ul>
-<li>A1 = a = (1, 1, 0).</li>
-<li>B = b - (a·b / a·a) a = (1, 0, 1) - (1/2)(1, 1, 0) = (1/2, -1/2, 1). Any multiple works, so use B = (1, -1, 2).</li>
-<li>C = c - (a·c / a·a) a - (B·c / B·B) B. a·c = 1, a·a = 2. B·c = -1 + 2 = 1, B·B = 6.
-    C = (0, 1, 1) - (1/2)(1, 1, 0) - (1/6)(1, -1, 2) = (-2/3, 2/3, 2/3). Use (-1, 1, 1).</li>
-</ul>
-<p>Normalise:
-<strong>q1 = (1, 1, 0)/√2, q2 = (1, -1, 2)/√6, q3 = (-1, 1, 1)/√3.</strong></p>
-<p>R = Q^T A is upper triangular (entries are qi·(column j)):</p>
-<pre><code>    [ √2   1/√2   1/√2 ]
-R = [ 0    √6/2   1/√6 ]
-    [ 0     0     2/√3 ]
-</code></pre>
-<p><strong>Check.</strong> q1·q2 = (1 - 1 + 0)/√12 = 0, q1·q3 = (-1 + 1 + 0)/√6 = 0, q2·q3 = (-1 - 1 + 2)/√18 = 0. Lengths are 1 by construction. Column 1 of QR: √2 q1 = (1, 1, 0) = a.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"Gram-Schmidt: I keep the first vector, and from each next vector I subtract its projections onto the directions I already have.
-B is b minus its projection on a. a dot b is 1 and a dot a is 2, so I subtract half of a. I get (1/2, -1/2, 1). I scale it to (1, -1, 2) to avoid fractions. That is allowed, because only the direction matters.
-C is c minus its projections on a and on B. I get (-2/3, 2/3, 2/3), or (-1, 1, 1).
-Then I divide each by its length. I check that the three dot products are zero.
-R is Q transpose A. It is upper triangular, because each q is built only from the earlier columns."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Why is R upper triangular?</em> Column j of A is a combination of q1 to qj only, so qi·(column j) = 0 for i &gt; j.</li>
-<li><em>If time is short and they ask for just one vector orthogonal to a and b?</em> Use the cross product: a × b = (1·1 - 0·0, 0·1 - 1·1, 1·0 - 1·1) = (1, -1, -1). (A 2021 applicant was told "just find one such vector".)</li>
-<li><em>Use of QR?</em> Least squares becomes R x̂ = Q^T b, easy by back substitution.</li>
-</ul>
-<hr />
-<h3 id="la15-a-reflection-matrix">LA15. A reflection matrix</h3>
-<p><em>Strang 4.4 (orthogonal matrices) and 7.1. Reported (same topic, 2023: "a reflection matrix, 2 parts"). Target: 5 min.</em></p>
-<p><strong>Problem.</strong> Let u = (1, 1)/√2 and H = I - 2 u u^T.
-(a) Compute H. Show that H is symmetric and orthogonal, and that H^2 = I.
-(b) Find the eigenvalues and eigenvectors of H. What does H do geometrically?</p>
-<p><strong>Solution.</strong>
-(a) u u^T = (1/2)[1 1; 1 1], so</p>
-<pre><code>H = [ 1 0 ] - [ 1 1 ] = [  0 -1 ]
-    [ 0 1 ]   [ 1 1 ]   [ -1  0 ]
-</code></pre>
-<p>H^T = H, so H is symmetric. H^2 = [0·0 + 1, 0; 0, 1 + 0] = I. Since H^T = H, H^T H = H^2 = I, so H is orthogonal.
-General proof for any unit u: H^2 = I - 4 u u^T + 4 u (u^T u) u^T = I, because u^T u = 1.</p>
-<p>(b) Hu = u - 2u(u^T u) = -u, so <strong>λ = -1 with eigenvector (1, 1)</strong>.
-For w perpendicular to u, Hw = w - 2u(u^T w) = w, so <strong>λ = 1 with eigenvector (1, -1)</strong>.
-Geometrically: H is the <strong>reflection across the line through 0 perpendicular to u</strong>, which is the line y = -x. det H = (-1)(1) = -1.</p>
-<p><strong>Check.</strong> H(1, 0) = (0, -1). Reflecting (1, 0) across y = -x does give (0, -1). Trace 0 = -1 + 1 and det -1 = (-1)(1).</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"u u transpose is one half times the all-ones matrix. So H is I minus the all-ones matrix: 0, -1, -1, 0. It is clearly symmetric. H squared is the identity, which makes sense: reflecting twice brings you back. Because H is symmetric, H transpose H equals H squared, which is I, so H is orthogonal.
-For eigenvectors: H sends u to minus u, so u has eigenvalue minus 1. Any vector perpendicular to u is not changed, so (1, -1) has eigenvalue 1.
-So H is the mirror reflection across the line y equals minus x. Its determinant is minus 1, as for every reflection."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Rotation vs reflection?</em> Rotation [cos θ, -sin θ; sin θ, cos θ] has det +1. A reflection has det -1. Both are orthogonal.</li>
-<li><em>Why do orthogonal matrices keep lengths?</em> ||Qx||^2 = x^T Q^T Q x = x^T x.</li>
-<li><em>Reflection across y = x?</em> [0 1; 1 0].</li>
-</ul>
-<hr />
-<h3 id="la16-determinant-rules">LA16. Determinant rules</h3>
-<p><em>Strang 5.1. Reported (same question, 2022 English-language exam; the applicant ran out of time on part of it). Target: 3 min.</em></p>
-<p><strong>Problem.</strong> A is a 3 by 3 matrix with det A = -1. Find det(A^2), det(-A), det(0.5 A) and det(A^-1).</p>
+<h1 id="part-2-30-problems-with-full-solutions">Part 2. 30 problems with full solutions</h1>
+<h3 id="p1-inclusion-exclusion">P1. Inclusion-exclusion</h3>
+<p>P(A) = 0.3, P(B) = 0.4, P(A and B) = 0.1. Find P(A or B), P(neither), P(exactly one). Are A and B independent?</p>
+<p><strong>Solution.</strong> P(A or B) = 0.3 + 0.4 - 0.1 = <strong>0.6</strong>. P(neither) = 1 - 0.6 = <strong>0.4</strong>. P(exactly one) = 0.6 - 0.1 = <strong>0.5</strong>. P(A) P(B) = 0.12, not 0.1, so <strong>not independent</strong>.</p>
+<h3 id="p2-picking-modules">P2. Picking modules</h3>
+<p>10 modules, 2 of them buggy. You review 3 at random. P(you see at least one buggy module)?</p>
+<p><strong>Solution.</strong> Use the complement. P(no buggy) = C(8, 3) / C(10, 3) = 56 / 120. So P(at least one) = 1 - 56/120 = 64/120 = <strong>8/15 = 0.533</strong>.</p>
+<p><strong>Say it.</strong> "It's easier to count the complement: all three from the eight clean modules, 56 out of 120 ways, so at least one buggy is 8 over 15."</p>
+<h3 id="p3-bayes-with-a-static-analyser">P3. Bayes with a static analyser</h3>
+<p>2% of functions are buggy. A tool flags 90% of buggy functions and 5% of clean ones. A function is flagged. P(it is buggy)?</p>
 <p><strong>Solution.</strong></p>
-<ul>
-<li>det(A^2) = (det A)^2 = (-1)^2 = <strong>1</strong>.</li>
-<li>det(-A) = (-1)^3 det A = (-1)(-1) = <strong>1</strong>.</li>
-<li>det(0.5 A) = (0.5)^3 det A = <strong>-1/8</strong>.</li>
-<li>det(A^-1) = 1/det A = <strong>-1</strong> (A is invertible because det A ≠ 0).</li>
-</ul>
-<p>If the size is n by n: det(-A) = (-1)^n (-1) = (-1)^(n+1), and det(0.5 A) = -(0.5)^n.</p>
-<p><strong>Check.</strong> Test with a diagonal example: A = diag(-1, 1, 1). A^2 = I (det 1), -A = diag(1, -1, -1) (det 1), 0.5A = diag(-0.5, 0.5, 0.5) (det -1/8), A^-1 = A (det -1).</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"I use three rules. First, det of a product is the product of the dets, so det A squared is 1. Second, multiplying the matrix by c multiplies each of the n rows by c, so the determinant gets c to the n. With n equal to 3, det of minus A is minus 1 cubed times minus 1, which is 1, and det of half A is one eighth times minus 1, so minus one eighth. Third, A times A inverse is I, so det A inverse is 1 over det A, which is minus 1.
-I assumed A is 3 by 3. If the size were n, det of minus A would be minus 1 to the n plus 1."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>det(A^T)?</em> Also -1. det A^T = det A.</li>
-<li><em>Is det(A + B) = det A + det B?</em> No, not in general. Example: A = B = I (2 by 2): det(2I) = 4, but 1 + 1 = 2.</li>
-<li><em>Why is det(AB) = det A det B important?</em> It gives det(A^-1) = 1/det A, and it shows that a product of invertible matrices is invertible.</li>
-</ul>
-<hr />
-<h3 id="la17-computing-determinants-area-and-volume">LA17. Computing determinants; area and volume</h3>
-<p><em>Strang 5.2, 5.3. Reported (same topic, 2010: triangle area and tetrahedron volume from coordinates). Target: 6 min.</em></p>
-<p><strong>Problem.</strong>
-(a) Find det V for V = [1 1 1; 1 2 4; 1 3 9] in two ways.
-(b) Find the area of the triangle with vertices (1, 1), (4, 2), (2, 5).
-(c) Find the volume of the tetrahedron with vertices (0, 0, 0), (1, 1, 0), (0, 1, 1), (1, 0, 1).</p>
-<p><strong>Solution.</strong>
-(a) Cofactors along row 1:
-det V = 1·(2·9 - 4·3) - 1·(1·9 - 4·1) + 1·(1·3 - 2·1) = 6 - 5 + 1 = <strong>2</strong>.
-Elimination: row 2 - row 1 = (0, 1, 3), row 3 - row 1 = (0, 2, 8), then row 3 - 2 row 2 = (0, 0, 2). Pivots 1, 1, 2, product <strong>2</strong>.</p>
-<p>(b) Edge vectors from (1, 1): (3, 1) and (1, 4).
-Area = (1/2) |det [3 1; 1 4]| = (1/2)|12 - 1| = <strong>11/2</strong>.</p>
-<p>(c) Edge vectors from the origin: (1, 1, 0), (0, 1, 1), (1, 0, 1).
-det [1 1 0; 0 1 1; 1 0 1] = 1·(1 - 0) - 1·(0 - 1) + 0 = 2. That is the volume of the box (parallelepiped).
-Tetrahedron volume = (1/6)·2 = <strong>1/3</strong>.</p>
-<p><strong>Check.</strong> (a) This is a Vandermonde matrix with 1, 2, 3, so det = (2 - 1)(3 - 1)(3 - 2) = 2. (b) The shoelace formula gives (1/2)|(2 - 4) + (20 - 4) + (2 - 5)| = (1/2)(11) = 11/2.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"For (a) I expand along the first row with cofactors, remembering the plus minus plus signs. I get 6 minus 5 plus 1, which is 2. To check, I also do elimination: the pivots are 1, 1 and 2, and their product is 2. Same answer.
-For the triangle, I take two edge vectors from one corner. The determinant of these two vectors is the area of the parallelogram, so the triangle is half of it: 11 over 2.
-For the tetrahedron, the determinant of the three edge vectors is the volume of the box, which is 2. A tetrahedron is one sixth of that box, so the volume is one third."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Why one sixth?</em> A pyramid is (1/3)(base area)(height), and the triangle base is half the parallelogram: (1/2)(1/3) = 1/6.</li>
-<li><em>What does det = 0 mean geometrically?</em> The vectors lie in a plane, so the box is flat with zero volume.</li>
-<li><em>Sign of the determinant?</em> It shows orientation. Exchanging two rows changes the sign.</li>
-</ul>
-<hr />
-<h3 id="la18-cramers-rule-and-the-inverse-from-cofactors">LA18. Cramer's rule and the inverse from cofactors</h3>
-<p><em>Strang 5.3. Textbook style. Target: 4 min.</em></p>
-<p><strong>Problem.</strong>
-(a) Solve 2x1 + x2 = 4, 5x1 + 3x2 = 11 by Cramer's rule.
-(b) Find A^-1 for A = [2 1; 5 3] from cofactors.
-(c) For K = [2 -1 0; -1 2 -1; 0 -1 2] (det K = 4), find the (1, 3) entry of K^-1 using one cofactor.</p>
-<p><strong>Solution.</strong>
-(a) det A = 2·3 - 1·5 = 1.
-x1 = det [4 1; 11 3] / 1 = 12 - 11 = <strong>1</strong>.
-x2 = det [2 4; 5 11] / 1 = 22 - 20 = <strong>2</strong>.</p>
-<p>(b) Cofactors: C11 = 3, C12 = -5, C21 = -1, C22 = 2.
-A^-1 = C^T / det A = <strong>[3 -1; -5 2]</strong>.</p>
-<p>(c) (K^-1)_13 = C_31 / det K (note the transpose: row 1 column 3 of the inverse uses the cofactor C_31).
-C_31 = (+1)·det of K without row 3 and column 1 = det [-1 0; 2 -1] = 1 - 0 = 1.
-So (K^-1)_13 = <strong>1/4</strong>.</p>
-<p><strong>Check.</strong> (a) 2 + 2 = 4 and 5 + 6 = 11. (b) A A^-1 = [6 - 5, -2 + 2; 15 - 15, -5 + 6] = I. (c) Matches K^-1 from LA4, whose (1, 3) entry is 1/4.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"Cramer's rule: x j is a ratio of determinants. In the top I replace column j of A by b. det A is 1. For x1, I replace column 1 by (4, 11), and the determinant is 1. For x2, I replace column 2, and I get 2. I check in both equations.
-For the inverse, A inverse is the cofactor matrix transposed, divided by det A. For 2 by 2 that means swap the diagonal and change the signs of the off-diagonal.
-For (c), the 1, 3 entry of the inverse uses the cofactor C 3 1, because of the transpose. That cofactor is 1, so the entry is one quarter. This matches what I got by Gauss-Jordan."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Is Cramer's rule a good way to compute?</em> Not for big systems. It needs many determinants. Elimination is faster. It is useful for formulas and small systems.</li>
-<li><em>What is a cofactor?</em> C_ij = (-1)^(i+j) times the determinant of A with row i and column j removed.</li>
-</ul>
-<hr />
-<h3 id="la19-eigenvalues-eigenvectors-and-ak">LA19. Eigenvalues, eigenvectors and A^k</h3>
-<p><em>Strang 6.1, 6.2. Reported (same topic in almost every NAIST list). Target: 6 min.</em></p>
-<p><strong>Problem.</strong> A = [4 1; 2 3].
-(a) Find the eigenvalues and eigenvectors.
-(b) Diagonalize A and find A^k.</p>
-<p><strong>Solution.</strong>
-(a) det(A - λI) = (4 - λ)(3 - λ) - 2 = λ^2 - 7λ + 10 = (λ - 5)(λ - 2). <strong>λ1 = 5, λ2 = 2.</strong></p>
-<ul>
-<li>λ = 5: A - 5I = [-1 1; 2 -2], so x1 = <strong>(1, 1)</strong>.</li>
-<li>λ = 2: A - 2I = [2 1; 2 1], so x2 = <strong>(1, -2)</strong>.</li>
-</ul>
-<p>(b) S = [1 1; 1 -2] (eigenvectors in columns), Λ = diag(5, 2), A = S Λ S^-1.
-det S = -3, so S^-1 = (1/3)[2 1; 1 -1].</p>
-<pre><code>A^k = S Λ^k S^-1 = (1/3) [ 2·5^k + 2^k        5^k - 2^k     ]
-                         [ 2·5^k - 2·2^k      5^k + 2·2^k   ]
+<pre><code>P(flag) = 0.9 (0.02) + 0.05 (0.98) = 0.018 + 0.049 = 0.067
+P(buggy | flag) = 0.018 / 0.067 = 0.269
 </code></pre>
-<p><strong>Check.</strong> Trace 7 = 5 + 2, det 10 = 5·2. A(1, 1) = (5, 5) and A(1, -2) = (2, -4) = 2(1, -2). For k = 1 the formula gives (1/3)[12 3; 6 9] = [4 1; 2 3] = A.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"Eigenvalues solve det of A minus lambda I equals zero. That gives lambda squared minus 7 lambda plus 10, which factors as (lambda minus 5)(lambda minus 2). I check: the sum is 7, the trace, and the product is 10, the determinant.
-For each eigenvalue I find the nullspace of A minus lambda I. For 5 I get (1, 1). For 2 I get (1, -2). I check A times (1, -2): it is (2, -4), two times the vector.
-The eigenvalues are distinct, so A is diagonalizable. A equals S Lambda S inverse, so A to the k is S Lambda to the k S inverse. Only the diagonal gets powered. I multiply out, and I check that k equal to 1 gives back A."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>When is a matrix diagonalizable?</em> When it has n independent eigenvectors. Distinct eigenvalues are enough (not necessary).</li>
-<li><em>Eigenvalues of A^-1, A^2, A + 3I?</em> 1/λ, λ^2, λ + 3, same eigenvectors.</li>
-<li><em>What happens to A^k / 5^k as k grows?</em> It goes to (1/3)[2 1; 2 1], because (2/5)^k → 0.</li>
-</ul>
-<hr />
-<h3 id="la20-markov-matrix-and-steady-state">LA20. Markov matrix and steady state</h3>
-<p><em>Strang 6.1, 6.2. Reported (same topic: "A^∞ for a column-stochastic matrix" in old lists). Target: 5 min.</em></p>
-<p><strong>Problem.</strong> A = [0.8 0.3; 0.2 0.7], u0 = (1, 0).
-(a) Find the eigenvalues and eigenvectors.
-(b) Find u_k = A^k u0 and its limit as k → ∞. What is A^∞?</p>
+<p><strong>About 27%.</strong> Most flags are false alarms, because clean functions are so common (the base rate).</p>
+<p><strong>Say it.</strong> "By Bayes, it is the true flags, 0.018, over all flags, 0.067, so about 27 percent. Most flags are false because only 2 percent of functions are buggy."</p>
+<h3 id="p4-disjoint-against-independent">P4. Disjoint against independent</h3>
+<p>Can two disjoint events with positive probability be independent?</p>
+<p><strong>Solution.</strong> <strong>No.</strong> Disjoint means P(A and B) = 0. Independent needs P(A and B) = P(A) P(B) &gt; 0. If A happens, you know B did not, which is the opposite of independence.</p>
+<h3 id="p5-pairwise-but-not-mutually-independent">P5. Pairwise but not mutually independent</h3>
+<p>Toss two fair coins. A = first is heads, B = second is heads, C = both show the same face. Are A, B, C pairwise independent? Mutually independent?</p>
+<p><strong>Solution.</strong> P(A) = P(B) = P(C) = 1/2. P(A and C) = P(HH) = 1/4 = P(A) P(C). Same for (B, C) and (A, B). So <strong>pairwise independent</strong>. But P(A and B and C) = P(HH) = 1/4, not 1/8. <strong>Not mutually independent</strong>: A and B together decide C.</p>
+<h3 id="p6-binomial">P6. Binomial</h3>
+<p>10 independent runs each fail with probability 0.2. P(at most one fails)?</p>
+<p><strong>Solution.</strong> P(0) + P(1) = 0.8^10 + 10 (0.2)(0.8^9) = 0.1074 + 0.2684 = <strong>0.376</strong>.</p>
+<h3 id="p7-binomial-mean-and-variance-from-indicators">P7. Binomial mean and variance from indicators</h3>
+<p>Derive the mean and variance of Binomial(n, p). Which step needs independence? Give the numbers for n = 20, p = 0.1.</p>
+<p><strong>Solution.</strong> J = F_1 + ... + F_n with F_i ~ Bernoulli(p). E[J] = sum E[F_i] = <strong>np</strong> (no independence needed). Var J = sum Var F_i + 2 (sum over pairs i &lt; j of Cov(F_i, F_j)) = <strong>np(1 - p)</strong> only if all covariances are 0 (here independence is needed). n = 20, p = 0.1: mean <strong>2</strong>, variance <strong>1.8</strong>.</p>
+<p><strong>Link to your plan.</strong> If runs share the input, Cov(F_i, F_j) = Var theta &gt; 0, and the variance becomes np(1 - p)[1 + (n - 1) rho] (file 05, D3).</p>
+<h3 id="p8-geometric">P8. Geometric</h3>
+<p>Each attempt to make a flaky test pass succeeds with probability 0.3, independently. (a) Expected attempts until success? (b) P(more than 3 attempts)? (c) P(more than 5 | more than 2)?</p>
+<p><strong>Solution.</strong> (a) 1/0.3 = <strong>3.33</strong>. (b) The first 3 all fail: 0.7^3 = <strong>0.343</strong>. (c) Memoryless: P(X &gt; 5 | X &gt; 2) = 0.7^5 / 0.7^2 = 0.7^3 = <strong>0.343</strong>.</p>
+<h3 id="p9-poisson">P9. Poisson</h3>
+<p>Failures per week ~ Poisson(2). P(no failures)? P(at least 2)?</p>
+<p><strong>Solution.</strong> P(0) = e^(-2) = <strong>0.135</strong>. P(&gt;= 2) = 1 - e^(-2)(1 + 2) = 1 - 3 e^(-2) = <strong>0.594</strong>.</p>
+<h3 id="p10-poisson-approximation-to-the-binomial">P10. Poisson approximation to the binomial</h3>
+<p>1,000 inputs, each fails independently with probability 0.002. Compare the exact P(no failure) with the Poisson approximation. When is the approximation good?</p>
+<p><strong>Solution.</strong> Exact: 0.998^1000 = <strong>0.13506</strong>. Poisson(np = 2): e^(-2) = <strong>0.13534</strong>. Good when n is large, p is small and np is moderate. Reason: (1 - lambda/n)^n tends to e^(-lambda).</p>
+<h3 id="p11-sum-of-independent-poissons">P11. Sum of independent Poissons</h3>
+<p>X ~ Poisson(2) and Y ~ Poisson(3), independent. Show X + Y ~ Poisson(5). Find P(X + Y = 0).</p>
+<p><strong>Solution.</strong> MGFs multiply: exp(2(e^t - 1)) exp(3(e^t - 1)) = exp(5(e^t - 1)), the Poisson(5) MGF. An MGF fixes the distribution, so X + Y ~ <strong>Poisson(5)</strong>. P(0) = e^(-5) = <strong>0.0067</strong> (= e^(-2) e^(-3), as it should).</p>
+<h3 id="p12-memoryless-property">P12. Memoryless property</h3>
+<p>Prove that the exponential is memoryless. A part with MTTF 1,000 h has worked for 500 h. P(it works 500 h more)?</p>
+<p><strong>Solution.</strong> P(T &gt; s + t | T &gt; s) = e^(-lambda (s + t)) / e^(-lambda s) = <strong>e^(-lambda t)</strong> = P(T &gt; t). With lambda = 0.001: e^(-0.5) = <strong>0.607</strong>, the same as for a new part.</p>
+<p><strong>Say it.</strong> "For an exponential lifetime, a used part is as good as new: the chance of lasting another t hours doesn't depend on its age. That is why constant-hazard models can't describe aging."</p>
+<h3 id="p13-exponential-numbers">P13. Exponential numbers</h3>
+<p>MTTF = 1,000 h. Find P(survive 500 h), the median life, and P(fail before the mean).</p>
+<p><strong>Solution.</strong> e^(-0.5) = <strong>0.607</strong>. Median: e^(-t/1000) = 1/2, so t = 1000 ln 2 = <strong>693 h</strong> (below the mean: the distribution is skewed right). P(T &lt; 1000) = 1 - e^(-1) = <strong>0.632</strong>.</p>
+<h3 id="p14-the-first-of-three-to-fail">P14. The first of three to fail</h3>
+<p>Three independent parts have exponential lives with rates 1, 2 and 3 per 1,000 h. (a) Distribution and mean of the time to the first failure? (b) P(part 3 fails first)?</p>
 <p><strong>Solution.</strong>
-(a) Each column adds to 1, so λ = 1 is an eigenvalue. The trace is 1.5, so the other is λ = 0.5. (det = 0.56 - 0.06 = 0.5 = 1 · 0.5.)</p>
-<ul>
-<li>λ = 1: A - I = [-0.2 0.3; 0.2 -0.3], so x1 = <strong>(0.6, 0.4)</strong> (any multiple of (3, 2)).</li>
-<li>λ = 0.5: A - 0.5I = [0.3 0.3; 0.2 0.2], so x2 = <strong>(1, -1)</strong>.</li>
-</ul>
-<p>(b) Write u0 in eigenvectors: (1, 0) = x1 + 0.4 x2.
-u_k = A^k u0 = 1^k x1 + 0.4 (0.5)^k x2 = <strong>(0.6 + 0.4(0.5)^k, 0.4 - 0.4(0.5)^k)</strong> → <strong>(0.6, 0.4)</strong>.
-Every starting vector with entries adding to 1 goes to the same steady state, so
-<strong>A^∞ = [0.6 0.6; 0.4 0.4]</strong> (each column is the steady state).</p>
-<p><strong>Check.</strong> u1 = A u0 = (0.8, 0.2), and the formula with k = 1 gives (0.6 + 0.2, 0.4 - 0.2) = (0.8, 0.2). A x1 = (0.48 + 0.12, 0.12 + 0.28) = (0.6, 0.4).</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"This is a Markov matrix: the entries are positive and each column adds to 1. That always gives eigenvalue 1, because the rows of A minus I add to zero. The trace is 1.5, so the other eigenvalue is 0.5.
-The steady state is the eigenvector for lambda equal to 1, which is (0.6, 0.4). The other eigenvector is (1, -1).
-I write u0 as x1 plus 0.4 x2. Each step multiplies the x2 part by one half, so it dies out, and u k goes to (0.6, 0.4). A to the infinity has the steady state in every column."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Why must λ = 1 be an eigenvalue?</em> A^T has eigenvector (1, 1) with eigenvalue 1, and A and A^T have the same eigenvalues.</li>
-<li><em>Why do the totals stay the same?</em> Columns add to 1, so the sum of the entries of Au equals the sum for u.</li>
-</ul>
-<hr />
-<h3 id="la21-the-official-example-a-n-with-n-nilpotent">LA21. The official example: A + N with N nilpotent</h3>
-<p><em>Strang 2.4 (matrix rules), 6.6 (Jordan form idea). Official example. Target: 5 min.</em></p>
-<p><strong>Problem.</strong></p>
-<pre><code>A = [ a 0 0 ]      N = [ 0 1 0 ]
-    [ 0 a 0 ]          [ 0 0 1 ]
-    [ 0 0 a ]          [ 0 0 0 ]
+(a) P(min &gt; t) = P(all &gt; t) = e^(-1t) e^(-2t) e^(-3t) = e^(-6t) (t in 1,000 h). So the min is <strong>Exponential(6 per 1,000 h), mean 1000/6 = 167 h</strong>. This is a series system.
+(b) P(T_3 is first) = integral_0^infinity 3 e^(-3t) e^(-(1 + 2)t) dt = 3/6 = <strong>0.5</strong>.</p>
+<p><strong>Check.</strong> Simulation: mean 166.5 h, P = 0.499.</p>
+<p><strong>Say it.</strong> "The minimum of independent exponentials is exponential with the sum of the rates, so 6 per thousand hours, mean 167 hours. The chance that a given part is first is its rate over the total, 3 over 6."</p>
+<h3 id="p15-the-last-of-two-to-fail-parallel-system">P15. The last of two to fail (parallel system)</h3>
+<p>Two independent parts, each Exponential(lambda). E[time until both have failed]? And for three parts?</p>
+<p><strong>Solution.</strong> First failure: rate 2 lambda, mean 1/(2 lambda). Then, by memorylessness, the survivor is as good as new: mean 1/lambda more. <strong>E[max] = 1/(2 lambda) + 1/lambda = 3/(2 lambda).</strong>
+Check another way: P(max &lt;= t) = (1 - e^(-lambda t))^2, so E[max] = integral (1 - (1 - e^(-lambda t))^2) dt = integral (2 e^(-lambda t) - e^(-2 lambda t)) dt = 2/lambda - 1/(2 lambda) = 3/(2 lambda).
+Three parts: (1/lambda)(1/3 + 1/2 + 1) = <strong>1.833/lambda</strong>.</p>
+<p><strong>Check.</strong> Simulation with lambda = 1: 1.499.</p>
+<h3 id="p16-gamma-and-poisson">P16. Gamma and Poisson</h3>
+<p>S = sum of two independent Exponential(1). Find P(S &lt;= 1), E[S], Var S. How is this linked to a Poisson process?</p>
+<p><strong>Solution.</strong> S ~ Gamma(2, 1). S &lt;= 1 means at least 2 events of a rate-1 Poisson process by time 1: P = 1 - e^(-1)(1 + 1) = 1 - 2e^(-1) = <strong>0.264</strong>. E[S] = <strong>2</strong>, Var S = <strong>2</strong>. In general P(S_n &lt;= t) = P(N(t) &gt;= n).</p>
+<h3 id="p17-uniform">P17. Uniform</h3>
+<p>U ~ Uniform(0, 1). (a) E[U], Var U. (b) P(max of 3 independent U's &lt;= 0.5). (c) E[max of n].</p>
+<p><strong>Solution.</strong> (a) E[U] = 1/2. E[U^2] = 1/3. Var U = 1/3 - 1/4 = <strong>1/12</strong>.
+(b) All three &lt;= 0.5: (1/2)^3 = <strong>1/8</strong>.
+(c) P(max &lt;= x) = x^n, so the density is n x^(n-1) and E[max] = integral_0^1 x n x^(n-1) dx = <strong>n/(n + 1)</strong>. For n = 3: 0.75.</p>
+<h3 id="p18-normal">P18. Normal</h3>
+<p>Response time X ~ N(100, 15^2) ms. P(X &gt; 130)? P(70 &lt; X &lt; 130)?</p>
+<p><strong>Solution.</strong> Standardise: Z = (X - 100)/15. P(X &gt; 130) = P(Z &gt; 2) = <strong>0.0228</strong>. P(70 &lt; X &lt; 130) = P(-2 &lt; Z &lt; 2) = <strong>0.954</strong> (the "95" in 68-95-99.7).</p>
+<h3 id="p19-beta-and-a-bayesian-update">P19. Beta, and a Bayesian update</h3>
+<p>(a) theta ~ Beta(2, 8): mean, variance, sd, mode. (b) Start from a uniform prior Beta(1, 1) on a run's failure probability. You see 3 failures in 10 runs. Posterior? Posterior mean?</p>
+<p><strong>Solution.</strong>
+(a) Mean 2/10 = <strong>0.2</strong>. Variance 2 * 8 / (100 * 11) = <strong>0.0145</strong>, sd <strong>0.121</strong>. Mode (a - 1)/(a + b - 2) = 1/8 = <strong>0.125</strong>.
+(b) Beta prior times binomial likelihood: theta^(1 - 1 + 3) (1 - theta)^(1 - 1 + 7), so the posterior is <strong>Beta(4, 8)</strong>. Mean 4/12 = <strong>0.333</strong> (the MLE is 0.3; the prior pulls it a little toward 0.5). Equal-tailed 95% credible interval (2.5% and 97.5% points of Beta(4, 8)): 0.109 to 0.610.</p>
+<p><strong>Say it.</strong> "The Beta is conjugate to the binomial: add the failures to a and the passes to b. So a uniform prior and 3 failures out of 10 give Beta(4, 8), with mean one third."</p>
+<h3 id="p20-linearity-of-expectation-without-independence">P20. Linearity of expectation without independence</h3>
+<p>A program fails on each of 10,000 random inputs with probability 0.01, but the failures are clustered (not independent). Expected number of failing inputs?</p>
+<p><strong>Solution.</strong> Let I_x = 1 if input x fails. E[sum I_x] = sum E[I_x] = 10,000 * 0.01 = <strong>100</strong>. Linearity needs no independence. Dependence changes the <strong>variance</strong> of the count, not its mean.</p>
+<p><strong>Follow-up.</strong> <em>Random permutation of n items: expected number of items in their own place?</em> n * (1/n) = <strong>1</strong>, by the same indicator trick.</p>
+<h3 id="p21-covariance-of-two-runs">P21. Covariance of two runs</h3>
+<p>Two runs each fail on a random input with probability 0.1, and both fail with probability 0.02. Find the covariance, the correlation and Var(F_1 + F_2).</p>
+<p><strong>Solution.</strong> Cov = 0.02 - 0.1 * 0.1 = <strong>0.01</strong>. Var F_i = 0.1 * 0.9 = 0.09. Corr = 0.01/0.09 = <strong>0.111</strong>. Var(F_1 + F_2) = 0.09 + 0.09 + 2 (0.01) = <strong>0.20</strong> (0.18 if independent).</p>
+<h3 id="p22-uncorrelated-but-dependent">P22. Uncorrelated but dependent</h3>
+<p>X ~ Uniform(-1, 1) and Y = X^2. Find Cov(X, Y). Are they independent?</p>
+<p><strong>Solution.</strong> Cov = E[X^3] - E[X] E[X^2] = 0 - 0 = <strong>0</strong> (X^3 and X are odd functions on a symmetric range). But Y is completely determined by X, so they are <strong>dependent</strong>. Correlation only measures linear dependence.</p>
+<h3 id="p23-total-expectation-and-total-variance">P23. Total expectation and total variance</h3>
+<p>70% of modules are small, with fault count ~ Poisson(1). 30% are large, with ~ Poisson(5). For a random module find E[N] and Var N. Is N Poisson?</p>
+<p><strong>Solution.</strong></p>
+<pre><code>E[N]   = 0.7 (1) + 0.3 (5) = 2.2
+E[Var(N | type)] = 0.7 (1) + 0.3 (5) = 2.2           (Poisson: variance = mean)
+Var(E[N | type]) = 0.7 (1)^2 + 0.3 (5)^2 - 2.2^2 = 0.7 + 7.5 - 4.84 = 3.36
+Var N = 2.2 + 3.36 = 5.56
 </code></pre>
-<p>(1) Show that AN = NA. (2) Calculate N^2 and N^3. (3) Calculate (A + N)^k.</p>
-<p><strong>Solution.</strong>
-(1) A = aI, so AN = aN and NA = aN. Hence <strong>AN = NA</strong>.
-(2)</p>
-<pre><code>N^2 = [ 0 0 1 ]      N^3 = 0 (the zero matrix)
-      [ 0 0 0 ]
-      [ 0 0 0 ]
+<p><strong>Not Poisson</strong>, because Var N &gt; E[N]. A mixture of Poissons is overdispersed, just as a mixture of binomials (your beta-binomial) is.</p>
+<p><strong>Check.</strong> Simulation (500,000 modules): mean 2.198, variance 5.569.</p>
+<h3 id="p24-a-random-sum">P24. A random sum</h3>
+<p>Changes arrive at N ~ Poisson(4) per week. Change i has X_i faults, i.i.d. with mean 0.5 and variance 0.25, independent of N. S = total faults. Find E[S] and Var S.</p>
+<p><strong>Solution.</strong> By total expectation and total variance (condition on N):</p>
+<pre><code>E[S]  = E[N] E[X] = 4 (0.5) = 2
+Var S = E[N] Var X + Var N (E X)^2 = 4 (0.25) + 4 (0.25) = 2
 </code></pre>
-<p>(Each multiplication by N shifts the 1s one place further up and to the right.)
-(3) Because A and N commute, the binomial theorem works. All terms with N^3 or higher vanish:
-(A + N)^k = A^k + k A^(k-1) N + (k(k-1)/2) A^(k-2) N^2 = a^k I + k a^(k-1) N + (k(k-1)/2) a^(k-2) N^2.</p>
-<pre><code>(A + N)^k = [ a^k   k a^(k-1)   (k(k-1)/2) a^(k-2) ]
-            [ 0     a^k          k a^(k-1)         ]
-            [ 0     0            a^k               ]
+<p><strong>E[S] = 2, Var S = 2.</strong> (For Poisson N, Var S = lambda E[X^2].)</p>
+<p><strong>Check.</strong> Simulation with Bernoulli(0.5) faults per change: 2.003 and 2.012.</p>
+<h3 id="p25-mgf-of-the-exponential">P25. MGF of the exponential</h3>
+<p>Find the MGF of Exponential(lambda) and use it to get the mean, the variance and E[X^3] for lambda = 2.</p>
+<p><strong>Solution.</strong> M(t) = integral_0^infinity e^(tx) lambda e^(-lambda x) dx = <strong>lambda/(lambda - t)</strong> for t &lt; lambda.
+Expand: M(t) = 1/(1 - t/lambda) = sum_n (t/lambda)^n, so E[X^n] = <strong>n!/lambda^n</strong>.
+E[X] = 1/lambda, E[X^2] = 2/lambda^2, Var X = <strong>1/lambda^2</strong>. For lambda = 2: E[X^3] = 6/8 = <strong>0.75</strong>.</p>
+<h3 id="p26-markov-and-chebyshev">P26. Markov and Chebyshev</h3>
+<p>(a) A service averages 2 failures per week. Bound P(at least 10 in a week). Compare with the exact value if the count is Poisson(2). (b) X has mean 100 and sd 10. Bound P(|X - 100| &gt;= 30). Compare with a normal X.</p>
+<p><strong>Solution.</strong> (a) Markov: &lt;= 2/10 = <strong>0.2</strong>. Poisson(2): <strong>0.000046</strong>. (b) Chebyshev with k = 3: &lt;= 1/9 = <strong>0.111</strong>. Normal: <strong>0.0027</strong>.
+The bounds are loose because they assume nothing about the shape. Their value is that they always hold.</p>
+<h3 id="p27-lln-and-how-many-inputs-you-need">P27. LLN and how many inputs you need</h3>
+<p>You estimate a failure probability p by the share of failing inputs among n random inputs. (a) The sd of the estimate for p = 0.01 and n = 10,000? (b) For p = 0.01, how many inputs give plus or minus 10% of p with 95% confidence? (c) What if p = 0.001?</p>
+<p><strong>Solution.</strong> p-hat is a binomial share, sd = sqrt(p(1 - p)/n).
+(a) sqrt(0.01 * 0.99 / 10,000) = <strong>0.000995</strong>, about 10% of p. The 95% half-width is 1.96 times that, about 20% of p.
+(b) 1.96 sqrt(p(1 - p)/n) = 0.1 p gives n = 1.96^2 (1 - p)/(0.01 p) = <strong>38,032</strong>.
+(c) With 10,000 inputs only 10 failures are expected, so the relative sd is sqrt((1 - p)/(n p)) = <strong>32%</strong>. For plus or minus 10% at 95% you would need about <strong>384,000</strong> inputs, ten times as many as for p = 0.01.</p>
+<p><strong>Say it.</strong> "By the law of large numbers the share of failing inputs settles on p, and its standard deviation is root p times 1 minus p over n. At one percent and 10,000 inputs that's about plus or minus 20 percent at 95 percent confidence."</p>
+<h3 id="p28-central-limit-theorem">P28. Central limit theorem</h3>
+<p>(a) 100 i.i.d. task durations with mean 2 min and variance 4. P(total &gt; 220 min)? (b) X ~ Binomial(100, 0.5). Use the normal approximation with continuity correction for P(X &gt;= 60). Compare with the exact value.</p>
+<p><strong>Solution.</strong>
+(a) Sum: mean 200, variance 400, sd 20. P(sum &gt; 220) is about P(Z &gt; 1) = <strong>0.159</strong>.
+(b) Mean 50, sd 5. P(X &gt;= 60) = P(X &gt; 59.5) is about P(Z &gt; 1.9) = <strong>0.0287</strong>. Exact: <strong>0.0284</strong>.</p>
+<h3 id="p29-second-failure-of-three-tmr">P29. Second failure of three (TMR)</h3>
+<p>Three i.i.d. Exponential(lambda) units. A 2-out-of-3 system fails at the second unit failure. Its mean life?</p>
+<p><strong>Solution.</strong> First failure: rate 3 lambda, mean 1/(3 lambda). Then two units remain (memoryless): rate 2 lambda, mean 1/(2 lambda).
+E = 1/(3 lambda) + 1/(2 lambda) = <strong>5/(6 lambda)</strong>, less than one unit's 1/lambda.</p>
+<p><strong>Check.</strong> Simulation with lambda = 1: 0.831. Same answer as in <a href="ch28.html"><code>04_stochastic_processes_and_reliability.md</code></a> R21.</p>
+<h3 id="p30-splitting-poisson-failures">P30. Splitting Poisson failures</h3>
+<p>Module A has X ~ Poisson(2) failures and module B has Y ~ Poisson(3), independent. There were 5 failures in total. P(exactly 2 were in A)?</p>
+<p><strong>Solution.</strong> Given X + Y = 5, X ~ <strong>Binomial(5, 2/5)</strong>:</p>
+<pre><code>P(X = 2 | X + Y = 5) = P(X = 2) P(Y = 3) / P(X + Y = 5)
+                     = [e^-2 2^2/2!][e^-3 3^3/3!] / [e^-5 5^5/5!]
+                     = C(5,2) (2/5)^2 (3/5)^3 = 10 * 0.16 * 0.216 = 0.3456
 </code></pre>
-<p><strong>Check.</strong> k = 2 directly: [a 1 0; 0 a 1; 0 0 a]^2 = [a^2, 2a, 1; 0, a^2, 2a; 0, 0, a^2]. The formula gives (2·1/2) a^0 = 1 in the corner. Correct.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"A is a times the identity, and the identity commutes with everything, so AN and NA are both a times N.
-N is a shift matrix. N squared moves the 1 to the top right corner, and N cubed is zero. So N is nilpotent.
-For the power, because A and N commute, I can use the binomial theorem like with numbers. All terms with N cubed or higher are zero, so only three terms are left: a to the k times I, k a to the k minus 1 times N, and k choose 2 times a to the k minus 2 times N squared. I check k equal to 2 by direct multiplication."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Why do we need AN = NA?</em> (A + N)^2 = A^2 + AN + NA + N^2. This equals A^2 + 2AN + N^2 only if AN = NA.</li>
-<li><em>Is A + N diagonalizable?</em> No. Its only eigenvalue is a (three times), and (A + N) - aI = N has rank 2, so there is only one independent eigenvector. It is a Jordan block.</li>
-<li><em>Old exam variant: J = [α 1; 0 α].</em> Eigenvalue α twice, only one eigenvector (1, 0), not diagonalizable. J^n = [α^n, n α^(n-1); 0, α^n].</li>
-</ul>
-<hr />
-<h3 id="la22-diagonalize-a-symmetric-matrix">LA22. Diagonalize a symmetric matrix</h3>
-<p><em>Strang 6.4. Reported (same matrix, 2023: "diagonalize the symmetric matrix, find U"). Target: 7 min.</em></p>
-<p><strong>Problem.</strong> Find an orthogonal matrix Q such that Q^T A Q is diagonal.</p>
-<pre><code>A = [ 1  0  2 ]
-    [ 0 -1 -2 ]
-    [ 2 -2  0 ]
-</code></pre>
-<p><strong>Solution.</strong>
-Characteristic polynomial (expand along row 1):
-det(A - λI) = (1 - λ)[(-1 - λ)(-λ) - 4] + 2[0·(-2) - (-1 - λ)·2]
-= (1 - λ)(λ^2 + λ - 4) + 4(1 + λ)
-= -λ^3 + 9λ = -λ(λ - 3)(λ + 3).
-<strong>Eigenvalues 3, 0, -3.</strong>
-Quick checks: trace = 1 - 1 + 0 = 0 = 3 + 0 - 3. det A = 0 (so 0 is an eigenvalue).</p>
-<p>Eigenvectors (nullspace of A - λI):</p>
-<ul>
-<li>λ = 3: A - 3I = [-2 0 2; 0 -4 -2; 2 -2 -3]. Row 1 gives x1 = x3, row 2 gives x2 = -x3/2. Take <strong>(2, -1, 2)</strong>.</li>
-<li>λ = 0: x1 + 2x3 = 0 and -x2 - 2x3 = 0. Take x3 = 1: <strong>(-2, -2, 1)</strong>.</li>
-<li>λ = -3: A + 3I = [4 0 2; 0 2 -2; 2 -2 3]. Row 1 gives x3 = -2x1, row 2 gives x2 = x3. Take <strong>(1, -2, -2)</strong>.</li>
-</ul>
-<p>Each has length 3. Divide by 3:</p>
-<pre><code>Q = (1/3) [  2  -2   1 ]          Q^T A Q = diag(3, 0, -3)
-          [ -1  -2  -2 ]
-          [  2   1  -2 ]
-</code></pre>
-<p><strong>Check.</strong> A(2, -1, 2) = (2 + 4, 1 - 4, 4 + 2) = (6, -3, 6) = 3(2, -1, 2). A(-2, -2, 1) = (-2 + 2, 2 - 2, -4 + 4) = 0. A(1, -2, -2) = (1 - 4, 2 + 4, 2 + 4) = (-3, 6, 6) = -3(1, -2, -2). Dot products: (2, -1, 2)·(-2, -2, 1) = -4 + 2 + 2 = 0, (2, -1, 2)·(1, -2, -2) = 2 + 2 - 4 = 0, (-2, -2, 1)·(1, -2, -2) = -2 + 4 - 2 = 0.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"A is symmetric, so I know the eigenvalues are real and I can choose orthonormal eigenvectors. Then Q transpose A Q is diagonal.
-I compute det of A minus lambda I along the first row. It simplifies to minus lambda cubed plus 9 lambda. So the eigenvalues are 3, 0 and minus 3. Check: they add to 0, the trace, and the determinant of A is 0, so 0 must be an eigenvalue.
-For each eigenvalue I solve (A minus lambda I) x equals 0. I get (2, -1, 2), (-2, -2, 1) and (1, -2, -2). They are already perpendicular, because the eigenvalues are different. Each has length 3, so I divide by 3 to get Q."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>State the spectral theorem.</em> A real symmetric matrix has real eigenvalues and orthonormal eigenvectors: A = Q Λ Q^T.</li>
-<li><em>Why are eigenvectors for different eigenvalues orthogonal?</em> If Ax = λx and Ay = μy, then λ x·y = (Ax)·y = x·(Ay) = μ x·y, so (λ - μ) x·y = 0.</li>
-<li><em>Rank of A?</em> 2 (one zero eigenvalue). <em>Is A positive definite?</em> No: it has a negative and a zero eigenvalue.</li>
-</ul>
-<hr />
-<h3 id="la23-positive-definite-matrices">LA23. Positive definite matrices</h3>
-<p><em>Strang 6.5. Reported (same topic, 2021 and 2024; in 2024 an applicant did not know the term). Target: 6 min.</em></p>
-<p><strong>Problem.</strong>
-(a) For which b is A = [1 b; b 9] positive definite?
-(b) Show that K = [2 -1 0; -1 2 -1; 0 -1 2] is positive definite in at least two ways.</p>
-<p><strong>Solution.</strong>
-(a) For a symmetric 2 by 2 matrix [a b; b c]: positive definite exactly when a &gt; 0 and ac - b^2 &gt; 0.
-Here 1 &gt; 0, and 9 - b^2 &gt; 0, so <strong>-3 &lt; b &lt; 3</strong>.
-Energy view: x^T A x = x1^2 + 2b x1 x2 + 9 x2^2 = (x1 + b x2)^2 + (9 - b^2) x2^2, which is &gt; 0 for every x ≠ 0 exactly when 9 - b^2 &gt; 0.
-At b = ±3, A is only semidefinite: for b = 3, x = (-3, 1) gives x^T A x = 0.</p>
-<p>(b) Any one of these is enough:</p>
-<ul>
-<li><strong>Pivots</strong> 2, 3/2, 4/3, all positive.</li>
-<li><strong>Upper-left determinants</strong> 2, det[2 -1; -1 2] = 3, det K = 4, all positive.</li>
-<li><strong>Eigenvalues</strong>: det(K - λI) = (2 - λ)[(2 - λ)^2 - 2], so λ = 2 - √2, 2, 2 + √2, all positive.</li>
-<li><strong>Energy</strong>: x^T K x = 2x1^2 + 2x2^2 + 2x3^2 - 2x1x2 - 2x2x3 = 2(x1 - x2/2)^2 + (3/2)(x2 - 2x3/3)^2 + (4/3)x3^2 &gt; 0 for x ≠ 0.</li>
-</ul>
-<p><strong>Check.</strong> Expand the sum of squares: 2x1^2 - 2x1x2 + x2^2/2 + (3/2)x2^2 - 2x2x3 + (2/3)x3^2 + (4/3)x3^2 = 2x1^2 - 2x1x2 + 2x2^2 - 2x2x3 + 2x3^2. Product of pivots = 4 = det K = product of eigenvalues (2 - √2)(2)(2 + √2) = 2·2 = 4.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"Positive definite means the matrix is symmetric and x transpose A x is positive for every nonzero x. For a 2 by 2, the test is: the top-left entry is positive and the determinant is positive. Here that means 9 minus b squared is positive, so b is between minus 3 and 3. I can also complete the square: x transpose A x is (x1 plus b x2) squared plus (9 minus b squared) x2 squared.
-For K, I use the pivots: 2, 3 over 2 and 4 over 3, all positive. A second test: the upper-left determinants are 2, 3 and 4, all positive. So K is positive definite. The pivots also appear as the coefficients when I write the energy as a sum of squares."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>List the tests.</em> For symmetric A, all equivalent: all pivots &gt; 0; all upper-left determinants &gt; 0; all eigenvalues &gt; 0; x^T A x &gt; 0 for x ≠ 0; A = R^T R with independent columns of R.</li>
-<li><em>Why does it matter?</em> It is the matrix version of a positive second derivative: f(x) = x^T A x has a minimum at 0. Least squares uses A^T A, which is positive definite when A has independent columns.</li>
-<li><em>Is [1 2; 2 1] positive definite?</em> No: det = 1 - 4 = -3 &lt; 0 (eigenvalues 3 and -1).</li>
-</ul>
-<hr />
-<h3 id="la24-svd-basics">LA24. SVD basics</h3>
-<p><em>Strang 6.7. Textbook style. Target: 6 min.</em></p>
-<p><strong>Problem.</strong> A = [3 0; 4 5].
-(a) Find the singular values of A.
-(b) Find orthonormal v1, v2 and u1, u2 with A v_i = σ_i u_i, so A = U Σ V^T.</p>
-<p><strong>Solution.</strong>
-(a) A^T A = [3 4; 0 5][3 0; 4 5] = [25 20; 20 25].
-Eigenvalues of A^T A: 25 + 20 = 45 and 25 - 20 = 5 (eigenvectors (1, 1) and (-1, 1)).
-<strong>σ1 = √45 = 3√5, σ2 = √5.</strong></p>
-<p>(b) <strong>v1 = (1, 1)/√2, v2 = (-1, 1)/√2.</strong>
-u1 = A v1 / σ1 = (3, 9)/(√2 · 3√5) = <strong>(1, 3)/√10</strong>.
-u2 = A v2 / σ2 = (-3, 1)/(√2 · √5) = <strong>(-3, 1)/√10</strong>.
-A = U Σ V^T with U = [u1 u2], Σ = diag(3√5, √5), V = [v1 v2].</p>
-<p><strong>Check.</strong> σ1 σ2 = 3√5 · √5 = 15 = |det A| (det A = 15). u1·u2 = (-3 + 3)/10 = 0. ||A v1|| = ||(3, 9)||/√2 = √90/√2 = √45 = σ1.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"The singular values are the square roots of the eigenvalues of A transpose A. A transpose A is 25 20 20 25. Its eigenvalues are 45 and 5, with eigenvectors (1, 1) and (-1, 1). So sigma 1 is root 45, sigma 2 is root 5.
-The v's are those eigenvectors, normalised. Each u is A v divided by sigma. I get u1 = (1, 3) over root 10 and u2 = (-3, 1) over root 10. They are orthogonal, which is a good check. Also the product of the singular values is 15, which is the absolute value of det A.
-Note: the eigenvalues of A are 3 and 5, because it is triangular, but the singular values are different."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Rank one example:</em> [2 2; 1 1] = (2, 1)(1, 1)^T. σ1 = ||(2, 1)|| ||(1, 1)|| = √5 · √2 = √10, u1 = (2, 1)/√5, v1 = (1, 1)/√2, σ2 = 0.</li>
-<li><em>SVD vs eigen decomposition?</em> SVD works for any m by n matrix, uses two different orthogonal matrices U and V, and σ ≥ 0. For a symmetric positive definite matrix they are the same.</li>
-<li><em>What do the v's and u's span?</em> v1 to vr: row space. u1 to ur: column space. The rank is the number of nonzero σ's.</li>
-</ul>
-<hr />
-<h3 id="la25-linear-transformations">LA25. Linear transformations</h3>
-<p><em>Strang 7.1, 7.2. Official example (part (a)) and reported (part (b), same list, "2022, 1st exam"). Target: 5 min.</em></p>
-<p><strong>Problem.</strong>
-(a) x is any vector and a is a fixed vector in a vector space V. Show that f(x) = x + a is not a linear mapping.
-(b) Which of these maps of v = (v1, v2) are not linear: T(v) = (v2, v1); (v1, v2); (0, v1); (0, 1); v1 - v2; v1 v2?
-(c) Follow-up: write the matrix of T = d/dx from polynomials of degree ≤ 3 (basis 1, x, x^2, x^3) to polynomials of degree ≤ 2 (basis 1, x, x^2).</p>
-<p><strong>Solution.</strong>
-Definition: T is linear when T(cv + dw) = cT(v) + dT(w) for all vectors v, w and numbers c, d. Then T(0) = T(0·0) = 0·T(0) = 0.</p>
-<p>(a) f(0) = 0 + a = a. If a ≠ 0, then f(0) ≠ 0, so f is not linear. Directly: f(x + y) = x + y + a, but f(x) + f(y) = x + y + 2a. These differ when a ≠ 0. (If a = 0, f is the identity, which is linear. So the statement needs a ≠ 0.)</p>
-<p>(b)</p>
-<ul>
-<li>(v2, v1): linear, matrix [0 1; 1 0].</li>
-<li>(v1, v2): linear, the identity.</li>
-<li>(0, v1): linear, matrix [0 0; 1 0].</li>
-<li><strong>(0, 1): not linear</strong>, T(0) = (0, 1) ≠ 0.</li>
-<li>v1 - v2: linear, the 1 by 2 matrix [1 -1].</li>
-<li><strong>v1 v2: not linear</strong>, T(2v) = 4 v1 v2 ≠ 2 v1 v2 = 2T(v). For v = (1, 1): T(2v) = 4 but 2T(v) = 2.</li>
-</ul>
-<p>(c) Column j of the matrix is T(basis vector j) written in the output basis. d/dx of 1, x, x^2, x^3 is 0, 1, 2x, 3x^2:</p>
-<pre><code>[ 0 1 0 0 ]
-[ 0 0 2 0 ]
-[ 0 0 0 3 ]
-</code></pre>
-<p><strong>Check.</strong> (c) p = 1 + x + x^2 + x^3 has coordinates (1, 1, 1, 1). The matrix gives (1, 2, 3), which is 1 + 2x + 3x^2 = p'.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"A linear map must keep addition and scalar multiplication. A quick consequence is that it sends zero to zero. Here f of zero is a, which is not zero when a is not zero. So f is not linear. It is a shift, not a linear map. If a were zero it would just be the identity.
-For the list, I test each one. The ones that are a matrix times v are linear. (0, 1) is not, because zero goes to (0, 1). v1 times v2 is not, because doubling v multiplies it by 4, not by 2.
-For the derivative, each column is the derivative of a basis polynomial, written in the new basis."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Nullspace (kernel) and range of d/dx here?</em> Kernel: the constants (dimension 1). Range: all of the degree ≤ 2 polynomials (dimension 3). 1 + 3 = 4 = dimension of the input space.</li>
-<li><em>Is T(v) = ||v|| linear?</em> No: T(-v) = ||v|| ≠ -||v||.</li>
-<li><em>Every linear T from R^n to R^m is...?</em> Multiplication by an m by n matrix. Its columns are T(e1), ..., T(en).</li>
-</ul>
-<hr />
-<h1 id="part-b-calculus-lang-5th-ed-ch-1-to-15-plus-differential-equations">Part B. Calculus (Lang 5th ed., Ch. 1 to 15, plus differential equations)</h1>
-<hr />
-<h3 id="c1-review-inequalities-and-conic-sections">C1. Review: inequalities and conic sections</h3>
-<p><em>Lang I §2, II §6 to §9. Reported (same topic, 2025: "sketch a hyperbola"). Target: 5 min.</em></p>
-<p><strong>Problem.</strong>
-(a) Solve |2x - 1| &lt; 3.
-(b) Identify and sketch the curve x^2 + 4y^2 - 2x + 16y + 13 = 0.
-(c) Sketch the hyperbola x^2/4 - y^2/9 = 1 with its asymptotes.</p>
-<p><strong>Solution.</strong>
-(a) |2x - 1| &lt; 3 means -3 &lt; 2x - 1 &lt; 3. Add 1: -2 &lt; 2x &lt; 4. Divide by 2: <strong>-1 &lt; x &lt; 2</strong>.</p>
-<p>(b) Complete the square in x and in y:
-x^2 - 2x = (x - 1)^2 - 1, and 4y^2 + 16y = 4(y^2 + 4y) = 4(y + 2)^2 - 16.
-So (x - 1)^2 - 1 + 4(y + 2)^2 - 16 + 13 = 0, which gives (x - 1)^2 + 4(y + 2)^2 = 4, or
-<strong>(x - 1)^2 / 4 + (y + 2)^2 / 1 = 1</strong>.
-An <strong>ellipse</strong> with center (1, -2), half-axis 2 in the x direction and 1 in the y direction. Extreme points (3, -2), (-1, -2), (1, -1), (1, -3).</p>
-<p>(c) Vertices (±2, 0). No y-intercept (x = 0 gives -y^2/9 = 1, impossible).
-Solve for y: y = ±(3/2) x √(1 - 4/x^2). For large |x|, the square root goes to 1, so the <strong>asymptotes are y = ±(3/2) x</strong>.
-Two branches, opening left and right, each starting at a vertex and approaching the asymptotes.</p>
-<p><strong>Check.</strong> (b) Plug (3, -2) into the original: 9 + 16 - 6 - 32 + 13 = 0. Plug (1, -1): 1 + 4 - 2 - 16 + 13 = 0. (a) x = 0 works (|-1| = 1 &lt; 3), x = 2 does not (|3| = 3 is not &lt; 3).</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"For the absolute value, |2x minus 1| less than 3 means 2x minus 1 is between minus 3 and 3. So x is between minus 1 and 2.
-For the curve, I complete the square in x and in y. I get (x minus 1) squared over 4 plus (y plus 2) squared equals 1. That is an ellipse centred at (1, -2), with half-width 2 and half-height 1. I draw the centre, then the four extreme points, then the oval.
-For the hyperbola, the vertices are at plus and minus 2. For large x the 1 on the right does not matter, so y is about plus or minus 3 over 2 times x. Those are the asymptotes. I draw the asymptotes first as dashed lines, then the two branches."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Parabola vertex?</em> y = ax^2 + bx + c has its vertex at x = -b/(2a).</li>
-<li><em>Circle?</em> (x - a)^2 + (y - b)^2 = r^2. <em>Hyperbola xy = 1?</em> Asymptotes are the axes.</li>
-</ul>
-<hr />
-<h3 id="c2-limits">C2. Limits</h3>
-<p><em>Lang III §3, XIII §8. Part (c) reported (same question, old list, 2012). Target: 6 min.</em></p>
-<p><strong>Problem.</strong> Find
-(a) lim_{x→0} (√(1 + x) - 1)/x
-(b) lim_{x→0} (x - sin x)/x^3
-(c) lim_{x→0} ((3^x + 5^x)/2)^(1/x)</p>
-<p><strong>Solution.</strong>
-(a) Multiply top and bottom by the conjugate √(1 + x) + 1:
-(√(1 + x) - 1)/x = ((1 + x) - 1)/(x(√(1 + x) + 1)) = 1/(√(1 + x) + 1) → <strong>1/2</strong>.</p>
-<p>(b) Taylor: sin x = x - x^3/6 + x^5/120 - ..., so x - sin x = x^3/6 - x^5/120 + ...
-Divide by x^3: 1/6 - x^2/120 + ... → <strong>1/6</strong>.
-(L'Hôpital three times also works: (1 - cos x)/(3x^2) → (sin x)/(6x) → (cos x)/6 → 1/6.)</p>
-<p>(c) This is a "1 to the infinity" form. Take the log:
-log y = log((3^x + 5^x)/2) / x. Top → log 1 = 0 and bottom → 0. The limit is the derivative of g(x) = log((3^x + 5^x)/2) at 0:
-g'(x) = (3^x log 3 + 5^x log 5)/(3^x + 5^x), so g'(0) = (log 3 + log 5)/2 = (log 15)/2.
-So log y → (log 15)/2 and <strong>y → e^((log 15)/2) = √15</strong>.</p>
-<p><strong>Check.</strong> (a) x = 0.01: (1.004988 - 1)/0.01 ≈ 0.499. (c) √15 ≈ 3.873; a computer check with x = 0.001 gives about 3.87.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"For (a), direct substitution gives 0 over 0, so I multiply by the conjugate. The x cancels, and the limit is one half.
-For (b), I use the Taylor series of sine. x minus sin x starts with x cubed over 6, so the limit is one sixth. I could also use L'Hopital three times and get the same.
-For (c), the base goes to 1 and the exponent goes to infinity, so I take the logarithm. Then I have a 0 over 0 limit, which is exactly the derivative of log of the average at x equal to 0. That is (log 3 plus log 5) over 2, half of log 15. So the limit is e to that, which is root 15. It is the geometric mean of 3 and 5."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Conditions for L'Hôpital?</em> A 0/0 or ∞/∞ form, f and g differentiable near the point, g' ≠ 0 near it, and lim f'/g' exists.</li>
-<li><em>lim_{x→∞} (3x^2 + x)/(2x^2 - 5)?</em> Divide by x^2: 3/2.</li>
-<li><em>lim_{x→∞} (1 + 1/x)^x?</em> e.</li>
-</ul>
-<hr />
-<h3 id="c3-derivative-from-the-definition-continuity-and-differentiability">C3. Derivative from the definition; continuity and differentiability</h3>
-<p><em>Lang III §2, IX §2, Appendix (ε and δ). Textbook style. Target: 5 min.</em></p>
-<p><strong>Problem.</strong>
-(a) Using the definition of the derivative, find f'(x) for f(x) = √x (x &gt; 0).
-(b) f(x) = x^2 for x ≤ 1 and f(x) = ax + b for x &gt; 1. Find a and b so that f is differentiable at x = 1.
-(c) Is |x| continuous at 0? Is it differentiable at 0?</p>
-<p><strong>Solution.</strong>
-(a) Newton quotient:
-(√(x + h) - √x)/h = ((x + h) - x) / (h(√(x + h) + √x)) = 1/(√(x + h) + √x).
-As h → 0 this goes to <strong>1/(2√x)</strong>.</p>
-<p>(b) Continuity at 1: the left value is 1^2 = 1, the right limit is a + b. Need <strong>a + b = 1</strong>.
-Differentiability at 1: the left derivative is 2x at x = 1, which is 2. The right derivative is a. Need <strong>a = 2</strong>.
-So <strong>a = 2, b = -1</strong>. (The right piece is the tangent line y = 2x - 1 of x^2 at x = 1.)</p>
-<p>(c) |x| is <strong>continuous</strong> at 0: |x| → 0 = |0|. It is <strong>not differentiable</strong> at 0: the Newton quotient |h|/h is 1 for h &gt; 0 and -1 for h &lt; 0, so the one-sided limits differ.</p>
-<p><strong>Check.</strong> (b) At x = 1 both pieces give 1, and both slopes are 2.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"The derivative is the limit of the Newton quotient, f of x plus h minus f of x, over h. With square roots I multiply by the conjugate. The h cancels, and the limit is 1 over 2 root x.
-For (b), I need two conditions at x equal to 1. Continuity: the two pieces meet, so a plus b equals 1. Differentiability: the slopes match, so a equals 2. Then b is minus 1.
-For (c), absolute value is continuous at 0, but the slope is 1 on the right and minus 1 on the left, so there is a corner and no derivative. Differentiable implies continuous, but not the other way."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>ε-δ definition of lim_{x→a} f(x) = L?</em> For every ε &gt; 0 there is δ &gt; 0 such that 0 &lt; |x - a| &lt; δ implies |f(x) - L| &lt; ε.</li>
-<li><em>Continuous at a?</em> lim_{x→a} f(x) = f(a).</li>
-<li><em>Intermediate value theorem?</em> A continuous function on [a, b] takes every value between f(a) and f(b).</li>
-</ul>
-<hr />
-<h3 id="c4-the-official-trig-limit-and-the-triple-angle-formula">C4. The official trig limit, and the triple-angle formula</h3>
-<p><em>Lang IV §3, §5. Official example (a), reported (same topic, 2021) (b). Target: 5 min.</em></p>
-<p><strong>Problem.</strong>
-(a) Find lim_{x→0} (1 - cos x)/x^2.
-(b) Prove sin 3x = 3 sin x - 4 sin^3 x.</p>
-<p><strong>Solution.</strong>
-(a) Method 1, using sin x/x → 1. Multiply top and bottom by 1 + cos x:
-(1 - cos x)/x^2 = (1 - cos^2 x)/(x^2 (1 + cos x)) = (sin x / x)^2 · 1/(1 + cos x) → 1^2 · 1/2 = <strong>1/2</strong>.
-Method 2, Taylor: cos x = 1 - x^2/2 + x^4/24 - ..., so (1 - cos x)/x^2 = 1/2 - x^2/24 + ... → 1/2.
-Method 3, L'Hôpital twice: (sin x)/(2x) → 1/2.</p>
-<p>(b) Addition formula, then double-angle formulas:
-sin 3x = sin(2x + x) = sin 2x cos x + cos 2x sin x
-= 2 sin x cos^2 x + (1 - 2 sin^2 x) sin x
-= 2 sin x (1 - sin^2 x) + sin x - 2 sin^3 x
-= <strong>3 sin x - 4 sin^3 x</strong>.</p>
-<p><strong>Check.</strong> (a) x = 0.01: 1 - cos(0.01) ≈ 0.0000499996, divided by 0.0001 gives ≈ 0.499996. (b) x = π/2: sin(3π/2) = -1, and 3 - 4 = -1.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"Direct substitution gives 0 over 0. I multiply top and bottom by 1 plus cos x. The top becomes sin squared x. So I get (sin x over x) squared times 1 over (1 plus cos x). The first part goes to 1, and the second to one half. So the limit is one half.
-I can confirm with Taylor: 1 minus cos x is x squared over 2 plus higher terms.
-For (b), I write 3x as 2x plus x and use the addition formula. Then I replace cos squared by 1 minus sin squared, and cos 2x by 1 minus 2 sin squared. Collecting terms gives 3 sin x minus 4 sin cubed x."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Why is lim sin x/x = 1?</em> For 0 &lt; x &lt; π/2, comparing areas in the unit circle gives sin x &lt; x &lt; tan x. So cos x &lt; sin x/x &lt; 1, and squeeze. This needs radians.</li>
-<li><em>cos 3x?</em> 4cos^3 x - 3cos x.</li>
-</ul>
-<hr />
-<h3 id="c5-fx-sin-x-x">C5. f(x) = sin x / x</h3>
-<p><em>Lang III §5, IV §4, §5. Reported (same question, 2022 English-language exam). Target: 4 min.</em></p>
-<p><strong>Problem.</strong> f(x) = sin x / x. (a) Find f'(x). (b) Find lim_{x→0} f'(x).</p>
-<p><strong>Solution.</strong>
-(a) Quotient rule: <strong>f'(x) = (x cos x - sin x)/x^2</strong>.</p>
-<p>(b) Substituting x = 0 gives 0/0.
-Taylor: x cos x = x - x^3/2 + ..., sin x = x - x^3/6 + ..., so the top is -x^3/2 + x^3/6 + ... = -x^3/3 + ...
-Divide by x^2: -x/3 + ... → <strong>0</strong>.
-(L'Hôpital: the derivative of the top is cos x - x sin x - cos x = -x sin x, and of the bottom is 2x. The ratio is -(sin x)/2 → 0.)</p>
-<p><strong>Check.</strong> x = 0.1: (0.1·0.995004 - 0.0998334)/0.01 = (0.0995004 - 0.0998334)/0.01 = -0.0333, close to -x/3 = -0.0333.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"For the derivative I use the quotient rule: derivative of the top times the bottom, minus the top times the derivative of the bottom, over the bottom squared. That is (x cos x minus sin x) over x squared.
-At zero this is 0 over 0. I expand with Taylor series. The x terms cancel, and the top starts with minus x cubed over 3. Divided by x squared, that is minus x over 3, which goes to 0. So the limit is 0.
-This makes sense: sin x over x is an even function with limit 1, so its graph is flat at 0."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>lim_{x→0} f(x)?</em> 1. Defining f(0) = 1 makes f continuous, and then f'(0) = 0.</li>
-<li><em>Is f even or odd?</em> Even: f(-x) = f(x).</li>
-</ul>
-<hr />
-<h3 id="c6-tangent-line-to-y-tan-x-at-x-6">C6. Tangent line to y = tan x at x = π/6</h3>
-<p><em>Lang III, IV §4. Reported (same question, 2021). Target: 3 min.</em></p>
-<p><strong>Problem.</strong> Find the tangent line to y = tan x at x = π/6.</p>
-<p><strong>Solution.</strong>
-Point: tan(π/6) = 1/√3 = √3/3.
-Slope: y' = 1/cos^2 x. cos(π/6) = √3/2, so cos^2 = 3/4 and y' = <strong>4/3</strong>.
-Tangent line: y = (4/3)(x - π/6) + √3/3, that is <strong>y = (4/3)x - 2π/9 + √3/3</strong>.</p>
-<p><strong>Check.</strong> (4/3)(π/6) = 4π/18 = 2π/9. At x = π/6 the line gives √3/3. Correct.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"A tangent line needs a point and a slope. The point is (pi over 6, tan pi over 6), and tan pi over 6 is 1 over root 3. The derivative of tan is 1 over cos squared. Cos of pi over 6 is root 3 over 2, so cos squared is three quarters, and the slope is 4 over 3.
-So the line is y equals 4 over 3 times (x minus pi over 6) plus root 3 over 3."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Derivative of tan from the quotient rule?</em> (sin/cos)' = (cos^2 x + sin^2 x)/cos^2 x = 1/cos^2 x = 1 + tan^2 x.</li>
-<li><em>Normal line?</em> Slope -3/4: y = -(3/4)(x - π/6) + √3/3.</li>
-</ul>
-<hr />
-<h3 id="c7-implicit-differentiation">C7. Implicit differentiation</h3>
-<p><em>Lang III §7, §8. Reported (same question, 2017: y' and y'' for 2x^2 + 5y^2 = 6). Target: 5 min.</em></p>
-<p><strong>Problem.</strong> For the curve 2x^2 + 5y^2 = 6, find y' and y'' in terms of x and y. Find the slope at (1, 2/√5).</p>
-<p><strong>Solution.</strong>
-Differentiate both sides, with y = y(x): 4x + 10y y' = 0, so <strong>y' = -2x/(5y)</strong>.
-Differentiate y' = -(2/5)(x/y) with the quotient rule:
-y'' = -(2/5) · (y - x y')/y^2.
-Substitute y' = -2x/(5y): y - x y' = y + 2x^2/(5y) = (5y^2 + 2x^2)/(5y) = 6/(5y), using the curve equation.
-So y'' = -(2/5) · 6/(5y · y^2) = <strong>-12/(25 y^3)</strong>.
-At (1, 2/√5): it is on the curve (2 + 5·4/5 = 6), and <strong>y' = -2/(5 · 2/√5) = -1/√5</strong>.</p>
-<p><strong>Check.</strong> At (1, 2/√5), y &gt; 0 and y'' &lt; 0: the top half of the ellipse is concave down. That fits the picture.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"I differentiate both sides with respect to x, and I remember that y is a function of x, so y squared gives 2 y y prime. That gives y prime equals minus 2x over 5y.
-For the second derivative I differentiate again with the quotient rule, and then I replace y prime by what I found. The top simplifies to 5y squared plus 2x squared, which is 6 from the curve equation. So y double prime is minus 12 over 25 y cubed.
-As a sanity check: on the top half of the ellipse y is positive, so y double prime is negative, so it bends down. Correct."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Where are the horizontal tangents?</em> y' = 0 when x = 0, so (0, ±√(6/5)).</li>
-<li><em>Vertical tangents?</em> Where y = 0: (±√3, 0).</li>
-</ul>
-<hr />
-<h3 id="c8-related-rates">C8. Related rates</h3>
-<p><em>Lang III §9. Textbook style. Target: 4 min.</em></p>
-<p><strong>Problem.</strong> A 5 m ladder leans against a vertical wall. The bottom slides away from the wall at 1 m/s. How fast does the top slide down when the bottom is 3 m from the wall?</p>
-<p><strong>Solution.</strong>
-Let x = distance of the bottom from the wall, y = height of the top. Then x^2 + y^2 = 25 at all times.
-Differentiate with respect to t: 2x x' + 2y y' = 0, so y' = -x x'/y.
-At the moment: x = 3, so y = √(25 - 9) = 4, and x' = 1.
-<strong>y' = -3·1/4 = -3/4 m/s.</strong> The top slides down at 3/4 m/s.</p>
-<p><strong>Check.</strong> Units: (m · m/s)/m = m/s. Sign: negative, the top goes down. Correct.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"I draw the right triangle: x along the floor, y up the wall, 5 along the ladder. The relation x squared plus y squared equals 25 holds at every time, so I can differentiate it in time. That gives x x prime plus y y prime equals 0.
-Only now do I put in the numbers: x is 3, so y is 4, and x prime is 1. So y prime is minus 3 over 4. The top slides down at three quarters of a metre per second."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Common mistake?</em> Putting in x = 3 before differentiating. Then x looks constant and you get 0.</li>
-<li><em>What happens as y → 0?</em> y' = -x x'/y blows up, so the model breaks down near the floor.</li>
-</ul>
-<hr />
-<h3 id="c9-max-and-min-on-an-interval-the-mean-value-theorem">C9. Max and min on an interval; the mean value theorem</h3>
-<p><em>Lang V. Textbook style. Target: 6 min.</em></p>
-<p><strong>Problem.</strong>
-(a) Find the maximum and minimum of f(x) = x^3 - 3x + 1 on [-2, 3].
-(b) For g(x) = x^3 on [0, 2], find the c given by the mean value theorem.
-(c) Prove |sin a - sin b| ≤ |a - b| for all a, b.</p>
-<p><strong>Solution.</strong>
-(a) f is continuous on a closed bounded interval, so a max and a min exist. Candidates are critical points and endpoints.
-f'(x) = 3x^2 - 3 = 0 gives x = ±1.
-f(-2) = -8 + 6 + 1 = -1, f(-1) = -1 + 3 + 1 = 3, f(1) = 1 - 3 + 1 = -1, f(3) = 27 - 9 + 1 = 19.
-<strong>Maximum 19 at x = 3. Minimum -1 at x = -2 and at x = 1.</strong></p>
-<p>(b) MVT: there is c in (0, 2) with g'(c) = (g(2) - g(0))/(2 - 0) = 8/2 = 4.
-3c^2 = 4, so <strong>c = 2/√3 ≈ 1.155</strong>, which is in (0, 2).</p>
-<p>(c) If a = b there is nothing to prove. Otherwise, by the MVT for sin on the interval between a and b, sin a - sin b = cos(c)(a - b) for some c between them. Since |cos c| ≤ 1, <strong>|sin a - sin b| ≤ |a - b|</strong>.</p>
-<p><strong>Check.</strong> (a) f(-1) = 3 is only a local max: the endpoint value 19 is bigger. (b) 3·(4/3) = 4.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"f is continuous on a closed interval, so a maximum and a minimum exist, and they are at critical points or at the endpoints. f prime is 3x squared minus 3, which is zero at plus and minus 1. I evaluate f at the four candidates: minus 1, 3, minus 1, 19. So the maximum is 19 at the right endpoint, and the minimum is minus 1, reached twice.
-For (b), the mean value theorem says some tangent slope equals the average slope. The average slope is 4, so 3c squared equals 4, and c is 2 over root 3, inside the interval.
-For (c), I apply the mean value theorem to sine. The difference quotient equals cos of some c, and cosine is at most 1 in absolute value."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>State the MVT.</em> f continuous on [a, b] and differentiable on (a, b). Then some c in (a, b) has f'(c) = (f(b) - f(a))/(b - a).</li>
-<li><em>Rolle's theorem?</em> The special case f(a) = f(b), which gives f'(c) = 0.</li>
-<li><em>Consequence?</em> If f' = 0 on an interval, f is constant. If f' &gt; 0, f is increasing.</li>
-</ul>
-<hr />
-<h3 id="c10-curve-sketching">C10. Curve sketching</h3>
-<p><em>Lang VI. Part (a) reported (same curve, old list, 2011). In 2021 an applicant reports the examiner was satisfied once the table of increase and decrease was described. Target: 6 min.</em></p>
-<p><strong>Problem.</strong> Sketch (a) y = x e^(-x), (b) y = x^2/(x - 1).</p>
-<p><strong>Solution.</strong>
-(a) Domain: all x. Intercept: (0, 0). Sign: y &lt; 0 for x &lt; 0 and y &gt; 0 for x &gt; 0.
-y' = (1 - x) e^(-x): positive for x &lt; 1, negative for x &gt; 1. <strong>Maximum at x = 1, y = 1/e ≈ 0.37.</strong>
-y'' = (x - 2) e^(-x): negative for x &lt; 2, positive for x &gt; 2. <strong>Inflection point at (2, 2/e^2) ≈ (2, 0.27).</strong>
-Ends: x → +∞ gives y → 0 (e^x grows faster than x), so y = 0 is a horizontal asymptote on the right. x → -∞ gives y → -∞.</p>
-<table>
-<thead>
-<tr>
-<th>x</th>
-<th>x &lt; 1</th>
-<th>1</th>
-<th>1 &lt; x &lt; 2</th>
-<th>2</th>
-<th>x &gt; 2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>y'</td>
-<td>+</td>
-<td>0</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>y''</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>0</td>
-<td>+</td>
-</tr>
-<tr>
-<td>y</td>
-<td>rises, bends down</td>
-<td>max 1/e</td>
-<td>falls, bends down</td>
-<td>inflection</td>
-<td>falls, bends up, → 0</td>
-</tr>
-</tbody>
-</table>
-<p>(b) Divide: y = x^2/(x - 1) = x + 1 + 1/(x - 1). Domain x ≠ 1.</p>
-<ul>
-<li><strong>Vertical asymptote x = 1</strong>: y → +∞ as x → 1 from the right, y → -∞ from the left.</li>
-<li><strong>Oblique asymptote y = x + 1</strong>, since 1/(x - 1) → 0 as x → ±∞.</li>
-<li>y' = 1 - 1/(x - 1)^2 = x(x - 2)/(x - 1)^2. Zero at x = 0 and x = 2.</li>
-<li>y'' = 2/(x - 1)^3: negative for x &lt; 1 (bends down), positive for x &gt; 1 (bends up).</li>
-<li><strong>Local max at (0, 0), local min at (2, 4).</strong> No inflection point (x = 1 is not in the domain).</li>
-</ul>
-<p><strong>Check.</strong> (b) y' from the quotient rule: (2x(x - 1) - x^2)/(x - 1)^2 = (x^2 - 2x)/(x - 1)^2. Same.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"My checklist is: domain, intercepts, sign, first derivative for rising and falling, second derivative for bending, and behaviour at the ends.
-For x e to the minus x, y prime is (1 minus x) e to the minus x. The exponential is always positive, so the sign comes from 1 minus x. It rises up to x equal to 1 and falls after, so there is a maximum 1 over e. y double prime is (x minus 2) e to the minus x, so there is an inflection point at x equal to 2. On the right it goes to 0, because the exponential wins. On the left it goes to minus infinity. Here is my table and my sketch.
-For (b), I first divide to get x plus 1 plus 1 over (x minus 1). So there is a vertical asymptote at 1 and a slanted asymptote y equals x plus 1. The derivative is zero at 0 and 2, which gives a local max at (0, 0) and a local min at (2, 4)."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>How do you find an oblique asymptote?</em> Divide the polynomials. The quotient is the asymptote when the remainder over the denominator goes to 0.</li>
-<li><em>Second derivative test?</em> f'(c) = 0 and f''(c) &lt; 0 gives a local max. f''(c) &gt; 0 gives a local min.</li>
-</ul>
-<hr />
-<h3 id="c11-optimization-the-biggest-open-box">C11. Optimization: the biggest open box</h3>
-<p><em>Lang VI §5. Reported (same topic, 2024: "maximize the volume of a box under a condition"). Target: 5 min.</em></p>
-<p><strong>Problem.</strong> An open-top box with a square base is made from 108 cm^2 of material. Find the largest possible volume.</p>
-<p><strong>Solution.</strong>
-Base side x, height h. Material: x^2 + 4xh = 108, so h = (108 - x^2)/(4x).
-Volume: V(x) = x^2 h = x(108 - x^2)/4 = 27x - x^3/4, for 0 &lt; x &lt; √108.
-V'(x) = 27 - 3x^2/4 = 0 gives x^2 = 36, so <strong>x = 6</strong>.
-V''(x) = -3x/2 = -9 &lt; 0 at x = 6, so it is a maximum. Also V → 0 at both ends of the interval, so it is the global maximum.
-h = (108 - 36)/24 = 3. <strong>Maximum volume V = 36 · 3 = 108 cm^3.</strong></p>
-<p><strong>Check.</strong> Material: 36 + 4·6·3 = 36 + 72 = 108. The height is half the base side.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"I name the variables: base side x and height h. The condition is the area, x squared plus 4 x h equals 108. I solve it for h and put it into the volume, so the volume depends on x only: 27x minus x cubed over 4.
-I set the derivative to zero: 27 minus three quarters x squared. So x is 6. The second derivative is negative, and the volume is zero at both ends of the allowed range, so this is the maximum.
-Then h is 3, and the volume is 108 cubic centimetres. I check that the material is still 108."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Closed box with fixed area?</em> The best shape is a cube.</li>
-<li><em>Why check the ends of the interval?</em> A critical point is only a candidate. The global max on an interval can be at an endpoint.</li>
-</ul>
-<hr />
-<h3 id="c12-inverse-functions-arcsin-and-arctan">C12. Inverse functions, arcsin and arctan</h3>
-<p><em>Lang VII. Textbook style (an arctan integral was asked in 2022, see C15). Target: 5 min.</em></p>
-<p><strong>Problem.</strong>
-(a) f(x) = x^3 + x. Show that f has an inverse function and find (f^-1)'(2).
-(b) Derive the derivatives of arctan x and arcsin x.</p>
-<p><strong>Solution.</strong>
-(a) f'(x) = 3x^2 + 1 &gt; 0 for all x, so f is strictly increasing, so it is one-to-one and has an inverse.
-f(1) = 2, so f^-1(2) = 1. <strong>(f^-1)'(2) = 1/f'(1) = 1/4.</strong></p>
-<p>(b) y = arctan x means x = tan y with -π/2 &lt; y &lt; π/2.
-dx/dy = 1 + tan^2 y = 1 + x^2, so <strong>(arctan x)' = 1/(1 + x^2)</strong>.
-y = arcsin x means x = sin y with -π/2 ≤ y ≤ π/2.
-dx/dy = cos y = √(1 - x^2) (positive root, because cos y ≥ 0 on that range), so <strong>(arcsin x)' = 1/√(1 - x^2)</strong> for -1 &lt; x &lt; 1.</p>
-<p><strong>Check.</strong> (a) The graphs of f and f^-1 are mirror images in y = x, so slopes at matching points are reciprocals: 4 and 1/4.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"f prime is 3x squared plus 1, always positive, so f is strictly increasing and has an inverse. To find the slope of the inverse at 2, I need the x with f of x equal to 2. That is x equal to 1. The slope of the inverse is 1 over f prime of 1, so one quarter.
-For arctan, I write x equals tan y and differentiate in y: 1 plus tan squared, which is 1 plus x squared. Then I flip it. For arcsin, x equals sin y, the derivative is cos y, which is root of 1 minus x squared. I take the positive root, because y is between minus pi over 2 and pi over 2."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>∫_0^1 dx/(1 + x^2)?</em> arctan 1 - arctan 0 = π/4.</li>
-<li><em>Range of arcsin and arctan?</em> [-π/2, π/2] and (-π/2, π/2).</li>
-</ul>
-<hr />
-<h3 id="c13-exponentials-and-logarithms">C13. Exponentials and logarithms</h3>
-<p><em>Lang VIII. Textbook style. Target: 5 min.</em></p>
-<p><strong>Problem.</strong>
-(a) Find the derivative of x^x (x &gt; 0) and the minimum value of x^x.
-(b) Find lim_{x→0+} x log x.</p>
-<p><strong>Solution.</strong>
-(a) Write x^x = e^(x log x). Chain rule: (x^x)' = e^(x log x)(log x + 1) = <strong>x^x (log x + 1)</strong>.
-It is zero when log x = -1, so x = 1/e. The sign is negative for x &lt; 1/e and positive for x &gt; 1/e, so this is a minimum.
-<strong>Minimum value (1/e)^(1/e) = e^(-1/e) ≈ 0.692.</strong></p>
-<p>(b) x log x = (log x)/(1/x), an ∞/∞ form. L'Hôpital: (1/x)/(-1/x^2) = -x → <strong>0</strong>.
-(Or set x = e^(-t) with t → ∞: x log x = -t e^(-t) → 0.)</p>
-<p><strong>Check.</strong> (b) x = 0.001: 0.001 · (-6.9) = -0.0069, close to 0. (a) e^(-1/e) = e^(-0.3679) ≈ 0.692, and 1^1 = 1 is bigger. Correct.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"x to the x has the variable in the base and in the exponent, so I write it as e to the x log x. Then the chain rule gives x to the x times (log x plus 1). It is zero when log x is minus 1, so at x equal to 1 over e. The derivative changes from negative to positive there, so it is a minimum, with value e to the minus 1 over e.
-For (b), I rewrite x log x as log x over 1 over x and use L'Hopital. I get minus x, which goes to 0. Polynomials beat logarithms."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>lim_{x→0+} x^x?</em> e^(lim x log x) = e^0 = 1.</li>
-<li><em>Solve y' = ky.</em> y = y(0) e^(kt). With k &lt; 0, the half-life is (log 2)/(-k).</li>
-<li><em>Order of magnitude?</em> For a &gt; 0: x^n/e^x → 0 and (log x)/x^a → 0 as x → ∞.</li>
-</ul>
-<hr />
-<h3 id="c14-the-fundamental-theorem-and-riemann-sums">C14. The fundamental theorem and Riemann sums</h3>
-<p><em>Lang IX, X §1, §2. Textbook style. Target: 5 min.</em></p>
-<p><strong>Problem.</strong>
-(a) Find d/dx ∫<em>0^(x^2) sin(t^2) dt.
-(b) Find lim</em>{n→∞} Σ_{k=1}^{n} 1/(n + k).</p>
-<p><strong>Solution.</strong>
-(a) Let F(u) = ∫_0^u sin(t^2) dt. By the fundamental theorem, F'(u) = sin(u^2). With u = x^2 and the chain rule:
-<strong>d/dx F(x^2) = sin(x^4) · 2x.</strong></p>
-<p>(b) Σ 1/(n + k) = (1/n) Σ 1/(1 + k/n). This is a Riemann sum of f(x) = 1/(1 + x) on [0, 1], with width 1/n and sample points k/n.
-<strong>Limit = ∫_0^1 dx/(1 + x) = log 2.</strong></p>
-<p><strong>Check.</strong> (b) A computer sum: n = 100 gives 0.6907, n = 10000 gives 0.69312. log 2 ≈ 0.69315.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"For (a), the fundamental theorem says the derivative of the integral from 0 to u of f is f of u. Here the upper limit is x squared, so I also need the chain rule. The answer is sin of x to the fourth, times 2x.
-For (b), I take out a factor 1 over n. What is left is a sum of f of k over n with f equal to 1 over (1 plus x). That is a Riemann sum on the interval from 0 to 1. So the limit is the integral of 1 over (1 plus x) from 0 to 1, which is log 2."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>State the fundamental theorem.</em> If f is continuous on [a, b], then F(x) = ∫_a^x f(t) dt is differentiable with F' = f. And if G' = f, then ∫_a^b f = G(b) - G(a).</li>
-<li><em>Compute ∫_0^1 x^2 dx with upper sums.</em> Σ_{k=1}^{n} (k/n)^2 (1/n) = n(n + 1)(2n + 1)/(6n^3) → 2/6 = 1/3.</li>
-</ul>
-<hr />
-<h3 id="c15-substitution">C15. Substitution</h3>
-<p><em>Lang XI §1. Reported (both same question: (a) "2022, 1st exam", (b) 2023). Target: 4 min.</em></p>
-<p><strong>Problem.</strong>
-(a) ∫_0^(π/2) cos x / (1 + sin^2 x) dx
-(b) ∫_e^(e^2) (log x)/x dx</p>
-<p><strong>Solution.</strong>
-(a) u = sin x, du = cos x dx. x = 0 gives u = 0, x = π/2 gives u = 1.
-∫_0^1 du/(1 + u^2) = arctan 1 - arctan 0 = <strong>π/4</strong>.</p>
-<p>(b) u = log x, du = dx/x. x = e gives u = 1, x = e^2 gives u = 2.
-∫_1^2 u du = [u^2/2]_1^2 = 2 - 1/2 = <strong>3/2</strong>.</p>
-<p><strong>Check.</strong> (a) The integrand is between 1/2 and 1 times cos x, and ∫ cos x = 1, so the answer must be between 1/2 and 1. π/4 ≈ 0.785. Correct.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"In (a) I see cos x, which is the derivative of sin x. So I substitute u equals sin x. The limits change from 0 and pi over 2 to 0 and 1. The integral becomes 1 over (1 plus u squared), which is arctan. arctan 1 is pi over 4.
-In (b), 1 over x is the derivative of log x, so u equals log x. The limits become 1 and 2, and I integrate u. The answer is 3 over 2."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Common mistake?</em> Changing the variable but keeping the old limits. Change the limits, or go back to x before you put them in.</li>
-</ul>
-<hr />
-<h3 id="c16-integration-by-parts">C16. Integration by parts</h3>
-<p><em>Lang XI §2. Reported (same type: x^n log x and e^x sin x in old lists). Target: 5 min.</em></p>
-<p><strong>Problem.</strong>
-(a) ∫_1^e x log x dx
-(b) ∫ e^x sin x dx</p>
-<p><strong>Solution.</strong>
-(a) u = log x, dv = x dx, so du = dx/x and v = x^2/2.
-∫_1^e x log x dx = [(x^2/2) log x]_1^e - ∫_1^e (x/2) dx = e^2/2 - [x^2/4]_1^e = e^2/2 - e^2/4 + 1/4 = <strong>(e^2 + 1)/4</strong>.</p>
-<p>(b) Call the integral I. Parts with u = sin x, dv = e^x dx:
-I = e^x sin x - ∫ e^x cos x dx.
-Parts again on the new integral: ∫ e^x cos x dx = e^x cos x + ∫ e^x sin x dx = e^x cos x + I.
-So I = e^x sin x - e^x cos x - I, which gives 2I = e^x (sin x - cos x), and
-<strong>I = e^x (sin x - cos x)/2 + C</strong>.</p>
-<p><strong>Check.</strong> (b) Differentiate: [e^x (sin x - cos x) + e^x (cos x + sin x)]/2 = e^x sin x. (a) (e^2 + 1)/4 ≈ 2.10, and the integrand is between 0 and e on [1, e], an interval of length 1.72. Plausible.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"For x log x, I choose u equal to log x, because its derivative is simpler, and dv equal to x dx. Then the new integral is just x over 2. The answer is (e squared plus 1) over 4.
-For e to the x sin x, integration by parts twice brings back the same integral. So I call it I and solve for I like an equation. I is e to the x times (sin x minus cos x) over 2, plus C. I check by differentiating, and I get back e to the x sin x."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>How do you choose u?</em> Choose the factor that gets simpler when differentiated: logs and inverse trig first, then powers of x, then trig and exponentials.</li>
-<li><em>∫ log x dx?</em> x log x - x + C (parts with u = log x, dv = dx).</li>
-</ul>
-<hr />
-<h3 id="c17-partial-fractions">C17. Partial fractions</h3>
-<p><em>Lang XI §4. Part (a) reported (same integrand, 2023; the limits here are my choice). Target: 4 min.</em></p>
-<p><strong>Problem.</strong>
-(a) ∫_0^1 x/(x + 1) dx
-(b) ∫_2^3 dx/(x^2 - 1)</p>
-<p><strong>Solution.</strong>
-(a) Divide first: x/(x + 1) = 1 - 1/(x + 1).
-∫_0^1 = [x - log(x + 1)]_0^1 = <strong>1 - log 2</strong> ≈ 0.307.</p>
-<p>(b) 1/(x^2 - 1) = A/(x - 1) + B/(x + 1). Cover-up: A = 1/(1 + 1) = 1/2, B = 1/(-1 - 1) = -1/2.
-∫_2^3 = (1/2)[log|x - 1| - log|x + 1|]_2^3 = (1/2)[log(2/4) - log(1/3)] = <strong>(1/2) log(3/2)</strong> ≈ 0.203.</p>
-<p><strong>Check.</strong> (b) Recombine: (1/2)[1/(x - 1) - 1/(x + 1)] = (1/2)·2/(x^2 - 1) = 1/(x^2 - 1). (a) The integrand goes from 0 to 1/2 on [0, 1], so the answer must be below 1/2. 0.307 is fine.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"In (a) the top has the same degree as the bottom, so I divide first. x over (x plus 1) is 1 minus 1 over (x plus 1). The integral is 1 minus log 2.
-In (b) the bottom factors as (x minus 1)(x plus 1), so I split into partial fractions. With the cover-up method, the coefficients are one half and minus one half. The integral is half of log of (x minus 1) over (x plus 1), from 2 to 3. That gives half of log 3 over 2."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>What if the denominator has an irreducible quadratic like x^2 + 1?</em> That piece gives an arctan.</li>
-<li><em>Repeated factor (x - 1)^2?</em> Use A/(x - 1) + B/(x - 1)^2.</li>
-</ul>
-<hr />
-<h3 id="c18-trig-integrals-and-a-symmetry-trick">C18. Trig integrals and a symmetry trick</h3>
-<p><em>Lang XI §3. Part (b) reported (same question, old list, 2016). Target: 6 min.</em></p>
-<p><strong>Problem.</strong>
-(a) ∫_0^π sin^2 x dx
-(b) I = ∫_0^π x sin x / (1 + cos^2 x) dx</p>
-<p><strong>Solution.</strong>
-(a) sin^2 x = (1 - cos 2x)/2. ∫_0^π = [x/2 - (sin 2x)/4]_0^π = <strong>π/2</strong>.</p>
-<p>(b) Substitute x = π - u, dx = -du. sin(π - u) = sin u and cos(π - u) = -cos u, so cos^2 does not change. The limits swap, and the minus sign swaps them back:
-I = ∫_0^π (π - u) sin u / (1 + cos^2 u) du = π J - I, where J = ∫<em>0^π sin u / (1 + cos^2 u) du.
-So 2I = π J.
-For J, put w = cos u, dw = -sin u du: J = ∫</em>(-1)^(1) dw/(1 + w^2) = arctan 1 - arctan(-1) = π/2.
-<strong>I = π J / 2 = π^2/4.</strong></p>
-<p><strong>Check.</strong> A computer integration gives 2.4674 for (b), and π^2/4 ≈ 2.4674.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"For sin squared I use the half-angle formula, sin squared equals (1 minus cos 2x) over 2. The cos 2x part integrates to zero over 0 to pi, so I get pi over 2.
-For (b), the x in front makes it hard. But the interval is symmetric under x goes to pi minus x, and the rest of the integrand does not change under that. So I substitute. I get pi times a simpler integral J, minus I again. So 2I equals pi J.
-J is easy with w equals cos u: it becomes the integral of 1 over (1 plus w squared) from minus 1 to 1, which is pi over 2. So I is pi squared over 4."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>∫ sin^3 x dx?</em> Save one sin: ∫ (1 - cos^2 x) sin x dx = -cos x + cos^3 x / 3 + C.</li>
-<li><em>Why does the trick work?</em> For any f, ∫_0^π x f(sin x) dx = (π/2) ∫_0^π f(sin x) dx.</li>
-</ul>
-<hr />
-<h3 id="c19-applications-area-volume-length">C19. Applications: area, volume, length</h3>
-<p><em>Lang XII. Reported (same topic: area between curves 2009 and 2010, "length of a curve"). Target: 6 min.</em></p>
-<p><strong>Problem.</strong>
-(a) Find the area between y = x^2 and y = x + 2.
-(b) The region under y = √x for 0 ≤ x ≤ 4 is rotated about the x-axis. Find the volume.
-(c) Follow-up: the length of y = (2/3)x^(3/2) for 0 ≤ x ≤ 3.</p>
-<p><strong>Solution.</strong>
-(a) Intersections: x^2 = x + 2, so x^2 - x - 2 = (x - 2)(x + 1) = 0, x = -1 and x = 2. The line is above the parabola between them (at x = 0: 2 &gt; 0).
-Area = ∫<em>(-1)^2 (x + 2 - x^2) dx = [x^2/2 + 2x - x^3/3]</em>(-1)^2 = (2 + 4 - 8/3) - (1/2 - 2 + 1/3) = 10/3 + 7/6 = <strong>9/2</strong>.</p>
-<p>(b) Disks of radius √x: V = π ∫_0^4 (√x)^2 dx = π [x^2/2]_0^4 = <strong>8π</strong>.</p>
-<p>(c) y' = x^(1/2), so √(1 + y'^2) = √(1 + x).
-L = ∫_0^3 √(1 + x) dx = (2/3)[(1 + x)^(3/2)]_0^3 = (2/3)(8 - 1) = <strong>14/3</strong>.</p>
-<p><strong>Check.</strong> (a) Area of a parabolic segment = (1/6)|a|(β - α)^3 = (1/6)(1)(3)^3 = 27/6 = 9/2. Same. (c) The straight line from (0, 0) to (3, 2√3) has length √(9 + 12) = √21 ≈ 4.58, and 14/3 ≈ 4.67 is a bit longer. Plausible.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"For the area I find where the curves meet: x equals minus 1 and 2. In between, the line is on top, so I integrate line minus parabola. I get 9 over 2.
-For the volume, each slice is a disk with radius root x, so the area of a slice is pi x. Integrating from 0 to 4 gives 8 pi.
-For arc length, the formula is the integral of root (1 plus y prime squared). Here y prime squared is x, so I integrate root (1 plus x) and get 14 over 3."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Area inside the cardioid r = 1 + cos θ?</em> A = (1/2)∫_0^(2π) (1 + cos θ)^2 dθ = (1/2)(2π + 0 + π) = 3π/2.</li>
-<li><em>Shell method?</em> V = 2π ∫ x f(x) dx when rotating about the y-axis.</li>
-<li><em>Surface of revolution?</em> S = 2π ∫ f(x) √(1 + f'(x)^2) dx.</li>
-</ul>
-<hr />
-<h3 id="c20-improper-integrals">C20. Improper integrals</h3>
-<p><em>Lang X §4. Reported (same topic: exponential distribution integrals 2017, Gamma function 2004, Gaussian integral 2021). Target: 5 min.</em></p>
-<p><strong>Problem.</strong>
-(a) For which p &gt; 0 does ∫<em>1^∞ dx/x^p converge? What is its value?
-(b) Compute ∫<em>0^∞ λ x e^(-λx) dx for λ &gt; 0.
-(c) What is wrong with "∫</em>(-1)^1 dx/x^2 = [-1/x]</em>(-1)^1 = -2"?</p>
-<p><strong>Solution.</strong>
-(a) For p ≠ 1: ∫_1^B x^(-p) dx = (B^(1-p) - 1)/(1 - p).
-If p &gt; 1, B^(1-p) → 0, so the integral <strong>converges to 1/(p - 1)</strong>.
-If p &lt; 1, B^(1-p) → ∞, so it diverges. If p = 1, ∫_1^B dx/x = log B → ∞, diverges.
-<strong>Converges exactly when p &gt; 1.</strong></p>
-<p>(b) Parts on [0, B] with u = x, dv = λ e^(-λx) dx, v = -e^(-λx):
-∫_0^B = [-x e^(-λx)]_0^B + ∫_0^B e^(-λx) dx = -B e^(-λB) + (1 - e^(-λB))/λ.
-As B → ∞: B e^(-λB) → 0 and e^(-λB) → 0. <strong>The integral is 1/λ</strong> (the mean of an exponential distribution).</p>
-<p>(c) 1/x^2 is unbounded at x = 0, inside the interval, so the integral is improper and must be split at 0. ∫<em>0^1 dx/x^2 = lim</em>{ε→0+} (1/ε - 1) = ∞. <strong>It diverges.</strong> Also, a positive function cannot have a negative integral.</p>
-<p><strong>Check.</strong> (a) p = 2: 1/(2 - 1) = 1, and directly [-1/x]_1^∞ = 0 + 1 = 1.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"An improper integral is a limit. I integrate up to B and let B go to infinity. For x to the minus p, I get B to the (1 minus p) minus 1, over 1 minus p. This has a finite limit only when the power of B is negative, so p bigger than 1. Then the value is 1 over (p minus 1). p equal to 1 gives log B, which diverges.
-For (b), I use integration by parts. The boundary term B e to the minus lambda B goes to 0, because the exponential wins. What is left is 1 over lambda.
-For (c), the function blows up at 0, inside the interval, so the fundamental theorem cannot be used directly. Near 0 the integral is infinite, so it diverges. The answer minus 2 is impossible anyway, because the integrand is positive."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Gamma function?</em> Γ(n) = ∫_0^∞ x^(n-1) e^(-x) dx = (n - 1)!, by parts: Γ(n + 1) = n Γ(n). For example ∫_0^∞ x^3 e^(-x) dx = 6.</li>
-<li><em>Gaussian integral?</em> ∫_(-∞)^∞ e^(-x^2) dx = √π. It converges by comparison with e^(-|x|) for |x| ≥ 1. The usual proof squares it and uses polar coordinates, which is beyond Lang Ch. 1 to 15. Know the value and the idea.</li>
-<li><em>∫_0^1 dx/x^p?</em> Converges exactly when p &lt; 1. Example: ∫_0^1 dx/√x = 2.</li>
-</ul>
-<hr />
-<h3 id="c21-taylors-formula">C21. Taylor's formula</h3>
-<p><em>Lang XIII. Reported (same topic: Maclaurin series of sin x, 2011). Target: 6 min.</em></p>
-<p><strong>Problem.</strong>
-(a) Write the Taylor polynomial of degree 3 for e^x at 0. Use it to estimate e^0.1, and bound the error.
-(b) Find the Maclaurin series of sin x and explain why it converges to sin x for every x.</p>
-<p><strong>Solution.</strong>
-(a) Every derivative of e^x is e^x, which is 1 at 0. So P3(x) = 1 + x + x^2/2 + x^3/6.
-P3(0.1) = 1 + 0.1 + 0.005 + 0.000167 = <strong>1.105167</strong>.
-Remainder (Lagrange form): R = e^c x^4/4! for some c between 0 and 0.1. Since e^c &lt; e^0.1 &lt; 3,
-<strong>|R| &lt; 3 · (0.1)^4/24 = 1.25 × 10^(-5)</strong>.
-(The true value is e^0.1 = 1.1051709..., so the true error is about 4.3 × 10^(-6), inside the bound.)</p>
-<p>(b) The derivatives of sin at 0 repeat: sin 0 = 0, cos 0 = 1, -sin 0 = 0, -cos 0 = -1, then again.
-<strong>sin x = x - x^3/3! + x^5/5! - x^7/7! + ... = Σ_{k≥0} (-1)^k x^(2k+1)/(2k + 1)!</strong>
-Every derivative of sin is bounded by 1, so the remainder after the degree n - 1 term satisfies |R_n| ≤ |x|^n/n!. For fixed x, n! grows faster than |x|^n, so R_n → 0. So the series converges to sin x for every x.</p>
-<p><strong>Check.</strong> (b) Differentiate the series term by term: 1 - x^2/2! + x^4/4! - ..., which is the series of cos x. Correct.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"The Taylor polynomial uses the derivatives at the centre. For e to the x they are all 1, so P3 is 1 plus x plus x squared over 2 plus x cubed over 6. At 0.1 that gives 1.105167.
-For the error I use the remainder term: the next derivative at some point c, times x to the fourth over 4 factorial. e to the c is less than 3, so the error is less than 3 times 10 to the minus 4 over 24, about 1.25 times 10 to the minus 5.
-For sine, the derivatives at 0 cycle through 0, 1, 0, minus 1, so only odd powers survive, with alternating signs. All derivatives are at most 1 in size, so the remainder is at most x to the n over n factorial, which goes to 0 for every x."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong> Know these by heart:</p>
-<ul>
-<li>cos x = 1 - x^2/2! + x^4/4! - ...</li>
-<li>e^x = 1 + x + x^2/2! + x^3/3! + ...</li>
-<li>log(1 + x) = x - x^2/2 + x^3/3 - ... for -1 &lt; x ≤ 1</li>
-<li>arctan x = x - x^3/3 + x^5/5 - ... for |x| ≤ 1</li>
-<li>(1 + x)^a = 1 + a x + a(a - 1)x^2/2! + ... for |x| &lt; 1</li>
-</ul>
-<hr />
-<h3 id="c22-series-convergence-tests">C22. Series convergence tests</h3>
-<p><em>Lang XIV §1 to §5. Reported (same questions: (a) old list 2016, (b) old list 2012). Target: 5 min.</em></p>
-<p><strong>Problem.</strong>
-(a) Does Σ_{n≥1} (n^2 + 2)/(n^4 + 3n + 1) converge?
-(b) Let a_n = √(n + 1) - √n. Show that a_n → 0 but Σ a_n diverges.</p>
-<p><strong>Solution.</strong>
-(a) For large n the term behaves like n^2/n^4 = 1/n^2. Direct comparison: for n ≥ 1, n^2 + 2 ≤ 3n^2 and n^4 + 3n + 1 ≥ n^4, so
-0 &lt; (n^2 + 2)/(n^4 + 3n + 1) ≤ 3n^2/n^4 = 3/n^2.
-Σ 3/n^2 converges (p-series with p = 2 &gt; 1), so <strong>the series converges</strong>.
-(Limit comparison also works: the ratio with 1/n^2 goes to 1.)</p>
-<p>(b) a_n = (√(n + 1) - √n)(√(n + 1) + √n)/(√(n + 1) + √n) = 1/(√(n + 1) + √n) → 0.
-Partial sums telescope: S_N = (√2 - √1) + (√3 - √2) + ... + (√(N + 1) - √N) = √(N + 1) - 1 → ∞.
-<strong>So Σ a_n diverges.</strong> The terms going to 0 is necessary but not sufficient.</p>
-<p><strong>Check.</strong> (a) The sum up to n = 20000 is about 1.275 on a computer and stays bounded. (b) S_3 = √4 - 1 = 1, and directly 0.414 + 0.318 + 0.268 = 1.000.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"For (a), I look at the dominant terms: n squared over n to the fourth, so it behaves like 1 over n squared. To be precise, I compare: the top is at most 3 n squared and the bottom is at least n to the fourth. So each term is at most 3 over n squared. The p-series with p equal to 2 converges, so this series converges by comparison.
-For (b), I multiply by the conjugate to see that a n is 1 over (root (n plus 1) plus root n), which goes to 0. But the partial sums telescope to root (N plus 1) minus 1, which goes to infinity. So the series diverges. It is an example that terms going to zero is not enough."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Σ 1/n^p?</em> Converges exactly when p &gt; 1 (integral test).</li>
-<li><em>Ratio test?</em> If |a_(n+1)/a_n| → L, the series converges absolutely for L &lt; 1 and diverges for L &gt; 1. L = 1 tells you nothing.</li>
-<li><em>Σ (-1)^(n+1)/n?</em> Converges by the alternating series test (to log 2), but not absolutely.</li>
-</ul>
-<hr />
-<h3 id="c23-power-series">C23. Power series</h3>
-<p><em>Lang XIV §6, §7. Textbook style. Target: 5 min.</em></p>
-<p><strong>Problem.</strong>
-(a) Find the radius and the interval of convergence of Σ_{n≥1} x^n/(n 3^n).
-(b) Find Σ_{n≥1} n/2^n.</p>
-<p><strong>Solution.</strong>
-(a) Ratio test: |a_(n+1)/a_n| = |x| · n/(3(n + 1)) → |x|/3.
-It converges for |x| &lt; 3 and diverges for |x| &gt; 3. <strong>Radius R = 3.</strong>
-Endpoints: x = 3 gives Σ 1/n, which diverges. x = -3 gives Σ (-1)^n/n, which converges (alternating series test).
-<strong>Interval [-3, 3).</strong> (In fact the sum is -log(1 - x/3).)</p>
-<p>(b) For |x| &lt; 1: Σ_{n≥0} x^n = 1/(1 - x). Differentiate term by term (allowed inside the radius): Σ_{n≥1} n x^(n-1) = 1/(1 - x)^2. Multiply by x: Σ n x^n = x/(1 - x)^2.
-At x = 1/2: (1/2)/(1/4) = <strong>2</strong>.</p>
-<p><strong>Check.</strong> (b) Partial sums: 1/2 + 2/4 + 3/8 + 4/16 + 5/32 = 1.78, and the terms are getting small, so 2 is believable.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"For the radius I use the ratio test. The ratio of consecutive terms goes to |x| over 3, so the series converges when |x| is less than 3. The radius is 3. The ratio test says nothing at the endpoints, so I check them separately. At 3 I get the harmonic series, which diverges. At minus 3 I get the alternating harmonic series, which converges. So the interval is from minus 3 included to 3 excluded.
-For (b), I start from the geometric series, 1 over (1 minus x). I differentiate it term by term and multiply by x. That gives x over (1 minus x) squared. At one half, that is 2."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Can you always differentiate a power series term by term?</em> Yes, inside the radius of convergence, and the radius stays the same.</li>
-<li><em>Radius of Σ x^n/n!?</em> Infinite (the ratio goes to 0).</li>
-</ul>
-<hr />
-<h3 id="c24-vectors-lines-and-planes">C24. Vectors, lines and planes</h3>
-<p><em>Lang XV. Parts (a) to (c) textbook style. Part (d) is the reported 2012 topic (angle between vectors and a vector orthogonal to both), also practised in LA1. Target: 7 min.</em></p>
-<p><strong>Problem.</strong> P = (1, 2, 3), N = (2, -1, 2), Q = (3, 0, 1).
-(a) Find the plane through P with normal vector N.
-(b) Find the distance from Q to this plane.
-(c) Give a parametric equation of the line through P and Q.
-(d) Treat P = (1, 2, 3) as a vector. Find the angle between P and N, and find a nonzero vector orthogonal to both.</p>
-<p><strong>Solution.</strong>
-(a) N·(X - P) = 0: 2(x - 1) - (y - 2) + 2(z - 3) = 0, so <strong>2x - y + 2z = 6</strong>.</p>
-<p>(b) The distance is the length of the projection of Q - P onto N:
-Q - P = (2, -2, -2), N·(Q - P) = 4 + 2 - 4 = 2, ||N|| = √(4 + 1 + 4) = 3.
-<strong>Distance = |2|/3 = 2/3.</strong>
-(Formula: |2·3 - 0 + 2·1 - 6|/3 = 2/3.)</p>
-<p>(c) <strong>X(t) = P + t(Q - P) = (1 + 2t, 2 - 2t, 3 - 2t).</strong> t = 0 gives P, t = 1 gives Q.</p>
-<p>(d) P·N = 2 - 2 + 6 = 6, ||P|| = √(1 + 4 + 9) = √14, ||N|| = 3.
-cos θ = 6/(3√14) = 2/√14 ≈ 0.535, so <strong>θ = arccos(2/√14) ≈ 57.7 degrees</strong>.
-For w = (a, b, c) I need a + 2b + 3c = 0 and 2a - b + 2c = 0. The second gives b = 2a + 2c. Put it in the first: 5a + 7c = 0. Take a = 7, c = -5, then b = 4.
-<strong>w = (7, 4, -5)</strong> (any nonzero multiple also works). Lang's chapter has no cross product, so solve the two equations. The cross product P × N gives the same vector.</p>
-<p><strong>Check.</strong> (b) The foot of the perpendicular is Q + tN with 2(3 + 2t) + t + 2(1 + 2t) = 6, so t = -2/9, foot (23/9, 2/9, 5/9). Distance = |t| · ||N|| = (2/9)·3 = 2/3. Same. (d) w·P = 7 + 8 - 15 = 0 and w·N = 14 - 4 - 10 = 0.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"A plane is all points X where X minus P is perpendicular to the normal. So N dot (X minus P) equals 0, which gives 2x minus y plus 2z equals 6. I check that P satisfies it: 2 minus 2 plus 6 is 6.
-For the distance, I project the vector from P to Q onto the normal direction. The dot product is 2 and the length of N is 3, so the distance is two thirds.
-The line through P and Q starts at P and moves in the direction Q minus P.
-For the angle, cos theta is P dot N over the two lengths: 6 over 3 root 14, which is about 0.535, so about 58 degrees. For an orthogonal vector, I need zero dot product with both. That is two equations in three unknowns, so I fix one variable and solve. I get (7, 4, -5), and I check both dot products are zero."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Angle between two planes?</em> The angle between their normal vectors.</li>
-<li><em>Projection of A along B?</em> (A·B / B·B) B. This is the same formula as Strang 4.2.</li>
-</ul>
-<hr />
-<h3 id="c25-a-second-order-differential-equation-official-example">C25. A second-order differential equation (official example)</h3>
-<p><em>Not a chapter title in Lang Ch. 1 to 15 (see <code>00_syllabus_and_free_resources.md</code>, "Extra"). Strang 6.3 gives the matrix view. Official example. Target: 5 min.</em></p>
-<p><strong>Problem.</strong> Solve f'' + 2f' - 3f = 0 with f(0) = 0 and f'(0) = 4.</p>
-<p><strong>Solution.</strong>
-Try f = e^(rx). Then r^2 + 2r - 3 = 0, which is (r + 3)(r - 1) = 0, so r = 1 or r = -3.
-General solution: f(x) = A e^x + B e^(-3x).
-f(0) = A + B = 0 and f'(0) = A - 3B = 4. Subtract: 4B = -4, so B = -1 and A = 1.
-<strong>f(x) = e^x - e^(-3x).</strong></p>
-<p><strong>Check.</strong> f' = e^x + 3e^(-3x), f'' = e^x - 9e^(-3x).
-f'' + 2f' - 3f = (1 + 2 - 3)e^x + (-9 + 6 + 3)e^(-3x) = 0. f(0) = 1 - 1 = 0. f'(0) = 1 + 3 = 4.</p>
-<p><strong>Say it out loud.</strong></p>
-<blockquote>
-<p>"This is a linear equation with constant coefficients, so I try e to the r x. Putting it in gives the characteristic equation r squared plus 2r minus 3 equals 0. The roots are 1 and minus 3. So the general solution is A e to the x plus B e to the minus 3x.
-The two conditions give two equations: A plus B is 0, and A minus 3B is 4. So B is minus 1 and A is 1. The solution is e to the x minus e to the minus 3x. I check by putting it back into the equation and the initial conditions."</p>
-</blockquote>
-<p><strong>Follow-ups.</strong></p>
-<ul>
-<li><em>Repeated root,</em> y'' - 2y' + y = 0: y = (A + Bx)e^x.</li>
-<li><em>Complex roots,</em> y'' + 4y = 0: y = A cos 2x + B sin 2x.</li>
-<li><em>First order,</em> y' = ky: y = Ce^(kx). This one is in Lang VIII §4.</li>
-<li><em>Separable (lower priority: outside both set books, asked only in an old 2011 exam),</em> y' = xy: dy/y = x dx, so y = Ce^(x^2/2).</li>
-<li><em>Matrix view (Strang 6.3):</em> u = (f, f') gives u' = [0 1; 3 -2] u. The eigenvalues of this matrix are 1 and -3, the same numbers as r.</li>
-</ul>
-<hr />
-<h2 id="where-to-find-more-problems-like-these">Where to find more problems like these</h2>
-<ul>
-<li>Linear algebra: MIT 18.06 Spring 2010 problem sets PS1 to PS10 (4th edition numbering) and exams, all with solutions, in <code>resources/01_Linear_Algebra_Strang/</code>. Strang's "Answers to selected questions" covers Problem Sets 1.1 to 7.3.</li>
-<li>Calculus: MIT 18.01SC Exams 1 to 4 and Final with solutions, OpenStax Calculus Vol. 1 to 3 exercises (odd answers at the back), and Paul's Notes practice problems with solutions (private use only), in <code>resources/02_Calculus_Lang/</code>.</li>
-<li>Past NAIST questions: <code>00_syllabus_and_free_resources.md</code> section 2 and 3, and <code>../02_Interview_Strategy/00_intel_report.md</code> section 3.9.</li>
-</ul>
+<p><strong>0.346.</strong> Each of the 5 failures is from A with probability 2/5, independently.</p>
 </article>
 <div class="donebox"><label><input type="checkbox" class="done-cb" data-ch="h29"> Mark chapter 29 as done</label></div>
-<nav class="pager" aria-label="Previous and next"><a class="prev" href="ch28.html"><span class="lbl">← Previous</span>28. Linear algebra and calculus checklist (from NAIST)</a><a class="next" href="ch30.html"><span class="lbl">Next →</span>30. Statistics primer (from NAIST)</a></nav>
+<nav class="pager" aria-label="Previous and next"><a class="prev" href="ch28.html"><span class="lbl">← Previous</span>28. Stochastic processes and reliability</a><a class="next" href="ch30.html"><span class="lbl">Next →</span>30. Statistics</a></nav>
 </main>
 </div>
 <script>
