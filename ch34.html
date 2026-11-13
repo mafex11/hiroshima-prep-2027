@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>34. Reliability and probability primer · Hiroshima meeting prep</title>
+<title>34. Information theory and coding · Hiroshima meeting prep</title>
 <style>
 :root{--bg:#fbfaf7;--fg:#1f2328;--muted:#5f6670;--line:#e3e0d8;--card:#f3f1ea;--link:#0b57d0;--code:#efede6;--accent:#2f5d8a;--fill:#fff2a8}
 *{box-sizing:border-box}
@@ -135,123 +135,837 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <li data-ch="h30"><a href="ch30.html"><span class="n">30.</span>Statistics</a></li>
 <li data-ch="h31"><a href="ch31.html"><span class="n">31.</span>Linear algebra and calculus</a></li>
 <li data-ch="h32"><a href="ch32.html"><span class="n">32.</span>CS basics</a></li>
-<li data-ch="h33"><a href="ch33.html"><span class="n">33.</span>How to answer maths out loud</a></li>
-<li data-ch="h34"><a href="ch34.html" aria-current="page"><span class="n">34.</span>Reliability and probability primer</a></li>
-<li data-ch="h35"><a href="ch35.html"><span class="n">35.</span>Lab topics: short notes</a></li>
-<li data-ch="h36"><a href="ch36.html"><span class="n">36.</span>Linear algebra and calculus checklist (from NAIST)</a></li>
-<li data-ch="h37"><a href="ch37.html"><span class="n">37.</span>Linear algebra and calculus problems (from NAIST)</a></li>
-<li data-ch="h38"><a href="ch38.html"><span class="n">38.</span>Statistics primer (from NAIST)</a></li>
-<li data-ch="h39"><a href="ch39.html"><span class="n">39.</span>Working maths out loud (from NAIST)</a></li>
+<li data-ch="h33"><a href="ch33.html"><span class="n">33.</span>C programming basics</a></li>
+<li data-ch="h34"><a href="ch34.html" aria-current="page"><span class="n">34.</span>Information theory and coding</a></li>
+<li data-ch="h35"><a href="ch35.html"><span class="n">35.</span>Number formats and logic circuits</a></li>
+<li data-ch="h36"><a href="ch36.html"><span class="n">36.</span>Machine learning basics</a></li>
+<li data-ch="h37"><a href="ch37.html"><span class="n">37.</span>Discrete maths and logic</a></li>
+<li data-ch="h38"><a href="ch38.html"><span class="n">38.</span>How to answer maths out loud</a></li>
+<li data-ch="h39"><a href="ch39.html"><span class="n">39.</span>Reliability and probability primer</a></li>
+<li data-ch="h40"><a href="ch40.html"><span class="n">40.</span>Lab topics: short notes</a></li>
+<li data-ch="h41"><a href="ch41.html"><span class="n">41.</span>Linear algebra and calculus checklist (from NAIST)</a></li>
+<li data-ch="h42"><a href="ch42.html"><span class="n">42.</span>Linear algebra and calculus problems (from NAIST)</a></li>
+<li data-ch="h43"><a href="ch43.html"><span class="n">43.</span>Statistics primer (from NAIST)</a></li>
+<li data-ch="h44"><a href="ch44.html"><span class="n">44.</span>Working maths out loud (from NAIST)</a></li>
 <li class="part">Part 6: The lab, their papers, the professors</li>
-<li data-ch="h40"><a href="ch40.html"><span class="n">40.</span>Prof. Zheng in depth</a></li>
-<li data-ch="h41"><a href="ch41.html"><span class="n">41.</span>The lab, Prof. Dohi and Prof. Okamura</a></li>
-<li data-ch="h42"><a href="ch42.html"><span class="n">42.</span>Professors you may meet</a></li>
-<li data-ch="h43"><a href="ch43.html"><span class="n">43.</span>How Japanese professors run these meetings</a></li>
-<li data-ch="h44"><a href="ch44.html"><span class="n">44.</span>Papers guide: lab and cited papers</a></li>
-<li data-ch="h45"><a href="ch45.html"><span class="n">45.</span>New lab papers since October</a></li>
-<li data-ch="h46"><a href="ch46.html"><span class="n">46.</span>Questions on their papers: N-version, AI, testing (44)</a></li>
-<li data-ch="h47"><a href="ch47.html"><span class="n">47.</span>Questions on their papers: reliability models (83)</a></li>
+<li data-ch="h45"><a href="ch45.html"><span class="n">45.</span>Prof. Zheng in depth</a></li>
+<li data-ch="h46"><a href="ch46.html"><span class="n">46.</span>The lab, Prof. Dohi and Prof. Okamura</a></li>
+<li data-ch="h47"><a href="ch47.html"><span class="n">47.</span>Professors you may meet</a></li>
+<li data-ch="h48"><a href="ch48.html"><span class="n">48.</span>How Japanese professors run these meetings</a></li>
+<li data-ch="h49"><a href="ch49.html"><span class="n">49.</span>Papers guide: lab and cited papers</a></li>
+<li data-ch="h50"><a href="ch50.html"><span class="n">50.</span>New lab papers since October</a></li>
+<li data-ch="h51"><a href="ch51.html"><span class="n">51.</span>Questions on their papers: N-version, AI, testing (44)</a></li>
+<li data-ch="h52"><a href="ch52.html"><span class="n">52.</span>Questions on their papers: reliability models (83)</a></li>
 <li class="part">Part 7: Meeting day</li>
-<li data-ch="h48"><a href="ch48.html"><span class="n">48.</span>Meeting-day checklist</a></li>
-<li data-ch="h49"><a href="ch49.html"><span class="n">49.</span>How to address them, and etiquette</a></li>
-<li data-ch="h50"><a href="ch50.html"><span class="n">50.</span>Email templates</a></li>
+<li data-ch="h53"><a href="ch53.html"><span class="n">53.</span>Meeting-day checklist</a></li>
+<li data-ch="h54"><a href="ch54.html"><span class="n">54.</span>How to address them, and etiquette</a></li>
+<li data-ch="h55"><a href="ch55.html"><span class="n">55.</span>Email templates</a></li>
 <li class="part">Reference</li>
-<li data-ch="h51"><a href="ch51.html"><span class="n">51.</span>Glossary</a></li>
-<li data-ch="h52"><a href="ch52.html"><span class="n">52.</span>Every lab paper (index)</a></li>
-<li data-ch="h53"><a href="ch53.html"><span class="n">53.</span>Slide text and sources</a></li>
-<li data-ch="h54"><a href="ch54.html"><span class="n">54.</span>How the 2 Nov meeting went</a></li>
+<li data-ch="h56"><a href="ch56.html"><span class="n">56.</span>Glossary</a></li>
+<li data-ch="h57"><a href="ch57.html"><span class="n">57.</span>Every lab paper (index)</a></li>
+<li data-ch="h58"><a href="ch58.html"><span class="n">58.</span>Slide text and sources</a></li>
+<li data-ch="h59"><a href="ch59.html"><span class="n">59.</span>How the 2 Nov meeting went</a></li>
 </ul></nav>
 <main class="page">
 <article>
 <header class="chead">
 <p class="part">Part 5: Maths</p>
-<p class="chno">Chapter 34 of 54</p>
-<h1>Reliability and probability primer</h1>
-<p class="when"><strong>When and how long:</strong> Day 1: sections 1 to 4.</p>
+<p class="chno">Chapter 34 of 59</p>
+<h1>Information theory and coding</h1>
+<p class="when"><strong>When and how long:</strong> 30 minutes.</p>
 </header>
 
-<p>The Dependable Systems Lab measures software quality with probability models. This page covers the ideas in your proposal and the basics the professors may ask about in the meeting. Sections 1 to 6 each have a small worked example. Practise saying each idea in one or two sentences. Every number on this page was recomputed with Python on 13 Nov 2026, and all of them are correct.</p>
+<p>Part II Question 1 is information or coding theory in all six program sets from August 2023 to January 2026, so a professor could ask you a quick question on it out loud, even though it is far from your plan. This file covers <a href="ch10.html">Aug 2023 II-Q1</a> (a prefix code, its tree, the second extension, unique decodability), <a href="ch09.html">Jan 2024 II-Q1</a> (an erasure channel: conditional entropy, mutual information, capacity), <a href="ch08.html">Aug 2024 II-Q1</a> (entropy, a code that is not instantaneous, Huffman on the second extension, H(U²) = 2H(U)), <a href="ch07.html">Jan 2025 II-Q1</a> (decoding a (7,4) Hamming code), <a href="ch06.html">Aug 2025 II-Q1</a> (Hamming distance, generator matrix, syndrome), <a href="ch05.html">Jan 2026 II-Q1</a> (a memoryless source, its entropy and its second extension) and the <a href="ch11.html">older set II-Q1</a> (entropy, a Huffman code, H(S) ≤ L̄).</p>
+<p>Part 1 is the short list of ideas to say out loud. Part 2 has 16 questions (IT1 to IT16), each with a spoken answer, the full working and three follow-ups.</p>
+<p><strong>How the answers were checked.</strong> Every number in this file was computed in Python 3.14 on 13 Nov 2026 (scripts in <code>/tmp/fu_it/</code>). The three C programs were compiled with Apple clang 21 and run, and their real output is pasted under each one. The parity truth table, the Hamming (7,4) syndromes, the unique-decodability checks (Sardinas-Patterson) and the claims about two-dimensional parity were checked by enumerating every case. Shannon's English figures were checked against his 1951 paper and the DEFLATE fact against RFC 1951. The Yuki secret-filter fact in IT1 was checked against the "Secret filter" section of yuki-2.0/docs/MEMORY.md.</p>
+<p><strong>Notation.</strong> log means log base 2 unless written ln. h(p) = -p log p - (1 - p) log(1 - p) is the binary entropy function. "Bits" means the unit of log base 2.</p>
+<p><strong>Handy values</strong> (the question sets say "use log₂ 3 ≈ 1.6"):</p>
+<table>
+<thead>
+<tr>
+<th>value</th>
+<th></th>
+<th>value</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>log 3</td>
+<td>1.585</td>
+<td>h(0.1)</td>
+<td>0.469</td>
+</tr>
+<tr>
+<td>log 5</td>
+<td>2.322</td>
+<td>h(0.2)</td>
+<td>0.722</td>
+</tr>
+<tr>
+<td>log 6</td>
+<td>2.585</td>
+<td>h(0.25)</td>
+<td>0.811</td>
+</tr>
+<tr>
+<td>log 7</td>
+<td>2.807</td>
+<td>h(1/3)</td>
+<td>0.918</td>
+</tr>
+<tr>
+<td>log 10</td>
+<td>3.322</td>
+<td>h(0.4)</td>
+<td>0.971</td>
+</tr>
+<tr>
+<td>log 26</td>
+<td>4.700</td>
+<td>h(0.01)</td>
+<td>0.081</td>
+</tr>
+</tbody>
+</table>
 <hr />
-<h2 id="1-probability-basics">1. Probability basics</h2>
+<h1 id="part-1-short-notes">Part 1. Short notes</h1>
+<h2 id="11-information-and-entropy">1.1 Information and entropy</h2>
 <ul>
-<li><strong>Probability</strong> of an event: a number from 0 to 1.</li>
-<li><strong>Independent events:</strong> P(A and B) = P(A) × P(B). Example: two fair coins both land heads with 0.5 × 0.5 = 0.25.</li>
-<li><strong>Expected value</strong> E[X]: the long-run average. A die: (1+2+3+4+5+6)/6 = 3.5.</li>
-<li><strong>Variance</strong> Var(X) = E[X²] − (E[X])²: how spread out X is.</li>
-<li><strong>Binomial:</strong> the number of successes in k independent tries, each with chance p. P(exactly j) = C(k, j) p^j (1 − p)^(k − j).</li>
+<li><strong>Information of one outcome.</strong> I(x) = -log p(x) bits. Say: "A rare outcome is more surprising, so it carries more information: a one-in-a-thousand event carries about 10 bits."</li>
+<li><strong>Entropy.</strong> H(X) = -Σ p(x) log p(x). Say: "Entropy is the average information per outcome, roughly how many fair yes-or-no questions I need on average to learn the outcome."</li>
+<li><strong>Bounds.</strong> 0 ≤ H(X) ≤ log n for n outcomes. It is 0 only when one outcome is certain, and log n only when all n are equally likely.</li>
+<li><strong>Binary entropy.</strong> h(p) for a yes-or-no event with probability p. h(0.5) = 1 bit, h(0.1) = 0.469 bits. Say: "A fair coin carries 1 bit; a coin that lands heads 90 percent of the time carries less than half a bit, because it is predictable."</li>
+<li><strong>Joint entropy.</strong> H(X, Y) = -Σ p(x, y) log p(x, y): the entropy of the pair taken as one variable.</li>
+<li><strong>Conditional entropy.</strong> H(Y | X) = Σ_x p(x) H(Y | X = x). Say: "The uncertainty left in Y once I know X, averaged over X."</li>
+<li><strong>Chain rule.</strong> H(X, Y) = H(X) + H(Y | X) = H(Y) + H(X | Y).</li>
+<li><strong>Conditioning reduces entropy on average.</strong> H(Y | X) ≤ H(Y), with equality only if X and Y are independent. One particular H(Y | X = x) can still be larger than H(Y) (IT3).</li>
+<li><strong>Mutual information.</strong> I(X; Y) = H(Y) - H(Y | X) = H(X) - H(X | Y) = H(X) + H(Y) - H(X, Y). Say: "How much knowing one variable tells me about the other. It is symmetric, never negative, and zero exactly when they are independent." It is at most min(H(X), H(Y)).</li>
+<li><strong>Relative entropy (Kullback-Leibler divergence).</strong> D(p || q) = Σ p(x) log(p(x)/q(x)) ≥ 0, zero only when p = q, and not symmetric. Mutual information is D(p(x, y) || p(x) p(y)), the distance of the joint distribution from independence. Akaike built AIC as an estimate of this kind of distance between the true distribution and a fitted model.</li>
 </ul>
-<p><strong>Check yourself:</strong> 3 independent runs, each fails with p = 0.1. Chance all 3 fail? 0.1³ = 0.001.</p>
-<h2 id="2-why-independent-failures-is-usually-wrong-eckhardt-and-lee">2. Why "independent failures" is usually wrong (Eckhardt and Lee)</h2>
-<p>Let θ(x) be the chance that a randomly built version fails on input x. Inputs differ: some are easy (θ near 0), some are hard (θ high).</p>
+<h2 id="12-sources">1.2 Sources</h2>
 <ul>
-<li>One version fails with p = E[θ(X)].</li>
-<li>Two versions <strong>both</strong> fail with E[θ(X)²] = p² + Var θ(X).</li>
+<li><strong>Memoryless source.</strong> Each symbol is drawn independently with the same fixed probabilities. Say: "The past tells you nothing about the next symbol."</li>
+<li><strong>Markov source.</strong> The next symbol's probabilities depend on the current state (usually the last symbol) through a transition matrix P. Its stationary distribution π solves π = πP.</li>
+<li><strong>Entropy rate of a Markov source.</strong> H = Σ_i π_i H(row i of P). Say: "Memory makes a source more predictable, so its entropy per symbol is below that of a memoryless source with the same symbol frequencies."</li>
+<li><strong>Extensions.</strong> The n-th extension Sⁿ treats each block of n symbols as one symbol, so q symbols give qⁿ blocks. For a memoryless source, P(block) is a product and H(Sⁿ) = n H(S). For a stationary Markov source, H(S²) = 2H(S) - I(S₁; S₂), which is smaller.</li>
 </ul>
-<p>So unless every input is equally hard (Var θ = 0), two versions fail together <strong>more</strong> often than p², the independent value. That's the Eckhardt and Lee result (1985).</p>
-<p><strong>Worked example:</strong> half the inputs have θ = 0, half have θ = 0.2. Then p = 0.1. Independent guess for "both fail": 0.1² = 0.01. Real value: E[θ²] = 0.5 × 0 + 0.5 × 0.04 = 0.02. Twice as many joint failures.</p>
-<h2 id="3-majority-voting-2-out-of-3">3. Majority voting (2 out of 3)</h2>
-<p>Three versions vote. The vote is wrong if at least 2 of 3 fail.</p>
+<h2 id="13-source-coding">1.3 Source coding</h2>
 <ul>
-<li>On one input with chance θ: P(vote fails) = 3θ²(1 − θ) + θ³ = <strong>3θ² − 2θ³</strong>.</li>
-<li>Over all inputs: E[3θ² − 2θ³].</li>
-<li>If failures were independent with p = 0.1: 3(0.01) − 2(0.001) = 0.028. Much better than one version (0.1).</li>
-<li>With the example above (θ = 0 or 0.2): 0.5 × (3 × 0.04 − 2 × 0.008) = 0.5 × 0.104 = 0.052. Voting still helps, but less than independence promises.</li>
+<li><strong>Classes of codes.</strong> Nonsingular (distinct codewords) contains uniquely decodable (every bit string splits one way) contains instantaneous, also called prefix-free (no codeword is the start of another). Say: "Prefix-free means I can output each symbol the moment its last bit arrives."</li>
+<li><strong>Kraft inequality.</strong> A binary prefix code with lengths l₁, ..., l_q exists exactly when Σ 2^(-lᵢ) ≤ 1. McMillan showed that every uniquely decodable code satisfies the same inequality, so nothing is lost by insisting on a prefix code.</li>
+<li><strong>Source coding theorem.</strong> For any uniquely decodable code, L̄ ≥ H. The best prefix code has H ≤ L̄ &lt; H + 1. Coding blocks of n symbols gives H ≤ L̄ₙ/n &lt; H + 1/n, so the cost per symbol can get as close to H as we like.</li>
+<li><strong>Huffman's algorithm.</strong> Repeatedly merge the two least likely items until one is left; each merge adds one bit to every symbol inside it. It gives the shortest average length among codes that code one symbol at a time. L̄ = H exactly when every probability is a power of 1/2.</li>
+<li><strong>Efficiency.</strong> H / L̄. Redundancy is 1 minus the efficiency.</li>
 </ul>
-<p><strong>Say it simply:</strong> voting helps most when versions make different mistakes. When they make the same mistakes, voting helps less.</p>
-<h2 id="4-the-beta-binomial-model-your-rq1">4. The beta-binomial model (your RQ1)</h2>
+<h2 id="14-channels">1.4 Channels</h2>
 <ul>
-<li>θ varies from input to input between 0 and 1. A <strong>Beta(a, b)</strong> distribution is a flexible model for that. Mean = a / (a + b).</li>
-<li>On one input, the number of failing runs out of k is then <strong>beta-binomial</strong>.</li>
-<li><strong>Intraclass correlation</strong> ρ = 1 / (a + b + 1). ρ = 0 means runs fail independently. Bigger ρ means they fail together more.</li>
-<li><strong>Overdispersion:</strong> the counts are more spread out than a plain binomial would give. That's the sign of shared failures.</li>
-<li><strong>Fitting:</strong> maximum likelihood (pick a and b that make the observed counts most likely). Uncertainty: <strong>bootstrap</strong> over runs (resample runs many times, refit, look at the spread).</li>
+<li><strong>Channel.</strong> A table of P(y | x): what comes out given what went in.</li>
+<li><strong>Capacity.</strong> C = max over input distributions p(x) of I(X; Y), in bits per channel use. Say: "Capacity is the most information per use that can get through reliably."</li>
+<li><strong>Binary symmetric channel (BSC)</strong> with flip probability p: C = 1 - h(p), reached with equally likely inputs. For p = 0.1, C = 0.531.</li>
+<li><strong>Binary erasure channel (BEC)</strong> with erasure probability ε: C = 1 - ε. An erasure is less harmful than a flip because the receiver knows which symbols it lost.</li>
+<li><strong>Channel coding theorem (Shannon).</strong> Every rate below C can be sent with error probability as small as we like, using long enough blocks; no rate above C can.</li>
 </ul>
-<p><strong>Worked example:</strong> a = 1, b = 9. Mean failure chance = 0.1. ρ = 1/11 ≈ 0.09, so there is some shared failure.</p>
-<h2 id="5-nhpp-software-reliability-growth-models">5. NHPP software reliability growth models</h2>
-<p>When testers find and fix faults over time, the number of failures found by time t is modelled as a <strong>non-homogeneous Poisson process</strong> (NHPP) with mean value function m(t).</p>
+<h2 id="15-error-detection-and-correction">1.5 Error detection and correction</h2>
 <ul>
-<li><strong>Goel-Okumoto:</strong> m(t) = ω(1 − e^(−bt)). ω = total expected faults, b = detection rate.</li>
-<li>Failure intensity λ(t) = m'(t) = ωb e^(−bt): it falls as faults are fixed.</li>
-<li><strong>Remaining faults</strong> at time t: ω − m(t).</li>
+<li><strong>Parity bit.</strong> The XOR of the data bits, so the whole word has an even number of 1s. It detects any odd number of flipped bits, misses any even number, and cannot say which bit is wrong.</li>
+<li><strong>Hamming distance.</strong> d(x, y) = the number of positions where x and y differ. The minimum distance d of a code is the smallest distance between two different codewords.</li>
+<li><strong>What d buys.</strong> A code with minimum distance d detects up to d - 1 errors, or corrects up to ⌊(d - 1)/2⌋. To correct t and also detect s ≥ t at the same time, it needs d ≥ t + s + 1.</li>
+<li><strong>Linear codes.</strong> Codewords are x = mG (generator matrix G). The check matrix H has H xᵀ = 0 for every codeword. The syndrome of a received word, s = H yᵀ, equals H eᵀ, so it depends only on the error pattern e.</li>
+<li><strong>Hamming (7,4).</strong> 4 data bits, 3 check bits, d = 3, corrects any single error. The columns of H are all seven nonzero 3-bit vectors, so a nonzero syndrome names the wrong bit. Adding one overall parity bit gives the extended (8,4) code with d = 4: single error correction, double error detection (SECDED), as in ECC memory.</li>
+<li><strong>Detection or correction.</strong> Detection plus resending (ARQ) needs less redundancy. Correction without resending (forward error correction) is used when resending is slow or impossible: memory, storage, space links.</li>
+<li><strong>CRC.</strong> The bits are read as a polynomial and the remainder after dividing by a fixed generator of degree r is sent. It catches every burst of length r or less when the generator has a constant term. Ethernet uses a 32-bit CRC.</li>
 </ul>
-<p><strong>Worked example:</strong> ω = 100, b = 0.1 per week. After 10 weeks: m(10) = 100(1 − e^(−1)) ≈ 63.2 faults found, about 37 left.</p>
-<p>The lab's tool <strong>pysrat</strong> (Prof. Okamura) fits these models to data. Your proposal's optional field-data part uses an infinite-server queue idea: each merged change adds faults that show up after a delay, m(t) = Σ ω_j G(t − τ_j).</p>
-<h2 id="6-availability-and-markov-chains-prof-zhengs-other-work">6. Availability and Markov chains (Prof. Zheng's other work)</h2>
+<h2 id="16-where-this-meets-the-labs-work">1.6 Where this meets the lab's work</h2>
 <ul>
-<li><strong>Availability</strong> = the fraction of time a system works. With mean time to failure MTTF and mean time to repair MTTR: A = MTTF / (MTTF + MTTR).</li>
-<li><strong>Markov chain:</strong> a system jumps between states (up, degraded, down) with fixed rates; the long-run share of time in each state gives availability.</li>
-<li><strong>Software rejuvenation:</strong> restart a system before it ages into failure (memory leaks, etc.). The question is when to restart to get the best availability. <strong>Checkpointing</strong> saves state so a failure loses less work.</li>
+<li>A 2-out-of-3 vote over program versions is a repetition code of length 3 (d = 3): it outvotes one wrong version. The coding numbers assume independent errors, which is exactly what Eckhardt and Lee showed fails for versions that share hard inputs: the vote fails with probability E[3θ² - 2θ³], not 3p² - 2p³.</li>
+<li>Comparing two versions only detects (like d = 2). Two versions with the same wrong output are like an error pattern that is itself a codeword: invisible.</li>
+<li>pysrat reports an AIC for each fitted NHPP model, and AIC is an estimate of relative entropy. So "which model fits best" is an information theory question.</li>
 </ul>
-<p><strong>Worked example:</strong> MTTF = 1,000 hours, MTTR = 10 hours. A = 1000 / 1010 ≈ 0.990.</p>
-<h2 id="7-confidence-intervals-and-the-bootstrap">7. Confidence intervals and the bootstrap</h2>
-<ul>
-<li>A <strong>95% confidence interval</strong> is a range built so that, over many repeats, 95% of such ranges contain the true value.</li>
-<li><strong>Bootstrap:</strong> resample your data with replacement many times, compute the statistic each time, and take the middle 95% of those values.</li>
-</ul>
-<h2 id="8-agreement-between-checkers-and-labels-cohens-kappa">8. Agreement between checkers and labels (Cohen's kappa)</h2>
-<p>κ = (observed agreement − chance agreement) / (1 − chance agreement). κ = 1 is perfect agreement, 0 is chance level. Your plan keeps a checker only if it agrees with your hand labels on at least 90% of 20 or more examples, and reports κ.</p>
 <hr />
-<h2 id="15-practice-questions-with-answers">15 practice questions (with answers)</h2>
+<h1 id="part-2-questions-with-spoken-answers">Part 2. Questions with spoken answers</h1>
+<p><strong>IT1. What is entropy? Compute it for a fair coin and for a coin that lands heads with probability 0.9.</strong></p>
+<p><strong>Say it:</strong> "Entropy is the average information, or surprise, per outcome: H is minus the sum of p log base 2 of p, in bits. A fair coin has 1 bit. The 0.9 coin has about 0.47 bits, because it is more predictable."</p>
+<p><strong>Worked detail:</strong></p>
+<pre><code>H(fair) = -(0.5 log 0.5 + 0.5 log 0.5) = 0.5 + 0.5 = 1 bit
+H(0.9)  = -(0.9 log 0.9 + 0.1 log 0.1) = 0.1368 + 0.3322 = 0.469 bits
+</code></pre>
+<p>Entropy is largest for the fair coin and falls to 0 as p goes to 0 or 1. The rare outcome (tails, 0.1) carries -log 0.1 = 3.32 bits of information, but it happens only a tenth of the time.</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li>Two independent versions each fail with 0.2. Both fail? <strong>0.04.</strong></li>
-<li>Same, but half the inputs have θ = 0 and half θ = 0.4. Both fail? <strong>E[θ²] = 0.5 × 0.16 = 0.08</strong>, double the independent value.</li>
-<li>Vote failure on an input with θ = 0.1? <strong>3(0.01) − 2(0.001) = 0.028.</strong></li>
-<li>Beta(2, 18): mean and ρ? <strong>Mean 0.1, ρ = 1/21 ≈ 0.048.</strong></li>
-<li>What does ρ = 0 mean? <strong>Runs fail independently.</strong></li>
-<li>Goel-Okumoto with ω = 50, b = 0.2: faults found by t = 5? <strong>50(1 − e^(−1)) ≈ 31.6.</strong></li>
-<li>Failure intensity at t = 0 for the same model? <strong>ωb = 10.</strong></li>
-<li>MTTF 500 h, MTTR 5 h: availability? <strong>500/505 ≈ 0.990.</strong></li>
-<li>Why can't boundary value inputs estimate a failure probability? <strong>Too few and not random: 30 to 50 chosen inputs don't represent the input distribution.</strong></li>
-<li>What is overdispersion? <strong>More spread in counts than a binomial allows; a sign of correlated failures.</strong></li>
-<li>Why bootstrap over runs, not over inputs? <strong>The same runs meet every input, so runs are the independent units.</strong></li>
-<li>Expected value of a fair die? <strong>3.5.</strong></li>
-<li>Binomial: 10 tries, p = 0.5, exactly 5 successes? <strong>C(10,5)/1024 = 252/1024 ≈ 0.246.</strong></li>
-<li>What does an NHPP model? <strong>Failure counts over time with a changing rate.</strong></li>
-<li>Cohen's kappa of 0? <strong>Agreement no better than chance.</strong></li>
+<li><strong>Prof:</strong> "Why a logarithm, and why base 2?"<br><strong>You:</strong> "Because information from independent events should add up. Their probabilities multiply, and a logarithm turns a product into a sum, so minus log p is the natural measure, up to the choice of base. Base 2 gives bits: the answer to one fair yes-or-no question is exactly 1 bit."</li>
+<li><strong>Prof:</strong> "Then how many bits per character does a random hexadecimal string carry, and how does English text compare?"<br><strong>You:</strong> "A uniformly random hex digit is one of 16 equally likely symbols, so it carries log base 2 of 16, which is 4 bits, the maximum for 16 symbols. English is far from uniform: Shannon's 1951 paper gives about 4.14 bits per letter from letter frequencies alone, against 4.70 for 26 equally likely letters. Using long context, he estimated roughly 1 bit per letter."</li>
+<li><strong>Prof:</strong> "So could you spot secrets such as API keys in text by their high entropy?"<br><strong>You:</strong> "I tried that in the secret filter of Yuki 2.0, my desktop agent: flag strings of 20 or more mixed characters above 3.5 bits per character. It wrongly flagged 16 of my 167 harmless look-alike strings, including every git hash and SSH public key, and caught almost nothing the known key formats missed, so I dropped it. A git hash is random hex at about 3.7 bits per character, so entropy alone cannot tell a secret from a hash."</li>
+</ol>
+<p><strong>IT2. A memoryless source has four symbols with probabilities 1/2, 1/4, 1/8 and 1/8. What is its entropy, and what is the largest entropy any four-symbol source can have?</strong></p>
+<p>Modelled on <a href="ch08.html">Aug 2024 II-Q1(1)</a> (1/2, 1/4, 1/4 gives 1.5 bits), <a href="ch05.html">Jan 2026 II-Q1(2)</a> (1/2, 1/3, 1/6 gives 1.459 bits) and <a href="ch11.html">older set II-Q1(1)</a> (2.45 bits).</p>
+<p><strong>Say it:</strong> "H is a half times 1, plus a quarter times 2, plus two eighths times 3, which is 1.75 bits. The maximum for four symbols is log base 2 of 4, which is 2 bits, and only the uniform distribution reaches it."</p>
+<p><strong>Worked detail:</strong></p>
+<pre><code>H = (1/2) log 2 + (1/4) log 4 + (1/8) log 8 + (1/8) log 8
+  = 0.5 + 0.5 + 0.375 + 0.375 = 1.75 bits
+maximum = log 4 = 2 bits;  redundancy = 1 - 1.75/2 = 0.125
+</code></pre>
+<p>Every probability is a power of 1/2, so the prefix code 0, 10, 110, 111 (lengths 1, 2, 3, 3 = -log p) has average length exactly 1.75. A fixed-length code needs 2 bits. When the question gives log 3 ≈ 1.6, as in Jan 2026, use it: (1/3) log 3 ≈ 0.533.</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "Why is the uniform distribution the maximum?"<br><strong>You:</strong> "Because log base 2 of n minus H of p equals the relative entropy between p and the uniform distribution, the sum of p times log of p over one n-th, and relative entropy is never negative. It is zero only when p is uniform. Here it is 2 minus 1.75, so 0.25 bits."</li>
+<li><strong>Prof:</strong> "Show me why relative entropy is never negative."<br><strong>You:</strong> "I use the fact that ln t is at most t minus 1. Minus D of p and q is the sum of p log of q over p, which is at most 1 over ln 2 times the sum of p times (q over p minus 1). That is 1 over ln 2 times (the sum of q minus the sum of p), which is 1 minus 1, so zero, and equality needs q over p equal to 1 everywhere, that is q = p."</li>
+<li><strong>Prof:</strong> "Where does relative entropy show up in our lab's work?"<br><strong>You:</strong> "In model selection. Akaike built AIC in 1973 as an estimate of the expected relative entropy between the true distribution and a fitted model, and pysrat's README shows each fitted NHPP model reporting its AIC. Wu, Dohi and Okamura's 2024 chapter asks whether the model that information criteria pick also predicts bugs best, and the abstract says that is not guaranteed; I have only read the abstract."</li>
+</ol>
+<p><strong>IT3. What are joint entropy and conditional entropy? Work them out for two program versions A and B that each fail on 10 percent of inputs and both fail on 4 percent.</strong></p>
+<p>Modelled on the H(Y | X) part of <a href="ch09.html">Jan 2024 II-Q1(2)</a>.</p>
+<p><strong>Say it:</strong> "Joint entropy H(X, Y) is the entropy of the pair taken together. Conditional entropy H(Y | X) is the uncertainty left in Y once I know X, averaged over X, and the chain rule says H(X, Y) = H(X) + H(Y | X). Here H(X, Y) is about 0.884 bits and H(X) is 0.469, so H(Y | X) is about 0.415 bits."</p>
+<p><strong>Worked detail:</strong> X = 1 if A fails, Y = 1 if B fails, on a random input.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>B fails (Y = 1)</th>
+<th>B passes (Y = 0)</th>
+<th>total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A fails (X = 1)</td>
+<td>0.04</td>
+<td>0.06</td>
+<td>0.10</td>
+</tr>
+<tr>
+<td>A passes (X = 0)</td>
+<td>0.06</td>
+<td>0.84</td>
+<td>0.90</td>
+</tr>
+<tr>
+<td>total</td>
+<td>0.10</td>
+<td>0.90</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<pre><code>H(X) = H(Y) = h(0.1) = 0.469
+H(X,Y) = 0.04 log(1/0.04) + 2 (0.06 log(1/0.06)) + 0.84 log(1/0.84)
+       = 0.1858 + 0.4871 + 0.2113 = 0.884
+H(Y|X) = H(X,Y) - H(X) = 0.884 - 0.469 = 0.415
+
+Check from the definition:
+P(B fails | A fails) = 0.04/0.1 = 0.4      P(B fails | A passes) = 0.06/0.9 = 0.0667
+H(Y|X) = 0.1 h(0.4) + 0.9 h(0.0667) = 0.1 (0.971) + 0.9 (0.353) = 0.097 + 0.318 = 0.415
+</code></pre>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "You said conditioning leaves less uncertainty. Can it ever leave more?"<br><strong>You:</strong> "On average, no: H of Y given X is at most H of Y, with equality only under independence. But for one value of X it can: knowing that A failed raises B's failure chance to 0.4, so H of Y given X = 1 is h of 0.4, about 0.971 bits, more than H of Y, 0.469. The case where A passes has probability 0.9 and lowers the uncertainty enough to bring the average down to 0.415."</li>
+<li><strong>Prof:</strong> "What does that 0.4 mean if B is a backup for A?"<br><strong>You:</strong> "That the backup fails 40 percent of the time exactly when it is needed, against 10 percent on average. A 1-out-of-2 system fails only when both fail, so its failure probability is 0.04, four times the 0.01 that independence would predict."</li>
+<li><strong>Prof:</strong> "How would you estimate that 0.4 from data, and how sure would you be?"<br><strong>You:</strong> "I'd run both versions on, say, 10,000 random inputs; about 1,000 make A fail, and among those I count how many also make B fail, about 400. The standard error is the square root of 0.4 times 0.6 over 1,000, about 0.015. So the 95 percent interval is about 0.37 to 0.43."</li>
+</ol>
+<p><strong>IT4. What is mutual information? Compute it for the same two versions.</strong></p>
+<p>Modelled on <a href="ch09.html">Jan 2024 II-Q1(3)</a>, which asks for I(X; Y) = H(Y) - H(Y | X).</p>
+<p><strong>Say it:</strong> "Mutual information is how much knowing X reduces my uncertainty about Y: I(X; Y) = H(Y) minus H(Y | X). It is symmetric, never negative, and zero exactly when X and Y are independent. Here it is 0.469 minus 0.415, about 0.054 bits."</p>
+<p><strong>Worked detail:</strong></p>
+<pre><code>I(X;Y) = H(Y) - H(Y|X)          = 0.469 - 0.415         = 0.054 bits
+       = H(X) + H(Y) - H(X,Y)   = 0.469 + 0.469 - 0.884 = 0.054 bits
+upper limit: min(H(X), H(Y)) = 0.469 bits
+</code></pre>
+<p>Independence would give P(both fail) = 0.1 × 0.1 = 0.01, not 0.04, so I &gt; 0 as expected. Mutual information has no sign: with P(both fail) = 0, P(only A) = P(only B) = 0.1, P(neither) = 0.8 (the versions never fail together), I(X; Y) = 0.016 bits, also positive.</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "0.054 bits sounds tiny. Is the dependence small?"<br><strong>You:</strong> "Not in the way that matters: the joint failure probability is 0.04, four times the 0.01 that independence gives. Mutual information averages over all four cases, and both passing, at 0.84, dominates, so rare failures give small numbers. Its ceiling here is only H of X, 0.469 bits, so I'd report the ratio of 4 next to it."</li>
+<li><strong>Prof:</strong> "Compute the correlation between the two failure indicators. How does it relate to the rho in your plan?"<br><strong>You:</strong> "The covariance is 0.04 minus 0.01, which is 0.03, and each variance is 0.1 times 0.9, which is 0.09, so the correlation is one third. If A and B were two runs from one setting, rho is exactly this correlation, the variance of theta over p times 1 minus p. So here the variance of theta would be 0.03, and P of both failing is p squared plus that, 0.01 plus 0.03."</li>
+<li><strong>Prof:</strong> "So why not use mutual information as your dependence measure instead?"<br><strong>You:</strong> "For two yes-or-no variables it adds little: zero correlation already means independence there, so both see the same thing. Mutual information also has no sign, so versions that fail on different inputs, which is good for voting, and versions that fail on the same inputs, which is bad, both give a positive number. And the vote's failure probability needs P of both failing directly, which rho gives."</li>
+</ol>
+<p><strong>IT5. What is a memoryless source, and what is a Markov source?</strong></p>
+<p>Modelled on <a href="ch05.html">Jan 2026 II-Q1(1)</a> ("Explain what a memoryless information source means").</p>
+<p><strong>Say it:</strong> "A memoryless source draws each symbol independently with the same fixed probabilities, so the past tells you nothing about the next symbol. In a Markov source the next symbol's probabilities depend on the current state, usually the last symbol, through a transition matrix. Memory makes a source more predictable, so its entropy per symbol is lower than that of a memoryless source with the same symbol frequencies."</p>
+<p><strong>Worked detail:</strong> a binary Markov source. From 0 it stays at 0 with probability 0.9 and moves to 1 with 0.1; from 1 it goes either way with 0.5.</p>
+<pre><code>P = | 0.9  0.1 |      stationary: pi0 (0.1) = pi1 (0.5), pi0 + pi1 = 1
+    | 0.5  0.5 |      so pi1 = 0.1/0.6 = 1/6, pi0 = 5/6
+eigenvalues of P: 1 and 0.4
+
+entropy rate = pi0 h(0.1) + pi1 h(0.5) = (5/6)(0.469) + (1/6)(1) = 0.391 + 0.167 = 0.557 bits/symbol
+memoryless source with the same frequencies (1/6 ones): h(1/6) = 0.650 bits/symbol
+</code></pre>
+<p>Block entropies per symbol, H(block of n)/n: 0.650 (n = 1), 0.604 (n = 2), 0.576 (n = 5), 0.567 (n = 10), falling toward 0.557.</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "How did you get the stationary probabilities five sixths and one sixth?"<br><strong>You:</strong> "In the long run the flow from 0 to 1 must equal the flow back, so pi0 times 0.1 equals pi1 times 0.5. With pi0 plus pi1 equal to 1, that gives pi1 = 0.1 over 0.6, one sixth, and pi0 = five sixths. Equivalently, pi is the left eigenvector of the transition matrix for eigenvalue 1."</li>
+<li><strong>Prof:</strong> "Does the source have to start in that distribution?"<br><strong>You:</strong> "No. The chain can reach both states and is not periodic, so it forgets its start: the other eigenvalue is 1 minus 0.1 minus 0.5, which is 0.4, so the distance to the stationary distribution shrinks by a factor of 0.4 each step. Starting from 0, the chance of being in state 1 goes 0.1, 0.14, 0.156 and on toward 0.167, and the entropy rate is a long-run average, so the start does not matter."</li>
+<li><strong>Prof:</strong> "So in the long run about one symbol in six is a 1. Where would a source like this appear in reliability work?"<br><strong>You:</strong> "As a pass and fail sequence where a failure makes the next failure more likely: here a fail is followed by another fail half the time, against 0.1 after a pass. That is the idea of the self-exciting Hawkes models in Qiu et al., where each detected fault raises the chance of more soon after, though theirs work in continuous time. Many of the lab's availability models, like Prof. Zheng's work on virtualized systems, are continuous-time Markov chains over working and failed states too."</li>
+</ol>
+<p><strong>IT6. What is the second extension of a source, and why is H(S²) = 2H(S) for a memoryless source?</strong></p>
+<p>Modelled on <a href="ch08.html">Aug 2024 II-Q1(4)</a> (prove H(U²) = 2H(U)), <a href="ch05.html">Jan 2026 II-Q1(3)-(4)</a> (pair probabilities and H(U²)) and <a href="ch10.html">Aug 2023 II-Q1(3)</a> (write out the extension of a code).</p>
+<p><strong>Say it:</strong> "The second extension treats each pair of symbols as one new symbol, so q symbols give q squared pairs. If the source is memoryless, a pair's probability is the product of the two probabilities, the log of a product is a sum, and the entropy splits into H(S) plus H(S)."</p>
+<p><strong>Worked detail:</strong> proof. Let S have probabilities p₁, ..., p_q. Memoryless means P(sᵢ sⱼ) = pᵢ pⱼ.</p>
+<pre><code>H(S^2) = - sum_i sum_j pi pj log(pi pj)
+       = - sum_i sum_j pi pj (log pi + log pj)
+       = -(sum_i pi log pi)(sum_j pj) - (sum_i pi)(sum_j pj log pj)
+       = H(S) (1) + (1) H(S) = 2 H(S)
+</code></pre>
+<p>Example: S with probabilities 3/4 and 1/4. H(S) = h(1/4) = 0.811. The pairs have probabilities 9/16, 3/16, 3/16, 1/16 and H(S²) = 0.467 + 0.453 + 0.453 + 0.250 = 1.623 = 2 × 0.811.</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "You said 'if the source is memoryless'. What happens for a Markov source?"<br><strong>You:</strong> "Then a pair's probability is P of the first symbol times P of the second given the first, and H of the pair is H of S1 plus H of S2 given S1, which is 2H of S minus the mutual information between neighbours. For the Markov source with switching probabilities 0.1 and 0.5, that is 0.650 plus 0.557, about 1.208 bits, instead of 1.300, a gap of 0.093 bits."</li>
+<li><strong>Prof:</strong> "So pairs carry less than twice as much. Why would anyone code pairs for a memoryless source?"<br><strong>You:</strong> "Because a binary code spends at least 1 bit on every symbol. For probabilities 3/4 and 1/4 the entropy is 0.811 bits, but any one-symbol-at-a-time code costs 1 bit. Huffman on the pairs, with probabilities 9/16, 3/16, 3/16 and 1/16, gives lengths 1, 2, 3 and 3 and 27/16 bits per pair, about 0.844 bits per symbol."</li>
+<li><strong>Prof:</strong> "Then why not blocks of ten symbols? What does it cost?"<br><strong>You:</strong> "The gain shrinks while the cost grows: the bound is H plus 1 over n, and with blocks of 8 Huffman is already at about 0.816 against 0.811. But the table has 2 to the n codewords, 1,024 for blocks of ten, all their probabilities must be known, and the encoder waits for n symbols before it sends anything. Arithmetic coding gets the same gain without building a table, which is why many modern compressors use it or range coding."</li>
+</ol>
+<p><strong>IT7. What is the difference between a uniquely decodable code and an instantaneous code? Is the code {0, 01, 11} instantaneous?</strong></p>
+<p>Modelled on <a href="ch08.html">Aug 2024 II-Q1(2)</a> (this exact code) and <a href="ch10.html">Aug 2023 II-Q1(1), (4)</a>.</p>
+<p><strong>Say it:</strong> "Uniquely decodable means every bit string splits into codewords in only one way. Instantaneous means I can output each symbol as soon as its last bit arrives, which happens exactly when no codeword is a prefix of another. {0, 01, 11} is uniquely decodable but not instantaneous, because 0 is a prefix of 01."</p>
+<p><strong>Worked detail:</strong></p>
+<table>
+<thead>
+<tr>
+<th>code for s₁, s₂, s₃</th>
+<th>nonsingular</th>
+<th>uniquely decodable</th>
+<th>instantaneous</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0, 1, 01</td>
+<td>yes</td>
+<td>no: 01 is s₁s₂ or s₃</td>
+<td>no</td>
+</tr>
+<tr>
+<td>0, 01, 11</td>
+<td>yes</td>
+<td>yes</td>
+<td>no: 0 is a prefix of 01</td>
+</tr>
+<tr>
+<td>0, 10, 11</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Parses of {s₁ = 0, s₂ = 01, s₃ = 11}, found by trying every split: 011 = s₁ s₃; 0111 = s₂ s₃; 01111 = s₁ s₃ s₃; 0110 = s₁ s₃ s₁. Each string has one parse, but the first symbol is known only after the run of 1s ends.</p>
+<p>Sardinas-Patterson check (Python): {0, 01, 11} gives the dangling suffix set {1}, then {1} again, and 1 is not a codeword, so uniquely decodable. {0, 1, 01} gives {1}, which is a codeword, so not uniquely decodable.</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "How would you check unique decodability in general?"<br><strong>You:</strong> "With the Sardinas-Patterson test: list the leftover suffixes when one codeword is a prefix of another, keep matching them against the codewords, and if a leftover is ever itself a codeword, the code is not uniquely decodable. For {0, 01, 11}, 0 inside 01 leaves 1, and 1 inside 11 leaves 1 again. 1 is not a codeword and nothing new appears, so the code is uniquely decodable."</li>
+<li><strong>Prof:</strong> "That leftover 1 keeps coming back. What does it mean for the decoder?"<br><strong>You:</strong> "That the decoder can be kept waiting: after a 0 it cannot tell s1 from the start of s2 until it sees how many 1s follow. A 0 followed by an even number of 1s starts with s1 and an odd number with s2, so 011 is s1 s3 but 0111 is s2 s3. In the worst case it must buffer the whole message."</li>
+<li><strong>Prof:</strong> "Besides the delay, is there any other risk?"<br><strong>You:</strong> "Yes, one bit error near the end can change how the start is read: 0111 is s2 s3, but if the last bit flips, 0110 reads as s1 s3 s1, so even the first symbol changes. And the lengths 1, 2, 2 also fit the prefix code 0, 10, 11, so there is no reason to accept the delay."</li>
+</ol>
+<p><strong>IT8. State the Kraft inequality. Can a binary prefix code have codeword lengths 1, 2, 3, 3? And 1, 1, 2?</strong></p>
+<p>Modelled on <a href="ch10.html">Aug 2023 II-Q1(1)-(2)</a> (choose a codeword so the code is prefix-free, draw its tree) and step 1 of <a href="ch11.html">older set II-Q1(3)</a>.</p>
+<p><strong>Say it:</strong> "A binary prefix code with lengths l1 to lq exists exactly when the sum of 2 to the minus li is at most 1, and McMillan showed every uniquely decodable code obeys the same bound. Lengths 1, 2, 3, 3 give a half plus a quarter plus two eighths, exactly 1, so yes. Lengths 1, 1, 2 give 1.25, so no such code exists."</p>
+<p><strong>Worked detail:</strong></p>
+<pre><code>lengths 1,2,3,3 : 1/2 + 1/4 + 1/8 + 1/8 = 1      -&gt; possible, e.g. 0, 10, 110, 111
+lengths 1,1,2   : 1/2 + 1/2 + 1/4      = 5/4    -&gt; impossible (0 and 1 use up the whole tree)
+Aug 2023 code {0, 110, 10, 1110}: 1/2 + 1/8 + 1/4 + 1/16 = 15/16 &lt; 1 (the leaf 1111 is unused)
+</code></pre>
+<p>Proof of the inequality (tree argument): let L be the longest length. A codeword of length l sits at depth l of a binary tree and has 2^(L - l) descendants at depth L. No codeword is a prefix of another, so these sets of descendants do not overlap, and there are only 2^L nodes at depth L. So Σ 2^(L - lᵢ) ≤ 2^L; divide by 2^L.</p>
+<p>Construction from lengths (canonical code): sort the lengths; the first codeword is all zeros; each next codeword is the previous one plus 1, with zeros appended to reach the new length. For 1, 2, 3, 3: 0, then 1 → 10, then 11 → 110, then 111. (Python check: this gives prefix-free codes for 1, 2, 3, 3 and 2, 2, 2, 3, 3.)</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "You said the sum is at most 1. Why?"<br><strong>You:</strong> "Put the codewords on a binary tree and extend every branch down to depth L, the longest length. A codeword of length l owns 2 to the L minus l of the 2 to the L bottom nodes, and because no codeword is a prefix of another, these sets do not overlap. So the sum of 2 to the L minus l is at most 2 to the L, and dividing by 2 to the L gives the inequality."</li>
+<li><strong>Prof:</strong> "And the other direction: build me a prefix code with lengths 1, 2, 3, 3."<br><strong>You:</strong> "The first codeword is 0. Next I add 1 to get 1 and append a 0 for length 2, giving 10; then 10 plus 1 is 11, and appending 0 gives 110; then 110 plus 1 is 111. So the code is 0, 10, 110, 111, and this always works when the Kraft sum is at most 1."</li>
+<li><strong>Prof:</strong> "Is that construction used in anything real?"<br><strong>You:</strong> "Yes, it is the canonical Huffman code in DEFLATE, the format inside zip, gzip and PNG. The file stores only the code length of each symbol, and RFC 1951 fixes the order so the decoder rebuilds the exact codes from the lengths, which saves sending the code table itself."</li>
+</ol>
+<p><strong>IT9. Build a Huffman code for five symbols with probabilities 0.4, 0.2, 0.2, 0.1 and 0.1. What is the average length, and how close is it to the entropy?</strong></p>
+<p>Modelled on <a href="ch11.html">older set II-Q1(2)</a> (Huffman code and its average length) and <a href="ch08.html">Aug 2024 II-Q1(3)</a> (Huffman on the second extension).</p>
+<p><strong>Say it:</strong> "Huffman keeps merging the two least likely items: the two 0.1s into 0.2, then the two original 0.2s into 0.4, then the merged 0.2 with the 0.4 symbol into 0.6, and finally 0.6 with 0.4. That gives lengths 2, 2, 2, 3, 3 and an average of 2.2 bits, against an entropy of about 2.12 bits, so the code is about 96 percent efficient."</p>
+<p><strong>Worked detail:</strong></p>
+<pre><code>merge 1: 0.1 + 0.1 -&gt; 0.2*          list: 0.4, 0.2*, 0.2, 0.2
+merge 2: 0.2 + 0.2 -&gt; 0.4**         list: 0.4**, 0.4, 0.2*
+merge 3: 0.2* + 0.4 -&gt; 0.6          list: 0.6, 0.4**
+merge 4: 0.6 + 0.4** -&gt; 1.0
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>p</th>
+<th>codeword</th>
+<th>length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s₁</td>
+<td>0.4</td>
+<td>00</td>
+<td>2</td>
+</tr>
+<tr>
+<td>s₂</td>
+<td>0.2</td>
+<td>10</td>
+<td>2</td>
+</tr>
+<tr>
+<td>s₃</td>
+<td>0.2</td>
+<td>11</td>
+<td>2</td>
+</tr>
+<tr>
+<td>s₄</td>
+<td>0.1</td>
+<td>010</td>
+<td>3</td>
+</tr>
+<tr>
+<td>s₅</td>
+<td>0.1</td>
+<td>011</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<pre><code>L = 0.4(2) + 0.2(2) + 0.2(2) + 0.1(3) + 0.1(3) = 2.2 bits
+H = 0.4 log(1/0.4) + 2 (0.2 log 5) + 2 (0.1 log 10) = 2.122 bits;  efficiency 2.122/2.2 = 0.965
+Kraft: 3/4 + 2/8 = 1;  prefix-free (checked in Python)
+</code></pre>
+<p>Breaking ties the other way (always merging the newest merged node first) gives lengths 1, 2, 3, 4, 4, also with L̄ = 2.2. Length variance: 0.16 for (2, 2, 2, 3, 3) and 1.36 for (1, 2, 3, 4, 4).</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "Could Huffman give a different code here?"<br><strong>You:</strong> "Yes, ties can be broken differently. If I always merge the newest merged node first, I get lengths 1, 2, 3, 4, 4 instead. Both average 2.2 bits, but the variance of the length is 0.16 for the first and 1.36 for the second, so I'd take the first: a steadier bit rate and smaller buffers."</li>
+<li><strong>Prof:</strong> "How do you make the algorithm give the low-variance code every time?"<br><strong>You:</strong> "When a merged node ties with original symbols, I merge the originals first, which places the merged node as high as possible in the sorted list. Merged nodes then get combined late, so the tree stays shallow and balanced. In a priority queue that is a tie-breaker that puts merged nodes after symbols of the same probability, and the average length stays 2.2, because every way of breaking ties still gives an optimal code for these probabilities."</li>
+<li><strong>Prof:</strong> "All of this trusts those probabilities. What if the real ones differ from what you designed for?"<br><strong>You:</strong> "The code still decodes correctly, it just gets longer. With ideal lengths of minus log q, the average becomes H of p plus the relative entropy D of p and q, so the penalty is exactly the relative entropy. If the true probabilities were all 0.2, D is 0.2 bits, and the balanced code holds up better: 2.4 bits per symbol against 2.8 for the lengths 1, 2, 3, 4, 4."</li>
+</ol>
+<p><strong>IT10. What does the source coding theorem say, and why can no code beat the entropy?</strong></p>
+<p>Modelled on <a href="ch11.html">older set II-Q1(3)</a> ("Show that H(S) ≤ L̄(S)").</p>
+<p><strong>Say it:</strong> "For any uniquely decodable binary code, the average length is at least the entropy, and the best prefix code gets below H plus 1. Coding blocks of n symbols brings the cost per symbol below H plus 1 over n, so we can get as close to H as we like. The lower bound comes from the Kraft inequality together with the fact that relative entropy is never negative."</p>
+<p><strong>Worked detail:</strong></p>
+<pre><code>Lower bound. With qi = 2^(-li) and sum qi &lt;= 1 (Kraft), using ln t &lt;= t - 1:
+  H - L = sum pi log(2^(-li) / pi) &lt;= (1/ln 2) sum pi (2^(-li)/pi - 1)
+        = (1/ln 2) (sum 2^(-li) - 1) &lt;= 0,  so H &lt;= L,
+  with equality exactly when pi = 2^(-li) for every i.
+
+Upper bound. Take li = ceil(-log pi) (Shannon's lengths).
+  Then 2^(-li) &lt;= pi, so sum 2^(-li) &lt;= 1 and a prefix code exists (Kraft),
+  and li &lt; -log pi + 1, so L &lt; H + 1. Huffman is optimal, so it does at least as well.
+</code></pre>
+<p>Example: p = 0.99 and 0.01, H = h(0.01) = 0.0808 bits. Shannon's lengths are ⌈0.0145⌉ = 1 and ⌈6.64⌉ = 7, so L̄ = 0.99 + 0.07 = 1.06. Huffman uses 0 and 1, so L̄ = 1. Huffman on blocks of n symbols (Python), bits per symbol:</p>
+<table>
+<thead>
+<tr>
+<th>n</th>
+<th>1</th>
+<th>2</th>
+<th>5</th>
+<th>10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Huffman L̄ₙ/n</td>
+<td>1.000</td>
+<td>0.515</td>
+<td>0.226</td>
+<td>0.136</td>
+</tr>
+<tr>
+<td>bound H + 1/n</td>
+<td>1.081</td>
+<td>0.581</td>
+<td>0.281</td>
+<td>0.181</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "Where does the plus 1 in the upper bound come from?"<br><strong>You:</strong> "From Shannon's choice of lengths: l equals minus log base 2 of p, rounded up. Rounding up makes 2 to the minus l at most p, so the Kraft sum is at most 1 and a prefix code exists. Rounding up also adds less than 1 bit to each length, so the average is below H plus 1, and Huffman, being optimal, can only do better."</li>
+<li><strong>Prof:</strong> "So is Shannon's code as good as Huffman's? Try probabilities 0.99 and 0.01."<br><strong>You:</strong> "Not always. Shannon's lengths are 1 and 7, because minus log base 2 of 0.01 is 6.64, rounded up to 7, so the average is 0.99 plus 0.07, which is 1.06 bits; Huffman just uses 0 and 1, 1 bit. Both are within H plus 1, but the entropy is only about 0.081 bits, so both waste over 90 percent."</li>
+<li><strong>Prof:</strong> "Say those are pass and fail results from a million runs. How would you store them near the entropy?"<br><strong>You:</strong> "The entropy says about a million times 0.081, roughly 81,000 bits, about 10 kilobytes against 125 for one bit per run. Huffman on blocks of 10 results already gets 0.136 bits per result, and storing the gaps between failures with a Golomb code, which is built for gaps like these, takes about 10,000 gaps at about 8.1 bits each, within 1 percent of the entropy. That assumes independent runs; if failures cluster, the true entropy rate is lower still, and a Markov model would compress better."</li>
+</ol>
+<p><strong>IT11. What is channel capacity? Work it out for a binary symmetric channel that flips each bit with probability 0.1.</strong></p>
+<p>Modelled on <a href="ch09.html">Jan 2024 II-Q1(4)</a> (the capacity of a channel with flips and erasures; with no erasures it reduces to this one).</p>
+<p><strong>Say it:</strong> "Capacity is the largest mutual information between input and output, maximised over the input distribution: the most bits per use that can get through reliably. For a binary symmetric channel it is 1 minus h(p), reached with equally likely inputs. For p = 0.1 that is 1 minus 0.469, about 0.531 bits per use."</p>
+<p><strong>Worked detail:</strong></p>
+<pre><code>I(X;Y) = H(Y) - H(Y|X) = H(Y) - h(p)        (every input sees the same noise)
+H(Y) &lt;= 1, with equality when P(Y=1) = 1/2.
+P(Y=1) = r(1-p) + (1-r)p = p + r(1 - 2p), which is 1/2 exactly when r = 1/2.
+C = 1 - h(p);   C(0.1) = 1 - 0.469 = 0.531 bits per use
+</code></pre>
+<p>Repetition with a majority vote on the same channel (Python):</p>
+<table>
+<thead>
+<tr>
+<th>copies n</th>
+<th>rate 1/n</th>
+<th>P(decoded bit wrong)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0.333</td>
+<td>0.028</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0.2</td>
+<td>0.0086</td>
+</tr>
+<tr>
+<td>7</td>
+<td>0.143</td>
+<td>0.0027</td>
+</tr>
+<tr>
+<td>11</td>
+<td>0.091</td>
+<td>0.0003</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "What does 0.531 bits per use actually promise?"<br><strong>You:</strong> "Shannon's channel coding theorem says that for any rate below 0.531 there are codes whose error probability goes to zero as the block length grows, and above it no code can do that. So in principle about 53 data bits in every 100 sent can get through almost error-free, but only with long blocks and a good code."</li>
+<li><strong>Prof:</strong> "Compare that with the simplest code: repeat each bit and take a majority vote."<br><strong>You:</strong> "Three copies give rate one third, and the vote fails when 2 or 3 copies flip: 3 times 0.01 times 0.9, plus 0.001, which is 0.028. Five copies give about 0.0086 at rate 0.2. So repetition only drives the error to zero by driving the rate to zero, while Shannon says any rate below 0.531 can be made reliable."</li>
+<li><strong>Prof:</strong> "That three-copy vote is a 2-out-of-3 vote over program versions. What does the 0.028 assume?"<br><strong>You:</strong> "That the copies fail independently. For program versions, Eckhardt and Lee's model gives a vote failure of E of 3 theta squared minus 2 theta cubed, where theta is a version's chance of failing on that input; for example, a Beta distribution for theta with mean 0.1 and intraclass correlation 0.1 gives about 0.047 instead of 0.028. So the vote keeps only about three quarters of the gain that independence would give, and Nogueira et al., measuring the same share over whole problems, found only 0.43 for three LLM-written versions."</li>
+</ol>
+<p><strong>IT12. A binary symmetric channel flips each bit with probability 0.1, and the input is 1 with probability 0.2. What is I(X; Y)?</strong></p>
+<p>Modelled on <a href="ch09.html">Jan 2024 II-Q1(1)(b) and (3)</a> (output probabilities and I(X; Y) in terms of the input probability r).</p>
+<p><strong>Say it:</strong> "First the output: P(Y = 1) is 0.2 times 0.9 plus 0.8 times 0.1, which is 0.26, so H(Y) is h(0.26), about 0.827 bits. H(Y | X) is h(0.1), 0.469, for either input. So I(X; Y) is about 0.358 bits, below the capacity of 0.531, which needs equally likely inputs."</p>
+<p><strong>Worked detail:</strong></p>
+<pre><code>P(Y=1) = 0.2(0.9) + 0.8(0.1) = 0.18 + 0.08 = 0.26
+H(Y)   = h(0.26) = 0.827
+H(Y|X) = 0.2 h(0.1) + 0.8 h(0.1) = h(0.1) = 0.469
+I(X;Y) = 0.827 - 0.469 = 0.358 bits    (capacity at r = 1/2: 0.531)
+</code></pre>
+<p>Z-channel for the last follow-up: 0 always arrives as 0, and 1 turns into 0 with probability 0.1. I(X; Y) = h(0.9r) - r h(0.1). A search over r (200,001 points) gives the maximum 0.763 bits at r ≈ 0.456, matching the closed form log(1 + 0.9 × 0.1^(0.1/0.9)) = 0.763.</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "Why doesn't the noise term H(Y | X) depend on the input distribution?"<br><strong>You:</strong> "Because both inputs see the same noise: given either input, the output is right with 0.9 and flipped with 0.1, so H of Y given X = x is h of 0.1 for each x. H of Y given X is the average of these weighted by P of x, and the weights add up to 1, so it stays h of 0.1 whatever the input. Only H of Y moves with the input."</li>
+<li><strong>Prof:</strong> "Then in general, how do you find the input distribution that reaches capacity?"<br><strong>You:</strong> "I maximise I of X and Y over the input distribution numerically. It is concave in the input probabilities, so there is one peak: for a binary input a one-dimensional search over P of X = 1 is enough, and for larger alphabets the standard method is the Blahut-Arimoto algorithm. For symmetric channels like this one the answer is simply the uniform input."</li>
+<li><strong>Prof:</strong> "Try it on a channel where 0 always arrives safely and 1 turns into 0 with probability 0.1. Which input would you send more often, and what is the capacity?"<br><strong>You:</strong> "I'd send 0 a bit more often, because it is never damaged. A search over r puts the best P of X = 1 at about 0.456, with capacity about 0.763 bits per use. That is well above the 0.531 of the symmetric channel, because only the 1s can be hurt."</li>
+</ol>
+<p><strong>IT13. What does a single parity bit do, and what can it not do?</strong></p>
+<p><strong>Say it:</strong> "It is the XOR of the data bits, chosen so that the whole word has an even number of 1s. Any odd number of flipped bits makes the count odd and is detected, but an even number of flips gets through, and the check never says which bit is wrong, so it can detect but not correct."</p>
+<p><strong>Worked detail:</strong> truth table for 3 data bits (checked by enumerating all 8 rows):</p>
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th>b</th>
+<th>c</th>
+<th>parity bit a⊕b⊕c</th>
+<th>1s in the word with the parity bit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>C code: 7 data bits plus a parity bit, then one and two flipped bits. A check of 0 means "looks fine".</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+
+/* even parity bit: XOR of all bits, so the word plus the bit has an even number of 1s */
+int parity(unsigned x) {
+    int p = 0;
+    while (x) {
+        p ^= x &amp; 1u;
+        x &gt;&gt;= 1;
+    }
+    return p;
+}
+
+int main(void) {
+    unsigned data[] = {0x59, 0x00, 0x7F, 0x2A};  /* 1011001, 0000000, 1111111, 0101010 */
+    for (int i = 0; i &lt; 4; i++) {
+        unsigned d = data[i];
+        unsigned sent = (d &lt;&lt; 1) | (unsigned)parity(d);       /* 7 data bits + parity bit = 8 bits */
+        unsigned one = sent ^ 0x10;                            /* flip one bit */
+        unsigned two = sent ^ 0x18;                            /* flip two bits */
+        printf(&quot;data 0x%02X  parity %d  check(sent) %d  check(1 flip) %d  check(2 flips) %d\n&quot;,
+               d, parity(d), parity(sent), parity(one), parity(two));
+    }
+    return 0;
+}
+</code></pre>
+<p>Output (clang, run on 13 Nov 2026):</p>
+<pre><code class="language-text">data 0x59  parity 0  check(sent) 0  check(1 flip) 1  check(2 flips) 0
+data 0x00  parity 0  check(sent) 0  check(1 flip) 1  check(2 flips) 0
+data 0x7F  parity 1  check(sent) 0  check(1 flip) 1  check(2 flips) 0
+data 0x2A  parity 1  check(sent) 0  check(1 flip) 1  check(2 flips) 0
+</code></pre>
+<p>One flip is always caught and two flips never are. With 8 bits flipping independently with probability 0.01: P(some error) = 0.0773, P(undetected) = P(2, 4, 6 or 8 flips) = 0.00264 (28p² = 0.0028), so parity catches 96.6 percent of damaged words.</p>
+<p>Two-dimensional parity, 4 × 4 data bits plus a parity bit for each row and column and a corner bit (a 5 × 5 grid, 9 extra bits): by enumeration, all 25 single, 300 double and 2,300 triple error patterns are detected, every single error is located at its row and column, and 100 of the 12,650 four-bit patterns (the corners of a rectangle) are missed.</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "How likely is it that an even number of flips gets through?"<br><strong>You:</strong> "For 7 data bits plus parity, with each bit flipping independently with probability 0.01, I add the chances of 2, 4, 6 or 8 flips, which is about 0.0026, almost all from the 28 pairs, 28 p squared. About 7.7 percent of words have some error, so parity catches about 96.6 percent of damaged words."</li>
+<li><strong>Prof:</strong> "Then how would you catch every two-bit error cheaply?"<br><strong>You:</strong> "Put the data in a grid and add a parity bit to every row and every column. For 16 data bits in a 4 by 4 grid that is 9 extra bits, and enumerating all patterns shows every 1, 2 and 3 bit error is caught. A single error even shows up as one bad row and one bad column, so I can correct it where they cross."</li>
+<li><strong>Prof:</strong> "Where does the grid fail, and what do real systems use instead?"<br><strong>You:</strong> "It misses 4 errors on the corners of a rectangle, because each row and column then has two flips; that is 100 of the 12,650 four-bit patterns. Real links like Ethernet use a CRC: the sender reads the bits as a polynomial and appends the remainder after dividing by a fixed generator of degree r. A burst of r or fewer bits is a shifted polynomial of degree below r, which a generator with a constant term cannot divide, so every such burst is caught."</li>
+</ol>
+<p><strong>IT14. What is Hamming distance, and how many errors can a code with minimum distance d detect and correct?</strong></p>
+<p>Modelled on <a href="ch06.html">Aug 2025 II-Q1(1)</a> (the two codewords 00000 and 11111).</p>
+<p><strong>Say it:</strong> "The Hamming distance between two words is the number of positions where they differ. A code with minimum distance d detects up to d minus 1 errors and corrects up to d minus 1 over 2, rounded down. So 00000 and 11111, at distance 5, can detect 4 errors or correct 2."</p>
+<p><strong>Worked detail:</strong></p>
+<table>
+<thead>
+<tr>
+<th>minimum distance d</th>
+<th>detects</th>
+<th>corrects</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>single parity bit</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>3-fold repetition, Hamming (7,4)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>3</td>
+<td>1 (and detects 2 at the same time)</td>
+<td>extended Hamming (8,4)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>4</td>
+<td>2</td>
+<td>5-fold repetition {00000, 11111}</td>
+</tr>
+</tbody>
+</table>
+<p>C code: the distance is the number of 1s in a XOR b.</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+
+/* Hamming distance: count the 1s in a XOR b (x &amp;= x - 1 clears the lowest 1) */
+int hamming_distance(unsigned a, unsigned b) {
+    unsigned x = a ^ b;
+    int count = 0;
+    while (x) {
+        x &amp;= x - 1;
+        count++;
+    }
+    return count;
+}
+
+int main(void) {
+    printf(&quot;d(00000, 11111) = %d\n&quot;, hamming_distance(0x00, 0x1F));
+    printf(&quot;d(10110, 10011) = %d\n&quot;, hamming_distance(0x16, 0x13));
+    printf(&quot;d(1011101, 1001001) = %d\n&quot;, hamming_distance(0x5D, 0x49));
+    return 0;
+}
+</code></pre>
+<p>Output (clang, run on 13 Nov 2026):</p>
+<pre><code class="language-text">d(00000, 11111) = 5
+d(10110, 10011) = 2
+d(1011101, 1001001) = 2
+</code></pre>
+<p>Trace of the last call: 1011101 XOR 1001001 = 0010100. The loop clears the lowest 1 twice (0010100 → 0010000 → 0000000), so the count is 2.</p>
+<p>Five versions with a "4 of 5 must agree" acceptance (last follow-up), each failing independently with probability 0.01, assuming failing versions agree on the same wrong output (the worst case): wrong output = P(4 or 5 fail) = 4.96 × 10⁻⁸; no answer = P(2 or 3 fail) = 0.00098; a plain majority of 5 is wrong with P(3 or more fail) = 9.85 × 10⁻⁶.</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "Why half? Give me the argument."<br><strong>You:</strong> "If at most t bits flip, the received word is within t of the sent codeword. Any other codeword is at least d from the sent one, so by the triangle inequality it is at least d minus t from the received word, and decoding to the nearest codeword is right when d minus t is more than t, that is when 2t is less than d. Picture balls of radius t around the codewords that do not overlap."</li>
+<li><strong>Prof:</strong> "With d = 5, can you correct one error and detect three at the same time?"<br><strong>You:</strong> "Yes, the condition is d at least t plus s plus 1, with s at least t, and 1 plus 3 plus 1 is 5. One flip leaves the word within 1 of the sent codeword, so I correct it. Two or three flips leave it at least 2 from every codeword, outside every radius-1 ball, so I flag it instead of correcting it."</li>
+<li><strong>Prof:</strong> "How would you use that correct-one, flag-the-rest idea with five program versions?"<br><strong>You:</strong> "I'd accept an output only when at least 4 of the 5 agree, which outvotes one wrong version, and send any case with 2 or 3 dissenters to a fallback or a person. With independent versions failing 1 percent of the time, and assuming the failing ones agree, a plain majority is wrong about 10 times in a million, the 4-of-5 check about 5 times in 100 million, but about 1 input in 1,000 gets no answer. Shared hard inputs would raise both numbers, and that is what my plan measures."</li>
+</ol>
+<p><strong>IT15. How does the (7,4) Hamming code correct a single error? Encode 1011, flip one bit, and decode.</strong></p>
+<p>Modelled on <a href="ch07.html">Jan 2025 II-Q1</a> (decode with a given check matrix) and <a href="ch06.html">Aug 2025 II-Q1(2)-(3)</a> (generator matrix, syndrome of the error vector).</p>
+<p><strong>Say it:</strong> "Four data bits get three parity bits, each checking a different group of positions. At the receiver I recompute the three checks; the pattern of failed checks, the syndrome, is the column of H at the wrong bit, so I flip that bit. Here 1011 encodes to 0110011, an error at position 5 gives syndrome 101, which is 5 in binary, and flipping bit 5 restores the codeword."</p>
+<p><strong>Worked detail:</strong> positions 1 to 7; parity bits at 1, 2 and 4; data bits d₁ d₂ d₃ d₄ at 3, 5, 6, 7.</p>
+<pre><code>p1 checks positions 1,3,5,7:  p1 = d1 ^ d2 ^ d4
+p2 checks positions 2,3,6,7:  p2 = d1 ^ d3 ^ d4
+p4 checks positions 4,5,6,7:  p4 = d2 ^ d3 ^ d4
+
+message 1011: d1=1 d2=0 d3=1 d4=1  -&gt;  p1 = 1^0^1 = 0, p2 = 1^1^1 = 1, p4 = 0^1^1 = 0
+codeword (positions 1..7): 0 1 1 0 0 1 1
+flip position 5:           0 1 1 0 1 1 1
+syndrome s4 s2 s1: s1 = parity of 1,3,5,7 = 0^1^1^1 = 1
+                   s2 = parity of 2,3,6,7 = 1^1^1^1 = 0
+                   s4 = parity of 4,5,6,7 = 0^1^1^1 = 1   -&gt;  101 = 5
+</code></pre>
+<p>Syndrome table (one error at each position, checked by enumeration): position i gives the syndrome i in binary, from 001 for position 1 to 111 for position 7. So this H has as its columns all seven nonzero 3-bit vectors, in counting order. The H in Jan 2025 has the same seven columns in a different order, so it is the same kind of code with the bits renamed.</p>
+<p>C code: encode, flip, correct, then check all cases.</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+
+/* bit i of the word (i = 1..7) is stored in bit (i - 1) of an unsigned */
+static int get(unsigned w, int i) { return (w &gt;&gt; (i - 1)) &amp; 1u; }
+
+/* message bits d1 d2 d3 d4 go to positions 3, 5, 6, 7; parity bits sit at 1, 2, 4 */
+unsigned encode(int d1, int d2, int d3, int d4) {
+    int p1 = d1 ^ d2 ^ d4;   /* covers positions 1, 3, 5, 7 */
+    int p2 = d1 ^ d3 ^ d4;   /* covers positions 2, 3, 6, 7 */
+    int p4 = d2 ^ d3 ^ d4;   /* covers positions 4, 5, 6, 7 */
+    int b[8] = {0, p1, p2, d1, p4, d2, d3, d4};
+    unsigned w = 0;
+    for (int i = 1; i &lt;= 7; i++) w |= (unsigned)b[i] &lt;&lt; (i - 1);
+    return w;
+}
+
+/* syndrome = XOR of the positions that hold a 1; 0 means &quot;codeword&quot; */
+int syndrome(unsigned w) {
+    int s = 0;
+    for (int i = 1; i &lt;= 7; i++)
+        if (get(w, i)) s ^= i;
+    return s;
+}
+
+unsigned correct(unsigned w) {
+    int s = syndrome(w);
+    return s ? (w ^ (1u &lt;&lt; (s - 1))) : w;
+}
+
+void show(const char *label, unsigned w) {
+    printf(&quot;%s &quot;, label);
+    for (int i = 1; i &lt;= 7; i++) printf(&quot;%d&quot;, get(w, i));
+    printf(&quot;  syndrome %d\n&quot;, syndrome(w));
+}
+
+int main(void) {
+    unsigned c = encode(1, 0, 1, 1);
+    show(&quot;sent     &quot;, c);
+    unsigned r = c ^ (1u &lt;&lt; 4);          /* flip position 5 */
+    show(&quot;received &quot;, r);
+    show(&quot;corrected&quot;, correct(r));
+
+    int ok1 = 0, wrong2 = 0, n2 = 0;
+    for (int m = 0; m &lt; 16; m++) {
+        unsigned x = encode(m &amp; 1, (m &gt;&gt; 1) &amp; 1, (m &gt;&gt; 2) &amp; 1, (m &gt;&gt; 3) &amp; 1);
+        for (int i = 0; i &lt; 7; i++)
+            if (correct(x ^ (1u &lt;&lt; i)) == x) ok1++;
+        for (int i = 0; i &lt; 7; i++)
+            for (int j = i + 1; j &lt; 7; j++) {
+                n2++;
+                if (correct(x ^ (1u &lt;&lt; i) ^ (1u &lt;&lt; j)) != x) wrong2++;
+            }
+    }
+    printf(&quot;single errors corrected: %d of 112\n&quot;, ok1);
+    printf(&quot;double errors miscorrected: %d of %d\n&quot;, wrong2, n2);
+    return 0;
+}
+</code></pre>
+<p>Output (clang, run on 13 Nov 2026):</p>
+<pre><code class="language-text">sent      0110011  syndrome 0
+received  0110111  syndrome 5
+corrected 0110011  syndrome 0
+single errors corrected: 112 of 112
+double errors miscorrected: 336 of 336
+</code></pre>
+<p>Python checks: the 16 codewords have weights 0, 3 (seven of them), 4 (seven) and 7, so d = 3; the 16 balls of radius 1 cover all 128 seven-bit words exactly once. Block error with independent flips: 1 - (1 - p)⁷ - 7p(1 - p)⁶ = 0.150 at p = 0.1 and 0.0020 at p = 0.01 (against 0.039 for 4 unprotected bits). The rate 4/7 = 0.571 is above the capacity 0.531 of the channel with p = 0.1. Adding an overall parity bit gives d = 4, and every double error then shows a nonzero syndrome with even overall parity (checked for all 16 × 28 cases).</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "Why do the parity bits sit at positions 1, 2 and 4?"<br><strong>You:</strong> "Because 1, 2 and 4 are the positions whose binary number has a single 1, so each parity bit is in exactly one check and can be set on its own. Check i covers every position whose binary number has that bit set, so the failed checks spell out the wrong position in binary, and every data position, like 3, which is 011, sits in at least two checks."</li>
+<li><strong>Prof:</strong> "So every nonzero syndrome points to a position. What does that tell you about the code?"<br><strong>You:</strong> "That no syndrome is wasted: 7 nonzero syndromes for 7 positions. Counting words, each of the 16 codewords has itself plus 7 neighbours at distance 1, and 16 times 8 is 128, every 7-bit word, so the radius-1 balls fill the space exactly. That is what a perfect code means: it meets the Hamming bound with equality."</li>
+<li><strong>Prof:</strong> "Perfect sounds ideal. Would you use it on a channel that flips 10 percent of bits?"<br><strong>You:</strong> "No. A block fails with 2 or more errors, which at p = 0.1 is 1 minus 0.9 to the 7, minus 7 times 0.1 times 0.9 to the 6, about 15 percent. Its rate, 4 sevenths or 0.571, is above that channel's capacity of 0.531, so no code at that rate can be made reliable there; perfect only means no wasted words, not enough redundancy. At p = 0.01 the same code loses about 0.2 percent of blocks, against 3.9 percent for 4 unprotected bits."</li>
+</ol>
+<p><strong>IT16. What is the difference between error detection and error correction, and when would you choose each?</strong></p>
+<p>Pulls together <a href="ch07.html">Jan 2025 II-Q1(3)</a> (why 2 errors cannot be corrected) and <a href="ch06.html">Aug 2025 II-Q1(1)(b)</a> (how many errors a code corrects).</p>
+<p><strong>Say it:</strong> "Detection only tells me the word is wrong, so I ask for it again; correction works out the right word without asking. With minimum distance d, a code detects d minus 1 errors but corrects only about half that, so detection needs less redundancy. I'd detect when resending is cheap, like network packets, and correct when it isn't, like memory chips or a space probe."</p>
+<p><strong>Worked detail:</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>detection plus resend (ARQ)</th>
+<th>correction (forward error correction)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>needs</td>
+<td>d ≥ s + 1 to catch s errors</td>
+<td>d ≥ 2t + 1 to fix t errors</td>
+</tr>
+<tr>
+<td>cost</td>
+<td>a return channel and extra delay when errors happen</td>
+<td>more check bits on every block</td>
+</tr>
+<tr>
+<td>typical use</td>
+<td>Ethernet CRC, TCP checksum</td>
+<td>ECC memory (SECDED), storage, QR codes, space links</td>
+</tr>
+<tr>
+<td>fails silently when</td>
+<td>the error pattern is itself a codeword</td>
+<td>more than t errors: the decoder picks a wrong codeword</td>
+</tr>
+</tbody>
+</table>
+<p>Example: 7 data bits plus parity, p = 0.01. A word is resent when an odd number of bits flip (0.0746), so on average 1/(1 - 0.0746) = 1.08 sends per word, and a wrong word is accepted with probability 0.0028 per delivered word.</p>
+<p>The same idea with program versions: two versions compared with each other can only detect (like d = 2); three versions with a 2-out-of-3 vote can outvote one wrong version (like d = 3).</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "You said two versions can only detect. What should a system do when they disagree?"<br><strong>You:</strong> "The same as a receiver that detects an error: trust neither answer and fall back. That could be re-running, switching to a safe default, or asking a third version or a person, which is roughly what recovery blocks with an acceptance test do in software fault tolerance. The cost is that some inputs get a late answer or none, so detection trades availability for safety."</li>
+<li><strong>Prof:</strong> "When does comparing two versions miss a failure completely?"<br><strong>You:</strong> "When both give the same wrong output, the comparison just sees agreement. That is like an error pattern that happens to be a codeword: the syndrome is zero, so nothing is detected. My plan has the same blind spot, since a bug that the merged reference code shares cannot be seen by comparing against it."</li>
+<li><strong>Prof:</strong> "How would you estimate how often two versions agree on a wrong output?"<br><strong>You:</strong> "My plan counts runs that fail on the same input, and it counts the 2-out-of-3 vote as failed whenever two runs fail, which is the cautious choice. To split that, I'd keep each failing run's output and count inputs where two failing runs return the same value, because only those fool a voter; different wrong outputs give no majority and can be flagged. I haven't done that yet, and it would use the same notion of equal outputs that I use against the merged code."</li>
 </ol>
 </article>
 <div class="donebox"><label><input type="checkbox" class="done-cb" data-ch="h34"> Mark chapter 34 as done</label></div>
-<nav class="pager" aria-label="Previous and next"><a class="prev" href="ch33.html"><span class="lbl">← Previous</span>33. How to answer maths out loud</a><a class="next" href="ch35.html"><span class="lbl">Next →</span>35. Lab topics: short notes</a></nav>
+<nav class="pager" aria-label="Previous and next"><a class="prev" href="ch33.html"><span class="lbl">← Previous</span>33. C programming basics</a><a class="next" href="ch35.html"><span class="lbl">Next →</span>35. Number formats and logic circuits</a></nav>
 </main>
 </div>
 <script>
