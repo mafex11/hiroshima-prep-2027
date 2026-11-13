@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>35. C programming basics · Hiroshima meeting prep</title>
+<title>35. Information theory and coding · Hiroshima meeting prep</title>
 <style>
 :root{--bg:#fbfaf7;--fg:#1f2328;--muted:#5f6670;--line:#e3e0d8;--card:#f3f1ea;--link:#0b57d0;--code:#efede6;--accent:#2f5d8a;--fill:#fff2a8}
 *{box-sizing:border-box}
@@ -100,1286 +100,874 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <li><a href="contents.html">Contents</a></li>
 <li class="part">Part 1: The meeting and previous years&#x27; questions</li>
 <li data-ch="h01"><a href="ch01.html"><span class="n">1.</span>Start here</a></li>
-<li data-ch="h02"><a href="ch02.html"><span class="n">2.</span>Questions only you can answer (103)</a></li>
-<li data-ch="h03"><a href="ch03.html"><span class="n">3.</span>Reading list before the meeting</a></li>
-<li data-ch="h04"><a href="ch04.html"><span class="n">4.</span>The meeting: what we know</a></li>
-<li data-ch="h05"><a href="ch05.html"><span class="n">5.</span>Questions other applicants were asked</a></li>
-<li data-ch="h06"><a href="ch06.html"><span class="n">6.</span>Previous years&#x27; questions: topics that repeat</a></li>
-<li data-ch="h07"><a href="ch07.html"><span class="n">7.</span>Previous questions: January 2026</a></li>
-<li data-ch="h08"><a href="ch08.html"><span class="n">8.</span>Previous questions: August 2025</a></li>
-<li data-ch="h09"><a href="ch09.html"><span class="n">9.</span>Previous questions: January 2025</a></li>
-<li data-ch="h10"><a href="ch10.html"><span class="n">10.</span>Previous questions: August 2024</a></li>
-<li data-ch="h11"><a href="ch11.html"><span class="n">11.</span>Previous questions: January 2024</a></li>
-<li data-ch="h12"><a href="ch12.html"><span class="n">12.</span>Previous questions: August 2023</a></li>
-<li data-ch="h13"><a href="ch13.html"><span class="n">13.</span>Previous questions: older sample set</a></li>
+<li data-ch="h02"><a href="ch02.html"><span class="n">2.</span>Reading list before the meeting</a></li>
+<li data-ch="h03"><a href="ch03.html"><span class="n">3.</span>The meeting: what we know</a></li>
+<li data-ch="h04"><a href="ch04.html"><span class="n">4.</span>Questions other applicants were asked</a></li>
+<li data-ch="h05"><a href="ch05.html"><span class="n">5.</span>Previous years&#x27; questions: topics that repeat</a></li>
+<li data-ch="h06"><a href="ch06.html"><span class="n">6.</span>Previous questions: January 2026</a></li>
+<li data-ch="h07"><a href="ch07.html"><span class="n">7.</span>Previous questions: August 2025</a></li>
+<li data-ch="h08"><a href="ch08.html"><span class="n">8.</span>Previous questions: January 2025</a></li>
+<li data-ch="h09"><a href="ch09.html"><span class="n">9.</span>Previous questions: August 2024</a></li>
+<li data-ch="h10"><a href="ch10.html"><span class="n">10.</span>Previous questions: January 2024</a></li>
+<li data-ch="h11"><a href="ch11.html"><span class="n">11.</span>Previous questions: August 2023</a></li>
+<li data-ch="h12"><a href="ch12.html"><span class="n">12.</span>Previous questions: older sample set</a></li>
 <li class="part">Part 2: Your 15-minute talk</li>
-<li data-ch="h14"><a href="ch14.html"><span class="n">14.</span>Presentation guide and slides</a></li>
-<li data-ch="h15"><a href="ch15.html"><span class="n">15.</span>Full script (15, 10 and 5 minutes)</a></li>
+<li data-ch="h13"><a href="ch13.html"><span class="n">13.</span>Presentation guide and slides</a></li>
+<li data-ch="h14"><a href="ch14.html"><span class="n">14.</span>Full script (15, 10 and 5 minutes)</a></li>
 <li class="part">Part 3: Your plan and your work</li>
-<li data-ch="h16"><a href="ch16.html"><span class="n">16.</span>Your research plan (as submitted)</a></li>
-<li data-ch="h17"><a href="ch17.html"><span class="n">17.</span>Your plan, explained simply</a></li>
-<li data-ch="h18"><a href="ch18.html"><span class="n">18.</span>Every number in your plan</a></li>
-<li data-ch="h19"><a href="ch19.html"><span class="n">19.</span>Weak points and honest answers</a></li>
-<li data-ch="h20"><a href="ch20.html"><span class="n">20.</span>Questions on your plan (55)</a></li>
-<li data-ch="h21"><a href="ch21.html"><span class="n">21.</span>Hard questions from other professors (47)</a></li>
-<li data-ch="h22"><a href="ch22.html"><span class="n">22.</span>Questions on your work (91)</a></li>
-<li data-ch="h23"><a href="ch23.html"><span class="n">23.</span>Why Japan, why Hiroshima, why this lab</a></li>
-<li data-ch="h24"><a href="ch24.html"><span class="n">24.</span>Questions on funding</a></li>
-<li data-ch="h25"><a href="ch25.html"><span class="n">25.</span>Other likely questions</a></li>
-<li data-ch="h26"><a href="ch26.html"><span class="n">26.</span>Question bank from the 2 Nov meeting</a></li>
+<li data-ch="h15"><a href="ch15.html"><span class="n">15.</span>Your research plan (as submitted)</a></li>
+<li data-ch="h16"><a href="ch16.html"><span class="n">16.</span>Your plan, explained simply</a></li>
+<li data-ch="h17"><a href="ch17.html"><span class="n">17.</span>Every number in your plan</a></li>
+<li data-ch="h18"><a href="ch18.html"><span class="n">18.</span>Weak points and honest answers</a></li>
+<li data-ch="h19"><a href="ch19.html"><span class="n">19.</span>Questions on your plan (55)</a></li>
+<li data-ch="h20"><a href="ch20.html"><span class="n">20.</span>Hard questions from other professors (47)</a></li>
+<li data-ch="h21"><a href="ch21.html"><span class="n">21.</span>Questions on your work (91)</a></li>
+<li data-ch="h22"><a href="ch22.html"><span class="n">22.</span>Why Japan, why Hiroshima, why this lab</a></li>
+<li data-ch="h23"><a href="ch23.html"><span class="n">23.</span>Questions on funding</a></li>
+<li data-ch="h24"><a href="ch24.html"><span class="n">24.</span>Other likely questions</a></li>
+<li data-ch="h25"><a href="ch25.html"><span class="n">25.</span>Question bank from the 2 Nov meeting</a></li>
 <li class="part">Part 4: Practice meetings</li>
-<li data-ch="h27"><a href="ch27.html"><span class="n">27.</span>Three practice meetings (tap to hear the questions)</a></li>
+<li data-ch="h26"><a href="ch26.html"><span class="n">26.</span>Three practice meetings (tap to hear the questions)</a></li>
 <li class="part">Part 5: Maths</li>
-<li data-ch="h28"><a href="ch28.html"><span class="n">28.</span>Maths: what to study, day by day</a></li>
-<li data-ch="h29"><a href="ch29.html"><span class="n">29.</span>The maths inside your plan</a></li>
-<li data-ch="h30"><a href="ch30.html"><span class="n">30.</span>Stochastic processes and reliability</a></li>
-<li data-ch="h31"><a href="ch31.html"><span class="n">31.</span>Probability</a></li>
-<li data-ch="h32"><a href="ch32.html"><span class="n">32.</span>Statistics</a></li>
-<li data-ch="h33"><a href="ch33.html"><span class="n">33.</span>Linear algebra and calculus</a></li>
-<li data-ch="h34"><a href="ch34.html"><span class="n">34.</span>CS basics</a></li>
-<li data-ch="h35"><a href="ch35.html" aria-current="page"><span class="n">35.</span>C programming basics</a></li>
-<li data-ch="h36"><a href="ch36.html"><span class="n">36.</span>Information theory and coding</a></li>
-<li data-ch="h37"><a href="ch37.html"><span class="n">37.</span>Number formats and logic circuits</a></li>
-<li data-ch="h38"><a href="ch38.html"><span class="n">38.</span>Machine learning basics</a></li>
-<li data-ch="h39"><a href="ch39.html"><span class="n">39.</span>Discrete maths and logic</a></li>
-<li data-ch="h40"><a href="ch40.html"><span class="n">40.</span>pysrat, hands on (the lab&#x27;s tool)</a></li>
-<li data-ch="h41"><a href="ch41.html"><span class="n">41.</span>How to answer maths out loud</a></li>
-<li data-ch="h42"><a href="ch42.html"><span class="n">42.</span>Reliability and probability primer</a></li>
-<li data-ch="h43"><a href="ch43.html"><span class="n">43.</span>Lab topics: short notes</a></li>
-<li data-ch="h44"><a href="ch44.html"><span class="n">44.</span>Linear algebra and calculus checklist (from NAIST)</a></li>
-<li data-ch="h45"><a href="ch45.html"><span class="n">45.</span>Linear algebra and calculus problems (from NAIST)</a></li>
-<li data-ch="h46"><a href="ch46.html"><span class="n">46.</span>Statistics primer (from NAIST)</a></li>
-<li data-ch="h47"><a href="ch47.html"><span class="n">47.</span>Working maths out loud (from NAIST)</a></li>
+<li data-ch="h27"><a href="ch27.html"><span class="n">27.</span>Maths: what to study, day by day</a></li>
+<li data-ch="h28"><a href="ch28.html"><span class="n">28.</span>The maths inside your plan</a></li>
+<li data-ch="h29"><a href="ch29.html"><span class="n">29.</span>Stochastic processes and reliability</a></li>
+<li data-ch="h30"><a href="ch30.html"><span class="n">30.</span>Probability</a></li>
+<li data-ch="h31"><a href="ch31.html"><span class="n">31.</span>Statistics</a></li>
+<li data-ch="h32"><a href="ch32.html"><span class="n">32.</span>Linear algebra and calculus</a></li>
+<li data-ch="h33"><a href="ch33.html"><span class="n">33.</span>CS basics</a></li>
+<li data-ch="h34"><a href="ch34.html"><span class="n">34.</span>C programming basics</a></li>
+<li data-ch="h35"><a href="ch35.html" aria-current="page"><span class="n">35.</span>Information theory and coding</a></li>
+<li data-ch="h36"><a href="ch36.html"><span class="n">36.</span>Number formats and logic circuits</a></li>
+<li data-ch="h37"><a href="ch37.html"><span class="n">37.</span>Machine learning basics</a></li>
+<li data-ch="h38"><a href="ch38.html"><span class="n">38.</span>Discrete maths and logic</a></li>
+<li data-ch="h39"><a href="ch39.html"><span class="n">39.</span>pysrat, hands on (the lab&#x27;s tool)</a></li>
+<li data-ch="h40"><a href="ch40.html"><span class="n">40.</span>How to answer maths out loud</a></li>
+<li data-ch="h41"><a href="ch41.html"><span class="n">41.</span>Reliability and probability primer</a></li>
+<li data-ch="h42"><a href="ch42.html"><span class="n">42.</span>Lab topics: short notes</a></li>
+<li data-ch="h43"><a href="ch43.html"><span class="n">43.</span>Linear algebra and calculus checklist (from NAIST)</a></li>
+<li data-ch="h44"><a href="ch44.html"><span class="n">44.</span>Linear algebra and calculus problems (from NAIST)</a></li>
+<li data-ch="h45"><a href="ch45.html"><span class="n">45.</span>Statistics primer (from NAIST)</a></li>
+<li data-ch="h46"><a href="ch46.html"><span class="n">46.</span>Working maths out loud (from NAIST)</a></li>
 <li class="part">Part 6: The lab, their papers, the professors</li>
-<li data-ch="h48"><a href="ch48.html"><span class="n">48.</span>Prof. Zheng in depth</a></li>
-<li data-ch="h49"><a href="ch49.html"><span class="n">49.</span>The lab, Prof. Dohi and Prof. Okamura</a></li>
-<li data-ch="h50"><a href="ch50.html"><span class="n">50.</span>Professors you may meet</a></li>
-<li data-ch="h51"><a href="ch51.html"><span class="n">51.</span>How Japanese professors run these meetings</a></li>
-<li data-ch="h52"><a href="ch52.html"><span class="n">52.</span>Papers guide: lab and cited papers</a></li>
-<li data-ch="h53"><a href="ch53.html"><span class="n">53.</span>New lab papers since October</a></li>
-<li data-ch="h54"><a href="ch54.html"><span class="n">54.</span>Questions on their papers: N-version, AI, testing (44)</a></li>
-<li data-ch="h55"><a href="ch55.html"><span class="n">55.</span>Questions on their papers: reliability models (83)</a></li>
+<li data-ch="h47"><a href="ch47.html"><span class="n">47.</span>Prof. Zheng in depth</a></li>
+<li data-ch="h48"><a href="ch48.html"><span class="n">48.</span>The lab, Prof. Dohi and Prof. Okamura</a></li>
+<li data-ch="h49"><a href="ch49.html"><span class="n">49.</span>Professors you may meet</a></li>
+<li data-ch="h50"><a href="ch50.html"><span class="n">50.</span>How Japanese professors run these meetings</a></li>
+<li data-ch="h51"><a href="ch51.html"><span class="n">51.</span>Papers guide: lab and cited papers</a></li>
+<li data-ch="h52"><a href="ch52.html"><span class="n">52.</span>New lab papers since October</a></li>
+<li data-ch="h53"><a href="ch53.html"><span class="n">53.</span>Questions on their papers: N-version, AI, testing (44)</a></li>
+<li data-ch="h54"><a href="ch54.html"><span class="n">54.</span>Questions on their papers: reliability models (83)</a></li>
 <li class="part">Part 7: Meeting day</li>
-<li data-ch="h56"><a href="ch56.html"><span class="n">56.</span>Meeting-day checklist</a></li>
-<li data-ch="h57"><a href="ch57.html"><span class="n">57.</span>How to address them, and etiquette</a></li>
-<li data-ch="h58"><a href="ch58.html"><span class="n">58.</span>Email templates</a></li>
+<li data-ch="h55"><a href="ch55.html"><span class="n">55.</span>Meeting-day checklist</a></li>
+<li data-ch="h56"><a href="ch56.html"><span class="n">56.</span>How to address them, and etiquette</a></li>
+<li data-ch="h57"><a href="ch57.html"><span class="n">57.</span>Email templates</a></li>
 <li class="part">Reference</li>
-<li data-ch="h59"><a href="ch59.html"><span class="n">59.</span>Glossary</a></li>
-<li data-ch="h60"><a href="ch60.html"><span class="n">60.</span>Every lab paper (index)</a></li>
-<li data-ch="h61"><a href="ch61.html"><span class="n">61.</span>Slide text and sources</a></li>
-<li data-ch="h62"><a href="ch62.html"><span class="n">62.</span>How the 2 Nov meeting went</a></li>
+<li data-ch="h58"><a href="ch58.html"><span class="n">58.</span>Glossary</a></li>
+<li data-ch="h59"><a href="ch59.html"><span class="n">59.</span>Every lab paper (index)</a></li>
+<li data-ch="h60"><a href="ch60.html"><span class="n">60.</span>Slide text and sources</a></li>
+<li data-ch="h61"><a href="ch61.html"><span class="n">61.</span>How the 2 Nov meeting went</a></li>
 </ul></nav>
 <main class="page">
 <article>
 <header class="chead">
 <p class="part">Part 5: Maths</p>
-<p class="chno">Chapter 35 of 62</p>
-<h1>C programming basics</h1>
-<p class="when"><strong>When and how long:</strong> 30 minutes, with the C questions in the previous years&#x27; sets.</p>
+<p class="chno">Chapter 35 of 61</p>
+<h1>Information theory and coding</h1>
+<p class="when"><strong>When and how long:</strong> 30 minutes.</p>
 </header>
 
-<p>Part II Question 3 of every previous set is a C program to fill in, trace and explain: a stack in <a href="ch12.html">August 2023 II-Q3</a>, linked lists in <a href="ch11.html">January 2024 II-Q3</a> and <a href="ch10.html">August 2024 II-Q3</a>, bubble sort with malloc in <a href="ch09.html">January 2025 II-Q3</a>, insertion sort on structs in <a href="ch08.html">August 2025 II-Q3</a>, a circular queue in <a href="ch07.html">January 2026 II-Q3</a> and a struct with malloc in the <a href="ch13.html">older set II-Q3</a>; trees, heaps and hashing sit in Part II Question 2 (August 2025, January 2026, January 2025). Out loud a professor can only ask the short version, as two applicants to Hiroshima's School of Informatics and Data Science were asked "What is a struct in C, and why use it?" (<a href="ch05.html">02_questions_others_were_asked.md</a>, B4 and B5), and this file is that short version.</p>
-<p><strong>How this was checked.</strong> Every C program below was compiled with Apple clang 21 (<code>-std=c11 -Wall -Wextra</code>) on this Mac on 13 Nov 2026 and run; the output under each program is the real output, pasted. Every number (call counts, tree heights, heap swaps, probe counts, loop counts, the rho estimate) was recomputed in Python 3.14, by enumeration or simulation where that was possible. The Csmith, Heartbleed and BCD facts were checked against the papers or the web.</p>
-<hr />
-<h2 id="short-notes">Short notes</h2>
-<ul>
-<li><strong>Pointer.</strong> A pointer holds an address: <code>&amp;x</code> is the address of x, <code>*p</code> is the value stored at the address in p, and <code>p-&gt;m</code> is short for <code>(*p).m</code>.</li>
-<li><strong>Arrays.</strong> <code>a[i]</code> means <code>*(a + i)</code>: start at the first element and move i elements along, not i bytes. Passed to a function, an array turns into a pointer to its first element, so the function also needs the length.</li>
-<li><strong>Pass by value.</strong> C copies every argument, so a function that must change the caller's variable takes its address: <code>scanf("%d", &amp;x)</code>, <code>addElement(list, &amp;size, 10)</code>.</li>
-<li><strong>Precedence trap.</strong> <code>*p++</code> is <code>*(p++)</code>: it moves the pointer. <code>(*p)++</code> adds 1 to the value.</li>
-<li><strong>struct.</strong> A struct groups fields of different types into one record, and <code>typedef</code> gives it a short name. Its <code>sizeof</code> can be larger than the sum of the fields because of padding, and <code>sizeof arr / sizeof arr[0]</code> gives the number of elements in an array.</li>
-<li><strong>malloc and free.</strong> <code>malloc(n * sizeof(int))</code> returns a block from the heap, or NULL if it fails. Every block must be freed exactly once and never used afterwards; a block that is never freed is a leak, the classic cause of software aging.</li>
-<li><strong>Strings.</strong> A string is a <code>char</code> array that ends with the zero byte <code>'\0'</code>, so <code>"hello"</code> needs 6 bytes and <code>strlen</code> is O(n). Compare strings with <code>strcmp</code>, not <code>==</code>, which compares addresses.</li>
-<li><strong>Stack (last in, first out) with an array.</strong> <code>top = -1</code> when empty; push is <code>arr[++top] = x</code>, pop is <code>x = arr[top--]</code>; full when <code>top == MAX - 1</code>.</li>
-<li><strong>Queue (first in, first out), circular.</strong> <code>rear = (rear + 1) % capacity</code>, and the same for front. front == rear both when empty and when full, so keep a <code>size</code> counter or leave one slot always unused.</li>
-<li><strong>Linked list.</strong> Nodes made with malloc, each pointing to the next and the last to NULL. Insert or delete at a known place is O(1), reaching the i-th node is O(i), and deleting the head changes the head pointer itself.</li>
-<li><strong>Binary search tree.</strong> Smaller keys in the left subtree, larger in the right. Search and insert cost O(height): about log2 n if balanced, n - 1 if the keys arrive sorted. An in-order walk prints the keys sorted.</li>
-<li><strong>Heap.</strong> A complete binary tree with parent &gt;= children, stored in <code>A[1..m]</code> with children <code>2i</code>, <code>2i + 1</code> and parent <code>i / 2</code>. Insert and extract-max are O(log m); building from n items bottom-up is O(n).</li>
-<li><strong>Hash table.</strong> A hash function sends a key to a slot, and collisions are handled by chaining or by probing other slots (open addressing). With the load factor alpha = n/m kept low the average cost is O(1); a probe step must share no factor with m, so step 3 works for m = 10 and step 5 does not.</li>
-<li><strong>Recursion.</strong> A base case plus a call on a smaller input. Every call takes a stack frame, so very deep recursion overflows the stack (about 8 MB by default on this Mac, <code>ulimit -s</code> = 8176 KB), and any recursion can be rewritten as a loop with an explicit stack.</li>
-<li><strong>Running time.</strong> Count how often the innermost line runs: full nested loops give n^2, a loop that doubles or halves gives log2 n, and n/1 + n/2 + ... + n/n gives about n ln n. Bubble and insertion sort are O(n^2) (insertion sort is O(n) on sorted input); merge sort and heapsort are O(n log n).</li>
-<li><strong>Reading code.</strong> Integer division drops the fraction toward zero (7 / 2 = 3, -1 / 5 = 0), and <code>%</code> takes the sign of the left side (-1 % 5 = -1). <code>i++</code> gives the old value and <code>++i</code> the new one; <code>&amp;&amp;</code> and <code>||</code> stop as soon as the answer is known; a <code>static</code> local keeps its value between calls.</li>
-<li><strong>Undefined behaviour.</strong> Reading past an array, using freed memory, signed overflow and <code>i++ + i++</code> are undefined: the program may print something plausible, crash, or change with the compiler. The sanitizers (<code>-fsanitize=address</code>, <code>-fsanitize=undefined</code>) make them fail loudly.</li>
-</ul>
-<hr />
-<h2 id="questions">Questions</h2>
-<p><strong>CP1. What is a struct in C, and why use it?</strong></p>
-<p><strong>Say it:</strong> "A struct groups variables of different types under one name, like a student's id, name and points, so they travel together as one record. That keeps code short and safe: one parameter instead of three, arrays of records, and linked lists and trees built from structs that point to each other."</p>
-<p><strong>Worked detail:</strong> Two applicants to Hiroshima's School of Informatics and Data Science were asked exactly this out loud (<a href="ch05.html">02_questions_others_were_asked.md</a>, B4 and B5). The written versions are the <code>fraction</code> struct in the <a href="ch13.html">older set II-Q3</a> and the <code>Student</code> array in <a href="ch08.html">August 2025 II-Q3</a>.</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-
-typedef struct {
-    int id;
-    char name[20];
-    int points;
-} Student;
-
-struct Padded  { char a; int b; char c; };
-struct Ordered { int b; char a; char c; };
-
-void bump(Student *s)     { s-&gt;points += 5; }   /* changes the caller's record */
-void bump_copy(Student s) { s.points += 5; }    /* changes only a local copy   */
-
-int main(void) {
-    Student s = {101, &quot;Alice&quot;, 85};
-    bump_copy(s);
-    printf(&quot;%d %s %d\n&quot;, s.id, s.name, s.points);
-    bump(&amp;s);
-    printf(&quot;%d %s %d\n&quot;, s.id, s.name, s.points);
-    printf(&quot;sizeof(Student) = %zu\n&quot;, sizeof(Student));
-    printf(&quot;sizeof(struct Padded) = %zu, sizeof(struct Ordered) = %zu\n&quot;,
-           sizeof(struct Padded), sizeof(struct Ordered));
-    return 0;
-}
-</code></pre>
-<p>Output:</p>
-<pre><code>101 Alice 85
-101 Alice 90
-sizeof(Student) = 28
-sizeof(struct Padded) = 12, sizeof(struct Ordered) = 8
-</code></pre>
-<ul>
-<li><code>bump_copy</code> gets a copy of the whole record, so its change is lost; <code>bump</code> gets the address and changes the original. Use <code>s.points</code> on a struct and <code>p-&gt;points</code> on a pointer to one.</li>
-<li><code>Student</code> is 4 + 20 + 4 = 28 bytes, with no padding needed. <code>struct Padded</code> is char (1) + 3 padding + int (4) + char (1) + 3 padding = 12, because the int must start at a multiple of 4 and the whole struct must be a multiple of 4. Putting the int first gives 4 + 1 + 1 + 2 padding = 8.</li>
-</ul>
-<p><strong>Follow-ups (each builds on your last answer)</strong></p>
-<ol>
-<li><strong>Prof:</strong> "You said one parameter instead of three. When you pass a struct to a function, is it copied?"<br><strong>You:</strong> "Yes, C passes everything by value, so passing a Student copies all 28 bytes and the function only changes its copy. In the example, bump_copy leaves the points at 85. So when a function must change the record, or the struct is big, I pass a pointer and use the arrow."</li>
-<li><strong>Prof:</strong> "You said 28 bytes. Is the size of a struct always the sum of its fields?"<br><strong>You:</strong> "No, the compiler adds padding so each field starts at an address that is a multiple of its alignment, usually 4 for an int. Student happens to need none, 4 plus 20 plus 4, but a struct of a char, an int and a char takes 12 bytes, not 6, and putting the int first brings it down to 8."</li>
-<li><strong>Prof:</strong> "Apart from wasting memory, can that padding cause a real failure?"<br><strong>You:</strong> "Yes, because the layout is the compiler's choice: if I write a struct to a file or a socket as raw bytes and read it back on another compiler or machine, the fields can come out scrambled. The padding bytes also hold leftover junk, so comparing two equal records byte by byte with memcmp can say they differ. So I write and compare the fields one by one."</li>
-</ol>
-<hr />
-<p><strong>CP2. What is the difference between an array and a pointer in C?</strong></p>
-<p><strong>Say it:</strong> "An array is a block of elements next to each other in memory, and in most expressions its name turns into a pointer to the first element, so a[i] means: start at a, move i elements along, and read there. The difference shows in sizeof: in main it gives the whole array, 20 bytes for five ints, but inside a function the parameter is only a pointer, 8 bytes on a 64-bit machine."</p>
-<p><strong>Worked detail:</strong> Blanks 5, 7 and 9 of <a href="ch09.html">January 2025 II-Q3</a> ask for this pointer style: <code>arr + i</code> for the address of element i (blank 5, for scanf) and <code>*(arr + j)</code> for its value (blanks 7 and 9).</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-
-void show(int a[], int n) {
-    printf(&quot;inside show: sizeof(a) = %zu\n&quot;, sizeof(a));
-    for (int i = 0; i &lt; n; i++) printf(&quot;%d &quot;, *(a + i));
-    printf(&quot;\n&quot;);
-}
-
-int main(void) {
-    int a[5] = {10, 20, 30, 40, 50};
-    int *p = a;
-    printf(&quot;sizeof(a) = %zu, sizeof(p) = %zu\n&quot;, sizeof(a), sizeof(p));
-    printf(&quot;a[2] = %d, *(a + 2) = %d, p[2] = %d\n&quot;, a[2], *(a + 2), p[2]);
-    p = p + 3;
-    printf(&quot;*p = %d, p - a = %td\n&quot;, *p, p - a);
-    show(a, 5);
-    return 0;
-}
-</code></pre>
-<p>clang warns about the <code>sizeof</code> inside <code>show</code>:</p>
-<pre><code>cp2_array.c:4:52: warning: sizeof on array function parameter will return size of 'int *' instead of 'int[]' [-Wsizeof-array-argument]
-    4 |     printf(&quot;inside show: sizeof(a) = %zu\n&quot;, sizeof(a));
-      |                                                    ^
-cp2_array.c:3:15: note: declared here
-    3 | void show(int a[], int n) {
-      |               ^
-1 warning generated.
-</code></pre>
-<p>Output:</p>
-<pre><code>sizeof(a) = 20, sizeof(p) = 8
-a[2] = 30, *(a + 2) = 30, p[2] = 30
-*p = 40, p - a = 3
-inside show: sizeof(a) = 8
-10 20 30 40 50 
-</code></pre>
-<p><code>p - a</code> is 3 because pointer subtraction counts elements, not bytes. Now an off-by-one loop that reads <code>a[5]</code>, one past the end:</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-
-int main(void) {
-    int a[5] = {10, 20, 30, 40, 50};
-    int sum = 0;
-    for (int i = 0; i &lt;= 5; i++) sum += a[i];   /* off by one: i = 5 is past the end */
-    printf(&quot;sum = %d\n&quot;, sum);
-    return 0;
-}
-</code></pre>
-<p>The plain build ran with no error and printed a wrong sum (the five elements add up to 150):</p>
-<pre><code>sum = 151
-</code></pre>
-<p>The same file built with <code>-fsanitize=address</code> stopped at the bad read:</p>
-<pre><code>SUMMARY: AddressSanitizer: stack-buffer-overflow cp2_oob.c:6 in main
-</code></pre>
-<p><strong>Follow-ups (each builds on your last answer)</strong></p>
-<ol>
-<li><strong>Prof:</strong> "If the function only gets a pointer, how does it know how long the array is?"<br><strong>You:</strong> "It can't find out from the pointer, so I pass the length as a separate argument, like printList(list, size) in the August 2024 question. The other way is a marker at the end, which is how C strings work: they end with a zero byte."</li>
-<li><strong>Prof:</strong> "And if the length you pass is off by one, so the loop reads one element past the end?"<br><strong>You:</strong> "C doesn't check, so it just reads whatever lies next in memory, and that's undefined behaviour. With a loop that runs to i less than or equal to 5 over five elements, a plain build on a Mac printed 151 instead of 150, with no error at all. So a bug like this passes any test that only checks the program doesn't crash."</li>
-<li><strong>Prof:</strong> "How would you catch it, then? Does boundary testing help?"<br><strong>You:</strong> "I'd use both: build with AddressSanitizer, a compiler option in clang and GCC that stops the program at the first out-of-bounds read, and put some inputs exactly at the edges, like sizes 0, 1 and the maximum. Your lab's BCD paper plants off-by-one bugs as one of its five kinds of faults, since boundary faults usually look like that, and moves the test inputs toward the boundaries to catch them."</li>
-</ol>
-<hr />
-<p><strong>CP3. Why does a function that changes a count take <code>int *size</code>, and what is wrong with <code>*size++</code>?</strong></p>
-<p><strong>Say it:</strong> "C passes arguments by value, so a function that receives size gets a copy, and adding 1 to the copy is lost. To change the caller's variable I pass its address, ampersand size, and the function adds 1 through the pointer, with brackets around star size. Without the brackets, star size plus plus moves the pointer instead, because plus plus binds tighter than the star."</p>
-<p><strong>Worked detail:</strong> This is source code 2 of <a href="ch10.html">August 2024 II-Q3</a>, blanks [3], [7] and [9] to [14]; its answer warns that <code>*size++</code> is wrong.</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-#define MAX_SIZE 100
-
-void add_copy(int list[], int size, int value)     { list[size] = value; size++; }
-void add_pointer(int list[], int *size, int value) { list[*size] = value; (*size)++; }
-
-int main(void) {
-    int list[MAX_SIZE];
-    int size = 0;
-    add_copy(list, size, 10);
-    printf(&quot;after add_copy: size = %d\n&quot;, size);
-    add_pointer(list, &amp;size, 10);
-    add_pointer(list, &amp;size, 20);
-    printf(&quot;after add_pointer twice: size = %d, list = %d %d\n&quot;, size, list[0], list[1]);
-
-    int x[2] = {5, 0};
-    int *p = x;
-    (*p)++;                              /* adds 1 to x[0] */
-    printf(&quot;(*p)++ : x[0] = %d\n&quot;, x[0]);
-    int y = *p++;                        /* reads x[0], then moves p to x[1] */
-    printf(&quot;*p++   : y = %d, x[0] = %d, p now points %td int further\n&quot;, y, x[0], p - x);
-    return 0;
-}
-</code></pre>
-<p>Output:</p>
-<pre><code>after add_copy: size = 0
-after add_pointer twice: size = 2, list = 10 20
-(*p)++ : x[0] = 6
-*p++   : y = 6, x[0] = 6, p now points 1 int further
-</code></pre>
-<p>The slip itself, in the August 2024 <code>addElement</code>:</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-#define MAX_SIZE 100
-
-void addElement(int list[], int *size, int value) {
-    if (*size &lt; MAX_SIZE) {
-        list[*size] = value;
-        *size++;                     /* the slip: moves the pointer, not the count */
-    }
-}
-
-int main(void) {
-    int list[MAX_SIZE];
-    int size = 0;
-    addElement(list, &amp;size, 10);
-    addElement(list, &amp;size, 20);
-    addElement(list, &amp;size, 30);
-    printf(&quot;size = %d, list[0] = %d\n&quot;, size, list[0]);
-    return 0;
-}
-</code></pre>
-<p>clang warns even without <code>-Wall</code>, but still builds the program:</p>
-<pre><code>cp3_bug.c:7:9: warning: expression result unused [-Wunused-value]
-    7 |         *size++;                     /* the slip: moves the pointer, not the count */
-      |         ^~~~~~~
-1 warning generated.
-</code></pre>
-<p>Output: every add wrote to slot 0 and the count never moved.</p>
-<pre><code>size = 0, list[0] = 30
-</code></pre>
-<p><strong>Follow-ups (each builds on your last answer)</strong></p>
-<ol>
-<li><strong>Prof:</strong> "If star size plus plus is wrong, why does the compiler accept it?"<br><strong>You:</strong> "Because it's legal C: it reads the count, throws the value away and moves the local pointer, and all of that is allowed. clang does warn, 'expression result unused', even without extra flags, but a warning doesn't stop the build, so I'd turn warnings into errors with the -Werror flag."</li>
-<li><strong>Prof:</strong> "Suppose the warning was missed. Would a test catch the slip?"<br><strong>You:</strong> "Yes, if any test looks at the result. With the slip, size stays 0 and every add overwrites slot 0, so after adding 10, 20 and 30 the count is 0 and only 30 is stored. A test that only checks that the program runs without crashing would still pass."</li>
-<li><strong>Prof:</strong> "How do you know whether your tests are strong enough to catch slips like that?"<br><strong>You:</strong> "Mutation testing: I plant small slips like this one in copies of the code, called mutants, and measure the share my tests catch, the kill rate. Your lab's BCD paper did this with five kinds of mutants, such as off-by-one bugs and replaced operators, and counted a mutant as killed if some input took a different execution path from the correct program."</li>
-</ol>
-<hr />
-<p><strong>CP4. What do malloc and free do, and what can go wrong with them?</strong></p>
-<p><strong>Say it:</strong> "malloc asks for a block of memory on the heap while the program runs and returns a pointer to it, or NULL if there isn't enough; free gives the block back. I use it when the size is only known at run time, like N read from input, or when data must outlive the function that made it. The classic mistakes are not checking for NULL, forgetting to free, which is a leak, freeing twice, and using memory after it's freed."</p>
-<p><strong>Worked detail:</strong> This is blanks 1 to 4 and 10 of <a href="ch09.html">January 2025 II-Q3</a>, blanks 1-1 and 1-8 of <a href="ch07.html">January 2026 II-Q3</a>, and part (3) of the <a href="ch13.html">older set II-Q3</a>.</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-
-int *allocate(int n) {
-    int *arr = malloc(n * sizeof(int));
-    if (arr == NULL) {
-        fprintf(stderr, &quot;Memory allocation failed\n&quot;);
-        exit(1);
-    }
-    return arr;
-}
-
-int main(void) {
-    int n = 5;
-    int *p = allocate(n);
-    for (int i = 0; i &lt; n; i++) p[i] = i * i;
-    for (int i = 0; i &lt; n; i++) printf(&quot;%d &quot;, p[i]);
-    printf(&quot;\n&quot;);
-    free(p);
-    p = NULL;     /* a later use now fails loudly instead of reading freed memory */
-    return 0;
-}
-</code></pre>
-<p>Output:</p>
-<pre><code>0 1 4 9 16 
-</code></pre>
-<ul>
-<li><code>malloc(n * sizeof(int))</code>: malloc counts bytes, so multiply by the size of one element.</li>
-<li>Check for NULL before using the block. <code>exit(1)</code> needs <code>&lt;stdlib.h&gt;</code>.</li>
-<li><code>free(p)</code> once, then <code>p = NULL</code>, so a use after free becomes a NULL access that crashes at once instead of quietly reading freed memory.</li>
-</ul>
-<p>A leak, made on purpose:</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-
-/* handles one request and forgets to free its buffer */
-void handle_request(void) {
-    char *buf = malloc(1024);
-    if (buf == NULL) return;
-    buf[0] = 'x';
-}
-
-int main(void) {
-    for (int i = 0; i &lt; 1000; i++) handle_request();
-    printf(&quot;handled 1000 requests\n&quot;);
-    return 0;
-}
-</code></pre>
-<p>The program itself looks fine:</p>
-<pre><code>handled 1000 requests
-</code></pre>
-<p>macOS's <code>leaks</code> tool (<code>MallocStackLogging=1 leaks --atExit -- ./cp4_leak</code>) finds all 1000 lost blocks; the byte total counts the allocator's rounded-up block size:</p>
-<pre><code>Process 92551: 1000 leaks for 1280000 total leaked bytes.
-</code></pre>
-<p><strong>Follow-ups (each builds on your last answer)</strong></p>
-<ol>
-<li><strong>Prof:</strong> "You said forgetting free is a leak. What does a leak do to a server that runs for weeks?"<br><strong>You:</strong> "Each leaked block stays reserved until the process ends, so memory use creeps up with every request. After days the machine starts swapping and slows down, and in the end malloc returns NULL or the system kills the process. So it fails because it has run a long time, not because of one bad input."</li>
-<li><strong>Prof:</strong> "That is software aging. How does our lab deal with it?"<br><strong>You:</strong> "A leak is the standard example: Prof. Zheng, Prof. Okamura and Prof. Dohi's 2021 paper on rejuvenation and checkpointing names memory leaks and the build-up of round-off errors as aging-related bugs. The remedy is software rejuvenation, a planned restart that returns the system to a clean state, and the paper finds the restart timing that maximises steady-state availability, the long-run share of time the system is up."</li>
-<li><strong>Prof:</strong> "Would rejuvenation still help if failures came at a constant rate?"<br><strong>You:</strong> "No. A constant failure rate means exponential lifetimes, and then a freshly restarted system is just as likely to fail in the next hour as an old one, so each restart only adds downtime. Rejuvenation pays only when the failure rate grows with age, which is exactly what a leak causes."</li>
-</ol>
-<hr />
-<p><strong>CP5. How are strings stored in C, and why can't you compare them with <code>==</code>?</strong></p>
-<p><strong>Say it:</strong> "A C string is just an array of char that ends with a zero byte, written backslash zero, and no length is stored anywhere. So 'hello' takes 6 bytes, and strlen has to walk to the zero, which is O(n). Two strings are compared with strcmp, because double equals only compares their addresses."</p>
-<p><strong>Worked detail:</strong> The bracket checker in <a href="ch12.html">August 2023 II-Q3</a> loops with <code>data[i] != '\0'</code>, which is this idea.</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-#include &lt;string.h&gt;
-
-int main(void) {
-    char s[] = &quot;hello&quot;;
-    char t[] = &quot;hello&quot;;
-    printf(&quot;sizeof(s) = %zu, strlen(s) = %zu\n&quot;, sizeof(s), strlen(s));
-    printf(&quot;same address: %d, strcmp(s, t) == 0: %d\n&quot;, (void *)s == (void *)t, strcmp(s, t) == 0);
-    s[2] = '\0';
-    printf(&quot;after s[2] = '\\0': \&quot;%s\&quot;, strlen = %zu\n&quot;, s, strlen(s));
-
-    char buf[4];
-    strncpy(buf, &quot;hello&quot;, sizeof(buf));          /* copies h, e, l, l and adds no '\0' */
-    printf(&quot;after strncpy: buf[3] = '%c', so buf has no terminator\n&quot;, buf[3]);
-    snprintf(buf, sizeof(buf), &quot;%s&quot;, &quot;hello&quot;);   /* cuts to 3 chars and always adds '\0' */
-    printf(&quot;after snprintf: \&quot;%s\&quot;\n&quot;, buf);
-    return 0;
-}
-</code></pre>
-<p>Output:</p>
-<pre><code>sizeof(s) = 6, strlen(s) = 5
-same address: 0, strcmp(s, t) == 0: 1
-after s[2] = '\0': &quot;he&quot;, strlen = 2
-after strncpy: buf[3] = 'l', so buf has no terminator
-after snprintf: &quot;hel&quot;
-</code></pre>
-<ul>
-<li><code>sizeof(s)</code> counts the zero byte (6); <code>strlen(s)</code> does not (5).</li>
-<li><code>s</code> and <code>t</code> hold the same letters at different addresses, so comparing them as pointers gives 0 (false) and <code>strcmp</code> gives 0 (equal).</li>
-<li>Writing <code>'\0'</code> at index 2 ends the string there: "he".</li>
-<li><code>strncpy</code> with a source that is too long fills all 4 bytes and adds no terminator. <code>snprintf</code> always ends with <code>'\0'</code> (when the size is at least 1), so it keeps 3 letters.</li>
-</ul>
-<p><strong>Follow-ups (each builds on your last answer)</strong></p>
-<ol>
-<li><strong>Prof:</strong> "You said strlen walks to the zero byte. What if the zero byte is missing?"<br><strong>You:</strong> "Then it keeps reading past the end of the array into whatever memory follows, until it happens to find a zero or touches memory it may not read and crashes. A common way to get there is strncpy: when the source is too long it fills the buffer and adds no zero byte, as in the buf example."</li>
-<li><strong>Prof:</strong> "Is that only a crash risk, or worse?"<br><strong>You:</strong> "It can be a security hole, because reading past a buffer can leak whatever data sits next to it. Heartbleed in OpenSSL in 2014 was a close relative: the code trusted a length sent by the other side without checking it against the real message, and sent back up to 64 kilobytes of server memory per request."</li>
-<li><strong>Prof:</strong> "How could testing have found Heartbleed before release?"<br><strong>You:</strong> "The key input is a message whose stated length is bigger than its real length, so the generator has to make inconsistent inputs, not only valid ones. A coverage-guided fuzzer, which keeps mutating the inputs that reach new code, does that, and with AddressSanitizer the over-read is reported the first time it happens, even though the reply looks normal. Google's libFuzzer tutorial uses Heartbleed as exactly this demo."</li>
-</ol>
-<hr />
-<p><strong>CP6. How do you build a stack with an array, and how does it check brackets?</strong></p>
-<p><strong>Say it:</strong> "A stack is last in, first out. With an array I keep an index top that starts at minus 1: push moves top up and stores, pop reads at top and moves it down, and it's full when top is MAX minus 1 and empty when top is minus 1. For brackets I push every opening bracket and pop on every closing one; a wrong kind, a pop on an empty stack, or anything left at the end means unbalanced."</p>
-<p><strong>Worked detail:</strong> This is <a href="ch12.html">August 2023 II-Q3</a>. The listing there ignores a full stack (condition 1) and an empty pop (condition 2). This version handles all four conditions, and returns -1 when the stack is too small to decide.</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-#define MAX_DATA 5
-
-typedef struct { char arr[MAX_DATA]; int top; } STACK;
-
-void init(STACK *s) { s-&gt;top = -1; }
-
-int push(STACK *s, char c) {
-    if (s-&gt;top == MAX_DATA - 1) return 0;      /* full */
-    s-&gt;arr[++s-&gt;top] = c;
-    return 1;
-}
-
-int pop(STACK *s, char *out) {
-    if (s-&gt;top == -1) return 0;                /* empty */
-    *out = s-&gt;arr[s-&gt;top--];
-    return 1;
-}
-
-/* 1 = balanced, 0 = not balanced, -1 = stack too small to decide */
-int check(const char *text) {
-    STACK s;
-    char top;
-    init(&amp;s);
-    for (int i = 0; text[i] != '\0'; i++) {
-        char c = text[i];
-        if (c == '{' || c == '[') {
-            if (!push(&amp;s, c)) return -1;                 /* condition 1: full */
-        } else if (c == '}' || c == ']') {
-            if (!pop(&amp;s, &amp;top)) return 0;                /* condition 2: empty */
-            if ((top == '{') != (c == '}')) return 0;    /* condition 3: wrong kind */
-        }
-    }
-    return s.top == -1;                                  /* condition 4: leftovers */
-}
-
-int main(void) {
-    const char *texts[] = {&quot;{[a]}&quot;, &quot;{[[a]}&quot;, &quot;{[a]}[&quot;, &quot;][[{[a]}]]}&quot;, &quot;{[[{[[a]]}]]}&quot;, &quot;{[}]&quot;};
-    for (int i = 0; i &lt; 6; i++) printf(&quot;%-14s %2d\n&quot;, texts[i], check(texts[i]));
-    return 0;
-}
-</code></pre>
-<p>Output (1 = balanced, 0 = not balanced, -1 = cannot decide):</p>
-<pre><code>{[a]}           1
-{[[a]}          0
-{[a]}[          0
-][[{[a]}]]}     0
-{[[{[[a]]}]]}  -1
-{[}]            0
-</code></pre>
-<ul>
-<li><code>][[{[a]}]]}</code> is now 0: the first <code>]</code> pops an empty stack (condition 2). The original listing called it balanced.</li>
-<li><code>{[[{[[a]]}]]}</code> is balanced but nests 6 deep, and the stack holds 5, so the answer is -1. The original listing pushed onto the full stack, carried on, and called it unbalanced.</li>
-<li><code>{[}]</code> has one <code>{</code>, one <code>}</code>, one <code>[</code> and one <code>]</code>, yet it is 0: the pairs cross. Python check: two separate counters (one per kind, never negative, both ending at 0) accept <code>{[}]</code>, the stack rejects it; with only one kind of bracket, a counter and the stack agree on all 2,047 strings of length 0 to 10.</li>
-</ul>
-<p><strong>Follow-ups (each builds on your last answer)</strong></p>
-<ol>
-<li><strong>Prof:</strong> "Why a stack at all? Couldn't you just count brackets?"<br><strong>You:</strong> "With one kind of bracket, yes: add 1 for an opening, subtract 1 for a closing, and the text is balanced if the count never goes negative and ends at 0. With two kinds, no: open curly, open square, close curly, close square has the right count of each kind, but the pairs cross, and only a stack remembers which bracket was opened last."</li>
-<li><strong>Prof:</strong> "How large must the stack be?"<br><strong>You:</strong> "As deep as the deepest nesting, which for a text of length n can be n over 2, when every opening bracket comes before every closing one. The listing's stack holds 5 and the balanced text in its Q3 nests 6 deep, so the original program pushes onto a full stack, ignores the failure, and wrongly calls a balanced text unbalanced."</li>
-<li><strong>Prof:</strong> "If the memory is fixed, what should the program answer for that text?"<br><strong>You:</strong> "It shouldn't guess. My version returns a third answer, minus 1 for 'can't decide', so the caller knows the result is missing rather than wrong. In reliability terms that turns a silent wrong output into a detected failure, which is far safer, because a wrong answer that looks normal is the hardest kind to catch."</li>
-</ol>
-<hr />
-<p><strong>CP7. What is a circular queue, and how do you tell a full queue from an empty one?</strong></p>
-<p><strong>Say it:</strong> "A queue is first in, first out: add at rear, remove at front. In an array both indexes only move forward, so a circular queue wraps them round modulo the capacity, rear becomes rear plus 1 mod capacity, and the slots freed at the start get reused. Because front equals rear both when it's empty and when it's full, it keeps a size counter, or leaves one slot always empty."</p>
-<p><strong>Worked detail:</strong> This is <a href="ch07.html">January 2026 II-Q3</a> with the blanks filled in (capacity 5), plus one line on <code>%</code> with a negative number.</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-
-typedef struct {
-    int *data;
-    int capacity, front, rear, size;
-} Queue;
-
-int init(Queue *q, int cap) {
-    q-&gt;data = malloc(sizeof(int) * cap);
-    if (q-&gt;data == NULL) return 0;
-    q-&gt;capacity = cap;
-    q-&gt;front = q-&gt;rear = q-&gt;size = 0;
-    return 1;
-}
-
-int enqueue(Queue *q, int x) {
-    if (q-&gt;size == q-&gt;capacity) return 0;          /* full */
-    q-&gt;data[q-&gt;rear] = x;
-    q-&gt;rear = (q-&gt;rear + 1) % q-&gt;capacity;         /* wrap around */
-    q-&gt;size++;
-    return 1;
-}
-
-int dequeue(Queue *q, int *out) {
-    if (q-&gt;size == 0) return 0;                    /* empty */
-    *out = q-&gt;data[q-&gt;front];
-    q-&gt;front = (q-&gt;front + 1) % q-&gt;capacity;
-    q-&gt;size--;
-    return 1;
-}
-
-int main(void) {
-    Queue q;
-    int x;
-    if (!init(&amp;q, 5)) return 1;
-    printf(&quot;Initial: front=%d, rear=%d, size=%d\n&quot;, q.front, q.rear, q.size);
-    enqueue(&amp;q, 10); enqueue(&amp;q, 20); enqueue(&amp;q, 30);
-    dequeue(&amp;q, &amp;x);
-    printf(&quot;Current: front=%d, rear=%d, size=%d\n&quot;, q.front, q.rear, q.size);
-    enqueue(&amp;q, 40); enqueue(&amp;q, 50);
-    dequeue(&amp;q, &amp;x);
-    enqueue(&amp;q, 60); enqueue(&amp;q, 70);
-    printf(&quot;Final: front=%d, rear=%d, size=%d\n&quot;, q.front, q.rear, q.size);
-    printf(&quot;in C: -1 %% 5 = %d, -1 / 5 = %d, (-1 + 5) %% 5 = %d\n&quot;, -1 % 5, -1 / 5, (-1 + 5) % 5);
-    free(q.data);
-    return 0;
-}
-</code></pre>
-<p>Output:</p>
-<pre><code>Initial: front=0, rear=0, size=0
-Current: front=1, rear=3, size=2
-Final: front=2, rear=2, size=5
-in C: -1 % 5 = -1, -1 / 5 = 0, (-1 + 5) % 5 = 4
-</code></pre>
+<p>Part II Question 1 is information or coding theory in all six program sets from August 2023 to January 2026, so a professor could ask you a quick question on it out loud, even though it is far from your plan. This file covers <a href="ch11.html">Aug 2023 II-Q1</a> (a prefix code, its tree, the second extension, unique decodability), <a href="ch10.html">Jan 2024 II-Q1</a> (an erasure channel: conditional entropy, mutual information, capacity), <a href="ch09.html">Aug 2024 II-Q1</a> (entropy, a code that is not instantaneous, Huffman on the second extension, H(U²) = 2H(U)), <a href="ch08.html">Jan 2025 II-Q1</a> (decoding a (7,4) Hamming code), <a href="ch07.html">Aug 2025 II-Q1</a> (Hamming distance, generator matrix, syndrome), <a href="ch06.html">Jan 2026 II-Q1</a> (a memoryless source, its entropy and its second extension) and the <a href="ch12.html">older set II-Q1</a> (entropy, a Huffman code, H(S) ≤ L̄).</p>
+<p>Part 1 is the short list of ideas to say out loud. Part 2 has 16 questions (IT1 to IT16), each with a spoken answer, the full working and three follow-ups.</p>
+<p><strong>How the answers were checked.</strong> Every number in this file was computed in Python 3.14 on 13 Nov 2026 (scripts in <code>/tmp/fu_it/</code>). The three C programs were compiled with Apple clang 21 and run, and their real output is pasted under each one. The parity truth table, the Hamming (7,4) syndromes, the unique-decodability checks (Sardinas-Patterson) and the claims about two-dimensional parity were checked by enumerating every case. Shannon's English figures were checked against his 1951 paper and the DEFLATE fact against RFC 1951. The Yuki secret-filter fact in IT1 was checked against the "Secret filter" section of yuki-2.0/docs/MEMORY.md.</p>
+<p><strong>Notation.</strong> log means log base 2 unless written ln. h(p) = -p log p - (1 - p) log(1 - p) is the binary entropy function. "Bits" means the unit of log base 2.</p>
+<p><strong>Handy values</strong> (the question sets say "use log₂ 3 ≈ 1.6"):</p>
 <table>
 <thead>
 <tr>
-<th>step</th>
-<th>slots 0 to 4</th>
-<th>front</th>
-<th>rear</th>
-<th>size</th>
+<th>value</th>
+<th></th>
+<th>value</th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>enqueue 10, 20, 30</td>
-<td>10 20 30 . .</td>
-<td>0</td>
-<td>3</td>
-<td>3</td>
+<td>log 3</td>
+<td>1.585</td>
+<td>h(0.1)</td>
+<td>0.469</td>
 </tr>
 <tr>
-<td>dequeue (10)</td>
-<td>. 20 30 . .</td>
+<td>log 5</td>
+<td>2.322</td>
+<td>h(0.2)</td>
+<td>0.722</td>
+</tr>
+<tr>
+<td>log 6</td>
+<td>2.585</td>
+<td>h(0.25)</td>
+<td>0.811</td>
+</tr>
+<tr>
+<td>log 7</td>
+<td>2.807</td>
+<td>h(1/3)</td>
+<td>0.918</td>
+</tr>
+<tr>
+<td>log 10</td>
+<td>3.322</td>
+<td>h(0.4)</td>
+<td>0.971</td>
+</tr>
+<tr>
+<td>log 26</td>
+<td>4.700</td>
+<td>h(0.01)</td>
+<td>0.081</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="part-1-short-notes">Part 1. Short notes</h1>
+<h2 id="11-information-and-entropy">1.1 Information and entropy</h2>
+<ul>
+<li><strong>Information of one outcome.</strong> I(x) = -log p(x) bits. Say: "A rare outcome is more surprising, so it carries more information: a one-in-a-thousand event carries about 10 bits."</li>
+<li><strong>Entropy.</strong> H(X) = -Σ p(x) log p(x). Say: "Entropy is the average information per outcome, roughly how many fair yes-or-no questions I need on average to learn the outcome."</li>
+<li><strong>Bounds.</strong> 0 ≤ H(X) ≤ log n for n outcomes. It is 0 only when one outcome is certain, and log n only when all n are equally likely.</li>
+<li><strong>Binary entropy.</strong> h(p) for a yes-or-no event with probability p. h(0.5) = 1 bit, h(0.1) = 0.469 bits. Say: "A fair coin carries 1 bit; a coin that lands heads 90 percent of the time carries less than half a bit, because it is predictable."</li>
+<li><strong>Joint entropy.</strong> H(X, Y) = -Σ p(x, y) log p(x, y): the entropy of the pair taken as one variable.</li>
+<li><strong>Conditional entropy.</strong> H(Y | X) = Σ_x p(x) H(Y | X = x). Say: "The uncertainty left in Y once I know X, averaged over X."</li>
+<li><strong>Chain rule.</strong> H(X, Y) = H(X) + H(Y | X) = H(Y) + H(X | Y).</li>
+<li><strong>Conditioning reduces entropy on average.</strong> H(Y | X) ≤ H(Y), with equality only if X and Y are independent. One particular H(Y | X = x) can still be larger than H(Y) (IT3).</li>
+<li><strong>Mutual information.</strong> I(X; Y) = H(Y) - H(Y | X) = H(X) - H(X | Y) = H(X) + H(Y) - H(X, Y). Say: "How much knowing one variable tells me about the other. It is symmetric, never negative, and zero exactly when they are independent." It is at most min(H(X), H(Y)).</li>
+<li><strong>Relative entropy (Kullback-Leibler divergence).</strong> D(p || q) = Σ p(x) log(p(x)/q(x)) ≥ 0, zero only when p = q, and not symmetric. Mutual information is D(p(x, y) || p(x) p(y)), the distance of the joint distribution from independence. Akaike built AIC as an estimate of this kind of distance between the true distribution and a fitted model.</li>
+</ul>
+<h2 id="12-sources">1.2 Sources</h2>
+<ul>
+<li><strong>Memoryless source.</strong> Each symbol is drawn independently with the same fixed probabilities. Say: "The past tells you nothing about the next symbol."</li>
+<li><strong>Markov source.</strong> The next symbol's probabilities depend on the current state (usually the last symbol) through a transition matrix P. Its stationary distribution π solves π = πP.</li>
+<li><strong>Entropy rate of a Markov source.</strong> H = Σ_i π_i H(row i of P). Say: "Memory makes a source more predictable, so its entropy per symbol is below that of a memoryless source with the same symbol frequencies."</li>
+<li><strong>Extensions.</strong> The n-th extension Sⁿ treats each block of n symbols as one symbol, so q symbols give qⁿ blocks. For a memoryless source, P(block) is a product and H(Sⁿ) = n H(S). For a stationary Markov source, H(S²) = 2H(S) - I(S₁; S₂), which is smaller.</li>
+</ul>
+<h2 id="13-source-coding">1.3 Source coding</h2>
+<ul>
+<li><strong>Classes of codes.</strong> Nonsingular (distinct codewords) contains uniquely decodable (every bit string splits one way) contains instantaneous, also called prefix-free (no codeword is the start of another). Say: "Prefix-free means I can output each symbol the moment its last bit arrives."</li>
+<li><strong>Kraft inequality.</strong> A binary prefix code with lengths l₁, ..., l_q exists exactly when Σ 2^(-lᵢ) ≤ 1. McMillan showed that every uniquely decodable code satisfies the same inequality, so nothing is lost by insisting on a prefix code.</li>
+<li><strong>Source coding theorem.</strong> For any uniquely decodable code, L̄ ≥ H. The best prefix code has H ≤ L̄ &lt; H + 1. Coding blocks of n symbols gives H ≤ L̄ₙ/n &lt; H + 1/n, so the cost per symbol can get as close to H as we like.</li>
+<li><strong>Huffman's algorithm.</strong> Repeatedly merge the two least likely items until one is left; each merge adds one bit to every symbol inside it. It gives the shortest average length among codes that code one symbol at a time. L̄ = H exactly when every probability is a power of 1/2.</li>
+<li><strong>Efficiency.</strong> H / L̄. Redundancy is 1 minus the efficiency.</li>
+</ul>
+<h2 id="14-channels">1.4 Channels</h2>
+<ul>
+<li><strong>Channel.</strong> A table of P(y | x): what comes out given what went in.</li>
+<li><strong>Capacity.</strong> C = max over input distributions p(x) of I(X; Y), in bits per channel use. Say: "Capacity is the most information per use that can get through reliably."</li>
+<li><strong>Binary symmetric channel (BSC)</strong> with flip probability p: C = 1 - h(p), reached with equally likely inputs. For p = 0.1, C = 0.531.</li>
+<li><strong>Binary erasure channel (BEC)</strong> with erasure probability ε: C = 1 - ε. An erasure is less harmful than a flip because the receiver knows which symbols it lost.</li>
+<li><strong>Channel coding theorem (Shannon).</strong> Every rate below C can be sent with error probability as small as we like, using long enough blocks; no rate above C can.</li>
+</ul>
+<h2 id="15-error-detection-and-correction">1.5 Error detection and correction</h2>
+<ul>
+<li><strong>Parity bit.</strong> The XOR of the data bits, so the whole word has an even number of 1s. It detects any odd number of flipped bits, misses any even number, and cannot say which bit is wrong.</li>
+<li><strong>Hamming distance.</strong> d(x, y) = the number of positions where x and y differ. The minimum distance d of a code is the smallest distance between two different codewords.</li>
+<li><strong>What d buys.</strong> A code with minimum distance d detects up to d - 1 errors, or corrects up to ⌊(d - 1)/2⌋. To correct t and also detect s ≥ t at the same time, it needs d ≥ t + s + 1.</li>
+<li><strong>Linear codes.</strong> Codewords are x = mG (generator matrix G). The check matrix H has H xᵀ = 0 for every codeword. The syndrome of a received word, s = H yᵀ, equals H eᵀ, so it depends only on the error pattern e.</li>
+<li><strong>Hamming (7,4).</strong> 4 data bits, 3 check bits, d = 3, corrects any single error. The columns of H are all seven nonzero 3-bit vectors, so a nonzero syndrome names the wrong bit. Adding one overall parity bit gives the extended (8,4) code with d = 4: single error correction, double error detection (SECDED), as in ECC memory.</li>
+<li><strong>Detection or correction.</strong> Detection plus resending (ARQ) needs less redundancy. Correction without resending (forward error correction) is used when resending is slow or impossible: memory, storage, space links.</li>
+<li><strong>CRC.</strong> The bits are read as a polynomial and the remainder after dividing by a fixed generator of degree r is sent. It catches every burst of length r or less when the generator has a constant term. Ethernet uses a 32-bit CRC.</li>
+</ul>
+<h2 id="16-where-this-meets-the-labs-work">1.6 Where this meets the lab's work</h2>
+<ul>
+<li>A 2-out-of-3 vote over program versions is a repetition code of length 3 (d = 3): it outvotes one wrong version. The coding numbers assume independent errors, which is exactly what Eckhardt and Lee showed fails for versions that share hard inputs: the vote fails with probability E[3θ² - 2θ³], not 3p² - 2p³.</li>
+<li>Comparing two versions only detects (like d = 2). Two versions with the same wrong output are like an error pattern that is itself a codeword: invisible.</li>
+<li>pysrat reports an AIC for each fitted NHPP model, and AIC is an estimate of relative entropy. So "which model fits best" is an information theory question.</li>
+</ul>
+<hr />
+<h1 id="part-2-questions-with-spoken-answers">Part 2. Questions with spoken answers</h1>
+<p><strong>IT1. What is entropy? Compute it for a fair coin and for a coin that lands heads with probability 0.9.</strong></p>
+<p><strong>Say it:</strong> "Entropy is the average information, or surprise, per outcome: H is minus the sum of p log base 2 of p, in bits. A fair coin has 1 bit. The 0.9 coin has about 0.47 bits, because it is more predictable."</p>
+<p><strong>Worked detail:</strong></p>
+<pre><code>H(fair) = -(0.5 log 0.5 + 0.5 log 0.5) = 0.5 + 0.5 = 1 bit
+H(0.9)  = -(0.9 log 0.9 + 0.1 log 0.1) = 0.1368 + 0.3322 = 0.469 bits
+</code></pre>
+<p>Entropy is largest for the fair coin and falls to 0 as p goes to 0 or 1. The rare outcome (tails, 0.1) carries -log 0.1 = 3.32 bits of information, but it happens only a tenth of the time.</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "Why a logarithm, and why base 2?"<br><strong>You:</strong> "Because information from independent events should add up. Their probabilities multiply, and a logarithm turns a product into a sum, so minus log p is the natural measure, up to the choice of base. Base 2 gives bits: the answer to one fair yes-or-no question is exactly 1 bit."</li>
+<li><strong>Prof:</strong> "Then how many bits per character does a random hexadecimal string carry, and how does English text compare?"<br><strong>You:</strong> "A uniformly random hex digit is one of 16 equally likely symbols, so it carries log base 2 of 16, which is 4 bits, the maximum for 16 symbols. English is far from uniform: Shannon's 1951 paper gives about 4.14 bits per letter from letter frequencies alone, against 4.70 for 26 equally likely letters. Using long context, he estimated roughly 1 bit per letter."</li>
+<li><strong>Prof:</strong> "So could you spot secrets such as API keys in text by their high entropy?"<br><strong>You:</strong> "I tried that in the secret filter of Yuki 2.0, my desktop agent: flag strings of 20 or more mixed characters above 3.5 bits per character. It wrongly flagged 16 of my 167 harmless look-alike strings, including every git hash and SSH public key, and caught almost nothing the known key formats missed, so I dropped it. A git hash is random hex at about 3.7 bits per character, so entropy alone cannot tell a secret from a hash."</li>
+</ol>
+<p><strong>IT2. A memoryless source has four symbols with probabilities 1/2, 1/4, 1/8 and 1/8. What is its entropy, and what is the largest entropy any four-symbol source can have?</strong></p>
+<p>Modelled on <a href="ch09.html">Aug 2024 II-Q1(1)</a> (1/2, 1/4, 1/4 gives 1.5 bits), <a href="ch06.html">Jan 2026 II-Q1(2)</a> (1/2, 1/3, 1/6 gives 1.459 bits) and <a href="ch12.html">older set II-Q1(1)</a> (2.45 bits).</p>
+<p><strong>Say it:</strong> "H is a half times 1, plus a quarter times 2, plus two eighths times 3, which is 1.75 bits. The maximum for four symbols is log base 2 of 4, which is 2 bits, and only the uniform distribution reaches it."</p>
+<p><strong>Worked detail:</strong></p>
+<pre><code>H = (1/2) log 2 + (1/4) log 4 + (1/8) log 8 + (1/8) log 8
+  = 0.5 + 0.5 + 0.375 + 0.375 = 1.75 bits
+maximum = log 4 = 2 bits;  redundancy = 1 - 1.75/2 = 0.125
+</code></pre>
+<p>Every probability is a power of 1/2, so the prefix code 0, 10, 110, 111 (lengths 1, 2, 3, 3 = -log p) has average length exactly 1.75. A fixed-length code needs 2 bits. When the question gives log 3 ≈ 1.6, as in Jan 2026, use it: (1/3) log 3 ≈ 0.533.</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "Why is the uniform distribution the maximum?"<br><strong>You:</strong> "Because log base 2 of n minus H of p equals the relative entropy between p and the uniform distribution, the sum of p times log of p over one n-th, and relative entropy is never negative. It is zero only when p is uniform. Here it is 2 minus 1.75, so 0.25 bits."</li>
+<li><strong>Prof:</strong> "Show me why relative entropy is never negative."<br><strong>You:</strong> "I use the fact that ln t is at most t minus 1. Minus D of p and q is the sum of p log of q over p, which is at most 1 over ln 2 times the sum of p times (q over p minus 1). That is 1 over ln 2 times (the sum of q minus the sum of p), which is 1 minus 1, so zero, and equality needs q over p equal to 1 everywhere, that is q = p."</li>
+<li><strong>Prof:</strong> "Where does relative entropy show up in our lab's work?"<br><strong>You:</strong> "In model selection. Akaike built AIC in 1973 as an estimate of the expected relative entropy between the true distribution and a fitted model, and pysrat's README shows each fitted NHPP model reporting its AIC. Wu, Dohi and Okamura's 2024 chapter asks whether the model that information criteria pick also predicts bugs best, and the abstract says that is not guaranteed; I have only read the abstract."</li>
+</ol>
+<p><strong>IT3. What are joint entropy and conditional entropy? Work them out for two program versions A and B that each fail on 10 percent of inputs and both fail on 4 percent.</strong></p>
+<p>Modelled on the H(Y | X) part of <a href="ch10.html">Jan 2024 II-Q1(2)</a>.</p>
+<p><strong>Say it:</strong> "Joint entropy H(X, Y) is the entropy of the pair taken together. Conditional entropy H(Y | X) is the uncertainty left in Y once I know X, averaged over X, and the chain rule says H(X, Y) = H(X) + H(Y | X). Here H(X, Y) is about 0.884 bits and H(X) is 0.469, so H(Y | X) is about 0.415 bits."</p>
+<p><strong>Worked detail:</strong> X = 1 if A fails, Y = 1 if B fails, on a random input.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>B fails (Y = 1)</th>
+<th>B passes (Y = 0)</th>
+<th>total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A fails (X = 1)</td>
+<td>0.04</td>
+<td>0.06</td>
+<td>0.10</td>
+</tr>
+<tr>
+<td>A passes (X = 0)</td>
+<td>0.06</td>
+<td>0.84</td>
+<td>0.90</td>
+</tr>
+<tr>
+<td>total</td>
+<td>0.10</td>
+<td>0.90</td>
 <td>1</td>
-<td>3</td>
+</tr>
+</tbody>
+</table>
+<pre><code>H(X) = H(Y) = h(0.1) = 0.469
+H(X,Y) = 0.04 log(1/0.04) + 2 (0.06 log(1/0.06)) + 0.84 log(1/0.84)
+       = 0.1858 + 0.4871 + 0.2113 = 0.884
+H(Y|X) = H(X,Y) - H(X) = 0.884 - 0.469 = 0.415
+
+Check from the definition:
+P(B fails | A fails) = 0.04/0.1 = 0.4      P(B fails | A passes) = 0.06/0.9 = 0.0667
+H(Y|X) = 0.1 h(0.4) + 0.9 h(0.0667) = 0.1 (0.971) + 0.9 (0.353) = 0.097 + 0.318 = 0.415
+</code></pre>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "You said conditioning leaves less uncertainty. Can it ever leave more?"<br><strong>You:</strong> "On average, no: H of Y given X is at most H of Y, with equality only under independence. But for one value of X it can: knowing that A failed raises B's failure chance to 0.4, so H of Y given X = 1 is h of 0.4, about 0.971 bits, more than H of Y, 0.469. The case where A passes has probability 0.9 and lowers the uncertainty enough to bring the average down to 0.415."</li>
+<li><strong>Prof:</strong> "What does that 0.4 mean if B is a backup for A?"<br><strong>You:</strong> "That the backup fails 40 percent of the time exactly when it is needed, against 10 percent on average. A 1-out-of-2 system fails only when both fail, so its failure probability is 0.04, four times the 0.01 that independence would predict."</li>
+<li><strong>Prof:</strong> "How would you estimate that 0.4 from data, and how sure would you be?"<br><strong>You:</strong> "I'd run both versions on, say, 10,000 random inputs; about 1,000 make A fail, and among those I count how many also make B fail, about 400. The standard error is the square root of 0.4 times 0.6 over 1,000, about 0.015. So the 95 percent interval is about 0.37 to 0.43."</li>
+</ol>
+<p><strong>IT4. What is mutual information? Compute it for the same two versions.</strong></p>
+<p>Modelled on <a href="ch10.html">Jan 2024 II-Q1(3)</a>, which asks for I(X; Y) = H(Y) - H(Y | X).</p>
+<p><strong>Say it:</strong> "Mutual information is how much knowing X reduces my uncertainty about Y: I(X; Y) = H(Y) minus H(Y | X). It is symmetric, never negative, and zero exactly when X and Y are independent. Here it is 0.469 minus 0.415, about 0.054 bits."</p>
+<p><strong>Worked detail:</strong></p>
+<pre><code>I(X;Y) = H(Y) - H(Y|X)          = 0.469 - 0.415         = 0.054 bits
+       = H(X) + H(Y) - H(X,Y)   = 0.469 + 0.469 - 0.884 = 0.054 bits
+upper limit: min(H(X), H(Y)) = 0.469 bits
+</code></pre>
+<p>Independence would give P(both fail) = 0.1 × 0.1 = 0.01, not 0.04, so I &gt; 0 as expected. Mutual information has no sign: with P(both fail) = 0, P(only A) = P(only B) = 0.1, P(neither) = 0.8 (the versions never fail together), I(X; Y) = 0.016 bits, also positive.</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "0.054 bits sounds tiny. Is the dependence small?"<br><strong>You:</strong> "Not in the way that matters: the joint failure probability is 0.04, four times the 0.01 that independence gives. Mutual information averages over all four cases, and both passing, at 0.84, dominates, so rare failures give small numbers. Its ceiling here is only H of X, 0.469 bits, so I'd report the ratio of 4 next to it."</li>
+<li><strong>Prof:</strong> "Compute the correlation between the two failure indicators. How does it relate to the rho in your plan?"<br><strong>You:</strong> "The covariance is 0.04 minus 0.01, which is 0.03, and each variance is 0.1 times 0.9, which is 0.09, so the correlation is one third. If A and B were two runs from one setting, rho is exactly this correlation, the variance of theta over p times 1 minus p. So here the variance of theta would be 0.03, and P of both failing is p squared plus that, 0.01 plus 0.03."</li>
+<li><strong>Prof:</strong> "So why not use mutual information as your dependence measure instead?"<br><strong>You:</strong> "For two yes-or-no variables it adds little: zero correlation already means independence there, so both see the same thing. Mutual information also has no sign, so versions that fail on different inputs, which is good for voting, and versions that fail on the same inputs, which is bad, both give a positive number. And the vote's failure probability needs P of both failing directly, which rho gives."</li>
+</ol>
+<p><strong>IT5. What is a memoryless source, and what is a Markov source?</strong></p>
+<p>Modelled on <a href="ch06.html">Jan 2026 II-Q1(1)</a> ("Explain what a memoryless information source means").</p>
+<p><strong>Say it:</strong> "A memoryless source draws each symbol independently with the same fixed probabilities, so the past tells you nothing about the next symbol. In a Markov source the next symbol's probabilities depend on the current state, usually the last symbol, through a transition matrix. Memory makes a source more predictable, so its entropy per symbol is lower than that of a memoryless source with the same symbol frequencies."</p>
+<p><strong>Worked detail:</strong> a binary Markov source. From 0 it stays at 0 with probability 0.9 and moves to 1 with 0.1; from 1 it goes either way with 0.5.</p>
+<pre><code>P = | 0.9  0.1 |      stationary: pi0 (0.1) = pi1 (0.5), pi0 + pi1 = 1
+    | 0.5  0.5 |      so pi1 = 0.1/0.6 = 1/6, pi0 = 5/6
+eigenvalues of P: 1 and 0.4
+
+entropy rate = pi0 h(0.1) + pi1 h(0.5) = (5/6)(0.469) + (1/6)(1) = 0.391 + 0.167 = 0.557 bits/symbol
+memoryless source with the same frequencies (1/6 ones): h(1/6) = 0.650 bits/symbol
+</code></pre>
+<p>Block entropies per symbol, H(block of n)/n: 0.650 (n = 1), 0.604 (n = 2), 0.576 (n = 5), 0.567 (n = 10), falling toward 0.557.</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "How did you get the stationary probabilities five sixths and one sixth?"<br><strong>You:</strong> "In the long run the flow from 0 to 1 must equal the flow back, so pi0 times 0.1 equals pi1 times 0.5. With pi0 plus pi1 equal to 1, that gives pi1 = 0.1 over 0.6, one sixth, and pi0 = five sixths. Equivalently, pi is the left eigenvector of the transition matrix for eigenvalue 1."</li>
+<li><strong>Prof:</strong> "Does the source have to start in that distribution?"<br><strong>You:</strong> "No. The chain can reach both states and is not periodic, so it forgets its start: the other eigenvalue is 1 minus 0.1 minus 0.5, which is 0.4, so the distance to the stationary distribution shrinks by a factor of 0.4 each step. Starting from 0, the chance of being in state 1 goes 0.1, 0.14, 0.156 and on toward 0.167, and the entropy rate is a long-run average, so the start does not matter."</li>
+<li><strong>Prof:</strong> "So in the long run about one symbol in six is a 1. Where would a source like this appear in reliability work?"<br><strong>You:</strong> "As a pass and fail sequence where a failure makes the next failure more likely: here a fail is followed by another fail half the time, against 0.1 after a pass. That is the idea of the self-exciting Hawkes models in Qiu et al., where each detected fault raises the chance of more soon after, though theirs work in continuous time. Many of the lab's availability models, like Prof. Zheng's work on virtualized systems, are continuous-time Markov chains over working and failed states too."</li>
+</ol>
+<p><strong>IT6. What is the second extension of a source, and why is H(S²) = 2H(S) for a memoryless source?</strong></p>
+<p>Modelled on <a href="ch09.html">Aug 2024 II-Q1(4)</a> (prove H(U²) = 2H(U)), <a href="ch06.html">Jan 2026 II-Q1(3)-(4)</a> (pair probabilities and H(U²)) and <a href="ch11.html">Aug 2023 II-Q1(3)</a> (write out the extension of a code).</p>
+<p><strong>Say it:</strong> "The second extension treats each pair of symbols as one new symbol, so q symbols give q squared pairs. If the source is memoryless, a pair's probability is the product of the two probabilities, the log of a product is a sum, and the entropy splits into H(S) plus H(S)."</p>
+<p><strong>Worked detail:</strong> proof. Let S have probabilities p₁, ..., p_q. Memoryless means P(sᵢ sⱼ) = pᵢ pⱼ.</p>
+<pre><code>H(S^2) = - sum_i sum_j pi pj log(pi pj)
+       = - sum_i sum_j pi pj (log pi + log pj)
+       = -(sum_i pi log pi)(sum_j pj) - (sum_i pi)(sum_j pj log pj)
+       = H(S) (1) + (1) H(S) = 2 H(S)
+</code></pre>
+<p>Example: S with probabilities 3/4 and 1/4. H(S) = h(1/4) = 0.811. The pairs have probabilities 9/16, 3/16, 3/16, 1/16 and H(S²) = 0.467 + 0.453 + 0.453 + 0.250 = 1.623 = 2 × 0.811.</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "You said 'if the source is memoryless'. What happens for a Markov source?"<br><strong>You:</strong> "Then a pair's probability is P of the first symbol times P of the second given the first, and H of the pair is H of S1 plus H of S2 given S1, which is 2H of S minus the mutual information between neighbours. For the Markov source with switching probabilities 0.1 and 0.5, that is 0.650 plus 0.557, about 1.208 bits, instead of 1.300, a gap of 0.093 bits."</li>
+<li><strong>Prof:</strong> "So pairs carry less than twice as much. Why would anyone code pairs for a memoryless source?"<br><strong>You:</strong> "Because a binary code spends at least 1 bit on every symbol. For probabilities 3/4 and 1/4 the entropy is 0.811 bits, but any one-symbol-at-a-time code costs 1 bit. Huffman on the pairs, with probabilities 9/16, 3/16, 3/16 and 1/16, gives lengths 1, 2, 3 and 3 and 27/16 bits per pair, about 0.844 bits per symbol."</li>
+<li><strong>Prof:</strong> "Then why not blocks of ten symbols? What does it cost?"<br><strong>You:</strong> "The gain shrinks while the cost grows: the bound is H plus 1 over n, and with blocks of 8 Huffman is already at about 0.816 against 0.811. But the table has 2 to the n codewords, 1,024 for blocks of ten, all their probabilities must be known, and the encoder waits for n symbols before it sends anything. Arithmetic coding gets the same gain without building a table, which is why many modern compressors use it or range coding."</li>
+</ol>
+<p><strong>IT7. What is the difference between a uniquely decodable code and an instantaneous code? Is the code {0, 01, 11} instantaneous?</strong></p>
+<p>Modelled on <a href="ch09.html">Aug 2024 II-Q1(2)</a> (this exact code) and <a href="ch11.html">Aug 2023 II-Q1(1), (4)</a>.</p>
+<p><strong>Say it:</strong> "Uniquely decodable means every bit string splits into codewords in only one way. Instantaneous means I can output each symbol as soon as its last bit arrives, which happens exactly when no codeword is a prefix of another. {0, 01, 11} is uniquely decodable but not instantaneous, because 0 is a prefix of 01."</p>
+<p><strong>Worked detail:</strong></p>
+<table>
+<thead>
+<tr>
+<th>code for s₁, s₂, s₃</th>
+<th>nonsingular</th>
+<th>uniquely decodable</th>
+<th>instantaneous</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0, 1, 01</td>
+<td>yes</td>
+<td>no: 01 is s₁s₂ or s₃</td>
+<td>no</td>
+</tr>
+<tr>
+<td>0, 01, 11</td>
+<td>yes</td>
+<td>yes</td>
+<td>no: 0 is a prefix of 01</td>
+</tr>
+<tr>
+<td>0, 10, 11</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Parses of {s₁ = 0, s₂ = 01, s₃ = 11}, found by trying every split: 011 = s₁ s₃; 0111 = s₂ s₃; 01111 = s₁ s₃ s₃; 0110 = s₁ s₃ s₁. Each string has one parse, but the first symbol is known only after the run of 1s ends.</p>
+<p>Sardinas-Patterson check (Python): {0, 01, 11} gives the dangling suffix set {1}, then {1} again, and 1 is not a codeword, so uniquely decodable. {0, 1, 01} gives {1}, which is a codeword, so not uniquely decodable.</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "How would you check unique decodability in general?"<br><strong>You:</strong> "With the Sardinas-Patterson test: list the leftover suffixes when one codeword is a prefix of another, keep matching them against the codewords, and if a leftover is ever itself a codeword, the code is not uniquely decodable. For {0, 01, 11}, 0 inside 01 leaves 1, and 1 inside 11 leaves 1 again. 1 is not a codeword and nothing new appears, so the code is uniquely decodable."</li>
+<li><strong>Prof:</strong> "That leftover 1 keeps coming back. What does it mean for the decoder?"<br><strong>You:</strong> "That the decoder can be kept waiting: after a 0 it cannot tell s1 from the start of s2 until it sees how many 1s follow. A 0 followed by an even number of 1s starts with s1 and an odd number with s2, so 011 is s1 s3 but 0111 is s2 s3. In the worst case it must buffer the whole message."</li>
+<li><strong>Prof:</strong> "Besides the delay, is there any other risk?"<br><strong>You:</strong> "Yes, one bit error near the end can change how the start is read: 0111 is s2 s3, but if the last bit flips, 0110 reads as s1 s3 s1, so even the first symbol changes. And the lengths 1, 2, 2 also fit the prefix code 0, 10, 11, so there is no reason to accept the delay."</li>
+</ol>
+<p><strong>IT8. State the Kraft inequality. Can a binary prefix code have codeword lengths 1, 2, 3, 3? And 1, 1, 2?</strong></p>
+<p>Modelled on <a href="ch11.html">Aug 2023 II-Q1(1)-(2)</a> (choose a codeword so the code is prefix-free, draw its tree) and step 1 of <a href="ch12.html">older set II-Q1(3)</a>.</p>
+<p><strong>Say it:</strong> "A binary prefix code with lengths l1 to lq exists exactly when the sum of 2 to the minus li is at most 1, and McMillan showed every uniquely decodable code obeys the same bound. Lengths 1, 2, 3, 3 give a half plus a quarter plus two eighths, exactly 1, so yes. Lengths 1, 1, 2 give 1.25, so no such code exists."</p>
+<p><strong>Worked detail:</strong></p>
+<pre><code>lengths 1,2,3,3 : 1/2 + 1/4 + 1/8 + 1/8 = 1      -&gt; possible, e.g. 0, 10, 110, 111
+lengths 1,1,2   : 1/2 + 1/2 + 1/4      = 5/4    -&gt; impossible (0 and 1 use up the whole tree)
+Aug 2023 code {0, 110, 10, 1110}: 1/2 + 1/8 + 1/4 + 1/16 = 15/16 &lt; 1 (the leaf 1111 is unused)
+</code></pre>
+<p>Proof of the inequality (tree argument): let L be the longest length. A codeword of length l sits at depth l of a binary tree and has 2^(L - l) descendants at depth L. No codeword is a prefix of another, so these sets of descendants do not overlap, and there are only 2^L nodes at depth L. So Σ 2^(L - lᵢ) ≤ 2^L; divide by 2^L.</p>
+<p>Construction from lengths (canonical code): sort the lengths; the first codeword is all zeros; each next codeword is the previous one plus 1, with zeros appended to reach the new length. For 1, 2, 3, 3: 0, then 1 → 10, then 11 → 110, then 111. (Python check: this gives prefix-free codes for 1, 2, 3, 3 and 2, 2, 2, 3, 3.)</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "You said the sum is at most 1. Why?"<br><strong>You:</strong> "Put the codewords on a binary tree and extend every branch down to depth L, the longest length. A codeword of length l owns 2 to the L minus l of the 2 to the L bottom nodes, and because no codeword is a prefix of another, these sets do not overlap. So the sum of 2 to the L minus l is at most 2 to the L, and dividing by 2 to the L gives the inequality."</li>
+<li><strong>Prof:</strong> "And the other direction: build me a prefix code with lengths 1, 2, 3, 3."<br><strong>You:</strong> "The first codeword is 0. Next I add 1 to get 1 and append a 0 for length 2, giving 10; then 10 plus 1 is 11, and appending 0 gives 110; then 110 plus 1 is 111. So the code is 0, 10, 110, 111, and this always works when the Kraft sum is at most 1."</li>
+<li><strong>Prof:</strong> "Is that construction used in anything real?"<br><strong>You:</strong> "Yes, it is the canonical Huffman code in DEFLATE, the format inside zip, gzip and PNG. The file stores only the code length of each symbol, and RFC 1951 fixes the order so the decoder rebuilds the exact codes from the lengths, which saves sending the code table itself."</li>
+</ol>
+<p><strong>IT9. Build a Huffman code for five symbols with probabilities 0.4, 0.2, 0.2, 0.1 and 0.1. What is the average length, and how close is it to the entropy?</strong></p>
+<p>Modelled on <a href="ch12.html">older set II-Q1(2)</a> (Huffman code and its average length) and <a href="ch09.html">Aug 2024 II-Q1(3)</a> (Huffman on the second extension).</p>
+<p><strong>Say it:</strong> "Huffman keeps merging the two least likely items: the two 0.1s into 0.2, then the two original 0.2s into 0.4, then the merged 0.2 with the 0.4 symbol into 0.6, and finally 0.6 with 0.4. That gives lengths 2, 2, 2, 3, 3 and an average of 2.2 bits, against an entropy of about 2.12 bits, so the code is about 96 percent efficient."</p>
+<p><strong>Worked detail:</strong></p>
+<pre><code>merge 1: 0.1 + 0.1 -&gt; 0.2*          list: 0.4, 0.2*, 0.2, 0.2
+merge 2: 0.2 + 0.2 -&gt; 0.4**         list: 0.4**, 0.4, 0.2*
+merge 3: 0.2* + 0.4 -&gt; 0.6          list: 0.6, 0.4**
+merge 4: 0.6 + 0.4** -&gt; 1.0
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>p</th>
+<th>codeword</th>
+<th>length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s₁</td>
+<td>0.4</td>
+<td>00</td>
 <td>2</td>
 </tr>
 <tr>
-<td>enqueue 40, 50</td>
-<td>. 20 30 40 50</td>
+<td>s₂</td>
+<td>0.2</td>
+<td>10</td>
+<td>2</td>
+</tr>
+<tr>
+<td>s₃</td>
+<td>0.2</td>
+<td>11</td>
+<td>2</td>
+</tr>
+<tr>
+<td>s₄</td>
+<td>0.1</td>
+<td>010</td>
+<td>3</td>
+</tr>
+<tr>
+<td>s₅</td>
+<td>0.1</td>
+<td>011</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<pre><code>L = 0.4(2) + 0.2(2) + 0.2(2) + 0.1(3) + 0.1(3) = 2.2 bits
+H = 0.4 log(1/0.4) + 2 (0.2 log 5) + 2 (0.1 log 10) = 2.122 bits;  efficiency 2.122/2.2 = 0.965
+Kraft: 3/4 + 2/8 = 1;  prefix-free (checked in Python)
+</code></pre>
+<p>Breaking ties the other way (always merging the newest merged node first) gives lengths 1, 2, 3, 4, 4, also with L̄ = 2.2. Length variance: 0.16 for (2, 2, 2, 3, 3) and 1.36 for (1, 2, 3, 4, 4).</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "Could Huffman give a different code here?"<br><strong>You:</strong> "Yes, ties can be broken differently. If I always merge the newest merged node first, I get lengths 1, 2, 3, 4, 4 instead. Both average 2.2 bits, but the variance of the length is 0.16 for the first and 1.36 for the second, so I'd take the first: a steadier bit rate and smaller buffers."</li>
+<li><strong>Prof:</strong> "How do you make the algorithm give the low-variance code every time?"<br><strong>You:</strong> "When a merged node ties with original symbols, I merge the originals first, which places the merged node as high as possible in the sorted list. Merged nodes then get combined late, so the tree stays shallow and balanced. In a priority queue that is a tie-breaker that puts merged nodes after symbols of the same probability, and the average length stays 2.2, because every way of breaking ties still gives an optimal code for these probabilities."</li>
+<li><strong>Prof:</strong> "All of this trusts those probabilities. What if the real ones differ from what you designed for?"<br><strong>You:</strong> "The code still decodes correctly, it just gets longer. With ideal lengths of minus log q, the average becomes H of p plus the relative entropy D of p and q, so the penalty is exactly the relative entropy. If the true probabilities were all 0.2, D is 0.2 bits, and the balanced code holds up better: 2.4 bits per symbol against 2.8 for the lengths 1, 2, 3, 4, 4."</li>
+</ol>
+<p><strong>IT10. What does the source coding theorem say, and why can no code beat the entropy?</strong></p>
+<p>Modelled on <a href="ch12.html">older set II-Q1(3)</a> ("Show that H(S) ≤ L̄(S)").</p>
+<p><strong>Say it:</strong> "For any uniquely decodable binary code, the average length is at least the entropy, and the best prefix code gets below H plus 1. Coding blocks of n symbols brings the cost per symbol below H plus 1 over n, so we can get as close to H as we like. The lower bound comes from the Kraft inequality together with the fact that relative entropy is never negative."</p>
+<p><strong>Worked detail:</strong></p>
+<pre><code>Lower bound. With qi = 2^(-li) and sum qi &lt;= 1 (Kraft), using ln t &lt;= t - 1:
+  H - L = sum pi log(2^(-li) / pi) &lt;= (1/ln 2) sum pi (2^(-li)/pi - 1)
+        = (1/ln 2) (sum 2^(-li) - 1) &lt;= 0,  so H &lt;= L,
+  with equality exactly when pi = 2^(-li) for every i.
+
+Upper bound. Take li = ceil(-log pi) (Shannon's lengths).
+  Then 2^(-li) &lt;= pi, so sum 2^(-li) &lt;= 1 and a prefix code exists (Kraft),
+  and li &lt; -log pi + 1, so L &lt; H + 1. Huffman is optimal, so it does at least as well.
+</code></pre>
+<p>Example: p = 0.99 and 0.01, H = h(0.01) = 0.0808 bits. Shannon's lengths are ⌈0.0145⌉ = 1 and ⌈6.64⌉ = 7, so L̄ = 0.99 + 0.07 = 1.06. Huffman uses 0 and 1, so L̄ = 1. Huffman on blocks of n symbols (Python), bits per symbol:</p>
+<table>
+<thead>
+<tr>
+<th>n</th>
+<th>1</th>
+<th>2</th>
+<th>5</th>
+<th>10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Huffman L̄ₙ/n</td>
+<td>1.000</td>
+<td>0.515</td>
+<td>0.226</td>
+<td>0.136</td>
+</tr>
+<tr>
+<td>bound H + 1/n</td>
+<td>1.081</td>
+<td>0.581</td>
+<td>0.281</td>
+<td>0.181</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "Where does the plus 1 in the upper bound come from?"<br><strong>You:</strong> "From Shannon's choice of lengths: l equals minus log base 2 of p, rounded up. Rounding up makes 2 to the minus l at most p, so the Kraft sum is at most 1 and a prefix code exists. Rounding up also adds less than 1 bit to each length, so the average is below H plus 1, and Huffman, being optimal, can only do better."</li>
+<li><strong>Prof:</strong> "So is Shannon's code as good as Huffman's? Try probabilities 0.99 and 0.01."<br><strong>You:</strong> "Not always. Shannon's lengths are 1 and 7, because minus log base 2 of 0.01 is 6.64, rounded up to 7, so the average is 0.99 plus 0.07, which is 1.06 bits; Huffman just uses 0 and 1, 1 bit. Both are within H plus 1, but the entropy is only about 0.081 bits, so both waste over 90 percent."</li>
+<li><strong>Prof:</strong> "Say those are pass and fail results from a million runs. How would you store them near the entropy?"<br><strong>You:</strong> "The entropy says about a million times 0.081, roughly 81,000 bits, about 10 kilobytes against 125 for one bit per run. Huffman on blocks of 10 results already gets 0.136 bits per result, and storing the gaps between failures with a Golomb code, which is built for gaps like these, takes about 10,000 gaps at about 8.1 bits each, within 1 percent of the entropy. That assumes independent runs; if failures cluster, the true entropy rate is lower still, and a Markov model would compress better."</li>
+</ol>
+<p><strong>IT11. What is channel capacity? Work it out for a binary symmetric channel that flips each bit with probability 0.1.</strong></p>
+<p>Modelled on <a href="ch10.html">Jan 2024 II-Q1(4)</a> (the capacity of a channel with flips and erasures; with no erasures it reduces to this one).</p>
+<p><strong>Say it:</strong> "Capacity is the largest mutual information between input and output, maximised over the input distribution: the most bits per use that can get through reliably. For a binary symmetric channel it is 1 minus h(p), reached with equally likely inputs. For p = 0.1 that is 1 minus 0.469, about 0.531 bits per use."</p>
+<p><strong>Worked detail:</strong></p>
+<pre><code>I(X;Y) = H(Y) - H(Y|X) = H(Y) - h(p)        (every input sees the same noise)
+H(Y) &lt;= 1, with equality when P(Y=1) = 1/2.
+P(Y=1) = r(1-p) + (1-r)p = p + r(1 - 2p), which is 1/2 exactly when r = 1/2.
+C = 1 - h(p);   C(0.1) = 1 - 0.469 = 0.531 bits per use
+</code></pre>
+<p>Repetition with a majority vote on the same channel (Python):</p>
+<table>
+<thead>
+<tr>
+<th>copies n</th>
+<th>rate 1/n</th>
+<th>P(decoded bit wrong)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
 <td>1</td>
-<td>0 (wrapped)</td>
+<td>1</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0.333</td>
+<td>0.028</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0.2</td>
+<td>0.0086</td>
+</tr>
+<tr>
+<td>7</td>
+<td>0.143</td>
+<td>0.0027</td>
+</tr>
+<tr>
+<td>11</td>
+<td>0.091</td>
+<td>0.0003</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "What does 0.531 bits per use actually promise?"<br><strong>You:</strong> "Shannon's channel coding theorem says that for any rate below 0.531 there are codes whose error probability goes to zero as the block length grows, and above it no code can do that. So in principle about 53 data bits in every 100 sent can get through almost error-free, but only with long blocks and a good code."</li>
+<li><strong>Prof:</strong> "Compare that with the simplest code: repeat each bit and take a majority vote."<br><strong>You:</strong> "Three copies give rate one third, and the vote fails when 2 or 3 copies flip: 3 times 0.01 times 0.9, plus 0.001, which is 0.028. Five copies give about 0.0086 at rate 0.2. So repetition only drives the error to zero by driving the rate to zero, while Shannon says any rate below 0.531 can be made reliable."</li>
+<li><strong>Prof:</strong> "That three-copy vote is a 2-out-of-3 vote over program versions. What does the 0.028 assume?"<br><strong>You:</strong> "That the copies fail independently. For program versions, Eckhardt and Lee's model gives a vote failure of E of 3 theta squared minus 2 theta cubed, where theta is a version's chance of failing on that input; for example, a Beta distribution for theta with mean 0.1 and intraclass correlation 0.1 gives about 0.047 instead of 0.028. So the vote keeps only about three quarters of the gain that independence would give, and Nogueira et al., measuring the same share over whole problems, found only 0.43 for three LLM-written versions."</li>
+</ol>
+<p><strong>IT12. A binary symmetric channel flips each bit with probability 0.1, and the input is 1 with probability 0.2. What is I(X; Y)?</strong></p>
+<p>Modelled on <a href="ch10.html">Jan 2024 II-Q1(1)(b) and (3)</a> (output probabilities and I(X; Y) in terms of the input probability r).</p>
+<p><strong>Say it:</strong> "First the output: P(Y = 1) is 0.2 times 0.9 plus 0.8 times 0.1, which is 0.26, so H(Y) is h(0.26), about 0.827 bits. H(Y | X) is h(0.1), 0.469, for either input. So I(X; Y) is about 0.358 bits, below the capacity of 0.531, which needs equally likely inputs."</p>
+<p><strong>Worked detail:</strong></p>
+<pre><code>P(Y=1) = 0.2(0.9) + 0.8(0.1) = 0.18 + 0.08 = 0.26
+H(Y)   = h(0.26) = 0.827
+H(Y|X) = 0.2 h(0.1) + 0.8 h(0.1) = h(0.1) = 0.469
+I(X;Y) = 0.827 - 0.469 = 0.358 bits    (capacity at r = 1/2: 0.531)
+</code></pre>
+<p>Z-channel for the last follow-up: 0 always arrives as 0, and 1 turns into 0 with probability 0.1. I(X; Y) = h(0.9r) - r h(0.1). A search over r (200,001 points) gives the maximum 0.763 bits at r ≈ 0.456, matching the closed form log(1 + 0.9 × 0.1^(0.1/0.9)) = 0.763.</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "Why doesn't the noise term H(Y | X) depend on the input distribution?"<br><strong>You:</strong> "Because both inputs see the same noise: given either input, the output is right with 0.9 and flipped with 0.1, so H of Y given X = x is h of 0.1 for each x. H of Y given X is the average of these weighted by P of x, and the weights add up to 1, so it stays h of 0.1 whatever the input. Only H of Y moves with the input."</li>
+<li><strong>Prof:</strong> "Then in general, how do you find the input distribution that reaches capacity?"<br><strong>You:</strong> "I maximise I of X and Y over the input distribution numerically. It is concave in the input probabilities, so there is one peak: for a binary input a one-dimensional search over P of X = 1 is enough, and for larger alphabets the standard method is the Blahut-Arimoto algorithm. For symmetric channels like this one the answer is simply the uniform input."</li>
+<li><strong>Prof:</strong> "Try it on a channel where 0 always arrives safely and 1 turns into 0 with probability 0.1. Which input would you send more often, and what is the capacity?"<br><strong>You:</strong> "I'd send 0 a bit more often, because it is never damaged. A search over r puts the best P of X = 1 at about 0.456, with capacity about 0.763 bits per use. That is well above the 0.531 of the symmetric channel, because only the 1s can be hurt."</li>
+</ol>
+<p><strong>IT13. What does a single parity bit do, and what can it not do?</strong></p>
+<p><strong>Say it:</strong> "It is the XOR of the data bits, chosen so that the whole word has an even number of 1s. Any odd number of flipped bits makes the count odd and is detected, but an even number of flips gets through, and the check never says which bit is wrong, so it can detect but not correct."</p>
+<p><strong>Worked detail:</strong> truth table for 3 data bits (checked by enumerating all 8 rows):</p>
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th>b</th>
+<th>c</th>
+<th>parity bit a⊕b⊕c</th>
+<th>1s in the word with the parity bit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
 <td>4</td>
 </tr>
+</tbody>
+</table>
+<p>C code: 7 data bits plus a parity bit, then one and two flipped bits. A check of 0 means "looks fine".</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+
+/* even parity bit: XOR of all bits, so the word plus the bit has an even number of 1s */
+int parity(unsigned x) {
+    int p = 0;
+    while (x) {
+        p ^= x &amp; 1u;
+        x &gt;&gt;= 1;
+    }
+    return p;
+}
+
+int main(void) {
+    unsigned data[] = {0x59, 0x00, 0x7F, 0x2A};  /* 1011001, 0000000, 1111111, 0101010 */
+    for (int i = 0; i &lt; 4; i++) {
+        unsigned d = data[i];
+        unsigned sent = (d &lt;&lt; 1) | (unsigned)parity(d);       /* 7 data bits + parity bit = 8 bits */
+        unsigned one = sent ^ 0x10;                            /* flip one bit */
+        unsigned two = sent ^ 0x18;                            /* flip two bits */
+        printf(&quot;data 0x%02X  parity %d  check(sent) %d  check(1 flip) %d  check(2 flips) %d\n&quot;,
+               d, parity(d), parity(sent), parity(one), parity(two));
+    }
+    return 0;
+}
+</code></pre>
+<p>Output (clang, run on 13 Nov 2026):</p>
+<pre><code class="language-text">data 0x59  parity 0  check(sent) 0  check(1 flip) 1  check(2 flips) 0
+data 0x00  parity 0  check(sent) 0  check(1 flip) 1  check(2 flips) 0
+data 0x7F  parity 1  check(sent) 0  check(1 flip) 1  check(2 flips) 0
+data 0x2A  parity 1  check(sent) 0  check(1 flip) 1  check(2 flips) 0
+</code></pre>
+<p>One flip is always caught and two flips never are. With 8 bits flipping independently with probability 0.01: P(some error) = 0.0773, P(undetected) = P(2, 4, 6 or 8 flips) = 0.00264 (28p² = 0.0028), so parity catches 96.6 percent of damaged words.</p>
+<p>Two-dimensional parity, 4 × 4 data bits plus a parity bit for each row and column and a corner bit (a 5 × 5 grid, 9 extra bits): by enumeration, all 25 single, 300 double and 2,300 triple error patterns are detected, every single error is located at its row and column, and 100 of the 12,650 four-bit patterns (the corners of a rectangle) are missed.</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "How likely is it that an even number of flips gets through?"<br><strong>You:</strong> "For 7 data bits plus parity, with each bit flipping independently with probability 0.01, I add the chances of 2, 4, 6 or 8 flips, which is about 0.0026, almost all from the 28 pairs, 28 p squared. About 7.7 percent of words have some error, so parity catches about 96.6 percent of damaged words."</li>
+<li><strong>Prof:</strong> "Then how would you catch every two-bit error cheaply?"<br><strong>You:</strong> "Put the data in a grid and add a parity bit to every row and every column. For 16 data bits in a 4 by 4 grid that is 9 extra bits, and enumerating all patterns shows every 1, 2 and 3 bit error is caught. A single error even shows up as one bad row and one bad column, so I can correct it where they cross."</li>
+<li><strong>Prof:</strong> "Where does the grid fail, and what do real systems use instead?"<br><strong>You:</strong> "It misses 4 errors on the corners of a rectangle, because each row and column then has two flips; that is 100 of the 12,650 four-bit patterns. Real links like Ethernet use a CRC: the sender reads the bits as a polynomial and appends the remainder after dividing by a fixed generator of degree r. A burst of r or fewer bits is a shifted polynomial of degree below r, which a generator with a constant term cannot divide, so every such burst is caught."</li>
+</ol>
+<p><strong>IT14. What is Hamming distance, and how many errors can a code with minimum distance d detect and correct?</strong></p>
+<p>Modelled on <a href="ch07.html">Aug 2025 II-Q1(1)</a> (the two codewords 00000 and 11111).</p>
+<p><strong>Say it:</strong> "The Hamming distance between two words is the number of positions where they differ. A code with minimum distance d detects up to d minus 1 errors and corrects up to d minus 1 over 2, rounded down. So 00000 and 11111, at distance 5, can detect 4 errors or correct 2."</p>
+<p><strong>Worked detail:</strong></p>
+<table>
+<thead>
 <tr>
-<td>dequeue (20)</td>
-<td>. . 30 40 50</td>
+<th>minimum distance d</th>
+<th>detects</th>
+<th>corrects</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
 <td>2</td>
+<td>1</td>
 <td>0</td>
+<td>single parity bit</td>
+</tr>
+<tr>
 <td>3</td>
+<td>2</td>
+<td>1</td>
+<td>3-fold repetition, Hamming (7,4)</td>
 </tr>
 <tr>
-<td>enqueue 60, 70</td>
-<td>60 70 30 40 50</td>
-<td>2</td>
-<td>2</td>
+<td>4</td>
+<td>3</td>
+<td>1 (and detects 2 at the same time)</td>
+<td>extended Hamming (8,4)</td>
+</tr>
+<tr>
 <td>5</td>
-</tr>
-</tbody>
-</table>
-<p>At the end front = rear = 2, exactly as at the start (0 and 0), but now the queue is full: only <code>size</code> tells them apart. With the one-empty-slot rule instead (full when <code>(rear + 1) % capacity == front</code>), 70 is refused and rear stays 1, which is blank 2-2 = 1 in part (4).</p>
-<p><strong>Follow-ups (each builds on your last answer)</strong></p>
-<ol>
-<li><strong>Prof:</strong> "Your indexes only move forward. What if you also had to step backwards, for a queue with two ends?"<br><strong>You:</strong> "Then I'd write i minus 1 plus capacity, all mod capacity, not just i minus 1 mod capacity. In C, minus 1 mod 5 is minus 1, not 4, so the plain version would index the array at minus 1."</li>
-<li><strong>Prof:</strong> "Why minus 1? Python gives 4."<br><strong>You:</strong> "Since C99, integer division truncates toward zero, so minus 1 divided by 5 is 0, and the remainder must satisfy a equals a over b, times b, plus the remainder, which makes it minus 1. Python's integer division rounds down instead, to minus 1, so its remainder is 4 and always takes the sign of the divisor."</li>
-<li><strong>Prof:</strong> "If two implementations differ only on negative numbers, would your plan's inputs find that?"<br><strong>You:</strong> "Purely random inputs from a narrow positive range never would. That's why my plan also takes values from the pull request's own tests, and, as a separate stress test, boundary inputs taken from conditions in the merged code that compare a parameter with a constant, so a check like x less than 0 puts inputs right at the sign change."</li>
-</ol>
-<hr />
-<p><strong>CP8. What is a linked list, and when is it better than an array?</strong></p>
-<p><strong>Say it:</strong> "A linked list is a chain of nodes made with malloc, each holding a value and a pointer to the next node, with NULL at the end. It grows one node at a time and can insert or delete at a known place in O(1) without shifting anything, but reaching the i-th element means walking i steps, where an array gets there in O(1)."</p>
-<p><strong>Worked detail:</strong> <a href="ch10.html">August 2024 II-Q3</a> puts the two side by side (source code 1 is a list, source code 2 an array), and <a href="ch11.html">January 2024 II-Q3</a> reverses a list.</p>
-<table>
-<thead>
-<tr>
-<th>operation</th>
-<th>array</th>
-<th>singly linked list</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>read element i</td>
-<td>O(1)</td>
-<td>O(i)</td>
-</tr>
-<tr>
-<td>insert or delete at the front</td>
-<td>O(n), shift everything</td>
-<td>O(1)</td>
-</tr>
-<tr>
-<td>insert or delete after a node you hold</td>
-<td>O(n), shift the rest</td>
-<td>O(1)</td>
-</tr>
-<tr>
-<td>append at the end</td>
-<td>O(1) if there is room</td>
-<td>O(n), or O(1) with a tail pointer</td>
-</tr>
-<tr>
-<td>extra memory</td>
-<td>none</td>
-<td>one pointer per node, plus malloc's own overhead</td>
-</tr>
-</tbody>
-</table>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-
-struct Node { int value; struct Node *next; };
-
-struct Node *push_front(struct Node *head, int value) {
-    struct Node *n = malloc(sizeof *n);
-    if (n == NULL) exit(1);
-    n-&gt;value = value;
-    n-&gt;next = head;          /* the old first node comes after the new one */
-    return n;                /* the new node is the new head */
-}
-
-/* delete the first node holding value; no special case for the head */
-void remove_value(struct Node **pp, int value) {
-    while (*pp != NULL &amp;&amp; (*pp)-&gt;value != value) pp = &amp;(*pp)-&gt;next;
-    if (*pp != NULL) {
-        struct Node *dead = *pp;
-        *pp = dead-&gt;next;    /* the link that pointed at dead now skips it */
-        free(dead);
-    }
-}
-
-void print_list(const struct Node *p) {
-    for (; p != NULL; p = p-&gt;next) printf(&quot;%d &quot;, p-&gt;value);
-    printf(&quot;\n&quot;);
-}
-
-void free_list(struct Node *p) {
-    while (p != NULL) {
-        struct Node *next = p-&gt;next;   /* save it before free */
-        free(p);
-        p = next;
-    }
-}
-
-int main(void) {
-    struct Node *head = NULL;
-    for (int v = 10; v &lt;= 40; v += 10) head = push_front(head, v);
-    print_list(head);
-    remove_value(&amp;head, 40);           /* the head */
-    remove_value(&amp;head, 20);           /* a middle node */
-    print_list(head);
-    free_list(head);
-    return 0;
-}
-</code></pre>
-<p>Output:</p>
-<pre><code>40 30 20 10 
-30 10 
-</code></pre>
-<p><code>push_front</code> puts each new node first, so 10, 20, 30, 40 come out reversed. <code>remove_value</code> walks with <code>pp</code>, the address of the link that points at the current node (first <code>&amp;head</code>, then <code>&amp;node-&gt;next</code>), so deleting the head (40) and a middle node (20) is the same code. <code>free_list</code> saves <code>next</code> before calling <code>free</code>. The wrong order, reading <code>p-&gt;next</code> after <code>free(p)</code>:</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-
-struct Node { int value; struct Node *next; };
-
-int main(void) {
-    struct Node *head = NULL;
-    for (int v = 1; v &lt;= 3; v++) {
-        struct Node *n = malloc(sizeof *n);
-        n-&gt;value = v; n-&gt;next = head; head = n;
-    }
-    struct Node *p = head;
-    while (p != NULL) {
-        free(p);
-        p = p-&gt;next;          /* the bug: reads p after free */
-    }
-    printf(&quot;freed the list\n&quot;);
-    return 0;
-}
-</code></pre>
-<p>On this Mac the plain build crashed (abort, exit status 134) before printing anything. Built with <code>-fsanitize=address</code>:</p>
-<pre><code>SUMMARY: AddressSanitizer: heap-use-after-free cp8_uaf.c:15 in main
-</code></pre>
-<p><strong>Follow-ups (each builds on your last answer)</strong></p>
-<ol>
-<li><strong>Prof:</strong> "You said deleting at a known place is O(1). Why does the August 2024 code treat the head separately?"<br><strong>You:</strong> "Because deleting the head changes the head pointer itself, which lives in the caller, so the function has to return the new head; for any other node only the previous node's next pointer changes. With a pointer to a pointer the special case disappears: I walk along the addresses of the links and overwrite whichever link points at the node, as remove_value does."</li>
-<li><strong>Prof:</strong> "When you unlink a node and free it, what is the classic mistake?"<br><strong>You:</strong> "Using it after freeing it, for example calling free on p and then reading p's next pointer to move on. That reads freed memory, so depending on the allocator it may still find the old values and seem fine, or crash. So I save the next pointer before calling free."</li>
-<li><strong>Prof:</strong> "If it sometimes seems fine, how do you find it, and what does that do to reliability numbers?"<br><strong>You:</strong> "I'd run the tests under AddressSanitizer, which marks freed memory as off-limits and stops at the first read with a heap-use-after-free report. Without it, the bug shows only when the freed block happens to be reused, so the same input can pass on one run and fail on the next, and a failure probability estimated from a few runs could be far too low."</li>
-</ol>
-<hr />
-<p><strong>CP9. How do you turn a recursive tree walk into a loop?</strong></p>
-<p><strong>Say it:</strong> "Recursion keeps its unfinished work on the call stack, so I keep it on my own stack instead. For pre-order I push the root, then repeat: pop a node, print it, push its right child and then its left child, until the stack is empty. Each node is pushed and popped once, so it is still linear time."</p>
-<p><strong>Worked detail:</strong> This is <a href="ch13.html">older set I-Q6(3) and (4)</a>, with the same table of records; <a href="ch11.html">January 2024 II-Q3(3)</a> asks what recursion costs.</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-
-/* the table from the older set, I-Q6: index -&gt; key, left, right (0 = null) */
-int key[]   = {0,  8, 15, 4, 15, 2, 18, 6, 10, 14,  5};
-int left[]  = {0,  3,  0, 5,  5, 0,  0, 0,  0,  8,  0};
-int right[] = {0,  9,  6, 7,  0, 0,  0, 0,  0,  6,  5};
-
-void print_tree(int n) {                 /* recursive pre-order */
-    if (n != 0) {
-        printf(&quot;%d &quot;, key[n]);
-        print_tree(left[n]);
-        print_tree(right[n]);
-    }
-}
-
-void print_tree_iter(int n) {            /* the same order with an explicit stack */
-    int stack[16], top = -1, most = 0;
-    if (n == 0) return;
-    stack[++top] = n;
-    while (top &gt;= 0) {
-        int x = stack[top--];
-        printf(&quot;%d &quot;, key[x]);
-        if (right[x] != 0) stack[++top] = right[x];   /* right first ...      */
-        if (left[x]  != 0) stack[++top] = left[x];    /* ... so left pops first */
-        if (top + 1 &gt; most) most = top + 1;
-    }
-    printf(&quot;(largest stack: %d)&quot;, most);
-}
-
-int main(void) {
-    print_tree(1);      printf(&quot;\n&quot;);
-    print_tree_iter(1); printf(&quot;\n&quot;);
-    return 0;
-}
-</code></pre>
-<p>Output:</p>
-<pre><code>8 4 2 6 14 10 18 
-8 4 2 6 14 10 18 (largest stack: 3)
-</code></pre>
-<p>Both print the pre-order 8, 4, 2, 6, 14, 10, 18. Stack contents (top on the right), by index: [1], then [9, 3], then [9, 7, 5] (the largest, 3 items), [9, 7], [9], [6, 8], [6], [ ]. Python check over 2,000 random binary trees: the largest stack was never more than the height + 1. For a left spine of 51 nodes, each but the bottom one with a right leaf (101 nodes, height 50), it reached 51.</p>
-<p><strong>Follow-ups (each builds on your last answer)</strong></p>
-<ol>
-<li><strong>Prof:</strong> "Why push the right child before the left?"<br><strong>You:</strong> "Because a stack gives back the last thing pushed first. Pushing right and then left makes the left child come out first, so the whole left subtree is printed before the right one, which is what pre-order needs."</li>
-<li><strong>Prof:</strong> "While the left subtree is being printed, the right children wait on the stack. How many can be waiting at once?"<br><strong>You:</strong> "At most about the height plus 1, since it holds at most one waiting right child per level plus the node just pushed; for this tree of height 2 it reached 3. That's about log2 n for a balanced tree, but for a long left spine whose nodes also have right leaves it grows to about n over 2, 51 for a tree of 101 nodes."</li>
-<li><strong>Prof:</strong> "So is the loop actually safer than the recursion?"<br><strong>You:</strong> "For deep trees, yes: my stack can be an array from malloc on the heap, which can grow to gigabytes, while the call stack is usually limited to about 8 megabytes, so the loop survives depths that would overflow the recursion. It still needs memory in proportion to the height, so the real fix for deep trees is keeping them balanced."</li>
-</ol>
-<hr />
-<p><strong>CP10. What does recursion cost, and why is the naive recursive Fibonacci so slow?</strong></p>
-<p><strong>Say it:</strong> "A recursive function calls itself on a smaller input and stops at a base case, and each call gets its own stack frame, so every step costs a call and some memory. Naive Fibonacci, fib of n equals fib of n minus 1 plus fib of n minus 2, is slow because the two calls redo each other's work: fib of 20 makes 21,891 calls."</p>
-<p><strong>Worked detail:</strong> <a href="ch11.html">January 2024 II-Q3(3)</a> asks for the pros and cons of recursion (stack overflow, call overhead, shorter code), and <a href="ch13.html">older set I-Q6(4)</a> for a version without it.</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-
-long calls = 0;
-
-long fib_rec(int n) {                  /* naive recursion */
-    calls++;
-    if (n &lt; 2) return n;
-    return fib_rec(n - 1) + fib_rec(n - 2);
-}
-
-long fib_loop(int n) {                 /* keeps only the last two values */
-    long a = 0, b = 1;                 /* fib(0), fib(1) */
-    for (int i = 0; i &lt; n; i++) {
-        long t = a + b;
-        a = b;
-        b = t;
-    }
-    return a;
-}
-
-int main(void) {
-    for (int n = 10; n &lt;= 30; n += 10) {
-        calls = 0;
-        long f = fib_rec(n);
-        printf(&quot;n = %d: fib = %ld, loop gives %ld, recursive calls = %ld\n&quot;, n, f, fib_loop(n), calls);
-    }
-    return 0;
-}
-</code></pre>
-<p>Output:</p>
-<pre><code>n = 10: fib = 55, loop gives 55, recursive calls = 177
-n = 20: fib = 6765, loop gives 6765, recursive calls = 21891
-n = 30: fib = 832040, loop gives 832040, recursive calls = 2692537
-</code></pre>
-<p>The number of calls C(n) satisfies</p>
-<pre><code>C(0) = C(1) = 1,   C(n) = C(n-1) + C(n-2) + 1
-so C(n) = 2 F(n+1) - 1:   C(20) = 2 * 10946 - 1 = 21891,   C(30) = 2 * 1346269 - 1 = 2692537
-</code></pre>
-<p>which matches the program. Inside fib(20), Python counts fib(18) computed 2 times, fib(17) 3 times and fib(16) 5 times. C(30)/C(29) = 1.61803, the golden ratio, so the calls grow like 1.618^n. The loop needs n additions: O(n) time and O(1) memory.</p>
-<p><strong>Follow-ups (each builds on your last answer)</strong></p>
-<ol>
-<li><strong>Prof:</strong> "Where does 21,891 come from exactly?"<br><strong>You:</strong> "Each call makes one call for n minus 1 and one for n minus 2, so C of n equals C of n minus 1 plus C of n minus 2 plus 1, with C of 0 and C of 1 equal to 1. That solves to 2 times fib of n plus 1, minus 1, and fib of 21 is 10,946, so 21,891. The calls grow like the Fibonacci numbers themselves, about 1.618 to the n."</li>
-<li><strong>Prof:</strong> "How do you remove that waste?"<br><strong>You:</strong> "Compute each value once. A loop that keeps only the last two values gets fib of n with n additions, O(n) time and constant memory, and memoisation, an array that remembers results, also gives O(n) while keeping the recursive shape."</li>
-<li><strong>Prof:</strong> "Can you do better than O(n)?"<br><strong>You:</strong> "Yes. The 2 by 2 matrix with rows 1 1 and 1 0, raised to the power n, holds fib of n plus 1, fib of n and fib of n minus 1, and a power can be computed by repeated squaring in O(log n) matrix multiplications. It's the same trick as getting the n-step transition probabilities of a Markov chain as P to the n."</li>
-</ol>
-<hr />
-<p><strong>CP11. What is a binary search tree, and how fast is search in it?</strong></p>
-<p><strong>Say it:</strong> "A binary search tree keeps, at every node, the smaller keys in the left subtree and the larger ones in the right. Search and insert follow one path down from the root, so they cost O(height), and an in-order walk, left, node, right, prints the keys in sorted order."</p>
-<p><strong>Worked detail:</strong> <a href="ch08.html">August 2025 II-Q2</a> inserts into a tree and rotates it; <a href="ch13.html">older set I-Q6</a> traverses this same tree of 8, 4, 14, 2, 6, 10, 18.</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-
-struct Tree { int key; struct Tree *left, *right; };
-
-struct Tree *insert(struct Tree *t, int key) {
-    if (t == NULL) {
-        t = malloc(sizeof *t);
-        if (t == NULL) exit(1);
-        t-&gt;key = key;
-        t-&gt;left = t-&gt;right = NULL;
-    } else if (key &lt; t-&gt;key) {
-        t-&gt;left = insert(t-&gt;left, key);
-    } else {
-        t-&gt;right = insert(t-&gt;right, key);
-    }
-    return t;
-}
-
-int search_steps(const struct Tree *t, int key) {   /* nodes visited, -1 if absent */
-    int steps = 0;
-    while (t != NULL) {
-        steps++;
-        if (key == t-&gt;key) return steps;
-        t = (key &lt; t-&gt;key) ? t-&gt;left : t-&gt;right;
-    }
-    return -1;
-}
-
-int height(const struct Tree *t) {                  /* in edges; empty tree = -1 */
-    if (t == NULL) return -1;
-    int l = height(t-&gt;left), r = height(t-&gt;right);
-    return 1 + (l &gt; r ? l : r);
-}
-
-void free_tree(struct Tree *t) {
-    if (t == NULL) return;
-    free_tree(t-&gt;left);
-    free_tree(t-&gt;right);
-    free(t);
-}
-
-void inorder(const struct Tree *t) {
-    if (t == NULL) return;
-    inorder(t-&gt;left);
-    printf(&quot;%d &quot;, t-&gt;key);
-    inorder(t-&gt;right);
-}
-
-int main(void) {
-    int keys[] = {8, 4, 14, 2, 6, 10, 18};
-    struct Tree *t = NULL;
-    for (int i = 0; i &lt; 7; i++) t = insert(t, keys[i]);
-    inorder(t);
-    printf(&quot;\nheight = %d, search 6 visits %d nodes, search 7 gives %d\n&quot;,
-           height(t), search_steps(t, 6), search_steps(t, 7));
-
-    struct Tree *chain = NULL;
-    for (int k = 1; k &lt;= 1000; k++) chain = insert(chain, k);
-    printf(&quot;keys 1..1000 in sorted order: height = %d, search 1000 visits %d nodes\n&quot;,
-           height(chain), search_steps(chain, 1000));
-    free_tree(t);
-    free_tree(chain);
-    return 0;
-}
-</code></pre>
-<p>Output:</p>
-<pre><code>2 4 6 8 10 14 18 
-height = 2, search 6 visits 3 nodes, search 7 gives -1
-keys 1..1000 in sorted order: height = 999, search 1000 visits 1000 nodes
-</code></pre>
-<ul>
-<li>Search 6 visits 8, 4, 6: three nodes. Search 7 ends at an empty child of 6, so 7 is absent.</li>
-<li>Keys 1 to 1000 in sorted order make a chain: height 999, and finding 1000 visits every node.</li>
-<li>Random order (Python, 300 random trees of 1,000 keys): average node depth 10.94. The formula for the average depth is 2(1 + 1/n) H_n - 4 = 10.99 for n = 1000, where H_n = 1 + 1/2 + ... + 1/n = 7.4855. It grows like 2 ln n = 1.386 log2 n. The sorted chain's average depth is 499.5.</li>
-</ul>
-<p><strong>Follow-ups (each builds on your last answer)</strong></p>
-<ol>
-<li><strong>Prof:</strong> "What is the height if I insert 1, 2, up to n in sorted order?"<br><strong>You:</strong> "Each key goes to the right of the one before, so the tree becomes a chain of height n minus 1, and search becomes O(n), no better than a linked list. With 1,000 sorted keys, finding 1,000 visits all 1,000 nodes."</li>
-<li><strong>Prof:</strong> "And with a random insertion order?"<br><strong>You:</strong> "Then it's shallow on average: the average depth is 2 times (1 plus 1 over n) times H of n, minus 4, where H of n is 1 plus a half and so on up to 1 over n, so it grows like 2 ln n. For 1,000 random keys that's an average depth of about 11, against about 500 for the sorted chain."</li>
-<li><strong>Prof:</strong> "Can you rely on keys arriving in random order?"<br><strong>You:</strong> "No, real keys often arrive sorted, like IDs or timestamps, which is exactly the worst case. So libraries use balanced trees such as AVL or red-black trees, which rotate after an insert to keep the height O(log n) for every order, like the rotations in the August 2025 question."</li>
-</ol>
-<hr />
-<p><strong>CP12. What is a heap, and how is it stored in an array?</strong></p>
-<p><strong>Say it:</strong> "A max-heap is a complete binary tree in which every parent is at least as large as its children, so the largest element is at the root. It's stored in an array with no pointers: the children of position i are 2i and 2i plus 1, and its parent is i over 2, rounded down. Insert adds at the end and swaps upward, and extract-max moves the last element to the root and swaps downward, both O(log m)."</p>
-<p><strong>Worked detail:</strong> This is <a href="ch07.html">January 2026 II-Q2</a>, parts (1), (2) and (4); heapsort is the answer to <a href="ch09.html">January 2025 II-Q3(4)</a>.</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-
-#define MAXN 100
-int A[MAXN + 1];      /* A[1..m]; A[0] is unused */
-int m = 0;
-
-void swap(int i, int j) { int t = A[i]; A[i] = A[j]; A[j] = t; }
-
-void insert(int x) {                       /* add at the end, then move up */
-    A[++m] = x;
-    for (int i = m; i &gt; 1 &amp;&amp; A[i / 2] &lt; A[i]; i /= 2) swap(i, i / 2);
-}
-
-void sift_down(int i) {                    /* move A[i] down to its place */
-    for (;;) {
-        int big = i, l = 2 * i, r = 2 * i + 1;
-        if (l &lt;= m &amp;&amp; A[l] &gt; A[big]) big = l;
-        if (r &lt;= m &amp;&amp; A[r] &gt; A[big]) big = r;
-        if (big == i) return;
-        swap(i, big);
-        i = big;
-    }
-}
-
-int extract_max(void) {                    /* take the root, move the last to the root */
-    int top = A[1];
-    A[1] = A[m--];
-    sift_down(1);
-    return top;
-}
-
-void show(const char *label) {
-    printf(&quot;%-22s [&quot;, label);
-    for (int i = 1; i &lt;= m; i++) printf(&quot;%d%s&quot;, A[i], i &lt; m ? &quot;, &quot; : &quot;&quot;);
-    printf(&quot;]\n&quot;);
-}
-
-int main(void) {
-    int in[] = {5, 10, 2, 9, 6};
-    for (int k = 0; k &lt; 5; k++) insert(in[k]);
-    show(&quot;after inserting 5 items:&quot;);
-    int top = extract_max();
-    printf(&quot;extract_max returned %d\n&quot;, top);
-    show(&quot;after extract_max:&quot;);
-
-    /* bottom-up build of the same five items */
-    m = 5;
-    for (int k = 0; k &lt; 5; k++) A[k + 1] = in[k];
-    for (int i = m / 2; i &gt;= 1; i--) sift_down(i);
-    show(&quot;bottom-up build:&quot;);
-    return 0;
-}
-</code></pre>
-<p>Output:</p>
-<pre><code>after inserting 5 items: [10, 9, 2, 5, 6]
-extract_max returned 10
-after extract_max:     [9, 6, 2, 5]
-bottom-up build:       [10, 9, 2, 5, 6]
-</code></pre>
-<p>The arrays match the January 2026 answer. Bottom-up build: sift down positions 2 and then 1 of [5, 10, 2, 9, 6]: 10 is already above 9 and 6; then 5 swaps with 10 and then with 9. Python check of the O(n) bound: building 1,023 items given in ascending order (each sift-down goes as far as it can) took 1,013 swaps, which is n - (h + 1) for a full tree of height h = 9, and 200 random orders took at most 789.</p>
-<pre><code>total swaps &lt;= sum over h of (n / 2^(h+1)) * h = n * sum h / 2^(h+1) = n * 1 = n
-</code></pre>
-<p><strong>Follow-ups (each builds on your last answer)</strong></p>
-<ol>
-<li><strong>Prof:</strong> "If each insert is O(log n), is building a heap of n items O(n log n)?"<br><strong>You:</strong> "Inserting one at a time can cost that, but there's a faster way: put all n items in the array as they are, and sift down from position n over 2 back to position 1. That builds the heap in O(n)."</li>
-<li><strong>Prof:</strong> "Why O(n), when one sift-down can take log n steps?"<br><strong>You:</strong> "Because most nodes sit near the bottom, where sift-down is short: half the nodes are leaves and do nothing, a quarter move at most one level, an eighth at most two, and so on. The total is n times the sum of h over 2 to the h plus 1, and that sum is exactly 1, so at most n swaps; for 1,023 items it's at most 1,013."</li>
-<li><strong>Prof:</strong> "Then is heapsort O(n) too?"<br><strong>You:</strong> "No. Building is O(n), but heapsort then does n extract-max steps at O(log n) each, so it's O(n log n). It can't do better anyway, because any sort that only compares items needs at least log2 of n factorial comparisons in the worst case, which is about n log2 n."</li>
-</ol>
-<hr />
-<p><strong>CP13. How does a hash table give O(1) lookup, and what happens on a collision?</strong></p>
-<p><strong>Say it:</strong> "A hash function turns the key straight into an array index, so a lookup jumps to one slot instead of searching the whole table. When two keys land on the same slot, a collision, open addressing tries other slots in a fixed order, here k plus 3i mod 10, while chaining keeps a short list per slot. As long as the table stays well below full, the average cost is O(1)."</p>
-<p><strong>Worked detail:</strong> This is <a href="ch09.html">January 2025 II-Q2</a>, with h(k, i) = (k + 3i) mod 10, written in C, plus deletion.</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-
-#define M 10
-#define NIL -1
-#define DELETED -2                     /* tombstone */
-
-int T[M];
-
-int h(int k, int i) { return (k + 3 * i) % M; }
-
-int insert(int k) {                    /* returns the slot, or -1 if no slot is free */
-    for (int i = 0; i &lt; M; i++) {
-        int j = h(k, i);
-        if (T[j] == NIL || T[j] == DELETED || T[j] == k) { T[j] = k; return j; }
-    }
-    return -1;
-}
-
-int search(int k) {                    /* returns the slot, or -1 if absent */
-    for (int i = 0; i &lt; M; i++) {
-        int j = h(k, i);
-        if (T[j] == k) return j;
-        if (T[j] == NIL) return -1;    /* an empty slot ends the search */
-    }
-    return -1;
-}
-
-void show(void) {
-    for (int j = 0; j &lt; M; j++) {
-        if (T[j] == NIL) printf(&quot; NIL&quot;);
-        else if (T[j] == DELETED) printf(&quot; DEL&quot;);
-        else printf(&quot; %3d&quot;, T[j]);
-    }
-    printf(&quot;\n&quot;);
-}
-
-int main(void) {
-    int keys[] = {16, 12, 22, 18, 45, 44, 28};
-    for (int j = 0; j &lt; M; j++) T[j] = NIL;
-    for (int i = 0; i &lt; 7; i++) insert(keys[i]);
-    show();
-    printf(&quot;search 22 -&gt; slot %d\n&quot;, search(22));
-
-    T[search(12)] = NIL;               /* wrong way to delete 12 */
-    printf(&quot;after emptying 12's slot: search 22 -&gt; %d\n&quot;, search(22));
-
-    T[2] = 12;                         /* put 12 back, then delete it properly */
-    T[search(12)] = DELETED;
-    printf(&quot;after a tombstone for 12: search 22 -&gt; slot %d\n&quot;, search(22));
-    show();
-    return 0;
-}
-</code></pre>
-<p>Output:</p>
-<pre><code> NIL  45  12 NIL  44  22  16  28  18 NIL
-search 22 -&gt; slot 5
-after emptying 12's slot: search 22 -&gt; -1
-after a tombstone for 12: search 22 -&gt; slot 5
- NIL  45 DEL NIL  44  22  16  28  18 NIL
-</code></pre>
-<ul>
-<li>The first line is the table from part (1): 22 tried slot 2 (taken by 12) and went to 5; 45 tried 5 and 8 and went to 1; 28 tried 8, 1 and 4 and went to 7.</li>
-<li>Emptying slot 2 breaks the search for 22, which stops at the first empty slot. A tombstone (<code>DEL</code>) is stepped over by searches and reused by inserts. One catch in this short <code>insert</code>: it takes the first tombstone without looking further, so with 12 in slot 2 and 22 in slot 5, deleting 12 and inserting 22 again stores 22 twice (a real run left 22 in both slot 2 and slot 5). A full version runs <code>search</code> first and only then reuses the first tombstone.</li>
-<li>Step 3 visits all 10 slots because gcd(3, 10) = 1; step 5 visits only 2 (Python check).</li>
-<li>How full the table may get (alpha = share of slots in use), as probes for an insert:</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>alpha</th>
-<th>Knuth, fixed step: (1/2)(1 + 1/(1 - alpha)^2)</th>
-<th>simulation, m = 10007, step 1</th>
-<th>random probing: 1/(1 - alpha)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0.5</td>
-<td>2.5</td>
-<td>2.46</td>
+<td>4</td>
 <td>2</td>
-</tr>
-<tr>
-<td>0.9</td>
-<td>50.5</td>
-<td>49.34</td>
-<td>10</td>
+<td>5-fold repetition {00000, 11111}</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Follow-ups (each builds on your last answer)</strong></p>
-<ol>
-<li><strong>Prof:</strong> "How do you delete a key with open addressing?"<br><strong>You:</strong> "Not by emptying the slot, because a search stops at the first empty slot it meets. In my example 22 sits in slot 5 only because 12 had taken slot 2, so if I empty slot 2, a search for 22 stops there and says it's missing. Instead I mark the slot as deleted, a tombstone, which searches step over and inserts can reuse."</li>
-<li><strong>Prof:</strong> "Tombstones pile up. What then?"<br><strong>You:</strong> "They count as occupied during a search, so probe sequences grow longer even when the table holds few keys. When keys plus tombstones pass a threshold, say half the table, I rebuild into a fresh table with only the live keys. One rebuild costs O(n), but it comes only after about n operations, so the average cost per operation stays O(1)."</li>
-<li><strong>Prof:</strong> "You said half the table. How much does the fill level matter?"<br><strong>You:</strong> "A lot, because with a fixed step the occupied slots join into long runs, which is called primary clustering. Knuth's estimate for an insert is one half times 1 plus 1 over (1 minus alpha) squared, with alpha the share of slots in use: 2.5 probes at half full but 50.5 at 90 percent, against 2 and 10 if every probe were random. So tables are resized long before they're full."</li>
-</ol>
-<hr />
-<p><strong>CP14. What does this short program print?</strong></p>
-<p><strong>Say it:</strong> "I trace it line by line and watch three traps: integer division drops the fraction, i plus plus gives the old value while plus plus i gives the new one, and the double ampersand stops as soon as the left side is false. It prints 2 1, then 2.5, then 6 8 7, then c 99, then 3, then safe."</p>
-<p><strong>Worked detail:</strong> Four of the seven Part II Question 3s ask for some of a listing's output (August 2023, January 2024, August 2025 and January 2026), for example Q2 of <a href="ch12.html">August 2023 II-Q3</a> and part (2) of <a href="ch11.html">January 2024 II-Q3</a>. This one packs the usual traps into a few lines.</p>
+<p>C code: the distance is the number of 1s in a XOR b.</p>
 <pre><code class="language-c">#include &lt;stdio.h&gt;
 
-int counter(void) {
-    static int calls = 0;            /* keeps its value between calls */
-    return ++calls;
+/* Hamming distance: count the 1s in a XOR b (x &amp;= x - 1 clears the lowest 1) */
+int hamming_distance(unsigned a, unsigned b) {
+    unsigned x = a ^ b;
+    int count = 0;
+    while (x) {
+        x &amp;= x - 1;
+        count++;
+    }
+    return count;
 }
 
 int main(void) {
-    int i = 5, j = 2;
-    printf(&quot;%d %d\n&quot;, i / j, i % j);
-    printf(&quot;%.1f\n&quot;, (double)i / j);
-    int a = i++ + 1;
-    int b = ++i + 1;
-    printf(&quot;%d %d %d\n&quot;, a, b, i);
-    char c = 'a' + 2;
-    printf(&quot;%c %d\n&quot;, c, c);
-    counter();
-    counter();
-    printf(&quot;%d\n&quot;, counter());
-    int x = 0;
-    if (x != 0 &amp;&amp; 10 / x &gt; 1) printf(&quot;big\n&quot;);
-    else printf(&quot;safe\n&quot;);
+    printf(&quot;d(00000, 11111) = %d\n&quot;, hamming_distance(0x00, 0x1F));
+    printf(&quot;d(10110, 10011) = %d\n&quot;, hamming_distance(0x16, 0x13));
+    printf(&quot;d(1011101, 1001001) = %d\n&quot;, hamming_distance(0x5D, 0x49));
     return 0;
 }
 </code></pre>
-<p>Output:</p>
-<pre><code>2 1
-2.5
-6 8 7
-c 99
-3
-safe
+<p>Output (clang, run on 13 Nov 2026):</p>
+<pre><code class="language-text">d(00000, 11111) = 5
+d(10110, 10011) = 2
+d(1011101, 1001001) = 2
 </code></pre>
+<p>Trace of the last call: 1011101 XOR 1001001 = 0010100. The loop clears the lowest 1 twice (0010100 → 0010000 → 0000000), so the count is 2.</p>
+<p>Five versions with a "4 of 5 must agree" acceptance (last follow-up), each failing independently with probability 0.01, assuming failing versions agree on the same wrong output (the worst case): wrong output = P(4 or 5 fail) = 4.96 × 10⁻⁸; no answer = P(2 or 3 fail) = 0.00098; a plain majority of 5 is wrong with P(3 or more fail) = 9.85 × 10⁻⁶.</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "Why half? Give me the argument."<br><strong>You:</strong> "If at most t bits flip, the received word is within t of the sent codeword. Any other codeword is at least d from the sent one, so by the triangle inequality it is at least d minus t from the received word, and decoding to the nearest codeword is right when d minus t is more than t, that is when 2t is less than d. Picture balls of radius t around the codewords that do not overlap."</li>
+<li><strong>Prof:</strong> "With d = 5, can you correct one error and detect three at the same time?"<br><strong>You:</strong> "Yes, the condition is d at least t plus s plus 1, with s at least t, and 1 plus 3 plus 1 is 5. One flip leaves the word within 1 of the sent codeword, so I correct it. Two or three flips leave it at least 2 from every codeword, outside every radius-1 ball, so I flag it instead of correcting it."</li>
+<li><strong>Prof:</strong> "How would you use that correct-one, flag-the-rest idea with five program versions?"<br><strong>You:</strong> "I'd accept an output only when at least 4 of the 5 agree, which outvotes one wrong version, and send any case with 2 or 3 dissenters to a fallback or a person. With independent versions failing 1 percent of the time, and assuming the failing ones agree, a plain majority is wrong about 10 times in a million, the 4-of-5 check about 5 times in 100 million, but about 1 input in 1,000 gets no answer. Shared hard inputs would raise both numbers, and that is what my plan measures."</li>
+</ol>
+<p><strong>IT15. How does the (7,4) Hamming code correct a single error? Encode 1011, flip one bit, and decode.</strong></p>
+<p>Modelled on <a href="ch08.html">Jan 2025 II-Q1</a> (decode with a given check matrix) and <a href="ch07.html">Aug 2025 II-Q1(2)-(3)</a> (generator matrix, syndrome of the error vector).</p>
+<p><strong>Say it:</strong> "Four data bits get three parity bits, each checking a different group of positions. At the receiver I recompute the three checks; the pattern of failed checks, the syndrome, is the column of H at the wrong bit, so I flip that bit. Here 1011 encodes to 0110011, an error at position 5 gives syndrome 101, which is 5 in binary, and flipping bit 5 restores the codeword."</p>
+<p><strong>Worked detail:</strong> positions 1 to 7; parity bits at 1, 2 and 4; data bits d₁ d₂ d₃ d₄ at 3, 5, 6, 7.</p>
+<pre><code>p1 checks positions 1,3,5,7:  p1 = d1 ^ d2 ^ d4
+p2 checks positions 2,3,6,7:  p2 = d1 ^ d3 ^ d4
+p4 checks positions 4,5,6,7:  p4 = d2 ^ d3 ^ d4
+
+message 1011: d1=1 d2=0 d3=1 d4=1  -&gt;  p1 = 1^0^1 = 0, p2 = 1^1^1 = 1, p4 = 0^1^1 = 0
+codeword (positions 1..7): 0 1 1 0 0 1 1
+flip position 5:           0 1 1 0 1 1 1
+syndrome s4 s2 s1: s1 = parity of 1,3,5,7 = 0^1^1^1 = 1
+                   s2 = parity of 2,3,6,7 = 1^1^1^1 = 0
+                   s4 = parity of 4,5,6,7 = 0^1^1^1 = 1   -&gt;  101 = 5
+</code></pre>
+<p>Syndrome table (one error at each position, checked by enumeration): position i gives the syndrome i in binary, from 001 for position 1 to 111 for position 7. So this H has as its columns all seven nonzero 3-bit vectors, in counting order. The H in Jan 2025 has the same seven columns in a different order, so it is the same kind of code with the bits renamed.</p>
+<p>C code: encode, flip, correct, then check all cases.</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+
+/* bit i of the word (i = 1..7) is stored in bit (i - 1) of an unsigned */
+static int get(unsigned w, int i) { return (w &gt;&gt; (i - 1)) &amp; 1u; }
+
+/* message bits d1 d2 d3 d4 go to positions 3, 5, 6, 7; parity bits sit at 1, 2, 4 */
+unsigned encode(int d1, int d2, int d3, int d4) {
+    int p1 = d1 ^ d2 ^ d4;   /* covers positions 1, 3, 5, 7 */
+    int p2 = d1 ^ d3 ^ d4;   /* covers positions 2, 3, 6, 7 */
+    int p4 = d2 ^ d3 ^ d4;   /* covers positions 4, 5, 6, 7 */
+    int b[8] = {0, p1, p2, d1, p4, d2, d3, d4};
+    unsigned w = 0;
+    for (int i = 1; i &lt;= 7; i++) w |= (unsigned)b[i] &lt;&lt; (i - 1);
+    return w;
+}
+
+/* syndrome = XOR of the positions that hold a 1; 0 means &quot;codeword&quot; */
+int syndrome(unsigned w) {
+    int s = 0;
+    for (int i = 1; i &lt;= 7; i++)
+        if (get(w, i)) s ^= i;
+    return s;
+}
+
+unsigned correct(unsigned w) {
+    int s = syndrome(w);
+    return s ? (w ^ (1u &lt;&lt; (s - 1))) : w;
+}
+
+void show(const char *label, unsigned w) {
+    printf(&quot;%s &quot;, label);
+    for (int i = 1; i &lt;= 7; i++) printf(&quot;%d&quot;, get(w, i));
+    printf(&quot;  syndrome %d\n&quot;, syndrome(w));
+}
+
+int main(void) {
+    unsigned c = encode(1, 0, 1, 1);
+    show(&quot;sent     &quot;, c);
+    unsigned r = c ^ (1u &lt;&lt; 4);          /* flip position 5 */
+    show(&quot;received &quot;, r);
+    show(&quot;corrected&quot;, correct(r));
+
+    int ok1 = 0, wrong2 = 0, n2 = 0;
+    for (int m = 0; m &lt; 16; m++) {
+        unsigned x = encode(m &amp; 1, (m &gt;&gt; 1) &amp; 1, (m &gt;&gt; 2) &amp; 1, (m &gt;&gt; 3) &amp; 1);
+        for (int i = 0; i &lt; 7; i++)
+            if (correct(x ^ (1u &lt;&lt; i)) == x) ok1++;
+        for (int i = 0; i &lt; 7; i++)
+            for (int j = i + 1; j &lt; 7; j++) {
+                n2++;
+                if (correct(x ^ (1u &lt;&lt; i) ^ (1u &lt;&lt; j)) != x) wrong2++;
+            }
+    }
+    printf(&quot;single errors corrected: %d of 112\n&quot;, ok1);
+    printf(&quot;double errors miscorrected: %d of %d\n&quot;, wrong2, n2);
+    return 0;
+}
+</code></pre>
+<p>Output (clang, run on 13 Nov 2026):</p>
+<pre><code class="language-text">sent      0110011  syndrome 0
+received  0110111  syndrome 5
+corrected 0110011  syndrome 0
+single errors corrected: 112 of 112
+double errors miscorrected: 336 of 336
+</code></pre>
+<p>Python checks: the 16 codewords have weights 0, 3 (seven of them), 4 (seven) and 7, so d = 3; the 16 balls of radius 1 cover all 128 seven-bit words exactly once. Block error with independent flips: 1 - (1 - p)⁷ - 7p(1 - p)⁶ = 0.150 at p = 0.1 and 0.0020 at p = 0.01 (against 0.039 for 4 unprotected bits). The rate 4/7 = 0.571 is above the capacity 0.531 of the channel with p = 0.1. Adding an overall parity bit gives d = 4, and every double error then shows a nonzero syndrome with even overall parity (checked for all 16 × 28 cases).</p>
+<p><strong>Follow-ups (each builds on your last answer)</strong></p>
+<ol>
+<li><strong>Prof:</strong> "Why do the parity bits sit at positions 1, 2 and 4?"<br><strong>You:</strong> "Because 1, 2 and 4 are the positions whose binary number has a single 1, so each parity bit is in exactly one check and can be set on its own. Check i covers every position whose binary number has that bit set, so the failed checks spell out the wrong position in binary, and every data position, like 3, which is 011, sits in at least two checks."</li>
+<li><strong>Prof:</strong> "So every nonzero syndrome points to a position. What does that tell you about the code?"<br><strong>You:</strong> "That no syndrome is wasted: 7 nonzero syndromes for 7 positions. Counting words, each of the 16 codewords has itself plus 7 neighbours at distance 1, and 16 times 8 is 128, every 7-bit word, so the radius-1 balls fill the space exactly. That is what a perfect code means: it meets the Hamming bound with equality."</li>
+<li><strong>Prof:</strong> "Perfect sounds ideal. Would you use it on a channel that flips 10 percent of bits?"<br><strong>You:</strong> "No. A block fails with 2 or more errors, which at p = 0.1 is 1 minus 0.9 to the 7, minus 7 times 0.1 times 0.9 to the 6, about 15 percent. Its rate, 4 sevenths or 0.571, is above that channel's capacity of 0.531, so no code at that rate can be made reliable there; perfect only means no wasted words, not enough redundancy. At p = 0.01 the same code loses about 0.2 percent of blocks, against 3.9 percent for 4 unprotected bits."</li>
+</ol>
+<p><strong>IT16. What is the difference between error detection and error correction, and when would you choose each?</strong></p>
+<p>Pulls together <a href="ch08.html">Jan 2025 II-Q1(3)</a> (why 2 errors cannot be corrected) and <a href="ch07.html">Aug 2025 II-Q1(1)(b)</a> (how many errors a code corrects).</p>
+<p><strong>Say it:</strong> "Detection only tells me the word is wrong, so I ask for it again; correction works out the right word without asking. With minimum distance d, a code detects d minus 1 errors but corrects only about half that, so detection needs less redundancy. I'd detect when resending is cheap, like network packets, and correct when it isn't, like memory chips or a space probe."</p>
+<p><strong>Worked detail:</strong></p>
 <table>
 <thead>
 <tr>
-<th>line</th>
-<th>what happens</th>
-<th>prints</th>
+<th></th>
+<th>detection plus resend (ARQ)</th>
+<th>correction (forward error correction)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>i / j, i % j</code> with i = 5, j = 2</td>
-<td>integer division drops .5; remainder 1</td>
-<td><code>2 1</code></td>
+<td>needs</td>
+<td>d ≥ s + 1 to catch s errors</td>
+<td>d ≥ 2t + 1 to fix t errors</td>
 </tr>
 <tr>
-<td><code>(double)i / j</code></td>
-<td>the cast comes first, so it is real division</td>
-<td><code>2.5</code></td>
+<td>cost</td>
+<td>a return channel and extra delay when errors happen</td>
+<td>more check bits on every block</td>
 </tr>
 <tr>
-<td><code>a = i++ + 1</code></td>
-<td>uses the old i = 5, so a = 6; then i becomes 6</td>
-<td></td>
+<td>typical use</td>
+<td>Ethernet CRC, TCP checksum</td>
+<td>ECC memory (SECDED), storage, QR codes, space links</td>
 </tr>
 <tr>
-<td><code>b = ++i + 1</code></td>
-<td>i becomes 7 first, so b = 8</td>
-<td><code>6 8 7</code></td>
-</tr>
-<tr>
-<td><code>c = 'a' + 2</code></td>
-<td>'a' is 97, so c is 99, the letter c</td>
-<td><code>c 99</code></td>
-</tr>
-<tr>
-<td><code>counter()</code> three times</td>
-<td>the static <code>calls</code> goes 1, 2, 3</td>
-<td><code>3</code></td>
-</tr>
-<tr>
-<td><code>x != 0 &amp;&amp; 10 / x &gt; 1</code></td>
-<td>the left side is false, so <code>10 / x</code> never runs</td>
-<td><code>safe</code></td>
+<td>fails silently when</td>
+<td>the error pattern is itself a codeword</td>
+<td>more than t errors: the decoder picks a wrong codeword</td>
 </tr>
 </tbody>
 </table>
-<p>And the trap with no right answer:</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-
-int main(void) {
-    int i = 1;
-    int r = i++ + i++;
-    printf(&quot;r = %d, i = %d\n&quot;, r, i);
-    return 0;
-}
-</code></pre>
-<pre><code>cp14_ub.c:5:14: warning: multiple unsequenced modifications to 'i' [-Wunsequenced]
-    5 |     int r = i++ + i++;
-      |              ^     ~~
-1 warning generated.
-</code></pre>
-<pre><code>r = 3, i = 3
-</code></pre>
-<p>This build printed 3 and 3 (so did GCC 15 here), but the C standard leaves <code>i++ + i++</code> undefined, so no output is "the" answer.</p>
+<p>Example: 7 data bits plus parity, p = 0.01. A word is resent when an odd number of bits flip (0.0746), so on average 1/(1 - 0.0746) = 1.08 sends per word, and a wrong word is accepted with probability 0.0028 per delivered word.</p>
+<p>The same idea with program versions: two versions compared with each other can only detect (like d = 2); three versions with a 2-out-of-3 vote can outvote one wrong version (like d = 3).</p>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "Why didn't 10 divided by x crash when x is 0?"<br><strong>You:</strong> "Because the double ampersand works left to right and stops early: x not equal to 0 is false, so the whole condition is false and 10 over x never runs. If I swapped the two sides, it would divide by zero first."</li>
-<li><strong>Prof:</strong> "So you rely on evaluation order. Is the order always defined in C, say for i plus plus plus i plus plus?"<br><strong>You:</strong> "No. The logical and and or operators fix the order, but a plain plus doesn't, and changing i twice in one expression with nothing to order the two changes is undefined behaviour. Different compilers or optimisation levels may then give different answers, and clang warns 'multiple unsequenced modifications'."</li>
-<li><strong>Prof:</strong> "Different compilers giving different outputs: how is that used to find bugs?"<br><strong>You:</strong> "Csmith, from Regehr's group at Utah, PLDI 2011, generates random C programs with no undefined behaviour, compiles each with several compilers and votes on the outputs to spot the wrong one. It found more than 325 unknown compiler bugs. What interests me is that they never saw two unrelated compilers give the same wrong output, unlike Knight and Leveson's versions, and they put that down to the compilers' very different internal representations of the code."</li>
-</ol>
-<hr />
-<p><strong>CP15. What is the running time of these loops?</strong></p>
-<p><strong>Say it:</strong> "I count how many times the innermost line runs as a function of n and keep the fastest-growing term. Two full nested loops give n squared, and starting the inner loop at i gives n times n plus 1 over 2, still order n squared; a loop that doubles i runs about log2 n times; and an inner loop with step i runs about n over i times, which adds up to about n ln n."</p>
-<p><strong>Worked detail:</strong> Running time is asked in <a href="ch09.html">January 2025 II-Q3(3)</a>, <a href="ch12.html">August 2023 II-Q2(5)</a>, <a href="ch08.html">August 2025 II-Q3(3)</a> and <a href="ch07.html">January 2026 II-Q2(4)</a>.</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-
-int main(void) {
-    int n = 1000;
-    long a = 0, b = 0, c = 0, d = 0;
-    for (int i = 0; i &lt; n; i++)                 /* (a) full square */
-        for (int j = 0; j &lt; n; j++) a++;
-    for (int i = 0; i &lt; n; i++)                 /* (b) inner loop starts at i */
-        for (int j = i; j &lt; n; j++) b++;
-    for (int i = 1; i &lt; n; i *= 2) c++;         /* (c) i doubles */
-    for (int i = 1; i &lt;= n; i++)                /* (d) step i */
-        for (int j = 1; j &lt;= n; j += i) d++;
-    printf(&quot;n = %d: a = %ld, b = %ld, c = %ld, d = %ld\n&quot;, n, a, b, c, d);
-    return 0;
-}
-</code></pre>
-<p>Output:</p>
-<pre><code>n = 1000: a = 1000000, b = 500500, c = 10, d = 8053
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>loop</th>
-<th>count</th>
-<th>n = 1000</th>
-<th>order</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>(a)</td>
-<td>n^2</td>
-<td>1,000,000</td>
-<td>Theta(n^2)</td>
-</tr>
-<tr>
-<td>(b)</td>
-<td>n + (n - 1) + ... + 1 = n(n + 1)/2</td>
-<td>500,500</td>
-<td>Theta(n^2)</td>
-</tr>
-<tr>
-<td>(c)</td>
-<td>i = 1, 2, 4, ..., 512: ceil(log2 n)</td>
-<td>10</td>
-<td>Theta(log n)</td>
-</tr>
-<tr>
-<td>(d)</td>
-<td>sum over i of ceil(n/i), about n H_n</td>
-<td>8,053 (n H_n = 7,485.5)</td>
-<td>Theta(n log n)</td>
-</tr>
-</tbody>
-</table>
-<p>H_n = 1 + 1/2 + ... + 1/n = 7.4855 for n = 1000, close to ln n + 0.5772 = 7.4850. The rounding up in (d) adds a little to n H_n.</p>
-<p>For the follow-ups: with k runs and T inputs, counting the pairs of runs that fail on the same input pair by pair costs k(k - 1)/2 * T; counting the failing runs f on each input costs k * T and gives the same total as sum over inputs of f(f - 1)/2. Python check with k = 10, T = 10,000 and simulated beta-binomial failures (p = 0.1, rho = 0.25): both ways counted 14,712 pairs; the share of pairs that both fail was 0.0327 (theory p^2 + rho p(1 - p) = 0.0325), and (share - p-hat^2) / (p-hat(1 - p-hat)) gave rho-hat = 0.255.</p>
-<p><strong>Follow-ups (each builds on your last answer)</strong></p>
-<ol>
-<li><strong>Prof:</strong> "Why does the step-i loop give n log n?"<br><strong>You:</strong> "The inner loop runs about n over i times, so the total is n times the harmonic number, 1 plus a half plus a third and so on up to 1 over n. That's about ln n plus 0.577, so for n = 1,000 the total is about 7,500; the exact count, rounding up, is 8,053, far below the million of the full nested loop."</li>
-<li><strong>Prof:</strong> "Where does a quadratic count like that million show up in your own plan?"<br><strong>You:</strong> "When I count coincident failures: with k runs and T inputs, checking every pair of runs on every input costs k times k minus 1 over 2, times T. For 10 runs and 10,000 inputs that's 45 pairs times 10,000, so 450,000 checks; fine at this size, but it grows with k squared."</li>
-<li><strong>Prof:</strong> "Can you avoid looking at pairs at all?"<br><strong>You:</strong> "Yes. For each input I count the failing runs f, and that input has f times f minus 1 over 2 failing pairs, so one pass of k times T steps gives the same total. Divided by all the pairs and inputs, it estimates the chance that two runs both fail, p squared plus rho times p times 1 minus p, which also gives a quick estimate of rho to start the maximum likelihood fit."</li>
-</ol>
-<hr />
-<p><strong>CP16. How would you sort an array of structs with the C library's qsort?</strong></p>
-<p><strong>Say it:</strong> "qsort from stdlib.h sorts any array if I give it the array, the number of elements, the size of one element and a compare function that returns a negative number, zero or a positive number. The compare function receives two void pointers, which I turn into pointers to my struct and compare the field I want, so one qsort can sort students by points, by name or by id."</p>
-<p><strong>Worked detail:</strong> <a href="ch08.html">August 2025 II-Q3</a> sorts the same five records with a hand-written insertion sort; here the library does it.</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-
-typedef struct { int id; char name[20]; int points; } Student;
-
-int by_points(const void *a, const void *b) {
-    const Student *x = a, *y = b;
-    return (x-&gt;points &gt; y-&gt;points) - (x-&gt;points &lt; y-&gt;points);   /* -1, 0 or 1 */
-}
-
-int minus_cmp(const void *a, const void *b) {                    /* the common shortcut */
-    return *(const int *)a - *(const int *)b;
-}
-
-int safe_cmp(const void *a, const void *b) {
-    int x = *(const int *)a, y = *(const int *)b;
-    return (x &gt; y) - (x &lt; y);
-}
-
-int main(void) {
-    Student s[] = {{101, &quot;Alice&quot;, 85}, {102, &quot;Bob&quot;, 92}, {103, &quot;Carol&quot;, 78},
-                   {104, &quot;David&quot;, 88}, {105, &quot;Eve&quot;, 90}};
-    int n = sizeof s / sizeof s[0];
-    qsort(s, n, sizeof s[0], by_points);
-    for (int i = 0; i &lt; n; i++) printf(&quot;%d %s %d\n&quot;, s[i].id, s[i].name, s[i].points);
-
-    int v[] = {2000000000, -2000000000};
-    printf(&quot;minus_cmp(2e9, -2e9) = %d, safe_cmp = %d\n&quot;,
-           minus_cmp(&amp;v[0], &amp;v[1]), safe_cmp(&amp;v[0], &amp;v[1]));
-    int w[] = {2000000000, -2000000000, 0};
-    qsort(w, 3, sizeof w[0], minus_cmp);
-    printf(&quot;qsort with minus_cmp: %d %d %d\n&quot;, w[0], w[1], w[2]);
-    qsort(w, 3, sizeof w[0], safe_cmp);
-    printf(&quot;qsort with safe_cmp:  %d %d %d\n&quot;, w[0], w[1], w[2]);
-    return 0;
-}
-</code></pre>
-<p>Output:</p>
-<pre><code>103 Carol 78
-101 Alice 85
-104 David 88
-105 Eve 90
-102 Bob 92
-minus_cmp(2e9, -2e9) = -294967296, safe_cmp = 1
-qsort with minus_cmp: 2000000000 -2000000000 0
-qsort with safe_cmp:  -2000000000 0 2000000000
-</code></pre>
-<p><code>2000000000 - (-2000000000)</code> is 4,000,000,000, more than INT_MAX = 2,147,483,647. Signed overflow is undefined; on this machine it wrapped to 4,000,000,000 - 2^32 = -294,967,296, so <code>minus_cmp</code> said 2e9 &lt; -2e9 and qsort left the array in the wrong order. Built with <code>-fsanitize=undefined</code>, the same program reports:</p>
-<pre><code>cp16_qsort.c:12:28: runtime error: signed integer overflow: 2000000000 - -2000000000 cannot be represented in type 'int'
-</code></pre>
-<p><strong>Follow-ups (each builds on your last answer)</strong></p>
-<ol>
-<li><strong>Prof:</strong> "Many people write return a minus b in the compare function. Is that safe?"<br><strong>You:</strong> "Not for int. If a is 2 billion and b is minus 2 billion, a minus b is 4 billion, which doesn't fit in an int, so it overflows; on a normal machine it wraps to a negative number and qsort puts them in the wrong order. Writing a greater than b, minus a less than b, gives minus 1, 0 or 1 and can't overflow."</li>
-<li><strong>Prof:</strong> "Your compare function returns 0 for two students with the same points. Does qsort keep them in their original order?"<br><strong>You:</strong> "Not guaranteed. The C standard says the order of equal elements is unspecified, so qsort need not be stable. If I need stability, I add the original position as a tie-breaker in the compare function, or use a stable sort like the insertion sort in the August 2025 question."</li>
-<li><strong>Prof:</strong> "Every change to a compare function, like that tie-breaker, can break it. How would you check one before trusting it?"<br><strong>You:</strong> "I'd check its properties on many random pairs and triples: swapping the arguments must flip the sign, comparing an item with itself must give 0, and it must be transitive, so if a is below b and b is below c, then a is below c. I'd include the smallest and largest possible ints and values near them, since that's where a minus b breaks; that's boundary value testing again, and one such pair already exposes the bug."</li>
+<li><strong>Prof:</strong> "You said two versions can only detect. What should a system do when they disagree?"<br><strong>You:</strong> "The same as a receiver that detects an error: trust neither answer and fall back. That could be re-running, switching to a safe default, or asking a third version or a person, which is roughly what recovery blocks with an acceptance test do in software fault tolerance. The cost is that some inputs get a late answer or none, so detection trades availability for safety."</li>
+<li><strong>Prof:</strong> "When does comparing two versions miss a failure completely?"<br><strong>You:</strong> "When both give the same wrong output, the comparison just sees agreement. That is like an error pattern that happens to be a codeword: the syndrome is zero, so nothing is detected. My plan has the same blind spot, since a bug that the merged reference code shares cannot be seen by comparing against it."</li>
+<li><strong>Prof:</strong> "How would you estimate how often two versions agree on a wrong output?"<br><strong>You:</strong> "My plan counts runs that fail on the same input, and it counts the 2-out-of-3 vote as failed whenever two runs fail, which is the cautious choice. To split that, I'd keep each failing run's output and count inputs where two failing runs return the same value, because only those fool a voter; different wrong outputs give no majority and can be flagged. I haven't done that yet, and it would use the same notion of equal outputs that I use against the merged code."</li>
 </ol>
 </article>
 <div class="donebox"><label><input type="checkbox" class="done-cb" data-ch="h35"> Mark chapter 35 as done</label></div>
-<nav class="pager" aria-label="Previous and next"><a class="prev" href="ch34.html"><span class="lbl">← Previous</span>34. CS basics</a><a class="next" href="ch36.html"><span class="lbl">Next →</span>36. Information theory and coding</a></nav>
+<nav class="pager" aria-label="Previous and next"><a class="prev" href="ch34.html"><span class="lbl">← Previous</span>34. C programming basics</a><a class="next" href="ch36.html"><span class="lbl">Next →</span>36. Number formats and logic circuits</a></nav>
 </main>
 </div>
 <script>
