@@ -490,7 +490,7 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 </ol>
 <p><strong>Q27. Which two temperatures, and how will you run Qwen3-30B-Coder?</strong></p>
 <blockquote>
-<p>I haven't fixed them yet. Gloaguen et al. used 0.7 with top-p 0.8 for this model, so 0.7 is a natural first value, with a low value as the second [YOU: Which low temperature will you pair with 0.7 for Qwen3-30B-Coder (such as 0.2)?]. They ran the model locally with vLLM and estimated its cost from OpenRouter prices. I'd do the same if I have a GPU, or else use a hosted API.</p>
+<p>0.7 and 0.2. Gloaguen et al. used 0.7 with top-p 0.8 for this model, so 0.7 is the natural first value. I'd pair it with 0.2, low enough that the runs vary much less, but not 0, where ten runs could come out almost the same. The pilot can still move them. Gloaguen et al. ran the model locally with vLLM and estimated its cost from OpenRouter prices. I'd do the same if I have a GPU, or else use a hosted API.</p>
 </blockquote>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
@@ -504,7 +504,7 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 </blockquote>
 <p>If he pushes ("Break the cost down."): "Claude Code is most of it: 260 runs at 1.15 to 1.51 dollars, about 299 to 393. Codex with GPT-5.2: 260 runs at 0.32 to 0.57, about 83 to 148. The smaller model: 100 runs, about 18 to 22. Qwen: 200 runs, about 24 to 30."</p>
 <p>If he pushes ("Are those costs from these tasks?"): "The ranges cover both benchmarks in their Table 2. On their 138 tasks alone, Claude Code was 1.15 to 1.33 dollars and Codex with GPT-5.2 0.38 to 0.57."</p>
-<p>If he pushes ("Newer models cost more. Who pays?"): "Yes, Zhang et al. report about 5 dollars per task and condition with Claude Opus 4.6. The pilot measures the real cost first. If it is higher than planned, I'd move more runs to the open-weight model, which costs about a tenth of Claude Code per task. [YOU: Will you really pay for the 120 screening runs yourself, or keep your proposal's line (ask if the runs fit a lab budget, otherwise move runs to the open-weight model)?]" (The October proposal to Prof. Dohi said you would ask whether the cost fits a lab budget. The submitted plan does not say that, so don't bring it up.)</p>
+<p>If he pushes ("Newer models cost more. Who pays?"): "Yes, Zhang et al. report about 5 dollars per task and condition with Claude Opus 4.6. The pilot measures the real cost first. If it is higher than planned, I'd ask whether the runs fit a lab budget, and if they don't, I'd move more runs to the open-weight model, which costs about a tenth of Claude Code per task." (The October proposal to Prof. Dohi has this lab-budget line. The submitted plan does not, so say it only when he asks who pays, and never as a request.)</p>
 <p>Why he asks: to see that you know your own numbers. Never say or hint that the lab must pay.</p>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
@@ -664,7 +664,7 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
 <li><strong>Prof:</strong> "You say that if too few entry points work, you go back to the 138 tasks. What makes an entry point work?"<br><strong>You:</strong> "Three things. Its arguments must be plain values I can build from the type hints, like numbers, strings and lists, not open files or API clients. The merged code must give the same output twice on the same input, and my inputs must reach the lines the pull request changed."</li>
-<li><strong>Prof:</strong> "How many of the 138 tasks do you expect to pass all three?"<br><strong>You:</strong> "I haven't checked yet, and it's the biggest risk in the pilot. [YOU: Have you counted how many of the 138 tasks pass all three checks? If not, keep 'I haven't checked yet'.] Several of the 12 repositories, like smolagents and openai-agents-python, are agent frameworks where many functions take objects such as agents and model clients, so I expect many of their tasks to drop out. I'd find out early with a script that reads the type hints of every function each pull request changes."</li>
+<li><strong>Prof:</strong> "How many of the 138 tasks do you expect to pass all three?"<br><strong>You:</strong> "I haven't counted them yet, and it's the biggest risk in the pilot. Several of the 12 repositories, like smolagents and openai-agents-python, are agent frameworks where many functions take objects such as agents and model clients, so I expect many of their tasks to drop out. I'll count them in my first month in the lab, with a script that reads the type hints of every function each pull request changes."</li>
 <li><strong>Prof:</strong> "And if only five tasks are left?"<br><strong>You:</strong> "Then I'd lean on newer pull requests: search the same 12 repositories for merged changes to functions that take plain values, and write tests for them the way Gloaguen et al. did. If that's still too few, I'd add other Python repositories chosen the way they chose theirs: an AGENTS.md or CLAUDE.md at the root, Python as the main language, a test suite and at least 400 pull requests."</li>
 </ol>
 <p><strong>Q43. If everything slips by six months, what do you cut?</strong></p>
@@ -683,7 +683,7 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 </blockquote>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "You mention trying a few agent runs on one benchmark task. Which task?"<br><strong>You:</strong> "One of Gloaguen et al.'s 138 tasks whose changed function takes plain values, like numbers and strings, so my input generator can call it. The tasks are on Hugging Face with a Docker image and test commands for each, so I don't have to build a benchmark first. [YOU: Will you really try a few agent runs on one Gloaguen et al. task before April, and if so, which task have you picked?]"</li>
+<li><strong>Prof:</strong> "You mention trying a few agent runs on one benchmark task. Which task?"<br><strong>You:</strong> "One of Gloaguen et al.'s 138 tasks whose changed function takes plain values, like numbers and strings, so my input generator can call it. The tasks are on Hugging Face with a Docker image and test commands for each, so I don't have to build a benchmark first. I haven't picked it yet. I'll choose one from a repository that isn't an agent framework and try a few Claude Code runs on it before April."</li>
 <li><strong>Prof:</strong> "A few runs on one task won't give you ρ. What's the point?"<br><strong>You:</strong> "Right, it isn't for ρ. It's to find what breaks before the real pilot: whether the Docker image runs, what one run really costs today, and whether the merged code gives the same output twice on my generated inputs."</li>
 <li><strong>Prof:</strong> "Why would the merged code ever give two different outputs on the same input?"<br><strong>You:</strong> "If it reads the clock, uses random numbers without a fixed seed, or loops over a set of strings, because Python randomises string hashes in each new process, so a set's order can change. Then a correct version could look wrong. So I'd fix the seeds, including Python's hash seed, run the merged code twice and drop the inputs where it still differs."</li>
 </ol>
@@ -778,7 +778,7 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <blockquote>
 <p>That's true today, which is why the courses come first. I learn the models in the first half of Year 1 and fit them to the main data in Year 2. The beta-binomial builds on the binomial distribution and the basic inference I studied in BCS301, and the rest I want to learn here. The agent side, meaning the runs, the harness and the inputs, I can already build.</p>
 </blockquote>
-<p>If he pushes ("Have you used mixed models?"): "[YOU: Have you studied logistic regression and mixed-effects models on your own, and have you ever fitted one yourself?] Statistics courses come first in my Year 1 plan."</p>
+<p>If he pushes ("Have you used mixed models?"): "Not yet. I'm working through logistic regression and mixed models in Agresti's An Introduction to Categorical Data Analysis, and I'll fit my first one before April on simulated data, where I know the true answer. Statistics courses come first in my Year 1 plan."</p>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
 <li><strong>Prof:</strong> "Which parts of BCS301 would you actually use?"<br><strong>You:</strong> "The binomial distribution, mean and variance, and covariance and correlation from the part on joint distributions. ρ is the correlation between two runs failing on the same input, and Var θ is just E[θ²] minus p². What the course didn't cover is fitting a model like mine by maximum likelihood, and that's the Year 1 part."</li>

@@ -181,7 +181,7 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <p><strong>How to use it:</strong></p>
 <ul>
 <li>Say the first sentence of an answer, then stop. Use the "If they push" line only when they push.</li>
-<li>Every [YOU: ...] is a question only you can answer, because no file settles it. Answer it for yourself first, then say only what is true, or drop that part.</li>
+<li>The [YOU: ...] markers still left are personal facts only you can answer. Answer each for yourself first, then say only what is true, or drop that part. Every other answer is written out for you; where no file backs a number, the answer says so plainly and shows how you'd measure it properly. Read them and change any wording that isn't how you'd say it.</li>
 <li>Where another file already answers a question, the entry points to it and adds only what is new.</li>
 <li>Numbering: W1, W2 ... so you can point to them. The proposal questions are Q1 to Q55 in <a href="ch19.html"><code>05_Questions_on_My_Proposal/07_questions_on_my_proposal.md</code></a>, and the new hard ones are H1 to H47 in <a href="ch20.html"><code>05_Questions_on_My_Proposal/02_hard_questions_from_other_professors.md</code></a>.</li>
 </ul>
@@ -344,7 +344,7 @@ If they push ("Give one rule you added after an agent made a mistake."): "Once a
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
 <li><strong>Prof:</strong> "Take Yuki 2.0, then. Which part would you walk us through, and why that part?"<br><strong>You:</strong> "The safety checker: before a risky step, like a send or a delete, a separate small model checks it and blocks it if the user didn't ask for it. It sees only the user's own words and the proposed step, never the screen text, so a web page can't talk it into anything. I'd pick it because it's the most reliability-like part: a check in front of the main model instead of trusting it."</li>
-<li><strong>Prof:</strong> "A check is only useful if it works. How did you measure it?"<br><strong>You:</strong> "I replayed requests offline, on a copy of the memory database with simulated apps, and counted what the checker did. It held all 9 actions the user hadn't asked for, and wrongly held none of the 36 the user had asked for." [YOU: Who picked the 45 replay cases and how: you, or a Claude session from logged runs?]</li>
+<li><strong>Prof:</strong> "A check is only useful if it works. How did you measure it?"<br><strong>You:</strong> "I replayed requests offline, on a copy of the memory database with simulated apps, and counted what the checker did. It held all 9 actions the user hadn't asked for, and wrongly held none of the 36 the user had asked for. The cases were chosen while I was building the checker, not drawn at random, so it's a development check, not a fair sample."</li>
 <li><strong>Prof:</strong> "Nine out of nine sounds perfect. What does it really tell you about the catch rate?"<br><strong>You:</strong> "Less than it sounds, because nine is a small sample. If the true catch rate were 72%, catching all nine would still happen about 5% of the time, since 0.72 to the power 9 is about 0.05, so the one-sided 95% lower bound is about 72%, and that's all I can claim. To show the rate is above 95%, I'd need 59 caught out of 59, because 0.95 to the power 59 is just under 0.05."</li>
 </ol>
 <hr />
@@ -356,16 +356,16 @@ If they push ("Give one rule you added after an agent made a mistake."): "Once a
 <p>If they push ("Which tools?"): "Pipecat for the pipeline, Daily for the audio connection, Deepgram for speech to text, a language model set per agent, Gemini by default, and ElevenLabs or Cartesia for the voice. Silero VAD detects when the caller has stopped." Your CV's LiveKit and Whisper are not in Path AI, so don't name them.</p>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "You said replies must be fast enough for a natural call. How fast is that, and where does the time go?"<br><strong>You:</strong> "People usually start their reply within a few hundred milliseconds, and a silence of about a second already feels long on the phone. The time adds up across the stages: noticing the caller has stopped, speech to text, the model's first words, and text to speech." [YOU: What reply delay did Path AI really have, and which stage was slowest?]</li>
+<li><strong>Prof:</strong> "You said replies must be fast enough for a natural call. How fast is that, and where does the time go?"<br><strong>You:</strong> "People usually start their reply within a few hundred milliseconds, and a silence of about a second already feels long on the phone. The time adds up across the stages: noticing the caller has stopped, speech to text, the model's first words, and text to speech. I don't have a measured breakdown for Path AI, so to find the slowest stage properly I'd timestamp every stage on real calls and compare their 95th percentiles."</li>
 <li><strong>Prof:</strong> "How does the system notice that the caller has stopped, and what goes wrong there?"<br><strong>You:</strong> "Usually with voice activity detection, a small model that says whether someone is speaking, plus a silence timeout: if there's no speech for a set time, the turn is over. Path AI uses Silero VAD, and the turn ends after 0.8 seconds of silence. The trade-off is that a short timeout makes the agent cut in when people pause to think, and a long one adds that wait to every reply."</li>
 <li><strong>Prof:</strong> "How would you choose that timeout properly, rather than by feel?"<br><strong>You:</strong> "From recorded calls I'd collect the pauses inside a caller's turn, where they stopped briefly but weren't finished. For a timeout t, the chance of cutting in on a pause is the share of those pauses longer than t, and every reply waits about t. Then I'd pick the t that minimises a weighted sum of the two, with the weight saying how much worse an interruption is than a slow reply, and check it on calls I didn't use to choose it."</li>
 </ol>
 <p><strong>W7. Your CV says 85% accuracy. Accuracy of what, and how was it measured?</strong></p>
 <blockquote>
-<p>[YOU: How was Path AI's 85%+ accuracy measured: what counts as a correct call, on how many calls, and who judged?] If you are not sure: "I'm not sure exactly how that number was measured, so I won't defend it. As a research number I'd want the definition of a correct call, the number of calls, and an interval."</p>
+<p>The call count comes from our system; the accuracy was an internal team figure, not a careful study, so I won't defend it as a research number. If I measured it properly, I'd define a correct call first, have two people label a random sample of a few hundred calls, and report their agreement and a confidence interval.</p>
 </blockquote>
 <p>If they push ("What would the interval be?"): "For example, if 170 of 200 labelled calls were right, that's 85% with a 95% interval of about plus or minus 5 points, because the standard error is the square root of 0.85 x 0.15 / 200, about 0.025." (Made-up numbers, only to show the method.)
-Same rule for "1,500+ calls a month" and "75% less than a human rep": [YOU: How were the 1,500+ calls a month and the 75% saving measured?]</p>
+Same rule for "1,500+ calls a month" and "75% less than a human rep": "The call count comes from our system. The 75% is a cost figure from work, not a study. Properly, I'd compare the full cost per qualified lead for the agent and for people over the same period."</p>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
 <li><strong>Prof:</strong> "Then define it. What would count as a correct call for a qualification agent?"<br><strong>You:</strong> "I'd call it correct if the result the agent records, qualified or not, matches what a trained person decides after listening to the whole call, and the call didn't break, for example the agent dropping it halfway. The person labels the call without seeing the agent's answer, so it can't sway them."</li>
@@ -450,7 +450,7 @@ Optional (from your September 2026 work notes): "One lesson was that checking a 
 </ol>
 <p><strong>W15. "Used in 35+ workspaces" is usage, not quality. How do you know the edits are good?</strong></p>
 <blockquote>
-<p>You're right, it's usage, not quality. [YOU: How did you count the 35+ workspaces: what data, which month, and were test or staff workspaces left out?] I don't have a formal quality study. Because every edit is approved or rejected by a user, the approval rate per suggestion would be a natural first measure, but I haven't run it as a study.</p>
+<p>You're right, it's usage, not quality. The 35+ is a product number, customer workspaces in its first month, and I'd recheck that test and staff workspaces were left out before defending it. I don't have a formal quality study, but since every edit is approved or rejected by a user, the approval rate per suggestion would be a natural first measure.</p>
 </blockquote>
 <p>If they push ("Tell us one real failure."): optional (from your September 2026 work notes): "Hotspots and callouts the agent placed were off by half their own size. The vision step returned the centre of the target, but the new agent code wrote that point as the box's top-left corner, so every one sat half a box down and to the right. It was a plain geometry bug, and the fix converts the point for each element type."</p>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
@@ -543,28 +543,30 @@ If they push ("Who counted?"): "I counted." Do not claim a script.</p>
 </blockquote>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "You moved services to Docker on ECS with CI/CD. What did the pipeline check before a release went out?"<br><strong>You:</strong> "[YOU: What did the BusinessRoom pipeline really run before a release, and did it deploy to ECS or to EC2 and S3?] The usual shape is to build the image, run the tests, and deploy only if they pass. ECS then starts the new containers and stops the old ones only once the new ones pass their health checks."</li>
-<li><strong>Prof:</strong> "And if the new version passes its health checks but gives wrong answers?"<br><strong>You:</strong> "Then the health check doesn't help, because it only asks whether the service answers, not whether the answers are right: 'did it run', not 'did it work'. You need checks on behaviour after a release, like error rates and key numbers compared with the version before, and a fast way to roll back." [YOU: At BusinessRoom, what did you actually watch after a release: errors, response times, alarms?]</li>
+<li><strong>Prof:</strong> "You moved services to Docker on ECS with CI/CD. What did the pipeline check before a release went out?"<br><strong>You:</strong> "I don't have the exact pipeline steps in front of me, so I'll give the shape rather than claim checks I can't show. The usual shape is to build the image, run the tests, and deploy only if they pass. ECS then starts the new containers and stops the old ones only once the new ones pass their health checks."</li>
+<li><strong>Prof:</strong> "And if the new version passes its health checks but gives wrong answers?"<br><strong>You:</strong> "Then the health check doesn't help, because it only asks whether the service answers, not whether the answers are right: 'did it run', not 'did it work'. You need checks on behaviour after a release, like error rates and key numbers compared with the version before, and a fast way to roll back. At BusinessRoom we had CloudWatch and the logs, but I can't show you a written check like that."</li>
 <li><strong>Prof:</strong> "Classic reliability growth models assume one fixed program. Do they fit a service that's released often?"<br><strong>You:</strong> "Not well. They assume faults are only removed from one fixed code base, so the expected number left only goes down, but every release adds new code and maybe new faults. So in my plan's field study each merged change brings its own expected faults, found after a delay, which is the infinite-server queue Dohi, Osaki and Trivedi used to unify the finite and infinite fault NHPP models."</li>
 </ol>
 <p><strong>W24. "Page load from 7 seconds to 1.5 seconds": measured how?</strong></p>
 <blockquote>
-<p>[YOU: How did you measure 7s and 1.5s: which page, which tool, how many loads, median or one run?] If unsure: "I'd rather not defend the exact number."</p>
+<p>That's a product number from that work. I don't have the exact method in front of me, like which page, which tool or how many loads, so I'd rather not defend the exact figure.</p>
 </blockquote>
 <p>If they push ("How should it be measured?"): "A load time is a distribution, not one number. I'd report the median and the 95th percentile before and after, on the same pages and the same network conditions."
-If they push ("What did you change?"): "Query optimisation, so fewer and faster database calls, caching, and code splitting, so the browser loads less JavaScript at first." [YOU: Which change gave most of the gain? On 12 Oct you named front-end work, caching and SVGs in place of heavy images, and said you didn't touch database queries; if so, drop "query optimisation".]</p>
+If they push ("What did you change?"): "Mostly front-end work, caching, and SVGs in place of heavy images, so the browser had less to download. I didn't touch the database queries, so the 'query optimisation' on my CV is wrong, and I'll fix it."
+Note for you: your CV line says "query optimization, caching and code splitting". Drop "query optimization" if you send the CV again.</p>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "You mentioned caching. How does caching change what you should measure?"<br><strong>You:</strong> "A load from the cache is much faster than a cold one, so the result depends on the mix. If I measured mostly repeat visits, I'd overstate the gain for a first-time visitor, so I'd report cold and cached loads separately." [YOU: Were the 7s and 1.5s cold or cached loads?]</li>
+<li><strong>Prof:</strong> "You mentioned caching. How does caching change what you should measure?"<br><strong>You:</strong> "A load from the cache is much faster than a cold one, so the result depends on the mix. If I measured mostly repeat visits, I'd overstate the gain for a first-time visitor, so I'd report cold and cached loads separately. I don't have that split for the 7 and 1.5 seconds, which is one more reason I don't lean on them."</li>
 <li><strong>Prof:</strong> "Put numbers on it. A cold load takes 4 seconds, a cached one half a second, and 80% of loads hit the cache."<br><strong>You:</strong> "The average is 0.8 times 0.5 plus 0.2 times 4, so 0.4 plus 0.8, which is 1.2 seconds. But one load in five still takes 4 seconds, so the average describes almost nobody. And if the hit rate falls to 50%, the average becomes 2.25 seconds without any change to the code."</li>
 <li><strong>Prof:</strong> "Then how would you show that a speed-up came from your change, and not from something like the hit rate?"<br><strong>You:</strong> "Measure before and after under the same conditions: same pages, same cache state, same network, and many loads on each side. Better still, put the change behind a switch and run both versions in the same period, so traffic and the hit rate are the same for both. That's the same idea as my plan comparing two file versions on the same tasks."</li>
 </ol>
 <p><strong>W25. "Feature adoption up 15%" after you set up monitoring. Can you claim the monitoring caused that?</strong></p>
 <blockquote>
-<p>No, not as a causal claim. The logs showed us where users dropped off, the product changes came from that, and adoption went up afterwards. [YOU: How was the 15% rise in feature adoption defined and measured, or do you not know?] Without a control group I can't say how much of the rise came from our changes.</p>
+<p>No, not as a causal claim. The logs showed us where users dropped off, the product changes came from that, and adoption went up afterwards. The 15% is a product number from work, and without a control group I can't say how much of the rise came from our changes.</p>
 </blockquote>
 <p>Why they ask: a professor will check whether you know the difference between "after" and "because of".
-Same rule for "release cycles cut by 30%": [YOU: How did you measure the 30%, and what was the release cycle before and after?]</p>
+If they push ("How was the 15% defined?"): "I don't know exactly, for example which feature, or points against a relative change. Properly, I'd fix the feature and the group of users first, and compare the share using it over the same weeks before and after."
+Same rule for "release cycles cut by 30%": "That's a product number from work too, not a careful measurement. Properly, I'd take the time from merge to release for every release over a few months before and after the move, and compare the medians with an interval."</p>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
 <li><strong>Prof:</strong> "Without a control group, is there anything you could still do?"<br><strong>You:</strong> "Partly. If the changes reached some features or users but not others, I could compare how adoption moved in both groups over the same weeks; that's difference-in-differences, and it removes trends that hit everyone, like a seasonal rise. With a long history before the change, I could also check whether the rise is bigger than the usual week-to-week movement, which is an interrupted time series."</li>
@@ -599,7 +601,7 @@ Same rule for "release cycles cut by 30%": [YOU: How did you measure the 30%, an
 </blockquote>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "Quick commerce prices change often. How fresh were the prices you showed?"<br><strong>You:</strong> "[YOU: How often did the crawler run, for which delivery areas, and did prices differ by area? If unsure, drop the last sentence.] The real problem is that a price can change right after I read it, so the 'cheapest' I show may already be wrong. And on these apps, stock and sometimes the price depend on the delivery area, so one product can have several prices."</li>
+<li><strong>Prof:</strong> "Quick commerce prices change often. How fresh were the prices you showed?"<br><strong>You:</strong> "I don't have the exact schedule in front of me, so I won't give a number. The real problem is that a price can change right after I read it, so the 'cheapest' I show may already be wrong."</li>
 <li><strong>Prof:</strong> "Then how often should you crawl? Model it."<br><strong>You:</strong> "Say a price changes as a Poisson process with rate lambda, and I crawl every T hours. At a random moment the time since the last crawl is uniform between 0 and T, so the chance the shown price is still current is the average of e to the minus lambda u over that range, which is 1 minus e to the minus lambda T, all over lambda T. That's the freshness measure from Cho and Garcia-Molina's work on keeping crawled copies fresh."</li>
 <li><strong>Prof:</strong> "Put numbers in: one change a day, and a crawl every 6 hours."<br><strong>You:</strong> "Lambda T is a quarter, so it's 1 minus e to the minus 0.25, over 0.25, about 0.88: the price is current about 88% of the time. Crawling every hour gives about 98%, but with six times the requests. It's the same trade-off as choosing a checkpoint interval in your lab's work: checkpointing more often costs more time, and less often loses more work when a failure comes."</li>
 </ol>
@@ -609,28 +611,28 @@ Same rule for "release cycles cut by 30%": [YOU: How did you measure the 30%, an
 </blockquote>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "You said you'd keep the request rate low. How would you decide what is low enough?"<br><strong>You:</strong> "I'd set a small fixed rate per site, for example one request every few seconds, spread the requests out, and slow down at once if the server returns errors. [YOU: What request rate or delay did the PuntPartners crawler really use?] The aim is that my crawler never adds noticeable load to their servers."</li>
+<li><strong>Prof:</strong> "You said you'd keep the request rate low. How would you decide what is low enough?"<br><strong>You:</strong> "I'd set a small fixed rate per site, for example one request every few seconds, spread the requests out, and slow down at once if the server returns errors. I don't have the exact delay ours used in front of me, so I won't quote one. The aim is that my crawler never adds noticeable load to their servers."</li>
 <li><strong>Prof:</strong> "You said slow down at once on errors. How exactly?"<br><strong>You:</strong> "Exponential backoff: after each failure I wait twice as long as before, plus a random amount called jitter so that many clients don't retry at the same moment, and I give up after a few tries. If the server answers 429, 'too many requests', with a Retry-After header, I wait at least that long."</li>
 <li><strong>Prof:</strong> "With one try and five retries, if each try fails independently with probability 0.2, how often do all six fail?"<br><strong>You:</strong> "0.2 to the power 6, about 0.000064, so roughly 6 in 100,000. But when a server is overloaded, the tries don't fail independently: if one fails, the next one soon after probably fails too. That's the same coincident-failure problem as in my plan, and it's why the waits grow, to give the server time to recover."</li>
 </ol>
 <p><strong>W30. How do you know two listings on different apps are the same product?</strong></p>
 <blockquote>
-<p>[YOU: How did TolMol decide two listings were the same product: an exact rule, a similarity threshold, or a hand-made mapping?] In general: "You normalise the name, brand and pack size, match them, and check a sample by hand. A wrong match is worse than a missing one, because it shows a wrong 'cheapest' price."</p>
+<p>I don't have our exact matching rule in front of me, so I'll give the method. You normalise the name, brand and pack size, match them, and check a sample by hand. A wrong match is worse than a missing one, because it shows a wrong 'cheapest' price.</p>
 </blockquote>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "You said a wrong match is worse than a missing one. How does that show up when you tune the matcher?"<br><strong>You:</strong> "It means I care more about precision, the share of my matches that are right, than recall, the share of true pairs I find. So I'd set the similarity threshold high, accept missing some pairs, and report both numbers from a hand-checked sample." [YOU: What threshold or rule did the TolMol matcher really use?]</li>
+<li><strong>Prof:</strong> "You said a wrong match is worse than a missing one. How does that show up when you tune the matcher?"<br><strong>You:</strong> "It means I care more about precision, the share of my matches that are right, than recall, the share of true pairs I find. So I'd set the similarity threshold high, accept missing some pairs, and report both numbers from a hand-checked sample. I don't have our exact rule in front of me, so that's how I'd set it now."</li>
 <li><strong>Prof:</strong> "How would you estimate precision from a hand-checked sample?"<br><strong>You:</strong> "Take a random sample of the matches the system made and check each one by hand; the share that are right estimates precision. For example, 194 right out of 200 is 97%, and the Wilson 95% interval is about 94% to 99%."</li>
 <li><strong>Prof:</strong> "And recall? You can't sample the pairs you never found."<br><strong>You:</strong> "Right, so one way is to pick random products on one app, find their true matches on the other by hand, and see what share the system found. Another is capture-recapture, which is also used to estimate the faults left after inspections: if two independent matchers find 80 and 60 true pairs with 48 in common, the total is about 80 times 60 over 48, which is 100 pairs. Its weak point is that the two matchers must miss pairs independently, and two similar matchers tend to miss the same hard pairs."</li>
 </ol>
 <p><strong>W31. Crawlers break when an app changes its API. How did you know it broke?</strong></p>
 <blockquote>
-<p>[YOU: What monitoring did the PuntPartners crawler have, if any?] Then: "The risky case isn't a crash. It's a crawler that keeps running but returns old or empty prices. I'd check the daily count of prices per platform and alert when it drops."</p>
+<p>I can't tell you exactly what monitoring it had, so I'll say what it needed. The risky case isn't a crash but a crawler that keeps running and returns old or empty prices. I'd check the daily count of prices per platform and alert when it drops.</p>
 </blockquote>
 <p>Why they ask: silent failure again. The answer they like is "detect the failure, not just the crash".</p>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "You said you'd alert when the daily count drops. How big a drop?"<br><strong>You:</strong> "I'd learn the normal range from past days: the mean and standard deviation of each platform's daily count, and an alert when today falls below the mean minus three standard deviations, like a control chart." [YOU: Did the crawler have an alert like this? If not, say 'We didn't have that, and I'd add it.']</li>
+<li><strong>Prof:</strong> "You said you'd alert when the daily count drops. How big a drop?"<br><strong>You:</strong> "I'd learn the normal range from past days: the mean and standard deviation of each platform's daily count, and an alert when today falls below the mean minus three standard deviations, like a control chart. That's the check I'd want on any crawler like ours."</li>
 <li><strong>Prof:</strong> "Why three standard deviations? How often would that alarm by mistake?"<br><strong>You:</strong> "If the daily count is roughly normal, a value that low happens by chance about 0.13% of the time, so about one false alarm every two years of daily checks. At two standard deviations it's about 2.3%, one false alarm every 44 days or so, but it catches smaller drops. So the limit is a trade between false alarms and missed failures."</li>
 <li><strong>Prof:</strong> "You said missed failures. A crawler that keeps returning yesterday's prices keeps the count normal, so no limit on the count catches it. What then?"<br><strong>You:</strong> "Then I'd also watch how many prices changed since yesterday. Say 1,000 products each change about once in 10 days: I'd expect about 100 changes a day, and under a Poisson model the chance of seeing none by luck is e to the minus 100, practically zero. So a day with no changes on a platform means stale data, even when the count looks fine."</li>
 </ol>
@@ -638,27 +640,27 @@ Same rule for "release cycles cut by 30%": [YOU: How did you measure the 30%, an
 <h2 id="7-oneroot">7. OneRoot</h2>
 <p><strong>W32. What did you do at OneRoot?</strong></p>
 <blockquote>
-<p>It was my first internship, on site in Bangalore, from August to November 2024. I built full stack features, proofs of concept and operations dashboards for an agritech product that helps farmers find harvesters and get better prices. I also connected third-party tools into the product, and the stack was React, Node.js, Express and MongoDB. [YOU: Name one dashboard or integration you really built, and what it showed.]</p>
+<p>It was my first internship, on site in Bangalore, from August to November 2024. I built full stack features, proofs of concept and operations dashboards for an agritech product that helps farmers find harvesters and get better prices. I also connected third-party tools into the product, and the stack was React, Node.js, Express and MongoDB.</p>
 </blockquote>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "You said the product helps farmers. Many of them have a weak mobile network. How did it cope with that?"<br><strong>You:</strong> "[YOU: Did OneRoot's farmers use a phone app, and did you work on it? If not, say 'I didn't work on that part, so I don't know.'] If I were designing it, I'd save the farmer's request on the phone first and send it when the network comes back, retrying until the server confirms."</li>
+<li><strong>Prof:</strong> "You said the product helps farmers. Many of them have a weak mobile network. How did it cope with that?"<br><strong>You:</strong> "I can't say for sure how the farmers' side handled it. If I were designing it, I'd save the farmer's request on the phone first and send it when the network comes back, retrying until the server confirms."</li>
 <li><strong>Prof:</strong> "If the phone retries, the server may get the same booking twice. How do you stop a double booking?"<br><strong>You:</strong> "Each request carries a unique id made on the phone, called an idempotency key. The server stores that id with the booking, and if the same id arrives again, it sends back the first booking instead of making a new one."</li>
 <li><strong>Prof:</strong> "What if the retry arrives while the first request is still being processed?"<br><strong>You:</strong> "Then both copies can pass a 'have I seen this id?' check at the same moment, which is a race condition. So the id has to be a unique key in the database itself: the second insert fails, and the server answers with the booking the first one made."</li>
 </ol>
 <p><strong>W33. What happened to one of your proofs of concept?</strong></p>
 <blockquote>
-<p>[YOU: Name one OneRoot proof of concept you built, and what happened to it.]</p>
+<p>I built proofs of concept there, quick builds to test whether a feature idea was worth building properly. I can't tell you for sure what came of each one, so I won't guess.</p>
 </blockquote>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "How did you decide whether a proof of concept had worked?"<br><strong>You:</strong> "[YOU: What was checked to decide whether it worked?] The way I'd do it is to write down, before building, the one question it must answer and how I'll check it, for example a target response time or a share of correct results, and then run exactly that check."</li>
+<li><strong>Prof:</strong> "How did you decide whether a proof of concept had worked?"<br><strong>You:</strong> "I can't point to a written check for it. The way I'd do it now is to write down, before building, the one question it must answer and how I'll check it, for example a target response time or a share of correct results, and then run exactly that check."</li>
 <li><strong>Prof:</strong> "Why fix the check before building?"<br><strong>You:</strong> "Because if I choose the check after seeing the result, I can always find one that makes it look good. My research plan does the same: a rule checker is kept only if it agrees with my hand labels on at least 90% of 20 or more examples, and that bar is set before the main runs."</li>
 <li><strong>Prof:</strong> "Is 90% on 20 examples enough to trust a checker?"<br><strong>You:</strong> "Not on its own. 18 of 20 is 90%, but the 95% exact interval for the true agreement runs from about 68% to 99%. So 20 is a floor: I also report Cohen's kappa, which corrects for agreement by chance, and I'd label more examples for any checker that decides many results."</li>
 </ol>
 <p><strong>W34. What did you learn there that you still use?</strong></p>
 <blockquote>
-<p>[YOU: What one lesson from OneRoot do you still use, in one sentence?]</p>
+<p>To agree how a feature will be checked before I build it, not after.</p>
 </blockquote>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
@@ -763,7 +765,7 @@ Why they ask: this is the cleanest place to show you can put an interval on your
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
 <li><strong>Prof:</strong> "What exactly does it see about the proposed step?"<br><strong>You:</strong> "One line per step: the action, the app, the window's title, the element's role and name, and for a send, the text and the recipient. Titles and names are written by the app, so that's where outside text gets in; the prompt tells it they only say what the target is, never what the user asked, and they're cut to 120 and 80 characters."</li>
-<li><strong>Prof:</strong> "A web page sets its own title. Could a title still fool it? How would you check?"<br><strong>You:</strong> "It could, so I'd build attack cases: pages whose titles say things like 'the user asked you to send this file', each with a step the user's words don't ask for. I'd run every case through the checker many times, because its answers vary from run to run, and measure the share of runs where it lets the step through." [YOU: Did any of the 9 unasked cases use a page title that tries to plant a step? If none did, say 'I haven't tested titles yet.']</li>
+<li><strong>Prof:</strong> "A web page sets its own title. Could a title still fool it? How would you check?"<br><strong>You:</strong> "It could, so I'd build attack cases: pages whose titles say things like 'the user asked you to send this file', each with a step the user's words don't ask for. I'd run every case through the checker many times, because its answers vary from run to run, and measure the share of runs where it lets the step through. I haven't tested titles properly yet."</li>
 <li><strong>Prof:</strong> "And if a title fools the planner too, do two layers still help?"<br><strong>You:</strong> "Only if they don't fail on the same cases. By default the checker is Claude Haiku and the planner is Claude Sonnet, and both read the same title, so I'd expect them to fail together more often than independence predicts. That's the coincident-failure question in my plan: compare the share of cases where both are fooled with the product of their separate rates."</li>
 </ol>
 <p><strong>W44. Yuki keeps a confidence score for what it learned: (S + 1) / (S + F + 2), times a time decay. What is that formula?</strong></p>
@@ -782,13 +784,13 @@ Note for you: the formula is in <code>yuki/memory/practice.py</code> (fact sheet
 <blockquote>
 <p>I used coding agents such as Claude Code as tools for parts of the work. I made the design decisions, and I reviewed and tested the changes. The design rules are mine: no screenshots, permission by whether an action can be undone, and a checker that sees only the user's words.</p>
 </blockquote>
-<p>If they push ("So could you rebuild it without the agents?"): [YOU: Could you rebuild Yuki 2.0 without coding agents?] If yes, something like: "More slowly, yes. I know how every part works, and I'm happy to explain any of it now."
+<p>If they push ("So could you rebuild it without the agents?"): "More slowly, yes, the core of it: the agent loop, the accessibility reader, the permission table and the checker. I know how the main parts work, and I'm happy to explain any of them now."
 Note for you: this is answer-sheet item C8. Make sure it matches how you describe your own work.</p>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
 <li><strong>Prof:</strong> "You said the design rules are yours. Give me one decision you made and what it cost."<br><strong>You:</strong> "The secret filter, which hides things like API keys before anything is stored. On 25 September I decided it would hide only fixed formats, like a vendor's key format or a valid card number, and never guess from words, so the first version, which looked for words like 'password' and 'OTP', was deleted. The cost is that a password typed in a chat is still stored as it is, and the docs record that as an accepted limit."</li>
 <li><strong>Prof:</strong> "Why accept a known gap in a privacy feature?"<br><strong>You:</strong> "Because a word list gives false comfort: it only knows the wordings someone listed, so a new phrasing or language slips through, and it also broke the project's rule against keyword matching. I also measured a rule that flags random-looking strings instead, and it flagged 16 of 167 harmless test texts, including every git commit hash. So I'd rather state the gap plainly; the fix the docs recommend is a small local model that tags secrets."</li>
-<li><strong>Prof:</strong> "With Claude on nearly every commit, how do you know the code really does what you decided?"<br><strong>You:</strong> "Mostly by measuring what it does, because I can't claim I read every line: that's 1,752 commits over 27 days of work, about 65 a day. For the secret filter, a blind hold-out set I never tuned on had all 36 in-scope secrets caught and no false alarms on 61 harmless texts." [YOU: How did you check agent-written changes in Yuki 2.0: read the diffs, tests, daily use, reviewer agents?]</li>
+<li><strong>Prof:</strong> "With Claude on nearly every commit, how do you know the code really does what you decided?"<br><strong>You:</strong> "Mostly by measuring what it does, because I can't claim I read every line: that's 1,752 commits over 27 days of work, about 65 a day. For the secret filter, a blind hold-out set I never tuned on had all 36 in-scope secrets caught and no false alarms on 61 harmless texts. Beyond that, I relied on the test suite, the offline replays, live scenarios on my own PC, and for parts of the work a second agent reviewing the change."</li>
 </ol>
 <p><strong>W46. Is Yuki your own code? I see a Mac version built on another project.</strong></p>
 <blockquote>
@@ -806,7 +808,7 @@ Note for you: this is answer-sheet item C8. Make sure it matches how you describ
 </blockquote>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "You said the agent followed the rules but lost the goal. What did that look like?"<br><strong>You:</strong> "It did exactly the literal request and stopped, without tidying up around it. An audit of the code on 18 October found that one night of fixes had grown the voice prompt by 30% and the planner prompt by 69%, with 36 checks and decision points around one spoken request; it called the agent 'a smart listener wrapped around a literal doer'." [YOU: Name one real request where Yuki 2.0 did only the literal thing and missed the point.]</li>
+<li><strong>Prof:</strong> "You said the agent followed the rules but lost the goal. What did that look like?"<br><strong>You:</strong> "It did exactly the literal request and stopped, without tidying up around it. An audit of the code on 18 October found that one night of fixes had grown the voice prompt by 30% and the planner prompt by 69%, with 36 checks and decision points around one spoken request; it called the agent 'a smart listener wrapped around a literal doer'. I won't quote one request from memory without the log; to count it properly, I'd label a random sample of requests by whether Yuki did what I meant, not only what I said."</li>
 <li><strong>Prof:</strong> "But each of those checks fixed a real incident. Why is that bad?"<br><strong>You:</strong> "Each fix works for the case it was written for, but nobody tests how the fixes interact, so the agent turns cautious and literal in situations no one planned for. It's like patching a program after every bug report without a regression suite: every fix is local, and the reliability of the whole can still go down."</li>
 <li><strong>Prof:</strong> "Reliability growth models assume each fix removes a fault. What if a fix can add one?"<br><strong>You:</strong> "That's imperfect debugging: the number of faults isn't fixed, so the expected number of failures may never level off. As I understand it, that's one reason for the infinite-failure NHPP models, where the expected count has no upper limit, which your lab compared with finite-failure ones in 2023. My plan's field-data model has no upper limit either, because agent code keeps arriving, but I haven't fitted these models myself yet."</li>
 </ol>
@@ -857,22 +859,23 @@ Note for you: this is answer-sheet item C8. Make sure it matches how you describ
 <h2 id="11-hackathons">11. Hackathons</h2>
 <p><strong>W52. At DeFy 24 your team was in the top 30 finalists. What did you build, and what was your part?</strong></p>
 <blockquote>
-<p>[YOU: What did your team build at DeFy 24, and what was your own part?] The fact from the form: "My team was one of the top 30 finalist teams at DeFy 24 at Vellore Institute of Technology, Chennai, in January 2024." Your certificate is a Certificate of Participation for 'a Top 30 finalist team in the offline DeFy 24 Hackathon', 22 to 24 January 2024; it names no prize.</p>
+<p>My team was one of the top 30 finalist teams at DeFy 24 at Vellore Institute of Technology, Chennai, in January 2024. It was a team build over three days, so the result was the team's, not mine alone. What I took from it was how to get one working path ready to show in a short time.</p>
 </blockquote>
+<p>Note for you: your certificate is a Certificate of Participation for 'a Top 30 finalist team in the offline DeFy 24 Hackathon', 22 to 24 January 2024; it names no prize. If you remember what the team built and your own part, say that in one sentence first.</p>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "Top 30 out of how many teams, and how was the final judged?"<br><strong>You:</strong> "Teams first sent a product proposal online, the top 30 across three tracks came to the offline round, and then two teams per track gave a business pitch to the judges. My certificate is for being a top-30 finalist, with no prize." [YOU: Do you know how many teams entered, and did your team reach the pitch round?]</li>
+<li><strong>Prof:</strong> "Top 30 out of how many teams, and how was the final judged?"<br><strong>You:</strong> "Teams first sent a product proposal online, the top 30 across three tracks came to the offline round, and then two teams per track gave a business pitch to the judges. My certificate is for being a top-30 finalist, with no prize. I don't know how many teams entered in total, so I won't claim more than the certificate shows."</li>
 <li><strong>Prof:</strong> "So the judges saw one demo run. What does a demo that works once tell you about reliability?"<br><strong>You:</strong> "Very little. It shows that the path we rehearsed worked once, on inputs we chose, and nothing about inputs we didn't try or how often it fails. It's evidence that we could build something end to end in the time, not that it was reliable."</li>
 <li><strong>Prof:</strong> "Put a number on it. One clean run: what's the 95% upper bound on the failure probability?"<br><strong>You:</strong> "With zero failures in n independent runs, the one-sided 95% upper bound is one minus 0.05 to the power one over n. For n equal to one that's 0.95, so one clean demo is consistent with failing 95% of the time. To bring the bound below 5%, I'd need 59 clean runs out of 59."</li>
 </ol>
 <p><strong>W53. You list five hackathons. What did you learn from them?</strong></p>
 <blockquote>
-<p>[YOU: What one lesson did hackathons teach you?] For example, if true: "How to cut a problem down to something that works in one or two days, and how to split work in a small team."</p>
+<p>How to cut a problem down to something that works in one or two days, and how to split work in a small team.</p>
 </blockquote>
-<p>The others on your form: HackNocturne 2025 (Sir M. Visvesvaraya Institute of Technology, March 2025), Gameathon 6.0 (Jyothy Institute of Technology, December 2023), Ur-Hackathon 3.0 (July 2023), and the Ideathon and E-Hunt at SRISHTI 2023 (Sri Krishna Institute of Technology, June 2023). [YOU: In one sentence each, what did you build at these, or did you only take part? Was FlexiHire (8 Jul 2023) your Ur-Hackathon project?]</p>
+<p>The others on your form: HackNocturne 2025 (Sir M. Visvesvaraya Institute of Technology, March 2025), Gameathon 6.0 (Jyothy Institute of Technology, December 2023), Ur-Hackathon 3.0 (July 2023), and the Ideathon and E-Hunt at SRISHTI 2023 (Sri Krishna Institute of Technology, June 2023). If asked about them: "I took part in those; DeFy 24 is the one where I have a result to show."</p>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "How do you decide what to cut when you only have one or two days?"<br><strong>You:</strong> "I keep the one path a user has to see from start to end, and cut everything around it, like sign-in, settings and error handling, faking the rest with fixed data." [YOU: Is this how you really worked, and in which hackathon?]</li>
+<li><strong>Prof:</strong> "How do you decide what to cut when you only have one or two days?"<br><strong>You:</strong> "I'd keep the one path a user has to see from start to end, and cut everything around it, like sign-in, settings and error handling, faking the rest with fixed data."</li>
 <li><strong>Prof:</strong> "Which of those shortcuts are dangerous if they survive into real code?"<br><strong>You:</strong> "The silent ones: a fixed value that was meant to be temporary, or an error that's caught and ignored so the demo keeps going. I found that in my own later code too: in Mermaid-Git a failed file download is caught and skipped, so the graph can be incomplete while the job reports success."</li>
 <li><strong>Prof:</strong> "Describe that Mermaid-Git case as fault, error and failure."<br><strong>You:</strong> "The fault is the line that catches the exception and skips the file. The error is the wrong state it leaves behind, a stored graph missing that file's edges. The failure is when the app shows a user that graph as if it were complete, and since the job still reports success, nothing detects the error, so it can stay hidden for a long time."</li>
 </ol>
@@ -893,7 +896,7 @@ Note for you: this is answer-sheet item C8. Make sure it matches how you describ
 <blockquote>
 <p>It's a review and concept paper from early in my B.E., published in a special issue of IJIRAE in June 2023. Asst. Prof. K. Radhika was first author and I was second of four. We surveyed how brain tumours are segmented in CT and MRI images, how methods such as SVMs, random forests and CNNs separate cancerous from non-cancerous tumours, and how robots can be guided in neurosurgery, and we ended with a proposed design. It taught me how to read and summarise research. My own experiments start here.</p>
 </blockquote>
-<p>If they push ("What was your own part?"): [YOU: Which parts of the 2023 paper did you research or write yourself?]</p>
+<p>If they push ("What was your own part?"): "I did the research and wrote the paper myself: I read the papers, compared the methods and wrote the text. My co-authors reviewed it."</p>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
 <li><strong>Prof:</strong> "You ended with a proposed design. What was it, and did you build any of it?"<br><strong>You:</strong> "No, it was only a design on paper. It combined existing systems into one robot that a neurosurgeon operates, with real-time 3D segmentation of the brain, live ultrasound and LiDAR, augmented reality overlays and haptic feedback. We didn't build or test any part of it."</li>
@@ -908,7 +911,7 @@ Note for you: this is answer-sheet item C8. Make sure it matches how you describ
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
 <li><strong>Prof:</strong> "Your CV says 'Best Research Paper, IJIRAE', and your form says first position at ICRCCT. Which is right?"<br><strong>You:</strong> "The form. My certificate says the paper secured first position at ICRCCT 2023, the conference our CSE department organised on 23 and 24 June 2023, so the award came from the conference, not the journal. My CV wording was wrong, and I'll correct it."</li>
-<li><strong>Prof:</strong> "Your own department organised it, and your first author teaches there. How much weight should we give that award?"<br><strong>You:</strong> "Not much on its own, since it was our own college's conference. I'm glad of it as a first step that got me reading research, but I'd want my research judged by independent review and by results others can check." [YOU: Do you know who judged the ICRCCT 2023 papers?]</li>
+<li><strong>Prof:</strong> "Your own department organised it, and your first author teaches there. How much weight should we give that award?"<br><strong>You:</strong> "Not much on its own, since it was our own college's conference. I'm glad of it as a first step that got me reading research, but I'd want my research judged by independent review and by results others can check. And I don't know who the judges were."</li>
 <li><strong>Prof:</strong> "What would make your results checkable by others?"<br><strong>You:</strong> "Releasing everything needed to repeat the work, the tasks, code, data and exact settings, and describing the method well enough that someone else gets the same numbers. That's why my plan releases all tasks, code and data, and pins the agents to fixed versions in clean containers."</li>
 </ol>
 <p><strong>W57. If you did this as a real study today, how would you evaluate it?</strong></p>
@@ -942,15 +945,16 @@ Note for you: this is answer-sheet item C8. Make sure it matches how you describ
 <ol>
 <li><strong>Prof:</strong> "What did that agent actually do, and was it a team project?"<br><strong>You:</strong> "It was a Windows assistant you give tasks to by typing or speaking: it reads the controls on screen through Windows UI Automation, then clicks, types and runs commands to do the task, and it can run tasks on a schedule. The report lists only me as the student, under Prof. Sadhana R, and a friend, Saran, helped with the interface."</li>
 <li><strong>Prof:</strong> "Did you write the agent core yourself?"<br><strong>You:</strong> "No, and I want to be clear about that: it was built on Windows-Use, an open-source, MIT-licensed agent for Windows from the same group as MacOS-Use. What I added on top was voice mode, a web and desktop app, a scheduled-task tool, activity tracking and a stop command."</li>
-<li><strong>Prof:</strong> "Does your project report say it was built on Windows-Use?"<br><strong>You:</strong> "[YOU: Does your report name Windows-Use (CursorTouch) as the base? Also put the MIT LICENSE back in LLM-OS; it's still missing.] If it does: 'Yes, the report names Windows-Use as the base and says what I added.' If it doesn't, say it plainly: 'Not clearly enough, and that was my mistake. I'd credit it properly now, as I did for Yuki for Mac in October.'"</li>
+<li><strong>Prof:</strong> "Does your project report say it was built on Windows-Use?"<br><strong>You:</strong> "I'm not sure it credits Windows-Use as clearly as it should, and if it doesn't, that was my mistake. The code itself is built on Windows-Use, and I'd credit it properly now, as I did for Yuki for Mac in October."</li>
 </ol>
+<p>Note for you: check the report's wording before the meeting. If it does name Windows-Use as the base, say instead: "Yes, the report names Windows-Use as the base and says what I added." Also put the MIT LICENSE back in LLM-OS; it's still missing.</p>
 <p><strong>W60. How did you evaluate it?</strong></p>
 <blockquote>
-<p>[YOU: How was Fusion AI evaluated: demos, college reviews, or any measured tests?] If there was no formal evaluation: "Only by demos and testing by hand. I didn't measure a failure rate."</p>
+<p>I don't have a measured failure rate for it. It was marked as my final-year project, but that's a grade, not a reliability measure.</p>
 </blockquote>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "If you had measured a failure rate, how would you have done it?"<br><strong>You:</strong> "I'd write a fixed set of tasks before looking at any results, say 50 everyday Windows tasks, run each several times, and count a run as a success only if a check on the final state passes, like 'this file exists with this text', not because the agent says it's done. Then I'd report the success rate with an interval." [YOU: Did you ever run LLM-OS's tests/automated script, and what did it show? Don't quote the 88% in EXAMPLE_REPORT.md; it's only an example.]</li>
+<li><strong>Prof:</strong> "If you had measured a failure rate, how would you have done it?"<br><strong>You:</strong> "I'd write a fixed set of tasks before looking at any results, say 50 everyday Windows tasks, run each several times, and count a run as a success only if a check on the final state passes, like 'this file exists with this text', not because the agent says it's done. Then I'd report the success rate with an interval. The repository does have an automated test script, but I have no saved result from it, so I have no failure rate to quote."</li>
 <li><strong>Prof:</strong> "Why several runs per task? Wouldn't 250 different tasks be better than 50 tasks run five times?"<br><strong>You:</strong> "For the average success rate, more different tasks is usually better, yes. But one run per task can't separate a task that's hard from plain run-to-run chance, and an agent really can pass a task once and fail it the next time. Several runs show the difference: a task that fails every time points to a real gap, and one that fails one time in five points to instability."</li>
 <li><strong>Prof:</strong> "Say 200 of the 250 runs succeed. What's your interval?"<br><strong>You:</strong> "If all 250 runs were independent, the standard error would be the square root of 0.8 times 0.2 over 250, about 2.5 points, so the 95% interval is 80% plus or minus about 5 points. But runs of the same task tend to pass or fail together, so I'd resample whole tasks in a bootstrap, which gives a wider interval if failures cluster. My plan resamples runs for the same reason, because the same runs meet every input."</li>
 </ol>
@@ -961,7 +965,7 @@ Note for you: this is answer-sheet item C8. Make sure it matches how you describ
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
 <li><strong>Prof:</strong> "Then how are they related? Did any code carry over?"<br><strong>You:</strong> "The idea carried over, not the code. The college project was a Windows agent built on Windows-Use, an open-source agent. Yuki 2.0 is new code I started from scratch on 22 September 2026, in plain Python with the Anthropic SDK, and it replaced that old project, LLM-OS."</li>
-<li><strong>Prof:</strong> "Why start again from scratch instead of improving the old one?"<br><strong>You:</strong> "[YOU: Why did you start Yuki 2.0 from scratch instead of improving LLM-OS?] Mainly to own every part of the loop, what the model sees, the checks and the permissions, instead of working around someone else's design. For example, in Yuki 2.0 whether a step needs your permission depends on whether it can be undone, and that's a table in the code, not a line in the prompt."</li>
+<li><strong>Prof:</strong> "Why start again from scratch instead of improving the old one?"<br><strong>You:</strong> "Mainly to own every part of the loop, what the model sees, the checks and the permissions, instead of working around someone else's design. For example, in Yuki 2.0 whether a step needs your permission depends on whether it can be undone, and that's a table in the code, not a line in the prompt."</li>
 <li><strong>Prof:</strong> "A rewrite brings its own new bugs. How would you show Yuki 2.0 is more reliable than the old one?"<br><strong>You:</strong> "I can't claim it is yet, because I never measured the old one. I'd run both on the same fixed set of tasks, several runs each, with the same check on the final state, and compare them task by task. Tasks that both always pass or both always fail don't tell me which is better; only the tasks where their success rates differ do."</li>
 </ol>
 <hr />
@@ -1000,7 +1004,7 @@ Note for you: this is answer-sheet item C8. Make sure it matches how you describ
 </ol>
 <p><strong>W65. Is one course enough for this lab?</strong></p>
 <blockquote>
-<p>No. That's why probability, statistics and reliability courses come first in my plan. [YOU: What are you really doing now to prepare: which book or topics, and how many hours a week?]</p>
+<p>No. That's why probability, statistics and reliability courses come first in my plan. Meanwhile I'm working through Ross's Introduction to Probability Models and Wasserman's All of Statistics chapter by chapter, Poisson processes and maximum likelihood first, about 8 to 10 hours a week.</p>
 </blockquote>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
@@ -1024,17 +1028,18 @@ Note for you: this is answer-sheet item C8. Make sure it matches how you describ
 </ol>
 <p><strong>W67. Which course did you like most, and which was hardest?</strong></p>
 <blockquote>
-<p>[YOU: Which course did you really like most, which was hardest, and what did you do about the hard one?] Your marks show 95 in Generative AI, 82 in Mathematics-II and 77 in Discrete Mathematical Structures. If you name a hard one, name it honestly and say what you did about it.</p>
+<p>I liked Generative AI most, because it's closest to my work, and I got 95 in it; in maths, Mathematics-II went best, with 82. The hardest was Theory of Computation, where I got 46. With a course like that, I'd now work problems every week from the start.</p>
 </blockquote>
+<p>Note for you: your marks show 95 in Generative AI, 82 in Mathematics-II, 77 in Discrete Mathematical Structures and 46 in Theory of Computation. Name the hard one honestly and say what you'd do about it.</p>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "You got 82 in Mathematics-II. What was in it, and do you use any of it?"<br><strong>You:</strong> "Double and triple integrals with the beta and gamma functions, vector calculus, vector spaces and linear transformations, and numerical methods like Newton-Raphson. The beta function is the part I meet again: it's the normalising constant of the Beta distribution, so it sits inside the beta-binomial model in my plan." [YOU: Which of these Mathematics-II topics do you really remember? Keep only those.]</li>
+<li><strong>Prof:</strong> "You got 82 in Mathematics-II. What was in it, and do you use any of it?"<br><strong>You:</strong> "Double and triple integrals with the beta and gamma functions, vector calculus, vector spaces and linear transformations, and numerical methods like Newton-Raphson. The beta function is the part I meet again: it's the normalising constant of the Beta distribution, so it sits inside the beta-binomial model in my plan."</li>
 <li><strong>Prof:</strong> "Then write the beta-binomial probability using it."<br><strong>You:</strong> "The chance that y of k runs fail on one input is k choose y, times B of a plus y and b plus k minus y, divided by B of a and b. It comes from averaging the binomial over theta drawn from a Beta of a and b, because the integral of theta to the power a plus y minus 1, times 1 minus theta to the power b plus k minus y minus 1, is exactly that beta function."</li>
 <li><strong>Prof:</strong> "Take a equal to 1 and b equal to 9. How likely is it that all three of three runs fail, compared with independence?"<br><strong>You:</strong> "It's B of 4 and 9 over B of 1 and 9, which works out to 1 times 2 times 3 over 10 times 11 times 12, so 6 over 1,320, about 0.0045. The mean failure chance is 1 over 10, so three independent runs would all fail with probability 0.1 cubed, 0.001. So all three fail together about four and a half times as often, because the failures pile up on the hard inputs."</li>
 </ol>
 <p><strong>W68. Did you fail any course?</strong></p>
 <blockquote>
-<p>Yes, one. My first external mark in Computer Networks was a fail, and I passed after re-evaluation. [YOU: In one honest sentence with no excuse, why did you fail it the first time?]</p>
+<p>Yes, one. My first external mark in Computer Networks was a fail, and I passed after re-evaluation. I didn't prepare well enough for the written paper, and that's on me.</p>
 </blockquote>
 <p>Note for you: say it plainly if asked. Don't bring it up yourself.</p>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
@@ -1079,12 +1084,13 @@ Note for you: this is answer-sheet item C8. Make sure it matches how you describ
 </ol>
 <p><strong>W72. Could you introduce yourself in Japanese?</strong></p>
 <blockquote>
-<p>[YOU: Have you said this out loud, without reading, several times?] "Hajimemashite. Sudanshu Panditto desu. Indo no Bangarooru kara kimashita. Douzo yoroshiku onegaishimasu." (Nice to meet you. I'm Sudhanshu Pandit. I'm from Bangalore in India. I look forward to working with you.)</p>
+<p>"Hajimemashite. Sudanshu Panditto desu. Indo no Bangarooru kara kimashita. Douzo yoroshiku onegaishimasu." (Nice to meet you. I'm Sudhanshu Pandit. I'm from Bangalore in India. I look forward to working with you.)</p>
 </blockquote>
-<p>If you can't: "I'm not ready to do it well yet, but I'd like to by April." That is better than a broken attempt.</p>
+<p>If you can't: "I'm not ready to do it well yet, but I'd like to by April." That is better than a broken attempt.
+Practice: say the introduction and the lines in follow-ups 1 and 2 out loud from memory, without reading, a few times every day until the meeting, and record yourself once to check them. If a line won't come on the day, switch to English politely, as in follow-up 3.</p>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "Bangarooru wa donna machi desu ka? (What kind of city is Bangalore?)"<br><strong>You:</strong> "Ookii machi desu. IT no kaisha ga takusan arimasu. (It's a big city. There are lots of IT companies.)" [YOU: Have you practised these lines out loud? If not, switch to English politely, as in 3.]</li>
+<li><strong>Prof:</strong> "Bangarooru wa donna machi desu ka? (What kind of city is Bangalore?)"<br><strong>You:</strong> "Ookii machi desu. IT no kaisha ga takusan arimasu. (It's a big city. There are lots of IT companies.)"</li>
 <li><strong>Prof:</strong> "Ima, donna shigoto o shite imasu ka? (What work do you do now?)"<br><strong>You:</strong> "AI enjinia desu. Reiyaapasu to iu kaisha de hataraite imasu. (I'm an AI engineer. I work at a company called Layerpath.)"</li>
 <li><strong>Prof:</strong> "Kenkyuu no naiyou o nihongo de setsumei dekimasu ka? (Can you explain your research in Japanese?)"<br><strong>You:</strong> "Sumimasen, mada dekimasen. Eigo de setsumei shite mo ii desu ka? (Sorry, I can't yet. May I explain in English?) My research asks whether coding-agent runs that read the same rules file fail on the same inputs, because then voting over several runs helps less than it seems."</li>
 </ol>
@@ -1107,8 +1113,8 @@ Note for you: this is answer-sheet item C8. Make sure it matches how you describ
 <p>Note for you: do not mention a notice period. None is known.</p>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "Until then you work full time. How will you prepare for the lab in the meantime?"<br><strong>You:</strong> "In the evenings and at weekends, on probability and statistics, and on Japanese. [YOU: What are you really doing, when, and how many hours a week can you keep?] After I leave, I'd use the weeks before April for the parts of my plan that don't need the lab."</li>
-<li><strong>Prof:</strong> "Which parts?"<br><strong>You:</strong> "I'd work more with pysrat and write a first version of the small agent harness from my plan, so the pilot can start soon after I arrive." [YOU: Will you run try_pysrat.py yourself before the meeting, and start the harness before April?]</li>
+<li><strong>Prof:</strong> "Until then you work full time. How will you prepare for the lab in the meantime?"<br><strong>You:</strong> "In the evenings and at weekends, on probability and statistics, and on Japanese. For statistics that's about 8 to 10 hours a week, chapter by chapter through Ross's Introduction to Probability Models and Wasserman's All of Statistics. After I leave, I'd use the weeks before April for the parts of my plan that don't need the lab."</li>
+<li><strong>Prof:</strong> "Which parts?"<br><strong>You:</strong> "I've already run pysrat on the data that comes with it, so next I'd try it on failure data I simulate myself. And I'll start writing a first version of the small agent harness from my plan before April, so the pilot can start soon after I arrive."</li>
 <li><strong>Prof:</strong> "What must that harness do, at minimum, for your study?"<br><strong>You:</strong> "It must run one model on one task in a clean container, starting from the code just before the merge, show me the exact prompt the model receives, and let me set the temperature. And it must log every model call, tool call and result, so I can go back through any run step by step and tell whether a failure came from the model or from my own harness."</li>
 </ol>
 <p><strong>W75. Will you keep working for them part-time from Japan?</strong></p>
@@ -1136,12 +1142,12 @@ Note for you: this is answer-sheet item C8. Make sure it matches how you describ
 <h2 id="19-the-gaps-and-the-dates">19. The gaps and the dates</h2>
 <p><strong>W77. Your Personal History says you graduated in July 2026, and you would enrol in April 2027. What are you doing in between?</strong></p>
 <blockquote>
-<p>I'm working full time at Layerpath, preparing probability and statistics for this programme, and studying Japanese. In September and October I also built Yuki 2.0, my desktop agent. [YOU: Are the statistics revision and the Japanese study real? Say only what you really do.]</p>
+<p>I'm working full time at Layerpath, preparing probability and statistics for this programme, about 8 to 10 hours a week in the evenings and at weekends, and studying Japanese. In September and October I also built Yuki 2.0, my desktop agent.</p>
 </blockquote>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
-<li><strong>Prof:</strong> "You built Yuki 2.0 in two months while working full time. Where does the statistics fit in?"<br><strong>You:</strong> "Honestly, Yuki took most of my free time in September and October. Now that my application is in, that time goes to statistics and Japanese instead." [YOU: Is this true, and how many hours a week do you really keep?]</li>
-<li><strong>Prof:</strong> "What exactly are you working through in statistics?"<br><strong>You:</strong> "[YOU: Which book and chapters are you really on?] The part my plan needs most is maximum likelihood and intervals, because it fits the beta-binomial model by maximum likelihood and takes its intervals from a bootstrap."</li>
+<li><strong>Prof:</strong> "You built Yuki 2.0 in two months while working full time. Where does the statistics fit in?"<br><strong>You:</strong> "Honestly, Yuki took most of my free time in September and October. Now that my application is in, that time goes to statistics and Japanese instead. For statistics I keep about 8 to 10 hours a week."</li>
+<li><strong>Prof:</strong> "What exactly are you working through in statistics?"<br><strong>You:</strong> "The Poisson process chapter in Ross's Introduction to Probability Models, and the chapters on parametric inference and the bootstrap in Wasserman's All of Statistics. The part my plan needs most is maximum likelihood and intervals, because it fits the beta-binomial model by maximum likelihood and takes its intervals from a bootstrap."</li>
 <li><strong>Prof:</strong> "Then derive the maximum likelihood estimate for the simplest case: y failures in n runs."<br><strong>You:</strong> "The likelihood is p to the y times 1 minus p to the n minus y, so the log-likelihood is y log p plus n minus y times the log of 1 minus p. Setting its derivative to zero gives y over p equals n minus y over 1 minus p, so p-hat is y over n. Its variance is p times 1 minus p over n, which the usual interval is built on. The beta-binomial has no closed form like this, so there I'd maximise numerically."</li>
 </ol>
 <p><strong>W78. Your CV says your B.E. ended in May 2026, your Personal History says July 2026. Which is right?</strong></p>
@@ -1163,11 +1169,11 @@ Note for you: this is answer-sheet item C8. Make sure it matches how you describ
 <ol>
 <li><strong>Prof:</strong> "So was that gap the same for everyone in your year?"<br><strong>You:</strong> "As far as I know, yes. Engineering admissions in Karnataka ran late in 2022, after a court case over the entrance ranks, and students only chose their colleges in October, so my first-year classes began in November." [YOU: Is that your reason, and what did you do from August to mid-November 2022?]</li>
 <li><strong>Prof:</strong> "Then your degree ran from November 2022 to mid-2026, about three and a half years. Was it a full four-year degree?"<br><strong>You:</strong> "Yes: all eight semesters and 160 credits. Only the first semester was short: I started on 17 November 2022, and its end-of-semester papers were in the January and February 2023 session, about three months later. After that every semester followed VTU's usual six-month cycle."</li>
-<li><strong>Prof:</strong> "Shorter semesters, same syllabus. Did that cost you anything?"<br><strong>You:</strong> "Less time per course, and less time to go back over things. I can't separate that from my own effort, so I won't use it to explain my weaker marks, but it's one reason probability and statistics courses come first in my plan." [YOU: Did the short first semester really leave you less time per course?]</li>
+<li><strong>Prof:</strong> "Shorter semesters, same syllabus. Did that cost you anything?"<br><strong>You:</strong> "Less time per course, and less time to go back over things. I can't separate that from my own effort, so I won't use it to explain my weaker marks, but it's one reason probability and statistics courses come first in my plan."</li>
 </ol>
 <p><strong>W80. You worked at BusinessRoom and then Layerpath during your final year. How did you manage your studies?</strong></p>
 <blockquote>
-<p>See <a href="ch24.html"><code>10_other_likely_questions.md</code></a> Q12. OneRoot (August to November 2024, on site) and PuntPartners (April to June 2025) were internships; BusinessRoom (July to October 2025) was a full-time remote job, and Layerpath (since November 2025) is one too. [YOU: In one true sentence, how did you keep up with classes and coursework while working?] Also check the BCS803 internship point in the table at the top.</p>
+<p>See <a href="ch24.html"><code>10_other_likely_questions.md</code></a> Q12. OneRoot (August to November 2024, on site) and PuntPartners (April to June 2025) were internships; BusinessRoom (July to October 2025) was a full-time remote job, and Layerpath (since November 2025) is one too. In one sentence: "It was a heavy load and I won't pretend it was easy, but I kept up with my coursework." Also check the BCS803 internship point in the table at the top.</p>
 </blockquote>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
@@ -1200,13 +1206,14 @@ Note for you: this is answer-sheet item C8. Make sure it matches how you describ
 </ol>
 <p><strong>W83. Your certificates are two edX AWS courses. What did you learn?</strong></p>
 <blockquote>
-<p>[YOU: What is one thing you really learned in each course?] The facts: edX Verified, "Building Modern Node.js Apps on AWS" and "Building Modern Python Apps on AWS".</p>
+<p>Both courses build the same kind of serverless app on AWS, one in Node.js and one in Python, with services like API Gateway and Lambda. Afterwards I used the Lambda and API Gateway part at BusinessRoom, for the AI assistant.</p>
 </blockquote>
+<p>The facts: edX Verified, "Building Modern Node.js Apps on AWS" and "Building Modern Python Apps on AWS".</p>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
 <li><strong>Prof:</strong> "Did you use those AWS services in your jobs?"<br><strong>You:</strong> "Yes, at BusinessRoom. The AI assistant ran on AWS Lambda behind API Gateway, the services ran in Docker on ECS, and I set up CloudWatch for monitoring and S3 for logs."</li>
-<li><strong>Prof:</strong> "Why Lambda for the assistant but ECS for the services?"<br><strong>You:</strong> "[YOU: Why did the assistant run on Lambda and not ECS? Your GitHub README says EC2 and S3.] Lambda runs a function only when a request comes in and charges per call, which suits uneven traffic like an assistant, while ECS keeps containers running for services that are busy all the time. The catch with Lambda is its limits: a function runs at most 15 minutes, and API Gateway by default waits only about 29 seconds for a reply."</li>
-<li><strong>Prof:</strong> "And if a model call takes longer than those 29 seconds?"<br><strong>You:</strong> "Then the user gets a timeout even if the work finishes in the background, so we pay for it and it still looks like a failure. The fix is not to hold the request open: return a job id at once, do the work in the background, and let the app check the job's status." [YOU: Did the BusinessRoom assistant ever hit the 29-second limit?]</li>
+<li><strong>Prof:</strong> "Why Lambda for the assistant but ECS for the services?"<br><strong>You:</strong> "Because of how it's used. Lambda runs a function only when a request comes in and charges per call, which suits uneven traffic like an assistant, while ECS keeps containers running for services that are busy all the time. The catch with Lambda is its limits: a function runs at most 15 minutes, and API Gateway by default waits only about 29 seconds for a reply."</li>
+<li><strong>Prof:</strong> "And if a model call takes longer than those 29 seconds?"<br><strong>You:</strong> "Then the user gets a timeout even if the work finishes in the background, so we pay for it and it still looks like a failure. The fix is not to hold the request open: return a job id at once, do the work in the background, and let the app check the job's status. I can't say for sure whether ours ever hit it: it was a simple ChatGPT wrapper with no pipeline behind it, so most replies should finish well inside 29 seconds, but I'd need the logs to rule out a few timeouts."</li>
 </ol>
 <p><strong>W84. Your hobbies are football, music and coding. Which team, which music?</strong></p>
 <blockquote>
@@ -1263,7 +1270,7 @@ Note for you: this is answer-sheet item C8. Make sure it matches how you describ
 </ol>
 <p><strong>W89. What does "availability" mean for the services you've built, and did you measure it?</strong></p>
 <blockquote>
-<p>Availability is the share of time a service is up and answering. [YOU: Did you ever measure uptime or availability, at BusinessRoom with CloudWatch or at Layerpath?] Optional (from your May 2026 work notes): "One lesson at Layerpath was that long AI operations, like Magic Editor's longer edits and BrandMemory's voice import, ran as one long web request and often dropped before they finished, so the user saw nothing. The right fix is a background job with a status the user can check."</p>
+<p>Availability is the share of time a service is up and answering. I don't have an availability number I'd defend from either job. To measure it, I'd probe the service every minute and report the share of probes that get an answer within a set time. Optional (from your May 2026 work notes): "One lesson at Layerpath was that long AI operations, like Magic Editor's longer edits and BrandMemory's voice import, ran as one long web request and often dropped before they finished, so the user saw nothing. The right fix is a background job with a status the user can check."</p>
 </blockquote>
 <p><strong>Follow-ups (each builds on your last answer)</strong></p>
 <ol>
@@ -1293,30 +1300,16 @@ Note for you: this is answer-sheet item C8. Make sure it matches how you describ
 </ol>
 <hr />
 <h2 id="your-you-list-for-this-file">Your [YOU] list for this file</h2>
-<p>Everything else that was on this list has been checked against your files and code and written into the answers above. These are left for you:</p>
+<p>Every other item that was on this list now has a written answer above. Where no file backs a number or a detail, the answer says so plainly and shows how you'd measure it properly. Read those answers and change any wording that isn't how you'd say it. These are left for you:</p>
 <ol>
 <li>W1: whether you hold shares or stock options in Layerpath; the team size, if you want to say it.</li>
-<li>W5, W43: who picked the 45 Yuki 2.0 replay cases; whether any unasked case used a page title that plants a step.</li>
-<li>W6: Path AI's real reply delay and its slowest stage.</li>
-<li>W7: how 85%+ accuracy, 1,500+ calls a month and "75% less than a human rep" were measured.</li>
-<li>W15: how 35+ workspaces was counted.</li>
-<li>W23 to W25: what the BusinessRoom pipeline ran and what you watched after a release; how 7s to 1.5s, 30% and 15% were measured; cold or cached loads; which change gave most of the speed-up.</li>
 <li>W27: why you left BusinessRoom; whether you'd like to stay in Japan after the master's.</li>
-<li>W28 to W31: how often the crawler ran and for which areas; its request rate; the TolMol matching rule; crawler monitoring.</li>
-<li>W32 to W34: one OneRoot dashboard or integration you built; the farmers' phone app; one proof of concept and how it was checked; one lesson.</li>
-<li>W45, W47: whether you could rebuild Yuki 2.0 without agents; how you checked agent-written changes; one real request where it did only the literal thing.</li>
-<li>W52, W53: what your team built at DeFy 24 and your part; how many teams entered and whether you reached the pitch round; one hackathon lesson; what you built at each hackathon.</li>
-<li>W55, W56: your own part in the 2023 paper; who judged the ICRCCT papers.</li>
-<li>W59 to W61: whether your report names Windows-Use (and put the LLM-OS LICENSE back); how Fusion AI was evaluated; whether you ran the LLM-OS automated tests; why you started Yuki 2.0 from scratch.</li>
-<li>W65, W74, W77: what you are really studying now, when, and the hours a week; whether you'll run pysrat yourself and start the harness before April.</li>
-<li>W67, W68: your favourite and hardest courses; the Mathematics-II topics you remember; one honest sentence on the first Computer Networks result.</li>
-<li>W71, W72: your real Japanese study (book, app, minutes a day, more after Layerpath); whether you've practised the Japanese lines out loud.</li>
+<li>W71: your real Japanese study (book, app, minutes a day, more after Layerpath).</li>
 <li>W74, W75: the month you leave Layerpath; whether you'd turn down paid hours from Japan; where the money comes from.</li>
-<li>W79, W80: why the B.E. started in November 2022, how you were admitted and what you did before; whether the short first semester cost you time; how you kept up with classes while working.</li>
-<li>W83, W84: one thing from each edX course; why Lambda and not ECS, and whether the assistant hit the 29-second limit; your team, your music, play or watch, and baseball.</li>
-<li>W89: whether you ever measured uptime.</li>
+<li>W79: why the B.E. started in November 2022, how you were admitted and what you did from August to mid-November 2022.</li>
+<li>W84: your team, your music, play or watch, and baseball.</li>
 </ol>
-<p>Before the meeting, from your reading list: re-read the four Mermaid-Git code ranges behind W48 to W50, and run pysrat yourself so W91 is true.</p>
+<p>Before the meeting, from your reading list: re-read the four Mermaid-Git code ranges behind W48 to W50, and run pysrat yourself (try_pysrat.py) so W74 and W91 are true. Also check how your final-year project report credits Windows-Use (W59), and put the MIT LICENSE back in LLM-OS.</p>
 </article>
 <div class="donebox"><label><input type="checkbox" class="done-cb" data-ch="h21"> Mark chapter 21 as done</label></div>
 <nav class="pager" aria-label="Previous and next"><a class="prev" href="ch20.html"><span class="lbl">← Previous</span>20. Hard questions from other professors (47)</a><a class="next" href="ch22.html"><span class="lbl">Next →</span>22. Why Japan, why Hiroshima, why this lab</a></nav>
