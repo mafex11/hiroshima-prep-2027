@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>46. Working maths out loud (from NAIST) · Hiroshima meeting prep</title>
+<title>46. Statistics primer (from NAIST) · Hiroshima meeting prep</title>
 <style>
 :root{--bg:#fbfaf7;--fg:#1f2328;--muted:#5f6670;--line:#e3e0d8;--card:#f3f1ea;--link:#0b57d0;--code:#efede6;--accent:#2f5d8a;--fill:#fff2a8}
 *{box-sizing:border-box}
@@ -114,370 +114,909 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <li class="part">Part 2: Your 15-minute talk</li>
 <li data-ch="h13"><a href="ch13.html"><span class="n">13.</span>Presentation guide and slides</a></li>
 <li data-ch="h14"><a href="ch14.html"><span class="n">14.</span>Full script (15, 10 and 5 minutes)</a></li>
+<li data-ch="h15"><a href="ch15.html"><span class="n">15.</span>Questions on your slides (with follow-ups)</a></li>
 <li class="part">Part 3: Your plan and your work</li>
-<li data-ch="h15"><a href="ch15.html"><span class="n">15.</span>Your research plan (as submitted)</a></li>
-<li data-ch="h16"><a href="ch16.html"><span class="n">16.</span>Your plan, explained simply</a></li>
-<li data-ch="h17"><a href="ch17.html"><span class="n">17.</span>Every number in your plan</a></li>
-<li data-ch="h18"><a href="ch18.html"><span class="n">18.</span>Weak points and honest answers</a></li>
-<li data-ch="h19"><a href="ch19.html"><span class="n">19.</span>Questions on your plan (55)</a></li>
-<li data-ch="h20"><a href="ch20.html"><span class="n">20.</span>Hard questions from other professors (47)</a></li>
-<li data-ch="h21"><a href="ch21.html"><span class="n">21.</span>Questions on your work (91)</a></li>
-<li data-ch="h22"><a href="ch22.html"><span class="n">22.</span>Why Japan, why Hiroshima, why this lab</a></li>
-<li data-ch="h23"><a href="ch23.html"><span class="n">23.</span>Questions on funding</a></li>
-<li data-ch="h24"><a href="ch24.html"><span class="n">24.</span>Other likely questions</a></li>
-<li data-ch="h25"><a href="ch25.html"><span class="n">25.</span>Question bank from the 2 Nov meeting</a></li>
+<li data-ch="h16"><a href="ch16.html"><span class="n">16.</span>Your research plan (as submitted)</a></li>
+<li data-ch="h17"><a href="ch17.html"><span class="n">17.</span>Your plan, explained simply</a></li>
+<li data-ch="h18"><a href="ch18.html"><span class="n">18.</span>Every number in your plan</a></li>
+<li data-ch="h19"><a href="ch19.html"><span class="n">19.</span>Weak points and honest answers</a></li>
+<li data-ch="h20"><a href="ch20.html"><span class="n">20.</span>Questions on your plan (55)</a></li>
+<li data-ch="h21"><a href="ch21.html"><span class="n">21.</span>Hard questions from other professors (47)</a></li>
+<li data-ch="h22"><a href="ch22.html"><span class="n">22.</span>Questions on your work (91)</a></li>
+<li data-ch="h23"><a href="ch23.html"><span class="n">23.</span>Why Japan, why Hiroshima, why this lab</a></li>
+<li data-ch="h24"><a href="ch24.html"><span class="n">24.</span>Questions on funding</a></li>
+<li data-ch="h25"><a href="ch25.html"><span class="n">25.</span>Other likely questions</a></li>
+<li data-ch="h26"><a href="ch26.html"><span class="n">26.</span>Question bank from the 2 Nov meeting</a></li>
 <li class="part">Part 4: Practice meetings</li>
-<li data-ch="h26"><a href="ch26.html"><span class="n">26.</span>Three practice meetings (tap to hear the questions)</a></li>
+<li data-ch="h27"><a href="ch27.html"><span class="n">27.</span>Three practice meetings (tap to hear the questions)</a></li>
 <li class="part">Part 5: Maths</li>
-<li data-ch="h27"><a href="ch27.html"><span class="n">27.</span>Maths: what to study, day by day</a></li>
-<li data-ch="h28"><a href="ch28.html"><span class="n">28.</span>The maths inside your plan</a></li>
-<li data-ch="h29"><a href="ch29.html"><span class="n">29.</span>Stochastic processes and reliability</a></li>
-<li data-ch="h30"><a href="ch30.html"><span class="n">30.</span>Probability</a></li>
-<li data-ch="h31"><a href="ch31.html"><span class="n">31.</span>Statistics</a></li>
-<li data-ch="h32"><a href="ch32.html"><span class="n">32.</span>Linear algebra and calculus</a></li>
-<li data-ch="h33"><a href="ch33.html"><span class="n">33.</span>CS basics</a></li>
-<li data-ch="h34"><a href="ch34.html"><span class="n">34.</span>C programming basics</a></li>
-<li data-ch="h35"><a href="ch35.html"><span class="n">35.</span>Information theory and coding</a></li>
-<li data-ch="h36"><a href="ch36.html"><span class="n">36.</span>Number formats and logic circuits</a></li>
-<li data-ch="h37"><a href="ch37.html"><span class="n">37.</span>Machine learning basics</a></li>
-<li data-ch="h38"><a href="ch38.html"><span class="n">38.</span>Discrete maths and logic</a></li>
-<li data-ch="h39"><a href="ch39.html"><span class="n">39.</span>pysrat, hands on (the lab&#x27;s tool)</a></li>
-<li data-ch="h40"><a href="ch40.html"><span class="n">40.</span>How to answer maths out loud</a></li>
-<li data-ch="h41"><a href="ch41.html"><span class="n">41.</span>Reliability and probability primer</a></li>
-<li data-ch="h42"><a href="ch42.html"><span class="n">42.</span>Lab topics: short notes</a></li>
-<li data-ch="h43"><a href="ch43.html"><span class="n">43.</span>Linear algebra and calculus checklist (from NAIST)</a></li>
-<li data-ch="h44"><a href="ch44.html"><span class="n">44.</span>Linear algebra and calculus problems (from NAIST)</a></li>
-<li data-ch="h45"><a href="ch45.html"><span class="n">45.</span>Statistics primer (from NAIST)</a></li>
-<li data-ch="h46"><a href="ch46.html" aria-current="page"><span class="n">46.</span>Working maths out loud (from NAIST)</a></li>
+<li data-ch="h28"><a href="ch28.html"><span class="n">28.</span>Maths: what to study, day by day</a></li>
+<li data-ch="h29"><a href="ch29.html"><span class="n">29.</span>The maths inside your plan</a></li>
+<li data-ch="h30"><a href="ch30.html"><span class="n">30.</span>Stochastic processes and reliability</a></li>
+<li data-ch="h31"><a href="ch31.html"><span class="n">31.</span>Probability</a></li>
+<li data-ch="h32"><a href="ch32.html"><span class="n">32.</span>Statistics</a></li>
+<li data-ch="h33"><a href="ch33.html"><span class="n">33.</span>Linear algebra and calculus</a></li>
+<li data-ch="h34"><a href="ch34.html"><span class="n">34.</span>CS basics</a></li>
+<li data-ch="h35"><a href="ch35.html"><span class="n">35.</span>C programming basics</a></li>
+<li data-ch="h36"><a href="ch36.html"><span class="n">36.</span>Information theory and coding</a></li>
+<li data-ch="h37"><a href="ch37.html"><span class="n">37.</span>Number formats and logic circuits</a></li>
+<li data-ch="h38"><a href="ch38.html"><span class="n">38.</span>Machine learning basics</a></li>
+<li data-ch="h39"><a href="ch39.html"><span class="n">39.</span>Discrete maths and logic</a></li>
+<li data-ch="h40"><a href="ch40.html"><span class="n">40.</span>pysrat, hands on (the lab&#x27;s tool)</a></li>
+<li data-ch="h41"><a href="ch41.html"><span class="n">41.</span>How to answer maths out loud</a></li>
+<li data-ch="h42"><a href="ch42.html"><span class="n">42.</span>Reliability and probability primer</a></li>
+<li data-ch="h43"><a href="ch43.html"><span class="n">43.</span>Lab topics: short notes</a></li>
+<li data-ch="h44"><a href="ch44.html"><span class="n">44.</span>Linear algebra and calculus checklist (from NAIST)</a></li>
+<li data-ch="h45"><a href="ch45.html"><span class="n">45.</span>Linear algebra and calculus problems (from NAIST)</a></li>
+<li data-ch="h46"><a href="ch46.html" aria-current="page"><span class="n">46.</span>Statistics primer (from NAIST)</a></li>
+<li data-ch="h47"><a href="ch47.html"><span class="n">47.</span>Working maths out loud (from NAIST)</a></li>
 <li class="part">Part 6: The lab, their papers, the professors</li>
-<li data-ch="h47"><a href="ch47.html"><span class="n">47.</span>Prof. Zheng in depth</a></li>
-<li data-ch="h48"><a href="ch48.html"><span class="n">48.</span>The lab, Prof. Dohi and Prof. Okamura</a></li>
-<li data-ch="h49"><a href="ch49.html"><span class="n">49.</span>Professors you may meet</a></li>
-<li data-ch="h50"><a href="ch50.html"><span class="n">50.</span>How Japanese professors run these meetings</a></li>
-<li data-ch="h51"><a href="ch51.html"><span class="n">51.</span>Papers guide: lab and cited papers</a></li>
-<li data-ch="h52"><a href="ch52.html"><span class="n">52.</span>New lab papers since October</a></li>
-<li data-ch="h53"><a href="ch53.html"><span class="n">53.</span>Questions on their papers: N-version, AI, testing (44)</a></li>
-<li data-ch="h54"><a href="ch54.html"><span class="n">54.</span>Questions on their papers: reliability models (83)</a></li>
+<li data-ch="h48"><a href="ch48.html"><span class="n">48.</span>Prof. Zheng in depth</a></li>
+<li data-ch="h49"><a href="ch49.html"><span class="n">49.</span>The lab, Prof. Dohi and Prof. Okamura</a></li>
+<li data-ch="h50"><a href="ch50.html"><span class="n">50.</span>Professors you may meet</a></li>
+<li data-ch="h51"><a href="ch51.html"><span class="n">51.</span>How Japanese professors run these meetings</a></li>
+<li data-ch="h52"><a href="ch52.html"><span class="n">52.</span>Papers guide: lab and cited papers</a></li>
+<li data-ch="h53"><a href="ch53.html"><span class="n">53.</span>New lab papers since October</a></li>
+<li data-ch="h54"><a href="ch54.html"><span class="n">54.</span>Questions on their papers: N-version, AI, testing (44)</a></li>
+<li data-ch="h55"><a href="ch55.html"><span class="n">55.</span>Questions on their papers: reliability models (83)</a></li>
 <li class="part">Part 7: Meeting day</li>
-<li data-ch="h55"><a href="ch55.html"><span class="n">55.</span>Meeting-day checklist</a></li>
-<li data-ch="h56"><a href="ch56.html"><span class="n">56.</span>How to address them, and etiquette</a></li>
-<li data-ch="h57"><a href="ch57.html"><span class="n">57.</span>Email templates</a></li>
+<li data-ch="h56"><a href="ch56.html"><span class="n">56.</span>Meeting-day checklist</a></li>
+<li data-ch="h57"><a href="ch57.html"><span class="n">57.</span>How to address them, and etiquette</a></li>
+<li data-ch="h58"><a href="ch58.html"><span class="n">58.</span>Email templates</a></li>
 <li class="part">Reference</li>
-<li data-ch="h58"><a href="ch58.html"><span class="n">58.</span>Glossary</a></li>
-<li data-ch="h59"><a href="ch59.html"><span class="n">59.</span>Every lab paper (index)</a></li>
-<li data-ch="h60"><a href="ch60.html"><span class="n">60.</span>Slide text and sources</a></li>
-<li data-ch="h61"><a href="ch61.html"><span class="n">61.</span>How the 2 Nov meeting went</a></li>
+<li data-ch="h59"><a href="ch59.html"><span class="n">59.</span>Glossary</a></li>
+<li data-ch="h60"><a href="ch60.html"><span class="n">60.</span>Every lab paper (index)</a></li>
+<li data-ch="h61"><a href="ch61.html"><span class="n">61.</span>Slide text and sources</a></li>
+<li data-ch="h62"><a href="ch62.html"><span class="n">62.</span>How the 2 Nov meeting went</a></li>
 </ul></nav>
 <main class="page">
 <article>
 <header class="chead">
 <p class="part">Part 5: Maths</p>
-<p class="chno">Chapter 46 of 61</p>
-<h1>How to work math out loud on camera with a sketchbook</h1>
-<p class="when"><strong>When and how long:</strong> Optional, 10 minutes.</p>
+<p class="chno">Chapter 46 of 62</p>
+<h1>Statistics primer: what I need to defend my plan</h1>
+<p class="when"><strong>When and how long:</strong> Optional. Don&#x27;t quote its old plan numbers.</p>
 </header>
 
 <blockquote>
-<p><strong>Copied from your NAIST prep (21 Oct 2026).</strong> It was written for NAIST, where the math problems were shown on screen over Webex. For your meeting with the Hiroshima professors on Teams or Zoom, read <a href="ch40.html"><code>../07_how_to_answer_math_out_loud.md</code></a> first. That file adapts this one. Links to other NAIST files (00_syllabus) do not work here.</p>
+<p><strong>Copied from your NAIST prep (21 Oct 2026).</strong> The general parts (logistic regression, mixed models, p values, intervals, power, multiple comparisons, Cohen's kappa, rank tests) still apply. <strong>The "In my plan" parts, the "Say it" answers that describe your plan, Part G, and the numbers (30 rules, 5 file versions, 3 runs, 1,800 runs, 1,300 to 1,900 USD) describe your old NAIST plan, not the Hiroshima plan.</strong> These are NOT your Hiroshima plan numbers. Your Hiroshima plan has about 5 rules with 2 tasks each (10 tasks), 2 file versions, 2 agents in the main runs, 10 runs per setting, 400 main runs and 820 runs in total, at about 420 to 590 US dollars (see the table below). Do not quote the NAIST numbers in your meeting with the Hiroshima professors.</p>
+<p>Three more differences. (1) In the Hiroshima plan, compliance is only a check that the change in the file worked. It is not a research question. The main analysis is a beta-binomial model of how often runs fail together (rho, with bootstrap intervals), and RQ2 compares the failure probability (on at least 10,000 random inputs) and the test pass rate between the two file versions, with task as a random effect. (2) "The lab" in this file means Prof. Iida's lab at NAIST (Assoc. Prof. Kashiwa, Assistant Prof. Ji), not the Dependable Systems Laboratory. (3) The reference numbers in square brackets are your NAIST plan's numbers. In your Hiroshima plan, Gloaguen et al. is [8] and Guardrails (Zhang et al.) is [9]. McMillan, Agent READMEs, Voria et al. and Cai et al. are not cited there. Links to other NAIST folders (04_Papers) do not work here.</p>
 </blockquote>
-<p>Prepared 21 Oct 2026 for the NAIST meeting (online, Webex, in English). Facts marked <strong>(official)</strong> come from NAIST's own pages, NAIST's 2027 Guide or NAIST's official video, as summarised in <code>00_syllabus_and_free_resources.md</code> section 1. Facts marked <strong>(applicants)</strong> are anecdotal reports from past NAIST applicants. Everything else is my advice. None of these facts are about Hiroshima.</p>
-<hr />
-<h2 id="1-what-the-professors-look-for">1. What the professors look for</h2>
+<p>Written 21 Oct 2026 for two NAIST meetings: the lab meeting before applying, and the official meeting.</p>
+<h2 id="how-to-use-this-file">How to use this file</h2>
 <ul>
-<li>Two problems on screen, one algebra and one analysis, about 12 minutes for both, no preview time and no choice <strong>(official)</strong>. Several applicants report 10 minutes <strong>(applicants)</strong>. Plan for about 5 minutes per problem.</li>
-<li>They look at "not only whether you solved it, but the solving process, the clarity of your explanation, and your answers to related questions" <strong>(official, Japanese Q&amp;A)</strong>. You should "explain how you solve it while you solve it" <strong>(official)</strong>.</li>
-<li>The professors interact. They give hints, point out sign errors ("is that right?"), and accept a clear plan when time runs out <strong>(applicants)</strong>.</li>
+<li>Every topic has four parts: <strong>Plain definition</strong>, <strong>Tiny example</strong>, <strong>In my plan</strong>, and <strong>Say it</strong> (a 2 sentence answer in my own voice).</li>
+<li>Read the "Say it" lines out loud. They are short on purpose.</li>
+<li>Numbers from papers come from the PDFs in the <code>04_Papers</code> folder of your NAIST prep folder in Downloads. Numbers marked <strong>[my arithmetic]</strong> are my own calculations, done to explain an idea. They are not results from any study. Every quote and every [my arithmetic] number was rechecked on 13 Nov 2026. One fix was made: the exact-test power figures in section 9.</li>
+<li>I have no full statistics course on record. If asked, I say: "At VTU, probability and basic statistical inference were part of my third-semester mathematics course, Mathematics for Computer Science (BCS301). It covered probability distributions, Markov chains, sampling, hypothesis tests such as the t-test and chi-square test, and basic ANOVA. I have not taken a full statistics course, which is why it is in my Year 1 plan." If asked about logistic regression or mixed models, I say: "I haven't fitted one myself yet. I'm working through them in Agresti's An Introduction to Categorical Data Analysis, and I'll fit my first one before April on simulated data, where I know the true answer."</li>
+<li>The NAIST lab's Recruitment page (Prof. Iida's lab) lists statistics as a helpful skill, and the NAIST proposal's schedule (Table 1) put a statistics course in Year 1, first half. Your Hiroshima plan's schedule also puts "probability, statistics and reliability courses" in Year 1, first half. Saying "I know the basics and I know where my gaps are" is a good answer.</li>
 </ul>
-<p>So the goal is not a silent perfect answer. The goal is that the two professors can <strong>follow your thinking at every moment</strong>, and see that you know the definitions and the method.</p>
-<hr />
-<h2 id="2-your-setup-prepare-it-once-test-it-every-week">2. Your setup (prepare it once, test it every week)</h2>
-<p><strong>Sketchbook and pen</strong></p>
-<ul>
-<li>A sketchbook "about A4 size" and a "thick pen, so that it is easy to see the answers" <strong>(official video)</strong>.</li>
-<li>My suggestion: a black marker with a tip of about 2 to 3 mm, plus two spares. Plain white matte paper (no shine under the lamp).</li>
-<li>Use a <strong>new, blank sketchbook</strong> for the meeting.</li>
-<li>No eraser. If you make a mistake, cross it out with one clean line and keep going. Crossed-out work is fine; it shows your process.</li>
-<li>My NAIST plan (21 Oct): order two A4 sketchbooks (one for practice, one kept new for the meeting) and three thick black markers online on Tue 27 Oct 2026, the day after the NAIST lab meeting, so they arrive in the first week of the study plan. For Hiroshima: have plain A4 paper (or a new sketchbook, if you have one) and a thick black marker with a spare on the desk, and test them on camera in your trial calls on Sun 22 Nov.</li>
-</ul>
-<p><strong>Camera and room</strong></p>
-<ul>
-<li>Laptop or desktop with camera and microphone, or a smartphone on a tripod. Webex is used. Video and audio are both required <strong>(official video)</strong>.</li>
-<li>A quiet private room.</li>
-<li>Light from the front (a window or lamp behind the camera). No strong light behind you.</li>
-<li><strong>Readability test</strong> (do it this week): write one line of a matrix and one integral at the size you will use in the meeting. Hold the page up at the distance you will use. Record a short video call (or a video with the same camera). On the recording, can you clearly read a minus sign, an exponent, a fraction bar and the letter λ? If not, write bigger.</li>
-<li>My setup: the same computer, camera and microphone I use for the NAIST lab meeting. I test it first in the Webex test meeting (webex.com/test-meeting.html), then in one call with a friend who tells me if every symbol on the sketchbook is readable. I repeat the friend call in the week before the 8 Mar 2027 connection check. (This was the NAIST plan. Your Hiroshima meeting is on Teams or Zoom, so test on that app. Prof. Zheng will send the details. The 8 Mar 2027 date was NAIST's, not Hiroshima's.)</li>
-</ul>
-<p><strong>How big to write</strong></p>
-<ul>
-<li>About 6 to 10 lines per A4 page. That feels too big at first. It is right for a webcam.</li>
-<li>One problem per page. Start a new page for each part if needed.</li>
-</ul>
-<hr />
-<h2 id="3-how-to-lay-out-a-page">3. How to lay out a page</h2>
-<pre><code> (1) Algebra                          &lt;- label
- A = [ 4 1 ]   eigenvalues?            &lt;- copy the key data
-     [ 2 3 ]
- Plan: det(A - λI) = 0                 &lt;- one-line plan
- (4-λ)(3-λ) - 2 = λ² - 7λ + 10 = 0
- λ = 5, 2      check: 5+2 = 7 = trace ✓  5·2 = 10 = det ✓
- λ=5: (A-5I)x = 0  -&gt;  x = (1, 1)
- λ=2: (A-2I)x = 0  -&gt;  x = (1, -2)
- +------------------------------------------+
- | λ = 5, x = (1, 1);   λ = 2, x = (1, -2)  |   &lt;- box the answer
- +------------------------------------------+
-</code></pre>
-<p>Layout tips:</p>
-<ul>
-<li>Write a <strong>label</strong> ("(1) Algebra", "(a)", "(b)") at the top.</li>
-<li>Copy only the data you need, then write <strong>"Plan:"</strong> and one line.</li>
-<li>Write the <strong>check</strong> on the page (for example "5 + 2 = 7 = trace").</li>
-<li><strong>Box</strong> the final answer.</li>
-<li>Big matrix brackets, with space between the entries.</li>
-<li>Make easily confused symbols different: 1 and 7, 2 and z, x and ×, a long clear minus sign, λ, v and ν.</li>
-</ul>
-<hr />
-<h2 id="4-the-six-step-talk-aloud-routine">4. The six-step talk-aloud routine</h2>
-<p>Use this for every practice problem until it is automatic.</p>
-<ol>
-<li><strong>Read and restate.</strong> Read the problem out loud, then say it in your own words: "So we need the eigenvalues and eigenvectors of this 2 by 2 matrix." If something is unclear, ask now: "Is A a 3 by 3 matrix?"</li>
-<li><strong>Name the type.</strong> "This is a diagonalization problem." Naming it shows the professors you recognise the topic.</li>
-<li><strong>Say the plan in one sentence, before you write.</strong> "My plan is: eigenvalues from det(A - λI) = 0, then eigenvectors from the nullspace of A - λI, then S and Λ."</li>
-<li><strong>Work and narrate.</strong> Say <em>what</em> you are doing and <em>why</em>. Say the key numbers as you write them. You do not need to say every small multiplication. Look up at the camera now and then.</li>
-<li><strong>Check.</strong> One fast check per problem (see the list in section 9). Say it: "Let me check: the trace is 7 and 5 plus 2 is 7."</li>
-<li><strong>Conclude and show.</strong> Say the answer as a full sentence, then hold the page up: "So the eigenvalues are 5 and 2, with eigenvectors (1, 1) and (1, -2)."</li>
-</ol>
-<p><strong>Holding the page up.</strong> The official video asks you to hold the answer up so that the professors can see your solving steps well. Hold it flat and still, filling most of the frame, for about 3 to 5 seconds. Do it after each part, and whenever they ask. Say "Can you see it clearly?" the first time.</p>
-<p><strong>Timing.</strong> For a 12 minute slot: about 5 minutes per problem, leaving 1 to 2 minutes for questions. If you notice you have spent 6 minutes on one problem, say where you are, state the remaining steps, and ask to move on. One 2024 applicant reports they could do the two problems in any order <strong>(applicants)</strong>. If that is allowed, you can ask: "May I start with the analysis problem?"</p>
-<hr />
-<h2 id="5-phrase-bank-practise-saying-these-they-buy-you-thinking-time">5. Phrase bank (practise saying these, they buy you thinking time)</h2>
-<p><strong>Starting</strong></p>
-<ul>
-<li>"Let me read the problem first." / "So the question asks for ..."</li>
-<li>"This looks like a question about ... ."</li>
-<li>"My plan is to ... . First I will ..., then ... ."</li>
-</ul>
-<p><strong>While working</strong></p>
-<ul>
-<li>"I subtract 2 times row 1 from row 2."</li>
-<li>"Here I use the chain rule: the derivative of the outside, times the derivative of the inside."</li>
-<li>"Since A is symmetric, I know the eigenvalues are real."</li>
-<li>"I substitute u equals sin x, so du is cos x dx, and the limits change to 0 and 1."</li>
-<li>"This is a 0 over 0 form, so I can use L'Hopital's rule, or a Taylor expansion."</li>
-</ul>
-<p><strong>Checking</strong></p>
-<ul>
-<li>"Let me check this by putting it back into the equation."</li>
-<li>"Quick check: the sum of the eigenvalues should equal the trace."</li>
-<li>"The answer should be positive, because the function is positive, and it is."</li>
-</ul>
-<p><strong>Correcting yourself</strong></p>
-<ul>
-<li>"Sorry, I made a sign error here. It should be minus 3."</li>
-<li>"Wait, let me go back one line. I think I copied this wrongly."</li>
-</ul>
-<p><strong>Concluding</strong></p>
-<ul>
-<li>"So the answer is ... ."</li>
-<li>"Let me show you the whole page." (hold it up)</li>
-</ul>
-<p><strong>Asking for clarification</strong></p>
-<ul>
-<li>"Could you please repeat the question?"</li>
-<li>"Do you mean the eigenvalues of A, or of A^T A?"</li>
-<li>"Should I give the answer for a general n, or is A 3 by 3?"</li>
-</ul>
-<p><strong>Asking for a hint</strong></p>
-<ul>
-<li>"I am not sure how to continue from here. Could I have a small hint?"</li>
-<li>"I think I should use the definition of a positive definite matrix, but I do not remember all the tests. Could you remind me of the definition?"</li>
-</ul>
-<p><strong>When you do not know a follow-up</strong></p>
-<ul>
-<li>"I am not sure about the exact statement, but I know that ... ."</li>
-<li>"I don't remember the name of that theorem. The idea is ... ."</li>
-</ul>
-<hr />
-<h2 id="6-when-you-are-stuck-the-recovery-ladder">6. When you are stuck: the recovery ladder</h2>
-<p><strong>Never stay silent for more than about 10 to 15 seconds.</strong> One 2021 applicant sat silent for 5 minutes until a professor said "you can tell us your thinking so far" <strong>(applicants)</strong>. Silence gives them nothing to follow. Climb this ladder instead, out loud:</p>
-<ol>
-<li><strong>Say the definition of the key word, and write it.</strong> Often the definition is the method. "Positive definite means x^T A x &gt; 0 for every nonzero x." Then the tests come back to you.</li>
-<li><strong>Say what you notice about the object.</strong> Its size. Is it symmetric? Triangular? What is the trace, the determinant? Is the function even or odd? Where is it not defined?</li>
-<li><strong>Try a small or special case.</strong> n = 2, a = 0, x = 0, a 2 by 2 example, the first two terms of a series.</li>
-<li><strong>Work backwards from what is asked.</strong> "To find A^k, I need A = SΛS^-1. For that I need eigenvectors. For those I need eigenvalues."</li>
-<li><strong>Switch method.</strong> Determinant instead of elimination. Taylor instead of L'Hopital. Parts instead of substitution. A picture instead of algebra.</li>
-<li><strong>Ask for a hint, early.</strong> Applicants report that a hint costs little and keeps the conversation going <strong>(applicants, opinion)</strong>. Use the phrases in section 5.</li>
-<li><strong>If only heavy arithmetic is left,</strong> say the structure and ask to move on: "The rest is arithmetic. I would back-substitute from the bottom, z first. May I go on to part (b)?"</li>
-</ol>
-<hr />
-<h2 id="7-showing-partial-progress">7. Showing partial progress</h2>
-<p>Because they look at the process, make the process visible even when you cannot finish.</p>
-<ul>
-<li><strong>Always write the setup.</strong> The theorem or formula you will use, and what you will compute. That alone shows understanding.</li>
-<li><strong>If time runs out, say the remaining steps and the shape of the answer.</strong> Example: "Next I would normalise these three vectors and put them in Q. Then Q^T A Q is the diagonal matrix with 3, 0 and -3." A 2021 applicant who ran out of time explained the Gram-Schmidt plan, and a professor then said "just find one such vector" <strong>(applicants)</strong>.</li>
-<li><strong>If part (a) is stuck,</strong> ask: "May I assume the result of part (a) and do part (b)?"</li>
-<li><strong>Keep your intermediate results visible.</strong> If one number is wrong, the professors can see that the method is right.</li>
-<li><strong>Give an answer even if you are unsure,</strong> and say how sure you are: "I get 1/6. I would double-check the sign of the cubic term."</li>
-</ul>
-<hr />
-<h2 id="8-when-a-professor-speaks">8. When a professor speaks</h2>
-<ul>
-<li><strong>"Is that right?" or "Are you sure?"</strong> It usually means there is a mistake in the last line or two (applicants report sign errors being pointed out this way). Do not defend at once. Say "Let me check," and redo the last step slowly and out loud from the last line you are sure of. If you find the error: "Thank you, the sign was wrong. It should be ... ." If you do not find one: "I checked it again and I get the same, because ... . Please tell me if I missed something."</li>
-<li><strong>A hint.</strong> Thank them, repeat it in your own words, and use it immediately: "Thank you. So I should look at the columns. Then ... ."</li>
-<li><strong>A follow-up question.</strong> Answer short first (one sentence), then give one reason or example, then stop. Example: "Is every symmetric matrix diagonalizable?" "Yes. By the spectral theorem it has a full set of orthonormal eigenvectors, so A = QΛQ^T."</li>
-<li><strong>If you did not understand the English,</strong> ask them to repeat. That is normal and costs nothing.</li>
-</ul>
-<hr />
-<h2 id="9-quick-checks-to-say-out-loud">9. Quick checks to say out loud</h2>
+<h2 id="my-plan-in-statistical-words-old-naist-plan-not-for-hiroshima">My plan in statistical words (old NAIST plan, not for Hiroshima)</h2>
+<p>This paragraph describes the NAIST plan. Do not memorise it for Hiroshima. The Hiroshima version is in the header at the top of this file and in the table below.</p>
+<p>I run a controlled experiment. The unit is one <strong>run</strong>: one agent, one task, one version of the context file. The outcome for compliance is <strong>binary at each applicable place</strong> (the new code follows the rule or not), so a run gives a proportion. Tests are also binary (pass or fail). I model these with <strong>mixed effects logistic regression</strong>: file version and agent are <strong>fixed effects</strong>, task and rule are <strong>random effects</strong>. For code quality (complexity, warnings) the outcomes are counts or skewed numbers, so I also use rank based tests and effect sizes that the lab already uses. The real pull request study is <strong>observational</strong>, so I report it as associations and use designs such as <strong>interrupted time series</strong> and <strong>difference in differences</strong> with human PRs as a comparison.</p>
+<h3 id="numbers-to-remember-naist-plan-only">Numbers to remember (NAIST plan only)</h3>
+<p>These are NOT your Hiroshima plan numbers.</p>
 <table>
 <thead>
 <tr>
-<th>Situation</th>
-<th>Check</th>
+<th>Item</th>
+<th>Value</th>
+<th>Source</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Solved Ax = b</td>
-<td>Put x back into one or two equations</td>
+<td>Rules</td>
+<td>about 30</td>
+<td>proposal</td>
 </tr>
 <tr>
-<td>Eigenvalues</td>
-<td>Sum = trace, product = det</td>
+<td>Tasks per rule</td>
+<td>2</td>
+<td>proposal</td>
 </tr>
 <tr>
-<td>Eigenvector</td>
-<td>Compute Ax for one of them</td>
+<td>File versions</td>
+<td>5 (original, removed, reworded, neutral sentence, no file)</td>
+<td>proposal</td>
 </tr>
 <tr>
-<td>Inverse</td>
-<td>Multiply one row of A by one column of A^-1</td>
+<td>Agents</td>
+<td>2 (Claude Code, Codex)</td>
+<td>proposal</td>
 </tr>
 <tr>
-<td>Projection</td>
-<td>Error e is perpendicular to the subspace (A^T e = 0)</td>
+<td>Runs per cell</td>
+<td>3</td>
+<td>proposal</td>
 </tr>
 <tr>
-<td>Gram-Schmidt</td>
-<td>All pairwise dot products are 0</td>
+<td>Maximum runs</td>
+<td>30 x 2 x 5 x 2 x 3 = 1,800</td>
+<td>proposal</td>
 </tr>
 <tr>
-<td>Determinant</td>
-<td>Do it a second way (elimination vs cofactors), or test a special value</td>
+<td>Runs per rule, per version, per agent</td>
+<td>2 tasks x 3 runs = 6</td>
+<td>[my arithmetic]</td>
 </tr>
 <tr>
-<td>Derivative</td>
-<td>Plug in a simple x, or differentiate your antiderivative</td>
+<td>Runs per version, per agent, pooled over 30 rules</td>
+<td>30 x 6 = 180</td>
+<td>[my arithmetic]</td>
 </tr>
 <tr>
-<td>Antiderivative</td>
-<td>Differentiate it and get the integrand back</td>
+<td>Cost estimate</td>
+<td>about 1,300 to 1,900 USD</td>
+<td>proposal, using per task costs in Gloaguen et al.</td>
 </tr>
 <tr>
-<td>Definite integral</td>
-<td>Sign and rough size (positive function, positive area; compare with a rectangle)</td>
+<td>Hand check of each rule checker</td>
+<td>at least 20 examples</td>
+<td>proposal</td>
+</tr>
+</tbody>
+</table>
+<h3 id="your-hiroshima-plan-numbers-from-your-submitted-research-plan">Your Hiroshima plan numbers (from your submitted Research Plan)</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rules</td>
+<td>about 5, each with 2 tasks (10 tasks)</td>
 </tr>
 <tr>
-<td>Limit</td>
-<td>Plug in a small number like x = 0.01 mentally, or use a second method</td>
+<td>Task screening (choosing tasks)</td>
+<td>about 20 candidate tasks, 3 runs per agent (120 runs); drop tasks an agent never solves</td>
 </tr>
 <tr>
-<td>Max/min</td>
-<td>Compare with endpoint values</td>
+<td>File versions</td>
+<td>2 (original, and the rule replaced with neutral text)</td>
 </tr>
 <tr>
-<td>Series</td>
-<td>Compare with a known p-series or geometric series</td>
+<td>Agents in the main runs</td>
+<td>2 (Claude Code, Codex)</td>
 </tr>
 <tr>
-<td>Differential equation</td>
-<td>Put the solution back in and check the initial conditions</td>
+<td>Runs per task, version and agent</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Main runs</td>
+<td>10 x 2 x 2 x 10 = 400</td>
+</tr>
+<tr>
+<td>Extra runs</td>
+<td>100 for a second, smaller Codex model; 200 for your own harness (Qwen3-30B-Coder at two temperatures); both on the original file only</td>
+</tr>
+<tr>
+<td>Total runs</td>
+<td>400 + 100 + 200 + 120 = 820</td>
+</tr>
+<tr>
+<td>Cost estimate</td>
+<td>about 420 to 590 US dollars, at the per-task costs in Gloaguen et al. ([8] in that plan)</td>
+</tr>
+<tr>
+<td>Checker kept if</td>
+<td>it agrees with your hand labels on at least 90% of 20 or more examples; you report Cohen's kappa</td>
+</tr>
+<tr>
+<td>Random inputs</td>
+<td>at least 10,000 per entry point; 20 disagreements per task checked by hand</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="10-common-traps">10. Common traps</h2>
-<p><strong>Linear algebra</strong></p>
+<h1 id="part-a-data-and-variability">Part A. Data and variability</h1>
+<h2 id="1-sampling-and-variability">1. Sampling and variability</h2>
+<p><strong>Plain definition.</strong></p>
 <ul>
-<li>det(cA) = c^n det A, <strong>not</strong> c det A (LA16).</li>
-<li>AB ≠ BA in general. (A + B)^2 = A^2 + AB + BA + B^2. The binomial theorem needs AB = BA (LA21).</li>
-<li>(AB)^-1 = B^-1 A^-1 and (AB)^T = B^T A^T: the order reverses.</li>
-<li>A basis of the column space uses the pivot columns <strong>of A</strong>, not of R (LA10).</li>
-<li>An eigenvector is never the zero vector. Any nonzero multiple of an eigenvector is also fine as an answer.</li>
-<li>A repeated eigenvalue does not guarantee diagonalizability ([a 1; 0 a] is not diagonalizable).</li>
-<li>Singular values are <strong>not</strong> the eigenvalues (LA24: eigenvalues 3 and 5, singular values √45 and √5).</li>
-<li>"Positive definite" is about <strong>symmetric</strong> matrices. Check symmetry first.</li>
-<li>P = A(A^T A)^-1 A^T <strong>cannot</strong> be simplified to I unless A is square and invertible.</li>
-<li>An "orthogonal matrix" has orthonormal columns (length 1), not only perpendicular ones.</li>
-<li>In Gram-Schmidt, subtract projections onto the <strong>new</strong> orthogonal vectors, not onto the original ones.</li>
-<li>In rank problems with a parameter, test every special value separately (LA8).</li>
-<li>In the cofactor formula for the inverse, use the <strong>transpose</strong> of the cofactor matrix.</li>
-<li>A linear map must send 0 to 0 (LA25).</li>
+<li>A <strong>population</strong> is everything I want to talk about. A <strong>sample</strong> is the part I actually observe.</li>
+<li>A number computed from the sample (for example, the fraction of runs that follow a rule) is a <strong>statistic</strong>. If I took a new sample, the statistic would change a little. This change is <strong>sampling variability</strong>.</li>
+<li>The <strong>standard error</strong> (SE) is the typical size of that change. For a proportion p measured on n independent trials, SE = sqrt(p x (1 - p) / n).</li>
 </ul>
-<p><strong>Calculus</strong></p>
+<p><strong>Tiny example.</strong> [my arithmetic]</p>
 <ul>
-<li>The chain rule's inner derivative: (sin 3x)' = 3 cos 3x, (e^(x^2))' = 2x e^(x^2).</li>
-<li>d/dx (y^2) = 2y y' in implicit differentiation.</li>
-<li>Forgetting + C, or the absolute value in ∫ dx/x = log |x|.</li>
-<li>Substitution in a definite integral: change the limits too.</li>
-<li>Radians, not degrees. sin x / x → 1 only in radians.</li>
-<li>L'Hopital's rule only for 0/0 or ∞/∞, and you differentiate the top and the bottom separately (not the quotient rule).</li>
-<li>Related rates: put in the numbers <strong>after</strong> differentiating.</li>
-<li>Max and min on a closed interval: also check the <strong>endpoints</strong>.</li>
-<li>f'(c) = 0 does not always mean a max or min (x^3 at 0). f''(c) = 0 does not always mean an inflection point (x^4 at 0).</li>
-<li>Improper integrals: look for points <strong>inside</strong> the interval where the function blows up (1/x^2 on [-1, 1]).</li>
-<li>Series: a_n → 0 is not enough (C22). The ratio test with limit 1 says nothing. Check power series <strong>endpoints</strong> separately (C23).</li>
-<li>In Lang, log means the natural log. log 2 ≈ 0.693, log 3 ≈ 1.099, e ≈ 2.718.</li>
-<li>Partial fractions: divide first if the top degree is at least the bottom degree.</li>
-<li>Area between curves: find which curve is on top, and split where they cross.</li>
+<li>Suppose on one task the agent "truly" follows a rule 70% of the time (the rate I would see after thousands of runs).</li>
+<li>With 3 runs, the observed rate can only be 0%, 33%, 67% or 100%.</li>
+<li>The chance that all 3 runs follow the rule is 0.7 x 0.7 x 0.7 = 34.3%. The chance that none does is 0.3 x 0.3 x 0.3 = 2.7%.</li>
+<li>SE with n = 3 is sqrt(0.7 x 0.3 / 3) = 0.26, so about 26 percentage points. With n = 30 it is 0.084 (8 points). With n = 180 it is 0.034 (3 points).</li>
 </ul>
-<hr />
-<h2 id="11-a-sample-of-math-worked-well-out-loud-stuck-hint-recovery">11. A sample of math worked well out loud (stuck, hint, recovery)</h2>
-<p>Problem on screen: "Is A = [2 1; 1 2] positive definite? Explain."</p>
+<p><strong>In my plan.</strong> There are three layers of sampling:</p>
+<ol>
+<li><strong>Runs</strong>: the agent is random, so each run is one draw.</li>
+<li><strong>Tasks</strong>: I use a few tasks, but I want to talk about tasks in general.</li>
+<li><strong>Rules and repositories</strong>: about 30 rules from about 10 Python repositories in AIDev. They are not a random sample of all GitHub. They are repositories that have a context file and tests that run in a container. So my results speak for that kind of repository.</li>
+</ol>
+<p><strong>Say it.</strong></p>
 <blockquote>
-<p><strong>Me:</strong> "Let me read it. A is a symmetric 2 by 2 matrix, and the question is whether it is positive definite.
-I remember that positive definite means x transpose A x is positive for every nonzero x. Let me write that." (writes the definition)
-"One way is to compute x transpose A x directly. That is 2 x1 squared plus 2 x1 x2 plus 2 x2 squared."
-(pause, about 10 seconds) "I want to show this is always positive, but I am not sure how to see it immediately."
-<strong>Professor:</strong> "Maybe there is a test with the entries?"
-<strong>Me:</strong> "Thank you. Yes, for a symmetric 2 by 2 matrix, the test is that the top-left entry is positive and the determinant is positive. The top-left entry is 2, which is positive. The determinant is 4 minus 1, which is 3, also positive. So A is positive definite.
-I can also confirm with the eigenvalues. The trace is 4 and the determinant is 3, so the eigenvalues are 3 and 1. Both are positive.
-And I can now finish my first idea by completing the square: 2 x1 squared plus 2 x1 x2 plus 2 x2 squared equals 2 (x1 plus x2 over 2) squared plus 3 over 2 x2 squared, which is positive unless x is zero.
-So the answer is yes, A is positive definite." (holds up the page)</p>
+<p>"Each number I report is an estimate from a sample, so it comes with noise, and the noise shrinks with the square root of the sample size. In my study the noise comes from three places, the agent's randomness, the choice of tasks, and the choice of rules, and my analysis has to account for all three."</p>
 </blockquote>
-<p>Why this works: the definition is on the page, the pause is short, the hint is used at once, and the answer is confirmed two more ways.</p>
 <hr />
-<h2 id="12-practice-drills">12. Practice drills</h2>
+<h2 id="2-why-repeated-runs">2. Why repeated runs</h2>
+<p><strong>Plain definition.</strong></p>
 <ul>
-<li><strong>Daily (10 minutes):</strong> one problem from <a href="ch44.html"><code>02_practice_problems_with_solutions.md</code></a>, 5 minute timer, out loud, on the sketchbook. Then compare with the "Say it out loud" box.</li>
-<li><strong>Weekly practice meeting (20 minutes):</strong> someone else picks one LA and one C problem at random. You get 12 minutes for both, including their follow-ups. Record it.<ul>
-<li>Partner instructions: read the problem aloud, stay quiet, once say "Is that right?" at a random moment (even if it is right), and ask one follow-up from the file at the end.</li>
-<li>Who plays the professor: a friend or colleague when one is free. Otherwise Claude plays the professor in a chat session: it reads the problem, says "Is that right?" once, and asks one follow-up at the end. I record the practice meeting either way.</li>
+<li>A coding agent can do different things on the same task with the same input. One run is one draw from its behaviour.</li>
+<li>Repeating runs lets me <strong>estimate the run to run noise</strong> and separate it from the effect of the file version.</li>
+</ul>
+<p><strong>Tiny example.</strong></p>
+<ul>
+<li>The Guardrails paper [6] measured a "baseline retest reliability of 88.2%". The authors write that "each task has an ≈ 11.8% chance of flipping under run-to-run variance alone". So with one run per condition, some "effects" are just noise.</li>
+<li>Gloaguen et al. [5] write "We sample completions for each agent once", and they set temperature to 0 for some models. That is a reasonable choice for task success on a big benchmark, but it cannot show run to run noise.</li>
+<li>If one run with the rule complies and one run without the rule does not, that tells me almost nothing. If 6 of 6 runs comply with the rule and 0 of 6 without it, a Fisher exact test gives p = 0.002 [my arithmetic].</li>
+</ul>
+<p><strong>In my plan.</strong></p>
+<ul>
+<li>3 runs per task, per version, per agent. This lets me see if the agent is stable on a task.</li>
+<li>Important: runs of the <strong>same task</strong> are correlated. They share the same code, the same prompt and the same difficulty. So 3 runs are worth less than 3 new tasks. This is why tasks are a random effect in my model.</li>
+</ul>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"Agents are not deterministic, and the Guardrails paper measured that a task can flip about 12% of the time just by rerunning it, so one run per condition can produce fake effects. I run each condition 3 times to measure that noise, but I know repeated runs of the same task are correlated, so for generalisation more tasks matter more than more runs."</p>
+</blockquote>
+<hr />
+<h2 id="3-binary-outcomes-and-proportions">3. Binary outcomes and proportions</h2>
+<p><strong>Plain definition.</strong></p>
+<ul>
+<li>A <strong>binary outcome</strong> has two values: yes or no, 1 or 0. Examples: "the new test file is in the tests folder", "the test suite passes".</li>
+<li>A <strong>proportion</strong> is successes divided by trials, k / n.</li>
+<li>Binary data needs special models. A normal linear model can predict values below 0 or above 1, and the spread of binary data depends on p itself (largest at p = 0.5).</li>
+</ul>
+<p><strong>Tiny example.</strong></p>
+<ul>
+<li>In one run the agent creates 4 new test files. 3 are in <code>tests/</code>. Compliance for that run = 3 / 4 = 0.75.</li>
+<li>Two ways to pool two runs, one with 1/1 and one with 3/10:<ul>
+<li>Average of fractions: (1.00 + 0.30) / 2 = 0.65.</li>
+<li>Total successes over total places: 4 / 11 = 0.36.</li>
+<li>The second weights places, the first weights runs. I must choose one and say why. A logistic model on counts (successes out of places) weights by places.</li>
 </ul>
 </li>
-<li><strong>Review your recording</strong> with these questions:<ul>
-<li>Did I say a plan within the first 30 seconds?</li>
-<li>Was I silent for more than 15 seconds anywhere?</li>
-<li>Can I read every symbol on the recording?</li>
-<li>Did I do a check?</li>
-<li>Did I hold the page up and say the answer as a sentence?</li>
-<li>Did I finish within 5 to 6 minutes?</li>
+</ul>
+<p><strong>In my plan.</strong></p>
+<ul>
+<li>Compliance = fraction of applicable places in the new code that follow the rule (proposal wording).</li>
+<li>Runs with <strong>no applicable place</strong> (the agent never wrote code where the rule applies) have no compliance value. I report them separately, as the proposal says, because dropping them silently could hide an effect (for example, a rule that makes the agent avoid the situation completely).</li>
+<li>Test result per run is pass or fail.</li>
+</ul>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"My main outcomes are yes or no: did the new code follow the rule at this place, and did the tests pass. So I treat compliance as a proportion of applicable places and use a logistic model, and I report runs with no applicable place separately so they do not disappear from the data."</p>
+</blockquote>
+<hr />
+<h1 id="part-b-models">Part B. Models</h1>
+<h2 id="4-logistic-regression-and-odds-ratios">4. Logistic regression and odds ratios</h2>
+<p><strong>Plain definition.</strong></p>
+<ul>
+<li><strong>Odds</strong> = p / (1 - p). If p = 0.8, odds = 4 ("4 to 1").</li>
+<li><strong>Log odds</strong> (logit) = ln(p / (1 - p)). It goes from minus infinity to plus infinity, so a straight line is safe on this scale.</li>
+<li><strong>Logistic regression</strong> fits: logit(p) = b0 + b1 x X. Each coefficient is a change in log odds.</li>
+<li><strong>Odds ratio</strong> (OR) = exp(b1). OR = 1 means no effect. OR &gt; 1 means higher odds.</li>
+<li>To get back a probability: p = 1 / (1 + exp(-(b0 + b1 x X))).</li>
+</ul>
+<p><strong>Tiny worked example.</strong> [my arithmetic]</p>
+<table>
+<thead>
+<tr>
+<th>File version</th>
+<th>Runs that comply</th>
+<th>Runs that do not</th>
+<th>p</th>
+<th>Odds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rule kept (original)</td>
+<td>24</td>
+<td>6</td>
+<td>24/30 = 0.80</td>
+<td>24/6 = 4.00</td>
+</tr>
+<tr>
+<td>Rule removed</td>
+<td>12</td>
+<td>18</td>
+<td>12/30 = 0.40</td>
+<td>12/18 = 0.67</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>OR = 4.00 / 0.67 = <strong>6.0</strong>.</li>
+<li>Model with "removed" as the reference level: b0 = ln(0.67) = -0.41, b1 = ln(6) = 1.79.</li>
+<li>Check: for "kept", logit = -0.41 + 1.79 = 1.39, and p = 1 / (1 + exp(-1.39)) = 1 / (1 + 0.25) = 0.80. Correct.</li>
+<li>Fisher exact test for 24/30 vs 12/30: p = 0.003.</li>
+</ul>
+<p><strong>Trap: odds ratio is not "times more likely".</strong></p>
+<ul>
+<li>Risk ratio (RR) = 0.80 / 0.40 = <strong>2.0</strong>. The agent is twice as likely to comply, not 6 times.</li>
+<li>Difference in percentage points = 80 - 40 = <strong>40 points</strong>.</li>
+<li>OR and RR are close only when p is small. Compliance is often high, so I will report the percentage point difference next to the OR.</li>
+</ul>
+<p><strong>Lab and related use.</strong> McMillan [7] reports odds ratios from a mixed logistic model, for example "approximately 5.6% lower odds of compliance per generation step (OR = 0.944)".</p>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"Logistic regression models the log odds of a yes, so a coefficient becomes an odds ratio when I take the exponent; for example 80% versus 40% compliance is an odds ratio of 6. I always report the plain difference in percentage points too, because an odds ratio of 6 does not mean 6 times more likely, here it is only twice as likely."</p>
+</blockquote>
+<hr />
+<h2 id="5-fixed-effects-random-effects-and-mixed-effects-models">5. Fixed effects, random effects and mixed effects models</h2>
+<p><strong>Plain definition.</strong></p>
+<ul>
+<li>A <strong>fixed effect</strong> is a factor whose levels I chose on purpose and want to estimate one by one. In my plan: <strong>file version</strong> (5 levels) and <strong>agent</strong> (2 levels).</li>
+<li>A <strong>random effect</strong> is a factor whose levels are a sample from a bigger population. I do not care about each level by itself. I want to (a) allow each level its own baseline and (b) generalise beyond the levels I happened to pick. In my plan: <strong>task</strong> and <strong>rule</strong>.</li>
+<li>A <strong>mixed effects model</strong> has both. In R (lme4) it would look like:
+    <code>glmer(cbind(followed, not_followed) ~ version + agent + (1 | task) + (1 | rule), family = binomial)</code></li>
+<li><code>(1 | rule)</code> is a <strong>random intercept</strong>: each rule gets its own baseline compliance, drawn from a normal distribution around the overall average.</li>
+</ul>
+<p><strong>Intuitive example with tasks and rules.</strong> [made up numbers]</p>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Compliance when kept</th>
+<th>Compliance when removed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Put new tests in the tests folder"</td>
+<td>95%</td>
+<td>85%</td>
+</tr>
+<tr>
+<td>"Use the logger, not print"</td>
+<td>70%</td>
+<td>20%</td>
+</tr>
+<tr>
+<td>"Add type hints to public functions"</td>
+<td>50%</td>
+<td>30%</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The test folder rule is easy even without the file: the agent sees the existing folder and copies it. The logger rule is hard without the file.</li>
+<li>If I ignore this and pool all runs as if independent, two bad things happen:<ol>
+<li><strong>Pseudo replication.</strong> 1,800 runs look like 1,800 independent facts, but they are clustered by task and by rule. Standard errors become too small and p values too optimistic.</li>
+<li><strong>Confusion between "easy rule" and "effective rule".</strong> A random intercept for the rule absorbs "this rule is just easy", so the version effect is estimated within rules.</li>
+</ol>
+</li>
+<li>Tasks work the same way. McMillan [7] found that task identity mattered more than the file variables: compliance ranged from 45.1% to 84.4% across tasks. He treated task as a random effect "so that inferences generalise across tasks rather than conditioning on any one of them".</li>
+<li>Bonus effect, <strong>partial pooling</strong>: a rule with few runs gets its estimate pulled a little toward the overall average. With only 6 runs per rule and version, this protects me from extreme estimates like 0% or 100%.</li>
+</ul>
+<p><strong>Choices I can defend.</strong></p>
+<ul>
+<li>If I want a claim about each of my 30 rules one by one, I could treat rule as fixed. I treat it as random because my question is about rules in general and their properties (RQ2).</li>
+<li>If compliance is counted per place, places inside one run are also correlated. McMillan added a random intercept for the run as well, <code>(1 | RunID)</code>. I can do the same.</li>
+<li>The effect of removing a rule probably differs by rule. A <strong>random slope</strong>, <code>(version | rule)</code>, models that. With 6 runs per rule and version it may be hard to estimate, so I will try it and report if it does not fit.</li>
+<li>RQ2: rule properties (negative wording, specificity, linter coverage) enter as rule level predictors that interact with version. Wording is the strongest test, because I reword the same rule. Specificity and linter coverage differ between rules, so the real sample size there is about 30 rules.</li>
+</ul>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"File version and agent are fixed effects because I chose them and want their effects; task and rule are random effects because they are samples, some are just easier than others, and I want to generalise beyond them. Without the random effects I would treat 1,800 runs as independent, my p values would be too small, and I could confuse an easy rule with an effective one."</p>
+</blockquote>
+<hr />
+<h1 id="part-c-inference">Part C. Inference</h1>
+<h2 id="6-p-values">6. p values</h2>
+<p><strong>Plain definition.</strong></p>
+<ul>
+<li>A <strong>p value</strong> answers: "If there were really no effect, how often would I see a difference at least this large just by chance?"</li>
+<li>A small p value (below 0.05 by convention) means the data would be surprising if there were no effect.</li>
+<li>What a p value is <strong>not</strong>:<ul>
+<li>not the probability that the null hypothesis is true;</li>
+<li>not the size of the effect;</li>
+<li>p &gt; 0.05 does not mean "no effect". It can mean "not enough data".</li>
 </ul>
 </li>
-<li><strong>Vocabulary drill:</strong> read the word list at the end of <a href="ch43.html"><code>01_topic_checklist_and_key_formulas.md</code></a> and explain each word in one sentence, out loud.</li>
 </ul>
-<hr />
-<h2 id="13-meeting-day-checklist-math-part">13. Meeting-day checklist (math part)</h2>
+<p><strong>Tiny examples.</strong></p>
 <ul>
-<li>[ ] New blank A4 sketchbook and 2 to 3 thick black markers.</li>
-<li>[ ] On the desk: the blank sketchbook, the markers and the device.</li>
-<li>[ ] Connection check before the meeting: use your real setup and ask whether the professors can read your sketchbook. (NAIST's connection check was 8 Mar 2027, for its third spring round. For Hiroshima, Prof. Zheng will send the details of your meeting, on one day between 24 Nov and 2 Dec 2026.)</li>
-<li>[ ] 20 minutes before: say the one-page formula sheet aloud, and solve one easy problem (LA19 or C15) on scrap paper, then put the scrap paper away.</li>
-<li>[ ] At the start: greet them, listen to the instructions, and ask "May I start?" if it is not clear.</li>
-<li>[ ] During: plan out loud, check, box, hold up. Ask for a hint before you freeze.</li>
+<li>My worked example above: 24/30 vs 12/30, Fisher p = 0.003 [my arithmetic].</li>
+<li>Gloaguen et al. [5]: developer written context files "improve agent performance by 2.4% on average (p = 21%)". That is not significant. It does not prove the files are useless; the difference is small relative to the noise.</li>
+<li>Large samples make tiny effects significant. In the Agentic Refactoring paper (NAIST lab), a Wilcoxon signed-rank test found "a statistically significant difference (FDR-adjusted p &lt; 0.001)", but "the effect sizes are negligible (Cohen's d = -0.027 and -0.026)". In the lab's testing paper, p &lt; 0.001 but "the calculated effect size is negligible (Cliff's δ = -0.12)".</li>
 </ul>
+<p><strong>In my plan.</strong> I report p values together with effect sizes and confidence intervals, never alone. Per rule results with only 6 runs per cell will rarely be significant, and I will say that clearly instead of saying "no effect".</p>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"A p value tells me how surprising my data would be if there were no effect, not how big or important the effect is. So I always report it with an effect size and a confidence interval, and I never read a large p value as proof of no effect."</p>
+</blockquote>
+<hr />
+<h2 id="7-confidence-intervals">7. Confidence intervals</h2>
+<p><strong>Plain definition.</strong></p>
+<ul>
+<li>A <strong>95% confidence interval</strong> (CI) is a range built by a method that captures the true value in 95% of repeated studies.</li>
+<li>Simple reading: the range of values that are reasonably consistent with my data. Narrow = precise, wide = uncertain.</li>
+<li>For proportions near 0 or 1, or small n, use the <strong>Wilson interval</strong>, not the simple "p plus or minus 1.96 SE" (Wald) interval. McMillan [7] uses Wilson intervals "where exact rates approach 0 or 1".</li>
+</ul>
+<p><strong>Tiny examples.</strong> [my arithmetic]</p>
+<ul>
+<li>Difference 80% vs 40% (30 runs each): 40 points, 95% CI about 17 to 63 points. The effect is clearly positive, but its size is uncertain.</li>
+<li>My rule checker hand check: 19 of 20 examples correct. Wilson 95% CI = <strong>76% to 99%</strong>. The Wald interval would give 85% to 105%, which is impossible. With 20 of 20 correct, Wilson still gives 84% to 100%.</li>
+</ul>
+<p><strong>In my plan.</strong></p>
+<ul>
+<li>I will report every checker's accuracy as "x of 20 (Wilson 95% CI)". 20 examples tell me the checker is probably better than about 75%, not that it is 95%. For checkers with errors, I will check more examples.</li>
+</ul>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"A confidence interval shows how precise my estimate is; for example 19 correct out of 20 on a checker only tells me the accuracy is somewhere between about 76% and 99%. That is why I will report the interval for every checker and check more examples when a checker makes mistakes."</p>
+</blockquote>
+<hr />
+<h2 id="8-effect-sizes">8. Effect sizes</h2>
+<p><strong>Plain definition.</strong></p>
+<ul>
+<li>An <strong>effect size</strong> says <strong>how big</strong> a difference is, separate from sample size.</li>
+<li>For proportions:<ul>
+<li>difference in percentage points (easiest to explain);</li>
+<li>risk ratio;</li>
+<li>odds ratio (comes out of logistic regression);</li>
+<li>Cohen's h = 2 x asin(sqrt(p1)) - 2 x asin(sqrt(p2)). Cohen's usual labels are 0.2 small, 0.5 medium, 0.8 large. McMillan [7] reports Cohen's h for proportions.</li>
+</ul>
+</li>
+<li>For numbers like complexity (skewed): <strong>Cliff's delta</strong> (see Section 15), which the lab uses.</li>
+</ul>
+<p><strong>Tiny example.</strong> [my arithmetic] 80% vs 40%: difference 40 points, RR 2.0, OR 6.0, Cohen's h = 0.84 (large).</p>
+<p><strong>Lab use.</strong> The Agent READMEs paper uses Mann-Whitney U plus Cliff's delta with fixed thresholds (negligible if |d| ≤ 0.147, small to 0.33, medium to 0.474, large above). The Agentic Refactoring paper uses the same thresholds.</p>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"A p value says whether a difference is likely real, and an effect size says whether it is big enough to matter. For compliance I report the difference in percentage points and the odds ratio, and for complexity I report Cliff's delta like the lab's papers do."</p>
+</blockquote>
+<hr />
+<h2 id="9-statistical-power-and-why-3-runs-per-version-is-limited">9. Statistical power, and why 3 runs per version is limited</h2>
+<p><strong>Plain definition.</strong></p>
+<ul>
+<li><strong>Power</strong> = the chance that my study detects an effect that really exists. A common target is 80%.</li>
+<li>Power goes up with: bigger true effect, more data, less noise, a less strict alpha.</li>
+<li><strong>Minimum detectable effect</strong> = the smallest true effect I have 80% power to detect.</li>
+</ul>
+<p><strong>Tiny example.</strong> [my arithmetic, two proportion test, assumes independent runs, alpha 0.05]</p>
+<table>
+<thead>
+<tr>
+<th>Comparison</th>
+<th>Runs per arm</th>
+<th>Power for 80% vs 50%</th>
+<th>Power for 80% vs 70%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>One rule, one agent (2 tasks x 3 runs)</td>
+<td>6</td>
+<td>about 3.5% (exact test) to 18% (approximation)</td>
+<td>under 1% (exact test) to about 7% (approximation)</td>
+</tr>
+<tr>
+<td>30 rules pooled, one agent</td>
+<td>180</td>
+<td>about 100%</td>
+<td>about 59%</td>
+</tr>
+<tr>
+<td>30 rules pooled, both agents</td>
+<td>360</td>
+<td>about 100%</td>
+<td>about 87%</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Minimum detectable effect around 75% compliance: about <strong>70 points</strong> for one rule (6 vs 6), about <strong>13 points</strong> pooled (180 vs 180).</li>
+<li>But runs are correlated. With 3 runs per task and a within task correlation of 0.5, the <strong>design effect</strong> is 1 + (3 - 1) x 0.5 = 2. Then 180 runs behave like about 90 independent runs. Power for 80% vs 70% drops to about 34%, and the minimum detectable effect grows to about 18 points.</li>
+<li>Even a perfect split in 3 vs 3 runs (3/3 vs 0/3) gives Fisher p = 0.10. So 3 runs alone can never show a significant difference for one task.</li>
+</ul>
+<p><strong>What this means for my plan (be honest).</strong></p>
+<ul>
+<li><strong>Pooled RQ1</strong> (does removing a rule change compliance on average) has reasonable power for medium effects.</li>
+<li><strong>Per rule results</strong> are weak. I will report them as estimates with intervals, and use partial pooling from the mixed model, not as 30 separate significance tests.</li>
+<li><strong>RQ2</strong> compares properties between rules, so the real sample size is about 30 rules. Example [my arithmetic]: if rule effects vary with a standard deviation of 20 points, a 15 vs 15 split can only detect about a 20 point difference in effectiveness. So RQ2 is exploratory, except wording, which I test within the same rule.</li>
+<li><strong>What I will do:</strong><ol>
+<li>Use the pilot on two repositories to measure the real run to run and task to task variance.</li>
+<li>Run a <strong>simulation based power analysis</strong> before the main runs. McMillan [7] did this with R's simr package and reports "at least 98% power at n = 50 to detect a 15-percentage-point ICR shift". He used 50 runs per condition; I have a smaller budget.</li>
+<li>If the budget is fixed, I would rather <strong>add tasks than add runs</strong>, because between task differences are large (45.1% to 84.4% in McMillan) and new tasks also improve generalisation.</li>
+</ol>
+</li>
+<li>Guardrails [6] shows the same limit: "At n = 58 ... our McNemar tests detect ∼15pp paired effects".</li>
+</ul>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"Three runs per version is enough to see whether an agent is stable on a task, but it is not enough to make claims about one rule on its own, so my main test pools all rules in a mixed model and per rule results are reported as estimates with intervals. Before the main runs I will use the pilot to measure the variance and do a simulation based power analysis, and if I need more power I will add tasks rather than runs."</p>
+</blockquote>
+<hr />
+<h2 id="10-multiple-comparisons">10. Multiple comparisons</h2>
+<p><strong>Plain definition.</strong></p>
+<ul>
+<li>If I run many tests at alpha 0.05, some will be "significant" by chance.</li>
+<li>Chance of at least one false positive in m independent tests with no real effect = 1 - 0.95^m.</li>
+<li>Fixes:<ul>
+<li><strong>Bonferroni</strong>: use alpha / m. Simple, very strict.</li>
+<li><strong>Holm</strong>: sort p values, compare the smallest to alpha/m, the next to alpha/(m-1), and so on; stop at the first failure. Same protection, more power.</li>
+<li><strong>Benjamini-Hochberg (BH)</strong>: controls the <strong>false discovery rate</strong> (the expected share of false positives among my "discoveries"). Compare the i-th smallest p to (i/m) x alpha.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Tiny example.</strong> [my arithmetic]</p>
+<ul>
+<li>30 rules tested separately: 1 - 0.95^30 = <strong>78.5%</strong> chance of at least one false positive. Bonferroni threshold = 0.05 / 30 = 0.0017.</li>
+<li>Four p values: 0.004, 0.014, 0.02, 0.2.<ul>
+<li>Bonferroni (0.0125): only 0.004 survives.</li>
+<li>Holm: 0.004 ≤ 0.0125 yes, 0.014 ≤ 0.0167 yes, 0.02 ≤ 0.025 yes, 0.2 ≤ 0.05 no. Three survive.</li>
+<li>BH: 0.004 ≤ 0.0125, 0.014 ≤ 0.025, 0.02 ≤ 0.0375 yes; 0.2 ≤ 0.05 no. Three survive.</li>
+</ul>
+</li>
+<li>Real case: in Guardrails [6], the most impactful single rule ("do not refactor unrelated code") had McNemar p = 0.016, but this "would not survive a strict multiple-comparison correction across 18 tests" (Bonferroni would need 0.05 / 18 = 0.0028). The authors therefore reported the pattern, not per rule significance.</li>
+</ul>
+<p><strong>Lab use.</strong> Agentic Refactoring uses Benjamini-Hochberg FDR. Voria et al. [9] (with Assoc. Prof. Kashiwa) plan Holm-Bonferroni for pairwise tests and say they "predefine hypotheses and analyses".</p>
+<p><strong>In my plan.</strong> A small number of main hypotheses written down in advance (RQ1 pooled version effect; RQ2 three properties; RQ3 three quality measures). Per rule and per pair results get BH correction and are labelled exploratory. A registered report format, like Voria et al., would be a good way to fix the analysis before seeing the data.</p>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"With 30 rules, testing each one at 0.05 gives about a 78% chance of at least one false positive, so per rule tests need a correction such as Holm or Benjamini-Hochberg. I keep a few main hypotheses fixed in advance and label everything else exploratory, which is also what the Guardrails authors did when their best single rule did not survive correction."</p>
+</blockquote>
+<hr />
+<h1 id="part-d-tests-and-measures-the-lab-uses">Part D. Tests and measures the lab uses</h1>
+<h2 id="11-cohens-kappa-two-raters">11. Cohen's kappa (two raters)</h2>
+<p><strong>Plain definition.</strong></p>
+<ul>
+<li>Measures agreement between two raters on categories, <strong>corrected for chance agreement</strong>.</li>
+<li>kappa = (po - pe) / (1 - pe). po = observed agreement. pe = agreement expected by chance from each rater's label rates.</li>
+<li>Common reading (Landis and Koch): 0.41 to 0.60 moderate, 0.61 to 0.80 substantial, above 0.80 almost perfect.</li>
+</ul>
+<p><strong>Tiny example.</strong> [my arithmetic] Two people label 50 checker outputs as "follows" or "violates".</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>B says follows</th>
+<th>B says violates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A says follows</td>
+<td>30</td>
+<td>6</td>
+</tr>
+<tr>
+<td>A says violates</td>
+<td>4</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>po = (30 + 10) / 50 = 0.80.</li>
+<li>A says follows 36/50 = 0.72; B says follows 34/50 = 0.68.</li>
+<li>pe = 0.72 x 0.68 + 0.28 x 0.32 = 0.58.</li>
+<li>kappa = (0.80 - 0.58) / (1 - 0.58) = <strong>0.52</strong>, only moderate. <strong>80% raw agreement can be just moderate kappa</strong>, because many agreements happen by chance when one label is common.</li>
+</ul>
+<p><strong>Lab use.</strong></p>
+<ul>
+<li>Agentic Refactoring: "Cohen's kappa coefficient of 0.77, which indicates a substantial level of agreement".</li>
+<li>Readability paper: "Micro-averaged Cohen's Kappa: 0.80".</li>
+<li>Voria et al. [9]: "We will consider κ ≥ 0.70 as the minimum acceptable agreement level".</li>
+<li>The PR paper reported raw agreement (75.8%) instead of kappa "since our classification was a multi-label task". Agent READMEs reports an "agreement rate of 80.3%".</li>
+</ul>
+<p><strong>In my plan.</strong></p>
+<ul>
+<li>The second person who checks that a reworded rule keeps its meaning: I can report kappa between us on "same meaning / not same".</li>
+<li>For the rule checkers, a script is compared with a human. There I report accuracy, precision and recall with intervals, and I can also report kappa between script and human.</li>
+</ul>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"Cohen's kappa is agreement between two raters after removing the agreement you would expect by chance, so 80% raw agreement can still be a kappa of only about 0.5. In my plan I would use it for the second person who checks that reworded rules keep the same meaning, and I would aim for at least 0.7 as Voria et al. planned."</p>
+</blockquote>
+<hr />
+<h2 id="12-mann-whitney-u-test-also-called-wilcoxon-rank-sum">12. Mann-Whitney U test (also called Wilcoxon rank-sum)</h2>
+<p><strong>Plain definition.</strong></p>
+<ul>
+<li>Compares two <strong>independent</strong> groups without assuming a normal distribution. It uses ranks.</li>
+<li>Idea: take every pair (one value from each group) and count which side is bigger. U = number of pairs where group A is bigger (ties count half).</li>
+<li>Good for skewed data such as complexity or number of warnings.</li>
+</ul>
+<p><strong>Tiny example.</strong> [my arithmetic] Cyclomatic complexity of functions:</p>
+<ul>
+<li>A (rule kept): 2, 3, 5. B (rule removed): 4, 6, 7.</li>
+<li>9 pairs. A is bigger in 1 pair (5 &gt; 4). B is bigger in 8. So U = 1.</li>
+<li>Exact two sided p = 0.2. Even perfect separation in 3 vs 3 gives at best p = 0.1. Small groups cannot reach significance.</li>
+</ul>
+<p><strong>Lab use.</strong> Agent READMEs ("Mann-Whitney U test ... at a significance level of α = 0.05"), the PR paper, What to Cut, and the testing paper all use it, usually with Cliff's delta.</p>
+<p><strong>Watch out.</strong> It assumes independent observations. Runs from the same task are not independent, so in my experiment I prefer paired tests on per task averages, or the mixed model.</p>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"Mann-Whitney compares two independent groups using ranks, so it works for skewed data like complexity, and the lab uses it with Cliff's delta in most of its papers. In my experiment runs are grouped by task, so I would use it only on independent units, for example in the real pull request study, and use paired or mixed models in the experiment."</p>
+</blockquote>
+<hr />
+<h2 id="13-wilcoxon-signed-rank-test-paired">13. Wilcoxon signed-rank test (paired)</h2>
+<p><strong>Plain definition.</strong></p>
+<ul>
+<li>Compares <strong>paired</strong> values (same task under two versions, or the same file before and after a commit).</li>
+<li>Take each pair's difference, drop zeros, rank the absolute differences, and compare the sum of positive ranks with the sum of negative ranks.</li>
+</ul>
+<p><strong>Tiny example.</strong> [my arithmetic] Change in complexity, rule removed minus rule kept, per task: +1, +2, -1, +3, 0, +2.</p>
+<ul>
+<li>Drop the 0. Absolute values 1, 2, 1, 3, 2 get ranks 1.5, 3.5, 1.5, 5, 3.5.</li>
+<li>Positive rank sum = 13.5, negative rank sum = 1.5. Mostly positive.</li>
+<li>With only 5 non zero pairs, the smallest possible two sided p is 0.0625. Again, small samples limit what I can claim.</li>
+</ul>
+<p><strong>Lab use.</strong> The readability paper uses it on before and after metrics per commit and notes that "the Wilcoxon signed-rank test excludes pairs with zero differences". Agentic Refactoring uses it with BH correction.</p>
+<p><strong>In my plan.</strong> RQ3 compares file versions on the <strong>same task</strong>, so pairing by task is natural: average the 3 runs per task and version, then compare versions with a signed-rank test, as a simple check next to the mixed model.</p>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"The signed-rank test is the paired version: it looks at the differences within each pair, like the same task with and without the rule. It fits RQ3 well because I compare file versions on the same task, and I would use it as a simple check next to the mixed model."</p>
+</blockquote>
+<hr />
+<h2 id="14-kruskal-wallis-test-three-or-more-groups">14. Kruskal-Wallis test (three or more groups)</h2>
+<p><strong>Plain definition.</strong></p>
+<ul>
+<li>The rank based test for <strong>3 or more independent groups</strong>. Rank all values together, then check if the mean ranks differ.</li>
+<li>It only says "some group differs". Then do pairwise tests (for example Mann-Whitney) with a correction such as Holm.</li>
+</ul>
+<p><strong>Tiny example.</strong> [my arithmetic] Complexity under three versions:</p>
+<ul>
+<li>Original: 2, 3, 4 (ranks 1, 2, 3, mean rank 2.0)</li>
+<li>Removed: 5, 6, 8 (ranks 4, 5, 7, mean rank 5.3)</li>
+<li>No file: 7, 9, 10 (ranks 6, 8, 9, mean rank 7.7)</li>
+<li>H = 12 / (9 x 10) x (6² / 3 + 16² / 3 + 23² / 3) - 3 x 10 = 6.49, p about 0.04 (rough with so few values).</li>
+</ul>
+<p><strong>Lab use.</strong> Voria et al. [9] plan "the non-parametric Kruskal-Wallis test, followed by post-hoc pairwise Wilcoxon rank-sum tests with Holm-Bonferroni correction. Effect sizes will be quantified via Cliff's Delta." Agentic Refactoring also uses Kruskal-Wallis with FDR adjustment.</p>
+<p><strong>In my plan.</strong> Useful in the real PR study, for example comparing complexity across rule types or repositories. In the experiment, my 5 file versions are better handled in the mixed model, because the same tasks appear in all versions.</p>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"Kruskal-Wallis is the rank based test for three or more groups, and it only tells me that some group differs, so I follow it with pairwise tests and a Holm correction. That is exactly the plan in Voria et al., so I would use the same approach where my groups are independent, for example across rule types in the real PR data."</p>
+</blockquote>
+<hr />
+<h2 id="15-cliffs-delta">15. Cliff's delta</h2>
+<p><strong>Plain definition.</strong></p>
+<ul>
+<li>An effect size for two groups, based on pairs: delta = (number of pairs where A &gt; B - number where A &lt; B) / (nA x nB).</li>
+<li>Ranges from -1 to +1. 0 means the groups overlap fully. It does not need normal data.</li>
+<li>Thresholds used in the lab's papers: |d| ≤ 0.147 negligible, ≤ 0.33 small, ≤ 0.474 medium, above that large.</li>
+</ul>
+<p><strong>Tiny example.</strong> [my arithmetic] From Section 12: A = 2, 3, 5 and B = 4, 6, 7. delta = (1 - 8) / 9 = <strong>-0.78</strong>, large: functions written with the rule kept tend to be simpler.</p>
+<p><strong>Real lab examples.</strong></p>
+<ul>
+<li>Agent READMEs: Claude Code and Copilot files are longer than Codex files, "effect sizes are small (Cliff's delta d = 0.21 and d = 0.22)".</li>
+<li>Testing paper: significant but "negligible (Cliff's δ = -0.12)".</li>
+<li>Agentic Refactoring: "Cliff's delta (d = 0.838) indicates a large effect size".</li>
+</ul>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"Cliff's delta tells me how often a value from one group is bigger than a value from the other, from minus one to plus one, so it works for skewed data like complexity. The lab reports it with every Mann-Whitney test, using 0.147, 0.33 and 0.474 as the cut points, and I would report it the same way for my quality measures."</p>
+</blockquote>
+<hr />
+<h1 id="part-e-causal-thinking-mainly-for-the-real-pr-study">Part E. Causal thinking (mainly for the real PR study)</h1>
+<h2 id="16-association-vs-causation">16. Association vs causation</h2>
+<p><strong>Plain definition.</strong></p>
+<ul>
+<li><strong>Association</strong>: two things move together.</li>
+<li><strong>Causation</strong>: changing one thing changes the other.</li>
+<li>An association can come from: real causation, <strong>reverse causation</strong>, <strong>confounding</strong>, <strong>chance</strong>, or <strong>selection</strong> (which cases ended up in my data).</li>
+<li>A <strong>controlled experiment</strong> gets causation by changing one thing on purpose and holding everything else fixed. The <strong>counterfactual</strong> ("what would the agent have done on the same task without this rule") is approximated by the "rule removed" version on the same task.</li>
+</ul>
+<p><strong>Tiny example.</strong></p>
+<ul>
+<li>In real repositories, rules are often added <strong>because</strong> agents broke them. Cai et al. [12] report that developers update rules to correct AI errors. So "repos with the rule have more violations" could be reverse causation.</li>
+<li>Agent READMEs [2]: after an indentation rule was added, violations fell from 60.82% to 11.03% (rsyslog) and from 20.17% to 7.57% (lotgd). The authors themselves write "two cases cannot establish causality".</li>
+</ul>
+<p><strong>In my plan.</strong></p>
+<ul>
+<li>The experiment (RQ1 to RQ3) is causal by design: same task, same container, same everything, only the rule sentence changes. The <strong>neutral sentence</strong> version controls for file length, and the <strong>no file</strong> version is a baseline.</li>
+<li>To stop time effects lining up with versions, I will <strong>mix the order</strong> of runs instead of running all "original" runs first.</li>
+<li>The real PR study is observational, so I report associations, as the proposal says.</li>
+<li>Assistant Prof. Zhenlan Ji works on causality and LLM agents. His CAM paper simulates errors in one intermediate output at a time and measures the effect on correctness. My plan has the same shape: change one rule at a time and measure the effect on compliance.</li>
+</ul>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"In real repositories a rule and good compliance can move together for many reasons, including reverse causation, because developers add rules after agents break them. That is why my main study is a controlled experiment that changes only one sentence on the same task, and the real pull request study is reported as associations."</p>
+</blockquote>
+<hr />
+<h2 id="17-confounding">17. Confounding</h2>
+<p><strong>Plain definition.</strong></p>
+<ul>
+<li>A <strong>confounder</strong> is a third factor that affects both the "cause" and the "outcome", and creates a fake or distorted link.</li>
+</ul>
+<p><strong>Tiny example.</strong> [made up numbers] A team adds a rule in the same month they move from an older agent model to a newer one.</p>
+<ul>
+<li>Before the rule: 80 PRs by the old model (40% comply) and 20 by the new model (80% comply). Overall 0.8 x 40 + 0.2 x 80 = <strong>48%</strong>.</li>
+<li>After the rule: 20 by the old model (40%) and 80 by the new model (80%). Overall 0.2 x 40 + 0.8 x 80 = <strong>72%</strong>.</li>
+<li>Compliance "jumps" from 48% to 72% while the rule had <strong>zero</strong> effect. The change in the mix of agents did it all.</li>
+</ul>
+<p><strong>Other confounders in the real PR study.</strong> A linter or CI check added at the same time; the project getting more mature; different kinds of tasks before and after (more tests written later).</p>
+<p><strong>Confounding inside my own experiment.</strong> If for RQ3 I compared runs that <strong>happened</strong> to follow the rule with runs that did not, a hidden factor such as "the agent understood the task well" could cause both compliance and simpler code. So I compare by <strong>assigned file version</strong> on the same task, not by observed compliance (the proposal says this).</p>
+<p><strong>Fixes.</strong> Randomisation (the experiment), stratifying or adjusting for agent and model version, excluding cases where linter settings changed at the same time (in the proposal), and using a comparison group (human PRs).</p>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"A confounder affects both the cause and the outcome; for example if a team adds a rule in the same month it upgrades the agent model, compliance can jump even if the rule did nothing. That is why I compare by assigned file version in the experiment, and in the real PR study I adjust for agent version, exclude linter changes, and use human PRs as a comparison."</p>
+</blockquote>
+<hr />
+<h2 id="18-regression-to-the-mean">18. Regression to the mean</h2>
+<p><strong>Plain definition.</strong></p>
+<ul>
+<li>When something is measured at an unusually extreme moment, the next measurement tends to be closer to normal, <strong>even if nothing changed</strong>.</li>
+</ul>
+<p><strong>Tiny example.</strong> [made up numbers]</p>
+<ul>
+<li>A repository's agent PRs usually violate a rule about 20% of the time; by chance it moves between 10% and 30% month to month.</li>
+<li>One bad month hits 35%. The team gets annoyed and adds the rule.</li>
+<li>Next month: 22%. It looks like a 13 point improvement from the rule, but most of it would have happened anyway.</li>
+</ul>
+<p><strong>In my plan.</strong> This is a real risk in the real PR study, because rules are added after violations (Cai et al. [12]). What I can do:</p>
+<ul>
+<li>use a longer "before" window, not just the weeks right before the rule;</li>
+<li>model the trend with an interrupted time series;</li>
+<li>compare with human PRs and, if possible, with similar repos that had a spike but did not add a rule.</li>
+<li>The controlled experiment does not have this problem, because I choose when the rule is present.</li>
+</ul>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"Rules are often added right after a bad period, and bad periods tend to be followed by normal ones anyway, so a simple before and after comparison can overstate the effect of a rule. I would use a longer before window and a time series model with a comparison group, and this is one more reason the controlled experiment is my main study."</p>
+</blockquote>
+<hr />
+<h2 id="19-interrupted-time-series-its">19. Interrupted time series (ITS)</h2>
+<p><strong>Plain definition.</strong></p>
+<ul>
+<li>Many measurements over time, with an "interruption" (the rule is added). Fit a line before, then test whether the <strong>level</strong> or the <strong>slope</strong> changes after.</li>
+<li>Segmented regression: Y_t = b0 + b1 x time + b2 x after + b3 x (time since rule) + error.<ul>
+<li>b1 = trend before. b2 = immediate jump. b3 = change in trend.</li>
+</ul>
+</li>
+<li>Key assumption: without the rule, the old trend would have continued, and nothing else changed at the same time.</li>
+</ul>
+<p><strong>Tiny example.</strong> [made up numbers] Monthly violation rate of agent PRs.</p>
+<ul>
+<li>Months 1 to 6 (before): 50, 48, 46, 44, 42, 40. Already falling 2 points per month.</li>
+<li>Rule added at month 7. Months 7 to 12: 30, 28, 26, 24, 22, 20.</li>
+<li>Naive before vs after: 45 vs 25, a <strong>20 point</strong> drop.</li>
+<li>ITS: the trend predicts 38 at month 7; the real value is 30. Level drop b2 = <strong>-8 points</strong>, slope unchanged (b3 = 0). The rule explains 8 points, not 20. The rest is the existing trend (for example, agents improving over time).</li>
+</ul>
+<p><strong>In my plan.</strong></p>
+<ul>
+<li>Many repos have few agent PRs, so I would pool repos and use a mixed model with a random effect for repository, aligning time on "months since the rule was added".</li>
+<li>Problems to say out loud: consecutive months are correlated (autocorrelation), I need several time points on each side, and other changes at the same time (linter, model upgrade) break the assumption.</li>
+<li>First step in the proposal: count how many repos have enough agent PRs before and after a checkable rule was added.</li>
+</ul>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"An interrupted time series fits the trend before a rule was added and checks whether the level or the slope changes afterwards, so it does not mistake an existing downward trend for an effect of the rule. In my toy example a naive before and after drop of 20 points becomes only 8 points once the trend is modelled."</p>
+</blockquote>
+<hr />
+<h2 id="20-difference-in-differences-did">20. Difference in differences (DiD)</h2>
+<p><strong>Plain definition.</strong></p>
+<ul>
+<li>Compare the change in a <strong>treated</strong> group with the change in a <strong>comparison</strong> group over the same period. The comparison group's change shows what would have happened anyway.</li>
+<li>DiD = (treated after - treated before) - (comparison after - comparison before).</li>
+<li>Key assumption, <strong>parallel trends</strong>: without the rule, both groups would have changed by the same amount. I can check this partly by looking at the trends before the rule.</li>
+</ul>
+<p><strong>Tiny example.</strong> [made up numbers]</p>
+<ul>
+<li>Agent PRs in the repo: compliance 40% before, 70% after (+30 points).</li>
+<li>Human PRs in the same repo, same period: 50% before, 60% after (+10 points).</li>
+<li>DiD = 30 - 10 = <strong>+20 points</strong> attributed to the rule (under parallel trends).</li>
+</ul>
+<p><strong>In my plan (proposal: "Human pull requests in the same repositories will serve as a comparison").</strong></p>
+<ul>
+<li>Things that can break it:<ul>
+<li>Humans can read CLAUDE.md or AGENTS.md too, so the human group may be partly "treated". That would make DiD <strong>underestimate</strong> the effect.</li>
+<li>Some "human" PRs contain undisclosed AI code. The lab's PR paper notes that "the presence of undisclosed AI-generated code would likely dilute the differences between the two groups".</li>
+<li>Agent PRs and human PRs may do different kinds of tasks.</li>
+</ul>
+</li>
+<li>Rules are added at different times in different repos (staggered timing). One simple regression with fixed effects for repo and time can give wrong answers in that case, and newer DiD methods are designed for it. I would need to learn the right estimator for staggered timing, so I would read that literature in Year 1 and ask Dr. Ji (NAIST plan; Dr. Ji is at NAIST).</li>
+</ul>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"Difference in differences compares how much agent PRs changed after a rule was added with how much human PRs in the same repository changed over the same period, so general changes in the project cancel out. It depends on the two groups having parallel trends, and since humans can also read the context file, my estimate would more likely be too small than too large."</p>
+</blockquote>
+<hr />
+<h1 id="part-f-threats-to-validity">Part F. Threats to validity</h1>
+<p>Lab papers use these headings. The readability paper has Internal, Construct and External validity. Voria et al. [9] also include Conclusion validity.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Plain question</th>
+<th>Threat in my experiment</th>
+<th>What I do</th>
+<th>Threat in the real PR study</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Internal</strong></td>
+<td>Did the factor I changed really cause the effect?</td>
+<td>Model or CLI updates during the runs; different order of runs; the agent finds the solution online; training data contains the merged PR</td>
+<td>Pin CLI versions and full model IDs; clean container per run; no git history; mix run order; prefer PRs merged after the training cutoff</td>
+<td>Confounding (agent upgrades, linter changes), regression to the mean, agents improving over time</td>
+</tr>
+<tr>
+<td><strong>Construct</strong></td>
+<td>Do my measures capture what I claim?</td>
+<td>Checker script wrong; "fraction of applicable places" may miss partial compliance; complexity and warnings are only part of quality; circularity if a warning encodes the rule</td>
+<td>Hand check each checker on at least 20 examples with an interval; leave out checks that encode the rule; report test results, complexity and warnings separately</td>
+<td>Agent vs human identification in AIDev; "Generated with Claude Code" text can be removed; later fix commits are only one sign of maintenance</td>
+</tr>
+<tr>
+<td><strong>External</strong></td>
+<td>Does it generalise?</td>
+<td>Only Python, about 10 repos, only script checkable rules, two agents at fixed versions</td>
+<td>State the scope clearly ("rules a script can check"); release scripts so others can extend</td>
+<td>Only repos with enough agent PRs; public GitHub only</td>
+</tr>
+<tr>
+<td><strong>Conclusion</strong></td>
+<td>Are my statistical conclusions sound?</td>
+<td>Low power per rule; 30 rules means many tests; correlated runs</td>
+<td>Mixed model; pooled main test; corrections for per rule tests; power simulation after the pilot</td>
+<td>Few repos per rule type; autocorrelation in time series</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Say it.</strong></p>
+<blockquote>
+<p>"I think about four kinds of threats: internal, whether the rule really caused the change; construct, whether my scripts measure compliance and quality correctly; external, how far the results generalise; and conclusion, whether my statistics are sound. The biggest ones for me are construct validity of the checkers and the limited scope to Python and script checkable rules, and I handle them by checking every script by hand and stating the scope clearly."</p>
+</blockquote>
+<hr />
+<h1 id="part-g-rapid-fire-attacks-and-short-answers">Part G. Rapid fire: attacks and short answers</h1>
+<p>These answers are for the old NAIST plan (3 runs, compliance as the main outcome, a real pull request study). Your Hiroshima plan uses 10 runs per setting, does not test compliance as a research question, and has a field study only if time permits. Use the ideas, not the numbers.</p>
+<p><strong>"3 runs is too few."</strong></p>
+<blockquote>
+<p>"For a single rule, yes, and I say so; my main test pools all rules in a mixed model, and per rule results are reported as estimates with intervals. The pilot will give me the real variance, and I will do a power simulation before fixing the number of runs."</p>
+</blockquote>
+<p><strong>"Why not just use a t-test or chi-squared test?"</strong></p>
+<blockquote>
+<p>"A simple test treats every run as independent, but my runs are grouped by task and by rule, so the p values would be too small. The mixed logistic model handles the grouping and the binary outcome together."</p>
+</blockquote>
+<p><strong>"Why logistic and not linear regression?"</strong></p>
+<blockquote>
+<p>"Compliance and test results are yes or no, so a linear model can predict impossible values like 110% and gets the variance wrong. Logistic regression works on the log odds scale, which keeps predictions between 0 and 1."</p>
+</blockquote>
+<p><strong>"What is a random effect, simply?"</strong></p>
+<blockquote>
+<p>"It lets each task and each rule have its own baseline, because some are simply easier, and it treats them as a sample from a bigger population. That way my conclusion is about tasks and rules in general, not only the ones I picked."</p>
+</blockquote>
+<p><strong>"Your RQ3 is circular: the rule improves the metric it checks."</strong></p>
+<blockquote>
+<p>"I leave out any check that encodes the rule itself, for example the print warning if the rule is about using the logger. And I compare file versions on the same task, not runs that happened to comply, so the comparison is not selected on the outcome."</p>
+</blockquote>
+<p><strong>"How do you know your checker is right?"</strong></p>
+<blockquote>
+<p>"I check each script by hand on at least 20 examples and report its accuracy with a confidence interval. If a checker makes mistakes, I check more examples or fix it, and I can have a second person label a sample to report kappa."</p>
+</blockquote>
+<p><strong>"Your real PR study cannot show causation."</strong></p>
+<blockquote>
+<p>"I agree, and I report it as associations. Its job is to check whether the experimental results look similar in real projects, using time series, human PRs as a comparison, and excluding linter changes."</p>
+</blockquote>
+<p><strong>"What if removing a rule changes nothing?"</strong></p>
+<blockquote>
+<p>"That is still a useful result, because it tells developers which rules they may not need, and the no file version tells me whether the agent was simply copying what it saw in the codebase. I would report it with an interval, so it is clear how large an effect I could have missed."</p>
+</blockquote>
+<p><strong>"Gloaguen already says instructions are followed."</strong></p>
+<blockquote>
+<p>"Their evidence on following comes from agent traces, for example uv is used about 1.6 times per task when the file mentions it and almost never when it does not, and they do not remove or reword single rules. I test single real rules against a version without the rule on the same task and measure compliance in the code with scripts."</p>
+</blockquote>
+<hr />
+<h2 id="sources-used-in-this-file">Sources used in this file</h2>
+<p>Local PDFs (text extracted with pdftotext):</p>
+<ul>
+<li>[2] Agent READMEs (TOSEM 2026), arXiv 2511.12884 v2: Mann-Whitney and Cliff's delta thresholds, indentation case study, 80.3% agreement.</li>
+<li>[5] Gloaguen et al., arXiv 2602.11988: "We sample completions for each agent once", p = 21% for developer files.</li>
+<li>[6] Zhang et al., Guardrails Beat Guidance, arXiv 2604.11088: 88.2% retest reliability, rule 6 p = 0.016 not surviving correction over 18 tests, power of about 15pp at n = 58.</li>
+<li>[7] McMillan, arXiv 2605.10039: binomial GLMM with random intercepts for run and task, simr power analysis, Wilson intervals, Cohen's h, OR = 0.944, task compliance 45.1% to 84.4%.</li>
+<li>[9] Voria et al. (with Kashiwa), ICSME 2026 Registered Report, arXiv 2606.25257: kappa ≥ 0.70, Kruskal-Wallis, Holm-Bonferroni, Cliff's delta, validity sections, associations not causation.</li>
+<li>[12] Cai et al., arXiv 2606.12231 (rules updated to correct AI errors, as cited in my proposal).</li>
+<li>Lab papers: Agentic Refactoring (arXiv 2511.04824: kappa 0.77, Wilcoxon with BH, negligible Cohen's d, Cliff's d = 0.838); Do AI Agents Really Improve Code Readability? (arXiv 2603.13723: kappa 0.80, Wilcoxon excludes zero differences, validity headings); Testing with AI Agents (arXiv 2603.13724: Cliff's δ = -0.12 with p &lt; 0.001); On the Use of Agentic Coding PRs (arXiv 2509.14745: raw agreement instead of kappa, chi-squared, undisclosed AI dilutes differences); CAM (arXiv 2602.02138, Ji as co-author).</li>
+</ul>
+<p>All numbers marked [my arithmetic] were computed by me for teaching, not taken from any paper.</p>
 </article>
 <div class="donebox"><label><input type="checkbox" class="done-cb" data-ch="h46"> Mark chapter 46 as done</label></div>
-<nav class="pager" aria-label="Previous and next"><a class="prev" href="ch45.html"><span class="lbl">← Previous</span>45. Statistics primer (from NAIST)</a><a class="next" href="ch47.html"><span class="lbl">Next →</span>47. Prof. Zheng in depth</a></nav>
+<nav class="pager" aria-label="Previous and next"><a class="prev" href="ch45.html"><span class="lbl">← Previous</span>45. Linear algebra and calculus problems (from NAIST)</a><a class="next" href="ch47.html"><span class="lbl">Next →</span>47. Working maths out loud (from NAIST)</a></nav>
 </main>
 </div>
 <script>
