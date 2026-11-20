@@ -180,10 +180,11 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <p class="when"><strong>When and how long:</strong> Out loud, timed, once a day until the meeting. About 11 minutes.</p>
 </header>
 
+<p><strong>Slides to share:</strong> <a href="contents.html">Sudhanshu_Pandit_Hiroshima_presentation.pdf</a> (present this PDF; the .pptx has the same slides with this script in the speaker notes).</p>
 <p>Say the <strong>Say</strong> lines while the slide is up. Then say the <strong>Next →</strong> line and press the right arrow. Speak slowly, at 115 to 120 words a minute, and take one breath at each slide change.</p>
-<p><strong>Full version (default):</strong> slides 1 to 13, about 10:45 on the slides. Your work is about 5:50 and the plan about 4:55. Do not add words to fill 15 minutes.</p>
-<p><strong>10 minutes:</strong> skip slide 3. After the slide 2 Next line, press the right arrow twice to reach slide 4. On slide 7, leave out "The user approves only what they can see." About 9:50.</p>
-<p><strong>5 minutes:</strong> on slide 1, leave out the first sentence. Instead of its Next line, say "I will go straight to my research plan." Press the right arrow seven times to reach slide 8, then present slides 8 to 13. About 5:15.</p>
+<p><strong>Full version (default):</strong> slides 1 to 13, about 11:30 on the slides. Your work is about 6:25 and the plan about 5:10. Do not add words to fill 15 minutes.</p>
+<p><strong>10 minutes:</strong> skip slide 3. After the slide 2 Next line, press the right arrow twice to reach slide 4. On slide 7, leave out "The user approves only what they can see." About 10:30.</p>
+<p><strong>5 minutes:</strong> on slide 1, leave out the first sentence. Instead of its Next line, say "I will go straight to my research plan." Press the right arrow seven times to reach slide 8, then present slides 8 to 13. About 5:30.</p>
 <p>Read it aloud until it feels like your own words. On the day, present from the slides, not from this page.</p>
 <h2 id="before-you-start">Before you start</h2>
 <p>Hello. Thank you for your time today. My name is Sudhanshu Pandit, and I am applying to work with Prof. Zheng in the Dependable Systems Laboratory.</p>
@@ -199,11 +200,11 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <p><strong>Next →</strong> Now, some things I built, and what each one taught me.</p>
 <h2 id="slide-3-magic-editor-the-user-approves-every-edit-about-050">Slide 3 · Magic Editor: the user approves every edit  ·  about 0:50</h2>
 <p><img alt="Slide 3" src="slides/slide-3.png" /></p>
-<p><strong>Say:</strong> Magic Editor is an AI assistant at Layerpath that edits interactive product demos. It suggests new text and voiceover for any step. The user asks for an edit. The model proposes it in a fixed format, and the code checks the format. Then the user approves it, or rejects it and nothing changes. The model never changes a demo by itself. The same idea is in my plan: an agent run counts only if it passes the task's tests.</p>
+<p><strong>Say:</strong> Magic Editor is an AI agent at Layerpath for interactive product demos. It is not a chatbot that waits for questions. It works like an instructional designer: it watches the demo's video and screenshots, finds steps that are unclear, and suggests better text and voiceover on its own. Each suggestion comes in a fixed format, and the code checks it. Then the user approves it, or rejects it and nothing changes. The agent never changes a demo by itself. The same idea is in my plan: an agent run counts only if it passes the task's tests.</p>
 <p><strong>Next →</strong> Magic Editor suggests the text, and my next project, BrandMemory, tells it how a company writes.</p>
 <h2 id="slide-4-brandmemory-rules-the-model-never-saw-about-045">Slide 4 · BrandMemory: rules the model never saw  ·  about 0:45</h2>
 <p><img alt="Slide 4" src="slides/slide-4.png" /></p>
-<p><strong>Say:</strong> BrandMemory learns a company's writing voice from its website, and gives those rules to the model. The logs said the brand guidance was applied. But the output had no trace of the brand voice. So I traced what the model actually received. There was a limit of 3,200 characters. The brand voice had the lowest priority, so it was cut first. The model never saw the rules. Since then, I always check whether a model actually follows an instruction.</p>
+<p><strong>Say:</strong> BrandMemory learns a company's writing voice from its website, and gives those rules to the model. After launch, demos made with it and without it looked almost the same. The logs said the brand guidance was applied. I first suspected the website reading, but the brand profile was rich and correct. So I traced the exact prompt the model received, step by step. Each part looked fine alone, but together they removed the voice. The prompt had a 3,200-character limit, and the brand voice had the lowest priority, so it was cut first. Built-in house-style rules pulled the other way. And the brand's own example lines came with an instruction not to copy them. Since then, I check what the model actually receives and follows, not what the logs say.</p>
 <p><strong>Next →</strong> Next, my own project.</p>
 <h2 id="slide-5-yuki-20-a-check-before-any-lasting-step-about-105">Slide 5 · Yuki 2.0: a check before any lasting step  ·  about 1:05</h2>
 <p><img alt="Slide 5" src="slides/slide-5.png" /></p>
@@ -219,7 +220,7 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <p><strong>Next →</strong> I want to measure how often this happens. That needs probability models. This brings me to my research plan.</p>
 <h2 id="slide-8-voting-needs-versions-that-fail-differently-about-045">Slide 8 · Voting needs versions that fail differently  ·  about 0:45</h2>
 <p><img alt="Slide 8" src="slides/slide-8.png" /></p>
-<p><strong>Say:</strong> In N-version programming, a vote helps only if the versions rarely fail on the same inputs. Prof. Zheng, Prof. Okamura and Prof. Dohi found that voting made strong models more reliable, but helped little with weak ones. Two studies from 2026 found that versions written by language models fail together more often than independence predicts. In one, two or more of 48 agent-written programs failed together on 429 of a million inputs. Independence predicts about 115.</p>
+<p><strong>Say:</strong> In N-version programming, a vote helps only if the versions rarely fail on the same inputs. Prof. Zheng, Prof. Okamura and Prof. Dohi found that voting made strong models more reliable, but helped little with weak ones. Two studies from 2026 found that versions written by language models fail together more often than independence predicts. In one study, 48 programs written by coding agents were tested on a million inputs. Two or more failed together on 429 of them. Independence predicts about 115, so that is almost four times more.</p>
 <p><strong>Next →</strong> But neither of the two 2026 studies used a context file. So I ask two questions.</p>
 <h2 id="slide-9-two-questions-shared-failures-and-one-rule-about-045">Slide 9 · Two questions: shared failures and one rule  ·  about 0:45</h2>
 <p><img alt="Slide 9" src="slides/slide-9.png" /></p>
@@ -227,11 +228,11 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <p><strong>Next →</strong> To answer them, I run agents many times on real tasks.</p>
 <h2 id="slide-10-method-repeated-runs-on-real-tasks-about-050">Slide 10 · Method: repeated runs on real tasks  ·  about 0:50</h2>
 <p><img alt="Slide 10" src="slides/slide-10.png" /></p>
-<p><strong>Say:</strong> I start from 138 public tasks: merged pull requests whose tests fail before the change and pass after it. The agent gets the original context file, or the file with one rule replaced. Each setting runs ten times, with Claude Code, Codex and my own harness. A run counts only if it passes the pull request's tests. Then I compare it with the merged code on at least 10,000 random inputs. That is 820 runs, for about 420 to 590 US dollars.</p>
+<p><strong>Say:</strong> I start from 138 public tasks: merged pull requests whose tests fail before the change and pass after it. The agent gets the original context file, or the file with one rule replaced. Each setting runs ten times, with Claude Code, Codex and my own harness. A run counts only if it passes the pull request's tests. Then I compare it with the merged code on at least 10,000 random inputs. That is 820 runs. At the per-task prices reported in the AGENTS.md study, they cost about 420 to 590 US dollars.</p>
 <p><strong>Next →</strong> Then I need one number for how often these runs fail together.</p>
 <h2 id="slide-11-one-number-for-fail-together-about-105">Slide 11 · One number for "fail together"  ·  about 1:05</h2>
 <p><img alt="Slide 11" src="slides/slide-11.png" /></p>
-<p><strong>Say:</strong> Let theta of x be the chance that a run fails on input x, and p its mean. Two runs both fail with probability p squared, plus the variance of theta. As Eckhardt and Lee showed, the runs are independent only if every input is equally hard. In the picture, p is 0.2 in both cases. If every input is equally hard, two runs both fail 4 percent of the time. If half are easy and half are hard, it is 8 percent. I model theta with a Beta distribution. Then the number of failing runs on one input is beta-binomial. One number, rho, measures the dependence. Rho zero means independent.</p>
+<p><strong>Say:</strong> Why would runs fail together? The classic answer in N-version programming is Eckhardt and Lee's: some inputs are harder than others. In both pictures, a run fails 20 percent of the time on average. If every input is equally hard, two runs both fail 4 percent of the time. If half the inputs are easy and half are hard, it doubles to 8 percent. In the formula, that extra part is the variance term: it is zero only when every input is equally hard. To measure it, I use a beta-binomial model. It gives one number, rho. Rho zero means the runs are independent. The higher it is, the more they fail together.</p>
 <p><strong>Next →</strong> Here is my plan for the two years, and the results I expect.</p>
 <h2 id="slide-12-two-years-two-results-all-data-public-about-050">Slide 12 · Two years, two results, all data public  ·  about 0:50</h2>
 <p><img alt="Slide 12" src="slides/slide-12.png" /></p>
@@ -239,7 +240,7 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <p><strong>Next →</strong> To close, here is how my plan builds on this lab's work.</p>
 <h2 id="slide-13-what-i-want-to-learn-in-this-lab-about-040">Slide 13 · What I want to learn in this lab  ·  about 0:40</h2>
 <p><img alt="Slide 13" src="slides/slide-13.png" /></p>
-<p><strong>Say:</strong> RQ1 takes this lab's N-version study to real repository tasks. RQ2 uses the lab's boundary value method, BCD, as a stress test. If time permits, field data on later fixes to agent code would use pysrat. I can build and run the agents. But I cannot yet fit and test reliability models on their failures. That is what I want to learn in this lab.</p>
+<p><strong>Say:</strong> RQ1 takes this lab's N-version study to real repository tasks. RQ2 uses the lab's boundary coverage distance method, BCD, as a stress test. If time permits, field data on later fixes to agent code would use pysrat. I can build and run the agents. But I cannot yet fit and test reliability models on their failures. That is what I want to learn in this lab.</p>
 <p><strong>Next →</strong> Thank you very much for listening. I am happy to take your questions.</p>
 <h2 id="slide-14-references-on-these-slides-backup">Slide 14 · References on these slides  ·  backup</h2>
 <p><img alt="Slide 14" src="slides/slide-14.png" /></p>
