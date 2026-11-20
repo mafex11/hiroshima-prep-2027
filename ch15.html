@@ -89,6 +89,8 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
  .slides img{background:#fff}
  blockquote{border-left-color:#4a5a70}
 }
+
+.page article p>img{display:block;width:100%;max-width:760px;height:auto;border:1px solid var(--line);border-radius:6px;background:#fff;margin:6px 0 2px}
 </style>
 
 </head>
@@ -113,7 +115,7 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <li data-ch="h12"><a href="ch12.html"><span class="n">12.</span>Previous questions: older sample set</a></li>
 <li class="part">Part 2: Your 15-minute talk</li>
 <li data-ch="h13"><a href="ch13.html"><span class="n">13.</span>Presentation guide and slides</a></li>
-<li data-ch="h14"><a href="ch14.html"><span class="n">14.</span>Full script (15, 10 and 5 minutes)</a></li>
+<li data-ch="h14"><a href="ch14.html"><span class="n">14.</span>Presentation script (slide by slide)</a></li>
 <li data-ch="h15"><a href="ch15.html" aria-current="page"><span class="n">15.</span>Questions on your slides (with follow-ups)</a></li>
 <li class="part">Part 3: Your plan and your work</li>
 <li data-ch="h16"><a href="ch16.html"><span class="n">16.</span>Your research plan (as submitted)</a></li>
@@ -211,7 +213,7 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <li><strong>Prof:</strong> "Make it concrete. One video in ten makes every run fail, and the other nine never do. What is rho?"<br><strong>You:</strong> "The mean failure chance p is 0.1, so two independent runs would both fail with probability 0.01. Here both fail whenever the video is the bad one, so 0.1, ten times as often. The variance of theta is 0.1 minus 0.01, which is 0.09, and rho is 0.09 over 0.1 times 0.9, which is 1, the top of the scale."</li>
 <li><strong>Prof:</strong> "A rho of 1 from ten videos. How much would you trust it?"<br><strong>You:</strong> "Not much, because it rests on one video. If one video in ten is truly bad, a new sample of ten has no bad video at all about a third of the time, since 0.9 to the power 10 is about 0.35. So I'd want many more inputs and an interval; in my plan each entry point gets at least 10,000 generated inputs, and the interval comes from a bootstrap that resamples runs."</li>
 </ol>
-<h2 id="slide-2-about-me">Slide 2: About me</h2>
+<h2 id="slide-2-ai-engineer-now-student-from-april-2027">Slide 2: AI engineer now, student from April 2027</h2>
 <p><strong>S2.1. Your 2023 paper is a review. What was your own part in it?</strong></p>
 <blockquote>
 <p>I was second of four authors, and I researched and wrote the paper myself: I read the papers, compared the methods and wrote the text, and my co-authors reviewed it. It was a review and concept paper, with no dataset or model of our own. It taught me how to read and summarise research; my own experiments start with this plan.</p>
@@ -578,7 +580,7 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <li><strong>Prof:</strong> "Ron et al.'s agents had a long specification. Isn't that already a context file in all but name?"<br><strong>You:</strong> "In a way, yes, and it supports my point: their shared failures sat in the hard or ambiguous parts of it. In conditions 9 and 14 many programs computed the circle through the three points instead of the smallest circle that contains them, and for an obtuse triangle those differ. What a real context file adds is the project's own choices, like which helper to use, written once and read by every run."</li>
 <li><strong>Prof:</strong> "In your data, how would you tell a failure caused by the rule from a trap in the task itself, like their circle?"<br><strong>You:</strong> "I compare the two file versions on the same task and the same inputs. If the shared failures sit in code that uses what the rule names, and they drop with the neutral file, they come from the rule. If they stay with the neutral file, they come from the task itself, and I'd report them as that."</li>
 </ol>
-<h2 id="slide-9-two-research-questions">Slide 9: Two research questions</h2>
+<h2 id="slide-9-two-questions-shared-failures-and-one-rule">Slide 9: Two questions: shared failures and one rule</h2>
 <p><strong>S9.1. RQ1 asks "how much more often than independence predicts". What number answers that?</strong></p>
 <blockquote>
 <p>ρ, the intraclass correlation of a beta-binomial model: 0 means independent, and 1 means the runs always fail together. With the mean failure probability p, two runs both fail with p² plus ρ p(1 - p), so "how much more often" is that divided by p²: 1 plus ρ times (1 - p) over p.</p>
@@ -731,7 +733,7 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <li><strong>Prof:</strong> "In that simulation, how well did 10 runs pin down ρ?"<br><strong>You:</strong> "It was a toy model with 40 possible bugs, and the true ρ was about 0.14. With 10 runs the estimate fell between about 0.09 and 0.20 in 95 percent of repeated experiments, and with 40 runs roughly between 0.12 and 0.17. So 10 runs can tell a ρ near 0.1 from one near 0.4, but not much finer."</li>
 <li><strong>Prof:</strong> "Forty runs per setting would cost four times as much. What would you do?"<br><strong>You:</strong> "I'd add runs where they're cheap. At the per-task prices in Gloaguen et al., Claude Code costs about 1.15 to 1.51 dollars and the open-weight Qwen model about 0.12 to 0.15, so my own harness can afford many more runs. For the commercial agents I'd keep 10 unless the pilot shows the intervals are useless."</li>
 </ol>
-<h2 id="slide-12-schedule-and-expected-results">Slide 12: Schedule and expected results</h2>
+<h2 id="slide-12-two-years-two-results-all-data-public">Slide 12: Two years, two results, all data public</h2>
 <p><strong>S12.1. Courses, the harness, checkers, inputs and a pilot, all in the first half of Year 1. Is that realistic?</strong></p>
 <blockquote>
 <p>It's tight. Statistics is the new part for me, so it comes first, and the harness is close to what I already wrote in plain Python for Yuki 2.0. The pilot is small on purpose.</p>
@@ -863,7 +865,7 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 </ul>
 </article>
 <div class="donebox"><label><input type="checkbox" class="done-cb" data-ch="h15"> Mark chapter 15 as done</label></div>
-<nav class="pager" aria-label="Previous and next"><a class="prev" href="ch14.html"><span class="lbl">← Previous</span>14. Full script (15, 10 and 5 minutes)</a><a class="next" href="ch16.html"><span class="lbl">Next →</span>16. Your research plan (as submitted)</a></nav>
+<nav class="pager" aria-label="Previous and next"><a class="prev" href="ch14.html"><span class="lbl">← Previous</span>14. Presentation script (slide by slide)</a><a class="next" href="ch16.html"><span class="lbl">Next →</span>16. Your research plan (as submitted)</a></nav>
 </main>
 </div>
 <script>

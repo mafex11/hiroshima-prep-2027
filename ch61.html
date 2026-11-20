@@ -89,6 +89,8 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
  .slides img{background:#fff}
  blockquote{border-left-color:#4a5a70}
 }
+
+.page article p>img{display:block;width:100%;max-width:760px;height:auto;border:1px solid var(--line);border-radius:6px;background:#fff;margin:6px 0 2px}
 </style>
 
 </head>
@@ -113,7 +115,7 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <li data-ch="h12"><a href="ch12.html"><span class="n">12.</span>Previous questions: older sample set</a></li>
 <li class="part">Part 2: Your 15-minute talk</li>
 <li data-ch="h13"><a href="ch13.html"><span class="n">13.</span>Presentation guide and slides</a></li>
-<li data-ch="h14"><a href="ch14.html"><span class="n">14.</span>Full script (15, 10 and 5 minutes)</a></li>
+<li data-ch="h14"><a href="ch14.html"><span class="n">14.</span>Presentation script (slide by slide)</a></li>
 <li data-ch="h15"><a href="ch15.html"><span class="n">15.</span>Questions on your slides (with follow-ups)</a></li>
 <li class="part">Part 3: Your plan and your work</li>
 <li data-ch="h16"><a href="ch16.html"><span class="n">16.</span>Your research plan (as submitted)</a></li>
@@ -182,114 +184,82 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <p>Footer on every content slide: "Sudhanshu Pandit · Research presentation · Informatics and Data Science Program, Hiroshima University", with the slide number.</p>
 <hr />
 <h2 id="part-1-my-work-so-far">Part 1. My work so far</h2>
-<h3 id="slide-1-title-dark">Slide 1. Title (dark)</h3>
+<h3 id="slide-1-does-a-shared-agentsmd-make-coding-agent-runs-fail-together-title-dark">Slide 1. Does a shared AGENTS.md make coding-agent runs fail together? (title, dark)</h3>
 <ul>
-<li>Hiroshima University · Informatics and Data Science Program · Research presentation</li>
+<li>Hiroshima University · Informatics and Data Science Program</li>
 <li><strong>Does a shared AGENTS.md make coding-agent runs fail together?</strong></li>
-<li>What I have built, what I found, and my research plan</li>
 <li>Two pills: <strong>1</strong> My work so far · <strong>2</strong> Research plan</li>
 <li>Sudhanshu Pandit / Prospective supervisor: Assoc. Prof. Junjun Zheng / Dependable Systems Laboratory</li>
-<li>Picture: a card named AGENTS.md with three rules ("Run the tests before you commit", "Parse dates with utils.parse_date()" highlighted, "Do not refactor unrelated code"). Below it: "same input, every run:" run 1 ✕, run 2 ✕, run 3 ✕, and a pill "fail together?". (The rules are an illustration, not from a real repository.)</li>
+<li>Picture: a card named AGENTS.md. The other rules are blank bars; one rule is highlighted: "- Parse dates with utils.parse_date()". Below it: run 1 ✕, run 2 ✕, run 3 ✕, and a pill "fail together?". (The rule is an illustration, not from a real repository.)</li>
 </ul>
-<h3 id="slide-2-about-me">Slide 2. About me</h3>
+<h3 id="slide-2-ai-engineer-now-student-from-april-2027">Slide 2. AI engineer now, student from April 2027</h3>
 <p>Timeline with four stops:</p>
 <ul>
-<li><strong>2022 to 2026</strong> · B.E. Computer Science and Engineering · Sri Sairam College of Engineering (VTU) · CGPA 8.04 / 10</li>
-<li><strong>2023</strong> · Review paper, IJIRAE · 2nd of 4 authors · First position, ICRCCT 2023</li>
-<li><strong>Nov 2025 to now</strong> · AI engineer, Layerpath · Founding team · Path AI, Magic Editor, BrandMemory</li>
-<li><strong>From April 2027</strong> · Full-time student · I leave Layerpath before I enrol</li>
+<li><strong>2022 to 2026</strong> · B.E., Computer Science and Engineering · CGPA 8.04 / 10</li>
+<li><strong>2023</strong> · Review paper · First position, ICRCCT</li>
+<li><strong>Nov 2025</strong> · AI engineer, Layerpath</li>
+<li><strong>April 2027</strong> · Full-time student</li>
 </ul>
-<p>Band: <strong>Before Layerpath:</strong> internships at OneRoot and PuntPartners, then Software Engineer 1 at BusinessRoom</p>
 <h3 id="slide-3-magic-editor-the-user-approves-every-edit">Slide 3. Magic Editor: the user approves every edit</h3>
 <ul>
-<li>An AI assistant that edits interactive product demos: new text and voiceover for any step, based on what is on screen</li>
-<li>Flow: <strong>Ask</strong> (The user asks for an edit) → <strong>Propose</strong> (The model returns the edit as an action in a fixed format) → <strong>Check</strong> (Code checks the format. The user sees the change) → <strong>Approve</strong>: the edit is applied / <strong>Reject</strong>: nothing changes</li>
-<li>Dark band: <strong>Nothing is applied until the user approves it.</strong> Same idea in my plan: an agent run counts only if it passes the task's tests.</li>
+<li>Flow: <strong>User asks</strong> → <strong>Model proposes</strong> → <strong>Code checks</strong> → <strong>Approve</strong>: the edit is applied / <strong>Reject</strong>: nothing changes</li>
+<li>Dark band: <strong>Nothing is applied until the user approves it.</strong></li>
 </ul>
 <h3 id="slide-4-brandmemory-rules-the-model-never-saw">Slide 4. BrandMemory: rules the model never saw</h3>
 <ul>
-<li>Left, "What the model received": two blocks "Higher-priority sections", a dashed line "3,200-character limit", then a dashed, greyed block "Brand voice rules: lowest priority: cut first, never sent" with a ⊘ sign</li>
-<li>Right, "How I found it":<ol>
-<li>The logs said the brand guidance was applied</li>
-<li>The output had no trace of the brand voice. On and off looked almost the same</li>
-<li>I traced what the model actually received</li>
-</ol>
-</li>
-<li>Band: <strong>After the fix, one A/B pair: contractions 6 → 0, "you" and "your" 15 → 1.</strong> One pair, not a study. Since then I check whether a model actually follows an instruction.</li>
+<li>Left, "What the model received": a block "Higher-priority sections", a dashed line "3,200-character limit", then a dashed, greyed block "Brand voice rules: cut first" with a ⊘ sign</li>
+<li>Right, "How I found it": Logs: applied · Output: no brand voice · Traced what it received</li>
 </ul>
 <h3 id="slide-5-yuki-20-a-check-before-any-lasting-step">Slide 5. Yuki 2.0: a check before any lasting step</h3>
 <ul>
-<li>My desktop agent for Windows, in plain Python with the Anthropic SDK. It reads the accessibility tree, not screenshots. Public on GitHub.</li>
-<li>Diagram: <strong>The user's own words</strong> + <strong>The proposed step</strong> → <strong>Checker model</strong> → <strong>Allow</strong> / <strong>Hold and ask</strong></li>
-<li>Dashed box: <strong>Never shown to the checker:</strong> screen text, web pages, tool results</li>
-<li>So a web page cannot talk it into a send or a delete.</li>
-<li>Stat box: <strong>9 / 9</strong> unasked actions held · <strong>0 / 36</strong> false holds on asked actions · Offline replay. Small sample.</li>
+<li>Diagram: <strong>User's own words</strong> + <strong>Proposed step</strong> → <strong>Checker</strong> → <strong>Allow</strong> / <strong>Hold and ask</strong></li>
+<li>Dashed box: <strong>Never shown:</strong> web pages, screen text</li>
+<li>Stat box: <strong>9 / 9</strong> unasked actions held · <strong>0 / 36</strong> false holds · Offline replay. Small sample.</li>
 </ul>
 <h3 id="slide-6-every-day-one-rules-file-read-by-every-run">Slide 6. Every day: one rules file, read by every run</h3>
 <ul>
-<li>"How I work": Give Claude Code or Codex a task · Review and test the change it makes · Maintain CLAUDE.md and AGENTS.md</li>
-<li>Card, "A rule I added after an agent's mistake": agent instructions / - Always write a migration file. / - Never change the shared database directly.</li>
-<li>Arrows to run 1, run 2, run 3: "same file, every run"</li>
-<li>Quote band: "Claude reads it and tries to follow it, but there's no guarantee of strict compliance, especially for vague or conflicting instructions." Claude Code documentation, about CLAUDE.md</li>
+<li>Card "agent instructions": - Always write a migration file. / - Never change the shared database directly.</li>
+<li>Arrows from the card to run 1, run 2, run 3</li>
 </ul>
 <h3 id="slide-7-tests-only-cover-what-someone-thought-of-dark">Slide 7. Tests only cover what someone thought of (dark)</h3>
 <ul>
-<li>Left: <strong>User approval</strong> covers only what the user can see · <strong>Replay tests</strong> cover only the calls I recorded · <strong>A task's tests</strong> cover only the inputs the developer wrote</li>
 <li>Grid, run 1 / run 2 / run 3: "The task's tests" ✓ ✓ ✓ · "An input no test tried" ✕ ✕ ✕</li>
-<li>Same rules file, same mistake: a vote cannot fix it</li>
 <li>Band: <strong>How often do agent runs fail together?</strong></li>
 </ul>
 <h2 id="part-2-research-plan">Part 2. Research plan</h2>
 <h3 id="slide-8-voting-needs-versions-that-fail-differently">Slide 8. Voting needs versions that fail differently</h3>
 <ul>
-<li><strong>Zheng, Okamura, Dohi [1]</strong> · SFPVV 2025 · Voting made strong models, such as GPT-4o, more reliable, but helped little with weak ones. More diversity did not always mean higher reliability.</li>
-<li><strong>429</strong> vs ≈ 115 if independent · <strong>Ron et al. 2026 [5]</strong> · inputs, out of a million, where 2 or more of 48 agent-written programs failed together · Voting over 3 still cut mean failures from 387 to 131</li>
-<li><strong>0.43</strong> · 0.27 if all from one model · <strong>Nogueira et al. 2026 [6]</strong> · of the gain that independent failures would allow, voting over 3 versions · 224 contest problems, 12 models</li>
-<li>Dark band: <strong>Neither 2026 study used a context file.</strong> In a real repository, every run reads the same one.</li>
+<li>Card <strong>Zheng, Okamura, Dohi [1]</strong>: Voting made strong models more reliable, but helped little with weak ones.</li>
+<li>Card <strong>Ron et al. [5]</strong>: <strong>429</strong> inputs out of a million, vs ≈ 115 if independent</li>
+<li>Dark band: <strong>Neither 2026 study [5, 6] used a context file.</strong></li>
 </ul>
-<h3 id="slide-9-two-research-questions">Slide 9. Two research questions</h3>
+<h3 id="slide-9-two-questions-shared-failures-and-one-rule">Slide 9. Two questions: shared failures and one rule</h3>
 <ul>
-<li><strong>RQ1 · SHARED FAILURES.</strong> When several agent runs solve one real task with the same context file, how much more often do they fail on the same inputs than independence predicts? Which change between runs lowers it most: file, agent, model or temperature?
-    Measure: ρ of a beta-binomial model (ρ = 0: independent), and how often a 2-out-of-3 vote fails</li>
-<li><strong>RQ2 · ONE RULE.</strong> Does replacing one real rule with neutral text change the reliability of the code, on the pull request's tests and on generated inputs beyond them?
-    Measure: failure probability on the PR's tests and on 10,000+ generated inputs per entry point</li>
-<li>A checker confirms that each change to the file changed what the agent did. I report this, but it is not an RQ.</li>
+<li><strong>RQ1:</strong> How much more often do runs fail together than independence predicts? Which change lowers it most?</li>
+<li><strong>RQ2:</strong> Does replacing one real rule with neutral text change reliability, on the PR's tests and beyond them?</li>
 </ul>
 <h3 id="slide-10-method-repeated-runs-on-real-tasks">Slide 10. Method: repeated runs on real tasks</h3>
 <ul>
-<li><strong>Real task:</strong> Merged PR. Its tests fail before, pass after. 138 public tasks [8], plus newer PRs</li>
-<li><strong>Context file:</strong> Original, or one rule replaced by neutral text. About 5 rules × 2 tasks</li>
-<li><strong>10 runs each:</strong> Claude Code · Codex, 2 models · My harness: open-weight model, 2 temperatures</li>
-<li><strong>Admit:</strong> A run counts as a version only if it passes the PR's tests</li>
-<li><strong>Test beyond:</strong> 10,000+ random inputs per entry point, compared with the merged code</li>
-<li><strong>820 runs:</strong> 400 main, 100 second Codex model, 200 harness, 120 screening</li>
-<li><strong>≈ 420 to 590 USD:</strong> at the per-task costs in [8]</li>
-<li><strong>BCD [2]:</strong> the lab's boundary value method, as a stress test</li>
+<li>Five steps: <strong>Task</strong> merged PR [8] → <strong>File</strong> original / one rule replaced → <strong>Run</strong> 10 times → <strong>Admit</strong> passes PR's tests → <strong>Test</strong> 10,000+ random inputs</li>
+<li><strong>820</strong> runs · <strong>≈ 420 to 590</strong> USD, "cost, at the per-task costs in [8]"</li>
 </ul>
 <h3 id="slide-11-one-number-for-fail-together">Slide 11. One number for "fail together"</h3>
 <ul>
-<li>θ(x) = chance that a run fails on input x · p = mean of θ over the inputs</li>
-<li>Formula box: <strong>P(two runs both fail) = p² + Var θ(X)</strong></li>
-<li><strong>Independent only if Var θ = 0:</strong> every input equally hard (Eckhardt and Lee [11])</li>
-<li>Picture, "Same p = 0.2 in both": "Every input equally hard" (eight bars at 0.2) → both fail: 0.04 · "Half easy, half hard" (four bars at 0, four at 0.4) → both fail: 0.08</li>
-<li>Band: <strong>Beta model for θ:</strong> the number of failing runs on one input is beta-binomial. One number, <strong>ρ</strong>, measures dependence: 0 = independent, 1 = always fail together. It also gives how often a 2-out-of-3 vote fails, and the best number of runs.</li>
+<li>Formula box: <strong>P(two runs both fail) = p² + Var θ(X)</strong> [11]</li>
+<li>Strip: <strong>Beta-binomial ρ:</strong> 0 = independent</li>
+<li>Picture, "Same p = 0.2": "Equally hard" (eight bars at 0.2) → both fail: 0.04 · "Half easy, half hard" (four bars at 0, four at 0.4) → both fail: 0.08. The bars are θ(x), the failure chance at one input x.</li>
 </ul>
-<h3 id="slide-12-schedule-and-expected-results">Slide 12. Schedule and expected results</h3>
+<h3 id="slide-12-two-years-two-results-all-data-public">Slide 12. Two years, two results, all data public</h3>
 <ul>
-<li><strong>Year 1 · first half:</strong> Probability, statistics and reliability courses. Harness, checkers, inputs. Pilot</li>
-<li><strong>Year 1 · second half:</strong> Main runs. Failures beyond the tests (RQ2)</li>
-<li><strong>Year 2 · first half:</strong> Shared-failure model and voting (RQ1). First paper</li>
-<li><strong>Year 2 · second half:</strong> Master's thesis. Field data if time permits</li>
-<li><strong>A fitted model:</strong> How often agent runs fail together, and which change lowers it most: how many runs to vote over at a given cost</li>
-<li><strong>One rule:</strong> Whether removing one real rule changes reliability beyond the tests</li>
-<li><strong>Open data:</strong> All tasks, code and data. Aim: ISSRE or its AISQ workshop, QRS, Software Quality Journal</li>
+<li><strong>Year 1:</strong> Courses, harness, pilot · Main runs, RQ2</li>
+<li><strong>Year 2:</strong> Model, RQ1, first paper · Thesis</li>
+<li>Three results: <strong>Fitted model</strong> · <strong>One rule's effect</strong> · <strong>Open data</strong></li>
 </ul>
 <h3 id="slide-13-what-i-want-to-learn-in-this-lab-dark">Slide 13. What I want to learn in this lab (dark)</h3>
 <ul>
-<li><strong>I can</strong> build and run coding agents, and test what they do</li>
-<li><strong>I want to learn</strong> to fit and test reliability models on their failures</li>
-<li>My plan builds on the lab's work: <strong>RQ1</strong> takes the N-version study [1] to real repository tasks · <strong>RQ2</strong> uses the boundary value method, BCD [2], as a stress test · <strong>Field data</strong> would use pysrat [4], if time permits</li>
-<li><strong>Thank you. I am happy to take your questions.</strong></li>
+<li><strong>I can</strong> build and run coding agents → <strong>I want to learn</strong> fit and test reliability models</li>
+<li><strong>RQ1</strong> N-version study [1] · <strong>RQ2</strong> BCD [2] · <strong>Field data</strong> pysrat [4] · if time permits</li>
+<li><strong>Thank you</strong></li>
 </ul>
 <h2 id="backup">Backup</h2>
 <h3 id="slide-14-references-on-these-slides-do-not-present">Slide 14. References on these slides (do not present)</h3>
@@ -316,22 +286,22 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <tbody>
 <tr>
 <td>2</td>
-<td>B.E., VTU, 2026, CGPA 8.04/10</td>
+<td>B.E., 2022 to 2026, CGPA 8.04/10</td>
 <td>Research Plan; Personal History</td>
 </tr>
 <tr>
 <td>2</td>
-<td>IJIRAE 10(6) 2023, review and concept paper, 2nd of 4 authors; first position at ICRCCT 2023</td>
+<td>2023 review paper; first position at ICRCCT 2023</td>
 <td>My Submitted Form</td>
 </tr>
 <tr>
 <td>2</td>
-<td>Layerpath since Nov 2025; Path AI, Magic Editor, BrandMemory; internships and BusinessRoom</td>
+<td>AI engineer at Layerpath since Nov 2025</td>
 <td>My Submitted Form; Personal History</td>
 </tr>
 <tr>
 <td>3</td>
-<td>Edits demos, text and voiceover per step, edits as checked actions, applied only after approval</td>
+<td>Edits as checked actions, applied only after the user approves</td>
 <td>My Submitted Form; CV (no usage numbers used)</td>
 </tr>
 <tr>
@@ -341,18 +311,13 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 </tr>
 <tr>
 <td>4</td>
-<td>How you found it; one A/B pair, 6 → 0 and 15 → 1</td>
+<td>How you found it (logs said applied, output had no brand voice, traced the prompt)</td>
 <td>NAIST notes (<code>/Users/mafex/code/personal/masters-research/naist/answer_sheet.md</code>) B1</td>
 </tr>
 <tr>
 <td>5</td>
-<td>Plain Python, Anthropic SDK, accessibility tree, public on GitHub; checker sees only the user's words; 9/9 held, 0/36 false holds in offline replay</td>
+<td>Checker sees only the user's words and the proposed step; 9/9 held, 0/36 false holds in an offline replay</td>
 <td>My Submitted Form; CV; <code>/Users/mafex/code/personal/masters-research/naist/yuki_fact_sheet.md</code> sections 2b, 4, 5</td>
-</tr>
-<tr>
-<td>6</td>
-<td>Daily Claude Code and Codex use, review, test, maintain CLAUDE.md and AGENTS.md</td>
-<td>Research Plan; My Submitted Form</td>
 </tr>
 <tr>
 <td>6</td>
@@ -361,8 +326,8 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 </tr>
 <tr>
 <td>6</td>
-<td>"no guarantee of strict compliance" quote</td>
-<td><code>/Users/mafex/code/personal/masters-research/naist/verified-dossier-2026-10-20.md</code>, section (e), from the saved Claude Code docs. Rechecked on 13 Nov 2026 at code.claude.com/docs/en/memory: the sentence goes on ", especially for vague or conflicting instructions", so the slide now quotes it in full</td>
+<td>"no guarantee of strict compliance" (said aloud on slide 6; the source is on slide 14)</td>
+<td><code>/Users/mafex/code/personal/masters-research/naist/verified-dossier-2026-10-20.md</code>, section (e), from the saved Claude Code docs. Rechecked on 13 Nov 2026 at code.claude.com/docs/en/memory; the full sentence ends ", especially for vague or conflicting instructions"</td>
 </tr>
 <tr>
 <td>8 to 12</td>
@@ -372,12 +337,17 @@ details.box ul{margin:.5em 0;padding-left:1.2em;font-size:16px}
 <tr>
 <td>8</td>
 <td>"Neither 2026 study used a context file"</td>
-<td>Research Plan, Purpose: "Ron et al. [5] and Nogueira et al. [6] used no context file." The plan says nothing about [1] here, and you have read only its abstract, so the slide no longer says "none of these"</td>
+<td>Research Plan, Purpose: "Ron et al. [5] and Nogueira et al. [6] used no context file." The plan says nothing about [1] here, and you have read only its abstract, so the slide does not say "none of these"</td>
 </tr>
 <tr>
 <td>11</td>
 <td>The 0.04 vs 0.08 picture</td>
 <td>Your own arithmetic example (<a href="ch17.html"><code>01_proposal_explained_simply.md</code></a>, section 4.6). Not a result.</td>
+</tr>
+<tr>
+<td>13</td>
+<td>RQ1 builds on [1], RQ2 uses BCD [2], field data would use pysrat [4]</td>
+<td>Research Plan, Expected Results</td>
 </tr>
 </tbody>
 </table>
